@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Writing Excel File Using Apache POI Library in Java | Simple Solution</title>
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css" integrity="" media="screen" />
+</head><body><div class="logo">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logo.png" alt="Simple Solution logo" height="64" />
+    </a>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Writing Excel File Using Apache POI Library in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Apache POI is and open source Java library allow you to read and write Microsoft Documents such as Excel workbook, Word document, Powerpoint presentation.</p>
+
+<p>In this blog post I will show you how to use Apache POI library to writing an Excel file. Throughout this blog post we will implement an Java application to generate the Excel file as the figure below:</p>
+
+<p><img src="/images/writing-excel-file-using-apache-poi-library-in-java-sample.png" alt="Sample Output Excel File" /></p>
+
+<h2 id="overview-apache-poi-library">Overview Apache POI Library</h2>
+
+<p>At the time of writing this blog post, the latest stable release is Apache POI 4.0.1.</p>
+
+<p>There are multipe components in Apache POI that support reading and writing different file formats. To write Excel file we will use POI-HSSF or POI-XSSF components:</p>
+
+<ul>
+<li><strong>POI-HSSF</strong> component support Excel &lsquo;97 - 2007 (.xls) file format.</li>
+<li><strong>POI-XSSF</strong> component support Excel 2007 and later version (.xlsx) file format.</li>
+</ul>
+
+<p>When choosing which component to use you should aware that the POI-XSSF will have more memory footprint than POI-HSSF because it process XML based documents (.xlsx) instead of binary file (.xls) in POI-HSSF.</p>
+
+<h2 id="apache-poi-definitions">Apache POI Definitions</h2>
+
+<p>There are some definitions you need to know when using the library:</p>
+
+<ul>
+<li><strong>Workbook</strong> represent an Excel workbook. In this blog post we will discuss about 2 implementations of Workbook are HSSFWorkbook to generate .xls file and XSSFWorkbook to generate .xlsx file.</li>
+<li><strong>Sheet</strong> represent an Excel worksheet. The object of Sheet will be created by Workbook.</li>
+<li><strong>Row</strong> represent a row in an Excel spreadsheet.</li>
+<li><strong>Cell</strong> represent a cell in a row of an Excel spreadsheet.</li>
+</ul>
+
+<h2 id="adding-apache-poi-dependencies-into-your-project">Adding Apache POI dependencies into your project</h2>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span>
+compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi-ooxml&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.0.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi-ooxml<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.0.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>Or you can download the release from Apache POI home page at: <a href="https://poi.apache.org/download.html" target="_blank">here</a></p>
+
+<h2 id="steps-to-create-an-excel-file">Steps to create an Excel file</h2>
+
+<p>In order to create Excel file you need these steps:</p>
+
+<ul>
+<li>Create an instance of Workbook.</li>
+<li>Create instances of Sheet via Workbook.createSheet(String sheetname) method.</li>
+<li>Create instances of Row via Sheet.createRow(int rownum) method.</li>
+<li>Create instances of Cell via Row.createCell(int column) mehod.</li>
+<li>Write out the workbook to an OutputStream.</li>
+</ul>
+
+<p>Below are sample code that generate a simple Excel file with one sheet and contain only one cell in that sheet.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>FileNotFoundException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>The output file:</p>
+
+<p><img src="/images/writing-excel-file-using-apache-poi-library-in-java-simple-sample.png" alt="Sample Output Excel File" /></p>
+
+<p>You can create workbook instance for diferent Excel format.
+Using HSSFWorkbook to create .xls file
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Workbook hssfWorkbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span></code></pre></div>
+or using XSSFWorkbook to create .xls file
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Workbook xssfWorkbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span></code></pre></div></p>
+
+<p>To fill color for cell Apache POI support CellStyle interface that allow you setting color and background for cell, below are sample code to color the background of header row:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">CellStyle headerCellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+headerCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">AQUA</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+headerCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SOLID_FOREGROUND</span><span style="color:#f92672">);</span>
+Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Employee ID&#34;</span><span style="color:#f92672">);</span>
+cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>Apache POI Cell support different data types, for example in this blog post we will implement an application to save objects of Employee class as below to Excel file:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> employeeId<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String firstName<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String lastName<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> Date birthDate<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String address<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String city<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> BigDecimal salary<span style="color:#f92672">;</span>
+    <span style="color:#75715e">// constructors and setters
+</span><span style="color:#75715e"></span><span style="color:#f92672">}</span></code></pre></div>
+
+<p>CellStyle also support to setting the format of you data, in order to generate birthDate field of Employee we also setting it data format to &ldquo;dd/MM/yyyy&rdquo; by using CellStyle as below:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Cell birthDateCell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+birthDateCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getBirthDate</span><span style="color:#f92672">());</span>
+CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+CreationHelper creationHelper <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">getCreationHelper</span><span style="color:#f92672">();</span>
+cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataFormat</span><span style="color:#f92672">(</span>creationHelper<span style="color:#f92672">.</span><span style="color:#a6e22e">createDataFormat</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getFormat</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dd/MM/yyyy&#34;</span><span style="color:#f92672">));</span>
+birthDateCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span></code></pre></div>
+And decimal number format for salary
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Cell salaryCell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+salaryCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getSalary</span><span style="color:#f92672">().</span><span style="color:#a6e22e">doubleValue</span><span style="color:#f92672">());</span>
+CellStyle salaryCellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+salaryCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataFormat</span><span style="color:#f92672">(</span>creationHelper<span style="color:#f92672">.</span><span style="color:#a6e22e">createDataFormat</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getFormat</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;#,##0.00&#34;</span><span style="color:#f92672">));</span>
+salaryCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>salaryCellStyle<span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>By default the out put file will be set column width as the same width for all columns. To make the output file more user friendly we need will adjusts the column width to fit the contents using code below:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>Below is the full source code of application:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.*<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileNotFoundException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.math.BigDecimal<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsingApachePOIWithExcelSample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        createSimpleFile<span style="color:#f92672">();</span>
+
+        Workbook hssfWorkbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        createXLSFile<span style="color:#f92672">(</span>hssfWorkbook<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;employees.xls&#34;</span><span style="color:#f92672">);</span>
+
+        Workbook xssfWorkbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        createXLSFile<span style="color:#f92672">(</span>xssfWorkbook<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;employees.xlsx&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createSimpleFile</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>FileNotFoundException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createXLSFile</span><span style="color:#f92672">(</span>Workbook workbook<span style="color:#f92672">,</span> String fileName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Employee List&#34;</span><span style="color:#f92672">);</span>
+        createHeaderRow<span style="color:#f92672">(</span>workbook<span style="color:#f92672">,</span> sheet<span style="color:#f92672">);</span>
+
+        Employee employee <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Employee<span style="color:#f92672">(</span>
+                2303<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Buffet&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Jimmy&#34;</span><span style="color:#f92672">,</span>
+                1975<span style="color:#f92672">,</span> 3<span style="color:#f92672">,</span> 4<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;The Alamo&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;San Antonio&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#66d9ef">new</span> BigDecimal<span style="color:#f92672">(</span>75324<span style="color:#f92672">.</span><span style="color:#a6e22e">7634</span><span style="color:#f92672">));</span>
+        createEmployeeRow<span style="color:#f92672">(</span>workbook<span style="color:#f92672">,</span> sheet<span style="color:#f92672">,</span> employee<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+
+        employee <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Employee<span style="color:#f92672">(</span>
+                2304<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Cartman&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Eric&#34;</span><span style="color:#f92672">,</span>
+                1973<span style="color:#f92672">,</span> 11<span style="color:#f92672">,</span> 8<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Empire State Building&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;New York&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#66d9ef">new</span> BigDecimal<span style="color:#f92672">(</span>59000<span style="color:#f92672">.</span><span style="color:#a6e22e">0256</span><span style="color:#f92672">));</span>
+        createEmployeeRow<span style="color:#f92672">(</span>workbook<span style="color:#f92672">,</span> sheet<span style="color:#f92672">,</span> employee<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+
+        employee <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Employee<span style="color:#f92672">(</span>
+                2307<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Jefferson&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;George&#34;</span><span style="color:#f92672">,</span>
+                1980<span style="color:#f92672">,</span> 12<span style="color:#f92672">,</span> 10<span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Mockingbird Lane&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#e6db74">&#34;Fargo&#34;</span><span style="color:#f92672">,</span>
+                <span style="color:#66d9ef">new</span> BigDecimal<span style="color:#f92672">(</span>159000<span style="color:#f92672">.</span><span style="color:#a6e22e">342</span><span style="color:#f92672">));</span>
+        createEmployeeRow<span style="color:#f92672">(</span>workbook<span style="color:#f92672">,</span> sheet<span style="color:#f92672">,</span> employee<span style="color:#f92672">,</span> 3<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span>fileName<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>FileNotFoundException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createHeaderRow</span><span style="color:#f92672">(</span>Workbook workbook<span style="color:#f92672">,</span> Sheet sheet<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        CellStyle headerCellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        headerCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">AQUA</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        headerCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SOLID_FOREGROUND</span><span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Employee ID&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;First Name&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Last Name&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Birth Date&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Address&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;City&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Salary&#34;</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">createEmployeeRow</span><span style="color:#f92672">(</span>Workbook workbook<span style="color:#f92672">,</span> Sheet sheet<span style="color:#f92672">,</span> Employee employee<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> rowIndex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>rowIndex<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getEmployeeId</span><span style="color:#f92672">());</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">());</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>2<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getLastName</span><span style="color:#f92672">());</span>
+
+        Cell birthDateCell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        birthDateCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getBirthDate</span><span style="color:#f92672">());</span>
+        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        CreationHelper creationHelper <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">getCreationHelper</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataFormat</span><span style="color:#f92672">(</span>creationHelper<span style="color:#f92672">.</span><span style="color:#a6e22e">createDataFormat</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getFormat</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dd/MM/yyyy&#34;</span><span style="color:#f92672">));</span>
+        birthDateCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>4<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getAddress</span><span style="color:#f92672">());</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>5<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getCity</span><span style="color:#f92672">());</span>
+        Cell salaryCell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+        salaryCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>employee<span style="color:#f92672">.</span><span style="color:#a6e22e">getSalary</span><span style="color:#f92672">().</span><span style="color:#a6e22e">doubleValue</span><span style="color:#f92672">());</span>
+        CellStyle salaryCellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        salaryCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataFormat</span><span style="color:#f92672">(</span>creationHelper<span style="color:#f92672">.</span><span style="color:#a6e22e">createDataFormat</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getFormat</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;#,##0.00&#34;</span><span style="color:#f92672">));</span>
+        salaryCell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>salaryCellStyle<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>That&rsquo;s all for a simple solution to generate Excel file using Apache POI.<br />
+The source code in this blog can be found at: <a href="https://github.com/simplesolutiondev/UsingApachePOIWithExcel">https://github.com/simplesolutiondev/UsingApachePOIWithExcel</a></p>
+
+<p>Happy Coding!</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/apache-poi">Apache-POI</a>
+                                
+                                <a href="https://simplesolution.dev/tag/excel">Excel</a>
+                                
+                                <a href="https://simplesolution.dev/tag/file">File</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/s_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script></body>
+</html>

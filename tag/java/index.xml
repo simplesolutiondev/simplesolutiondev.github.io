@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/java/</link>
+    <description>Recent content in Java on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Mar 2019 20:34:25 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing Excel File Using Apache POI Library in Java</title>
+      <link>https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/</link>
+      <pubDate>Mon, 25 Mar 2019 20:34:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/</guid>
+      <description>Apache POI is and open source Java library allow you to read and write Microsoft Documents such as Excel workbook, Word document, Powerpoint presentation.
+In this blog post I will show you how to use Apache POI library to writing an Excel file. Throughout this blog post we will implement an Java application to generate the Excel file as the figure below:
+Overview Apache POI Library At the time of writing this blog post, the latest stable release is Apache POI 4.</description>
+    </item>
+    
+  </channel>
+</rss>
