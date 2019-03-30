@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Top 5 Libraries for Serialization and Deserialization JSON in Java | Simple Solution</title>
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css" integrity="" media="screen" />
+</head><body><div class="logo">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logo.png" alt="Simple Solution logo" height="64" />
+    </a>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Top 5 Libraries for Serialization and Deserialization JSON in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this blog post we will go through 5 useful open source libraries to serialization and deserialize  JSON data in Java application. For each library we will write a simple code sample to show you how to use the library to convert Java object to a JSON string and vice-versa.</p>
+
+<h1 id="gson">Gson</h1>
+
+<p>Github repository: <a href="https://github.com/google/gson" target="_blank">github.com/google/gson</a></p>
+
+<h5 id="adding-gson-dependency-into-your-project">Adding Gson dependency into your project</h5>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.google.code.gson&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;gson&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.8.5&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.google.code.gson<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>gson<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.8.5<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h5 id="how-to-serialize-object-to-json-string-using-gson">How to serialize object to JSON string using Gson</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> employees <span style="color:#f92672">=</span> <span style="color:#f92672">..;</span>
+Gson gson <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Gson<span style="color:#f92672">();</span>
+String jsonStringFromObject <span style="color:#f92672">=</span> gson<span style="color:#f92672">.</span><span style="color:#a6e22e">toJson</span><span style="color:#f92672">(</span>employees<span style="color:#f92672">);</span></code></pre></div>
+
+<h5 id="how-to-deserialize-json-string-to-java-object-using-gson">How to deserialize JSON string to Java object using Gson</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String jsonString <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+Gson gson <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Gson<span style="color:#f92672">();</span>
+List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> objectFromJsonString <span style="color:#f92672">=</span> gson<span style="color:#f92672">.</span><span style="color:#a6e22e">fromJson</span><span style="color:#f92672">(</span>jsonString<span style="color:#f92672">,</span> List<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span></code></pre></div>
+
+<h1 id="jackson">Jackson</h1>
+
+<p>Github repository: <a href="https://github.com/FasterXML/jackson" target="_blank">github.com/FasterXML/jackson</a></p>
+
+<h5 id="adding-jackson-dependency-into-your-project">Adding Jackson dependency into your project</h5>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.fasterxml.jackson.core&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jackson-databind&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.9.8&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.fasterxml.jackson.core<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jackson-databind<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.9.8<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h5 id="how-to-serialize-object-to-json-string-using-jackson">How to serialize object to JSON string using Jackson</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> employees <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+ObjectMapper objectMapper <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ObjectMapper<span style="color:#f92672">();</span>
+String jsonStringFromObject <span style="color:#f92672">=</span> objectMapper<span style="color:#f92672">.</span><span style="color:#a6e22e">writeValueAsString</span><span style="color:#f92672">(</span>employees<span style="color:#f92672">);</span></code></pre></div>
+
+<h5 id="how-to-deserialize-json-string-to-java-object-using-jackson">How to deserialize JSON string to Java object using Jackson</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String jsonString <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+ObjectMapper objectMapper <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ObjectMapper<span style="color:#f92672">();</span>
+List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> objectFromJsonString <span style="color:#f92672">=</span> objectMapper<span style="color:#f92672">.</span><span style="color:#a6e22e">readValue</span><span style="color:#f92672">(</span>jsonString<span style="color:#f92672">,</span> List<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span></code></pre></div>
+
+<h1 id="fastjson">Fastjson</h1>
+
+<p>Github repository: <a href="https://github.com/alibaba/fastjson" target="_blank">github.com/alibaba/fastjson</a></p>
+
+<h5 id="adding-fastjson-dependency-into-your-project">Adding Fastjson dependency into your project</h5>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.alibaba&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;fastjson&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;1.2.56&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.alibaba<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>fastjson<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.2.56<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h5 id="how-to-serialize-object-to-json-string-using-fastjson">How to serialize object to JSON string using Fastjson</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> employees <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+String jsonStringFromObject <span style="color:#f92672">=</span> JSON<span style="color:#f92672">.</span><span style="color:#a6e22e">toJSONString</span><span style="color:#f92672">(</span>employees<span style="color:#f92672">);</span></code></pre></div>
+
+<h5 id="how-to-deserialize-json-string-to-java-object-using-fastjson">How to deserialize JSON string to Java object using Fastjson</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String jsonString <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> objectFromJsonString <span style="color:#f92672">=</span> JSON<span style="color:#f92672">.</span><span style="color:#a6e22e">parseObject</span><span style="color:#f92672">(</span>jsonString<span style="color:#f92672">,</span> List<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span></code></pre></div>
+
+<h1 id="moshi">Moshi</h1>
+
+<p>Github repository: <a href="https://github.com/square/moshi" target="_blank">github.com/square/moshi</a></p>
+
+<h5 id="adding-moshi-dependency-into-your-project">Adding Moshi dependency into your project</h5>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.squareup.moshi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;moshi&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;1.8.0&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.squareup.moshi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>moshi<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.8.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h5 id="how-to-serialize-object-to-json-string-using-moshi">How to serialize object to JSON string using Moshi</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> employees <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+Moshi moshi <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Moshi<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+JsonAdapter<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&gt;</span> jsonAdapter <span style="color:#f92672">=</span> moshi<span style="color:#f92672">.</span><span style="color:#a6e22e">adapter</span><span style="color:#f92672">(</span>List<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+String jsonStringFromObject <span style="color:#f92672">=</span> jsonAdapter<span style="color:#f92672">.</span><span style="color:#a6e22e">toJson</span><span style="color:#f92672">(</span>employees<span style="color:#f92672">);</span></code></pre></div>
+
+<h5 id="how-to-deserialize-json-string-to-java-object-using-moshi">How to deserialize JSON string to Java object using Moshi</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String jsonString <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+Moshi moshi <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Moshi<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+JsonAdapter<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&gt;</span> jsonAdapter <span style="color:#f92672">=</span> moshi<span style="color:#f92672">.</span><span style="color:#a6e22e">adapter</span><span style="color:#f92672">(</span>List<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> objectFromJsonString <span style="color:#f92672">=</span> jsonAdapter<span style="color:#f92672">.</span><span style="color:#a6e22e">fromJson</span><span style="color:#f92672">(</span>jsonString<span style="color:#f92672">);</span></code></pre></div>
+
+<h1 id="jsoniter">Jsoniter</h1>
+
+<p>Github repository: <a href="https://github.com/json-iterator/java" target="_blank">github.com/json-iterator/java</a></p>
+
+<h5 id="adding-jsoniter-dependency-into-your-project">Adding Jsoniter dependency into your project</h5>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.jsoniter&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jsoniter&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;0.9.23&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.jsoniter<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jsoniter<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>0.9.23<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h5 id="how-to-serialize-object-to-json-string-using-jsoniter">How to serialize object to JSON string using Jsoniter</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> employees <span style="color:#f92672">=</span> <span style="color:#f92672">...;</span>
+String jsonStringFromObject <span style="color:#f92672">=</span> JsonStream<span style="color:#f92672">.</span><span style="color:#a6e22e">serialize</span><span style="color:#f92672">(</span>employees<span style="color:#f92672">);</span></code></pre></div>
+
+<h5 id="how-to-deserialize-json-string-to-java-object-using-jsoniter">How to deserialize JSON string to Java object using Jsoniter</h5>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String jsonString <span style="color:#f92672">=</span> <span style="color:#f92672">...);</span>
+List<span style="color:#f92672">&lt;</span>Employee<span style="color:#f92672">&gt;</span> objectFromJsonString <span style="color:#f92672">=</span> JsonIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">deserialize</span><span style="color:#f92672">(</span>jsonString<span style="color:#f92672">,</span> List<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span></code></pre></div>
+
+<p>The full source code in this blog can be found at: <a href="https://github.com/simplesolutiondev/SerializationDeserializationJSON">https://github.com/simplesolutiondev/SerializationDeserializationJSON</a></p>
+
+<p>Happy Coding!</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/json">JSON</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/s_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

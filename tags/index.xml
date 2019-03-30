@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Mar 2019 20:34:25 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 Mar 2019 20:34:25 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache Poi</title>
       <link>https://simplesolution.dev/tag/apache-poi/</link>
-      <pubDate>Mon, 25 Mar 2019 20:34:25 +0700</pubDate>
+      <pubDate>Tue, 26 Mar 2019 20:34:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-poi/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Excel</title>
       <link>https://simplesolution.dev/tag/excel/</link>
-      <pubDate>Mon, 25 Mar 2019 20:34:25 +0700</pubDate>
+      <pubDate>Tue, 26 Mar 2019 20:34:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/excel/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>File</title>
       <link>https://simplesolution.dev/tag/file/</link>
-      <pubDate>Mon, 25 Mar 2019 20:34:25 +0700</pubDate>
+      <pubDate>Tue, 26 Mar 2019 20:34:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/file/</guid>
       <description></description>
@@ -41,9 +41,18 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Mon, 25 Mar 2019 20:34:25 +0700</pubDate>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>https://simplesolution.dev/tag/json/</link>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/json/</guid>
       <description></description>
     </item>
     
