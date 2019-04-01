@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/how-to-use-bigdecimal-in-java-by-examples/</loc>
+    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</loc>
     <lastmod>2019-03-30T14:00:00+07:00</lastmod>
   </url>
@@ -15,6 +20,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/apache-poi/</loc>
     <lastmod>2019-03-26T20:34:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/bigdecimal/</loc>
+    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
