@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/gradle-configuration-to-generate-java-classes-from-wsdl-with-jaxb/</loc>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/how-to-use-bigdecimal-in-java-by-examples/</loc>
     <lastmod>2019-03-30T14:00:00+07:00</lastmod>
   </url>
@@ -47,14 +52,20 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/gradle/</loc>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,19 +77,31 @@
   
   <url>
     <loc>https://simplesolution.dev/posts/</loc>
-    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/soap-web-service/</loc>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
     <lastmod>2019-03-26T20:34:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/wsdl/</loc>
+    <lastmod>2019-04-03T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

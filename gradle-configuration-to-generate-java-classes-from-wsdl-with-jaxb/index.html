@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gradle Configuration to generate Java classes from WSDL with JAXB | Simple Solution</title>
+    <meta name="title" content="Gradle Configuration to generate Java classes from WSDL with JAXB | Simple Solution">
+    <meta name="description" content="In this blog post we will learn the step by step guide to configure gradle build file in order to generate Java classes from a WSDL file. This configure will be useful when you are working on project that related to SOAP web service.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/gradle-configuration-to-generate-java-classes-from-wsdl-with-jaxb/">
+    <meta property="og:title" content="Gradle Configuration to generate Java classes from WSDL with JAXB | Simple Solution">
+    <meta property="og:description" content="In this blog post we will learn the step by step guide to configure gradle build file in order to generate Java classes from a WSDL file. This configure will be useful when you are working on project that related to SOAP web service.">
+    <meta property="og:image" content="https://simplesolution.dev/images/gradle-configuration-to-generate-java-classes-from-wsdl.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/gradle-configuration-to-generate-java-classes-from-wsdl.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/gradle-configuration-to-generate-java-classes-from-wsdl-with-jaxb/">
+    <meta property="twitter:title" content="Gradle Configuration to generate Java classes from WSDL with JAXB | Simple Solution">
+    <meta property="twitter:description" content="In this blog post we will learn the step by step guide to configure gradle build file in order to generate Java classes from a WSDL file. This configure will be useful when you are working on project that related to SOAP web service.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/gradle-configuration-to-generate-java-classes-from-wsdl.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logo.png" alt="Simple Solution logo" height="64" />
+    </a>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Gradle Configuration to generate Java classes from WSDL with JAXB</h1></div>
+                    <div class="blog-detail-description">
+                        <p>In this blog post we will learn the step by step guide to configure gradle build file in order to generate Java classes from a WSDL file. This configure will be useful when you are working on project related to SOAP web service.</p>
+
+<p>Let start with an empty Java project with build.gradle file as below
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">group <span style="color:#e6db74">&#39;simplesolution.dev&#39;</span>
+version <span style="color:#e6db74">&#39;1.0.0&#39;</span>
+
+apply plugin: <span style="color:#e6db74">&#39;java&#39;</span>
+
+sourceCompatibility <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.8</span>
+
+repositories <span style="color:#f92672">{</span>
+    mavenCentral<span style="color:#f92672">()</span>
+<span style="color:#f92672">}</span>
+
+dependencies <span style="color:#f92672">{</span>
+    
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>For example, I have a SOAP web service to get all employees of a company with the WSDL as below
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; standalone=&#34;no&#34;?&gt;</span>
+<span style="color:#f92672">&lt;wsdl:definitions</span> <span style="color:#a6e22e">xmlns:soap=</span><span style="color:#e6db74">&#34;http://schemas.xmlsoap.org/wsdl/soap/&#34;</span>
+                  <span style="color:#a6e22e">xmlns:tns=</span><span style="color:#e6db74">&#34;https://simplesolution.dev/EmployeeService/&#34;</span>
+                  <span style="color:#a6e22e">xmlns:wsdl=</span><span style="color:#e6db74">&#34;http://schemas.xmlsoap.org/wsdl/&#34;</span>
+                  <span style="color:#a6e22e">xmlns:xsd=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema&#34;</span>
+                  <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;EmployeeService&#34;</span>
+                  <span style="color:#a6e22e">targetNamespace=</span><span style="color:#e6db74">&#34;https://simplesolution.dev/EmployeeService/&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;wsdl:types&gt;</span>
+        <span style="color:#f92672">&lt;xsd:schema</span> <span style="color:#a6e22e">targetNamespace=</span><span style="color:#e6db74">&#34;https://simplesolution.dev/EmployeeService/&#34;</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;xsd:element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;GetAllEmployees&#34;</span><span style="color:#f92672">&gt;</span>
+                <span style="color:#f92672">&lt;xsd:complexType</span> <span style="color:#f92672">/&gt;</span>
+            <span style="color:#f92672">&lt;/xsd:element&gt;</span>
+            <span style="color:#f92672">&lt;xsd:element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;GetAllEmployeesResponse&#34;</span><span style="color:#f92672">&gt;</span>
+                <span style="color:#f92672">&lt;xsd:complexType&gt;</span>
+                    <span style="color:#f92672">&lt;xsd:sequence&gt;</span>
+                        <span style="color:#f92672">&lt;xsd:element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;Employee&#34;</span> <span style="color:#a6e22e">minOccurs=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">maxOccurs=</span><span style="color:#e6db74">&#34;unbounded&#34;</span><span style="color:#f92672">&gt;</span>
+                            <span style="color:#f92672">&lt;xsd:complexType&gt;</span>
+                                <span style="color:#f92672">&lt;xsd:sequence&gt;</span>
+                                    <span style="color:#f92672">&lt;xsd:element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;ID&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;xsd:string&#34;</span><span style="color:#f92672">&gt;&lt;/xsd:element&gt;</span>
+                                    <span style="color:#f92672">&lt;xsd:element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;FirstName&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;xsd:string&#34;</span><span style="color:#f92672">&gt;&lt;/xsd:element&gt;</span>
+                                    <span style="color:#f92672">&lt;xsd:element</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;LastName&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;xsd:string&#34;</span><span style="color:#f92672">&gt;&lt;/xsd:element&gt;</span>
+                                <span style="color:#f92672">&lt;/xsd:sequence&gt;</span>
+                            <span style="color:#f92672">&lt;/xsd:complexType&gt;</span>
+                        <span style="color:#f92672">&lt;/xsd:element&gt;</span>
+                    <span style="color:#f92672">&lt;/xsd:sequence&gt;</span>
+                <span style="color:#f92672">&lt;/xsd:complexType&gt;</span>
+            <span style="color:#f92672">&lt;/xsd:element&gt;</span>
+        <span style="color:#f92672">&lt;/xsd:schema&gt;</span>
+    <span style="color:#f92672">&lt;/wsdl:types&gt;</span>
+
+    <span style="color:#f92672">&lt;wsdl:message</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;GetAllEmployeesRequest&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;wsdl:part</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;parameters&#34;</span> <span style="color:#a6e22e">element=</span><span style="color:#e6db74">&#34;tns:GetAllEmployees&#34;</span><span style="color:#f92672">&gt;&lt;/wsdl:part&gt;</span>
+    <span style="color:#f92672">&lt;/wsdl:message&gt;</span>
+    <span style="color:#f92672">&lt;wsdl:message</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;GetAllEmployeesResponse&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;wsdl:part</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;parameters&#34;</span> <span style="color:#a6e22e">element=</span><span style="color:#e6db74">&#34;tns:GetAllEmployeesResponse&#34;</span><span style="color:#f92672">&gt;&lt;/wsdl:part&gt;</span>
+    <span style="color:#f92672">&lt;/wsdl:message&gt;</span>
+
+    <span style="color:#f92672">&lt;wsdl:portType</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;EmployeeService&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;wsdl:operation</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;GetAllEmployees&#34;</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;wsdl:input</span> <span style="color:#a6e22e">message=</span><span style="color:#e6db74">&#34;tns:GetAllEmployeesRequest&#34;</span><span style="color:#f92672">&gt;&lt;/wsdl:input&gt;</span>
+            <span style="color:#f92672">&lt;wsdl:output</span> <span style="color:#a6e22e">message=</span><span style="color:#e6db74">&#34;tns:GetAllEmployeesResponse&#34;</span><span style="color:#f92672">&gt;&lt;/wsdl:output&gt;</span>
+        <span style="color:#f92672">&lt;/wsdl:operation&gt;</span>
+    <span style="color:#f92672">&lt;/wsdl:portType&gt;</span>
+
+    <span style="color:#f92672">&lt;wsdl:binding</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;EmployeeServiceSOAP&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;tns:EmployeeService&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;soap:binding</span> <span style="color:#a6e22e">style=</span><span style="color:#e6db74">&#34;document&#34;</span>
+                      <span style="color:#a6e22e">transport=</span><span style="color:#e6db74">&#34;http://schemas.xmlsoap.org/soap/http&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;wsdl:operation</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;GetAllEmployees&#34;</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;soap:operation</span>
+                    <span style="color:#a6e22e">soapAction=</span><span style="color:#e6db74">&#34;https://simplesolution.dev/EmployeeService/GetAllEmployees&#34;</span> <span style="color:#f92672">/&gt;</span>
+            <span style="color:#f92672">&lt;wsdl:input&gt;</span>
+                <span style="color:#f92672">&lt;soap:body</span> <span style="color:#a6e22e">use=</span><span style="color:#e6db74">&#34;literal&#34;</span> <span style="color:#f92672">/&gt;</span>
+            <span style="color:#f92672">&lt;/wsdl:input&gt;</span>
+            <span style="color:#f92672">&lt;wsdl:output&gt;</span>
+                <span style="color:#f92672">&lt;soap:body</span> <span style="color:#a6e22e">use=</span><span style="color:#e6db74">&#34;literal&#34;</span> <span style="color:#f92672">/&gt;</span>
+            <span style="color:#f92672">&lt;/wsdl:output&gt;</span>
+        <span style="color:#f92672">&lt;/wsdl:operation&gt;</span>
+    <span style="color:#f92672">&lt;/wsdl:binding&gt;</span>
+
+    <span style="color:#f92672">&lt;wsdl:service</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;EmployeeService&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;wsdl:port</span> <span style="color:#a6e22e">binding=</span><span style="color:#e6db74">&#34;tns:EmployeeServiceSOAP&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;EmployeeServiceSOAP&#34;</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;soap:address</span> <span style="color:#a6e22e">location=</span><span style="color:#e6db74">&#34;https://simplesolution.dev/EmployeeService&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;/wsdl:port&gt;</span>
+    <span style="color:#f92672">&lt;/wsdl:service&gt;</span>
+<span style="color:#f92672">&lt;/wsdl:definitions&gt;</span></code></pre></div></p>
+
+<p>We need to put these WSDL file under project resources directory at:
+<br>
+src/main/resources/employee.wsdl</p>
+
+<p>First of all you need to add configuration and dependencies as below to build.gradle file
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">configurations <span style="color:#f92672">{</span>
+    jaxb
+<span style="color:#f92672">}</span>
+
+dependencies <span style="color:#f92672">{</span>
+    jaxb <span style="color:#f92672">(</span>
+            <span style="color:#e6db74">&#39;com.sun.xml.bind:jaxb-core:2.3.0.1&#39;</span><span style="color:#f92672">,</span>
+            <span style="color:#e6db74">&#39;com.sun.xml.bind:jaxb-xjc:2.3.2&#39;</span><span style="color:#f92672">,</span>
+            <span style="color:#e6db74">&#39;com.sun.xml.bind:jaxb-impl:2.3.2&#39;</span>
+    <span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Then we will implement a new gradle task to generate Java classes from employee.wsdl</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">task generateJavaClasses <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">setProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;javax.xml.accessExternalSchema&#39;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;all&#39;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">def</span> jaxbTargetDir <span style="color:#f92672">=</span> file<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;src/main/java/&#34;</span><span style="color:#f92672">)</span>
+    doLast <span style="color:#f92672">{</span>
+        jaxbTargetDir<span style="color:#f92672">.</span><span style="color:#a6e22e">mkdirs</span><span style="color:#f92672">()</span>
+        ant<span style="color:#f92672">.</span><span style="color:#a6e22e">taskdef</span><span style="color:#f92672">(</span>
+                name: <span style="color:#e6db74">&#39;xjc&#39;</span><span style="color:#f92672">,</span>
+                classname: <span style="color:#e6db74">&#39;com.sun.tools.xjc.XJCTask&#39;</span><span style="color:#f92672">,</span>
+                classpath: configurations<span style="color:#f92672">.</span><span style="color:#a6e22e">jaxb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">asPath</span>
+        <span style="color:#f92672">)</span>
+        ant<span style="color:#f92672">.</span><span style="color:#a6e22e">jaxbTargetDir</span> <span style="color:#f92672">=</span> jaxbTargetDir
+        ant<span style="color:#f92672">.</span><span style="color:#a6e22e">xjc</span><span style="color:#f92672">(</span>
+                destdir: <span style="color:#e6db74">&#39;${jaxbTargetDir}&#39;</span><span style="color:#f92672">,</span>
+                package: <span style="color:#e6db74">&#39;simplesolution.dev&#39;</span><span style="color:#f92672">,</span>
+                schema: <span style="color:#e6db74">&#39;src/main/resources/employee.wsdl&#39;</span><span style="color:#f92672">,</span>
+                language: <span style="color:#e6db74">&#39;WSDL&#39;</span>
+        <span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+There are few things to notice in gradle task above:</p>
+
+<ul>
+<li>jaxbTargetDir configure to generate Java classes to src/main/java/ directory</li>
+<li>There is default package of generated source is &lsquo;simplesolution.dev&rsquo;</li>
+<li>The WSDL schema file is &lsquo;src/main/resources/employee.wsdl&rsquo;</li>
+</ul>
+
+<p>The final build.gradle file as below</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">group <span style="color:#e6db74">&#39;simplesolution.dev&#39;</span>
+version <span style="color:#e6db74">&#39;1.0.0&#39;</span>
+
+apply plugin: <span style="color:#e6db74">&#39;java&#39;</span>
+
+sourceCompatibility <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.8</span>
+
+repositories <span style="color:#f92672">{</span>
+    mavenCentral<span style="color:#f92672">()</span>
+<span style="color:#f92672">}</span>
+
+configurations <span style="color:#f92672">{</span>
+    jaxb
+<span style="color:#f92672">}</span>
+
+dependencies <span style="color:#f92672">{</span>
+    jaxb <span style="color:#f92672">(</span>
+            <span style="color:#e6db74">&#39;com.sun.xml.bind:jaxb-core:2.3.0.1&#39;</span><span style="color:#f92672">,</span>
+            <span style="color:#e6db74">&#39;com.sun.xml.bind:jaxb-xjc:2.3.2&#39;</span><span style="color:#f92672">,</span>
+            <span style="color:#e6db74">&#39;com.sun.xml.bind:jaxb-impl:2.3.2&#39;</span>
+    <span style="color:#f92672">)</span>
+<span style="color:#f92672">}</span>
+
+task generateJavaClasses <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">setProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;javax.xml.accessExternalSchema&#39;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;all&#39;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">def</span> jaxbTargetDir <span style="color:#f92672">=</span> file<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;src/main/java/&#34;</span><span style="color:#f92672">)</span>
+    doLast <span style="color:#f92672">{</span>
+        jaxbTargetDir<span style="color:#f92672">.</span><span style="color:#a6e22e">mkdirs</span><span style="color:#f92672">()</span>
+        ant<span style="color:#f92672">.</span><span style="color:#a6e22e">taskdef</span><span style="color:#f92672">(</span>
+                name: <span style="color:#e6db74">&#39;xjc&#39;</span><span style="color:#f92672">,</span>
+                classname: <span style="color:#e6db74">&#39;com.sun.tools.xjc.XJCTask&#39;</span><span style="color:#f92672">,</span>
+                classpath: configurations<span style="color:#f92672">.</span><span style="color:#a6e22e">jaxb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">asPath</span>
+        <span style="color:#f92672">)</span>
+        ant<span style="color:#f92672">.</span><span style="color:#a6e22e">jaxbTargetDir</span> <span style="color:#f92672">=</span> jaxbTargetDir
+        ant<span style="color:#f92672">.</span><span style="color:#a6e22e">xjc</span><span style="color:#f92672">(</span>
+                destdir: <span style="color:#e6db74">&#39;${jaxbTargetDir}&#39;</span><span style="color:#f92672">,</span>
+                package: <span style="color:#e6db74">&#39;simplesolution.dev&#39;</span><span style="color:#f92672">,</span>
+                schema: <span style="color:#e6db74">&#39;src/main/resources/employee.wsdl&#39;</span><span style="color:#f92672">,</span>
+                language: <span style="color:#e6db74">&#39;WSDL&#39;</span>
+        <span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>That&rsquo;s it for configuration, now you can run the gradle task to generate Java source:
+<br></p>
+
+<pre><code>gradlew generateJavaClasses
+</code></pre>
+
+<p>After finished running the gradle task, you can see the Java source files generated as below:</p>
+
+<p><img src="/images/wsdl-to-java-source-code.png" alt="Genarated Java source files" /></p>
+
+<p>That&rsquo;s all for a simple solution to generate Java source code from WSDL file.<br />
+The source code in this blog can be found at: <a href="https://github.com/simplesolutiondev/WSDLtoJavaClassUsingGradle">https://github.com/simplesolutiondev/WSDLtoJavaClassUsingGradle</a></p>
+
+<p>Happy Coding!</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/soap-web-service">SOAP Web Service</a>
+                                
+                                <a href="https://simplesolution.dev/tag/wsdl">WSDL</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gradle">Gradle</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

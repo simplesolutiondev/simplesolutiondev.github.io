@@ -48,9 +48,18 @@
     </item>
     
     <item>
+      <title>Gradle</title>
+      <link>https://simplesolution.dev/tag/gradle/</link>
+      <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gradle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
       <description></description>
@@ -62,6 +71,24 @@
       <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soap Web Service</title>
+      <link>https://simplesolution.dev/tag/soap-web-service/</link>
+      <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/soap-web-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wsdl</title>
+      <link>https://simplesolution.dev/tag/wsdl/</link>
+      <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/wsdl/</guid>
       <description></description>
     </item>
     
