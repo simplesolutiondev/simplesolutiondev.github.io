@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 14:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use Java ArrayDeque with Examples</title>
+      <link>https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/</link>
+      <pubDate>Thu, 04 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/</guid>
+      <description>In this tutorial we will learn how to use the java.util.ArrayDeque class, a member class of Java Collections Framework. We will go through different examples to see how this class suppport methods that allow you to insert and retrieves element in both front and end of the element list. ArrayDeque is an implementation of Deque interface with class diagram as below:
+How to use ArrayDeque as a stack We can push an element onto the stack and pop it from stack using ArrayDeque as below Deque&amp;lt;Integer&amp;gt; deque = new ArrayDeque&amp;lt;&amp;gt;();deque.</description>
+    </item>
     
     <item>
       <title>Gradle Configuration to generate Java classes from WSDL with JAXB</title>

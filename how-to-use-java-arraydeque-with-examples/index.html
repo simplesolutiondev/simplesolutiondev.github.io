@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>How to use Java ArrayDeque with Examples | Simple Solution</title>
+    <meta name="title" content="How to use Java ArrayDeque with Examples | Simple Solution">
+    <meta name="description" content="In this tutorial we will learn how to use the java.util.ArrayDeque class, a member class of Java Collections Framework. We will go through different examples to see how this class suppport methods that allow you to insert and retrieves element in both front and end of the element list.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/">
+    <meta property="og:title" content="How to use Java ArrayDeque with Examples | Simple Solution">
+    <meta property="og:description" content="In this tutorial we will learn how to use the java.util.ArrayDeque class, a member class of Java Collections Framework. We will go through different examples to see how this class suppport methods that allow you to insert and retrieves element in both front and end of the element list.">
+    <meta property="og:image" content="https://simplesolution.dev/images/how-to-use-java-arraydeque-with-examples.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/how-to-use-java-arraydeque-with-examples.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/">
+    <meta property="twitter:title" content="How to use Java ArrayDeque with Examples | Simple Solution">
+    <meta property="twitter:description" content="In this tutorial we will learn how to use the java.util.ArrayDeque class, a member class of Java Collections Framework. We will go through different examples to see how this class suppport methods that allow you to insert and retrieves element in both front and end of the element list.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/how-to-use-java-arraydeque-with-examples.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logo.png" alt="Simple Solution logo" height="64" />
+    </a>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">How to use Java ArrayDeque with Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this tutorial we will learn how to use the java.util.ArrayDeque class, a member class of Java Collections Framework. We will go through different examples to see how this class suppport methods that allow you to insert and retrieves element in both front and end of the element list. ArrayDeque is an implementation of Deque interface with class diagram as below:</p>
+
+<p><img src="/images/ArrayDeque-class-diagram.png" alt="Java ArrayDeque class diagram" /></p>
+
+<h4 id="how-to-use-arraydeque-as-a-stack">How to use ArrayDeque as a stack</h4>
+
+<p>We can push an element onto the stack and pop it from stack using ArrayDeque as below
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Deque<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> deque <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayDeque<span style="color:#f92672">&lt;&gt;();</span>
+deque<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+deque<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+deque<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+deque<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+Integer element <span style="color:#f92672">=</span> deque<span style="color:#f92672">.</span><span style="color:#a6e22e">pop</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<h4 id="how-to-use-arraydeque-as-a-queue">How to use ArrayDeque as a queue</h4>
+
+<p>We can use offer and poll method to populate elements in queue as below
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Deque<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> queue <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayDeque<span style="color:#f92672">&lt;&gt;();</span>
+queue<span style="color:#f92672">.</span><span style="color:#a6e22e">offer</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+queue<span style="color:#f92672">.</span><span style="color:#a6e22e">offer</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+queue<span style="color:#f92672">.</span><span style="color:#a6e22e">offer</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+queue<span style="color:#f92672">.</span><span style="color:#a6e22e">offer</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+Integer element <span style="color:#f92672">=</span> queue<span style="color:#f92672">.</span><span style="color:#a6e22e">poll</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<h4 id="different-method-to-iterate-over-elements-of-the-deque">Different method to iterate over elements of the deque</h4>
+
+<p>The class provide two methods to return an iterator:</p>
+
+<ul>
+<li><strong>descendingIterator</strong> method to return an iterator over the elements in reverse sequential order.</li>
+<li><strong>iterator</strong> method to return an iterator over the elements.</li>
+</ul>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Deque<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> stack <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayDeque<span style="color:#f92672">&lt;&gt;();</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+Iterator descendingIterator <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">descendingIterator</span><span style="color:#f92672">();</span>
+<span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>descendingIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>descendingIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span>
+
+Iterator iterator <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">iterator</span><span style="color:#f92672">();</span>
+<span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>iterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>iterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Beside that, there are some other helpful methods when you using ArrayDeque:</p>
+
+<ul>
+<li><strong>size</strong> to get number of elements.</li>
+<li><strong>toArray</strong> to return an array of all elements.</li>
+<li><strong>isEmpty</strong> to check whether the ArrayDeque is empty or not.</li>
+<li><strong>contains</strong> to check a specified element be contained in ArrayDeque or not.</li>
+</ul>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Deque<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> stack <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayDeque<span style="color:#f92672">&lt;&gt;();</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+stack<span style="color:#f92672">.</span><span style="color:#a6e22e">push</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">());</span>
+
+Object<span style="color:#f92672">[]</span> objectArray <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">toArray</span><span style="color:#f92672">();</span>
+
+Integer<span style="color:#f92672">[]</span> integerArray <span style="color:#f92672">=</span> stack<span style="color:#f92672">.</span><span style="color:#a6e22e">toArray</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Integer<span style="color:#f92672">[</span>0<span style="color:#f92672">]);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">());</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span>2<span style="color:#f92672">));</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stack<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span>5<span style="color:#f92672">));</span></code></pre></div>
+
+<p>That&rsquo;s all for a simple examples how to use java.util.ArrayDeque class.
+The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/ArrayDequeExamples">https://github.com/simplesolutiondev/ArrayDequeExamples</a></p>
+
+<p>Happy Coding!</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/arraydeque">ArrayDeque</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
