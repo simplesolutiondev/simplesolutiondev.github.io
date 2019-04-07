@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/how-to-use-java-arraylist-with-examples/</loc>
+    <lastmod>2019-04-07T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/</loc>
     <lastmod>2019-04-04T14:00:00+07:00</lastmod>
   </url>
@@ -40,6 +45,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/arraylist/</loc>
+    <lastmod>2019-04-07T14:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/bigdecimal/</loc>
     <lastmod>2019-03-30T14:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -70,13 +81,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-04-04T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-07T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-04-04T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-07T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -88,13 +99,13 @@
   
   <url>
     <loc>https://simplesolution.dev/posts/</loc>
-    <lastmod>2019-04-04T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-07T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-04-04T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-07T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 14:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use Java ArrayList with Examples</title>
+      <link>https://simplesolution.dev/how-to-use-java-arraylist-with-examples/</link>
+      <pubDate>Sun, 07 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/how-to-use-java-arraylist-with-examples/</guid>
+      <description>In this tutorial we will go through a list of examples to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList. ArrayList is an implementation of List interface with class diagram as below:
+How to add one element to an ArrayList There are two approaches to add an element to ArrayList which is append it to the end of the list or you can insert it to specified index position List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();list.</description>
+    </item>
     
     <item>
       <title>How to use Java ArrayDeque with Examples</title>

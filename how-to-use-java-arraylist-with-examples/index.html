@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>How to use Java ArrayList with Examples | Simple Solution</title>
+    <meta name="title" content="How to use Java ArrayList with Examples | Simple Solution">
+    <meta name="description" content="In this turial we will go through a list of example to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/how-to-use-java-arraylist-with-examples/">
+    <meta property="og:title" content="How to use Java ArrayList with Examples | Simple Solution">
+    <meta property="og:description" content="In this turial we will go through a list of example to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList.">
+    <meta property="og:image" content="https://simplesolution.dev/images/how-to-use-Java-ArrayList-with-examples.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/how-to-use-Java-ArrayList-with-examples.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/how-to-use-java-arraylist-with-examples/">
+    <meta property="twitter:title" content="How to use Java ArrayList with Examples | Simple Solution">
+    <meta property="twitter:description" content="In this turial we will go through a list of example to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/how-to-use-Java-ArrayList-with-examples.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logo.png" alt="Simple Solution logo" height="64" />
+    </a>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">How to use Java ArrayList with Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this tutorial we will go through a list of examples to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList. ArrayList is an implementation of List interface with class diagram as below:</p>
+
+<p><img src="/images/ArrayList-class-diagram.png" alt="Java ArrayList class diagram" /></p>
+
+<h4 id="how-to-add-one-element-to-an-arraylist">How to add one element to an ArrayList</h4>
+
+<p>There are two approaches to add an element to ArrayList which is append it to the end of the list or you can insert it to specified index position
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span></code></pre></div></p>
+
+<h4 id="how-to-add-a-list-of-elements-to-an-arraylist">How to add a list of elements to an ArrayList</h4>
+
+<p>There are also two approaches to add list of elements to ArrayList
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list1<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list1<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list1<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+
+List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list2<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+list2<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Add all elements of list2 to list1
+</span><span style="color:#75715e"></span>list1<span style="color:#f92672">.</span><span style="color:#a6e22e">addAll</span><span style="color:#f92672">(</span>list2<span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list1<span style="color:#f92672">);</span>
+
+List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list3<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C#&#34;</span><span style="color:#f92672">);</span>
+list3<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Add all elements of list3 to list1 at a specified index
+</span><span style="color:#75715e"></span>list1<span style="color:#f92672">.</span><span style="color:#a6e22e">addAll</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> list3<span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list1<span style="color:#f92672">);</span></code></pre></div></p>
+
+<h4 id="different-methods-to-access-element-of-an-arraylist">Different methods to access element of an ArrayList</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C#&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// get element by its index
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>0<span style="color:#f92672">));</span>
+
+<span style="color:#75715e">// get index of specified element
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">));</span>
+
+<span style="color:#75715e">// get last index in list of an specified element
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">lastIndexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">));</span>
+
+<span style="color:#75715e">// get a sub list of elements by start and end index
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">subList</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> 4<span style="color:#f92672">));</span></code></pre></div>
+
+<h4 id="checking-element-is-contains-in-an-arraylist">Checking element is contains in an ArrayList</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">));</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">));</span></code></pre></div>
+
+<h4 id="checking-an-arraylist-if-empty-or-not">Checking an ArrayList if empty or not</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+<span style="color:#75715e">// check the list is empty or not before adding element 
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">());</span>
+
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#75715e">// check the list is empty or not after adding element
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">());</span></code></pre></div>
+
+<h4 id="updating-elements-of-an-arraylist">Updating elements of an ArrayList</h4>
+
+<p>There are different methods to update elements of ArrayList:</p>
+
+<ul>
+<li><strong>retainAll</strong> to update ArrayList that retain only elements that include in a collection in argument</li>
+<li><strong>set</strong> to replace the element at specified index</li>
+<li><strong>replaceAll</strong> to replace all element of a list with the result of lambda expression</li>
+<li><strong>size</strong> to get the size of an ArrayList</li>
+</ul>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C#&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JS&#34;</span><span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list2<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list2<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JS&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#75715e">// Retain in list which element exist in list2
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">retainAll</span><span style="color:#f92672">(</span>list2<span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Update element from JS to JavaScript
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">set</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+<span style="color:#75715e">// Replace all element which result return from lambda expression
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">replaceAll</span><span style="color:#f92672">(</span>element <span style="color:#f92672">-&gt;</span> element <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; Programming Language&#34;</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// get the size of ArrayList
+</span><span style="color:#75715e"></span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">());</span></code></pre></div>
+
+<h2 id="removing-elements-from-an-arraylist">Removing elements from an ArrayList</h2>
+
+<p>There are 5 different methods to remove elements from an ArrayList</p>
+
+<ul>
+<li><strong>remove(int index)</strong> to remove an element at a specified index</li>
+<li><strong>remove(Object element)</strong> to remove the first occurrence element</li>
+<li><strong>removeIf</strong> to remove all element that satisfy the lambda expression</li>
+<li><strong>removeAll</strong> to remove all element existing in argument collection</li>
+<li><strong>clear</strong> to remove all element of ArrayList</li>
+</ul>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C#&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Kotlin&#34;</span><span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Remove by index
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Remove by element value
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Remove if the lambda expression return true
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">removeIf</span><span style="color:#f92672">(</span>element <span style="color:#f92672">-&gt;</span> element<span style="color:#f92672">.</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">));</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list2<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+list2<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Kotlin&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#75715e">// Remove all element in list that exist in list2
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">removeAll</span><span style="color:#f92672">(</span>list2<span style="color:#f92672">);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+<span style="color:#75715e">// Remove all elements
+</span><span style="color:#75715e"></span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">clear</span><span style="color:#f92672">();</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span></code></pre></div>
+
+<h4 id="different-approaches-to-loop-through-elements-of-an-arraylist">Different approaches to loop through elements of an ArrayList</h4>
+
+<p>In below example we are showing you 4 different solutions to loop elements of an ArrayList in Java.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution 1: Loop Element using for loop&#34;</span><span style="color:#f92672">);</span>
+<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0 <span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">));</span>
+<span style="color:#f92672">}</span>
+
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>element <span style="color:#f92672">-&gt;</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>element<span style="color:#f92672">)</span> <span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution 2: Loop Element using listIterator&#34;</span><span style="color:#f92672">);</span>
+ListIterator<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> listIterator <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">listIterator</span><span style="color:#f92672">();</span>
+<span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>listIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>listIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution 3: Loop Element using iterator&#34;</span><span style="color:#f92672">);</span>
+Iterator<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> iterator <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">iterator</span><span style="color:#f92672">();</span>
+<span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>iterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+    System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>iterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution 4: Loop Element using spliterator&#34;</span><span style="color:#f92672">);</span>
+Spliterator<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> spliterator <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">spliterator</span><span style="color:#f92672">();</span>
+spliterator<span style="color:#f92672">.</span><span style="color:#a6e22e">forEachRemaining</span><span style="color:#f92672">(</span>element <span style="color:#f92672">-&gt;</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>element<span style="color:#f92672">));</span></code></pre></div></p>
+
+<h4 id="how-to-sort-an-arraylist">How to sort an ArrayList</h4>
+
+<p>In below example we are showing you 2 solutions to sort elements in an ArrayList.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C#&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+Collections<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>list<span style="color:#f92672">,</span> Collections<span style="color:#f92672">.</span><span style="color:#a6e22e">reverseOrder</span><span style="color:#f92672">());</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
+
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Comparator<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;()</span> <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>String o1<span style="color:#f92672">,</span> String o2<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> o1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>o2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">});</span>
+
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span></code></pre></div>
+
+<h4 id="convert-arraylist-to-java-array">Convert ArrayList to Java array</h4>
+
+<p>ArrayList class provides 2 methods to allow you convert an ArrayList object into an array.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ArrayList<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C++&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Python&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Go&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C#&#34;</span><span style="color:#f92672">);</span>
+list<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">);</span>
+
+Object<span style="color:#f92672">[]</span> objectArray <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">toArray</span><span style="color:#f92672">();</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>objectArray<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">);</span>
+
+String<span style="color:#f92672">[]</span> stringArray <span style="color:#f92672">=</span> list<span style="color:#f92672">.</span><span style="color:#a6e22e">toArray</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> String<span style="color:#f92672">[</span>0<span style="color:#f92672">]);</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stringArray<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>That&rsquo;s all for a simple solution examples how to use java.util.ArrayList class in Java.
+The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/ArrayListExamples">https://github.com/simplesolutiondev/ArrayListExamples</a></p>
+
+<p>Happy Coding :)</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/arraylist">ArrayList</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
