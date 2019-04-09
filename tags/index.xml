@@ -77,9 +77,18 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Sun, 07 Apr 2019 14:00:00 +0700</pubDate>
+      <pubDate>Mon, 08 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jetty</title>
+      <link>https://simplesolution.dev/tag/jetty/</link>
+      <pubDate>Mon, 08 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/jetty/</guid>
       <description></description>
     </item>
     

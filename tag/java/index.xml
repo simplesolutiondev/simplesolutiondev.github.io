@@ -6,10 +6,23 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 08 Apr 2019 14:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating File Server with Embedded Jetty Server in Java</title>
+      <link>https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/</link>
+      <pubDate>Mon, 08 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/</guid>
+      <description>In this tutorial you will learn simple step by step to write an Java application which using Embedding Jetty API to creating a static file server.
+The very first step you need to do is add Jetty Server dependency to your project.
+Using Gradle compile group: &amp;#39;org.eclipse.jetty&amp;#39;, name: &amp;#39;jetty-server&amp;#39;, version: &amp;#39;9.4.15.v20190215&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.eclipse.jetty&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jetty-server&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;9.4.15.v20190215&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+To listen HTTP request at a specified port we need to create org.</description>
+    </item>
     
     <item>
       <title>How to use Java ArrayList with Examples</title>

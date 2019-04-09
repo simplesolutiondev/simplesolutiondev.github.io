@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Creating File Server with Embedded Jetty Server in Java | Simple Solution</title>
+    <meta name="title" content="Creating File Server with Embedded Jetty Server in Java | Simple Solution">
+    <meta name="description" content="In this tutorial you will learn simple step by step to write an Java application which using Embedding Jetty  API to creating a static file server.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/">
+    <meta property="og:title" content="Creating File Server with Embedded Jetty Server in Java | Simple Solution">
+    <meta property="og:description" content="In this tutorial you will learn simple step by step to write an Java application which using Embedding Jetty  API to creating a static file server.">
+    <meta property="og:image" content="https://simplesolution.dev/images/creating-file-server-with-embedded-jetty-server-in-java.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/creating-file-server-with-embedded-jetty-server-in-java.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/">
+    <meta property="twitter:title" content="Creating File Server with Embedded Jetty Server in Java | Simple Solution">
+    <meta property="twitter:description" content="In this tutorial you will learn simple step by step to write an Java application which using Embedding Jetty  API to creating a static file server.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/creating-file-server-with-embedded-jetty-server-in-java.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logo.png" alt="Simple Solution logo" height="64" />
+    </a>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logo.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Creating File Server with Embedded Jetty Server in Java</h1></div>
+                    <div class="blog-detail-description">
+                        <p>In this tutorial you will learn simple step by step to write an Java application which using Embedding Jetty  API to creating a static file server.</p>
+
+<p>The very first step you need to do is add Jetty Server dependency to your project.</p>
+
+<p>Using Gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.eclipse.jetty&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jetty-server&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;9.4.15.v20190215&#39;</span></code></pre></div></p>
+
+<p>Using Maven
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.eclipse.jetty<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jetty-server<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>9.4.15.v20190215<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>To listen HTTP request at a specified port we need to create <strong>org.eclipse.jetty.server.Server</strong> object and provide port number.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Server server <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Server<span style="color:#f92672">(</span>9090<span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>In order to serve static file via the port above we are creating <strong>org.eclipse.jetty.server.handler.ResourceHandler</strong> object. This object will handle requests and serve static contents.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ResourceHandler resourceHandler <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ResourceHandler<span style="color:#f92672">();</span></code></pre></div></p>
+
+<p>To enable our file server to show directories we need to set directory allow to true.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">resourceHandler<span style="color:#f92672">.</span><span style="color:#a6e22e">setDirAllowed</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>Then configure where to read files to serve by setting resource base, for example code below to set current directory of the program:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">resourceHandler<span style="color:#f92672">.</span><span style="color:#a6e22e">setResourceBase</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">);</span></code></pre></div></p>
+
+<p>Final step to set resource handle object to server and start your file server.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">server<span style="color:#f92672">.</span><span style="color:#a6e22e">setHandler</span><span style="color:#f92672">(</span>resourceHandler<span style="color:#f92672">);</span>
+
+server<span style="color:#f92672">.</span><span style="color:#a6e22e">start</span><span style="color:#f92672">();</span>
+server<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<p>Notice that we have server.join() method above to join the Embedded Jetty server thread with the current application thread.</p>
+
+<p>That&rsquo;s all you need for a simple file server using Embedded Jetty, the full source code look like below:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.eclipse.jetty.server.Server<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.eclipse.jetty.server.handler.ResourceHandler<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EmbeddedJettyFileServer</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+        Server server <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Server<span style="color:#f92672">(</span>9090<span style="color:#f92672">);</span>
+
+        ResourceHandler resourceHandler <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ResourceHandler<span style="color:#f92672">();</span>
+        resourceHandler<span style="color:#f92672">.</span><span style="color:#a6e22e">setDirAllowed</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        resourceHandler<span style="color:#f92672">.</span><span style="color:#a6e22e">setResourceBase</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">);</span>
+        server<span style="color:#f92672">.</span><span style="color:#a6e22e">setHandler</span><span style="color:#f92672">(</span>resourceHandler<span style="color:#f92672">);</span>
+
+        server<span style="color:#f92672">.</span><span style="color:#a6e22e">start</span><span style="color:#f92672">();</span>
+        server<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Let run above program then open your browser and navigate to <a href="http://localhost:9090">http://localhost:9090</a> you will see the static files will serve as below:</p>
+
+<p><img src="/images/file-server-powered-by-embedded-jetty.png" alt="File Server powered by Embedded Jetty" /></p>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/EmbeddedJettyFileServer">https://github.com/simplesolutiondev/EmbeddedJettyFileServer</a></p>
+
+<p>Happy Coding!</p>
+
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jetty">Jetty</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
