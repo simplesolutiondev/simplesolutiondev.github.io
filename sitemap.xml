@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-base64-encoding-decoding-apache-commons-codec/</loc>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/</loc>
     <lastmod>2019-04-08T14:00:00+07:00</lastmod>
   </url>
@@ -35,6 +40,12 @@
   <url>
     <loc>https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/</loc>
     <lastmod>2019-03-26T20:34:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/apache-commons/</loc>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -86,13 +97,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-04-08T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-04-08T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -110,13 +121,13 @@
   
   <url>
     <loc>https://simplesolution.dev/posts/</loc>
-    <lastmod>2019-04-08T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-04-08T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -128,7 +139,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
-    <lastmod>2019-03-26T20:34:25+07:00</lastmod>
+    <lastmod>2019-04-09T14:00:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

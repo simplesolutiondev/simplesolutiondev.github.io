@@ -6,10 +6,22 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 09 Apr 2019 14:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Base64 Encoding and Decoding with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-base64-encoding-decoding-apache-commons-codec/</link>
+      <pubDate>Tue, 09 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-base64-encoding-decoding-apache-commons-codec/</guid>
+      <description>In this tutorial you will learn how to encoding and decoding a String in Java using Apache Commons Codec library. The library provide org.apache.commons.codec.binary.Base64 class with different methods to encode and decode data.
+Adding Dependency Define below dependency in build.gradle if you are using gradle. compile group: &amp;#39;commons-codec&amp;#39;, name: &amp;#39;commons-codec&amp;#39;, version: &amp;#39;1.12&amp;#39;
+Define this dependency in pom.xml if you are using maven. &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;commons-codec&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;commons-codec&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.12&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+Or you can download the release from Apache Commons Codec home page at: here</description>
+    </item>
     
     <item>
       <title>Creating File Server with Embedded Jetty Server in Java</title>
