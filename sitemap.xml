@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.readlines/</loc>
+    <lastmod>2019-04-17T01:02:10+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.lineiterator/</loc>
     <lastmod>2019-04-17T01:01:10+07:00</lastmod>
   </url>
@@ -250,7 +255,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-io/</loc>
-    <lastmod>2019-04-17T01:01:10+07:00</lastmod>
+    <lastmod>2019-04-17T01:02:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -327,13 +332,13 @@
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2019-04-17T01:01:10+07:00</lastmod>
+    <lastmod>2019-04-17T01:02:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2019-04-17T01:01:10+07:00</lastmod>
+    <lastmod>2019-04-17T01:02:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -363,7 +368,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-04-17T01:01:10+07:00</lastmod>
+    <lastmod>2019-04-17T01:02:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
