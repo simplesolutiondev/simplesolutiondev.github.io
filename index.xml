@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Apr 2019 17:55:10 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Commons IO to copy file content from InputStream to OutputStream</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.copy/</link>
+      <pubDate>Wed, 17 Apr 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.copy/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.copy()
+Example code below to show how to use IOUtils class of Apache Commons IO library to copy file content from an InputStream to an OutputStream.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.File;import java.io.FileOutputStream;import java.io.InputStream;import java.io.OutputStream;import java.io.IOException;import java.nio.file.Files;import java.nio.file.Path;public class IOUtilsCopyExample {public static void main(String... args) {try {String sourceFileName = &amp;#34;D:\\Data\\sample.</description>
+    </item>
     
     <item>
       <title>Apache POI to Create Excel Date Time Cell in m/d/yy h:mm:ss Format</title>
