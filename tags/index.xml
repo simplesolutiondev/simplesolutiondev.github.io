@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2019 14:00:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache Commons</title>
       <link>https://simplesolution.dev/tag/apache-commons/</link>
-      <pubDate>Tue, 09 Apr 2019 14:00:00 +0700</pubDate>
+      <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Tue, 09 Apr 2019 14:00:00 +0700</pubDate>
+      <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
       <description></description>
@@ -107,6 +107,15 @@
       <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sha 1</title>
+      <link>https://simplesolution.dev/tag/sha-1/</link>
+      <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/sha-1/</guid>
       <description></description>
     </item>
     

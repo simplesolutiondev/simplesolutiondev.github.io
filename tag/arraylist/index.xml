@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/how-to-use-java-arraylist-with-examples/</guid>
       <description>In this tutorial we will go through a list of examples to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList. ArrayList is an implementation of List interface with class diagram as below:
-How to add one element to an ArrayList There are two approaches to add an element to ArrayList which is append it to the end of the list or you can insert it to specified index position List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();list.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add one element to an ArrayList There are two approaches to add an element to ArrayList which is append it to the end of the list or you can insert it to specified index position List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();list.</description>
     </item>
     
   </channel>

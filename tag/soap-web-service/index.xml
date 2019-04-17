@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/gradle-configuration-to-generate-java-classes-from-wsdl-with-jaxb/</guid>
       <description>In this blog post we will learn the step by step guide to configure gradle build file in order to generate Java classes from a WSDL file. This configure will be useful when you are working on project related to SOAP web service.
-Let start with an empty Java project with build.gradle file as below group &amp;#39;simplesolution.dev&amp;#39;version &amp;#39;1.0.0&amp;#39;apply plugin: &amp;#39;java&amp;#39;sourceCompatibility = 1.8repositories {mavenCentral()}dependencies {}</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Let start with an empty Java project with build.gradle file as below group &amp;#39;simplesolution.dev&amp;#39;version &amp;#39;1.0.0&amp;#39;apply plugin: &amp;#39;java&amp;#39;sourceCompatibility = 1.</description>
     </item>
     
   </channel>
