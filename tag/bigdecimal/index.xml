@@ -6,10 +6,120 @@
     <description>Recent content in Bigdecimal on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Mar 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2019 17:40:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/bigdecimal/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert BigDecimal value to byte value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.bytevalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:40:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.bytevalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.byteValue()
+This method to convert a BigDecimal value to byte value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalByteValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;9.01&amp;#34;);byte byteValue = bigDecimal.byteValue();System.out.println(bigDecimal);System.out.println(byteValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into short value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.shortvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:39:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.shortvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.shortValue()
+This method to convert a BigDecimal value to short value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalShortValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;9.01&amp;#34;);short shortValue = bigDecimal.shortValue();System.out.println(bigDecimal);System.out.println(shortValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into long value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.longvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:38:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.longvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.longValue()
+This method to convert a BigDecimal value to long value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalLongValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;999999999.01&amp;#34;);long longValue = bigDecimal.longValue();System.out.println(bigDecimal);System.out.println(longValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into int value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.intvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:37:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.intvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.intValue()
+This method to convert a BigDecimal value to int value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalIntValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);int intValue = bigDecimal.intValue();System.out.println(bigDecimal);System.out.println(intValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into float value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.floatvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:36:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.floatvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.floatValue()
+This method to convert a BigDecimal value to float value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalFloatValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);float floatValue = bigDecimal.floatValue();System.out.println(bigDecimal);System.out.println(floatValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into double value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.doublevalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:35:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.doublevalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.doubleValue()
+This method to convert a BigDecimal value to double value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalDoubleValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);double doubleValue = bigDecimal.doubleValue();System.out.println(bigDecimal);System.out.println(doubleValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Divide two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.divide/</link>
+      <pubDate>Sat, 13 Apr 2019 17:34:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.divide/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.divide()
+This method to divide two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalDivideExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;40.04&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.01&amp;#34;);BigDecimal result = bigDecimal1.divide(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Multiply two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.multiply/</link>
+      <pubDate>Sat, 13 Apr 2019 17:33:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.multiply/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.multiply()
+This method to multiply two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalMultiplyExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;30.01&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.2&amp;#34;);BigDecimal result = bigDecimal1.multiply(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Subtract two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.subtract/</link>
+      <pubDate>Sat, 13 Apr 2019 17:32:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.subtract/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.subtract()
+This method to substact two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalSubtractExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;20.02&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.01&amp;#34;);BigDecimal result = bigDecimal1.subtract(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Adding two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.add/</link>
+      <pubDate>Sat, 13 Apr 2019 17:31:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.add/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.add()
+This method to add two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalAddExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;10.001&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.002&amp;#34;);BigDecimal result = bigDecimal1.add(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>How to use BigDecimal in Java by Examples</title>

@@ -6,10 +6,109 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2019 17:53:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Commons IO to Compare File Content of InputStream or Reader using IOUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.contentequals/</link>
+      <pubDate>Sat, 13 Apr 2019 17:53:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.contentequals/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.contentEquals() and org.apache.commons.io.IOUtils.contentEqualsIgnoreEOL()
+Three examples below to show how to use Apache Commons IO IOUtils class to Compare File Content of InputStream objects or Reader objects.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example IOUtils.contentEquals() method to compare 2 InputStream objects package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.File;import java.io.IOException;import java.io.InputStream;import java.nio.file.Files;import java.nio.file.Path;public class IOUtilsContentEqualsInputStreamExample {public static void main(String... args) {try {File file1 = new File(&amp;#34;D:\\Data\\file1.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to download website content from URL using IOUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-url/</link>
+      <pubDate>Sat, 13 Apr 2019 17:52:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-url/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+Below Java code example to show you how to use Apache Commons IO IOUtils class to download website content from java.net.URL.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.Charsets;import org.apache.commons.io.IOUtils;import java.io.IOException;import java.net.URL;public class IOUtilToStringFromURLExample {public static void main(String... args) {try {URL uri = new URL(&amp;#34;https://simplesolution.dev/java-code-examples/&amp;#34;);String content = IOUtils.toString(uri, Charsets.UTF_8);System.out.println(content);} catch (IOException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to download website content from URI using IOUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-uri/</link>
+      <pubDate>Sat, 13 Apr 2019 17:51:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-uri/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+Below Java code example to show you how to use Apache Commons IO IOUtils class to download website content from java.net.URI.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.Charsets;import org.apache.commons.io.IOUtils;import java.io.IOException;import java.net.URI;import java.net.URISyntaxException;public class IOUtilToStringFromURIExample {public static void main(String... args) {try {URI uri = new URI(&amp;#34;https://simplesolution.dev/&amp;#34;);String content = IOUtils.toString(uri, Charsets.UTF_8);System.out.println(content);} catch (URISyntaxException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to read text content from Reader</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-reader/</link>
+      <pubDate>Sat, 13 Apr 2019 17:50:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-reader/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+The example below to show you how to use Apache Commons IO libary&amp;rsquo;s IOUtils class to read text content from Reader.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.FileReader;import java.io.IOException;import java.io.Reader;public class IOUtilToStringFromReaderExample {public static void main(String... args) {String fileName = &amp;#34;D:\\data\\sample.txt&amp;#34;;try(Reader reader = new FileReader(fileName)) {String fileContent = IOUtils.toString(reader);System.out.println(fileContent);} catch (IOException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to read text content from InputStream</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-input-stream/</link>
+      <pubDate>Sat, 13 Apr 2019 17:49:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-input-stream/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+The example below to show you how to use Apache Commons IO libary&amp;rsquo;s IOUtils class to read text content from InputStream.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.FileInputStream;import java.io.IOException;import java.io.InputStream;public class IOUtilToStringFromInputStreamExample {public static void main(String... args) {String fileName = &amp;#34;D:\\data\\sample.txt&amp;#34;;try(InputStream inputStream = new FileInputStream(fileName)) {String value = IOUtils.toString(inputStream, &amp;#34;UTF-8&amp;#34;);System.</description>
+    </item>
+    
+    <item>
+      <title>Encode a String into Base64 using Base64.encodeBase64String() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64string/</link>
+      <pubDate>Sat, 13 Apr 2019 17:44:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64string/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encodeBase64String()
+This static method to encode input String into a Base64 format String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeBase64StringExamples {public static void main(String... args) {String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;String encodedString = Base64.encodeBase64String(valueToEncode.getBytes());System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Encode byte array into Base64 format using Base64.encodeBase64() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64/</link>
+      <pubDate>Sat, 13 Apr 2019 17:43:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encodeBase64()
+This static method to encode input byte array into a Base64 format.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeBase64Examples {public static void main(String... args) {String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;byte[] encodedBytes = Base64.encodeBase64(valueToEncode.getBytes());String encodedString = new String(encodedBytes);System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Encode a String into Base64 format using Base64.encodeToString() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodetostring/</link>
+      <pubDate>Sat, 13 Apr 2019 17:42:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodetostring/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encodeToString()
+This method to encode input String into a Base64 format String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeToStringExamples {public static void main(String... args) {Base64 base64 = new Base64();String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;String encodedString = base64.encodeToString(valueToEncode.getBytes());System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Encode byte array into Base64 format using Base64.encode() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encode/</link>
+      <pubDate>Sat, 13 Apr 2019 17:41:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encode/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encode()
+This method to encode input byte array to Base64 format.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeExamples {public static void main(String... args) {Base64 base64 = new Base64();String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;byte[] encodedBytes = base64.encode(valueToEncode.getBytes());String encodedString = new String(encodedBytes);System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Java Generate SHA-1 using DigestUtils in Apache Commons Codec</title>

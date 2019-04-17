@@ -234,13 +234,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2019-04-10T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-13T17:53:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-poi/</loc>
-    <lastmod>2019-03-26T20:34:25+07:00</lastmod>
+    <lastmod>2019-04-13T17:55:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -258,12 +258,24 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/bigdecimal/</loc>
-    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-13T17:40:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/crypto/</loc>
+    <lastmod>2019-04-13T17:45:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/date-and-time/</loc>
+    <lastmod>2019-04-13T17:48:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,7 +329,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2019-03-30T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-13T17:30:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -347,7 +359,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
-    <lastmod>2019-04-10T14:00:00+07:00</lastmod>
+    <lastmod>2019-04-13T17:53:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   

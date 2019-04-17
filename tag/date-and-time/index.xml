@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Date and Time on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/date-and-time/</link>
+    <description>Recent content in Date and Time on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Apr 2019 17:48:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/date-and-time/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get First Date of Current Month using Calendar</title>
+      <link>https://simplesolution.dev/java-code-examples/java.util.calendar.gettime.firstdateofmonth/</link>
+      <pubDate>Sat, 13 Apr 2019 17:48:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.util.calendar.gettime.firstdateofmonth/</guid>
+      <description>Java Code Examples for java.util.Calendar
+Get First Date of Current Month using Calendar.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.util.Calendar;import java.util.Date;public class CalendarFirstDayOfMonthExamples {public static void main(String... args) {Calendar calendar = Calendar.getInstance();Date currentDate = new Date();calendar.setTime(currentDate);calendar.set(Calendar.DAY_OF_MONTH, 1);calendar.set(Calendar.HOUR_OF_DAY, 0);calendar.set(Calendar.MINUTE, 0);calendar.set(Calendar.SECOND, 0);calendar.set(Calendar.MILLISECOND, 0);Date firstDateOfMonth = calendar.getTime();System.out.println(firstDateOfMonth);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Get Last Date of Current Month using Calendar</title>
+      <link>https://simplesolution.dev/java-code-examples/java.util.calendar-last-date-of-month/</link>
+      <pubDate>Sat, 13 Apr 2019 17:48:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.util.calendar-last-date-of-month/</guid>
+      <description>Java Code Examples for java.util.Calendar
+Get Last Date of Current Month using Calendar
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.util.Calendar;import java.util.Date;public class CalendarLastDateOfMonthExamples {public static void main(String... args) {Calendar calendar = Calendar.getInstance();Date currentDate = new Date();calendar.setTime(currentDate);calendar.set(Calendar.DAY_OF_MONTH, 1);calendar.set(Calendar.HOUR_OF_DAY, 0);calendar.set(Calendar.MINUTE, 0);calendar.set(Calendar.SECOND, 0);calendar.set(Calendar.MILLISECOND, 0);calendar.add(Calendar.MONTH, 1);calendar.add(Calendar.MILLISECOND, -1);Date lastDateOfCurrentMonth = calendar.getTime();System.out.println(lastDateOfCurrentMonth);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Parses a String value to Date value with given format yyyy-MM-dd HH:mm:ss</title>
+      <link>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.parse/</link>
+      <pubDate>Sat, 13 Apr 2019 17:47:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.parse/</guid>
+      <description>Java Code Examples for java.text.SimpleDateFormat.parse()
+Parses a String value to Date value with given format yyyy-MM-dd HH:mm:ss.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.text.ParseException;import java.text.SimpleDateFormat;import java.util.Date;public class SimpleDateFormatParseExamples {public static void main(String... args) {try {SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;);String source = &amp;#34;2019-04-15 10:15:30&amp;#34;;Date date = simpleDateFormat.parse(source);System.out.println(date);} catch (ParseException ex) {ex.printStackTrace();}}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Formats a Date object into a string yyyy-MM-dd HH:mm:ss</title>
+      <link>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.format/</link>
+      <pubDate>Sat, 13 Apr 2019 17:46:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.format/</guid>
+      <description>Java Code Examples for java.text.SimpleDateFormat.format()
+Formats a Date into a string yyyy-MM-dd HH:mm:ss.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.text.SimpleDateFormat;import java.util.Date;public class SimpleDateFormatFormatExamples {public static void main(String... args) {SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;);Date dateToFormat = new Date();String formattedValue = simpleDateFormat.format(dateToFormat);System.out.println(formattedValue);}} Happy Coding 😊</description>
+    </item>
+    
+  </channel>
+</rss>
