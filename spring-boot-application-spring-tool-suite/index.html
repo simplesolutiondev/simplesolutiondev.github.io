@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Creating Spring Boot Application with Spring Tool Suite | Simple Solution</title>
+    <meta name="title" content="Creating Spring Boot Application with Spring Tool Suite | Simple Solution">
+    <meta name="description" content="In this article we will learn step by step guide to create a new Spring Boot web application using Spring Tool Suite.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-application-spring-tool-suite/">
+    <meta property="og:title" content="Creating Spring Boot Application with Spring Tool Suite | Simple Solution">
+    <meta property="og:description" content="In this article we will learn step by step guide to create a new Spring Boot web application using Spring Tool Suite.">
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-application-spring-tool-suite.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/spring-boot-application-spring-tool-suite.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/spring-boot-application-spring-tool-suite/">
+    <meta property="twitter:title" content="Creating Spring Boot Application with Spring Tool Suite | Simple Solution">
+    <meta property="twitter:description" content="In this article we will learn step by step guide to create a new Spring Boot web application using Spring Tool Suite.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/spring-boot-application-spring-tool-suite.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Creating Spring Boot Application with Spring Tool Suite</h1></div>
+                    <div class="blog-detail-description">
+                        <p>In this article we will learn step by step guide to create a new Spring Boot web application using Spring Tool Suite.</p>
+
+<p>You can download Spring Tool Suite from this <a href="https://spring.io/tools" target="_blank">link</a></p>
+
+<p>First step, open Spring Tool Suite on your machine and choose menu <strong>File -&gt; New -&gt; Spring Starter Project</strong></p>
+
+<p><img src="/images/new-spring-starter-project.png" alt="Open New Spring Starter Project Menu" class="img-fluid"></p>
+
+<p>Then input new project information on <strong>New Spring Starter Project</strong> popup as below and click on Next button.</p>
+
+<p><img src="/images/new-spring-starter-project-option.png" alt="Input New Spring Starter Project Options" class="img-fluid"></p>
+
+<p>Choose dependencies for your Spring Boot project on <strong>New Spring Starter Project Dependencies</strong> popup, in this example we only choose Web dependency to create a simple web application, then click on Next button.</p>
+
+<p><img src="/images/new-spring-starter-project-dependencies.png" alt="Choose New Spring Starter Project Dependencies" class="img-fluid"></p>
+
+<p>Before finish creating project, Spring Tool Suite will show to you the link that you can manually download the project online. Let click on Finish button to finish creating propject.</p>
+
+<p><img src="/images/spring-starter-project-finish.png" alt="Finish Creating Spring Starter Project" class="img-fluid"></p>
+
+<p>After finish creating, we get the new project with structure as below screenshot. There is a main class generated to bootstrap the Spring Boot application by using SpringApplication.run() method.</p>
+
+<p><img src="/images/spring-boot-project-structure-and-main-class.png" alt="Spring Boot Project Structure and main class" class="img-fluid"></p>
+
+<p>Now you can run the created Spring Boot application by click on <strong>Run icon -&gt; Run As -&gt; Spring Boot App</strong></p>
+
+<p><img src="/images/run-spring-boot-application.png" alt="Run Spring Boot application" class="img-fluid"></p>
+
+<p>During the Spring Boot application starting you can see the log of application in Console window as below.</p>
+
+<p><img src="/images/spring-boot-application-run-console.png" alt="Spring Boot Application Run Console" class="img-fluid"></p>
+
+<p>After finish starting the application, the embedded Tomcat server by default started at port 8080 to serve your web application. Let open the web application on browser via URL <a href="http://localhost:8080/">http://localhost:8080/</a> to see the default error page as below as we are not implement any feature for the app.</p>
+
+<p><img src="/images/spring-boot-whitelabel-error-page.png" alt="Spring Boot Whitelabel Error Page" class="img-fluid"></p>
+
+<p>Next step, create first controller class for our application by right click on package and choose <strong>New -&gt; Class</strong></p>
+
+<p><img src="/images/create-new-controller-class.png" alt="Creating New Controller class" class="img-fluid"></p>
+
+<p>And input new class information as below screenshot then click Finish button.</p>
+
+<p><img src="/images/hello-controller-class.png" alt="Creating HelloController class" class="img-fluid"></p>
+
+<p>A new HelloController.java class will be created, then we implement a simple controller to show a message when user access the web app.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestMapping<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RestController<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@RestController</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/hello&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">hello</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Hello Message from simplesolution.dev&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Re run the application and open browser the URL <a href="http://localhost:8080/hello">http://localhost:8080/hello</a> to observe the result.</p>
+
+<p><img src="/images/hello-controller-result-in-browser.png" alt="Creating HelloController class" class="img-fluid"></p>
+
+<p>That&rsquo;s all we need to know to create a simple Spring Boot Web application using Spring Tool Suite.</p>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/FirstSpringBootApp">https://github.com/simplesolutiondev/FirstSpringBootApp</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:1050px"
+                        data-ad-client="ca-pub-4970454579445266"
+                        data-ad-slot="3244950878"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

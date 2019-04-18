@@ -113,7 +113,7 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
+      <pubDate>Thu, 18 Apr 2019 01:02:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
       <description></description>
@@ -152,6 +152,15 @@
       <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/soap-web-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://simplesolution.dev/tag/spring-boot/</link>
+      <pubDate>Thu, 18 Apr 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/spring-boot/</guid>
       <description></description>
     </item>
     
