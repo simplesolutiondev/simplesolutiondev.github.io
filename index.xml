@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 01:02:10 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Apr 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Vertical and Horizontal Excel Cell Alignment</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-vertical-horizontal-excel-cell-alignment/</link>
+      <pubDate>Mon, 22 Apr 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-vertical-horizontal-excel-cell-alignment/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.HorizontalAlignment org.apache.poi.ss.usermodel.VerticalAlignment  There are nine examples below to show how to use Apache POI library to create Excel cells with different aligment.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example Left Top Excel Cell Alignment package simplesolution.dev;import org.apache.poi.ss.usermodel.CellStyle;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.ss.usermodel.HorizontalAlignment;import org.apache.poi.ss.usermodel.VerticalAlignment;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class CellStyleAlignmentLeftTopExample {public static void main(String.</description>
+    </item>
     
     <item>
       <title>Creating Spring Boot Application with Spring Tool Suite</title>
