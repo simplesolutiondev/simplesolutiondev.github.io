@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apache POI Excel Cell Border and Border Color | Simple Solution</title>
+    <meta name="title" content="Apache POI Excel Cell Border and Border Color | Simple Solution">
+    <meta name="description" content="Java Code Examples for org.apache.poi.ss.usermodel.CellStyle and org.apache.poi.ss.usermodel.BorderStyle and org.apache.poi.ss.usermodel.IndexedColors. Below 13 Java code examples to show how to use Apache POI to generate Excel files with different cell border formats such as thin, thick, medium, dashed, dot, slanted, hair, double. These examples also include code to set color for Excel cell border.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/">
+    <meta property="og:title" content="Apache POI Excel Cell Border and Border Color | Simple Solution">
+    <meta property="og:description" content="Java Code Examples for org.apache.poi.ss.usermodel.CellStyle and org.apache.poi.ss.usermodel.BorderStyle and org.apache.poi.ss.usermodel.IndexedColors. Below 13 Java code examples to show how to use Apache POI to generate Excel files with different cell border formats such as thin, thick, medium, dashed, dot, slanted, hair, double. These examples also include code to set color for Excel cell border.">
+    <meta property="og:image" content="https://simplesolution.dev/">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/">
+    <meta property="twitter:url" content="https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/">
+    <meta property="twitter:title" content="Apache POI Excel Cell Border and Border Color | Simple Solution">
+    <meta property="twitter:description" content="Java Code Examples for org.apache.poi.ss.usermodel.CellStyle and org.apache.poi.ss.usermodel.BorderStyle and org.apache.poi.ss.usermodel.IndexedColors. Below 13 Java code examples to show how to use Apache POI to generate Excel files with different cell border formats such as thin, thick, medium, dashed, dot, slanted, hair, double. These examples also include code to set color for Excel cell border.">
+    <meta property="twitter:image" content="https://simplesolution.dev/">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Apache POI Excel Cell Border and Border Color</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Java Code Examples for:</p>
+
+<ul>
+<li>org.apache.poi.ss.usermodel.CellStyle</li>
+<li>org.apache.poi.ss.usermodel.BorderStyle</li>
+<li>org.apache.poi.ss.usermodel.IndexedColors</li>
+</ul>
+
+<p>Below 13 Java code examples to show how to use Apache POI to generate Excel files with different cell border formats such as thin, thick, medium, dashed, dot, slanted, hair, double. These examples also include code to set color for Excel cell border.</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="example-for-thin-border-style-and-black-border-color">Example for thin border style and black border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleThinExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLACK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-thin-black.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for think border style and black border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-thin-black.png" alt="Excel output file for think border style and black border color" class="img-fluid"></p>
+
+<h4 id="example-for-medium-border-style-and-blue-border-color">Example for medium border style and blue border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleMediumExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-medium-blue.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for medium border style and blue border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-medium-blue.png" alt="Excel output file for medium border style and blue border color" class="img-fluid"></p>
+
+<h4 id="example-for-dashed-border-style-and-brown-border-color">Example for dashed border style and brown border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleDashedExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BROWN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BROWN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BROWN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BROWN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-dashed-brown.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for dashed border style and brown border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-dashed-brown.png" alt="Excel output file for dashed border style and brown border color" class="img-fluid"></p>
+
+<h4 id="example-for-dotted-border-style-and-coral-border-color">Example for dotted border style and coral border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleDottedExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOTTED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">CORAL</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOTTED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">CORAL</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOTTED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">CORAL</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOTTED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">CORAL</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-dotted-coral.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for dotted border style and coral border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-dotted-coral.png" alt="Excel output file for dotted border style and coral border color" class="img-fluid"></p>
+
+<h4 id="example-for-thick-border-style-and-gold-border-color">Example for thick border style and gold border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleThickExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GOLD</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GOLD</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GOLD</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GOLD</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-thick-gold.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for thick border style and gold border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-thick-gold.png" alt="Excel output file for thick border style and gold border color" class="img-fluid"></p>
+
+<h4 id="example-for-double-border-style-and-green-border-color">Example for double border style and green border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleDoubleExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOUBLE</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GREEN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOUBLE</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GREEN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOUBLE</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GREEN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DOUBLE</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GREEN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-double-green.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for double border style and green border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-double-green.png" alt="Excel output file for double border style and green border color" class="img-fluid"></p>
+
+<h4 id="example-for-hair-border-style-and-indigo-border-color">Example for hair border style and indigo border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleHairExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">HAIR</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">INDIGO</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">HAIR</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">INDIGO</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">HAIR</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">INDIGO</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">HAIR</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">INDIGO</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-hair-indigo.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for hair border style and indigo border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-hair-indigo.png" alt="Excel output file for hair border style and indigo border color" class="img-fluid"></p>
+
+<h4 id="example-for-medium-dashed-border-style-and-lavender-border-color">Example for medium dashed border style and lavender border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleMediumDashedExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LAVENDER</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LAVENDER</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LAVENDER</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASHED</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LAVENDER</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-medium-dashed-lavender.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for medium dashed border style and lavender border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-medium-dashed-lavender.png" alt="Excel output file for medium dashed border style and lavender border color" class="img-fluid"></p>
+
+<h4 id="example-for-dash-dot-border-style-and-lime-border-color">Example for dash dot border style and lime border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleDashDotExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIME</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIME</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIME</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIME</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-dash-dot-lime.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for dash dot border style and lime border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-dash-dot-lime.png" alt="Excel output file for dash dot border style and lime border color" class="img-fluid"></p>
+
+<h4 id="example-for-medium-dash-dot-border-style-and-maroom-border-color">Example for medium dash dot border style and maroom border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleMediumDashDotExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">MAROON</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">MAROON</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">MAROON</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">MAROON</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-medium-dash-dot-maroom.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for medium dash dot border style and maroom border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-medium-dash-dot-maroom.png" alt="Excel output file for medium dash dot border style and maroom border color" class="img-fluid"></p>
+
+<h4 id="example-for-dash-dot-dot-border-style-and-orange-border-color">Example for dash dot dot border style and orange border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleDashDotDotExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-dash-dot-dot-orange.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for dash dot dot border style and orange border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-dash-dot-dot-orange.png" alt="Excel output file for dash dot dot border style and orange border color" class="img-fluid"></p>
+
+<h4 id="example-for-medium-dash-dot-dot-border-style-and-orchid-border-color">Example for medium dash dot dot border style and orchid border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleMediumDashDotDotExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORCHID</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORCHID</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORCHID</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">MEDIUM_DASH_DOT_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORCHID</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-medium-dash-dot-dot-orchid.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for medium dash dot dot border style and orchid border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-medium-dash-dot-dot-orchid.png" alt="Excel output file for dash dot dot border style and orchid border color" class="img-fluid"></p>
+
+<h4 id="example-for-slanted-dash-dot-border-style-and-pink-border-color">Example for slanted dash dot border style and pink border color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.BorderStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BorderStyleSlantedDashDotExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample&#34;</span><span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Style the cell with borders and border color
+</span><span style="color:#75715e"></span>        CellStyle style <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderBottom</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">SLANTED_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBottomBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PINK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderLeft</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">SLANTED_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setLeftBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PINK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderRight</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">SLANTED_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setRightBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PINK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setBorderTop</span><span style="color:#f92672">(</span>BorderStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">SLANTED_DASH_DOT</span><span style="color:#f92672">);</span>
+        style<span style="color:#f92672">.</span><span style="color:#a6e22e">setTopBorderColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PINK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>style<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-border-slanted-dash-dot-pink.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for slanted dash dot border style and pink border color:</p>
+
+<p><img src="/images/apache-poi-excel-cell-border-slanted-dash-dot-pink.png" alt="Excel output file for slanted dash dot border style and pink border color" class="img-fluid"></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/apache-poi">Apache POI</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:1050px"
+                        data-ad-client="ca-pub-4970454579445266"
+                        data-ad-slot="3244950878"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

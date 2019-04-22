@@ -6,10 +6,21 @@
     <description>Recent content in Apache Poi on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Apr 2019 01:00:10 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Apr 2019 01:01:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-poi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Excel Cell Border and Border Color</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/</link>
+      <pubDate>Mon, 22 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.CellStyle org.apache.poi.ss.usermodel.BorderStyle org.apache.poi.ss.usermodel.IndexedColors  Below 13 Java code examples to show how to use Apache POI to generate Excel files with different cell border formats such as thin, thick, medium, dashed, dot, slanted, hair, double. These examples also include code to set color for Excel cell border.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example for thin border style and black border color package simplesolution.</description>
+    </item>
     
     <item>
       <title>Apache POI Vertical and Horizontal Excel Cell Alignment</title>
