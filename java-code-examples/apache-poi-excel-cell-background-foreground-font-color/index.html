@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples</title>
+    <meta name="title" content="Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples">
+    <meta name="description" content="Java Code Examples for org.apache.poi.ss.usermodel.FillPatternType and org.apache.poi.ss.usermodel.IndexedColors and org.apache.poi.ss.usermodel.CellStyle. 17 Java code examples below to show how to use different fill patterns to set up Excel cell background and forground using Apache POI library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-background-foreground-font-color/">
+    <meta property="og:title" content="Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples">
+    <meta property="og:description" content="Java Code Examples for org.apache.poi.ss.usermodel.FillPatternType and org.apache.poi.ss.usermodel.IndexedColors and org.apache.poi.ss.usermodel.CellStyle. 17 Java code examples below to show how to use different fill patterns to set up Excel cell background and forground using Apache POI library.">
+    <meta property="og:image" content="https://simplesolution.dev/">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/">
+    <meta property="twitter:url" content="https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-background-foreground-font-color/">
+    <meta property="twitter:title" content="Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples">
+    <meta property="twitter:description" content="Java Code Examples for org.apache.poi.ss.usermodel.FillPatternType and org.apache.poi.ss.usermodel.IndexedColors and org.apache.poi.ss.usermodel.CellStyle. 17 Java code examples below to show how to use different fill patterns to set up Excel cell background and forground using Apache POI library.">
+    <meta property="twitter:image" content="https://simplesolution.dev/">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Java Code Examples for:</p>
+
+<ul>
+<li>org.apache.poi.ss.usermodel.FillPatternType</li>
+<li>org.apache.poi.ss.usermodel.IndexedColors</li>
+<li>org.apache.poi.ss.usermodel.CellStyle</li>
+</ul>
+
+<p>17 Java code examples below to show how to use different fill patterns to set up Excel cell background and forground using Apache POI library.</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-alt-bars-fill-pattern">Example for background and foreground color with FillPatternType.ALT_BARS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorAltBarsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">ALT_BARS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">ALT_BARS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-alt-bars.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.ALT_BARS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-alt-bars-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.ALT_BARS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-big-spots-fill-pattern">Example for background and foreground color with FillPatternType.BIG_SPOTS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorBigSpotsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">BIG_SPOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">BIG_SPOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-big-spots.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.BIG_SPOTS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-big-spots-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.BIG_SPOTS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-bricks-fill-pattern">Example for background and foreground color with FillPatternType.BRICKS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorBricksExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PINK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">BRICKS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PINK</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">BRICKS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-bricks.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.BRICKS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-bricks-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.BRICKS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-diamonds-fill-pattern">Example for background and foreground color with FillPatternType.DIAMONDS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorDiamondsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">AQUA</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">DIAMONDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">AQUA</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">DIAMONDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-diamonds.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.DIAMONDS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-diamonds-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.DIAMONDS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-fine-dots-fill-pattern">Example for background and foreground color with FillPatternType.FINE_DOTS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorFineDotsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORCHID</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">FINE_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">ORCHID</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">FINE_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-fine-dots.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.FINE_DOTS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-fine-dots-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.FINE_DOTS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-least-dots-fill-pattern">Example for background and foreground color with FillPatternType.LEAST_DOTS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorLeastDotsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LAVENDER</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">LEAST_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LAVENDER</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">LEAST_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-least-dots.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.LEAST_DOTS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-least-dots-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.LEAST_DOTS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-less-dots-fill-pattern">Example for background and foreground color with FillPatternType.LESS_DOTS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorLessDotsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">INDIGO</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">LESS_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">INDIGO</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">LESS_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-less-dots.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.LESS_DOTS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-less-dots-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.LESS_DOTS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-solid-foreground-fill-pattern">Example for background and foreground color with FillPatternType.SOLID_FOREGROUND fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorSolidForegroundExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GREEN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SOLID_FOREGROUND</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GREEN</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SOLID_FOREGROUND</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-solid-foreground.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.SOLID_FOREGROUND fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-solid-foreground-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.SOLID_FOREGROUND fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-sparse-dots-fill-pattern">Example for background and foreground color with FillPatternType.SPARSE_DOTS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorSparseDotsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GOLD</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SPARSE_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">GOLD</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SPARSE_DOTS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-sparse-dots.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.SPARSE_DOTS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-sparse-dots-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.SPARSE_DOTS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-squares-fill-pattern">Example for background and foreground color with FillPatternType.SQUARES fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorSquaresExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">RED</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SQUARES</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">RED</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SQUARES</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-squares.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.SQUARES fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-squares-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.SQUARES fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thick-backward-diag-fill-pattern">Example for background and foreground color with FillPatternType.THICK_BACKWARD_DIAG fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThickBackwardDiagExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">CORAL</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK_BACKWARD_DIAG</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">CORAL</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK_BACKWARD_DIAG</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thick-backward-diag.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THICK_BACKWARD_DIAG fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thick-backward-diag-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THICK_BACKWARD_DIAG fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thick-horz-bands-fill-pattern">Example for background and foreground color with FillPatternType.THICK_HORZ_BANDS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThickHorzBandsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">YELLOW</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK_HORZ_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">YELLOW</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK_HORZ_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thick-horz-bands.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THICK_HORZ_BANDS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thick-horz-bands-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THICK_HORZ_BANDS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thick-vert-bands-fill-pattern">Example for background and foreground color with FillPatternType.THICK_VERT_BANDS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThickVertBandsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">VIOLET</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK_VERT_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">VIOLET</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THICK_VERT_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thick-vert-bands.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THICK_VERT_BANDS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thick-vert-bands-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THICK_VERT_BANDS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thin-backward-diag-fill-pattern">Example for background and foreground color with FillPatternType.THIN_BACKWARD_DIAG fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThinBackwardDiagExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIGHT_BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_BACKWARD_DIAG</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIGHT_BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_BACKWARD_DIAG</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thin-backward-diag.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THIN_BACKWARD_DIAG fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thin-backward-diag-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THIN_BACKWARD_DIAG fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thin-forward-diag-fill-pattern">Example for background and foreground color with FillPatternType.THIN_FORWARD_DIAG fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThinForwardDiagExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">SKY_BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_FORWARD_DIAG</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">SKY_BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_FORWARD_DIAG</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thin-forward-diag.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THIN_FORWARD_DIAG fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thin-forward-diag-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THIN_FORWARD_DIAG fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thin-horz-bands-fill-pattern">Example for background and foreground color with FillPatternType.THIN_HORZ_BANDS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThinHorzBandsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PALE_BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_HORZ_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">PALE_BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_HORZ_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thin-horz-bands.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THIN_HORZ_BANDS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thin-horz-bands-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THIN_HORZ_BANDS fill pattern" class="img-fluid"></p>
+
+<h4 id="example-for-background-and-foreground-color-with-fillpatterntype-thin-vert-bands-fill-pattern">Example for background and foreground color with FillPatternType.THIN_VERT_BANDS fill pattern</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CellColorThinVertBandsExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeightInPoints</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">setColumnWidth</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> 6000<span style="color:#f92672">);</span>
+
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up background color
+</span><span style="color:#75715e"></span>        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillBackgroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIGHT_ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_VERT_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// Set up font
+</span><span style="color:#75715e"></span>        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">WHITE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        <span style="color:#75715e">// set up foreground color
+</span><span style="color:#75715e"></span>        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">LIGHT_ORANGE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">THIN_VERT_BANDS</span><span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>OutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample-thin-vert-bands.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span><span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Excel output file for background and foreground color with FillPatternType.THIN_VERT_BANDS fill pattern:</p>
+
+<p><img src="/images/apache-poi-background-foreground-thin-vert-bands-pattern.png" alt="Excel output file for background and foreground color with FillPatternType.THIN_VERT_BANDS fill pattern" class="img-fluid"></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/apache-poi">Apache POI</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:1050px"
+                        data-ad-client="ca-pub-4970454579445266"
+                        data-ad-slot="3244950878"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

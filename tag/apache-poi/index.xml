@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-background-foreground-font-color/</link>
+      <pubDate>Mon, 22 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-background-foreground-font-color/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.FillPatternType org.apache.poi.ss.usermodel.IndexedColors org.apache.poi.ss.usermodel.CellStyle  17 Java code examples below to show how to use different fill patterns to set up Excel cell background and forground using Apache POI library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example for background and foreground color with FillPatternType.ALT_BARS fill pattern package simplesolution.dev;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.ss.usermodel.Font;import org.apache.poi.ss.usermodel.IndexedColors;import org.</description>
+    </item>
+    
+    <item>
       <title>Apache POI Excel Cell Border and Border Color</title>
       <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/</link>
       <pubDate>Mon, 22 Apr 2019 01:01:10 +0700</pubDate>
