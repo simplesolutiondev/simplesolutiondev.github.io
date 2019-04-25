@@ -6,10 +6,20 @@
     <description>Recent content in Apache Commons Io on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Apr 2019 01:02:10 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Commons IO to delete directory using FileUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-delete-directory-fileutils/</link>
+      <pubDate>Fri, 26 Apr 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-delete-directory-fileutils/</guid>
+      <description>Java Code Examples for using deleteDirectory() method of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;import java.io.IOException;public class FileUtilsDeleteDirectoryExample {public static void main(String... args) {try {File directoryToDelete = new File(&amp;#34;D:\\Data\\test&amp;#34;);FileUtils.deleteDirectory(directoryToDelete);}catch(IOException ex) {ex.printStackTrace();}}} Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Apache Commons IO to read text file content as a list of Strings</title>
