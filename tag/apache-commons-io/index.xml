@@ -6,10 +6,20 @@
     <description>Recent content in Apache Commons Io on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Apr 2019 01:02:10 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 01:03:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Commons IO to get User Directory</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-get-user-directory/</link>
+      <pubDate>Fri, 26 Apr 2019 01:03:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-user-directory/</guid>
+      <description>Java Code Examples for using getUserDirectoryPath() and getUserDirectory() methods of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsUserDirectoryExample {public static void main(String... args) {String userDirectoryPath = FileUtils.getUserDirectoryPath();System.out.println(userDirectoryPath);File userDirectory = FileUtils.getUserDirectory();System.out.println(userDirectory.getAbsolutePath());}} Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Apache Commons IO to get Temporary Directory</title>
