@@ -6,10 +6,20 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Apr 2019 01:00:10 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 01:01:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache Commons IO to construct File from Directory and Name Elements using FileUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-construct-file-from-directory-name-elements/</link>
+      <pubDate>Fri, 26 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-construct-file-from-directory-name-elements/</guid>
+      <description>Java Code Examples for using getFile() method of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example 1 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsGetFileExample1 {public static void main(String... args) {// construct File from name elements File file = FileUtils.getFile(&amp;#34;D:&amp;#34;, &amp;#34;Data&amp;#34;, &amp;#34;file1.txt&amp;#34;);System.out.println(&amp;#34;Absolute file path: &amp;#34; + file.getAbsolutePath());System.out.println(&amp;#34;File exist: &amp;#34; + file.exists());}} Example 2 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.</description>
+    </item>
     
     <item>
       <title>Apache Commons IO to delete directory using FileUtils</title>
