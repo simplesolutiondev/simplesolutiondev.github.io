@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apache Commons IO to get Readable File Size in KB MB GB TB</title>
+    <meta name="title" content="Apache Commons IO to get Readable File Size in KB MB GB TB">
+    <meta name="description" content="Java Code Examples for using byteCountToDisplaySize() method of org.apache.commons.io.FileUtils class">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-code-examples/apache-commons-io-get-readable-file-size/">
+    <meta property="og:title" content="Apache Commons IO to get Readable File Size in KB MB GB TB">
+    <meta property="og:description" content="Java Code Examples for using byteCountToDisplaySize() method of org.apache.commons.io.FileUtils class">
+    <meta property="og:image" content="https://simplesolution.dev/">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/">
+    <meta property="twitter:url" content="https://simplesolution.dev/java-code-examples/apache-commons-io-get-readable-file-size/">
+    <meta property="twitter:title" content="Apache Commons IO to get Readable File Size in KB MB GB TB">
+    <meta property="twitter:description" content="Java Code Examples for using byteCountToDisplaySize() method of org.apache.commons.io.FileUtils class">
+    <meta property="twitter:image" content="https://simplesolution.dev/">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Apache Commons IO to get Readable File Size in KB MB GB TB</h1></div>
+                    <div class="blog-detail-description">
+                        <p>Java Code Examples for using byteCountToDisplaySize() method of org.apache.commons.io.FileUtils class</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.commons.io.FileUtils<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.math.BigInteger<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FileUtilsByteCountToDisplaySizeExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String result <span style="color:#f92672">=</span> FileUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">byteCountToDisplaySize</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> BigInteger<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123456789&#34;</span><span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span> <span style="color:#75715e">// 117MB
+</span><span style="color:#75715e"></span>
+        result <span style="color:#f92672">=</span> FileUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">byteCountToDisplaySize</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> BigInteger<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123&#34;</span><span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span> <span style="color:#75715e">// 123 bytes
+</span><span style="color:#75715e"></span>
+        result <span style="color:#f92672">=</span> FileUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">byteCountToDisplaySize</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> BigInteger<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123456&#34;</span><span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span> <span style="color:#75715e">//120 KB
+</span><span style="color:#75715e"></span>
+        result <span style="color:#f92672">=</span> FileUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">byteCountToDisplaySize</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> BigInteger<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123456789012345&#34;</span><span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span> <span style="color:#75715e">//112 TB
+</span><span style="color:#75715e"></span>
+        result <span style="color:#f92672">=</span> FileUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">byteCountToDisplaySize</span><span style="color:#f92672">(</span>1234567890<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span> <span style="color:#75715e">//1 GB
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/apache-commons-io">Apache Commons IO</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                  <aside class="widget">
+                      <div class="widget-title">Subscribe &amp; Follow</div>
+                        <ul class="socials">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/simple_s_dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                                    <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:1050px"
+                        data-ad-client="ca-pub-4970454579445266"
+                        data-ad-slot="3244950878"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

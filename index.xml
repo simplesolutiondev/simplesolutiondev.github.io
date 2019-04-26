@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Apache Commons IO to get Readable File Size in KB MB GB TB</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-get-readable-file-size/</link>
+      <pubDate>Fri, 26 Apr 2019 01:03:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-readable-file-size/</guid>
+      <description>Java Code Examples for using byteCountToDisplaySize() method of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.math.BigInteger;public class FileUtilsByteCountToDisplaySizeExample {public static void main(String... args) {String result = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123456789&amp;#34;));System.out.println(result); // 117MBresult = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123&amp;#34;));System.out.println(result); // 123 bytesresult = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123456&amp;#34;));System.out.println(result); //120 KBresult = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123456789012345&amp;#34;));System.out.println(result); //112 TBresult = FileUtils.</description>
+    </item>
+    
+    <item>
       <title>Apache Commons IO to get User Directory</title>
       <link>https://simplesolution.dev/java-code-examples/apache-commons-io-get-user-directory/</link>
       <pubDate>Fri, 26 Apr 2019 01:03:10 +0700</pubDate>
