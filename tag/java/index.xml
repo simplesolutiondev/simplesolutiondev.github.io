@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 01:02:10 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gradle Creating Executable JAR File</title>
+      <link>https://simplesolution.dev/gradle-creating-executable-jar-file/</link>
+      <pubDate>Wed, 01 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/gradle-creating-executable-jar-file/</guid>
+      <description>In this toturial we will show you how to configure Gradle build script to build the JAR file that can be executed by java command. In this article we just build the simple application without dependencies.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example you have created a standard Gradle project as below structure. With the main class GradleCreatingExecutableJarExample as below.
+package simplesolution.dev;public class GradleCreatingExecutableJarExample {public static void main(String.</description>
+    </item>
     
     <item>
       <title>Creating Spring Boot Application with Spring Tool Suite</title>
@@ -18,10 +29,9 @@
       
       <guid>https://simplesolution.dev/spring-boot-application-spring-tool-suite/</guid>
       <description>In this article we will learn step by step guide to create a new Spring Boot web application using Spring Tool Suite.
-You can download Spring Tool Suite from this link
+   (adsbygoogle = window.adsbygoogle || []).push({});  You can download Spring Tool Suite from this link
 First step, open Spring Tool Suite on your machine and choose menu File -&amp;gt; New -&amp;gt; Spring Starter Project
-Then input new project information on New Spring Starter Project popup as below and click on Next button.
-Choose dependencies for your Spring Boot project on New Spring Starter Project Dependencies popup, in this example we only choose Web dependency to create a simple web application, then click on Next button.</description>
+Then input new project information on New Spring Starter Project popup as below and click on Next button.</description>
     </item>
     
     <item>

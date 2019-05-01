@@ -6,10 +6,21 @@
     <description>Recent content in Gradle on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Apr 2019 14:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/gradle/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gradle Creating Executable JAR File</title>
+      <link>https://simplesolution.dev/gradle-creating-executable-jar-file/</link>
+      <pubDate>Wed, 01 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/gradle-creating-executable-jar-file/</guid>
+      <description>In this toturial we will show you how to configure Gradle build script to build the JAR file that can be executed by java command. In this article we just build the simple application without dependencies.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example you have created a standard Gradle project as below structure. With the main class GradleCreatingExecutableJarExample as below.
+package simplesolution.dev;public class GradleCreatingExecutableJarExample {public static void main(String.</description>
+    </item>
     
     <item>
       <title>Gradle Configuration to generate Java classes from WSDL with JAXB</title>
