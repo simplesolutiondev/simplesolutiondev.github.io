@@ -4,19 +4,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Log4j 2 JSON Configuration with Console Appender</title>
-    <meta name="title" content="Log4j 2 JSON Configuration with Console Appender">
-    <meta name="description" content="Java Code Examples for using org.apache.logging.log4j.LogManager and org.apache.logging.log4j.Logger classes. The Java code example below to show you how to configure Log4j 2 with JSON configuration file to log messages to sytem console using Console appender.">
+    <title>Log4j 2 YAML Configuration with Console Appender</title>
+    <meta name="title" content="Log4j 2 YAML Configuration with Console Appender">
+    <meta name="description" content="Java Code Examples for using org.apache.logging.log4j.LogManager and org.apache.logging.log4j.Logger classes. The Java code example below to show you how to configure Log4j 2 with YAML configuration file to log messages to sytem console using Console appender.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/">
-    <meta property="og:title" content="Log4j 2 JSON Configuration with Console Appender">
-    <meta property="og:description" content="Java Code Examples for using org.apache.logging.log4j.LogManager and org.apache.logging.log4j.Logger classes. The Java code example below to show you how to configure Log4j 2 with JSON configuration file to log messages to sytem console using Console appender.">
+    <meta property="og:url" content="https://simplesolution.dev/java-code-examples/log4j2-yaml-configuration-console-appender/">
+    <meta property="og:title" content="Log4j 2 YAML Configuration with Console Appender">
+    <meta property="og:description" content="Java Code Examples for using org.apache.logging.log4j.LogManager and org.apache.logging.log4j.Logger classes. The Java code example below to show you how to configure Log4j 2 with YAML configuration file to log messages to sytem console using Console appender.">
     <meta property="og:image" content="https://simplesolution.dev/">
 
     <meta property="twitter:card" content="https://simplesolution.dev/">
-    <meta property="twitter:url" content="https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/">
-    <meta property="twitter:title" content="Log4j 2 JSON Configuration with Console Appender">
-    <meta property="twitter:description" content="Java Code Examples for using org.apache.logging.log4j.LogManager and org.apache.logging.log4j.Logger classes. The Java code example below to show you how to configure Log4j 2 with JSON configuration file to log messages to sytem console using Console appender.">
+    <meta property="twitter:url" content="https://simplesolution.dev/java-code-examples/log4j2-yaml-configuration-console-appender/">
+    <meta property="twitter:title" content="Log4j 2 YAML Configuration with Console Appender">
+    <meta property="twitter:description" content="Java Code Examples for using org.apache.logging.log4j.LogManager and org.apache.logging.log4j.Logger classes. The Java code example below to show you how to configure Log4j 2 with YAML configuration file to log messages to sytem console using Console appender.">
     <meta property="twitter:image" content="https://simplesolution.dev/">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
@@ -67,7 +67,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Log4j 2 JSON Configuration with Console Appender</h1></div>
+                    <div class="post-header"><h1 class="post-title">Log4j 2 YAML Configuration with Console Appender</h1></div>
                     <div class="blog-detail-description">
                         
 
@@ -78,7 +78,7 @@
 <li>org.apache.logging.log4j.Logger</li>
 </ul>
 
-<p>The Java code example below to show you how to configure Log4j 2 with JSON configuration file to log messages to sytem console using Console appender.</p>
+<p>The Java code example below to show you how to configure Log4j 2 with YAML configuration file to log messages to sytem console using Console appender.</p>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -93,14 +93,16 @@
 
 <h4 id="adding-log2j-2-dependencies-to-your-project">Adding Log2j 2 Dependencies to your project</h4>
 
-<p>In order to read JSON configuration file Log4j 2 using Jackson library so that you need to add Jackson dependencies to your project.
-Add dependencies below to your build.gradle if you are using Gradle build.
+<p>In order to read YAML configuration file Log4j 2 using Jackson and jackson-dataformat-yaml libraries so that you need to add these dependencies to your project.</p>
+
+<p>Add dependencies below to your build.gradle if you are using Gradle build.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">dependencies <span style="color:#f92672">{</span>
     compile group: <span style="color:#e6db74">&#39;org.apache.logging.log4j&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;log4j-api&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.11.2&#39;</span>
     compile group: <span style="color:#e6db74">&#39;org.apache.logging.log4j&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;log4j-core&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.11.2&#39;</span>
     compile group: <span style="color:#e6db74">&#39;com.fasterxml.jackson.core&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jackson-core&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.9.8&#39;</span>
     compile group: <span style="color:#e6db74">&#39;com.fasterxml.jackson.core&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jackson-databind&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.9.8&#39;</span>
     compile group: <span style="color:#e6db74">&#39;com.fasterxml.jackson.core&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jackson-annotations&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.9.8&#39;</span>
+    compile group: <span style="color:#e6db74">&#39;com.fasterxml.jackson.dataformat&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jackson-dataformat-yaml&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.9.8&#39;</span>
 <span style="color:#f92672">}</span></code></pre></div></p>
 
 <p>Add dependencies below to your pom.xml if you are using Maven build.
@@ -128,34 +130,30 @@ Add dependencies below to your build.gradle if you are using Gradle build.
     <span style="color:#f92672">&lt;groupId&gt;</span>com.fasterxml.jackson.core<span style="color:#f92672">&lt;/groupId&gt;</span>
     <span style="color:#f92672">&lt;artifactId&gt;</span>jackson-core<span style="color:#f92672">&lt;/artifactId&gt;</span>
     <span style="color:#f92672">&lt;version&gt;</span>2.9.8<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.fasterxml.jackson.dataformat<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jackson-dataformat-yaml<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.9.8<span style="color:#f92672">&lt;/version&gt;</span>
 <span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
 
-<h4 id="example-json-configuration-to-log-to-console">Example JSON configuration to log to Console</h4>
+<h4 id="example-yaml-configuration-to-log-to-console">Example YAML configuration to log to Console</h4>
 
-<p>Adding /src/main/resources/log4j2.json to your project
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;configuration&#34;</span>: {
-    <span style="color:#f92672">&#34;status&#34;</span>: <span style="color:#e6db74">&#34;error&#34;</span>,
-    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;ConsoleExample&#34;</span>,
-    <span style="color:#f92672">&#34;packages&#34;</span>: <span style="color:#e6db74">&#34;simplesolution.dev&#34;</span>,
-    <span style="color:#f92672">&#34;appenders&#34;</span>: {
-      <span style="color:#f92672">&#34;Console&#34;</span>: {
-        <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;STDOUT&#34;</span>,
-        <span style="color:#f92672">&#34;PatternLayout&#34;</span>: {
-          <span style="color:#f92672">&#34;pattern&#34;</span>: <span style="color:#e6db74">&#34;%d - %t - %p - %c - %m%n&#34;</span>
-        }
-      }
-    },
-    <span style="color:#f92672">&#34;loggers&#34;</span>: {
-      <span style="color:#f92672">&#34;root&#34;</span>: {
-        <span style="color:#f92672">&#34;level&#34;</span>: <span style="color:#e6db74">&#34;trace&#34;</span>,
-        <span style="color:#f92672">&#34;AppenderRef&#34;</span>: {
-          <span style="color:#f92672">&#34;ref&#34;</span>: <span style="color:#e6db74">&#34;STDOUT&#34;</span>
-        }
-      }
-    }
-  }
-}</code></pre></div></p>
+<p>Adding /src/main/resources/log4j2.yaml to your project
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">Configuration:
+  status: error
+  name: ConsoleExample
+  packages: <span style="color:#e6db74">&#34;simplesolution.dev&#34;</span>
+  appenders:
+    Console:
+      name: STDOUT
+      PatternLayout:
+        Pattern: <span style="color:#e6db74">&#34;%d - %t - %p - %c - %m%n&#34;</span>
+  Loggers:
+    Root:
+      level: trace
+      AppenderRef:
+        ref: STDOUT</code></pre></div></p>
 
 <h4 id="example-code-to-log-messages">Example code to log messages</h4>
 
@@ -164,9 +162,9 @@ Add dependencies below to your build.gradle if you are using Gradle build.
 <span style="color:#f92672">import</span> org.apache.logging.log4j.LogManager<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.apache.logging.log4j.Logger<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Log4j2JSONConfigurationConsoleExample</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Log4j2YAMLConfigurationConsoleExample</span> <span style="color:#f92672">{</span>
 
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> Logger logger <span style="color:#f92672">=</span> LogManager<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>Log4j2JSONConfigurationConsoleExample<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> Logger logger <span style="color:#f92672">=</span> LogManager<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>Log4j2YAMLConfigurationConsoleExample<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">());</span>
 
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         logger<span style="color:#f92672">.</span><span style="color:#a6e22e">trace</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Trace message&#34;</span><span style="color:#f92672">);</span>
@@ -178,17 +176,17 @@ Add dependencies below to your build.gradle if you are using Gradle build.
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 
-<p>Application output:</p>
+<p>Application output</p>
 
-<pre><code>2019-05-08 00:51:47,834 - main - TRACE - simplesolution.dev.Log4j2JSONConfigurationConsoleExample - Trace message
-2019-05-08 00:51:47,844 - main - INFO - simplesolution.dev.Log4j2JSONConfigurationConsoleExample - Info message
-2019-05-08 00:51:47,844 - main - DEBUG - simplesolution.dev.Log4j2JSONConfigurationConsoleExample - Debug message
-2019-05-08 00:51:47,844 - main - WARN - simplesolution.dev.Log4j2JSONConfigurationConsoleExample - Warn message
-2019-05-08 00:51:47,844 - main - ERROR - simplesolution.dev.Log4j2JSONConfigurationConsoleExample - Error message
-2019-05-08 00:51:47,845 - main - FATAL - simplesolution.dev.Log4j2JSONConfigurationConsoleExample - Fatal message
+<pre><code>2019-05-08 00:43:12,420 - main - TRACE - simplesolution.dev.Log4j2YAMLConfigurationConsoleExample - Trace message
+2019-05-08 00:43:12,427 - main - INFO - simplesolution.dev.Log4j2YAMLConfigurationConsoleExample - Info message
+2019-05-08 00:43:12,427 - main - DEBUG - simplesolution.dev.Log4j2YAMLConfigurationConsoleExample - Debug message
+2019-05-08 00:43:12,427 - main - WARN - simplesolution.dev.Log4j2YAMLConfigurationConsoleExample - Warn message
+2019-05-08 00:43:12,428 - main - ERROR - simplesolution.dev.Log4j2YAMLConfigurationConsoleExample - Error message
+2019-05-08 00:43:12,428 - main - FATAL - simplesolution.dev.Log4j2YAMLConfigurationConsoleExample - Fatal message
 </code></pre>
 
-<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/Log4j2JSONConfigurationConsole">https://github.com/simplesolutiondev/Log4j2JSONConfigurationConsole</a></p>
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/Log4j2YAMLConfigurationConsole">https://github.com/simplesolutiondev/Log4j2YAMLConfigurationConsole</a></p>
 
 <p>Happy Coding 😊</p>
 
