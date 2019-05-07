@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-code-examples/log4j2-xml-configuration-console-appender/</loc>
+    <lastmod>2019-05-07T01:00:10+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/</loc>
     <lastmod>2019-05-06T01:00:10+07:00</lastmod>
   </url>
@@ -391,26 +396,26 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-05-01T01:00:10+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
     <lastmod>2019-05-01T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2019-05-06T01:00:10+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2019-05-01T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2019-05-06T01:00:10+07:00</lastmod>
+    <lastmod>2019-05-07T01:00:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-code-examples/</loc>
+    <lastmod>2019-05-07T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -428,7 +433,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/log4j/</loc>
-    <lastmod>2019-05-06T01:00:10+07:00</lastmod>
+    <lastmod>2019-05-07T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -446,7 +451,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-05-06T01:00:10+07:00</lastmod>
+    <lastmod>2019-05-07T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -457,13 +462,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2019-04-18T01:02:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2019-04-18T01:02:10+07:00</lastmod>
     <priority>0</priority>
   </url>
