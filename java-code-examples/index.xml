@@ -6,10 +6,22 @@
     <description>Recent content in Java-code-examples on Simple Solution, Java, Spring Boot Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 May 2019 01:02:10 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Merging Excel Cells</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-merging-excel-cells/</link>
+      <pubDate>Sat, 18 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-merging-excel-cells/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.util.CellRangeAddress class org.apache.poi.ss.usermodel.Sheet.addMergedRegion() method  In Java example code below we show you how to create Excel file with merged cell.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Apache POI Library Dependencies Define below dependencies in build.gradle if you are using Gradle build. compile group: &amp;#39;org.apache.poi&amp;#39;, name: &amp;#39;poi&amp;#39;, version: &amp;#39;4.0.1&amp;#39;
+Define this dependencies in pom.xml if you are using Maven build. &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.</description>
+    </item>
     
     <item>
       <title>Log4j 2 Properties Configuration with Console Appender</title>
