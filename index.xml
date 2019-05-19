@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution, Java, Spring Boot Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 May 2019 01:00:10 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Excel Cell Fonts</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cells-fonts/</link>
+      <pubDate>Sun, 19 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-excel-cells-fonts/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.Font class org.apache.poi.ss.usermodel.CellStyle class  In Java code examples below we show you how to use Apache POI library to generate Excel file with custom font style for Excel cells such as bold, italic, underline, strikeout, type offset, font name, font height and color.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Apache POI Library Dependencies Define below dependencies in build.gradle if you are using Gradle build.</description>
+    </item>
     
     <item>
       <title>Apache POI Merging Excel Cells</title>

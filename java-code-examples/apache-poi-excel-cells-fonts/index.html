@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apache POI Excel Cell Fonts</title>
+    <meta name="title" content="Apache POI Excel Cell Fonts">
+    <meta name="description" content="In Java code examples below we show you how to use Apache POI library to generate Excel file with custom font style for Excel cells such as bold, italic, underline, strikeout, type offset, font name, font height and color.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-code-examples/apache-poi-excel-cells-fonts/">
+    <meta property="og:title" content="Apache POI Excel Cell Fonts">
+    <meta property="og:description" content="In Java code examples below we show you how to use Apache POI library to generate Excel file with custom font style for Excel cells such as bold, italic, underline, strikeout, type offset, font name, font height and color.">
+    <meta property="og:image" content="https://simplesolution.dev/">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/">
+    <meta property="twitter:url" content="https://simplesolution.dev/java-code-examples/apache-poi-excel-cells-fonts/">
+    <meta property="twitter:title" content="Apache POI Excel Cell Fonts">
+    <meta property="twitter:description" content="In Java code examples below we show you how to use Apache POI library to generate Excel file with custom font style for Excel cells such as bold, italic, underline, strikeout, type offset, font name, font height and color.">
+    <meta property="twitter:image" content="https://simplesolution.dev/">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Apache POI Excel Cell Fonts</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>Java Code Examples for:</p>
+
+<ul>
+<li>org.apache.poi.ss.usermodel.Font class</li>
+<li>org.apache.poi.ss.usermodel.CellStyle class</li>
+</ul>
+
+<p>In Java code examples below we show you how to use Apache POI library to generate Excel file with custom font style for Excel cells such as bold, italic, underline, strikeout, type offset, font name, font height and color.</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="apache-poi-library-dependencies">Apache POI Library Dependencies</h4>
+
+<p>Define below dependencies in build.gradle if you are using Gradle build.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span></code></pre></div></p>
+
+<p>Define this dependencies in pom.xml if you are using Maven build.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.0.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h4 id="example-application-to-set-font-name-heigh-and-color">Example application to set Font Name, Heigh and Color</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FontNameHeightColorExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;fonts-example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setFontHeightInPoints</span><span style="color:#f92672">((</span><span style="color:#66d9ef">short</span><span style="color:#f92672">)</span>24<span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setFontName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Arial&#34;</span><span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">BLUE</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+
+        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apache-poi-fonts-name-height-color.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output Excel file:</p>
+
+<p><img src="/images/apache-poi-excel-cells-fonts-name-height-color.png" alt="Apache POI Fonts Name Height and Color" class="img-fluid"></p>
+
+<h4 id="example-application-to-set-font-bold-and-different-underline-styles">Example application to set Font Bold and different Underline styles</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FontBoldUnderlineExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;fonts-example&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Create Cell 1
+</span><span style="color:#75715e"></span>        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setUnderline</span><span style="color:#f92672">(</span>Font<span style="color:#f92672">.</span><span style="color:#a6e22e">U_SINGLE</span><span style="color:#f92672">);</span>
+
+        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Create Cell 1
+</span><span style="color:#75715e"></span>        row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setUnderline</span><span style="color:#f92672">(</span>Font<span style="color:#f92672">.</span><span style="color:#a6e22e">U_DOUBLE</span><span style="color:#f92672">);</span>
+
+        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Create Cell 3
+</span><span style="color:#75715e"></span>        row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setUnderline</span><span style="color:#f92672">(</span>Font<span style="color:#f92672">.</span><span style="color:#a6e22e">U_SINGLE_ACCOUNTING</span><span style="color:#f92672">);</span>
+
+        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Create Cell 4
+</span><span style="color:#75715e"></span>        row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>6<span style="color:#f92672">);</span>
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setBold</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setUnderline</span><span style="color:#f92672">(</span>Font<span style="color:#f92672">.</span><span style="color:#a6e22e">U_DOUBLE_ACCOUNTING</span><span style="color:#f92672">);</span>
+
+        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apache-poi-fonts-bold-underline.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output Excel file:</p>
+
+<p><img src="/images/apache-poi-excel-cells-fonts-bold-underline.png" alt="Apache POI Fonts Bold Underline" class="img-fluid"></p>
+
+<h4 id="example-application-to-set-font-italic-and-strikeout">Example application to set Font Italic and Strikeout</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FontItalicStrikeoutExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;fonts-example&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setItalic</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setStrikeout</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+
+        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apache-poi-fonts-italic-strikeout.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output Excel file:</p>
+
+<p><img src="/images/apache-poi-excel-cells-fonts-italic-strikeout.png" alt="Apache POI Fonts Italic Strikeout" class="img-fluid"></p>
+
+<h4 id="example-application-to-set-font-type-offset-super-and-sub">Example application to set Font Type Offset Super and Sub</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Font<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FontTypeOffsetExample</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;fonts-example&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Create Cell 1
+</span><span style="color:#75715e"></span>        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        Font font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setTypeOffset</span><span style="color:#f92672">(</span>Font<span style="color:#f92672">.</span><span style="color:#a6e22e">SS_SUPER</span><span style="color:#f92672">);</span>
+
+        CellStyle cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#75715e">// Create Cell 1
+</span><span style="color:#75715e"></span>        row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SimpleSolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+        font <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createFont</span><span style="color:#f92672">();</span>
+        font<span style="color:#f92672">.</span><span style="color:#a6e22e">setTypeOffset</span><span style="color:#f92672">(</span>Font<span style="color:#f92672">.</span><span style="color:#a6e22e">SS_SUB</span><span style="color:#f92672">);</span>
+
+        cellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+        cellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span>font<span style="color:#f92672">);</span>
+        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>cellStyle<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apache-poi-fonts-type-offset.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output Excel file:</p>
+
+<p><img src="/images/apache-poi-excel-cells-fonts-type-offset.png" alt="Apache POI Fonts Type Offset Super and Sub" class="img-fluid"></p>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/ApachePOIExcelCellFonts" target="_blank">github.com/simplesolutiondev/ApachePOIExcelCellFonts</a></p>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/ApachePOIExcelCellFonts/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/apache-poi">Apache POI</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
