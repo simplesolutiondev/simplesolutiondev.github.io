@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java-code-examples on Simple Solution, Java, Spring Boot Tutorials</title>
+    <title>Java Code Examples on Simple Solution, Java, Spring Boot Tutorials</title>
     <link>https://simplesolution.dev/java-code-examples/</link>
-    <description>Recent content in Java-code-examples on Simple Solution, Java, Spring Boot Tutorials</description>
+    <description>Recent content in Java Code Examples on Simple Solution, Java, Spring Boot Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 May 2019 01:00:10 +0700</lastBuildDate>
@@ -106,7 +106,9 @@ Java and Python and Go  Example for using Joiner to join objects package simples
       
       <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-user-directory/</guid>
       <description>Java Code Examples for using getUserDirectoryPath() and getUserDirectory() methods of org.apache.commons.io.FileUtils class
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsUserDirectoryExample {public static void main(String... args) {String userDirectoryPath = FileUtils.getUserDirectoryPath();System.out.println(userDirectoryPath);File userDirectory = FileUtils.getUserDirectory();System.out.println(userDirectory.getAbsolutePath());}} Happy Coding 😊</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsUserDirectoryExample {public static void main(String... args) {String userDirectoryPath = FileUtils.getUserDirectoryPath();System.out.println(userDirectoryPath);File userDirectory = FileUtils.getUserDirectory();System.out.println(userDirectory.getAbsolutePath());}} Happy Coding 😊
+Related Articles Apache Commons IO to get Readable File Size in KB MB GB TB
+Apache Commons IO to get Temporary Directory</description>
     </item>
     
     <item>
@@ -116,7 +118,9 @@ Java and Python and Go  Example for using Joiner to join objects package simples
       
       <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-temporary-directory/</guid>
       <description>Java Code Examples for using getTempDirectoryPath() and getTempDirectory() methods of org.apache.commons.io.FileUtils class
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsTempDirectoryExample {public static void main(String... args) {String tempDirectoryPath = FileUtils.getTempDirectoryPath();System.out.println(tempDirectoryPath);File tempDirectory = FileUtils.getTempDirectory();System.out.println(tempDirectory.getAbsolutePath());}} Happy Coding 😊</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsTempDirectoryExample {public static void main(String... args) {String tempDirectoryPath = FileUtils.getTempDirectoryPath();System.out.println(tempDirectoryPath);File tempDirectory = FileUtils.getTempDirectory();System.out.println(tempDirectory.getAbsolutePath());}} Happy Coding 😊
+Related Articles Apache Commons IO to get Readable File Size in KB MB GB TB
+Apache Commons IO to get User Directory</description>
     </item>
     
     <item>
