@@ -245,8 +245,8 @@ Example code below to show how to use IOUtils class of Apache Commons IO library
       <pubDate>Sat, 13 Apr 2019 17:55:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java-code-examples/org.apache.poi.ss.usermodel.cell.createcell-date-time/</guid>
-      <description>Java Code Examples for org.apache.poi.ss.usermodel.Cell.createCell()
-The example below to create a new Excel file with one worksheet and a date time cell in m/d/yy h:mm:ss format using Apache POI library.
+      <description>Java Code Examples for
+ org.apache.poi.ss.usermodel.Cell.createCell()  The example below to create a new Excel file with one worksheet and a date time cell in m/d/yy h:mm:ss format using Apache POI library.
    (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.ss.usermodel.CreationHelper;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.ss.usermodel.CellStyle;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;import java.util.Date;public class CreateHelperCreateDataFormatDateTimeExample {public static void main(String.</description>
     </item>
     
@@ -256,8 +256,8 @@ The example below to create a new Excel file with one worksheet and a date time 
       <pubDate>Sat, 13 Apr 2019 17:54:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java-code-examples/org.apache.poi.ss.usermodel.cell.createcell/</guid>
-      <description>Java Code Examples for org.apache.poi.ss.usermodel.Cell.createCell()
-The example below to create a new Excel file with one worksheet and a text cell using Apache POI library.
+      <description>Java Code Examples for
+ org.apache.poi.ss.usermodel.Cell.createCell()  The example below to create a new Excel file with one worksheet and a text cell using Apache POI library.
    (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class RowCreateCellExample {public static void main(String... args) {Workbook workbook = new XSSFWorkbook();Sheet sheet = workbook.</description>
     </item>
     
@@ -548,14 +548,14 @@ This method to serializes the Java object into JSON string.
     </item>
     
     <item>
-      <title>Create new Excel sheet using HSSFWorkbook.createSheet() with Apache POI</title>
+      <title>Apache POI Create new Excel sheet</title>
       <link>https://simplesolution.dev/java-code-examples/org.apache.poi.hssf.usermodel.hssfworkbook.createsheet/</link>
       <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java-code-examples/org.apache.poi.hssf.usermodel.hssfworkbook.createsheet/</guid>
-      <description>Java Code Examples for org.apache.poi.hssf.usermodel.HSSFWorkbook.createSheet()
-Create a new sheet for Workbook and return the high level representation of Sheet.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.hssf.usermodel.HSSFWorkbook;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import java.io.FileNotFoundException;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class HSSFWorkbookCreateSheetExamples {public static void main(String... args) {Workbook workbook = new HSSFWorkbook();Sheet sheet = workbook.createSheet(&amp;#34;simplesolution.dev&amp;#34;);try (OutputStream outputStream = new FileOutputStream(&amp;#34;sample.xls&amp;#34;)) {workbook.</description>
+      <description>Java Code Examples for
+ org.apache.poi.hssf.usermodel.HSSFWorkbook.createSheet()  Create a new sheet for Workbook and return the high level representation of Sheet.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.hssf.usermodel.HSSFWorkbook;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import java.io.FileNotFoundException;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class HSSFWorkbookCreateSheetExamples {public static void main(String... args) {Workbook workbook = new HSSFWorkbook();Sheet sheet = workbook.createSheet(&amp;#34;simplesolution.dev&amp;#34;);try (OutputStream outputStream = new FileOutputStream(&amp;#34;sample.</description>
     </item>
     
     <item>
