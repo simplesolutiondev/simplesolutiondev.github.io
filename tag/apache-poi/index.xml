@@ -6,10 +6,21 @@
     <description>Recent content in Apache Poi on Simple Solution, Java, Spring Boot Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 01:00:10 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 26 May 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-poi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Update Excel File Content</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-update-excel-file/</link>
+      <pubDate>Sun, 26 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-update-excel-file/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.WorkbookFactory.create(InputStream inputStream) method org.apache.poi.ss.usermodel.Workbook.write(OutputStream stream) method  In this article we show you how to update existing Excel file content in Java using Apache POI library.    (adsbygoogle = window.adsbygoogle || []).push({}); 
+Apache POI Library Dependencies Define below dependencies in build.gradle if you are using Gradle build. compile group: &amp;#39;org.apache.poi&amp;#39;, name: &amp;#39;poi&amp;#39;, version: &amp;#39;4.0.1&amp;#39;compile group: &amp;#39;org.apache.poi&amp;#39;, name: &amp;#39;poi-ooxml&amp;#39;, version: &amp;#39;4.0.1&amp;#39;</description>
+    </item>
     
     <item>
       <title>Apache POI Excel Cell Fonts</title>
