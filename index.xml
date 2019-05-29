@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution, Java, Spring Boot Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 May 2019 01:00:10 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2019 01:00:10 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JUnit 5 with Gradle Setup</title>
+      <link>https://simplesolution.dev/java-code-examples/junit-5-with-gradle-setup/</link>
+      <pubDate>Thu, 30 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/junit-5-with-gradle-setup/</guid>
+      <description>In this article we will setup a Java project that using JUnit 5 and Gradle build.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Set up Gradle build The Gradle version we will use is 5.4.1 which build.gradle as below. plugins {id &amp;#39;java&amp;#39;}repositories {mavenCentral()}dependencies {testImplementation(&amp;#39;org.junit.jupiter:junit-jupiter:5.4.2&amp;#39;)}test {useJUnitPlatform()testLogging {events &amp;#34;passed&amp;#34;, &amp;#34;skipped&amp;#34;, &amp;#34;failed&amp;#34;}}
+Adding a simple test class to test add() method of BigInteger class package simplesolution.</description>
+    </item>
     
     <item>
       <title>Apache POI Update Excel File Content</title>
