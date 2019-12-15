@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Web Application Download Excel File</title>
+    <meta name="title" content="Spring Boot Web Application Download Excel File">
+    <meta name="description" content="In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-web-application-download-excel-file/">
+    <meta property="og:title" content="Spring Boot Web Application Download Excel File">
+    <meta property="og:description" content="In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.">
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-web-application-download-excel-file.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/spring-boot-web-application-download-excel-file.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/spring-boot-web-application-download-excel-file/">
+    <meta property="twitter:title" content="Spring Boot Web Application Download Excel File">
+    <meta property="twitter:description" content="In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/spring-boot-web-application-download-excel-file.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Web Application Download Excel File</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.</p>
+
+<h4 id="creating-spring-boot-web-project-using-spring-tool-suite">Creating Spring Boot web project using Spring Tool Suite</h4>
+
+<p>Open Spring Tool Suite on your machine and click on &ldquo;Create a project&hellip;&rdquo; or choose menu File -&gt; New -&gt; Project</p>
+
+<p><img src="/images/spring-tool-suite-creating-new-project.png" alt="Create Spring Boot Web Application" class="img-fluid"></p>
+
+<p>On New Project window select Spring Starter Project and click Next</p>
+
+<p><img src="/images/spring-tool-suite-creating-new-project-select-project-type.png" alt="Create Spring Boot Web Application" class="img-fluid"></p>
+
+<p>On New Spring Starter Project window input the project information as below and click Next</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-new-spring-starter-project.png" alt="New Spring Starter Project" class="img-fluid"></p>
+
+<p>On New Spring Starter Project Dependencies choose Thymeleaf and Spring Web dependencies and click Next</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-new-spring-starter-project-dependencies.png" alt="New Spring Starter Project Dependencies" class="img-fluid"></p>
+
+<p>Keep the information on next window as default and click Finish</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-new-spring-starter-project-finish.png" alt="New Spring Starter Project Finish" class="img-fluid"></p>
+
+<p>The application create success you can see the new project structure as below</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-new-project-structure.png" alt="New Spring Starter Project Finish" class="img-fluid"></p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="set-up-dependencies-for-gradle-or-maven-project">Set up dependencies for gradle or maven project</h4>
+
+<p>Open build.gradle file on your project and add below dependencies
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span>
+compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi-ooxml&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span>
+compile group: <span style="color:#e6db74">&#39;commons-io&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;commons-io&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.6&#39;</span></code></pre></div></p>
+
+<p>If you are using maven then adding below xml
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.0.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi-ooxml<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.0.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>commons-io<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>commons-io<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.6<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h4 id="creating-data-model-class">Creating data model class</h4>
+
+<p>In this example project we implement downloading function to download a list of customer.
+Firstly creating Customer class as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev.model<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Customer</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> String firstName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String lastName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String mobileNumber<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String email<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Customer</span><span style="color:#f92672">(</span>String firstName<span style="color:#f92672">,</span> String lastName<span style="color:#f92672">,</span> String mobileNumber<span style="color:#f92672">,</span> String email<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">super</span><span style="color:#f92672">();</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> firstName<span style="color:#f92672">;</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> lastName<span style="color:#f92672">;</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">mobileNumber</span> <span style="color:#f92672">=</span> mobileNumber<span style="color:#f92672">;</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span>String firstName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getLastName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span>String lastName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getMobileNumber</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> mobileNumber<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setMobileNumber</span><span style="color:#f92672">(</span>String mobileNumber<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">mobileNumber</span> <span style="color:#f92672">=</span> mobileNumber<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getEmail</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span>String email<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="export-excel-file-from-list-of-customer-objects">Export Excel file from list of customer objects</h4>
+
+<p>Implement ExcelFileExporter class as below to export list of Customer into a ByteArrayInputStream of Excel file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev.exporter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.ByteArrayInputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.ByteArrayOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Cell<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.CellStyle<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.FillPatternType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.IndexedColors<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> simplesolution.dev.model.Customer<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExcelFileExporter</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> ByteArrayInputStream <span style="color:#a6e22e">contactListToExcelFile</span><span style="color:#f92672">(</span>List<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;</span> customers<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>Workbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">()){</span>
+			Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Customers&#34;</span><span style="color:#f92672">);</span>
+			
+			Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+	        CellStyle headerCellStyle <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createCellStyle</span><span style="color:#f92672">();</span>
+	        headerCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillForegroundColor</span><span style="color:#f92672">(</span>IndexedColors<span style="color:#f92672">.</span><span style="color:#a6e22e">AQUA</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIndex</span><span style="color:#f92672">());</span>
+	        headerCellStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">setFillPattern</span><span style="color:#f92672">(</span>FillPatternType<span style="color:#f92672">.</span><span style="color:#a6e22e">SOLID_FOREGROUND</span><span style="color:#f92672">);</span>
+	        <span style="color:#75715e">// Creating header
+</span><span style="color:#75715e"></span>	        Cell cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;First Name&#34;</span><span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+	        
+	        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Last Name&#34;</span><span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+	
+	        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Mobile&#34;</span><span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+	
+	        cell <span style="color:#f92672">=</span> row<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Email&#34;</span><span style="color:#f92672">);</span>
+	        cell<span style="color:#f92672">.</span><span style="color:#a6e22e">setCellStyle</span><span style="color:#f92672">(</span>headerCellStyle<span style="color:#f92672">);</span>
+	        
+	        <span style="color:#75715e">// Creating data rows for each customer
+</span><span style="color:#75715e"></span>	        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> customers<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+	        	Row dataRow <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>i <span style="color:#f92672">+</span> 1<span style="color:#f92672">);</span>
+	        	dataRow<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>0<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>customers<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">).</span><span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">());</span>
+	        	dataRow<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>1<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>customers<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">).</span><span style="color:#a6e22e">getLastName</span><span style="color:#f92672">());</span>
+	        	dataRow<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>2<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>customers<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">).</span><span style="color:#a6e22e">getMobileNumber</span><span style="color:#f92672">());</span>
+	        	dataRow<span style="color:#f92672">.</span><span style="color:#a6e22e">createCell</span><span style="color:#f92672">(</span>3<span style="color:#f92672">).</span><span style="color:#a6e22e">setCellValue</span><span style="color:#f92672">(</span>customers<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>i<span style="color:#f92672">).</span><span style="color:#a6e22e">getEmail</span><span style="color:#f92672">());</span>
+	        <span style="color:#f92672">}</span>
+	
+	        <span style="color:#75715e">// Making size of column auto resize to fit with data
+</span><span style="color:#75715e"></span>	        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+	        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+	        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+	        sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">autoSizeColumn</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+	        
+	        ByteArrayOutputStream outputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ByteArrayOutputStream<span style="color:#f92672">();</span>
+	        workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>outputStream<span style="color:#f92672">);</span>
+	        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> ByteArrayInputStream<span style="color:#f92672">(</span>outputStream<span style="color:#f92672">.</span><span style="color:#a6e22e">toByteArray</span><span style="color:#f92672">());</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+			<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>In order to public the web page for downloading Excel file we create the DownloadExcelController as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev.controller<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.ByteArrayInputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletResponse<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.commons.compress.utils.IOUtils<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.GetMapping<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestMapping<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> simplesolution.dev.exporter.ExcelFileExporter<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> simplesolution.dev.model.Customer<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DownloadExcelController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">index</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download/customers.xlsx&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">downloadCsv</span><span style="color:#f92672">(</span>HttpServletResponse response<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+        response<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentType</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;application/octet-stream&#34;</span><span style="color:#f92672">);</span>
+        response<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Content-Disposition&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment; filename=customers.xlsx&#34;</span><span style="color:#f92672">);</span>
+        ByteArrayInputStream stream <span style="color:#f92672">=</span> ExcelFileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">contactListToExcelFile</span><span style="color:#f92672">(</span>createTestData<span style="color:#f92672">());</span>
+        IOUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">copy</span><span style="color:#f92672">(</span>stream<span style="color:#f92672">,</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">getOutputStream</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+
+	<span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">createTestData</span><span style="color:#f92672">(){</span>
+    	List<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;</span> customers <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;();</span>
+    	customers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Vernon&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Barlow&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;0123456789&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;test1@simplesolution.dev&#34;</span><span style="color:#f92672">));</span>
+    	customers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Maud&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Brock&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;0123456788&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;test2@simplesolution.dev&#34;</span><span style="color:#f92672">));</span>
+    	customers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Chyna&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Cowan&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;0123456787&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;test3@simplesolution.dev&#34;</span><span style="color:#f92672">));</span>
+    	customers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Krisha&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Tierney&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;0123456786&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;test4@simplesolution.dev&#34;</span><span style="color:#f92672">));</span>
+    	customers<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Sherry&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Rosas&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;0123456785&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;test5@simplesolution.dev&#34;</span><span style="color:#f92672">));</span>
+    	<span style="color:#66d9ef">return</span> customers<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Creating new view file in your project at resources\templates\index.html as below
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Download Excel File - simplesolution.dev&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+	&lt;<span style="color:#f92672">h2</span>&gt;Spring Boot Web Application Download Excel File&lt;/<span style="color:#f92672">h2</span>&gt;
+	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:8080/download/customers.xlsx&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;Download&lt;/<span style="color:#f92672">a</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+
+<p>At this step you have finished the project with struture as below</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-finish-structure.png" alt="Finished Project" class="img-fluid"></p>
+
+<p>Run and run the project then open <a href="http://localhost:8080/">http://localhost:8080/</a> on browser you will got the web page as below</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-web-page.png" alt="Download Excel File web page" class="img-fluid"></p>
+
+<p>Click on Download button to download customers.xlsx
+Open file on Excel application you will get the result as screenshot below.</p>
+
+<p><img src="/images/spring-boot-web-application-download-excel-file-excel-open.png" alt="Open by Excel application" class="img-fluid"></p>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/DownloadExcelFile" target="_blank">github.com/simplesolutiondev/DownloadExcelFile</a></p>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/DownloadExcelFile/archive/0.0.1.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/spring-boot-application-download-csv/">Spring Boot Web Application Download CSV File</a></p>
+
+<p><a href="https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/">Writing Excel File Using Apache POI Library in Java</a></p>
+
+<p><a href="https://simplesolution.dev/spring-boot-application-spring-tool-suite/">Creating Spring Boot Application with Spring Tool Suite</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/apache-poi">Apache POI</a>
+                                
+                                <a href="https://simplesolution.dev/tag/excel">Excel</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
