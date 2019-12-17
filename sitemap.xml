@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/video-spring-boot-web-application-download-excel-file/</loc>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/spring-boot-web-application-download-excel-file/</loc>
     <lastmod>2019-12-16T00:00:29+07:00</lastmod>
   </url>
@@ -366,7 +371,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-poi/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -407,7 +412,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/excel/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -436,20 +441,26 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://simplesolution.dev/java/</loc>
     <lastmod>2019-05-01T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
     <lastmod>2019-05-30T01:00:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-videos/</loc>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -485,7 +496,7 @@
   
   <url>
     <loc>https://simplesolution.dev/posts/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -497,7 +508,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -508,14 +519,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2019-12-16T00:00:29+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
