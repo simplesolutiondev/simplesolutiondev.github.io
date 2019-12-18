@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dozer on Simple Solution, Java, Spring Boot Tutorials</title>
+    <link>https://simplesolution.dev/tag/dozer/</link>
+    <description>Recent content in Dozer on Simple Solution, Java, Spring Boot Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Dec 2019 00:20:41 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/dozer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Dozer Spring Boot Starter</title>
+      <link>https://simplesolution.dev/using-dozer-spring-boot-starter/</link>
+      <pubDate>Wed, 18 Dec 2019 00:20:41 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/using-dozer-spring-boot-starter/</guid>
+      <description>In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.
+Creating Spring Boot Console Application Project Open your Spring Tool Suite IDE and choose menu File -&amp;gt; New -&amp;gt; Spring Starter Project
+In New Spring Starter Project window input below informations for your project and click Next.</description>
+    </item>
+    
+  </channel>
+</rss>

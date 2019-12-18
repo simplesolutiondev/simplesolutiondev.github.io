@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Using Dozer Spring Boot Starter</title>
+    <meta name="title" content="Using Dozer Spring Boot Starter">
+    <meta name="description" content="In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/using-dozer-spring-boot-starter/">
+    <meta property="og:title" content="Using Dozer Spring Boot Starter">
+    <meta property="og:description" content="In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.">
+    <meta property="og:image" content="https://simplesolution.dev/images/using-dozer-spring-boot-starter.png">
+
+    <meta property="twitter:card" content="https://simplesolution.dev/images/using-dozer-spring-boot-starter.png">
+    <meta property="twitter:url" content="https://simplesolution.dev/using-dozer-spring-boot-starter/">
+    <meta property="twitter:title" content="Using Dozer Spring Boot Starter">
+    <meta property="twitter:description" content="In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.">
+    <meta property="twitter:image" content="https://simplesolution.dev/images/using-dozer-spring-boot-starter.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=3" integrity="" media="screen" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4970454579445266",
+            enable_page_level_ads: true
+        });
+    </script>
+</head><body><div class="logo">
+        <div class="container">
+    <a href="https://simplesolution.dev/">
+        <img src="https://simplesolution.dev/images/logov2.png" alt="Simple Solution logo" height="40" />
+    </a>
+</div>
+</div>
+<header id="topnav">
+    <div class="container">
+        <a href="https://simplesolution.dev/" class="logo-mobile">
+            <img src="https://simplesolution.dev/images/logov2.png" alt="logo" />
+        </a>
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation-menu">
+                <li><a href="https://simplesolution.dev/">Home</a></li>
+                <li><a href="https://simplesolution.dev//java">java</a></li>
+                <li><a href="https://simplesolution.dev//java-code-examples">java code examples</a></li>
+                <li><a href="https://simplesolution.dev//java-videos">java videos</a></li>
+                <li><a href="https://simplesolution.dev//spring-boot">spring boot</a></li>
+            </ul>
+        </div>
+    </div>
+</header><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Using Dozer Spring Boot Starter</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.</p>
+
+<h4 id="creating-spring-boot-console-application-project">Creating Spring Boot Console Application Project</h4>
+
+<p>Open your Spring Tool Suite IDE and choose menu
+File -&gt; New -&gt; Spring Starter Project</p>
+
+<p>In New Spring Starter Project window input below informations for your project and click Next.</p>
+
+<p><img src="/images/using-dozer-spring-boot-starter-new-pring-starter-project.png" alt="Using Dozer Spring Boot Starter New Spring Starter Project" class="img-fluid"></p>
+
+<p>Keeping default values in next New Spring Starter Project Dependencies window and click Finish button to finishing project creation.</p>
+
+<p>The new project will be created as below structure on your IDE.</p>
+
+<p><img src="/images/using-dozer-spring-boot-starter-new-project-structure.png" alt="Using Dozer Spring Boot Starter New Project Structure" class="img-fluid"></p>
+
+<p>build.gradle file content
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">plugins <span style="color:#f92672">{</span>
+	id <span style="color:#e6db74">&#39;org.springframework.boot&#39;</span> version <span style="color:#e6db74">&#39;2.2.2.RELEASE&#39;</span>
+	id <span style="color:#e6db74">&#39;io.spring.dependency-management&#39;</span> version <span style="color:#e6db74">&#39;1.0.8.RELEASE&#39;</span>
+	id <span style="color:#e6db74">&#39;java&#39;</span>
+<span style="color:#f92672">}</span>
+
+group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;dev.simplesolution&#39;</span>
+version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0.0.1-SNAPSHOT&#39;</span>
+sourceCompatibility <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1.8&#39;</span>
+
+repositories <span style="color:#f92672">{</span>
+	mavenCentral<span style="color:#f92672">()</span>
+<span style="color:#f92672">}</span>
+
+dependencies <span style="color:#f92672">{</span>
+	implementation <span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter&#39;</span>
+	testImplementation<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter-test&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		exclude group: <span style="color:#e6db74">&#39;org.junit.vintage&#39;</span><span style="color:#f92672">,</span> module: <span style="color:#e6db74">&#39;junit-vintage-engine&#39;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+test <span style="color:#f92672">{</span>
+	useJUnitPlatform<span style="color:#f92672">()</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>UsingDozerSpringBootStarterApplication.java file content
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.usingdozer<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.boot.SpringApplication<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.autoconfigure.SpringBootApplication<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@SpringBootApplication</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsingDozerSpringBootStarterApplication</span> <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		SpringApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>UsingDozerSpringBootStarterApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> args<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="implement-commandlinerunner-interface">Implement CommandLineRunner interface</h4>
+
+<p>Firstly implement CommandLineRunner interface for your UsingDozerSpringBootStarterApplication class. Spring Boot will trigger and run the run(String&hellip; args) method of this interface as the starting point of your console application.</p>
+
+<p>And declare logger object for logging message later.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.usingdozer<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.CommandLineRunner<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.SpringApplication<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.autoconfigure.SpringBootApplication<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@SpringBootApplication</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsingDozerSpringBootStarterApplication</span> <span style="color:#66d9ef">implements</span> CommandLineRunner <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>UsingDozerSpringBootStarterApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		SpringApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>UsingDozerSpringBootStarterApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> args<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// Your Application code will be place here.
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Starting Application...&#34;</span><span style="color:#f92672">);</span>
+		
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Now run the application you will get the result on your console as screenshot below.</p>
+
+<p><img src="/images/using-dozer-spring-boot-starter-run-project.png" alt="Using Dozer Spring Boot Starter Run Project" class="img-fluid"></p>
+
+<p>In orde to write the example code for using Dozer mapping we will create two class named SourceContact and DestinationContact.</p>
+
+<p>Implement SourceContact.java class
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.usingdozer.model<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SourceContact</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> Integer id<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String email<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String phone<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String address<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>Integer id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> name<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getEmail</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span>String email<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getPhone</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> phone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span>String phone<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">phone</span> <span style="color:#f92672">=</span> phone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getAddress</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> address<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAddress</span><span style="color:#f92672">(</span>String address<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">address</span> <span style="color:#f92672">=</span> address<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Implement DestinationContact.java class
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.usingdozer.model<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DestinationContact</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> Integer identity<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String fullName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String emailAddress<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String phoneNumber<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String addressLine<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> Integer <span style="color:#a6e22e">getIdentity</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> identity<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setIdentity</span><span style="color:#f92672">(</span>Integer identity<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">identity</span> <span style="color:#f92672">=</span> identity<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getFullName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> fullName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFullName</span><span style="color:#f92672">(</span>String fullName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">fullName</span> <span style="color:#f92672">=</span> fullName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getEmailAddress</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> emailAddress<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setEmailAddress</span><span style="color:#f92672">(</span>String emailAddress<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">emailAddress</span> <span style="color:#f92672">=</span> emailAddress<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getPhoneNumber</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> phoneNumber<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setPhoneNumber</span><span style="color:#f92672">(</span>String phoneNumber<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">phoneNumber</span> <span style="color:#f92672">=</span> phoneNumber<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getAddressLine</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> addressLine<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAddressLine</span><span style="color:#f92672">(</span>String addressLine<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">addressLine</span> <span style="color:#f92672">=</span> addressLine<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="adding-dozer-core-and-dozer-spring-boot-starter-dependencies">Adding Dozer Core and Dozer Spring Boot Starter dependencies</h4>
+
+<p>Adding dependencies to your build.gradle file if you are using Gralde build.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.github.dozermapper&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;dozer-core&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;6.5.0&#39;</span>
+compile group: <span style="color:#e6db74">&#39;com.github.dozermapper&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;dozer-spring-boot-starter&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;6.5.0&#39;</span></code></pre></div></p>
+
+<p>or below XML to pom.xml if you are using Maven build for your project
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.github.dozermapper<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>dozer-core<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>6.5.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.github.dozermapper<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>dozer-spring-boot-starter<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>6.5.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<h4 id="configure-dozer-mapping-in-xml-file">Configure Dozer mapping in XML file</h4>
+
+<p>Creating mapping.xml file in src/main/resources/ path and configure the mapping for SourceContact and DestinationContact classes</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;mappings</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://dozermapper.github.io/schema/bean-mapping&#34;</span>
+          <span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+          <span style="color:#a6e22e">xsi:schemaLocation=</span><span style="color:#e6db74">&#34;http://dozermapper.github.io/schema/bean-mapping http://dozermapper.github.io/schema/bean-mapping.xsd&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;mapping&gt;</span>
+        <span style="color:#f92672">&lt;class-a&gt;</span>dev.simplesolution.usingdozer.model.SourceContact<span style="color:#f92672">&lt;/class-a&gt;</span>
+        <span style="color:#f92672">&lt;class-b&gt;</span>dev.simplesolution.usingdozer.model.DestinationContact<span style="color:#f92672">&lt;/class-b&gt;</span>
+        <span style="color:#f92672">&lt;field&gt;</span>
+            <span style="color:#f92672">&lt;a&gt;</span>id<span style="color:#f92672">&lt;/a&gt;</span>
+            <span style="color:#f92672">&lt;b&gt;</span>identity<span style="color:#f92672">&lt;/b&gt;</span>
+        <span style="color:#f92672">&lt;/field&gt;</span>
+        <span style="color:#f92672">&lt;field&gt;</span>
+            <span style="color:#f92672">&lt;a&gt;</span>name<span style="color:#f92672">&lt;/a&gt;</span>
+            <span style="color:#f92672">&lt;b&gt;</span>fullName<span style="color:#f92672">&lt;/b&gt;</span>
+        <span style="color:#f92672">&lt;/field&gt;</span>
+        <span style="color:#f92672">&lt;field&gt;</span>
+            <span style="color:#f92672">&lt;a&gt;</span>email<span style="color:#f92672">&lt;/a&gt;</span>
+            <span style="color:#f92672">&lt;b&gt;</span>emailAddress<span style="color:#f92672">&lt;/b&gt;</span>
+        <span style="color:#f92672">&lt;/field&gt;</span>
+        <span style="color:#f92672">&lt;field&gt;</span>
+            <span style="color:#f92672">&lt;a&gt;</span>phone<span style="color:#f92672">&lt;/a&gt;</span>
+            <span style="color:#f92672">&lt;b&gt;</span>phoneNumber<span style="color:#f92672">&lt;/b&gt;</span>
+        <span style="color:#f92672">&lt;/field&gt;</span>
+        <span style="color:#f92672">&lt;field&gt;</span>
+            <span style="color:#f92672">&lt;a&gt;</span>address<span style="color:#f92672">&lt;/a&gt;</span>
+            <span style="color:#f92672">&lt;b&gt;</span>addressLine<span style="color:#f92672">&lt;/b&gt;</span>
+        <span style="color:#f92672">&lt;/field&gt;</span>
+    <span style="color:#f92672">&lt;/mapping&gt;</span>
+<span style="color:#f92672">&lt;/mappings&gt;</span></code></pre></div>
+
+<h4 id="configure-dozer-mapping-files">Configure Dozer mapping files</h4>
+
+<p>Open application.properties file and adding below setting to allow Dozer Spring Boot Starter figure out your mapping.xml file location.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dozer.mapping-files=classpath:mapping.xml</code></pre></div></p>
+
+<h4 id="using-dozer-mapper-to-perform-mapping-the-objects">Using Dozer Mapper to perform mapping the objects</h4>
+
+<p>Up to this step you are finish configure the Dozer Spring Boot Starter.</p>
+
+<p>Next step we will learn how to use Dozer Mapper class on the application.</p>
+
+<p>Open UsingDozerSpringBootStarterApplication.java main class and adding below private field.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Autowired</span>
+<span style="color:#66d9ef">private</span> Mapper mapper<span style="color:#f92672">;</span> </code></pre></div>
+
+<p>Below are example of how to map the SourceContact object into DestinationContact object
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// Your Application code will be place here.
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Starting Application...&#34;</span><span style="color:#f92672">);</span>
+		
+		SourceContact sourceContact <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SourceContact<span style="color:#f92672">();</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>73<span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Sophie&#34;</span><span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1234567890&#34;</span><span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;testing@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setAddress</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New York city&#34;</span><span style="color:#f92672">);</span>
+		
+		DestinationContact destinationContact <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DestinationContact<span style="color:#f92672">();</span>
+		
+		<span style="color:#75715e">// Map source object to destination object 
+</span><span style="color:#75715e"></span>		mapper<span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>sourceContact<span style="color:#f92672">,</span> destinationContact<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Logging destination object data 
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getIdentity</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getFullName</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getPhoneNumber</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getEmailAddress</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getAddressLine</span><span style="color:#f92672">());</span>
+	<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Finally your UsingDozerSpringBootStarterApplication.java code look like below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.usingdozer<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.CommandLineRunner<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.SpringApplication<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.autoconfigure.SpringBootApplication<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> com.github.dozermapper.core.Mapper<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.usingdozer.model.DestinationContact<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> dev.simplesolution.usingdozer.model.SourceContact<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@SpringBootApplication</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UsingDozerSpringBootStarterApplication</span> <span style="color:#66d9ef">implements</span> CommandLineRunner <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>UsingDozerSpringBootStarterApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> Mapper mapper<span style="color:#f92672">;</span> 
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		SpringApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>UsingDozerSpringBootStarterApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> args<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// Your Application code will be place here.
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Starting Application...&#34;</span><span style="color:#f92672">);</span>
+		
+		SourceContact sourceContact <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SourceContact<span style="color:#f92672">();</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>73<span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Sophie&#34;</span><span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;1234567890&#34;</span><span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;testing@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+		sourceContact<span style="color:#f92672">.</span><span style="color:#a6e22e">setAddress</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New York city&#34;</span><span style="color:#f92672">);</span>
+		
+		DestinationContact destinationContact <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DestinationContact<span style="color:#f92672">();</span>
+		
+		<span style="color:#75715e">// Map source object to destination object 
+</span><span style="color:#75715e"></span>		mapper<span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>sourceContact<span style="color:#f92672">,</span> destinationContact<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Logging destination object data 
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getIdentity</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getFullName</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getPhoneNumber</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getEmailAddress</span><span style="color:#f92672">());</span>
+		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span>destinationContact<span style="color:#f92672">.</span><span style="color:#a6e22e">getAddressLine</span><span style="color:#f92672">());</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Run the application again and you will get below result on your console.</p>
+
+<p><img src="/images/using-dozer-spring-boot-starter-run-project-final.png" alt="Using Dozer Spring Boot Starter Run Project Final" class="img-fluid"></p>
+
+<p>Observe the console log above we can see that the data from sourceContact object has been copy to destinationContact object as we expected from the setting at mapping.xml file.</p>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/UsingDozerSpringBootStarter" target="_blank">github.com/simplesolutiondev/UsingDozerSpringBootStarter</a></p>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/UsingDozerSpringBootStarter/archive/0.0.1.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/spring-boot-application-spring-tool-suite/">Creating Spring Boot Application with Spring Tool Suite</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/dozer">Dozer</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

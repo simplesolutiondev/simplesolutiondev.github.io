@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/using-dozer-spring-boot-starter/</loc>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/video-spring-boot-web-application-download-excel-file/</loc>
     <lastmod>2019-12-17T23:22:50+07:00</lastmod>
   </url>
@@ -411,6 +416,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/dozer/</loc>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/excel/</loc>
     <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
@@ -441,14 +452,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-05-01T01:00:10+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2019-05-01T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -496,7 +507,7 @@
   
   <url>
     <loc>https://simplesolution.dev/posts/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -508,7 +519,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -519,14 +530,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
