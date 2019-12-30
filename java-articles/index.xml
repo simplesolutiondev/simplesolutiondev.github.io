@@ -6,10 +6,21 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 10:26:47 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 01:19:11 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Insert Image to PDF Document in Java using Apache PDFBox</title>
+      <link>https://simplesolution.dev/insert-image-to-pdf-document-in-java-using-apache-pdfbox/</link>
+      <pubDate>Mon, 30 Dec 2019 01:19:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/insert-image-to-pdf-document-in-java-using-apache-pdfbox/</guid>
+      <description>Introduction In this tutorial we will learn how to create a PDF document using Apache PDFBox libary in Java and then insert an image to a PDF document page.
+Apache PDFBox Overview The Apache PDFBox is an open source library for working with PDF documents in Java. You can get more information about the project at pdfbox.apache.org
+Adding Apache PDFBox Dependencies Adding below dependencies to build.gradle file if you are using Gradle build tool.</description>
+    </item>
     
     <item>
       <title>Creating PDF Document File in Java using Apache PDFBox</title>
