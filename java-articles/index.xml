@@ -22,18 +22,5 @@ Apache PDFBox Overview The Apache PDFBox is an open source library for working w
 Adding Apache PDFBox Dependencies Adding below dependencies to build.gradle file if you are using Gradle build tool. compile group: &amp;lsquo;org.apache.pdfbox&amp;rsquo;, name: &amp;lsquo;pdfbox&amp;rsquo;, version: &amp;lsquo;2.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://simplesolution.dev/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://simplesolution.dev/</guid>
-      <description>https://www.tutorialspoint.com/pdfbox/pdfbox_adding_pages.htm
-https://memorynotfound.com/apache-pdfbox-create-pdf-document-java/
-https://memorynotfound.com/apache-pdfbox-convert-pdf-image-java/
-https://pdfbox.apache.org/2.0/cookbook/encryption.html
-Apache PDFBox Creating PDF Document File in Java Apache PDFBox Export Image Files from PDF Document in Java Apache PDFBox Encrypt PDF Document in Java Apache PDFBox Reading Protected PDF Document in Java Apache PDFBox Adding Paragraph PDF Document in Java Apache PDFBox Reading PDF Document in Java Apache PDFBox Extract Text from PDF Document in Java Apache PDFBox Adding Image to PDF Document in Java Apache PDFBox Adding Properties to PDF Document in Java Apache PDFBox Split PDF Document in Java Apache PDFBox Merge PDF Documents in Java Apache PDFBox Adding and Center Text to PDF Documents in Java Apache PDFBox Creating Bookmarks to PDF Document in Java Apache PDFBox Adding Embedded Files to PDF Document in Java Apache PDFBox Adding Embedded Fonts to PDF Document in Java Apache PDFBox Extract Embedded Files from PDF Document in Java Apache PDFBox Extract Embedded Fonts from PDF Document in Java Apache PDFBox Adding Watermark to PDF Document in Java</description>
-    </item>
-    
   </channel>
 </rss>
