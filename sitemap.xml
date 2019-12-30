@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java/creating-pdf-document-file-in-java-using-apache-pdfbox/</loc>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/using-dozer-spring-boot-starter/</loc>
     <lastmod>2019-12-18T00:20:41+07:00</lastmod>
   </url>
@@ -363,6 +368,10 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/java/notes_pdfbox/</loc>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
     <lastmod>2019-04-13T17:53:10+07:00</lastmod>
     <priority>0</priority>
@@ -371,6 +380,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-io/</loc>
     <lastmod>2019-04-26T01:03:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/apache-pdfbox/</loc>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -453,13 +468,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -478,6 +493,12 @@
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
     <lastmod>2019-05-30T01:00:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -506,6 +527,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/pdf/</loc>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/posts/</loc>
     <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
@@ -519,7 +546,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-12-18T00:20:41+07:00</lastmod>
+    <lastmod>2019-12-29T10:26:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   

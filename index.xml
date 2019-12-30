@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Dec 2019 00:20:41 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 10:26:47 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating PDF Document File in Java using Apache PDFBox</title>
+      <link>https://simplesolution.dev/java/creating-pdf-document-file-in-java-using-apache-pdfbox/</link>
+      <pubDate>Sun, 29 Dec 2019 10:26:47 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java/creating-pdf-document-file-in-java-using-apache-pdfbox/</guid>
+      <description>Introduction In this tutorial we will learn how to create a PDF document file in Java application using Apache PDFBox library.
+Apache PDFBox Overview The Apache PDFBox is an open source library for working with PDF documents in Java. You can get more information about the project at pdfbox.apache.org
+Adding Apache PDFBox Dependencies Adding below dependencies to build.gradle file if you are using Gradle build tool. compile group: &amp;lsquo;org.apache.pdfbox&amp;rsquo;, name: &amp;lsquo;pdfbox&amp;rsquo;, version: &amp;lsquo;2.</description>
+    </item>
     
     <item>
       <title>Using Dozer Spring Boot Starter</title>
@@ -808,6 +819,19 @@ Adding Gson dependency into your project Using Gradle compile group: &amp;#39;co
       <description>Apache POI is and open source Java library allow you to read and write Microsoft Documents such as Excel workbook, Word document, Powerpoint presentation.
 In this blog post I will show you how to use Apache POI library to writing an Excel file. Throughout this blog post we will implement an Java application to generate the Excel file as the figure below:
    (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://simplesolution.dev/java/notes_pdfbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simplesolution.dev/java/notes_pdfbox/</guid>
+      <description>https://www.tutorialspoint.com/pdfbox/pdfbox_adding_pages.htm
+https://memorynotfound.com/apache-pdfbox-create-pdf-document-java/
+https://memorynotfound.com/apache-pdfbox-convert-pdf-image-java/
+https://pdfbox.apache.org/2.0/cookbook/encryption.html
+Apache PDFBox Creating PDF Document File in Java Apache PDFBox Export Image Files from PDF Document in Java Apache PDFBox Encrypt PDF Document in Java Apache PDFBox Reading Protected PDF Document in Java Apache PDFBox Adding Paragraph PDF Document in Java Apache PDFBox Reading PDF Document in Java Apache PDFBox Extract Text from PDF Document in Java Apache PDFBox Adding Image to PDF Document in Java Apache PDFBox Adding Properties to PDF Document in Java Apache PDFBox Split PDF Document in Java Apache PDFBox Merge PDF Documents in Java Apache PDFBox Adding and Center Text to PDF Documents in Java Apache PDFBox Creating Bookmarks to PDF Document in Java Apache PDFBox Adding Embedded Files to PDF Document in Java Apache PDFBox Adding Embedded Fonts to PDF Document in Java Apache PDFBox Extract Embedded Files from PDF Document in Java Apache PDFBox Extract Embedded Fonts from PDF Document in Java Apache PDFBox Adding Watermark to PDF Document in Java</description>
     </item>
     
   </channel>
