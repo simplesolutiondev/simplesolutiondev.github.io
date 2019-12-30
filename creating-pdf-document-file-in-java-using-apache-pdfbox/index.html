@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Creating PDF Document File in Java using Apache PDFBox</title>
+    <meta name="title" content="Creating PDF Document File in Java using Apache PDFBox">
+    <meta name="description" content="In this tutorial we will learn how to create a PDF document file in Java application using Apache PDFBox library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/creating-pdf-document-file-in-java-using-apache-pdfbox/">
+    <meta property="og:title" content="Creating PDF Document File in Java using Apache PDFBox">
+    <meta property="og:description" content="In this tutorial we will learn how to create a PDF document file in Java application using Apache PDFBox library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/creating-pdf-document-file-in-java-using-apache-pdfbox.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/creating-pdf-document-file-in-java-using-apache-pdfbox/">
+    <meta name="twitter:title" content="Creating PDF Document File in Java using Apache PDFBox">
+    <meta name="twitter:description" content="In this tutorial we will learn how to create a PDF document file in Java application using Apache PDFBox library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/creating-pdf-document-file-in-java-using-apache-pdfbox.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=5" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Creating PDF Document File in Java using Apache PDFBox</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this tutorial we will learn how to create a PDF document file in Java application using Apache PDFBox library.</p>
+
+<h4 id="apache-pdfbox-overview">Apache PDFBox Overview</h4>
+
+<p>The Apache PDFBox is an open source library for working with PDF documents in Java. You can get more information about the project at <a href="https://pdfbox.apache.org/" target="_blank">pdfbox.apache.org</a></p>
+
+<h4 id="adding-apache-pdfbox-dependencies">Adding Apache PDFBox Dependencies</h4>
+
+<p>Adding below dependencies to build.gradle file if you are using Gradle build tool.
+compile group: &lsquo;org.apache.pdfbox&rsquo;, name: &lsquo;pdfbox&rsquo;, version: &lsquo;2.0.18&rsquo;</p>
+
+<p>Adding below XML to pom.xml file if you are using Maven build tool.
+<dependency>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>pdfbox</artifactId>
+    <version>2.0.18</version>
+</dependency></p>
+
+<p>Or you can download the pdfbox-2.0.18.jar file from <a href="https://pdfbox.apache.org/download.cgi" target="_blank">pdfbox.apache.org/download.cgi</a></p>
+
+<h4 id="creating-empty-pdf-document">Creating empty PDF document</h4>
+
+<p>To create a new empty document we need create new instance of PDDocument.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">PDDocument document <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PDDocument<span style="color:#f92672">();</span></code></pre></div></p>
+
+<h4 id="adding-new-empty-page-to-pdf-document">Adding new empty page to PDF document</h4>
+
+<p>To add a new blank page to the document we create new instance of PDPage.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">PDPage page <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PDPage<span style="color:#f92672">();</span>
+document<span style="color:#f92672">.</span><span style="color:#a6e22e">addPage</span><span style="color:#f92672">(</span>page<span style="color:#f92672">);</span></code></pre></div></p>
+
+<h4 id="adding-text-to-pdf-document-page">Adding text to PDF document page</h4>
+
+<p>To add text to the document page we use PDPageContentStream object to adding text as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">PDPageContentStream pageContentStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PDPageContentStream<span style="color:#f92672">(</span>document<span style="color:#f92672">,</span> page<span style="color:#f92672">);</span>
+pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">beginText</span><span style="color:#f92672">();</span>
+pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span> PDType1Font<span style="color:#f92672">.</span><span style="color:#a6e22e">TIMES_ROMAN</span> <span style="color:#f92672">,</span> 12 <span style="color:#f92672">);</span>
+pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">newLineAtOffset</span><span style="color:#f92672">(</span>100<span style="color:#f92672">,</span>  700<span style="color:#f92672">);</span>
+pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">showText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Welcome to simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">endText</span><span style="color:#f92672">();</span>
+pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<h4 id="save-pdf-document">Save PDF document</h4>
+
+<p>Finally we need to save PDF document to the disk, for example we save the new PDF file to D:\SimpleSolution\Document.pdf
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">document<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Document.pdf&#34;</span><span style="color:#f92672">);</span></code></pre></div></p>
+
+<h4 id="complete-application-source-code">Complete Application Source Code</h4>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.pdfbox.pdmodel.PDDocument<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.pdfbox.pdmodel.PDPage<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.pdfbox.pdmodel.PDPageContentStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.pdfbox.pdmodel.font.PDType1Font<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CreatingPdfDocument</span> <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>PDDocument document <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PDDocument<span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+			PDPage page <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PDPage<span style="color:#f92672">();</span>
+			document<span style="color:#f92672">.</span><span style="color:#a6e22e">addPage</span><span style="color:#f92672">(</span>page<span style="color:#f92672">);</span>
+			
+			PDPageContentStream pageContentStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> PDPageContentStream<span style="color:#f92672">(</span>document<span style="color:#f92672">,</span> page<span style="color:#f92672">);</span>
+			pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">beginText</span><span style="color:#f92672">();</span>
+			pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">setFont</span><span style="color:#f92672">(</span> PDType1Font<span style="color:#f92672">.</span><span style="color:#a6e22e">TIMES_ROMAN</span> <span style="color:#f92672">,</span> 12 <span style="color:#f92672">);</span>
+			pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">newLineAtOffset</span><span style="color:#f92672">(</span>100<span style="color:#f92672">,</span>  700<span style="color:#f92672">);</span>
+			pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">showText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Welcome to simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+			pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">endText</span><span style="color:#f92672">();</span>
+			pageContentStream<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+			
+			document<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Document.pdf&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Execute the application above you will get the Document.pdf file as below.</p>
+
+<p><img src="/images/creating-pdf-document-file-in-java-using-apache-pdfbox.png" alt="Creating PDF Document File in Java using Apache PDFBox" class="img-fluid"></p>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/ApachePDFBoxCreatingPdfDocument" target="_blank">github.com/simplesolutiondev/ApachePDFBoxCreatingPdfDocument</a></p>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/ApachePDFBoxCreatingPdfDocument/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/apache-pdfbox">Apache PDFBox</a>
+                                
+                                <a href="https://simplesolution.dev/tag/pdf">PDF</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">
+            <div class="container">
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
