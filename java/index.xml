@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javas on Simple Solution</title>
+    <title>Java on Simple Solution</title>
     <link>https://simplesolution.dev/java/</link>
-    <description>Recent content in Javas on Simple Solution</description>
+    <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Dec 2019 10:26:47 +0700</lastBuildDate>
@@ -23,16 +23,802 @@ Adding Apache PDFBox Dependencies Adding below dependencies to build.gradle file
     </item>
     
     <item>
-      <title></title>
-      <link>https://simplesolution.dev/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Using Dozer Spring Boot Starter</title>
+      <link>https://simplesolution.dev/using-dozer-spring-boot-starter/</link>
+      <pubDate>Wed, 18 Dec 2019 00:20:41 +0700</pubDate>
       
-      <guid>https://simplesolution.dev/</guid>
-      <description>https://www.tutorialspoint.com/pdfbox/pdfbox_adding_pages.htm
-https://memorynotfound.com/apache-pdfbox-create-pdf-document-java/
-https://memorynotfound.com/apache-pdfbox-convert-pdf-image-java/
-https://pdfbox.apache.org/2.0/cookbook/encryption.html
-Apache PDFBox Creating PDF Document File in Java Apache PDFBox Export Image Files from PDF Document in Java Apache PDFBox Encrypt PDF Document in Java Apache PDFBox Reading Protected PDF Document in Java Apache PDFBox Adding Paragraph PDF Document in Java Apache PDFBox Reading PDF Document in Java Apache PDFBox Extract Text from PDF Document in Java Apache PDFBox Adding Image to PDF Document in Java Apache PDFBox Adding Properties to PDF Document in Java Apache PDFBox Split PDF Document in Java Apache PDFBox Merge PDF Documents in Java Apache PDFBox Adding and Center Text to PDF Documents in Java Apache PDFBox Creating Bookmarks to PDF Document in Java Apache PDFBox Adding Embedded Files to PDF Document in Java Apache PDFBox Adding Embedded Fonts to PDF Document in Java Apache PDFBox Extract Embedded Files from PDF Document in Java Apache PDFBox Extract Embedded Fonts from PDF Document in Java Apache PDFBox Adding Watermark to PDF Document in Java</description>
+      <guid>https://simplesolution.dev/using-dozer-spring-boot-starter/</guid>
+      <description>In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.
+Creating Spring Boot Console Application Project Open your Spring Tool Suite IDE and choose menu File -&amp;gt; New -&amp;gt; Spring Starter Project
+In New Spring Starter Project window input below informations for your project and click Next.</description>
+    </item>
+    
+    <item>
+      <title>Video Spring Boot Web Application Download Excel File</title>
+      <link>https://simplesolution.dev/video-spring-boot-web-application-download-excel-file/</link>
+      <pubDate>Tue, 17 Dec 2019 23:22:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/video-spring-boot-web-application-download-excel-file/</guid>
+      <description>Step by step video how to implement Spring Boot web application with download Excel file using Apache POI libary.
+  
+The source code in this article can be found at: github.com/simplesolutiondev/DownloadExcelFile
+or download at:
+ Download Source Code
+Happy Coding 😊
+Related Articles Spring Boot Web Application Download Excel File
+Spring Boot Web Application Download CSV File
+Writing Excel File Using Apache POI Library in Java
+Creating Spring Boot Application with Spring Tool Suite</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot Web Application Download Excel File</title>
+      <link>https://simplesolution.dev/spring-boot-web-application-download-excel-file/</link>
+      <pubDate>Mon, 16 Dec 2019 00:00:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-web-application-download-excel-file/</guid>
+      <description>In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.
+Creating Spring Boot web project using Spring Tool Suite Open Spring Tool Suite on your machine and click on &amp;ldquo;Create a project&amp;hellip;&amp;rdquo; or choose menu File -&amp;gt; New -&amp;gt; Project
+On New Project window select Spring Starter Project and click Next</description>
+    </item>
+    
+    <item>
+      <title>JUnit 5 with Gradle Setup</title>
+      <link>https://simplesolution.dev/java-code-examples/junit-5-with-gradle-setup/</link>
+      <pubDate>Thu, 30 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/junit-5-with-gradle-setup/</guid>
+      <description>In this article we will setup a Java project that using JUnit 5 and Gradle build.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Set up Gradle build The Gradle version we will use is 5.4.1 which build.gradle as below. plugins {id &amp;#39;java&amp;#39;}repositories {mavenCentral()}dependencies {testImplementation(&amp;#39;org.junit.jupiter:junit-jupiter:5.4.2&amp;#39;)}test {useJUnitPlatform()testLogging {events &amp;#34;passed&amp;#34;, &amp;#34;skipped&amp;#34;, &amp;#34;failed&amp;#34;}}
+Adding a simple test class to test add() method of BigInteger class package simplesolution.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Update Excel File Content</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-update-excel-file/</link>
+      <pubDate>Sun, 26 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-update-excel-file/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.WorkbookFactory.create(InputStream inputStream) method org.apache.poi.ss.usermodel.Workbook.write(OutputStream stream) method  In this article we show you how to update existing Excel file content in Java using Apache POI library.    (adsbygoogle = window.adsbygoogle || []).push({}); 
+Apache POI Library Dependencies Define below dependencies in build.gradle if you are using Gradle build. compile group: &amp;#39;org.apache.poi&amp;#39;, name: &amp;#39;poi&amp;#39;, version: &amp;#39;4.0.1&amp;#39;compile group: &amp;#39;org.apache.poi&amp;#39;, name: &amp;#39;poi-ooxml&amp;#39;, version: &amp;#39;4.0.1&amp;#39;</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Excel Cell Fonts</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cells-fonts/</link>
+      <pubDate>Sun, 19 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-excel-cells-fonts/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.Font class org.apache.poi.ss.usermodel.CellStyle class  In Java code examples below we show you how to use Apache POI library to generate Excel file with custom font style for Excel cells such as bold, italic, underline, strikeout, type offset, font name, font height and color.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Apache POI Library Dependencies Define below dependencies in build.gradle if you are using Gradle build.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Merging Excel Cells</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-merging-excel-cells/</link>
+      <pubDate>Sat, 18 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-merging-excel-cells/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.util.CellRangeAddress class org.apache.poi.ss.usermodel.Sheet.addMergedRegion() method  In Java example code below we show you how to create Excel file with merged cell.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Apache POI Library Dependencies Define below dependencies in build.gradle if you are using Gradle build. compile group: &amp;#39;org.apache.poi&amp;#39;, name: &amp;#39;poi&amp;#39;, version: &amp;#39;4.0.1&amp;#39;
+Define this dependencies in pom.xml if you are using Maven build. &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.</description>
+    </item>
+    
+    <item>
+      <title>Spring Boot Web Application Download CSV File</title>
+      <link>https://simplesolution.dev/spring-boot-application-download-csv/</link>
+      <pubDate>Tue, 14 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-application-download-csv/</guid>
+      <description>In this article we show you how to implement dowloading CSV file in Spring Boot Web Application.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Overview Project Structure Throughout this article we implement the Spring Boot project as below structure Gradle Build Dependencies Define below dependencies in build.gradle if you are using gradle. implementation &amp;#39;org.springframework.boot:spring-boot-starter-thymeleaf&amp;#39;implementation &amp;#39;org.springframework.boot:spring-boot-starter-web&amp;#39;
+Maven Build Dependencies Define this dependencies in pom.xml if you are using maven.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 Properties Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-properties-configuration-console-appender/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-properties-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with Properties configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project Add dependencies below to your build.gradle if you are using Gradle build. dependencies {compile group: &amp;#39;org.apache.logging.log4j&amp;#39;, name: &amp;#39;log4j-api&amp;#39;, version: &amp;#39;2.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 YAML Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-yaml-configuration-console-appender/</link>
+      <pubDate>Tue, 07 May 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-yaml-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with YAML configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project In order to read YAML configuration file Log4j 2 using Jackson and jackson-dataformat-yaml libraries so that you need to add these dependencies to your project.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 XML Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-xml-configuration-console-appender/</link>
+      <pubDate>Tue, 07 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-xml-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with XML configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project Add dependencies below to your build.gradle if you are using Gradle build. dependencies {compile group: &amp;#39;org.apache.logging.log4j&amp;#39;, name: &amp;#39;log4j-api&amp;#39;, version: &amp;#39;2.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 JSON Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/</link>
+      <pubDate>Mon, 06 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with JSON configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project In order to read JSON configuration file Log4j 2 using Jackson library so that you need to add Jackson dependencies to your project.</description>
+    </item>
+    
+    <item>
+      <title>Google Guava in Java to join String with Joiner</title>
+      <link>https://simplesolution.dev/java-code-examples/guava-java-join-string-with-joiner/</link>
+      <pubDate>Fri, 03 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/guava-java-join-string-with-joiner/</guid>
+      <description>Java Code Examples for using com.google.common.base.Joiner class
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example for using Joiner that skip joining null values package simplesolution.dev;import com.google.common.base.Joiner;public class GuavaJoinerExample1 {public static void main(String... args) {final Joiner joiner = Joiner.on(&amp;#34; and &amp;#34;).skipNulls();String result = joiner.join(&amp;#34;Java&amp;#34;, &amp;#34;Python&amp;#34;, null, &amp;#34;Go&amp;#34;);System.out.println(result);}} Output
+Java and Python and Go  Example for using Joiner to join objects package simplesolution.</description>
+    </item>
+    
+    <item>
+      <title>Gradle Creating Executable JAR File</title>
+      <link>https://simplesolution.dev/gradle-creating-executable-jar-file/</link>
+      <pubDate>Wed, 01 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/gradle-creating-executable-jar-file/</guid>
+      <description>In this toturial we will show you how to configure Gradle build script to build the JAR file that can be executed by java command. In this article we just build the simple application without dependencies.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example you have created a standard Gradle project as below structure. With the main class GradleCreatingExecutableJarExample as below.
+package simplesolution.dev;public class GradleCreatingExecutableJarExample {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to get Readable File Size in KB MB GB TB</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-get-readable-file-size/</link>
+      <pubDate>Fri, 26 Apr 2019 01:03:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-readable-file-size/</guid>
+      <description>Java Code Examples for using byteCountToDisplaySize() method of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.math.BigInteger;public class FileUtilsByteCountToDisplaySizeExample {public static void main(String... args) {String result = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123456789&amp;#34;));System.out.println(result); // 117MBresult = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123&amp;#34;));System.out.println(result); // 123 bytesresult = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123456&amp;#34;));System.out.println(result); //120 KBresult = FileUtils.byteCountToDisplaySize(new BigInteger(&amp;#34;123456789012345&amp;#34;));System.out.println(result); //112 TBresult = FileUtils.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to get User Directory</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-get-user-directory/</link>
+      <pubDate>Fri, 26 Apr 2019 01:03:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-user-directory/</guid>
+      <description>Java Code Examples for using getUserDirectoryPath() and getUserDirectory() methods of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsUserDirectoryExample {public static void main(String... args) {String userDirectoryPath = FileUtils.getUserDirectoryPath();System.out.println(userDirectoryPath);File userDirectory = FileUtils.getUserDirectory();System.out.println(userDirectory.getAbsolutePath());}} Happy Coding 😊
+Related Articles Apache Commons IO to get Readable File Size in KB MB GB TB
+Apache Commons IO to get Temporary Directory</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to get Temporary Directory</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-get-temporary-directory/</link>
+      <pubDate>Fri, 26 Apr 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-get-temporary-directory/</guid>
+      <description>Java Code Examples for using getTempDirectoryPath() and getTempDirectory() methods of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsTempDirectoryExample {public static void main(String... args) {String tempDirectoryPath = FileUtils.getTempDirectoryPath();System.out.println(tempDirectoryPath);File tempDirectory = FileUtils.getTempDirectory();System.out.println(tempDirectory.getAbsolutePath());}} Happy Coding 😊
+Related Articles Apache Commons IO to get Readable File Size in KB MB GB TB
+Apache Commons IO to get User Directory</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to construct File from Directory and Name Elements using FileUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-construct-file-from-directory-name-elements/</link>
+      <pubDate>Fri, 26 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-construct-file-from-directory-name-elements/</guid>
+      <description>Java Code Examples for using getFile() method of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example 1 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsGetFileExample1 {public static void main(String... args) {// construct File from name elements File file = FileUtils.getFile(&amp;#34;D:&amp;#34;, &amp;#34;Data&amp;#34;, &amp;#34;file1.txt&amp;#34;);System.out.println(&amp;#34;Absolute file path: &amp;#34; + file.getAbsolutePath());System.out.println(&amp;#34;File exist: &amp;#34; + file.exists());}} Example 2 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to delete directory using FileUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-commons-io-delete-directory-fileutils/</link>
+      <pubDate>Fri, 26 Apr 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-delete-directory-fileutils/</guid>
+      <description>Java Code Examples for using deleteDirectory() method of org.apache.commons.io.FileUtils class
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;import java.io.IOException;public class FileUtilsDeleteDirectoryExample {public static void main(String... args) {try {File directoryToDelete = new File(&amp;#34;D:\\Data\\test&amp;#34;);FileUtils.deleteDirectory(directoryToDelete);}catch(IOException ex) {ex.printStackTrace();}}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Excel Cell Background Foreground and Font Color with 17 Java Code Examples</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-background-foreground-font-color/</link>
+      <pubDate>Mon, 22 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-background-foreground-font-color/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.FillPatternType org.apache.poi.ss.usermodel.IndexedColors org.apache.poi.ss.usermodel.CellStyle  17 Java code examples below to show how to use different fill patterns to set up Excel cell background and forground using Apache POI library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example for background and foreground color with FillPatternType.ALT_BARS fill pattern package simplesolution.dev;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.ss.usermodel.Font;import org.apache.poi.ss.usermodel.IndexedColors;import org.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Excel Cell Border and Border Color</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/</link>
+      <pubDate>Mon, 22 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-excel-cell-border-and-border-color/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.CellStyle org.apache.poi.ss.usermodel.BorderStyle org.apache.poi.ss.usermodel.IndexedColors  Below 13 Java code examples to show how to use Apache POI to generate Excel files with different cell border formats such as thin, thick, medium, dashed, dot, slanted, hair, double. These examples also include code to set color for Excel cell border.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example for thin border style and black border color package simplesolution.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Vertical and Horizontal Excel Cell Alignment</title>
+      <link>https://simplesolution.dev/java-code-examples/apache-poi-vertical-horizontal-excel-cell-alignment/</link>
+      <pubDate>Mon, 22 Apr 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/apache-poi-vertical-horizontal-excel-cell-alignment/</guid>
+      <description>Java Code Examples for:
+ org.apache.poi.ss.usermodel.HorizontalAlignment org.apache.poi.ss.usermodel.VerticalAlignment  There are nine examples below to show how to use Apache POI library to create Excel cells with different aligment.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example Left Top Excel Cell Alignment package simplesolution.dev;import org.apache.poi.ss.usermodel.CellStyle;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.ss.usermodel.HorizontalAlignment;import org.apache.poi.ss.usermodel.VerticalAlignment;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class CellStyleAlignmentLeftTopExample {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Creating Spring Boot Application with Spring Tool Suite</title>
+      <link>https://simplesolution.dev/spring-boot-application-spring-tool-suite/</link>
+      <pubDate>Thu, 18 Apr 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-application-spring-tool-suite/</guid>
+      <description>In this article we will learn step by step guide to create a new Spring Boot web application using Spring Tool Suite.
+   (adsbygoogle = window.adsbygoogle || []).push({});  You can download Spring Tool Suite from this link
+First step, open Spring Tool Suite on your machine and choose menu File -&amp;gt; New -&amp;gt; Spring Starter Project
+Then input new project information on New Spring Starter Project popup as below and click on Next button.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to read text file content as a list of Strings</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.readlines/</link>
+      <pubDate>Wed, 17 Apr 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.readlines/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.readLines()
+Example below using readLines() method to read file content from InputStream or Reader and return a list of Strings.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example to use IOUtils.readLines() with InputStream package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.FileInputStream;import java.io.IOException;import java.io.InputStream;import java.util.List;public class IOUtilsReadLinesWithInputStreamExample {public static void main(String... args) {String fileName = &amp;#34;D:\\data\\sample.txt&amp;#34;;try(InputStream inputStream = new FileInputStream(fileName)){List&amp;lt;String&amp;gt; fileContent = IOUtils.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO with LineIterator to read file content</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.lineiterator/</link>
+      <pubDate>Wed, 17 Apr 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.lineiterator/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.lineIterator()
+There are two examples to show you how to use Apache Commons IO with LineIterator to read file content from InputStream or Reader object.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example to use IOUtils.lineIterator() with InputStream package simplesolution.dev;import org.apache.commons.io.IOUtils;import org.apache.commons.io.LineIterator;import java.io.FileInputStream;import java.io.IOException;import java.io.InputStream;public class IOUtilsLineIteratorWithInputStreamExample {public static void main(String... args) {String fileName = &amp;#34;D:\\data\\sample.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to copy file content from InputStream to OutputStream</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.copy/</link>
+      <pubDate>Wed, 17 Apr 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.copy/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.copy()
+Example code below to show how to use IOUtils class of Apache Commons IO library to copy file content from an InputStream to an OutputStream.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.File;import java.io.FileOutputStream;import java.io.InputStream;import java.io.OutputStream;import java.io.IOException;import java.nio.file.Files;import java.nio.file.Path;public class IOUtilsCopyExample {public static void main(String... args) {try {String sourceFileName = &amp;#34;D:\\Data\\sample.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI to Create Excel Date Time Cell in m/d/yy h:mm:ss Format</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.poi.ss.usermodel.cell.createcell-date-time/</link>
+      <pubDate>Sat, 13 Apr 2019 17:55:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.poi.ss.usermodel.cell.createcell-date-time/</guid>
+      <description>Java Code Examples for
+ org.apache.poi.ss.usermodel.Cell.createCell()  The example below to create a new Excel file with one worksheet and a date time cell in m/d/yy h:mm:ss format using Apache POI library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.ss.usermodel.CreationHelper;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.ss.usermodel.CellStyle;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;import java.util.Date;public class CreateHelperCreateDataFormatDateTimeExample {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI to Create Excel Text Cell</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.poi.ss.usermodel.cell.createcell/</link>
+      <pubDate>Sat, 13 Apr 2019 17:54:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.poi.ss.usermodel.cell.createcell/</guid>
+      <description>Java Code Examples for
+ org.apache.poi.ss.usermodel.Cell.createCell()  The example below to create a new Excel file with one worksheet and a text cell using Apache POI library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.ss.usermodel.Cell;import org.apache.poi.ss.usermodel.Row;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import org.apache.poi.xssf.usermodel.XSSFWorkbook;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class RowCreateCellExample {public static void main(String... args) {Workbook workbook = new XSSFWorkbook();Sheet sheet = workbook.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to Compare File Content of InputStream or Reader using IOUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.contentequals/</link>
+      <pubDate>Sat, 13 Apr 2019 17:53:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.contentequals/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.contentEquals() and org.apache.commons.io.IOUtils.contentEqualsIgnoreEOL()
+Three examples below to show how to use Apache Commons IO IOUtils class to Compare File Content of InputStream objects or Reader objects.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example IOUtils.contentEquals() method to compare 2 InputStream objects package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.File;import java.io.IOException;import java.io.InputStream;import java.nio.file.Files;import java.nio.file.Path;public class IOUtilsContentEqualsInputStreamExample {public static void main(String... args) {try {File file1 = new File(&amp;#34;D:\\Data\\file1.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to download website content from URL using IOUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-url/</link>
+      <pubDate>Sat, 13 Apr 2019 17:52:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-url/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+Below Java code example to show you how to use Apache Commons IO IOUtils class to download website content from java.net.URL.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.Charsets;import org.apache.commons.io.IOUtils;import java.io.IOException;import java.net.URL;public class IOUtilToStringFromURLExample {public static void main(String... args) {try {URL uri = new URL(&amp;#34;https://simplesolution.dev/java-code-examples/&amp;#34;);String content = IOUtils.toString(uri, Charsets.UTF_8);System.out.println(content);} catch (IOException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to download website content from URI using IOUtils</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-uri/</link>
+      <pubDate>Sat, 13 Apr 2019 17:51:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-uri/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+Below Java code example to show you how to use Apache Commons IO IOUtils class to download website content from java.net.URI.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.Charsets;import org.apache.commons.io.IOUtils;import java.io.IOException;import java.net.URI;import java.net.URISyntaxException;public class IOUtilToStringFromURIExample {public static void main(String... args) {try {URI uri = new URI(&amp;#34;https://simplesolution.dev/&amp;#34;);String content = IOUtils.toString(uri, Charsets.UTF_8);System.out.println(content);} catch (URISyntaxException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to read text content from Reader</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-reader/</link>
+      <pubDate>Sat, 13 Apr 2019 17:50:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-reader/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+The example below to show you how to use Apache Commons IO libary&amp;rsquo;s IOUtils class to read text content from Reader.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.FileReader;import java.io.IOException;import java.io.Reader;public class IOUtilToStringFromReaderExample {public static void main(String... args) {String fileName = &amp;#34;D:\\data\\sample.txt&amp;#34;;try(Reader reader = new FileReader(fileName)) {String fileContent = IOUtils.toString(reader);System.out.println(fileContent);} catch (IOException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Apache Commons IO to read text content from InputStream</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-input-stream/</link>
+      <pubDate>Sat, 13 Apr 2019 17:49:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.io.ioutils.tostring-from-input-stream/</guid>
+      <description>Java Code Examples for org.apache.commons.io.IOUtils.toString()
+The example below to show you how to use Apache Commons IO libary&amp;rsquo;s IOUtils class to read text content from InputStream.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.io.IOUtils;import java.io.FileInputStream;import java.io.IOException;import java.io.InputStream;public class IOUtilToStringFromInputStreamExample {public static void main(String... args) {String fileName = &amp;#34;D:\\data\\sample.txt&amp;#34;;try(InputStream inputStream = new FileInputStream(fileName)) {String value = IOUtils.toString(inputStream, &amp;#34;UTF-8&amp;#34;);System.</description>
+    </item>
+    
+    <item>
+      <title>Get First Date of Current Month using Calendar</title>
+      <link>https://simplesolution.dev/java-code-examples/java.util.calendar.gettime.firstdateofmonth/</link>
+      <pubDate>Sat, 13 Apr 2019 17:48:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.util.calendar.gettime.firstdateofmonth/</guid>
+      <description>Java Code Examples for java.util.Calendar
+Get First Date of Current Month using Calendar.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.util.Calendar;import java.util.Date;public class CalendarFirstDayOfMonthExamples {public static void main(String... args) {Calendar calendar = Calendar.getInstance();Date currentDate = new Date();calendar.setTime(currentDate);calendar.set(Calendar.DAY_OF_MONTH, 1);calendar.set(Calendar.HOUR_OF_DAY, 0);calendar.set(Calendar.MINUTE, 0);calendar.set(Calendar.SECOND, 0);calendar.set(Calendar.MILLISECOND, 0);Date firstDateOfMonth = calendar.getTime();System.out.println(firstDateOfMonth);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Get Last Date of Current Month using Calendar</title>
+      <link>https://simplesolution.dev/java-code-examples/java.util.calendar-last-date-of-month/</link>
+      <pubDate>Sat, 13 Apr 2019 17:48:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.util.calendar-last-date-of-month/</guid>
+      <description>Java Code Examples for java.util.Calendar
+Get Last Date of Current Month using Calendar
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.util.Calendar;import java.util.Date;public class CalendarLastDateOfMonthExamples {public static void main(String... args) {Calendar calendar = Calendar.getInstance();Date currentDate = new Date();calendar.setTime(currentDate);calendar.set(Calendar.DAY_OF_MONTH, 1);calendar.set(Calendar.HOUR_OF_DAY, 0);calendar.set(Calendar.MINUTE, 0);calendar.set(Calendar.SECOND, 0);calendar.set(Calendar.MILLISECOND, 0);calendar.add(Calendar.MONTH, 1);calendar.add(Calendar.MILLISECOND, -1);Date lastDateOfCurrentMonth = calendar.getTime();System.out.println(lastDateOfCurrentMonth);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Parses a String value to Date value with given format yyyy-MM-dd HH:mm:ss</title>
+      <link>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.parse/</link>
+      <pubDate>Sat, 13 Apr 2019 17:47:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.parse/</guid>
+      <description>Java Code Examples for java.text.SimpleDateFormat.parse()
+Parses a String value to Date value with given format yyyy-MM-dd HH:mm:ss.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.text.ParseException;import java.text.SimpleDateFormat;import java.util.Date;public class SimpleDateFormatParseExamples {public static void main(String... args) {try {SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;);String source = &amp;#34;2019-04-15 10:15:30&amp;#34;;Date date = simpleDateFormat.parse(source);System.out.println(date);} catch (ParseException ex) {ex.printStackTrace();}}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Formats a Date object into a string yyyy-MM-dd HH:mm:ss</title>
+      <link>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.format/</link>
+      <pubDate>Sat, 13 Apr 2019 17:46:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.text.simpledateformat.format/</guid>
+      <description>Java Code Examples for java.text.SimpleDateFormat.format()
+Formats a Date into a string yyyy-MM-dd HH:mm:ss.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.text.SimpleDateFormat;import java.util.Date;public class SimpleDateFormatFormatExamples {public static void main(String... args) {SimpleDateFormat simpleDateFormat = new SimpleDateFormat(&amp;#34;yyyy-MM-dd HH:mm:ss&amp;#34;);Date dateToFormat = new Date();String formattedValue = simpleDateFormat.format(dateToFormat);System.out.println(formattedValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java AES Advanced Encryption Standard Encryption and Decryption</title>
+      <link>https://simplesolution.dev/java-code-examples/javax.crypto.cipher.dofinal/</link>
+      <pubDate>Sat, 13 Apr 2019 17:45:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/javax.crypto.cipher.dofinal/</guid>
+      <description>Java Code Examples for javax.crypto.Cipher.doFinal()
+Java AES Advanced Encryption Standard Encryption and Decryption.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev.crypto;import javax.crypto.BadPaddingException;import javax.crypto.Cipher;import javax.crypto.IllegalBlockSizeException;import javax.crypto.NoSuchPaddingException;import javax.crypto.spec.SecretKeySpec;import java.io.UnsupportedEncodingException;import java.security.InvalidKeyException;import java.security.MessageDigest;import java.security.NoSuchAlgorithmException;import java.util.Arrays;import java.util.Base64;public class AESEncryption {public static void main(String... args) {try {String secretKey = &amp;#34;KeyToKeepSecret&amp;#34;;String dataToEncrypt = &amp;#34;https://simplesolution.dev&amp;#34;;String dataToDecrypt = &amp;#34;eLR6zVc8ycWr1xfixIkMQ8iL5asv9WyAhuRmz1Wf1u0=&amp;#34;;System.</description>
+    </item>
+    
+    <item>
+      <title>Encode a String into Base64 using Base64.encodeBase64String() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64string/</link>
+      <pubDate>Sat, 13 Apr 2019 17:44:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64string/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encodeBase64String()
+This static method to encode input String into a Base64 format String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeBase64StringExamples {public static void main(String... args) {String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;String encodedString = Base64.encodeBase64String(valueToEncode.getBytes());System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Encode byte array into Base64 format using Base64.encodeBase64() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64/</link>
+      <pubDate>Sat, 13 Apr 2019 17:43:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodebase64/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encodeBase64()
+This static method to encode input byte array into a Base64 format.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeBase64Examples {public static void main(String... args) {String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;byte[] encodedBytes = Base64.encodeBase64(valueToEncode.getBytes());String encodedString = new String(encodedBytes);System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Encode a String into Base64 format using Base64.encodeToString() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodetostring/</link>
+      <pubDate>Sat, 13 Apr 2019 17:42:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encodetostring/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encodeToString()
+This method to encode input String into a Base64 format String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeToStringExamples {public static void main(String... args) {Base64 base64 = new Base64();String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;String encodedString = base64.encodeToString(valueToEncode.getBytes());System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Encode byte array into Base64 format using Base64.encode() with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encode/</link>
+      <pubDate>Sat, 13 Apr 2019 17:41:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.commons.codec.binary.base64.encode/</guid>
+      <description>Java Code Examples for org.apache.commons.codec.binary.Base64.encode()
+This method to encode input byte array to Base64 format.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.commons.codec.binary.Base64;public class Base64EncodeExamples {public static void main(String... args) {Base64 base64 = new Base64();String valueToEncode = &amp;#34;https://simplesolution.dev/&amp;#34;;byte[] encodedBytes = base64.encode(valueToEncode.getBytes());String encodedString = new String(encodedBytes);System.out.println(&amp;#34;Encode output: &amp;#34;);System.out.println(encodedString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value to byte value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.bytevalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:40:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.bytevalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.byteValue()
+This method to convert a BigDecimal value to byte value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalByteValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;9.01&amp;#34;);byte byteValue = bigDecimal.byteValue();System.out.println(bigDecimal);System.out.println(byteValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into short value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.shortvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:39:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.shortvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.shortValue()
+This method to convert a BigDecimal value to short value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalShortValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;9.01&amp;#34;);short shortValue = bigDecimal.shortValue();System.out.println(bigDecimal);System.out.println(shortValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into long value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.longvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:38:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.longvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.longValue()
+This method to convert a BigDecimal value to long value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalLongValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;999999999.01&amp;#34;);long longValue = bigDecimal.longValue();System.out.println(bigDecimal);System.out.println(longValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into int value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.intvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:37:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.intvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.intValue()
+This method to convert a BigDecimal value to int value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalIntValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);int intValue = bigDecimal.intValue();System.out.println(bigDecimal);System.out.println(intValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into float value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.floatvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:36:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.floatvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.floatValue()
+This method to convert a BigDecimal value to float value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalFloatValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);float floatValue = bigDecimal.floatValue();System.out.println(bigDecimal);System.out.println(floatValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into double value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.doublevalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:35:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.doublevalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.doubleValue()
+This method to convert a BigDecimal value to double value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalDoubleValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);double doubleValue = bigDecimal.doubleValue();System.out.println(bigDecimal);System.out.println(doubleValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Divide two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.divide/</link>
+      <pubDate>Sat, 13 Apr 2019 17:34:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.divide/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.divide()
+This method to divide two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalDivideExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;40.04&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.01&amp;#34;);BigDecimal result = bigDecimal1.divide(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Multiply two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.multiply/</link>
+      <pubDate>Sat, 13 Apr 2019 17:33:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.multiply/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.multiply()
+This method to multiply two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalMultiplyExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;30.01&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.2&amp;#34;);BigDecimal result = bigDecimal1.multiply(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Subtract two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.subtract/</link>
+      <pubDate>Sat, 13 Apr 2019 17:32:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.subtract/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.subtract()
+This method to substact two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalSubtractExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;20.02&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.01&amp;#34;);BigDecimal result = bigDecimal1.subtract(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Adding two BigDecimal values</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.add/</link>
+      <pubDate>Sat, 13 Apr 2019 17:31:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.add/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.add()
+This method to add two BigDecimal values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalAddExamples {public static void main(String... args) {BigDecimal bigDecimal1 = new BigDecimal(&amp;#34;10.001&amp;#34;);BigDecimal bigDecimal2 = new BigDecimal(&amp;#34;10.002&amp;#34;);BigDecimal result = bigDecimal1.add(bigDecimal2);System.out.println(bigDecimal1);System.out.println(bigDecimal2);System.out.println(result);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Deserializes JSON string into Java object using JsonIterator.deserialize() with Jsoniter</title>
+      <link>https://simplesolution.dev/java-code-examples/com.jsoniter.jsoniterator.deserialize/</link>
+      <pubDate>Sat, 13 Apr 2019 17:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.jsoniter.jsoniterator.deserialize/</guid>
+      <description>Java Code Examples for com.jsoniter.JsonIterator.deserialize()
+This method to deserializes a JSON string into a Java object of the specified class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.jsoniter.JsonIterator;import java.util.List;import java.util.Map;public class JsonIteratorDeserializeExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = JsonIterator.deserialize(data, List.class);System.out.println(&amp;#34;[Jsoniter] Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON string using JsonStream.serialize() with Jsoniter</title>
+      <link>https://simplesolution.dev/java-code-examples/com.jsoniter.output.jsonstream.serialize/</link>
+      <pubDate>Sat, 13 Apr 2019 17:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.jsoniter.output.jsonstream.serialize/</guid>
+      <description>Java Code Examples for com.jsoniter.output.JsonStream.serialize()
+This method to serializes the Java object into JSON string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.jsoniter.output.JsonStream;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonStreamSerializeExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+    </item>
+    
+    <item>
+      <title>Apache POI Create new Excel sheet</title>
+      <link>https://simplesolution.dev/java-code-examples/org.apache.poi.hssf.usermodel.hssfworkbook.createsheet/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/org.apache.poi.hssf.usermodel.hssfworkbook.createsheet/</guid>
+      <description>Java Code Examples for
+ org.apache.poi.hssf.usermodel.HSSFWorkbook.createSheet()  Create a new sheet for Workbook and return the high level representation of Sheet.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import org.apache.poi.hssf.usermodel.HSSFWorkbook;import org.apache.poi.ss.usermodel.Sheet;import org.apache.poi.ss.usermodel.Workbook;import java.io.FileNotFoundException;import java.io.FileOutputStream;import java.io.IOException;import java.io.OutputStream;public class HSSFWorkbookCreateSheetExamples {public static void main(String... args) {Workbook workbook = new HSSFWorkbook();Sheet sheet = workbook.createSheet(&amp;#34;simplesolution.dev&amp;#34;);try (OutputStream outputStream = new FileOutputStream(&amp;#34;sample.</description>
+    </item>
+    
+    <item>
+      <title>Deserialize JSON string into Java object using ObjectMapper.readValue() with Jackson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.readvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.readvalue/</guid>
+      <description>Java Code Examples for com.fasterxml.jackson.databind.ObjectMapper.readValue()
+This method to deserialize JSON string into a Java object.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.List;import java.util.Map;public class ObjectMapperReadValueExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;ObjectMapper objectMapper = new ObjectMapper();try {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = objectMapper.readValue(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);} catch (IOException ex) {ex.</description>
+    </item>
+    
+    <item>
+      <title>Deserializes JSON String into Java object using JSON.parseObject() with Fastjson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.alibaba.fastjson.json.parseobject/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.alibaba.fastjson.json.parseobject/</guid>
+      <description>Java Code Examples for com.alibaba.fastjson.JSON.parseObject()
+This method to deserializes the JSON string into a Java object.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.alibaba.fastjson.JSON;import java.util.List;import java.util.Map;public class JSONParseObjectExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = JSON.parseObject(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Deserializes JSON string into Java object using Gson.fromJson() with Gson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</guid>
+      <description>Java Code Examples for com.google.gson.Gson.fromJson()
+This method to deserializes a JSON string into a Java object of the specified class.    (adsbygoogle = window.adsbygoogle || []).push({}); 
+package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Gson gson = new Gson();List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = gson.fromJson(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Deserializes JSON string into Java object using JsonAdapter.fromJson() with Moshi</title>
+      <link>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.fromjson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.fromjson/</guid>
+      <description>Java Code Examples for com.squareup.moshi.JsonAdapter.fromJson()
+This method to deserializes a JSON string into a Java object of the specified class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.io.IOException;import java.util.List;public class JsonAdapterFromJsonExamples {public static void main(String... args){String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Moshi moshi = new Moshi.Builder().build();JsonAdapter&amp;lt;List&amp;gt; jsonAdapter = moshi.adapter(List.class);try {List&amp;lt;Employee&amp;gt; objectFromJsonString = jsonAdapter.fromJson(data);System.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON String using JsonAdapter.toJson() with Moshi</title>
+      <link>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.tojson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.tojson/</guid>
+      <description>Java Code Examples for com.squareup.moshi.JsonAdapter.toJson()
+This method to serializes the Java object into JSON string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonAdapterToJsonExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON string using Gson.toJson() with Gson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.google.gson.gson.tojson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.tojson/</guid>
+      <description>Java Code Examples for com.google.gson.Gson.toJson()
+This method to serializes the Java object into JSON string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.google.gson.Gson;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class GsonToJsonExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON string using JSON.toJSONString() with Fastjson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.alibaba.fastjson.json.tojsonstring/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.alibaba.fastjson.json.tojsonstring/</guid>
+      <description>Java Code Examples for com.alibaba.fastjson.JSON.toJSONString()
+This method to serializes the specified Java object into JSON string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.alibaba.fastjson.JSON;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JSONToJSONStringExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON string using ObjectMapper.writeValueAsString() with Jackson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.writevalueasstring/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.writevalueasstring/</guid>
+      <description>Java Code Examples for com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString()
+This method can be used to serialize any Java object into a JSON String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class ObjectMapperWriteValueAsStringExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.</description>
+    </item>
+    
+    <item>
+      <title>Java Generate SHA-1 using DigestUtils in Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-generate-sha1-digestutils-apache-commons-codec/</link>
+      <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-generate-sha1-digestutils-apache-commons-codec/</guid>
+      <description>In below code example you will learn how to use org.apache.commons.codec.digest.DigestUtils class in Apache Commons Codec to generate SHA-1 string in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Apache Commons Codec Dependency Define below dependency in build.gradle if you are using gradle. compile group: &amp;#39;commons-codec&amp;#39;, name: &amp;#39;commons-codec&amp;#39;, version: &amp;#39;1.12&amp;#39;
+Define this dependency in pom.xml if you are using maven. &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;commons-codec&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;commons-codec&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.12&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+Or you can download the release from Apache Commons Codec home page at: here</description>
+    </item>
+    
+    <item>
+      <title>Java Base64 Encoding and Decoding with Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-base64-encoding-decoding-apache-commons-codec/</link>
+      <pubDate>Tue, 09 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-base64-encoding-decoding-apache-commons-codec/</guid>
+      <description>In this tutorial you will learn how to encoding and decoding a String in Java using Apache Commons Codec library. The library provide org.apache.commons.codec.binary.Base64 class with different methods to encode and decode data.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Dependency Define below dependency in build.gradle if you are using gradle. compile group: &amp;#39;commons-codec&amp;#39;, name: &amp;#39;commons-codec&amp;#39;, version: &amp;#39;1.12&amp;#39;
+Define this dependency in pom.xml if you are using maven.</description>
+    </item>
+    
+    <item>
+      <title>Creating File Server with Embedded Jetty Server in Java</title>
+      <link>https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/</link>
+      <pubDate>Mon, 08 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/creating-file-server-with-embedded-jetty-server-in-java/</guid>
+      <description>In this tutorial you will learn simple step by step to write an Java application which using Embedding Jetty API to creating a static file server.
+   (adsbygoogle = window.adsbygoogle || []).push({});  The very first step you need to do is add Jetty Server dependency to your project.
+Using Gradle compile group: &amp;#39;org.eclipse.jetty&amp;#39;, name: &amp;#39;jetty-server&amp;#39;, version: &amp;#39;9.4.15.v20190215&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.eclipse.jetty&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jetty-server&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;9.4.15.v20190215&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+To listen HTTP request at a specified port we need to create org.</description>
+    </item>
+    
+    <item>
+      <title>How to use Java ArrayList with Examples</title>
+      <link>https://simplesolution.dev/how-to-use-java-arraylist-with-examples/</link>
+      <pubDate>Sun, 07 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/how-to-use-java-arraylist-with-examples/</guid>
+      <description>In this tutorial we will go through a list of examples to show you how use java.util.ArrayList in Java program. You will learn how to adding, updating, getting, sorting and other operations on elements of an ArrayList. ArrayList is an implementation of List interface with class diagram as below:
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add one element to an ArrayList There are two approaches to add an element to ArrayList which is append it to the end of the list or you can insert it to specified index position List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();list.</description>
+    </item>
+    
+    <item>
+      <title>How to use Java ArrayDeque with Examples</title>
+      <link>https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/</link>
+      <pubDate>Thu, 04 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/how-to-use-java-arraydeque-with-examples/</guid>
+      <description>In this tutorial we will learn how to use the java.util.ArrayDeque class, a member class of Java Collections Framework. We will go through different examples to see how this class suppport methods that allow you to insert and retrieves element in both front and end of the element list. ArrayDeque is an implementation of Deque interface with class diagram as below:
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to use ArrayDeque as a stack We can push an element onto the stack and pop it from stack using ArrayDeque as below Deque&amp;lt;Integer&amp;gt; deque = new ArrayDeque&amp;lt;&amp;gt;();deque.</description>
+    </item>
+    
+    <item>
+      <title>Gradle Configuration to generate Java classes from WSDL with JAXB</title>
+      <link>https://simplesolution.dev/gradle-configuration-to-generate-java-classes-from-wsdl-with-jaxb/</link>
+      <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/gradle-configuration-to-generate-java-classes-from-wsdl-with-jaxb/</guid>
+      <description>In this blog post we will learn the step by step guide to configure gradle build file in order to generate Java classes from a WSDL file. This configure will be useful when you are working on project related to SOAP web service.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Let start with an empty Java project with build.gradle file as below group &amp;#39;simplesolution.dev&amp;#39;version &amp;#39;1.0.0&amp;#39;apply plugin: &amp;#39;java&amp;#39;sourceCompatibility = 1.</description>
+    </item>
+    
+    <item>
+      <title>How to use BigDecimal in Java by Examples</title>
+      <link>https://simplesolution.dev/how-to-use-bigdecimal-in-java-by-examples/</link>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/how-to-use-bigdecimal-in-java-by-examples/</guid>
+      <description>As a Java developer if you are working with financial systems or developing systems that need granularity in your calculation then you should thinking about BigDecimal. BigDecimal is an immutable class, provides in java.math package. It consists of operations for arithmetic, scale manipulation, rounding, comparison, hashing, and format conversion. In this blog post we will learn how to use BigDecimal through a list of examples.
+   (adsbygoogle = window.</description>
+    </item>
+    
+    <item>
+      <title>Top 5 Libraries for Serialization and Deserialization JSON in Java</title>
+      <link>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</link>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</guid>
+      <description>In this blog post we will go through 5 useful open source libraries to serialization and deserialize JSON data in Java application. For each library we will write a simple code sample to show you how to use the library to convert Java object to a JSON string and vice-versa.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Gson Github repository: github.com/google/gson
+Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.</description>
+    </item>
+    
+    <item>
+      <title>Writing Excel File Using Apache POI Library in Java</title>
+      <link>https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/</link>
+      <pubDate>Tue, 26 Mar 2019 20:34:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/</guid>
+      <description>Apache POI is and open source Java library allow you to read and write Microsoft Documents such as Excel workbook, Word document, Powerpoint presentation.
+In this blog post I will show you how to use Apache POI library to writing an Excel file. Throughout this blog post we will implement an Java application to generate the Excel file as the figure below:
+   (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
   </channel>
