@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Dec 2019 01:19:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2020 15:34:11 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache PDFBox Adding Metadata to PDF Document in Java</title>
+      <link>https://simplesolution.dev/apache-pdfbox-adding-metadata-to-pdf-document-in-java/</link>
+      <pubDate>Wed, 01 Jan 2020 15:34:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/apache-pdfbox-adding-metadata-to-pdf-document-in-java/</guid>
+      <description>Introduction This toturial will show you how to adding metadata information such as title, creation date, modification date, author, creator tool, producer keywords etc. and custom properties to a new PDF document or the existing PDF file in Java using Apache PDFBox library.
+Apache PDFBox Overview The Apache PDFBox is an open source library for working with PDF documents in Java. You can get more information about the project at pdfbox.</description>
+    </item>
     
     <item>
       <title>Insert Image to PDF Document in Java using Apache PDFBox</title>

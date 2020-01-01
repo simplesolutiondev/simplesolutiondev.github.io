@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/apache-pdfbox-adding-metadata-to-pdf-document-in-java/</loc>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/insert-image-to-pdf-document-in-java-using-apache-pdfbox/</loc>
     <lastmod>2019-12-30T01:19:11+07:00</lastmod>
   </url>
@@ -386,7 +391,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-pdfbox/</loc>
-    <lastmod>2019-12-30T01:19:11+07:00</lastmod>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -469,13 +474,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2019-12-30T01:19:11+07:00</lastmod>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2019-12-30T01:19:11+07:00</lastmod>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -493,7 +498,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2019-12-30T01:19:11+07:00</lastmod>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -529,7 +534,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/pdf/</loc>
-    <lastmod>2019-12-30T01:19:11+07:00</lastmod>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -547,7 +552,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2019-12-30T01:19:11+07:00</lastmod>
+    <lastmod>2020-01-01T15:34:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
