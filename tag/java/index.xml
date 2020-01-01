@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2020 15:34:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2020 21:37:14 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating Bookmarks for PDF Document in Java with Apache PDFBox</title>
+      <link>https://simplesolution.dev/creating-bookmarks-for-pdf-document-in-java-with-apache-pdfbox/</link>
+      <pubDate>Wed, 01 Jan 2020 21:37:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/creating-bookmarks-for-pdf-document-in-java-with-apache-pdfbox/</guid>
+      <description>Introduction In this tutorial we will learn how to add bookmark items to a PDF document in Java using Apache PDFBox library. The post also show how to add bookmarks for new PDF document and existing PDF file.
+Apache PDFBox Library Overview The Apache PDFBox is an open source Java library for working with PDF documents. You can get more information about the project at pdfbox.apache.org
+Adding Apache PDFBox Dependencies Adding below dependencies to build.</description>
+    </item>
     
     <item>
       <title>Apache PDFBox Adding Metadata to PDF Document in Java</title>
