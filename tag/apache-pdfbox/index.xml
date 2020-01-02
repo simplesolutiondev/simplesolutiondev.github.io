@@ -6,10 +6,20 @@
     <description>Recent content in Apache Pdfbox on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2020 21:37:14 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 21:58:44 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-pdfbox/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating PDF Document Page Labels in Java with Apache PDFBox</title>
+      <link>https://simplesolution.dev/creating-pdf-document-page-labels-in-java-with-apache-pdfbox/</link>
+      <pubDate>Thu, 02 Jan 2020 21:58:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/creating-pdf-document-page-labels-in-java-with-apache-pdfbox/</guid>
+      <description>Introduction In PDF document format the page label to identify each document page visually for example showing text label on thumbnail panel on PDF reader application. In this Java tutorial we will learn how to create page labels for PDF document by Java application using Apache PDFBox library.
+Apache PDFBox Library Overview The Apache PDFBox is an open source Java library for working with PDF documents. You can get more information about the project at pdfbox.</description>
+    </item>
     
     <item>
       <title>Creating Bookmarks for PDF Document in Java with Apache PDFBox</title>
