@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/apache-poi-creating-multiple-fonts-excel-cell-using-richtextstring/</loc>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/creating-pdf-document-page-labels-in-java-with-apache-pdfbox/</loc>
     <lastmod>2020-01-02T21:58:44+07:00</lastmod>
   </url>
@@ -407,7 +412,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-poi/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -454,7 +459,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/excel/</loc>
-    <lastmod>2019-12-17T23:22:50+07:00</lastmod>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -484,13 +489,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-01-02T21:58:44+07:00</lastmod>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-01-02T21:58:44+07:00</lastmod>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -508,7 +513,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-01-02T21:58:44+07:00</lastmod>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -562,7 +567,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-01-02T21:58:44+07:00</lastmod>
+    <lastmod>2020-01-07T00:42:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,22 @@
     <description>Recent content in Excel on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2019 23:22:50 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 00:42:52 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/excel/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Creating Multiple Fonts Excel Cell using RichTextString</title>
+      <link>https://simplesolution.dev/apache-poi-creating-multiple-fonts-excel-cell-using-richtextstring/</link>
+      <pubDate>Tue, 07 Jan 2020 00:42:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/apache-poi-creating-multiple-fonts-excel-cell-using-richtextstring/</guid>
+      <description>Introduction In this tutorial we will learn how to create an Excel cell with multiple font styles using Apache POI library.
+We will implement different examples to create .xls and xlsx Excel file format using HSSFRichTextString and XSSFRichTextString class in Apache POI.
+Apache POI Overview Apache POI is a open source library to work with Microsoft Office documents in Java.
+You can get more information about the project at poi.</description>
+    </item>
     
     <item>
       <title>Video Spring Boot Web Application Download Excel File</title>
