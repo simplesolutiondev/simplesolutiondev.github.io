@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apache POI Hide and Unhide Excel Row using Row.setZeroHeight()</title>
+    <meta name="title" content="Apache POI Hide and Unhide Excel Row using Row.setZeroHeight()">
+    <meta name="description" content="In Excel there is an option to hide / Unhide a row by select the row then righ click on it and choose Hide / Unhide option. In this tutorial we will learn how to use Apache POI library in Java to create an Excel file and hide its row. Then we try to unhide it by another Java application example.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/apache-poi-hide-and-unhide-excel-row-using-row.setzeroheight/">
+    <meta property="og:title" content="Apache POI Hide and Unhide Excel Row using Row.setZeroHeight()">
+    <meta property="og:description" content="In Excel there is an option to hide / Unhide a row by select the row then righ click on it and choose Hide / Unhide option. In this tutorial we will learn how to use Apache POI library in Java to create an Excel file and hide its row. Then we try to unhide it by another Java application example.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/apache-poi-hide-and-un-hide-excel-row-using-row.setzeroheight.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/apache-poi-hide-and-unhide-excel-row-using-row.setzeroheight/">
+    <meta name="twitter:title" content="Apache POI Hide and Unhide Excel Row using Row.setZeroHeight()">
+    <meta name="twitter:description" content="In Excel there is an option to hide / Unhide a row by select the row then righ click on it and choose Hide / Unhide option. In this tutorial we will learn how to use Apache POI library in Java to create an Excel file and hide its row. Then we try to unhide it by another Java application example.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/apache-poi-hide-and-un-hide-excel-row-using-row.setzeroheight.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=6" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Apache POI Hide and Unhide Excel Row using Row.setZeroHeight()</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In Excel there is an option to hide / unhide a row by select the row then righ click on it and choose Hide / Unhide option.
+In this tutorial we will learn how to use Apache POI library in Java to create an Excel file and hide its row.
+Then we try to unhide it by another Java application example.</p>
+
+<h4 id="apache-poi-overview">Apache POI Overview</h4>
+
+<p>Apache POI is a open source library to work with Microsoft Office documents in Java.</p>
+
+<p>You can get more information about the project at <a href="https://poi.apache.org/index.html" target="_blank">poi.apache.org</a></p>
+
+<h4 id="adding-apache-poi-dependencies-to-java-project">Adding Apache POI Dependencies to Java project</h4>
+
+<p>Adding below dependencies to build.gradle file if you are using Gradle build tool.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.1.1&#39;</span>
+compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi-ooxml&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.1.1&#39;</span></code></pre></div></p>
+
+<p>Adding below XML to pom.xml file if you are using Maven build tool.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.1.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>poi-ooxml<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>4.1.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>Or you can download the .jar files directly from <a href="https://poi.apache.org/download.html" target="_blank">poi.apache.org/download.html</a></p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="example-1-hide-unhide-row-with-xssfworkbook-for-xlsx-excel-file">Example 1 - Hide/Unhide row with XSSFWorkbook for .xlsx Excel file</h4>
+
+<p>This Java example application to create new Excel file at D:\SimpleSolution\Sample.xlsx with the first row is hidden.</p>
+
+<p>To hide a row we use setZeroHeight(true).
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">XSSFWorkbookHideRowsExample</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		XSSFWorkbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> XSSFWorkbook<span style="color:#f92672">();</span>
+		Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;XSSFWorkbookHideRowsExample&#34;</span><span style="color:#f92672">);</span>
+		Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+		
+		row<span style="color:#f92672">.</span><span style="color:#a6e22e">setZeroHeight</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+		
+		<span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Sample.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Below is the output Excel file.</p>
+
+<p><img src="/images/apache-poi-hide-and-un-hide-excel-row-using-row.setzeroheight-xlsx-hide.png" alt="Hide row for .xlsx file" class="img-fluid"></p>
+
+<p>Below Java application to open the Sample.xlsx created above and unhide its first row.</p>
+
+<p>To check a row is hidden or not we use row.getZeroHeight() which return boolean value to indicate a row is hide/unhide.</p>
+
+<p>To unhide a row we use setZeroHeight(false).
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileInputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.InputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.Iterator<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.EncryptedDocumentException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.WorkbookFactory<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">XSSFWorkbookUnHideExample</span> <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> EncryptedDocumentException<span style="color:#f92672">,</span> IOException <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>InputStream inputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileInputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Sample.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+			Workbook workbook <span style="color:#f92672">=</span> WorkbookFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>inputStream<span style="color:#f92672">);</span>
+	        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">getSheetAt</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+	        
+	        Iterator<span style="color:#f92672">&lt;</span>Row<span style="color:#f92672">&gt;</span> rowIterator <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">iterator</span><span style="color:#f92672">();</span>
+	        <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>rowIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+	          Row row <span style="color:#f92672">=</span> rowIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">();</span>
+	          <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>row<span style="color:#f92672">.</span><span style="color:#a6e22e">getZeroHeight</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+	            row<span style="color:#f92672">.</span><span style="color:#a6e22e">setZeroHeight</span><span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
+	          <span style="color:#f92672">}</span>
+	        <span style="color:#f92672">}</span>
+	        
+	        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Sample.xlsx&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+	            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+	            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+	        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+	        <span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Open the excel file again then we can see the first row is not hidden.</p>
+
+<p><img src="/images/apache-poi-hide-and-un-hide-excel-row-using-row.setzeroheight-xlsx-unhide.png" alt="Unhide row for .xlsx file" class="img-fluid"></p>
+
+<h4 id="example-2-hide-unhide-row-with-hssfworkbook-for-xls-excel-file">Example 2 - Hide/Unhide row with HSSFWorkbook for .xls Excel file</h4>
+
+<p>This Java example code for hide row for .xls file and using HSSFWorkbook.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.hssf.usermodel.HSSFWorkbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HSSFWorkbookHideRowsExample</span> <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		HSSFWorkbook workbook <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HSSFWorkbook<span style="color:#f92672">();</span>
+        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">createSheet</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HSSFWorkbookHideRowsExample&#34;</span><span style="color:#f92672">);</span>
+        Row row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">createRow</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+        
+        row<span style="color:#f92672">.</span><span style="color:#a6e22e">setZeroHeight</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
+        
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Sample.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Below is the output Excel file.</p>
+
+<p><img src="/images/apache-poi-hide-and-un-hide-excel-row-using-row.setzeroheight-xls-hide.png" alt="Hide row for .xls file" class="img-fluid"></p>
+
+<p>Below Java application to open the Sample.xls created above and unhide its first row.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileInputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.FileOutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.InputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.OutputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.Iterator<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.apache.poi.EncryptedDocumentException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Row<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Sheet<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.Workbook<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.poi.ss.usermodel.WorkbookFactory<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HSSFWorkbookUnHideRowsExample</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> EncryptedDocumentException<span style="color:#f92672">,</span> IOException <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>InputStream inputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileInputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Sample.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+			Workbook workbook <span style="color:#f92672">=</span> WorkbookFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>inputStream<span style="color:#f92672">);</span>
+	        Sheet sheet <span style="color:#f92672">=</span> workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">getSheetAt</span><span style="color:#f92672">(</span>0<span style="color:#f92672">);</span>
+	        
+	        Iterator<span style="color:#f92672">&lt;</span>Row<span style="color:#f92672">&gt;</span> rowIterator <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span><span style="color:#a6e22e">iterator</span><span style="color:#f92672">();</span>
+	        <span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>rowIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">hasNext</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+	          Row row <span style="color:#f92672">=</span> rowIterator<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">();</span>
+	          <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>row<span style="color:#f92672">.</span><span style="color:#a6e22e">getZeroHeight</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+	            row<span style="color:#f92672">.</span><span style="color:#a6e22e">setZeroHeight</span><span style="color:#f92672">(</span><span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
+	          <span style="color:#f92672">}</span>
+	        <span style="color:#f92672">}</span>
+	        
+	        <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>OutputStream fileOut <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\SimpleSolution\\Sample.xls&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+	            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>fileOut<span style="color:#f92672">);</span>
+	            workbook<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>
+	        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+	        <span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            ex<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Open the excel file again then we can see the first row is not hidden.</p>
+
+<p><img src="/images/apache-poi-hide-and-un-hide-excel-row-using-row.setzeroheight-xls-unhide.png" alt="Unhide row for .xls file" class="img-fluid"></p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this tutorial we have learned how to use Row.setZeroHeight() method to hide / unhide an Excel row using Apache POI library.</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/apache-poi">Apache POI</a>
+                                
+                                <a href="https://simplesolution.dev/tag/excel">Excel</a>
+                                
+                            </div>
+                            <div>
+                                <div id="amzn-assoc-ad-3274caad-cb38-4f57-8300-f3624db0903d"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=3274caad-cb38-4f57-8300-f3624db0903d"></script>
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

@@ -6,10 +6,20 @@
     <description>Recent content in Excel on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jan 2020 00:42:52 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2020 07:56:46 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/excel/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache POI Hide and Unhide Excel Row using Row.setZeroHeight()</title>
+      <link>https://simplesolution.dev/apache-poi-hide-and-unhide-excel-row-using-row.setzeroheight/</link>
+      <pubDate>Thu, 09 Jan 2020 07:56:46 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/apache-poi-hide-and-unhide-excel-row-using-row.setzeroheight/</guid>
+      <description>Introduction In Excel there is an option to hide / unhide a row by select the row then righ click on it and choose Hide / Unhide option. In this tutorial we will learn how to use Apache POI library in Java to create an Excel file and hide its row. Then we try to unhide it by another Java application example.
+Apache POI Overview Apache POI is a open source library to work with Microsoft Office documents in Java.</description>
+    </item>
     
     <item>
       <title>Apache POI Creating Multiple Fonts Excel Cell using RichTextString</title>
