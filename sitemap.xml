@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/top-3-libraries-for-writing-and-reading-csv-file-in-java/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/apache-poi-hide-and-unhide-excel-row-using-row.setzeroheight/</loc>
     <lastmod>2020-01-09T07:56:46+07:00</lastmod>
   </url>
@@ -404,6 +409,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/apache-commons-csv/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/apache-commons-io/</loc>
     <lastmod>2019-04-26T01:03:10+07:00</lastmod>
     <priority>0</priority>
@@ -451,6 +462,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/csv/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/date-and-time/</loc>
     <lastmod>2019-04-13T17:48:10+07:00</lastmod>
     <priority>0</priority>
@@ -494,13 +511,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-01-09T07:56:46+07:00</lastmod>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-01-09T07:56:46+07:00</lastmod>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -518,7 +535,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-01-09T07:56:46+07:00</lastmod>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -553,6 +570,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/opencsv/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/pdf/</loc>
     <lastmod>2020-01-02T21:58:44+07:00</lastmod>
     <priority>0</priority>
@@ -565,6 +588,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/read-csv/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/sha-1/</loc>
     <lastmod>2019-04-10T14:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -572,7 +601,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-01-09T07:56:46+07:00</lastmod>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -601,8 +630,20 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/super-csv/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tags/</loc>
     <lastmod>2019-04-13T17:53:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/write-csv/</loc>
+    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
     <priority>0</priority>
   </url>
   
