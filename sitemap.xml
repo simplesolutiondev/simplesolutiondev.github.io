@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/generate-thumbnail-images-in-java-with-thumbnailator-library/</loc>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/top-3-libraries-for-writing-and-reading-csv-file-in-java/</loc>
     <lastmod>2020-02-26T01:15:38+07:00</lastmod>
   </url>
@@ -511,13 +516,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -535,7 +540,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -601,7 +606,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -638,6 +643,18 @@
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
     <lastmod>2019-04-13T17:53:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/thumbnail/</loc>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/thumbnailator/</loc>
+    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   

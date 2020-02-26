@@ -6,10 +6,22 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Feb 2020 01:15:38 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:52:08 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generate Thumbnail Images in Java with Thumbnailator library</title>
+      <link>https://simplesolution.dev/generate-thumbnail-images-in-java-with-thumbnailator-library/</link>
+      <pubDate>Thu, 27 Feb 2020 00:52:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/generate-thumbnail-images-in-java-with-thumbnailator-library/</guid>
+      <description>As a daily job of a web developer you usually have the scenario that you need to generate the thumbnail image from a large original image. This take can easily be done by the Thumbnailator library, an easy to use thumbnail generation library for Java. In this Java tutorial we are going to learn how to use the Thumbnailator library.
+Thumbnailator home page: github.com/coobird/thumbnailator
+Project Dependencies:
+Adding below dependencies to build.</description>
+    </item>
     
     <item>
       <title>Top 3 Libraries for Writing and Reading CSV File in Java</title>
