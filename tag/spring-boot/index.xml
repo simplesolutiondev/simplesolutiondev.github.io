@@ -6,10 +6,22 @@
     <description>Recent content in Spring Boot on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Dec 2019 00:20:41 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 00:37:35 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/spring-boot/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Web Application Upload File</title>
+      <link>https://simplesolution.dev/spring-boot-web-application-upload-file/</link>
+      <pubDate>Fri, 28 Feb 2020 00:37:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-web-application-upload-file/</guid>
+      <description>In this tutorial we’re going to learn how to implement file uploading function in a Spring Boot web application.
+Creating Spring Boot Project with Spring Tool Suite on Eclipse Open Spring Tool Suite and go to menu File -&amp;gt; New -&amp;gt; Spring Starter Project.
+On the New Spring Starter Project window, input your project information as below screenshot and click Next button.
+On the New Spring Starter Project Dependencies, choose Thymeleaf and Spring Web then click Finish.</description>
+    </item>
     
     <item>
       <title>Using Dozer Spring Boot Starter</title>
