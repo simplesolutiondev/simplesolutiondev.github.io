@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/spring-boot-sftp-file-transfer-using-jsch-java-library/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/spring-boot-web-application-upload-file/</loc>
     <lastmod>2020-02-28T00:37:35+07:00</lastmod>
   </url>
@@ -502,6 +507,18 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/file-transfer/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/ftp/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/google-guava/</loc>
     <lastmod>2019-05-03T01:00:10+07:00</lastmod>
     <priority>0</priority>
@@ -521,7 +538,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -545,7 +562,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -558,6 +575,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/jetty/</loc>
     <lastmod>2019-04-08T14:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jsch/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -604,6 +627,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/sftp/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/sha-1/</loc>
     <lastmod>2019-04-10T14:00:00+07:00</lastmod>
     <priority>0</priority>
@@ -611,7 +640,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -623,13 +652,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   

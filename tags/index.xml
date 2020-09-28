@@ -138,6 +138,24 @@
     </item>
     
     <item>
+      <title>File Transfer</title>
+      <link>https://simplesolution.dev/tag/file-transfer/</link>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/file-transfer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ftp</title>
+      <link>https://simplesolution.dev/tag/ftp/</link>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/ftp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Google Guava</title>
       <link>https://simplesolution.dev/tag/google-guava/</link>
       <pubDate>Fri, 03 May 2019 01:00:10 +0700</pubDate>
@@ -167,7 +185,7 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Fri, 28 Feb 2020 00:37:35 +0700</pubDate>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
       <description></description>
@@ -179,6 +197,15 @@
       <pubDate>Mon, 08 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/jetty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jsch</title>
+      <link>https://simplesolution.dev/tag/jsch/</link>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/jsch/</guid>
       <description></description>
     </item>
     
@@ -237,6 +264,15 @@
     </item>
     
     <item>
+      <title>Sftp</title>
+      <link>https://simplesolution.dev/tag/sftp/</link>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/sftp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sha 1</title>
       <link>https://simplesolution.dev/tag/sha-1/</link>
       <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
@@ -257,7 +293,7 @@
     <item>
       <title>Spring Boot</title>
       <link>https://simplesolution.dev/tag/spring-boot/</link>
-      <pubDate>Fri, 28 Feb 2020 00:37:35 +0700</pubDate>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-boot/</guid>
       <description></description>

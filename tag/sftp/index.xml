@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sftp on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/sftp/</link>
+    <description>Recent content in Sftp on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2020 22:37:34 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/sftp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot SFTP File Transfer using JSch Java Library</title>
+      <link>https://simplesolution.dev/spring-boot-sftp-file-transfer-using-jsch-java-library/</link>
+      <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-sftp-file-transfer-using-jsch-java-library/</guid>
+      <description>Overview In this post we will show you how to transfer files from a local host to a remote server and download files from a remote server to local host via SFTP in Spring Boot applications. In order to transfer files via SFTP in Java applications we also explore the JSch library.
+Creating Spring Boot Project with Spring Tool Suite on Eclipse From Spring Tool Suite IDE select menu File -&amp;gt; New -&amp;gt; Spring Starter Project.</description>
+    </item>
+    
+  </channel>
+</rss>
