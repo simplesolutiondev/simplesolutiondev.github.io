@@ -6,10 +6,21 @@
     <description>Recent content in Apache Commons Lang on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2020 00:32:50 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 22:57:11 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-lang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Find Difference between two Strings using StringUtils Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-find-difference-between-two-strings-using-stringutils-apache-commons-lang/</link>
+      <pubDate>Fri, 02 Oct 2020 22:57:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-find-difference-between-two-strings-using-stringutils-apache-commons-lang/</guid>
+      <description>Introduction In this post we will show you Java example code how to find the difference between two Strings using StringUtils utility class of Apache Commons Lang library.
+Setup Apache Commons Lang in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.
+compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-lang3&amp;#39;, version: &amp;#39;3.11&amp;#39; Or add the following dependency XML tag to pom.xml file if you are using Maven build.</description>
+    </item>
     
     <item>
       <title>Java check String is empty or blank or contains text using StringUtils Apache Commons Lang</title>
