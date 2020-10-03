@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2020 22:57:11 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2020 22:17:59 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extract Digits from a String in Java using regular expression</title>
+      <link>https://simplesolution.dev/java-extract-digits-from-a-string-using-regular-expression/</link>
+      <pubDate>Sat, 03 Oct 2020 22:17:59 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-extract-digits-from-a-string-using-regular-expression/</guid>
+      <description>In this post we show you how to use regular expressions to remove all non-digits characters of a String and return the number only String in Java application.
+Following Java example code use String.replaceAll() method with regex &amp;ldquo;[^0-9]&amp;rdquo; to replace non-digits characters in a String with empty String.
+public class ExtractDigitsFromStringExample1 { public static void main(String[] args) { String testString = &amp;#34;Java was released in 1995&amp;#34;; String numberOnlyString = testString.replaceAll(&amp;#34;[^0-9]&amp;#34;, &amp;#34;&amp;#34;); System.</description>
+    </item>
     
     <item>
       <title>Java Find Difference between two Strings using StringUtils Apache Commons Lang</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-extract-digits-from-a-string-using-regular-expression/</loc>
+    <lastmod>2020-10-03T22:17:59+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-find-difference-between-two-strings-using-stringutils-apache-commons-lang/</loc>
     <lastmod>2020-10-02T22:57:11+07:00</lastmod>
   </url>
@@ -560,7 +565,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-02T22:57:11+07:00</lastmod>
+    <lastmod>2020-10-03T22:17:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -578,7 +583,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-02T22:57:11+07:00</lastmod>
+    <lastmod>2020-10-03T22:17:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -625,6 +630,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/pattern/</loc>
+    <lastmod>2020-10-03T22:17:59+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/pdf/</loc>
     <lastmod>2020-01-02T21:58:44+07:00</lastmod>
     <priority>0</priority>
@@ -656,7 +667,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-02T22:57:11+07:00</lastmod>
+    <lastmod>2020-10-03T22:17:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -680,7 +691,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2019-05-03T01:00:10+07:00</lastmod>
+    <lastmod>2020-10-03T22:17:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   

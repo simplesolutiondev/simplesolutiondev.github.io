@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>String on Simple Solution</title>
-    <link>https://simplesolution.dev/tag/string/</link>
-    <description>Recent content in String on Simple Solution</description>
+    <title>Pattern on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/pattern/</link>
+    <description>Recent content in Pattern on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Oct 2020 22:17:59 +0700</lastBuildDate>
     
-	<atom:link href="https://simplesolution.dev/tag/string/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://simplesolution.dev/tag/pattern/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>In this post we show you how to use regular expressions to remove all non-digits characters of a String and return the number only String in Java application.
 Following Java example code use String.replaceAll() method with regex &amp;ldquo;[^0-9]&amp;rdquo; to replace non-digits characters in a String with empty String.
 public class ExtractDigitsFromStringExample1 { public static void main(String[] args) { String testString = &amp;#34;Java was released in 1995&amp;#34;; String numberOnlyString = testString.replaceAll(&amp;#34;[^0-9]&amp;#34;, &amp;#34;&amp;#34;); System.</description>
-    </item>
-    
-    <item>
-      <title>Google Guava in Java to join String with Joiner</title>
-      <link>https://simplesolution.dev/java-code-examples/guava-java-join-string-with-joiner/</link>
-      <pubDate>Fri, 03 May 2019 01:00:10 +0700</pubDate>
-      
-      <guid>https://simplesolution.dev/java-code-examples/guava-java-join-string-with-joiner/</guid>
-      <description>Java Code Examples for using com.google.common.base.Joiner class
-   (adsbygoogle = window.adsbygoogle || []).push({});  Example for using Joiner that skip joining null values package simplesolution.dev;import com.google.common.base.Joiner;public class GuavaJoinerExample1 {public static void main(String... args) {final Joiner joiner = Joiner.on(&amp;#34; and &amp;#34;).skipNulls();String result = joiner.join(&amp;#34;Java&amp;#34;, &amp;#34;Python&amp;#34;, null, &amp;#34;Go&amp;#34;);System.out.println(result);}} Output
-Java and Python and Go  Example for using Joiner to join objects package simplesolution.</description>
     </item>
     
   </channel>
