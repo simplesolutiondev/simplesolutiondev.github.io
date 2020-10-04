@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2020 22:17:59 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2020 13:47:34 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Replace or Remove All Digits of a String in Java using regular expression</title>
+      <link>https://simplesolution.dev/java-replace-or-remove-all-digits-of-a-string-in-using-regular-expression/</link>
+      <pubDate>Sun, 04 Oct 2020 13:47:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-replace-or-remove-all-digits-of-a-string-in-using-regular-expression/</guid>
+      <description>In this article we are going to learn how to use core Java classes to remove all numeric characters from a String or replace numeric characters with other characters. We will show you different Java code examples how to use String.replaceAll() method and java.util.regex.Pattern class.
+Java code example using regex &amp;ldquo;[0-9]&amp;rdquo; with String.replaceAll() method
+public class RemoveReplaceDigitsExample1 { public static void main(String[] args) { String testString = &amp;#34;Your OTP (one time password) is 112233&amp;#34;; // Remove all numeric characters  String removedDigitsString = testString.</description>
+    </item>
     
     <item>
       <title>Extract Digits from a String in Java using regular expression</title>
