@@ -257,7 +257,7 @@
     <item>
       <title>Pattern</title>
       <link>https://simplesolution.dev/tag/pattern/</link>
-      <pubDate>Sun, 04 Oct 2020 13:47:34 +0700</pubDate>
+      <pubDate>Sun, 04 Oct 2020 15:57:35 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/pattern/</guid>
       <description></description>
@@ -278,6 +278,15 @@
       <pubDate>Wed, 26 Feb 2020 01:15:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/read-csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>https://simplesolution.dev/tag/regex/</link>
+      <pubDate>Sun, 04 Oct 2020 15:57:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/regex/</guid>
       <description></description>
     </item>
     
@@ -320,7 +329,7 @@
     <item>
       <title>String</title>
       <link>https://simplesolution.dev/tag/string/</link>
-      <pubDate>Sun, 04 Oct 2020 13:47:34 +0700</pubDate>
+      <pubDate>Sun, 04 Oct 2020 15:57:35 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/string/</guid>
       <description></description>

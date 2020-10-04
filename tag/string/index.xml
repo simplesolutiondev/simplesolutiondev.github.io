@@ -6,10 +6,20 @@
     <description>Recent content in String on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2020 13:47:34 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2020 15:57:35 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/string/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Check if a String contains another String in Java</title>
+      <link>https://simplesolution.dev/java-check-if-a-string-contains-a-substring/</link>
+      <pubDate>Sun, 04 Oct 2020 15:57:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-if-a-string-contains-a-substring/</guid>
+      <description>Core Java classes provide different solutions that developers can use to check if a String contains another String inside it. In this article we will show you different Java code examples how to check if a String is inside another String using core Java methods such as String.contains(), String.indexOf(), String.lastIndexOf(), String.matches() and java.util.regex.Pattern class.
+Java code how to use String.contains() In this code example we use String.contains() which returns a boolean value true if and only if the String contains a specific substring.</description>
+    </item>
     
     <item>
       <title>Replace or Remove All Digits of a String in Java using regular expression</title>
