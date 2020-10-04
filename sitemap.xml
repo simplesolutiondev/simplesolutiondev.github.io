@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-abbreviates-string-using-ellipses/</loc>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-check-if-string-is-valid-numeric-value/</loc>
     <lastmod>2020-10-04T23:07:43+07:00</lastmod>
   </url>
@@ -449,7 +454,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -467,7 +472,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-lang/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -580,7 +585,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -598,7 +603,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -700,7 +705,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -724,13 +729,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/stringutils/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -742,7 +747,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
-    <lastmod>2020-10-04T23:07:43+07:00</lastmod>
+    <lastmod>2020-10-04T23:50:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
