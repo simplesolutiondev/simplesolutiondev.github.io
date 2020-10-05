@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2020 21:09:18 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 22:03:37 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Capitalize First Letter of each Word of String in Java using Apache Commons Text</title>
+      <link>https://simplesolution.dev/java-capitalize-first-letter-of-each-word-of-string/</link>
+      <pubDate>Mon, 05 Oct 2020 22:03:37 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-capitalize-first-letter-of-each-word-of-string/</guid>
+      <description>Introduction In this article we show how to use WordUtils utility class of Apache Commons Text library to capitalize the first character of each word in a Java String. We will provide Java code examples to show how to use capitalize() and capitalizeFully() methods of the library’s WordUtils utility class.
+Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.</description>
+    </item>
     
     <item>
       <title>Capitalize First Letter of a String in Java using Apache Commons Lang</title>
