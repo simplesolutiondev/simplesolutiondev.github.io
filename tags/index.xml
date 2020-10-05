@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2020 22:03:37 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 00:04:09 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache Commons</title>
       <link>https://simplesolution.dev/tag/apache-commons/</link>
-      <pubDate>Mon, 05 Oct 2020 22:03:37 +0700</pubDate>
+      <pubDate>Tue, 06 Oct 2020 00:04:09 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Apache Commons Text</title>
       <link>https://simplesolution.dev/tag/apache-commons-text/</link>
-      <pubDate>Mon, 05 Oct 2020 22:03:37 +0700</pubDate>
+      <pubDate>Tue, 06 Oct 2020 00:04:09 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons-text/</guid>
       <description></description>
@@ -300,6 +300,15 @@
     </item>
     
     <item>
+      <title>Randomstringgenerator</title>
+      <link>https://simplesolution.dev/tag/randomstringgenerator/</link>
+      <pubDate>Tue, 06 Oct 2020 00:04:09 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/randomstringgenerator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Read Csv</title>
       <link>https://simplesolution.dev/tag/read-csv/</link>
       <pubDate>Wed, 26 Feb 2020 01:15:38 +0700</pubDate>
@@ -356,7 +365,7 @@
     <item>
       <title>String</title>
       <link>https://simplesolution.dev/tag/string/</link>
-      <pubDate>Mon, 05 Oct 2020 22:03:37 +0700</pubDate>
+      <pubDate>Tue, 06 Oct 2020 00:04:09 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/string/</guid>
       <description></description>
