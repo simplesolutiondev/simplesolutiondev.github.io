@@ -6,10 +6,21 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2020 20:34:43 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 22:41:54 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Checks if a String contains all words in array using Apache Commons Text</title>
+      <link>https://simplesolution.dev/java-checks-if-a-string-contains-all-words-in-array/</link>
+      <pubDate>Tue, 06 Oct 2020 22:41:54 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-checks-if-a-string-contains-all-words-in-array/</guid>
+      <description>Introduction In this article we show how to check if a String contains all words in an array in Java. By using WordUtils utility class of Apache Commons Text library you can check if the String contains all words in the given array using containsAllWords() method.
+Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.
+compile group: &amp;#39;org.</description>
+    </item>
     
     <item>
       <title>Wrap a line of text into multiple lines in Java using Apache Commons Text</title>
