@@ -6,10 +6,21 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2020 23:56:16 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 20:04:14 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Uncapitalize first character of all words in a String in Java using Apache Commons Text</title>
+      <link>https://simplesolution.dev/java-uncapitalize-first-character-of-all-words-in-a-string/</link>
+      <pubDate>Wed, 07 Oct 2020 20:04:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-uncapitalize-first-character-of-all-words-in-a-string/</guid>
+      <description>Introduction In this article we will explore the WordUtils.uncapitalize() method of Apache Commons Text library to uncapitalize a String. With Java code example we will learn how to use the WordUtils.uncapitalize() method to convert the first character of all words in a String to lowercase character.
+Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.
+compile group: &amp;#39;org.</description>
+    </item>
     
     <item>
       <title>Swap Lowercase and Uppercase of a String in Java using Apache Commons Text</title>
