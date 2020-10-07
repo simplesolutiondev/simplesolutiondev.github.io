@@ -6,10 +6,20 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2020 20:04:14 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 23:38:07 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Substitute a String in Java by replace variables map to Template String using Apache Commons Text</title>
+      <link>https://simplesolution.dev/java-substitute-a-string-in-java-by-replace-variables-map-to-template-string/</link>
+      <pubDate>Wed, 07 Oct 2020 23:38:07 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-substitute-a-string-in-java-by-replace-variables-map-to-template-string/</guid>
+      <description>Introduction In this post we are going to learn how to substitute a String in Java which replaces variables into placeholders in a template String. To do this task we will use the Apache Commons Text library with support of StringSubstitutor class. Via different Java example code we will learn how to apply StringSubstitutor in different scenarios in your Java applications.
+Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.</description>
+    </item>
     
     <item>
       <title>Uncapitalize first character of all words in a String in Java using Apache Commons Text</title>

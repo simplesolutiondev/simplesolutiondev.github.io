@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-substitute-a-string-in-java-by-replace-variables-map-to-template-string/</loc>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-uncapitalize-first-character-of-all-words-in-a-string/</loc>
     <lastmod>2020-10-07T20:04:14+07:00</lastmod>
   </url>
@@ -494,7 +499,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -518,7 +523,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-text/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -631,7 +636,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -649,7 +654,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -757,7 +762,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -781,7 +786,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/stringsubstitutor/</loc>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -799,7 +810,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
-    <lastmod>2020-10-07T20:04:14+07:00</lastmod>
+    <lastmod>2020-10-07T23:38:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
