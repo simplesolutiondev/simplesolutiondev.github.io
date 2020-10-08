@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2020 22:31:54 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2020 23:26:48 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Apache Commons</title>
       <link>https://simplesolution.dev/tag/apache-commons/</link>
-      <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
+      <pubDate>Thu, 08 Oct 2020 23:26:48 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Apache Commons Text</title>
       <link>https://simplesolution.dev/tag/apache-commons-text/</link>
-      <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
+      <pubDate>Thu, 08 Oct 2020 23:26:48 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons-text/</guid>
       <description></description>
@@ -122,7 +122,7 @@
     <item>
       <title>Csv</title>
       <link>https://simplesolution.dev/tag/csv/</link>
-      <pubDate>Wed, 26 Feb 2020 01:15:38 +0700</pubDate>
+      <pubDate>Thu, 08 Oct 2020 23:26:48 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/csv/</guid>
       <description></description>
@@ -374,9 +374,18 @@
     <item>
       <title>String</title>
       <link>https://simplesolution.dev/tag/string/</link>
-      <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
+      <pubDate>Thu, 08 Oct 2020 23:26:48 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stringescapeutils</title>
+      <link>https://simplesolution.dev/tag/stringescapeutils/</link>
+      <pubDate>Thu, 08 Oct 2020 23:26:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/stringescapeutils/</guid>
       <description></description>
     </item>
     

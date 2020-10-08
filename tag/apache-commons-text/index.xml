@@ -6,10 +6,20 @@
     <description>Recent content in Apache Commons Text on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2020 22:31:54 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2020 23:26:48 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-text/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Escape or Unescape String for CSV column data in Java using Apache Commons Text</title>
+      <link>https://simplesolution.dev/java-escape-unescape-string-for-csv-column-data/</link>
+      <pubDate>Thu, 08 Oct 2020 23:26:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-escape-unescape-string-for-csv-column-data/</guid>
+      <description>Introduction In this post we are going to learn how to use StringEscapeUtils class in Apache Commons Text library to escape a String for CSV file format. If the input String value contains a comma, newline or double quote, then the output String value is returned enclosed in double quotes.
+Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.</description>
+    </item>
     
     <item>
       <title>Convert words in a String into camelCase in Java using Apache Commons Text</title>
