@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.unescapecsv/</loc>
+    <lastmod>2020-10-10T00:43:31+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.escapecsv/</loc>
+    <lastmod>2020-10-09T23:44:55+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-escape-unescape-string-for-csv-column-data/</loc>
     <lastmod>2020-10-08T23:26:48+07:00</lastmod>
   </url>
@@ -579,6 +589,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/code-examples/</loc>
+    <lastmod>2020-10-10T00:43:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/crypto/</loc>
     <lastmod>2019-04-13T17:45:10+07:00</lastmod>
     <priority>0</priority>
@@ -658,7 +674,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2019-05-30T01:00:10+07:00</lastmod>
+    <lastmod>2020-10-10T00:43:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -778,7 +794,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-08T23:26:48+07:00</lastmod>
+    <lastmod>2020-10-10T00:43:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   

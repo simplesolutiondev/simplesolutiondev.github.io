@@ -6,10 +6,30 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2020 23:26:48 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 00:43:31 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.StringEscapeUtils.unescapeCsv()</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.unescapecsv/</link>
+      <pubDate>Sat, 10 Oct 2020 00:43:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.unescapecsv/</guid>
+      <description>Java Code Example 1 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;1,23\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.unescapeCsv(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;sample \n text\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.</description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.StringEscapeUtils.escapeCsv()</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.escapecsv/</link>
+      <pubDate>Fri, 09 Oct 2020 23:44:55 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.escapecsv/</guid>
+      <description>Java Code Example 1 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;1,23&amp;#34;; String outputString = StringEscapeUtils.escapeCsv(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: 1,23 Output String: &amp;quot;1,23&amp;quot;  Java Code Example 2 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;sample \n text&amp;#34;; String outputString = StringEscapeUtils.</description>
+    </item>
     
     <item>
       <title>Escape or Unescape String for CSV column data in Java using Apache Commons Text</title>
