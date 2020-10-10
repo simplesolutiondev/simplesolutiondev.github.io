@@ -17,8 +17,9 @@
       <pubDate>Sat, 10 Oct 2020 01:21:18 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.capitalize/</guid>
-      <description>Java Code Example 1 import org.apache.commons.text.WordUtils; public class WordUtilsCapitalizeExample1 { public static void main(String[] args) { String inputString = &amp;#34;learn java programming with simple solution website&amp;#34;; String outputString = WordUtils.capitalize(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: learn java programming with simple solution website Output String: Learn Java Programming With Simple Solution Website  Java Code Example 2 import org.apache.commons.text.WordUtils; public class WordUtilsCapitalizeExample2 { public static void main(String[] args) { String inputString = &amp;#34;learn java programming at simplesolution.</description>
+      <description>org.apache.commons.text.WordUtils.capitalize() Apache Commons Text library.
+Java Code Example 1 capitalizes all the whitespace separated words in a String import org.apache.commons.text.WordUtils; public class WordUtilsCapitalizeExample1 { public static void main(String[] args) { String inputString = &amp;#34;learn java programming with simple solution website&amp;#34;; String outputString = WordUtils.capitalize(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: learn java programming with simple solution website Output String: Learn Java Programming With Simple Solution Website  Java Code Example 2 capitalizes all the whitespace separated words in a String import org.</description>
     </item>
     
     <item>
@@ -27,8 +28,9 @@ Input String: learn java programming with simple solution website Output String:
       <pubDate>Sat, 10 Oct 2020 00:43:31 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.unescapecsv/</guid>
-      <description>Java Code Example 1 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;1,23\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.unescapeCsv(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;sample \n text\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.</description>
+      <description>org.apache.commons.text.StringEscapeUtils.unescapeCsv() Apache Commons Text library.
+Java Code Example 1 unescape CSV value import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;1,23\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.unescapeCsv(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 unescape CSV value import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;sample \n text\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.</description>
     </item>
     
     <item>
@@ -37,8 +39,9 @@ Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 
       <pubDate>Fri, 09 Oct 2020 23:44:55 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.escapecsv/</guid>
-      <description>Java Code Example 1 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;1,23&amp;#34;; String outputString = StringEscapeUtils.escapeCsv(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: 1,23 Output String: &amp;quot;1,23&amp;quot;  Java Code Example 2 import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;sample \n text&amp;#34;; String outputString = StringEscapeUtils.</description>
+      <description>org.apache.commons.text.StringEscapeUtils.escapeCsv() Apache Commons Text library.
+Java Code Example 1 escape String for CSV column import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;1,23&amp;#34;; String outputString = StringEscapeUtils.escapeCsv(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: 1,23 Output String: &amp;quot;1,23&amp;quot;  Java Code Example 2 escape String for CSV column import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;sample \n text&amp;#34;; String outputString = StringEscapeUtils.</description>
     </item>
     
     <item>
