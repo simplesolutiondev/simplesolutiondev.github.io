@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 21:23:53 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 21:37:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for com.google.common.base.Strings.lenientFormat()</title>
+      <link>https://simplesolution.dev/com.google.common.base.strings.lenientformat/</link>
+      <pubDate>Sat, 10 Oct 2020 21:37:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/com.google.common.base.strings.lenientformat/</guid>
+      <description>com.google.common.base.Strings.lenientFormat() Guava Google Core Libraries for Java.
+Java Code Example 1 import com.google.common.base.Strings; public class StringsLenientFormatExample1 { public static void main(String[] args) { String templateString = &amp;#34;%s (%s) must not be negative.&amp;#34;; String outputString = Strings.lenientFormat(templateString, &amp;#34;Ages&amp;#34;, -1);  System.out.println(outputString); } } Output:
+Ages (-1) must not be negative.     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsLenientFormatExample2 { public static void main(String[] args) { String templateString = &amp;#34;%s (%s) must not be negative.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for com.google.common.base.Strings.commonSuffix()</title>
