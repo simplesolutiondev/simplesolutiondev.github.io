@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 21:13:47 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 21:23:53 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for com.google.common.base.Strings.commonSuffix()</title>
+      <link>https://simplesolution.dev/com.google.common.base.strings.commonsuffix/</link>
+      <pubDate>Sat, 10 Oct 2020 21:23:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/com.google.common.base.strings.commonsuffix/</guid>
+      <description>com.google.common.base.Strings.commonSuffix() Guava Google Core Libraries for Java.
+Java Code Example 1 import com.google.common.base.Strings; public class StringsCommonSuffixExample1 { public static void main(String[] args) { String outputString = Strings.commonSuffix(&amp;#34;file1.txt&amp;#34;, &amp;#34;file2.txt&amp;#34;);  System.out.println(outputString); } } Output:
+.txt     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsCommonSuffixExample2 { public static void main(String[] args) { String outputString = Strings.commonSuffix(&amp;#34;file1.html&amp;#34;, &amp;#34;file2.txt&amp;#34;);  System.out.println(outputString); } } Output:</description>
+    </item>
     
     <item>
       <title>Java Code Examples for com.google.common.base.Strings.commonPrefix()</title>
