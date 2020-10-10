@@ -6,10 +6,21 @@
     <description>Recent content in Code-examples on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 11:44:26 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 12:46:45 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.WordUtils.wrap()</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.wordutils.wrap/</link>
+      <pubDate>Sat, 10 Oct 2020 12:46:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.wrap/</guid>
+      <description>org.apache.commons.text.WordUtils.wrap() Apache Commons Text library.
+Java Code Example 1 wraps a single line of text to multiple lines import org.apache.commons.text.WordUtils; public class WordUtilsWrapExample1 { public static void main(String[] args) { String inputString = &amp;#34;This is the line of text need to be wrap.&amp;#34;; String wrappedString = WordUtils.wrap(inputString, 20); System.out.println(&amp;#34;Input String: &amp;#34;); System.out.println(inputString); System.out.println(&amp;#34;Output String:&amp;#34;); System.out.println(wrappedString); } } Output:
+Input String: This is the line of text need to be wrap.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for org.apache.commons.text.RandomStringGenerator.generate()</title>
