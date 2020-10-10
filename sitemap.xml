@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/com.google.common.base.strings.padstart/</loc>
+    <lastmod>2020-10-10T18:29:50+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/com.google.common.base.strings.isnullorempty/</loc>
     <lastmod>2020-10-10T16:07:24+07:00</lastmod>
   </url>
@@ -635,7 +640,7 @@
   
   <url>
     <loc>https://simplesolution.dev/code-examples/</loc>
-    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
+    <lastmod>2020-10-10T18:29:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -706,20 +711,20 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://simplesolution.dev/java/</loc>
     <lastmod>2020-10-08T23:26:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
+    <lastmod>2020-10-10T18:29:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -839,7 +844,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
+    <lastmod>2020-10-10T18:29:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -850,13 +855,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
