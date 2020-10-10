@@ -4,22 +4,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Java Code Examples for com.google.common.base.Strings.padStart()</title>
-    <meta name="title" content="Java Code Examples for com.google.common.base.Strings.padStart()">
-    <meta name="description" content="Java Code Examples for com.google.common.base.Strings.padStart()">
+    <title>Java Code Examples for com.google.common.base.Strings.padEnd()</title>
+    <meta name="title" content="Java Code Examples for com.google.common.base.Strings.padEnd()">
+    <meta name="description" content="Java Code Examples for com.google.common.base.Strings.padEnd()">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/com.google.common.base.strings.padstart/">
-    <meta property="og:title" content="Java Code Examples for com.google.common.base.Strings.padStart()">
-    <meta property="og:description" content="Java Code Examples for com.google.common.base.Strings.padStart()">
+    <meta property="og:url" content="https://simplesolution.dev/com.google.common.base.strings.padend/">
+    <meta property="og:title" content="Java Code Examples for com.google.common.base.Strings.padEnd()">
+    <meta property="og:description" content="Java Code Examples for com.google.common.base.Strings.padEnd()">
     
     <meta property="og:image" content="https://simplesolution.dev/images/Logo_S_v1.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/com.google.common.base.strings.padstart/">
-    <meta name="twitter:title" content="Java Code Examples for com.google.common.base.Strings.padStart()">
-    <meta name="twitter:description" content="Java Code Examples for com.google.common.base.Strings.padStart()">
+    <meta name="twitter:url" content="https://simplesolution.dev/com.google.common.base.strings.padend/">
+    <meta name="twitter:title" content="Java Code Examples for com.google.common.base.Strings.padEnd()">
+    <meta name="twitter:description" content="Java Code Examples for com.google.common.base.Strings.padEnd()">
     
     <meta name="twitter:image" content="https://simplesolution.dev/images/Logo_S_v1.png">
     
@@ -47,23 +47,23 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Java Code Examples for com.google.common.base.Strings.padStart()</h1></div>
+                    <div class="post-header"><h1 class="post-title">Java Code Examples for com.google.common.base.Strings.padEnd()</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>com.google.common.base.Strings.padStart() Guava Google Core Libraries for Java.</p>
+<p>com.google.common.base.Strings.padEnd() Guava Google Core Libraries for Java.</p>
 
-<h4 id="java-code-example-1-return-a-string-of-given-length-and-fill-with-given-char-if-the-input-string-is-shorter-than-the-given-length">Java Code Example 1 return a String of given length and fill with given char if the input String is shorter than the given length</h4>
+<h4 id="java-code-example-1-return-a-string-in-given-min-length-and-fill-with-given-char-if-the-input-string-is-least-than-min-length">Java Code Example 1 return a String in given min length and fill with given char if the input String is least than min length</h4>
 
 <p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.common.base.Strings<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringsPadStartExample1</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringsPadEndExample1</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        String inputString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;7&#34;</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> minLength <span style="color:#f92672">=</span> 3<span style="color:#f92672">;</span>
+        String inputString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;12.&#34;</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> minLength <span style="color:#f92672">=</span> 5<span style="color:#f92672">;</span>
         <span style="color:#66d9ef">char</span> padChar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span><span style="color:#f92672">;</span>
 
-<span style="display:block;width:100%;background-color:#3c3d38">        String outputString <span style="color:#f92672">=</span> Strings<span style="color:#f92672">.</span><span style="color:#a6e22e">padStart</span><span style="color:#f92672">(</span>inputString<span style="color:#f92672">,</span> minLength<span style="color:#f92672">,</span> padChar<span style="color:#f92672">);</span>
+<span style="display:block;width:100%;background-color:#3c3d38">        String outputString <span style="color:#f92672">=</span> Strings<span style="color:#f92672">.</span><span style="color:#a6e22e">padEnd</span><span style="color:#f92672">(</span>inputString<span style="color:#f92672">,</span> minLength<span style="color:#f92672">,</span> padChar<span style="color:#f92672">);</span>
 </span>
         System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Input String: &#34;</span> <span style="color:#f92672">+</span> inputString<span style="color:#f92672">);</span>
         System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Output String: &#34;</span> <span style="color:#f92672">+</span> outputString<span style="color:#f92672">);</span>
@@ -71,8 +71,8 @@
 <span style="color:#f92672">}</span></code></pre></div>
 Output:</p>
 
-<pre><code>Input String: 7
-Output String: 007
+<pre><code>Input String: 12.
+Output String: 12.00
 </code></pre>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -90,13 +90,35 @@ Output String: 007
 
 <p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.common.base.Strings<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringsPadStartExample2</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringsPadEndExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String inputString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;5677&#34;</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> minLength <span style="color:#f92672">=</span> 12<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">char</span> padChar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;x&#39;</span><span style="color:#f92672">;</span>
+
+<span style="display:block;width:100%;background-color:#3c3d38">        String outputString <span style="color:#f92672">=</span> Strings<span style="color:#f92672">.</span><span style="color:#a6e22e">padEnd</span><span style="color:#f92672">(</span>inputString<span style="color:#f92672">,</span> minLength<span style="color:#f92672">,</span> padChar<span style="color:#f92672">);</span>
+</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Input String: &#34;</span> <span style="color:#f92672">+</span> inputString<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Output String: &#34;</span> <span style="color:#f92672">+</span> outputString<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:</p>
+
+<pre><code>Input String: 5677
+Output String: 5677xxxxxxxx
+</code></pre>
+
+<h4 id="java-code-example-3">Java Code Example 3</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.common.base.Strings<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringsPadEndExample3</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         String inputString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2020&#34;</span><span style="color:#f92672">;</span>
         <span style="color:#66d9ef">int</span> minLength <span style="color:#f92672">=</span> 3<span style="color:#f92672">;</span>
         <span style="color:#66d9ef">char</span> padChar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;0&#39;</span><span style="color:#f92672">;</span>
 
-<span style="display:block;width:100%;background-color:#3c3d38">        String outputString <span style="color:#f92672">=</span> Strings<span style="color:#f92672">.</span><span style="color:#a6e22e">padStart</span><span style="color:#f92672">(</span>inputString<span style="color:#f92672">,</span> minLength<span style="color:#f92672">,</span> padChar<span style="color:#f92672">);</span>
+<span style="display:block;width:100%;background-color:#3c3d38">        String outputString <span style="color:#f92672">=</span> Strings<span style="color:#f92672">.</span><span style="color:#a6e22e">padEnd</span><span style="color:#f92672">(</span>inputString<span style="color:#f92672">,</span> minLength<span style="color:#f92672">,</span> padChar<span style="color:#f92672">);</span>
 </span>
         System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Input String: &#34;</span> <span style="color:#f92672">+</span> inputString<span style="color:#f92672">);</span>
         System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Output String: &#34;</span> <span style="color:#f92672">+</span> outputString<span style="color:#f92672">);</span>
@@ -106,28 +128,6 @@ Output:</p>
 
 <pre><code>Input String: 2020
 Output String: 2020
-</code></pre>
-
-<h4 id="java-code-example-3">Java Code Example 3</h4>
-
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.common.base.Strings<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StringsPadStartExample3</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        String inputString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;789&#34;</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> minLength <span style="color:#f92672">=</span> 12<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">char</span> padChar <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;*&#39;</span><span style="color:#f92672">;</span>
-
-<span style="display:block;width:100%;background-color:#3c3d38">        String outputString <span style="color:#f92672">=</span> Strings<span style="color:#f92672">.</span><span style="color:#a6e22e">padStart</span><span style="color:#f92672">(</span>inputString<span style="color:#f92672">,</span> minLength<span style="color:#f92672">,</span> padChar<span style="color:#f92672">);</span>
-</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Input String: &#34;</span> <span style="color:#f92672">+</span> inputString<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Output String: &#34;</span> <span style="color:#f92672">+</span> outputString<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-Output:</p>
-
-<pre><code>Input String: 789
-Output String: *********789
 </code></pre>
 
                         
