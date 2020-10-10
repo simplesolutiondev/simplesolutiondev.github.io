@@ -56,6 +56,17 @@ Input String: how to CAPITALIZE first letter words Output String: How To Capital
     </item>
     
     <item>
+      <title>Java Code Examples for com.google.common.base.Strings.nullToEmpty()</title>
+      <link>https://simplesolution.dev/com.google.common.base.strings.nulltoempty/</link>
+      <pubDate>Sat, 10 Oct 2020 10:49:15 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/com.google.common.base.strings.nulltoempty/</guid>
+      <description>com.google.common.base.Strings.nullToEmpty() Guava Google Core Libraries for Java.
+Java Code Example returns a empty String if input is null import com.google.common.base.Strings; public class StringsNullToEmptyExample1 { public static void main(String[] args) { String nullString = null; String outputString = Strings.nullToEmpty(nullString); System.out.println(&amp;#34;Input String: &amp;#34; + nullString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: null Output String:     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 returns the given string if it is non-null import com.</description>
+    </item>
+    
+    <item>
       <title>Java Code Examples for org.apache.commons.text.CaseUtils.toCamelCase()</title>
       <link>https://simplesolution.dev/org.apache.commons.text.caseutils.tocamelcase/</link>
       <pubDate>Sat, 10 Oct 2020 10:49:15 +0700</pubDate>
