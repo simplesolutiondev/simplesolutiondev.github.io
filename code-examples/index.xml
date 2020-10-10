@@ -256,7 +256,6 @@ Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 
       
       <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.escapecsv/</guid>
       <description>More Java code examples for org.apache.commons.text.StringEscapeUtils Apache Commons Text library.
-.escapeCsv() Apache Commons Text library.
 Java Code Example 1 escape String for CSV column import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;1,23&amp;#34;; String outputString = StringEscapeUtils.escapeCsv(inputString);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
 Input String: 1,23 Output String: &amp;quot;1,23&amp;quot;  Java Code Example 2 escape String for CSV column import org.</description>
     </item>

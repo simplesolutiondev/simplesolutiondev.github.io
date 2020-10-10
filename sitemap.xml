@@ -761,14 +761,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-08T23:26:48+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-09-28T22:37:34+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2020-10-08T23:26:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -905,13 +905,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
   </url>
