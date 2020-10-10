@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 11:18:54 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 11:44:26 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.RandomStringGenerator.generate()</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.randomstringgenerator.generate/</link>
+      <pubDate>Sat, 10 Oct 2020 11:44:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.randomstringgenerator.generate/</guid>
+      <description>org.apache.commons.text.RandomStringGenerator.generate() Apache Commons Text library.
+Java Code Example 1 generate long file name import org.apache.commons.text.RandomStringGenerator; public class GenerateLongFileName { public static void main(String[] args) { RandomStringGenerator generator = new RandomStringGenerator .Builder() .withinRange(&amp;#39;a&amp;#39;, &amp;#39;z&amp;#39;) .build(); int length = 100; String generatedLongFileName = generator.generate(length) + &amp;#34;.html&amp;#34;; System.out.println(&amp;#34;Generated Long File Name: &amp;#34; + generatedLongFileName); } } Output:
+Generated Long File Name: vqmnxsexpygegjsxvoronsjpeljouwwysikxzrsnkkvmtlapspowytoiwmaghgigjlixxppmrywyzhjvhcbxwhofqokosgdspxrn.html  Java Code Example 2 generate randome secure password import org.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for org.apache.commons.text.WordUtils.capitalizeFully()</title>
