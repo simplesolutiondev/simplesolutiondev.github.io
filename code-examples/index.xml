@@ -6,10 +6,21 @@
     <description>Recent content in Code-examples on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 15:57:25 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 16:07:24 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for com.google.common.base.Strings.isNullOrEmpty()</title>
+      <link>https://simplesolution.dev/com.google.common.base.strings.isnullorempty/</link>
+      <pubDate>Sat, 10 Oct 2020 16:07:24 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/com.google.common.base.strings.isnullorempty/</guid>
+      <description>com.google.common.base.Strings.isNullOrEmpty() Guava Google Core Libraries for Java.
+Java Code Example 1 returns true if the given string is an empty String import com.google.common.base.Strings; public class StringsIsNullOrEmptyExample1 { public static void main(String[] args) { String emptyString = &amp;#34;&amp;#34;; boolean result = Strings.isNullOrEmpty(emptyString); System.out.println(result); } } Output:
+true     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 returns true if the given string is null String import com.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for com.google.common.base.Strings.emptyToNull()</title>

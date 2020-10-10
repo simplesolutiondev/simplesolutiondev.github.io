@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/com.google.common.base.strings.isnullorempty/</loc>
+    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/com.google.common.base.strings.emptytonull/</loc>
     <lastmod>2020-10-10T15:57:25+07:00</lastmod>
   </url>
@@ -630,7 +635,7 @@
   
   <url>
     <loc>https://simplesolution.dev/code-examples/</loc>
-    <lastmod>2020-10-10T15:57:25+07:00</lastmod>
+    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -714,7 +719,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2020-10-10T15:57:25+07:00</lastmod>
+    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -834,7 +839,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-10T15:57:25+07:00</lastmod>
+    <lastmod>2020-10-10T16:07:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
