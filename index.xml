@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 12:46:45 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 13:06:04 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.WordUtils.containsAllWords()</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.wordutils.containsallwords/</link>
+      <pubDate>Sat, 10 Oct 2020 13:06:04 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.containsallwords/</guid>
+      <description>org.apache.commons.text.WordUtils.containsAllWords() Apache Commons Text library.
+Java Code Example 1 checks if the String contains all words in the given array import org.apache.commons.text.WordUtils; public class WordUtilsContainsAllWordsExample1 { public static void main(String[] args) { String testString = &amp;#34;simple solution website&amp;#34;; String[] arrayOfWords = new String[] {&amp;#34;simple&amp;#34;, &amp;#34;solution&amp;#34;, &amp;#34;website&amp;#34;}; boolean result = WordUtils.containsAllWords(testString, arrayOfWords); System.out.println(result); } } Output:
+true     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 checks if the String contains all words in the given array import org.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for org.apache.commons.text.WordUtils.wrap()</title>
