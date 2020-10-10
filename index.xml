@@ -12,6 +12,25 @@
     
     
     <item>
+      <title>Java Code Examples for com.google.common.base.Strings</title>
+      <link>https://simplesolution.dev/com.google.common.base.strings/</link>
+      <pubDate>Sat, 10 Oct 2020 21:37:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/com.google.common.base.strings/</guid>
+      <description>com.google.common.base.Strings Guava Google Core Libraries for Java.
+ com.google.common.base.Strings.commonPrefix()
+ com.google.common.base.Strings.commonSuffix()
+ com.google.common.base.Strings.emptyToNull()
+ com.google.common.base.Strings.isNullOrEmpty()
+ com.google.common.base.Strings.lenientFormat()
+ com.google.common.base.Strings.nullToEmpty()
+ com.google.common.base.Strings.padEnd()
+ com.google.common.base.Strings.padStart()
+ com.google.common.base.Strings.repeat()
+  </description>
+    </item>
+    
+    <item>
       <title>Java Code Examples for com.google.common.base.Strings.lenientFormat()</title>
       <link>https://simplesolution.dev/com.google.common.base.strings.lenientformat/</link>
       <pubDate>Sat, 10 Oct 2020 21:37:00 +0700</pubDate>
