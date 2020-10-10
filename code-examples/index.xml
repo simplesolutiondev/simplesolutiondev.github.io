@@ -6,10 +6,56 @@
     <description>Recent content in Code-examples on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 21:37:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 22:29:08 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.WordUtils</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.wordutils/</link>
+      <pubDate>Sat, 10 Oct 2020 22:29:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.wordutils/</guid>
+      <description>org.apache.commons.text.WordUtils Apache Commons Text library.
+ org.apache.commons.text.WordUtils.capitalize()
+ org.apache.commons.text.WordUtils.capitalizeFully()
+ org.apache.commons.text.WordUtils.containsAllWords()
+ org.apache.commons.text.WordUtils.wrap()
+  </description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.StringEscapeUtils</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.stringescapeutils/</link>
+      <pubDate>Sat, 10 Oct 2020 22:25:32 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils/</guid>
+      <description>org.apache.commons.text.StringEscapeUtils Apache Commons Text library.
+ org.apache.commons.text.StringEscapeUtils.escapeCsv()
+ org.apache.commons.text.StringEscapeUtils.unescapeCsv()
+  </description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.RandomStringGenerator</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.randomstringgenerator/</link>
+      <pubDate>Sat, 10 Oct 2020 22:22:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.randomstringgenerator/</guid>
+      <description>org.apache.commons.text.RandomStringGenerator Apache Commons Text library.
+ org.apache.commons.text.RandomStringGenerator.generate()  </description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.CaseUtils</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.caseutils/</link>
+      <pubDate>Sat, 10 Oct 2020 22:19:05 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.caseutils/</guid>
+      <description>org.apache.commons.text.CaseUtils Apache Commons Text library.
+ org.apache.commons.text.CaseUtils.toCamelCase()  </description>
+    </item>
     
     <item>
       <title>Java Code Examples for com.google.common.base.Strings</title>
@@ -36,9 +82,9 @@
       <pubDate>Sat, 10 Oct 2020 21:37:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.lenientformat/</guid>
-      <description>com.google.common.base.Strings.lenientFormat() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 import com.google.common.base.Strings; public class StringsLenientFormatExample1 { public static void main(String[] args) { String templateString = &amp;#34;%s (%s) must not be negative.&amp;#34;; String outputString = Strings.lenientFormat(templateString, &amp;#34;Ages&amp;#34;, -1);  System.out.println(outputString); } } Output:
-Ages (-1) must not be negative.     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsLenientFormatExample2 { public static void main(String[] args) { String templateString = &amp;#34;%s (%s) must not be negative.</description>
+Ages (-1) must not be negative.     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.</description>
     </item>
     
     <item>
@@ -47,9 +93,9 @@ Ages (-1) must not be negative.     (adsbygoogle = window.adsbygoogle || []).pus
       <pubDate>Sat, 10 Oct 2020 21:23:53 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.commonsuffix/</guid>
-      <description>com.google.common.base.Strings.commonSuffix() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 import com.google.common.base.Strings; public class StringsCommonSuffixExample1 { public static void main(String[] args) { String outputString = Strings.commonSuffix(&amp;#34;file1.txt&amp;#34;, &amp;#34;file2.txt&amp;#34;);  System.out.println(outputString); } } Output:
-.txt     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsCommonSuffixExample2 { public static void main(String[] args) { String outputString = Strings.commonSuffix(&amp;#34;file1.html&amp;#34;, &amp;#34;file2.txt&amp;#34;);  System.out.println(outputString); } } Output:</description>
+.txt     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsCommonSuffixExample2 { public static void main(String[] args) { String outputString = Strings.commonSuffix(&amp;#34;file1.html&amp;#34;, &amp;#34;file2.</description>
     </item>
     
     <item>
@@ -58,9 +104,9 @@ Java Code Example 1 import com.google.common.base.Strings; public class StringsC
       <pubDate>Sat, 10 Oct 2020 21:13:47 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.commonprefix/</guid>
-      <description>com.google.common.base.Strings.commonPrefix() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 import com.google.common.base.Strings; public class StringsCommonPrefixExample1 { public static void main(String[] args) { String outputString = Strings.commonPrefix(&amp;#34;Mr. Jackson&amp;#34;, &amp;#34;Mr. Meyer&amp;#34;);  System.out.println(outputString); } } Output:
-Mr.     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsCommonPrefixExample2 { public static void main(String[] args) { String outputString = Strings.commonPrefix(&amp;#34;Mr. Jackson&amp;#34;, &amp;#34;Ms. Bradley&amp;#34;);  System.</description>
+Mr.     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsCommonPrefixExample2 { public static void main(String[] args) { String outputString = Strings.</description>
     </item>
     
     <item>
@@ -69,9 +115,9 @@ Mr.     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 
       <pubDate>Sat, 10 Oct 2020 20:54:02 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.repeat/</guid>
-      <description>com.google.common.base.Strings.repeat() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 returns a string consisting of a specific number of concatenated copies of an input string import com.google.common.base.Strings; public class StringsRepeatExample1 { public static void main(String[] args) { String outputString = Strings.repeat(&amp;#34;hello&amp;#34;, 3);  System.out.println(outputString); } } Output:
-hellohellohello     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsRepeatExample2 { public static void main(String[] args) { String outputString = Strings.</description>
+hellohellohello     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.</description>
     </item>
     
     <item>
@@ -80,8 +126,8 @@ hellohellohello     (adsbygoogle = window.adsbygoogle || []).push({});  Java Cod
       <pubDate>Sat, 10 Oct 2020 18:42:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.padend/</guid>
-      <description>com.google.common.base.Strings.padEnd() Guava Google Core Libraries for Java.
-Java Code Example 1 return a String in given min length and fill with given char if the input String is least than min length import com.google.common.base.Strings; public class StringsPadEndExample1 { public static void main(String[] args) { String inputString = &amp;#34;12.&amp;#34;; int minLength = 5; char padChar = &amp;#39;0&amp;#39;; String outputString = Strings.padEnd(inputString, minLength, padChar);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:</description>
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
+Java Code Example 1 return a String in given min length and fill with given char if the input String is least than min length import com.google.common.base.Strings; public class StringsPadEndExample1 { public static void main(String[] args) { String inputString = &amp;#34;12.&amp;#34;; int minLength = 5; char padChar = &amp;#39;0&amp;#39;; String outputString = Strings.padEnd(inputString, minLength, padChar);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.</description>
     </item>
     
     <item>
@@ -90,8 +136,8 @@ Java Code Example 1 return a String in given min length and fill with given char
       <pubDate>Sat, 10 Oct 2020 18:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.padstart/</guid>
-      <description>com.google.common.base.Strings.padStart() Guava Google Core Libraries for Java.
-Java Code Example 1 return a String of given length and fill with given char if the input String is shorter than the given length import com.google.common.base.Strings; public class StringsPadStartExample1 { public static void main(String[] args) { String inputString = &amp;#34;7&amp;#34;; int minLength = 3; char padChar = &amp;#39;0&amp;#39;; String outputString = Strings.padStart(inputString, minLength, padChar);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:</description>
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
+Java Code Example 1 return a String of given length and fill with given char if the input String is shorter than the given length import com.google.common.base.Strings; public class StringsPadStartExample1 { public static void main(String[] args) { String inputString = &amp;#34;7&amp;#34;; int minLength = 3; char padChar = &amp;#39;0&amp;#39;; String outputString = Strings.padStart(inputString, minLength, padChar);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.</description>
     </item>
     
     <item>
@@ -100,7 +146,7 @@ Java Code Example 1 return a String of given length and fill with given char if 
       <pubDate>Sat, 10 Oct 2020 16:07:24 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.isnullorempty/</guid>
-      <description>com.google.common.base.Strings.isNullOrEmpty() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 returns true if the given string is an empty String import com.google.common.base.Strings; public class StringsIsNullOrEmptyExample1 { public static void main(String[] args) { String emptyString = &amp;#34;&amp;#34;; boolean result = Strings.isNullOrEmpty(emptyString);  System.out.println(result); } } Output:
 true     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 returns true if the given string is null String import com.</description>
     </item>
@@ -111,9 +157,9 @@ true     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2
       <pubDate>Sat, 10 Oct 2020 15:57:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.emptytonull/</guid>
-      <description>com.google.common.base.Strings.emptyToNull() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 returns null the input String is empty import com.google.common.base.Strings; public class StringsEmptyToNullExample1 { public static void main(String[] args) { String emptyString = &amp;#34;&amp;#34;; String outputString = Strings.emptyToNull(emptyString);  System.out.println(&amp;#34;Input String: &amp;#34; + emptyString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: Output String: null     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 returns the given string if it is nonempty import com.</description>
+Input String: Output String: null     (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
     <item>
@@ -122,9 +168,9 @@ Input String: Output String: null     (adsbygoogle = window.adsbygoogle || []).p
       <pubDate>Sat, 10 Oct 2020 15:50:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/com.google.common.base.strings.nulltoempty/</guid>
-      <description>com.google.common.base.Strings.nullToEmpty() Guava Google Core Libraries for Java.
+      <description>More Java code examples for com.google.common.base.Strings Guava Google Core Libraries for Java.
 Java Code Example 1 returns a empty String if input is null import com.google.common.base.Strings; public class StringsNullToEmptyExample1 { public static void main(String[] args) { String nullString = null; String outputString = Strings.nullToEmpty(nullString);  System.out.println(&amp;#34;Input String: &amp;#34; + nullString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: null Output String:     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 returns the given string if it is non-null import com.</description>
+Input String: null Output String:     (adsbygoogle = window.</description>
     </item>
     
     <item>
@@ -133,9 +179,9 @@ Input String: null Output String:     (adsbygoogle = window.adsbygoogle || []).p
       <pubDate>Sat, 10 Oct 2020 13:06:04 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.containsallwords/</guid>
-      <description>org.apache.commons.text.WordUtils.containsAllWords() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.WordUtils Apache Commons Text library.
 Java Code Example 1 checks if the String contains all words in the given array import org.apache.commons.text.WordUtils; public class WordUtilsContainsAllWordsExample1 { public static void main(String[] args) { String testString = &amp;#34;simple solution website&amp;#34;; String[] arrayOfWords = new String[] {&amp;#34;simple&amp;#34;, &amp;#34;solution&amp;#34;, &amp;#34;website&amp;#34;}; boolean result = WordUtils.containsAllWords(testString, arrayOfWords);  System.out.println(result); } } Output:
-true     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 checks if the String contains all words in the given array import org.</description>
+true     (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
     <item>
@@ -144,7 +190,7 @@ true     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2
       <pubDate>Sat, 10 Oct 2020 12:46:45 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.wrap/</guid>
-      <description>org.apache.commons.text.WordUtils.wrap() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.WordUtils Apache Commons Text library.
 Java Code Example 1 wraps a single line of text to multiple lines import org.apache.commons.text.WordUtils; public class WordUtilsWrapExample1 { public static void main(String[] args) { String inputString = &amp;#34;This is the line of text need to be wrap.&amp;#34;; String wrappedString = WordUtils.wrap(inputString, 20);  System.out.println(&amp;#34;Input String: &amp;#34;); System.out.println(inputString); System.out.println(&amp;#34;Output String:&amp;#34;); System.out.println(wrappedString); } } Output:
 Input String: This is the line of text need to be wrap.</description>
     </item>
@@ -155,7 +201,7 @@ Input String: This is the line of text need to be wrap.</description>
       <pubDate>Sat, 10 Oct 2020 11:44:26 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.randomstringgenerator.generate/</guid>
-      <description>org.apache.commons.text.RandomStringGenerator.generate() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.RandomStringGenerator Apache Commons Text library.
 Java Code Example 1 generate long file name import org.apache.commons.text.RandomStringGenerator; public class GenerateLongFileName { public static void main(String[] args) { RandomStringGenerator generator = new RandomStringGenerator .Builder() .withinRange(&amp;#39;a&amp;#39;, &amp;#39;z&amp;#39;) .build(); int length = 100; String generatedLongFileName = generator.generate(length) + &amp;#34;.html&amp;#34;;  System.out.println(&amp;#34;Generated Long File Name: &amp;#34; + generatedLongFileName); } } Output:
 Generated Long File Name: vqmnxsexpygegjsxvoronsjpeljouwwysikxzrsnkkvmtlapspowytoiwmaghgigjlixxppmrywyzhjvhcbxwhofqokosgdspxrn.html  Java Code Example 2 generate randome secure password import org.</description>
     </item>
@@ -166,7 +212,7 @@ Generated Long File Name: vqmnxsexpygegjsxvoronsjpeljouwwysikxzrsnkkvmtlapspowyt
       <pubDate>Sat, 10 Oct 2020 11:18:54 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.capitalizefully/</guid>
-      <description>org.apache.commons.text.WordUtils.capitalizeFully() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.WordUtils Apache Commons Text library.
 Java Code Example 1 converts all the whitespace separated words in a String into capitalized words import org.apache.commons.text.WordUtils; public class WordUtilsCapitalizeFullyExample1 { public static void main(String[] args) { String inputString = &amp;#34;how to CAPITALIZE first letter words&amp;#34;; String outputString = WordUtils.capitalizeFully(inputString);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
 Input String: how to CAPITALIZE first letter words Output String: How To Capitalize First Letter Words  Java Code Example 2 converts all the whitespace separated words in a String into capitalized words import org.</description>
     </item>
@@ -177,9 +223,8 @@ Input String: how to CAPITALIZE first letter words Output String: How To Capital
       <pubDate>Sat, 10 Oct 2020 10:49:15 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.caseutils.tocamelcase/</guid>
-      <description>org.apache.commons.text.CaseUtils.toCamelCase() Apache Commons Text library.
-Java Code Example 1 converts all the delimiter separated words in a String into camelCase with lowercase first letter import org.apache.commons.text.CaseUtils; public class CaseUtilsToCamelCaseExample1 { public static void main(String[] args) { String inputString = &amp;#34;Testing String&amp;#34;; boolean isCapitalizeFirstLetter = false; String outputString = CaseUtils.toCamelCase(inputString, isCapitalizeFirstLetter);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: Testing String Output String: testingString  Java Code Example 2 converts all the delimiter separated words in a String into camelCase with lowercase first letter import org.</description>
+      <description>More Java code examples for org.apache.commons.text.CaseUtils Apache Commons Text library.
+Java Code Example 1 converts all the delimiter separated words in a String into camelCase with lowercase first letter import org.apache.commons.text.CaseUtils; public class CaseUtilsToCamelCaseExample1 { public static void main(String[] args) { String inputString = &amp;#34;Testing String&amp;#34;; boolean isCapitalizeFirstLetter = false; String outputString = CaseUtils.toCamelCase(inputString, isCapitalizeFirstLetter);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:</description>
     </item>
     
     <item>
@@ -188,7 +233,7 @@ Input String: Testing String Output String: testingString  Java Code Example 2 c
       <pubDate>Sat, 10 Oct 2020 01:21:18 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.capitalize/</guid>
-      <description>org.apache.commons.text.WordUtils.capitalize() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.WordUtils Apache Commons Text library.
 Java Code Example 1 capitalizes all the whitespace separated words in a String import org.apache.commons.text.WordUtils; public class WordUtilsCapitalizeExample1 { public static void main(String[] args) { String inputString = &amp;#34;learn java programming with simple solution website&amp;#34;; String outputString = WordUtils.capitalize(inputString);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
 Input String: learn java programming with simple solution website Output String: Learn Java Programming With Simple Solution Website  Java Code Example 2 capitalizes all the whitespace separated words in a String import org.</description>
     </item>
@@ -199,7 +244,7 @@ Input String: learn java programming with simple solution website Output String:
       <pubDate>Sat, 10 Oct 2020 00:43:31 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.unescapecsv/</guid>
-      <description>org.apache.commons.text.StringEscapeUtils.unescapeCsv() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.StringEscapeUtils Apache Commons Text library.
 Java Code Example 1 unescape CSV value import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;1,23\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.unescapeCsv(inputString);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
 Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 unescape CSV value import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsUnescapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;\&amp;#34;sample \n text\&amp;#34;&amp;#34;; String outputString = StringEscapeUtils.</description>
     </item>
@@ -210,9 +255,10 @@ Input String: &amp;quot;1,23&amp;quot; Output String: 1,23  Java Code Example 2 
       <pubDate>Fri, 09 Oct 2020 23:44:55 +0700</pubDate>
       
       <guid>https://simplesolution.dev/org.apache.commons.text.stringescapeutils.escapecsv/</guid>
-      <description>org.apache.commons.text.StringEscapeUtils.escapeCsv() Apache Commons Text library.
+      <description>More Java code examples for org.apache.commons.text.StringEscapeUtils Apache Commons Text library.
+.escapeCsv() Apache Commons Text library.
 Java Code Example 1 escape String for CSV column import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample1 { public static void main(String[] args) { String inputString = &amp;#34;1,23&amp;#34;; String outputString = StringEscapeUtils.escapeCsv(inputString);  System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
-Input String: 1,23 Output String: &amp;quot;1,23&amp;quot;  Java Code Example 2 escape String for CSV column import org.apache.commons.text.StringEscapeUtils; public class StringEscapeUtilsEscapeCsvExample2 { public static void main(String[] args) { String inputString = &amp;#34;sample \n text&amp;#34;; String outputString = StringEscapeUtils.</description>
+Input String: 1,23 Output String: &amp;quot;1,23&amp;quot;  Java Code Example 2 escape String for CSV column import org.</description>
     </item>
     
   </channel>

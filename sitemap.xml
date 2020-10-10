@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.wordutils/</loc>
+    <lastmod>2020-10-10T22:29:08+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.stringescapeutils/</loc>
+    <lastmod>2020-10-10T22:25:32+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.randomstringgenerator/</loc>
+    <lastmod>2020-10-10T22:22:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.caseutils/</loc>
+    <lastmod>2020-10-10T22:19:05+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/com.google.common.base.strings/</loc>
     <lastmod>2020-10-10T21:37:00+07:00</lastmod>
   </url>
@@ -670,7 +690,7 @@
   
   <url>
     <loc>https://simplesolution.dev/code-examples/</loc>
-    <lastmod>2020-10-10T21:37:00+07:00</lastmod>
+    <lastmod>2020-10-10T22:29:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -754,7 +774,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2020-10-10T21:37:00+07:00</lastmod>
+    <lastmod>2020-10-10T22:29:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -874,7 +894,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-10T21:37:00+07:00</lastmod>
+    <lastmod>2020-10-10T22:29:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
