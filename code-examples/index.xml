@@ -6,10 +6,21 @@
     <description>Recent content in Code-examples on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 10:49:15 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 11:18:54 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for org.apache.commons.text.WordUtils.capitalizeFully()</title>
+      <link>https://simplesolution.dev/org.apache.commons.text.wordutils.capitalizefully/</link>
+      <pubDate>Sat, 10 Oct 2020 11:18:54 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.apache.commons.text.wordutils.capitalizefully/</guid>
+      <description>org.apache.commons.text.WordUtils.capitalizeFully() Apache Commons Text library.
+Java Code Example 1 converts all the whitespace separated words in a String into capitalized words import org.apache.commons.text.WordUtils; public class WordUtilsCapitalizeFullyExample1 { public static void main(String[] args) { String inputString = &amp;#34;how to CAPITALIZE first letter words&amp;#34;; String outputString = WordUtils.capitalizeFully(inputString); System.out.println(&amp;#34;Input String: &amp;#34; + inputString); System.out.println(&amp;#34;Output String: &amp;#34; + outputString); } } Output:
+Input String: how to CAPITALIZE first letter words Output String: How To Capitalize First Letter Words  Java Code Example 2 converts all the whitespace separated words in a String into capitalized words import org.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for org.apache.commons.text.CaseUtils.toCamelCase()</title>

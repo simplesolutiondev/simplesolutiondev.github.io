@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/org.apache.commons.text.wordutils.capitalizefully/</loc>
+    <lastmod>2020-10-10T11:18:54+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/org.apache.commons.text.caseutils.tocamelcase/</loc>
     <lastmod>2020-10-10T10:49:15+07:00</lastmod>
   </url>
@@ -600,7 +605,7 @@
   
   <url>
     <loc>https://simplesolution.dev/code-examples/</loc>
-    <lastmod>2020-10-10T10:49:15+07:00</lastmod>
+    <lastmod>2020-10-10T11:18:54+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -684,7 +689,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2020-10-10T10:49:15+07:00</lastmod>
+    <lastmod>2020-10-10T11:18:54+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -804,7 +809,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-10T10:49:15+07:00</lastmod>
+    <lastmod>2020-10-10T11:18:54+07:00</lastmod>
     <priority>0</priority>
   </url>
   
