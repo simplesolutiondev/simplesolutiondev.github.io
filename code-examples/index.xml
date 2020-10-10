@@ -6,10 +6,21 @@
     <description>Recent content in Code-examples on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 18:42:30 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2020 20:54:02 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for com.google.common.base.Strings.repeat()</title>
+      <link>https://simplesolution.dev/com.google.common.base.strings.repeat/</link>
+      <pubDate>Sat, 10 Oct 2020 20:54:02 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/com.google.common.base.strings.repeat/</guid>
+      <description>com.google.common.base.Strings.repeat() Guava Google Core Libraries for Java.
+Java Code Example 1 returns a string consisting of a specific number of concatenated copies of an input string import com.google.common.base.Strings; public class StringsRepeatExample1 { public static void main(String[] args) { String outputString = Strings.repeat(&amp;#34;hello&amp;#34;, 3);  System.out.println(outputString); } } Output:
+hellohellohello     (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 2 import com.google.common.base.Strings; public class StringsRepeatExample2 { public static void main(String[] args) { String outputString = Strings.</description>
+    </item>
     
     <item>
       <title>Java Code Examples for com.google.common.base.Strings.padEnd()</title>
