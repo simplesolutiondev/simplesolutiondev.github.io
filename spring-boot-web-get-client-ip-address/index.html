@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Web Get Client IP Address</title>
+    <meta name="title" content="Spring Boot Web Get Client IP Address">
+    <meta name="description" content="In this article we are going to learn how to obtain the client’s browser IP address when a user visits our Spring Boot web application. The example Java source code also shows how to get the client IP address even when the application deployed behind the proxy server. We also get the IP address of the local network if the client visits the Spring Boot website via local network.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-web-get-client-ip-address/">
+    <meta property="og:title" content="Spring Boot Web Get Client IP Address">
+    <meta property="og:description" content="In this article we are going to learn how to obtain the client’s browser IP address when a user visits our Spring Boot web application. The example Java source code also shows how to get the client IP address even when the application deployed behind the proxy server. We also get the IP address of the local network if the client visits the Spring Boot website via local network.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-web-get-client-ip-address.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/spring-boot-web-get-client-ip-address/">
+    <meta name="twitter:title" content="Spring Boot Web Get Client IP Address">
+    <meta name="twitter:description" content="In this article we are going to learn how to obtain the client’s browser IP address when a user visits our Spring Boot web application. The example Java source code also shows how to get the client IP address even when the application deployed behind the proxy server. We also get the IP address of the local network if the client visits the Spring Boot website via local network.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/spring-boot-web-get-client-ip-address.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Web Get Client IP Address</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this article we are going to learn how to obtain the client’s browser IP address when a user visits our Spring Boot web application. The example Java source code also shows how to get the client IP address even when the application deployed behind the proxy server. We also get the IP address of the local network if the client visits the Spring Boot website via local network.</p>
+
+<h4 id="create-spring-boot-web-project">Create Spring Boot Web Project</h4>
+
+<p>From Spring Tool Suite IDE select menu File &gt; New &gt; Spring Starter Project.</p>
+
+<p>On the New Spring Starter Project popup input new project spring-boot-client-ip information as following screenshot.</p>
+
+<p><img src="/images/spring-boot-web-get-client-ip-address-1.png" alt="Create Spring Boot Web Project Get Client IP Address" class="img-fluid"></p>
+
+<p>On the New Spring Starter Project Dependencies popup choose Thymeleaf and Spring Web dependency as below screenshot.</p>
+
+<p><img src="/images/spring-boot-web-get-client-ip-address-2.png" alt="Create Spring Boot Web Project Get Client IP Address" class="img-fluid"></p>
+
+<p>You can also creating new Spring Boot project using Spring initializr online tool at <a href="https://start.spring.io/" target="_blank">start.spring.io</a></p>
+
+<h4 id="create-request-service-interface">Create Request Service interface</h4>
+
+<p>Create a new Java source package named dev.simplesolution.ip.service, then add a new interface RequestService with the following definition.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.ip.service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletRequest<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">RequestService</span> <span style="color:#f92672">{</span>
+	
+	String <span style="color:#a6e22e">getClientIp</span><span style="color:#f92672">(</span>HttpServletRequest request<span style="color:#f92672">);</span>
+	
+<span style="color:#f92672">}</span></code></pre></div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="implement-request-service-to-get-client-s-ip-address">Implement Request service to get Client’s IP Address</h4>
+
+<p>Create a new Java package named dev.simplesolution.ip.service.impl and implement RequestServiceImpl class.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.ip.service.impl<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.net.InetAddress<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.net.UnknownHostException<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletRequest<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.stereotype.Service<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.util.StringUtils<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.ip.service.RequestService<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RequestServiceImpl</span> <span style="color:#66d9ef">implements</span> RequestService <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> String LOCALHOST_IPV4 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;127.0.0.1&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> String LOCALHOST_IPV6 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0:0:0:0:0:0:0:1&#34;</span><span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getClientIp</span><span style="color:#f92672">(</span>HttpServletRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		String ipAddress <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;X-Forwarded-For&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">)</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;unknown&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+			ipAddress <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Proxy-Client-IP&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span>
+		
+		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">)</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;unknown&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+			ipAddress <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span><span style="color:#a6e22e">getHeader</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;WL-Proxy-Client-IP&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span>
+		
+		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">)</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;unknown&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equalsIgnoreCase</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+			ipAddress <span style="color:#f92672">=</span> request<span style="color:#f92672">.</span><span style="color:#a6e22e">getRemoteAddr</span><span style="color:#f92672">();</span>
+			<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>LOCALHOST_IPV4<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">)</span> <span style="color:#f92672">||</span> LOCALHOST_IPV6<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+				<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+					InetAddress inetAddress <span style="color:#f92672">=</span> InetAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">getLocalHost</span><span style="color:#f92672">();</span>
+					ipAddress <span style="color:#f92672">=</span> inetAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">getHostAddress</span><span style="color:#f92672">();</span>
+				<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>UnknownHostException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+					e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+				<span style="color:#f92672">}</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+		
+		<span style="color:#66d9ef">if</span><span style="color:#f92672">(!</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">isEmpty</span><span style="color:#f92672">(</span>ipAddress<span style="color:#f92672">)</span> 
+				<span style="color:#f92672">&amp;&amp;</span> ipAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 15
+				<span style="color:#f92672">&amp;&amp;</span> ipAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			ipAddress <span style="color:#f92672">=</span> ipAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>0<span style="color:#f92672">,</span> ipAddress<span style="color:#f92672">.</span><span style="color:#a6e22e">indexOf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">));</span>
+		<span style="color:#f92672">}</span>
+		
+		<span style="color:#66d9ef">return</span> ipAddress<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+<span style="color:#f92672">}</span></code></pre></div>
+
+<h4 id="implement-controller-and-view-to-show-client-ip-address">Implement Controller and view to show Client IP address</h4>
+
+<p>Create a new Java package named dev.simplesolution.ip.controller and add the controller class HomeController.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.ip.controller<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletRequest<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestMapping<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.servlet.ModelAndView<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.ip.service.RequestService<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> RequestService requestService<span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> ModelAndView <span style="color:#a6e22e">index</span><span style="color:#f92672">(</span>HttpServletRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		ModelAndView model <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ModelAndView<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">);</span>
+		String clientIp <span style="color:#f92672">=</span> requestService<span style="color:#f92672">.</span><span style="color:#a6e22e">getClientIp</span><span style="color:#f92672">(</span>request<span style="color:#f92672">);</span>
+		model<span style="color:#f92672">.</span><span style="color:#a6e22e">addObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;clientIp&#34;</span><span style="color:#f92672">,</span> clientIp<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> model<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Add index.html file at \src\main\resources\templates\index.html and implement Thymeleaf view as following code.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+	&lt;<span style="color:#f92672">head</span>&gt;
+		&lt;<span style="color:#f92672">title</span>&gt;Client IP&lt;/<span style="color:#f92672">title</span>&gt;
+	&lt;/<span style="color:#f92672">head</span>&gt;
+	&lt;<span style="color:#f92672">body</span>&gt;
+		&lt;<span style="color:#f92672">h1</span>&gt;Your IP Address: &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${clientIp}&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+	&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<h4 id="final-application">Final application</h4>
+
+<p>Your final Spring Boot web application will look like the following structure.</p>
+
+<p><img src="/images/spring-boot-web-get-client-ip-address-3.png" alt="Final Spring Boot Web Project Get Client IP Address" class="img-fluid"></p>
+
+<p>Run the Spring Boot application and visit the web application in your local browser at <a href="http://localhost:8080/" target="_blank">localhost:8080</a></p>
+
+<p><img src="/images/spring-boot-web-get-client-ip-address-4.png" alt="Demo Spring Boot Web Project Get Client IP Address" class="img-fluid"></p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-client-ip" target="_blank">github.com/simplesolutiondev/spring-boot-client-ip</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-client-ip.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-client-ip/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/ip">IP</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
