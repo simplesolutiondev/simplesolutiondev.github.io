@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aop on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/aop/</link>
+    <description>Recent content in Aop on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Oct 2020 20:10:24 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/aop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot Implement AOP with Spring Boot Starter AOP</title>
+      <link>https://simplesolution.dev/spring-boot-implement-aop-with-spring-boot-starter-aop/</link>
+      <pubDate>Sat, 17 Oct 2020 20:10:24 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-implement-aop-with-spring-boot-starter-aop/</guid>
+      <description>Introduction In this article, we learn how to implement AOP (Aspect-Oriented Programming) in a Spring Boot Web application. Via step by step to creating the sample Spring Boot web application, we are going to explore how to use Spring Boot Starter AOP library which is the combination of Spring AOP and AspectJ libraries to easily implement AOP in Spring Boot application.
+Create New Spring Boot Web project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+    </item>
+    
+  </channel>
+</rss>

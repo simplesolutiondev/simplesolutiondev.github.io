@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Implement AOP with Spring Boot Starter AOP</title>
+    <meta name="title" content="Spring Boot Implement AOP with Spring Boot Starter AOP">
+    <meta name="description" content="In this article, we learn how to implement AOP (Aspect Oriented Programming) in a Spring Boot Web application. Via step by step to creating the sample Spring Boot web application, we are going to explore how to use Spring Boot Starter AOP library which is the combination of Spring AOP and AspectJ libraries to easily implement AOP in Spring Boot application.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-implement-aop-with-spring-boot-starter-aop/">
+    <meta property="og:title" content="Spring Boot Implement AOP with Spring Boot Starter AOP">
+    <meta property="og:description" content="In this article, we learn how to implement AOP (Aspect-Oriented Programming) in a Spring Boot Web application. Via step by step to creating the sample Spring Boot web application, we are going to explore how to use Spring Boot Starter AOP library which is the combination of Spring AOP and AspectJ libraries to easily implement AOP in Spring Boot application.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-implement-aop-with-spring-boot-starter-aop.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/spring-boot-implement-aop-with-spring-boot-starter-aop/">
+    <meta name="twitter:title" content="Spring Boot Implement AOP with Spring Boot Starter AOP">
+    <meta name="twitter:description" content="In this article, we learn how to implement AOP (Aspect-Oriented Programming) in a Spring Boot Web application. Via step by step to creating the sample Spring Boot web application, we are going to explore how to use Spring Boot Starter AOP library which is the combination of Spring AOP and AspectJ libraries to easily implement AOP in Spring Boot application.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/spring-boot-implement-aop-with-spring-boot-starter-aop.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Implement AOP with Spring Boot Starter AOP</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this article, we learn how to implement AOP (Aspect-Oriented Programming) in a Spring Boot Web application. Via step by step to creating the sample Spring Boot web application, we are going to explore how to use Spring Boot Starter AOP library which is the combination of Spring AOP and AspectJ libraries to easily implement AOP in Spring Boot application.</p>
+
+<h4 id="create-new-spring-boot-web-project">Create New Spring Boot Web project</h4>
+
+<p>From Spring Tool Suite IDE select menu File &gt; New &gt; Spring Starter Project.</p>
+
+<p>On the New Spring Starter Project popup input new project <strong>spring-boot-aop</strong> information as following screenshot.</p>
+
+<p><img src="/images/spring-boot-implement-aop-with-spring-boot-starter-aop-1.png" alt="Create Spring Boot Web Project AOP" class="img-fluid"></p>
+
+<p>On the New Spring Starter Project Dependencies popup choose Thymeleaf and Spring Web dependency as below screenshot.</p>
+
+<p><img src="/images/spring-boot-implement-aop-with-spring-boot-starter-aop-2.png" alt="Create Spring Boot Web Project AOP" class="img-fluid"></p>
+
+<p>You can also creating new Spring Boot project using Spring initializr online tool at <a href="https://start.spring.io/" target="_blank">start.spring.io</a></p>
+
+<h4 id="add-spring-boot-starter-aop">Add Spring Boot Starter AOP</h4>
+
+<p>Add the following Spring Boot Starter AOP dependency to your build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.springframework.boot&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;spring-boot-starter-aop&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.3.4.RELEASE&#39;</span></code></pre></div>
+
+<p>Or use the following XML to add dependency in pom.xml file if you are using Maven build for your project.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-aop<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.3.4.RELEASE<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<h4 id="implement-basic-spring-boot-web">Implement Basic Spring Boot Web</h4>
+
+<p>Create a new package named <strong>dev.simplesolution.domain</strong> and implement Customer class as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.domain<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Customer</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> Long id<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String firstName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String lastName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String phone<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> Long <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>Long id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span>String firstName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getLastName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span>String lastName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getPhone</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> phone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span>String phone<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">phone</span> <span style="color:#f92672">=</span> phone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Customer [id=&#34;</span> <span style="color:#f92672">+</span> id <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, firstName=&#34;</span> <span style="color:#f92672">+</span> firstName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, lastName=&#34;</span> <span style="color:#f92672">+</span> lastName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, phone=&#34;</span> <span style="color:#f92672">+</span> phone <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;]&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Create a new package named <strong>dev.simplesolution.service</strong> and define CustomerService interface.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.domain.Customer<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">CustomerService</span> <span style="color:#f92672">{</span>
+	
+	Customer <span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>Long id<span style="color:#f92672">);</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Create a new package named <strong>dev.simplesolution.service.impl</strong> then implement CustomerServiceImpl class.</p>
+
+<p>Notice that in the get() method we throw exception when the id less thant or equal zero.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.service.impl<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.stereotype.Service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.domain.Customer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> dev.simplesolution.service.CustomerService<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomerServiceImpl</span> <span style="color:#66d9ef">implements</span> CustomerService <span style="color:#f92672">{</span>
+
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> Customer <span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>Long id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>id <span style="color:#f92672">&lt;=</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> IllegalArgumentException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Customer ID is invalid.&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span>
+		Customer customer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">();</span>
+		customer<span style="color:#f92672">.</span><span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>id<span style="color:#f92672">);</span>
+		customer<span style="color:#f92672">.</span><span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;John&#34;</span><span style="color:#f92672">);</span>
+		customer<span style="color:#f92672">.</span><span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Doe&#34;</span><span style="color:#f92672">);</span>
+		customer<span style="color:#f92672">.</span><span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123-456-789&#34;</span><span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> customer<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Create a new package named <strong>dev.simplesolution.controller</strong> and add a new controller class CustomerController.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.controller<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.ui.Model<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestMapping<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestParam<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.domain.Customer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> dev.simplesolution.service.CustomerService<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomerController</span> <span style="color:#f92672">{</span>
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> CustomerService customerService<span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/customer&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">view</span><span style="color:#f92672">(</span>Model model<span style="color:#f92672">,</span> <span style="color:#a6e22e">@RequestParam</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;customerId&#34;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">long</span> customerId<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		Customer customer <span style="color:#f92672">=</span> customerService<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>customerId<span style="color:#f92672">);</span>
+		model<span style="color:#f92672">.</span><span style="color:#a6e22e">addAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;customer&#34;</span><span style="color:#f92672">,</span> customer<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;viewCustomer&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Add view viewCustomer.html to show the customer object property at <strong>\src\main\resources\templates\viewCustomer.html</strong>, in this view we use Bootstrap CDN CSS.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+	&lt;<span style="color:#f92672">head</span>&gt;
+		&lt;<span style="color:#f92672">title</span>&gt;View Customer&lt;/<span style="color:#f92672">title</span>&gt;
+		&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>&gt;
+	&lt;/<span style="color:#f92672">head</span>&gt;
+	&lt;<span style="color:#f92672">body</span>&gt;
+	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-group row&#34;</span>&gt;
+	    	&lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-2 col-form-label&#34;</span>&gt;Customer ID&lt;/<span style="color:#f92672">label</span>&gt;
+	    	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-10&#34;</span>&gt;
+	    		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control-plaintext&#34;</span>  <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${customer.id}&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;	
+	    	&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-group row&#34;</span>&gt;
+	    	&lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-2 col-form-label&#34;</span>&gt;First Name&lt;/<span style="color:#f92672">label</span>&gt;
+	    	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-10&#34;</span>&gt;
+	    		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control-plaintext&#34;</span>  <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${customer.firstName}&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;	
+	    	&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-group row&#34;</span>&gt;
+	    	&lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-2 col-form-label&#34;</span>&gt;Last Name&lt;/<span style="color:#f92672">label</span>&gt;
+	    	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-10&#34;</span>&gt;
+	    		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control-plaintext&#34;</span>  <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${customer.lastName}&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;	
+	    	&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-group row&#34;</span>&gt;
+	    	&lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-2 col-form-label&#34;</span>&gt;Phone&lt;/<span style="color:#f92672">label</span>&gt;
+	    	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-sm-10&#34;</span>&gt;
+	    		&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control-plaintext&#34;</span>  <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${customer.phone}&#34;</span>&gt;&lt;/<span style="color:#f92672">span</span>&gt;	
+	    	&lt;/<span style="color:#f92672">div</span>&gt;
+		&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;/<span style="color:#f92672">div</span>&gt;
+	&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<p>Execute the application and visit the link <a href="http://localhost:8080/customer?customerId=100" target="_blank">localhost:8080/customer?customerId=100</a> on your browser to see the output as following screenshot</p>
+
+<p><img src="/images/spring-boot-implement-aop-with-spring-boot-starter-aop-3.png" alt="Spring Boot Web Project AOP Demo" class="img-fluid"></p>
+
+<h4 id="implement-aop">Implement AOP</h4>
+
+<p>In previous steps we have finished a simple web page with Spring Boot which includes the controller and service class to handle business logic.</p>
+
+<p>In the following steps we are going to apply AOP to write logging messages for our code without modify the current source code.</p>
+
+<p>Firstly, create a new package named <strong>dev.simplesolution.aop</strong> and add new class named LogAspect.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.aop<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.aspectj.lang.annotation.Aspect<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Service<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Aspect</span>
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LogAspect</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">protected</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>LogAspect<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Implement before advice to write log message to every method invoke of every class within package dev.simplesolution</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Before</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;within(dev.simplesolution..*)&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logBefore</span><span style="color:#f92672">(</span>JoinPoint joinPoint<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	<span style="color:#75715e">// Log method name
+</span><span style="color:#75715e"></span>	logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Invoke method: &#34;</span> <span style="color:#f92672">+</span> joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getSignature</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toLongString</span><span style="color:#f92672">());</span>
+	<span style="color:#75715e">// Log arguments
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Object obj <span style="color:#f92672">:</span> joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+			logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Argument: &#34;</span> <span style="color:#f92672">+</span> obj<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Implement after return advice to write log message when a method return value of all classes within package dev.simplesolution</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@AfterReturning</span><span style="color:#f92672">(</span>pointcut <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;within(dev.simplesolution..*)&#34;</span><span style="color:#f92672">,</span> returning <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;returnObject&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logAfterReturning</span><span style="color:#f92672">(</span>JoinPoint joinPoint<span style="color:#f92672">,</span> Object returnObject<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	<span style="color:#75715e">// Log method name
+</span><span style="color:#75715e"></span>	logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Return from method: &#34;</span> <span style="color:#f92672">+</span> joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getSignature</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toLongString</span><span style="color:#f92672">());</span>
+	<span style="color:#75715e">// Log the return value
+</span><span style="color:#75715e"></span>	logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Return Object: &#34;</span> <span style="color:#f92672">+</span> returnObject<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Implement after throwing advice to write a log message whenever a method of class within package dev.simplesolution throws an exception.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@AfterThrowing</span><span style="color:#f92672">(</span>pointcut <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;within(dev.simplesolution..*)&#34;</span><span style="color:#f92672">,</span> throwing <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ex&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logAfterThrowing</span><span style="color:#f92672">(</span>Exception ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	<span style="color:#75715e">// Log the exception message
+</span><span style="color:#75715e"></span>	logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error: &#34;</span> <span style="color:#f92672">+</span> ex<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>The final LogAspect class is as follows.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.aop<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.aspectj.lang.JoinPoint<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.aspectj.lang.annotation.AfterReturning<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.aspectj.lang.annotation.AfterThrowing<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.aspectj.lang.annotation.Aspect<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.aspectj.lang.annotation.Before<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Service<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Aspect</span>
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LogAspect</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">protected</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>LogAspect<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+	<span style="color:#a6e22e">@Before</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;within(dev.simplesolution..*)&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logBefore</span><span style="color:#f92672">(</span>JoinPoint joinPoint<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// Log method name
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Invoke method: &#34;</span> <span style="color:#f92672">+</span> joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getSignature</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toLongString</span><span style="color:#f92672">());</span>
+		<span style="color:#75715e">// Log arguments
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">()</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Object obj <span style="color:#f92672">:</span> joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getArgs</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+				logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Argument: &#34;</span> <span style="color:#f92672">+</span> obj<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+			<span style="color:#f92672">}</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@AfterReturning</span><span style="color:#f92672">(</span>pointcut <span style="color:#f92672">=</span>  <span style="color:#e6db74">&#34;within(dev.simplesolution..*)&#34;</span><span style="color:#f92672">,</span> returning <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;returnObject&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logAfterReturning</span><span style="color:#f92672">(</span>JoinPoint joinPoint<span style="color:#f92672">,</span> Object returnObject<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// Log method name
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Return from method: &#34;</span> <span style="color:#f92672">+</span> joinPoint<span style="color:#f92672">.</span><span style="color:#a6e22e">getSignature</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toLongString</span><span style="color:#f92672">());</span>
+		<span style="color:#75715e">// Log the return value
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Return Object: &#34;</span> <span style="color:#f92672">+</span> returnObject<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@AfterThrowing</span><span style="color:#f92672">(</span>pointcut <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;within(dev.simplesolution..*)&#34;</span><span style="color:#f92672">,</span> throwing <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ex&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">logAfterThrowing</span><span style="color:#f92672">(</span>Exception ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// Log the exception message
+</span><span style="color:#75715e"></span>		logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error: &#34;</span> <span style="color:#f92672">+</span> ex<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">());</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<h4 id="final-application">Final application</h4>
+
+<p>Your final Spring Boot web application will look like the following structure.</p>
+
+<p><img src="/images/spring-boot-implement-aop-with-spring-boot-starter-aop-4.png" alt="Spring Boot Web Project AOP Source Code Structure" class="img-fluid"></p>
+
+<p>Run the application and visit <a href="http://localhost:8080/customer?customerId=100" target="_blank">localhost:8080/customer?customerId=100</a> then observe the log you can see the application write following as we implemented in LogAspect.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2020-10-17 20:31:32.266  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Invoke method: public java.lang.String dev.simplesolution.controller.CustomerController.view(org.springframework.ui.Model,long)
+2020-10-17 20:31:32.266  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Argument: {}
+2020-10-17 20:31:32.266  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Argument: 100
+2020-10-17 20:31:32.272  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Invoke method: public dev.simplesolution.domain.Customer dev.simplesolution.service.impl.CustomerServiceImpl.get(java.lang.Long)
+2020-10-17 20:31:32.272  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Argument: 100
+2020-10-17 20:31:32.275  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Return from method: public dev.simplesolution.domain.Customer dev.simplesolution.service.impl.CustomerServiceImpl.get(java.lang.Long)
+2020-10-17 20:31:32.275  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Return Object: Customer [id=100, firstName=John, lastName=Doe, phone=123-456-789]
+2020-10-17 20:31:32.275  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Return from method: public java.lang.String dev.simplesolution.controller.CustomerController.view(org.springframework.ui.Model,long)
+2020-10-17 20:31:32.275  INFO 7896 --- [nio-8080-exec-1] dev.simplesolution.aop.LogAspect         : Return Object: viewCustomer</code></pre></div>
+
+<p>Try to visit a link that raise exception <a href="http://localhost:8080/customer?customerId=0" target="_blank">localhost:8080/customer?customerId=0</a> then you can see the log as we have implemented in  after throwing advice.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2020-10-17 20:32:08.632  INFO 7896 --- [nio-8080-exec-3] dev.simplesolution.aop.LogAspect         : Error: Customer ID is invalid.
+2020-10-17 20:32:08.632  INFO 7896 --- [nio-8080-exec-3] dev.simplesolution.aop.LogAspect         : Error: Customer ID is invalid.</code></pre></div>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this tutorial we have learned how to use Spring Boot Starter AOP to implement additional processing to the current code without modify the code itself with support of Spring AOP and AspectJ.</p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-aop" target="_blank">github.com/simplesolutiondev/spring-boot-aop</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-aop.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-aop/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-aop">Spring AOP</a>
+                                
+                                <a href="https://simplesolution.dev/tag/aspectj">AspectJ</a>
+                                
+                                <a href="https://simplesolution.dev/tag/aop">AOP</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
