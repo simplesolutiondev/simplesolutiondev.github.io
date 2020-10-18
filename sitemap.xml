@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java.io.file/</loc>
+    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java.io.file.length/</loc>
+    <lastmod>2020-10-18T23:22:28+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java.nio.file.files/</loc>
+    <lastmod>2020-10-18T23:18:43+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java.nio.file.files.size/</loc>
+    <lastmod>2020-10-18T23:16:39+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-file-size/</loc>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/spring-boot-starter-data-redis-jedis-client/</loc>
     <lastmod>2020-10-18T14:35:26+07:00</lastmod>
   </url>
@@ -717,7 +742,7 @@
   
   <url>
     <loc>https://simplesolution.dev/code-examples/</loc>
-    <lastmod>2020-10-10T22:29:08+07:00</lastmod>
+    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -759,7 +784,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/file/</loc>
-    <lastmod>2019-03-26T20:34:25+07:00</lastmod>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -801,19 +826,31 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-18T14:35:26+07:00</lastmod>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-08T23:26:48+07:00</lastmod>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2020-10-10T22:29:08+07:00</lastmod>
+    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/java-io/</loc>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/java-nio/</loc>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -825,7 +862,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-18T14:35:26+07:00</lastmod>
+    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -945,7 +982,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-18T14:35:26+07:00</lastmod>
+    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
     <priority>0</priority>
   </url>
   

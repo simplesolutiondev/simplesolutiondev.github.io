@@ -6,10 +6,61 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 14:35:26 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 23:24:16 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Code Examples for java.io.File</title>
+      <link>https://simplesolution.dev/java.io.file/</link>
+      <pubDate>Sun, 18 Oct 2020 23:24:16 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java.io.file/</guid>
+      <description>java.io.File
+ java.io.File.length()  </description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for java.io.File.length()</title>
+      <link>https://simplesolution.dev/java.io.file.length/</link>
+      <pubDate>Sun, 18 Oct 2020 23:22:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java.io.file.length/</guid>
+      <description>More Java code examples for java.io.File
+Java Code Example 1 - Get File Size import java.io.File; public class GetFileSizeExample2 { public static void main(String[] args) { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.png&amp;#34;; File file = new File(fileLocation); if(file.exists()) { long fileSizeInBytes = file.length();  double fileSizeInKiloBytes = fileSizeInBytes / 1024.0; double fileSizeInMegaBytes = fileSizeInKiloBytes / 1024.0; double fileSizeInGigaBytes = fileSizeInMegaBytes / 1024.0; System.out.println(&amp;#34;File size: &amp;#34; ); System.out.println(fileSizeInBytes + &amp;#34; bytes&amp;#34;); System.out.println(fileSizeInKiloBytes + &amp;#34; KB&amp;#34;); System.</description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for java.nio.file.Files</title>
+      <link>https://simplesolution.dev/java.nio.file.files/</link>
+      <pubDate>Sun, 18 Oct 2020 23:18:43 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java.nio.file.files/</guid>
+      <description>java.nio.file.Files
+ java.nio.file.Files.size()  </description>
+    </item>
+    
+    <item>
+      <title>Java Code Examples for java.nio.file.Files.size()</title>
+      <link>https://simplesolution.dev/java.nio.file.files.size/</link>
+      <pubDate>Sun, 18 Oct 2020 23:16:39 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java.nio.file.files.size/</guid>
+      <description>More Java code examples for java.nio.file.Files
+Java Code Example 1 - Get File Size import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class GetFileSizeExample1 { public static void main(String[] args) { try { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.png&amp;#34;; Path path = Paths.get(fileLocation); long fileSizeInBytes = Files.size(path);  double fileSizeInKiloBytes = fileSizeInBytes / 1024.0; double fileSizeInMegaBytes = fileSizeInKiloBytes / 1024.0; double fileSizeInGigaBytes = fileSizeInMegaBytes / 1024.0; System.out.println(&amp;#34;File size: &amp;#34; ); System.</description>
+    </item>
+    
+    <item>
+      <title>Get File Size in Java</title>
+      <link>https://simplesolution.dev/java-get-file-size/</link>
+      <pubDate>Sun, 18 Oct 2020 22:55:19 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-file-size/</guid>
+      <description>Introduction In this post we are going to explore how to get file size in bytes, kilobytes, megabytes or gigabytes in different Java versions.
+For example we have a file located at D:\SimpleSolution\logo.png as following screenshot.
+Using NIO Files.size() method with Java version 7 and above import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class GetFileSizeExample1 { public static void main(String[] args) { try { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.</description>
+    </item>
     
     <item>
       <title>Spring Boot Starter Data Redis for Data Storage on Redis Server</title>
