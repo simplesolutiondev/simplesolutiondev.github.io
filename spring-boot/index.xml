@@ -6,10 +6,21 @@
     <description>Recent content in Spring Boot on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2020 20:10:24 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 14:35:26 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/spring-boot/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Starter Data Redis for Data Storage on Redis Server</title>
+      <link>https://simplesolution.dev/spring-boot-starter-data-redis-jedis-client/</link>
+      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-starter-data-redis-jedis-client/</guid>
+      <description>Introduction In this post, we are going to learn how to use Redis as data persistence for our Spring Boot Application by using Spring Boot Starter Data Redis and Jedis Client.
+What is Redis? Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information you can visit Redis home page at redis.io
+Install and Start Redis Server on Ubuntu Follow these commands to set up and start Redis database server on your Ubuntu box.</description>
+    </item>
     
     <item>
       <title>Spring Boot Implement AOP with Spring Boot Starter AOP</title>

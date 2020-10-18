@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Starter Data Redis for Data Storage on Redis Server</title>
+    <meta name="title" content="Spring Boot Starter Data Redis for Data Storage on Redis Server">
+    <meta name="description" content="In this post, we are going to learn how to use Redis as data persistence for our Spring Boot Application by using Spring Boot Starter Data Redis and Jedis Client.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-starter-data-redis-jedis-client/">
+    <meta property="og:title" content="Spring Boot Starter Data Redis for Data Storage on Redis Server">
+    <meta property="og:description" content="In this post, we are going to learn how to use Redis as data persistence for our Spring Boot Application by using Spring Boot Starter Data Redis and Jedis Client.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-starter-data-redis-jedis-client.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/spring-boot-starter-data-redis-jedis-client/">
+    <meta name="twitter:title" content="Spring Boot Starter Data Redis for Data Storage on Redis Server">
+    <meta name="twitter:description" content="In this post, we are going to learn how to use Redis as data persistence for our Spring Boot Application by using Spring Boot Starter Data Redis and Jedis Client.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/spring-boot-starter-data-redis-jedis-client.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Starter Data Redis for Data Storage on Redis Server</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this post, we are going to learn how to use Redis as data persistence for our Spring Boot Application by using Spring Boot Starter Data Redis and Jedis Client.</p>
+
+<h4 id="what-is-redis">What is Redis?</h4>
+
+<p>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information you can visit Redis home page at <a href="https://redis.io/" target="_blank">redis.io</a></p>
+
+<h4 id="install-and-start-redis-server-on-ubuntu">Install and Start Redis Server on Ubuntu</h4>
+
+<p>Follow these commands to set up and start Redis database server on your Ubuntu box.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install redis-server
+sudo service redis-server restart</code></pre></div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="create-new-spring-boot-project">Create New Spring Boot Project</h4>
+
+<p>From Spring Tool Suite IDE select menu File &gt; New &gt; Spring Starter Project.
+On the New Spring Starter Project popup input new project <strong>spring-boot-redis</strong> information as following screenshot.</p>
+
+<p><img src="/images/spring-boot-starter-data-redis-jedis-client-1.png" alt="Spring Boot Starter Data Redis for Data Storage on Redis Server - Create Project" class="img-fluid"></p>
+
+<p>On the New Spring Starter Project Dependencies popup choose Spring Data Redis (Access+Driver) dependency as below screenshot.</p>
+
+<p><img src="/images/spring-boot-starter-data-redis-jedis-client-2.png" alt="Spring Boot Starter Data Redis for Data Storage on Redis Server - Add Dependencies" class="img-fluid"></p>
+
+<p>You can also creating new Spring Boot project using Spring initializr online tool at <a href="https://start.spring.io/" target="_blank">start.spring.io</a></p>
+
+<h4 id="add-jedis-client-dependency">Add Jedis Client Dependency</h4>
+
+<p>Add the following Jedis Client dependency to your build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;redis.clients&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;jedis&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;3.3.0&#39;</span></code></pre></div>
+
+<p>Or use the following XML to add dependency in pom.xml file if you are using Maven build for your project.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>redis.clients<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jedis<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>3.3.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<h4 id="configure-redis-in-your-spring-boot-project">Configure Redis in your Spring Boot Project</h4>
+
+<p>Add new Java packaged named <strong>dev.simplesolution.config</strong> then add the new class RedisConfig.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.config<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.context.annotation.Configuration<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.data.redis.repository.configuration.EnableRedisRepositories<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Configuration</span>
+<span style="color:#a6e22e">@EnableRedisRepositories</span><span style="color:#f92672">(</span>basePackages <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dev.simplesolution.repository&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RedisConfig</span> <span style="color:#f92672">{</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+Notice that we will implement the repository class within package dev.simplesolution.repository in the later step.</p>
+
+<p>Next step, creating new bean for Redis server setting, in our sample application we use RedisStandaloneConfiguration, you can change the host name and port based on your Redis server connection.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Bean</span>
+<span style="color:#66d9ef">public</span> RedisStandaloneConfiguration <span style="color:#a6e22e">redisStandaloneConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+	RedisStandaloneConfiguration config <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RedisStandaloneConfiguration<span style="color:#f92672">();</span>
+	config<span style="color:#f92672">.</span><span style="color:#a6e22e">setHostName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localhost&#34;</span><span style="color:#f92672">);</span>
+	config<span style="color:#f92672">.</span><span style="color:#a6e22e">setPort</span><span style="color:#f92672">(</span>6379<span style="color:#f92672">);</span>
+	<span style="color:#66d9ef">return</span> config<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+There are also other configuration classes and interfaces that Spring supports such as JedisClientConfiguration, JedisPoolConfig, RedisSentinelConfiguration, RedisClusterConfiguration that can be used for different scenarios.</p>
+
+<p>Next step creating a new bean for JedisConnectionFactory. We use redisStandaloneConfiguration bean above to create the connection factory.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Bean</span>
+<span style="color:#66d9ef">public</span> JedisConnectionFactory <span style="color:#a6e22e">jedisConnectionFactory</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">return</span>  <span style="color:#66d9ef">new</span> JedisConnectionFactory<span style="color:#f92672">(</span>redisStandaloneConfiguration<span style="color:#f92672">());</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Creating bean for RedisTemplate with connection factory jedisConnectionFactory from previous step.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Bean</span>
+<span style="color:#66d9ef">public</span> RedisTemplate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">redisTemplate</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+	RedisTemplate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> redisTemplate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RedisTemplate<span style="color:#f92672">&lt;&gt;();</span>
+	redisTemplate<span style="color:#f92672">.</span><span style="color:#a6e22e">setConnectionFactory</span><span style="color:#f92672">(</span>jedisConnectionFactory<span style="color:#f92672">());</span>
+	<span style="color:#66d9ef">return</span> redisTemplate<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Your final RedisConfig class as following code.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.config<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.context.annotation.Bean<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.context.annotation.Configuration<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.data.redis.connection.RedisStandaloneConfiguration<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.data.redis.connection.jedis.JedisConnectionFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.data.redis.core.RedisTemplate<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.data.redis.repository.configuration.EnableRedisRepositories<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Configuration</span>
+<span style="color:#a6e22e">@EnableRedisRepositories</span><span style="color:#f92672">(</span>basePackages <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dev.simplesolution.repository&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RedisConfig</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@Bean</span>
+	<span style="color:#66d9ef">public</span> RedisStandaloneConfiguration <span style="color:#a6e22e">redisStandaloneConfiguration</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		RedisStandaloneConfiguration config <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RedisStandaloneConfiguration<span style="color:#f92672">();</span>
+		config<span style="color:#f92672">.</span><span style="color:#a6e22e">setHostName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localhost&#34;</span><span style="color:#f92672">);</span>
+		config<span style="color:#f92672">.</span><span style="color:#a6e22e">setPort</span><span style="color:#f92672">(</span>6379<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">return</span> config<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@Bean</span>
+	<span style="color:#66d9ef">public</span> JedisConnectionFactory <span style="color:#a6e22e">jedisConnectionFactory</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span>  <span style="color:#66d9ef">new</span> JedisConnectionFactory<span style="color:#f92672">(</span>redisStandaloneConfiguration<span style="color:#f92672">());</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@Bean</span>
+	<span style="color:#66d9ef">public</span> RedisTemplate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">redisTemplate</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		RedisTemplate<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> redisTemplate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RedisTemplate<span style="color:#f92672">&lt;&gt;();</span>
+		redisTemplate<span style="color:#f92672">.</span><span style="color:#a6e22e">setConnectionFactory</span><span style="color:#f92672">(</span>jedisConnectionFactory<span style="color:#f92672">());</span>
+		<span style="color:#66d9ef">return</span> redisTemplate<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="implement-entity-and-repository">Implement Entity and Repository</h4>
+
+<p>Add new Java packaged named <strong>dev.simplesolution.entity</strong> then implement a new User entity class.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.entity<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.Serializable<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.data.redis.core.RedisHash<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@RedisHash</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span> <span style="color:#66d9ef">implements</span> Serializable <span style="color:#f92672">{</span>
+	<span style="color:#66d9ef">private</span> Long id<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String username<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String firstName<span style="color:#f92672">;</span> 
+	<span style="color:#66d9ef">private</span> String lastName<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> Long <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>Long id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getUsername</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> username<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setUsername</span><span style="color:#f92672">(</span>String username<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">username</span> <span style="color:#f92672">=</span> username<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span>String firstName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getLastName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span>String lastName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;User [id=&#34;</span> <span style="color:#f92672">+</span> id <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, username=&#34;</span> <span style="color:#f92672">+</span> username <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, firstName=&#34;</span> <span style="color:#f92672">+</span> firstName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, lastName=&#34;</span> <span style="color:#f92672">+</span> lastName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;]&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Add a new Java package named <strong>dev.simplesolution.repository</strong> then define UserRepository interface as following code.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.repository<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.data.repository.CrudRepository<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Repository<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.entity.User<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Repository</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">UserRepository</span> <span style="color:#66d9ef">extends</span> CrudRepository<span style="color:#f92672">&lt;</span>User<span style="color:#f92672">,</span> Long<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+
+<h4 id="test-your-code-to-store-data-to-redis-server">Test your code to store data to Redis server</h4>
+
+<p>Create TestRedisDataStore class as the following code that tries to store data and query data from Redis server. In this class we implements CommandLineRunner interface to indicate that it will be execute when Spring Boot application up and running.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.CommandLineRunner<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Component<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.entity.User<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> dev.simplesolution.repository.UserRepository<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Component</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestRedisDataStore</span> <span style="color:#66d9ef">implements</span> CommandLineRunner <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">private</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>SpringBootRedisApplication<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> UserRepository userRepository<span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		User user <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> User<span style="color:#f92672">();</span>
+		user<span style="color:#f92672">.</span><span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>100L<span style="color:#f92672">);</span>
+		user<span style="color:#f92672">.</span><span style="color:#a6e22e">setUsername</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;john&#34;</span><span style="color:#f92672">);</span>
+		user<span style="color:#f92672">.</span><span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;John&#34;</span><span style="color:#f92672">);</span>
+		user<span style="color:#f92672">.</span><span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Doe&#34;</span><span style="color:#f92672">);</span>
+		
+		userRepository<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">(</span>user<span style="color:#f92672">);</span>
+		
+		List<span style="color:#f92672">&lt;</span>User<span style="color:#f92672">&gt;</span> users <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+		userRepository<span style="color:#f92672">.</span><span style="color:#a6e22e">findAll</span><span style="color:#f92672">().</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>users:<span style="color:#f92672">:</span>add<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>User item <span style="color:#f92672">:</span> users<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;User: &#34;</span> <span style="color:#f92672">+</span> item<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<h4 id="final-application">Final Application</h4>
+
+<p>Your final Spring Boot application structure looks like the following screenshot.</p>
+
+<p><img src="/images/spring-boot-starter-data-redis-jedis-client-3.png" alt="Spring Boot Starter Data Redis for Data Storage on Redis Server - Final App Source Code Structure" class="img-fluid"></p>
+
+<p>Run the Spring Boot application and we can see the following logs in the console.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2020-10-18 14:53:32.786  INFO 11896 --- [           main] d.s.SpringBootRedisApplication           : User: User [id=100, username=john, firstName=John, lastName=Doe]</code></pre></div>
+
+<p>From your Ubuntu terminal, try to connect by command redis-cli and type HGETALL User:100 to show data on Redis server.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">user@dev-box:~$ redis-cli
+127.0.0.1:6379&gt; HGETALL User:100
+ 1) &#34;_class&#34;
+ 2) &#34;dev.simplesolution.entity.User&#34;
+ 3) &#34;id&#34;
+ 4) &#34;100&#34;
+ 5) &#34;username&#34;
+ 6) &#34;john&#34;
+ 7) &#34;firstName&#34;
+ 8) &#34;John&#34;
+ 9) &#34;lastName&#34;
+10) &#34;Doe&#34;
+127.0.0.1:6379&gt;</code></pre></div></p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this step by step tutorial we have learned how to configure and use Redis server for data storage in Spring Boot project by using Spring Boot Starter Data Redis and Jedis Client library.</p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-redis" target="_blank">github.com/simplesolutiondev/spring-boot-redis</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-redis.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-redis/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/redis">Redis</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jedis">Jedis</a>
+                                
+                                <a href="https://simplesolution.dev/tag/data">Data</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

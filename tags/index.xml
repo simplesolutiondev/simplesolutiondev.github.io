@@ -147,6 +147,15 @@
     </item>
     
     <item>
+      <title>Data</title>
+      <link>https://simplesolution.dev/tag/data/</link>
+      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Date and Time</title>
       <link>https://simplesolution.dev/tag/date-and-time/</link>
       <pubDate>Sat, 13 Apr 2019 17:48:10 +0700</pubDate>
@@ -239,9 +248,18 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Sat, 17 Oct 2020 20:10:24 +0700</pubDate>
+      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jedis</title>
+      <link>https://simplesolution.dev/tag/jedis/</link>
+      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/jedis/</guid>
       <description></description>
     </item>
     
@@ -354,6 +372,15 @@
     </item>
     
     <item>
+      <title>Redis</title>
+      <link>https://simplesolution.dev/tag/redis/</link>
+      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Regex</title>
       <link>https://simplesolution.dev/tag/regex/</link>
       <pubDate>Sun, 04 Oct 2020 15:57:35 +0700</pubDate>
@@ -401,7 +428,7 @@
     <item>
       <title>Spring Boot</title>
       <link>https://simplesolution.dev/tag/spring-boot/</link>
-      <pubDate>Sat, 17 Oct 2020 20:10:24 +0700</pubDate>
+      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-boot/</guid>
       <description></description>
