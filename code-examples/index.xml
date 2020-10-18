@@ -28,7 +28,7 @@
       
       <guid>https://simplesolution.dev/java.io.file.length/</guid>
       <description>More Java code examples for java.io.File
-Java Code Example 1 - Get File Size import java.io.File; public class GetFileSizeExample2 { public static void main(String[] args) { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.png&amp;#34;; File file = new File(fileLocation); if(file.exists()) { long fileSizeInBytes = file.length();  double fileSizeInKiloBytes = fileSizeInBytes / 1024.0; double fileSizeInMegaBytes = fileSizeInKiloBytes / 1024.0; double fileSizeInGigaBytes = fileSizeInMegaBytes / 1024.0; System.out.println(&amp;#34;File size: &amp;#34; ); System.out.println(fileSizeInBytes + &amp;#34; bytes&amp;#34;); System.out.println(fileSizeInKiloBytes + &amp;#34; KB&amp;#34;); System.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 1 - Get File Size import java.io.File; public class GetFileSizeExample2 { public static void main(String[] args) { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.png&amp;#34;; File file = new File(fileLocation); if(file.exists()) { long fileSizeInBytes = file.length();  double fileSizeInKiloBytes = fileSizeInBytes / 1024.0; double fileSizeInMegaBytes = fileSizeInKiloBytes / 1024.0; double fileSizeInGigaBytes = fileSizeInMegaBytes / 1024.0; System.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Java Code Example 1 - Get File Size import java.io.File; public class GetFileSiz
       
       <guid>https://simplesolution.dev/java.nio.file.files.size/</guid>
       <description>More Java code examples for java.nio.file.Files
-Java Code Example 1 - Get File Size import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class GetFileSizeExample1 { public static void main(String[] args) { try { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.png&amp;#34;; Path path = Paths.get(fileLocation); long fileSizeInBytes = Files.size(path);  double fileSizeInKiloBytes = fileSizeInBytes / 1024.0; double fileSizeInMegaBytes = fileSizeInKiloBytes / 1024.0; double fileSizeInGigaBytes = fileSizeInMegaBytes / 1024.0; System.out.println(&amp;#34;File size: &amp;#34; ); System.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Java Code Example 1 - Get File Size import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class GetFileSizeExample1 { public static void main(String[] args) { try { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.png&amp;#34;; Path path = Paths.get(fileLocation); long fileSizeInBytes = Files.size(path);  double fileSizeInKiloBytes = fileSizeInBytes / 1024.0; double fileSizeInMegaBytes = fileSizeInKiloBytes / 1024.0; double fileSizeInGigaBytes = fileSizeInMegaBytes / 1024.</description>
     </item>
     
     <item>

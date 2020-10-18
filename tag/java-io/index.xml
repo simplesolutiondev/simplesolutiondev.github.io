@@ -19,7 +19,7 @@
       <guid>https://simplesolution.dev/java-get-file-size/</guid>
       <description>Introduction In this post we are going to explore how to get file size in bytes, kilobytes, megabytes or gigabytes in different Java versions.
 For example we have a file located at D:\SimpleSolution\logo.png as following screenshot.
-Using NIO Files.size() method with Java version 7 and above import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class GetFileSizeExample1 { public static void main(String[] args) { try { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using NIO Files.size() method with Java version 7 and above import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class GetFileSizeExample1 { public static void main(String[] args) { try { String fileLocation = &amp;#34;D:\\SimpleSolution\\logo.</description>
     </item>
     
   </channel>
