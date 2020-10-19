@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/spring-boot-access-mysql-database-spring-data-jpa/</loc>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java.io.file/</loc>
     <lastmod>2020-10-18T23:24:16+07:00</lastmod>
   </url>
@@ -760,7 +765,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/data/</loc>
-    <lastmod>2020-10-18T14:35:26+07:00</lastmod>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -862,7 +867,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-18T22:55:19+07:00</lastmod>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -905,6 +910,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/log4j/</loc>
     <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mysql/</loc>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -982,7 +993,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1000,13 +1011,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2020-10-18T14:35:26+07:00</lastmod>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2020-10-18T14:35:26+07:00</lastmod>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/spring-data-jpa/</loc>
+    <lastmod>2020-10-20T00:38:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   

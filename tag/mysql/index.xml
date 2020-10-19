@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/mysql/</link>
+    <description>Recent content in Mysql on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Oct 2020 00:38:25 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot Access MySQL Database with Spring Data JPA</title>
+      <link>https://simplesolution.dev/spring-boot-access-mysql-database-spring-data-jpa/</link>
+      <pubDate>Tue, 20 Oct 2020 00:38:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-access-mysql-database-spring-data-jpa/</guid>
+      <description>Introduction In this tutorial we walk you through step by step to create a Spring Boot application to access MySQL database using Spring Data JPA and MySQL Driver. Via step by step example we will create a Spring Boot project to save Customer entity into customer data table in MySQL database.
+Create New Spring Boot Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+    </item>
+    
+  </channel>
+</rss>

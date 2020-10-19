@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Access MySQL Database with Spring Data JPA</title>
+    <meta name="title" content="Spring Boot Access MySQL Database with Spring Data JPA">
+    <meta name="description" content="In this tutorial we walk you through step by step to create a Spring Boot application to access MySQL database using Spring Data JPA and MySQL Driver. Via step by step example we will create a Spring Boot project to save Customer entity into customer data table in MySQL database.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-access-mysql-database-spring-data-jpa/">
+    <meta property="og:title" content="Spring Boot Access MySQL Database with Spring Data JPA">
+    <meta property="og:description" content="In this tutorial we walk you through step by step to create a Spring Boot application to access MySQL database using Spring Data JPA and MySQL Driver. Via step by step example we will create a Spring Boot project to save Customer entity into customer data table in MySQL database.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-access-mysql-database-spring-data-jpa.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/spring-boot-access-mysql-database-spring-data-jpa/">
+    <meta name="twitter:title" content="Spring Boot Access MySQL Database with Spring Data JPA">
+    <meta name="twitter:description" content="In this tutorial we walk you through step by step to create a Spring Boot application to access MySQL database using Spring Data JPA and MySQL Driver. Via step by step example we will create a Spring Boot project to save Customer entity into customer data table in MySQL database.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/spring-boot-access-mysql-database-spring-data-jpa.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Access MySQL Database with Spring Data JPA</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this tutorial we walk you through step by step to create a Spring Boot application to access MySQL database using Spring Data JPA and MySQL Driver. Via step by step example we will create a Spring Boot project to save Customer entity into customer data table in MySQL database.</p>
+
+<h4 id="create-new-spring-boot-project">Create New Spring Boot Project</h4>
+
+<p>From Spring Tool Suite IDE select menu File &gt; New &gt; Spring Starter Project.</p>
+
+<p>On the New Spring Starter Project popup input new project <strong>spring-boot-mysql</strong> information as following screenshot.</p>
+
+<p><img src="/images/spring-boot-access-mysql-database-spring-data-jpa-1.png" alt="Spring Boot Access MySQL Database with Spring Data JPA - Create New Project" class="img-fluid"></p>
+
+<p>On the New Spring Starter Project Dependencies popup choose dependencies:</p>
+
+<ul>
+<li>Spring Data JPA</li>
+<li>MySQL Driver</li>
+</ul>
+
+<p><img src="/images/spring-boot-access-mysql-database-spring-data-jpa-2.png" alt="Spring Boot Access MySQL Database with Spring Data JPA - Create New Project" class="img-fluid"></p>
+
+<h4 id="implement-entity-and-repository">Implement Entity and Repository</h4>
+
+<p>Create a new Java package named <strong>dev.simplesolution.entity</strong> and implement Customer class.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.entity<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.persistence.Entity<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.GeneratedValue<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.GenerationType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> javax.persistence.Id<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Entity</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Customer</span> <span style="color:#f92672">{</span>
+	<span style="color:#a6e22e">@Id</span>
+	<span style="color:#a6e22e">@GeneratedValue</span><span style="color:#f92672">(</span>strategy <span style="color:#f92672">=</span> GenerationType<span style="color:#f92672">.</span><span style="color:#a6e22e">AUTO</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">private</span> Long id<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String firstName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String lastName<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String email<span style="color:#f92672">;</span>
+	<span style="color:#66d9ef">private</span> String phone<span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">public</span> Long <span style="color:#a6e22e">getId</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setId</span><span style="color:#f92672">(</span>Long id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span>String firstName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> firstName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getLastName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span>String lastName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> lastName<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getEmail</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span>String email<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> email<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getPhone</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> phone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span>String phone<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">phone</span> <span style="color:#f92672">=</span> phone<span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Customer [id=&#34;</span> <span style="color:#f92672">+</span> id <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, firstName=&#34;</span> <span style="color:#f92672">+</span> firstName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, lastName=&#34;</span> <span style="color:#f92672">+</span> lastName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, email=&#34;</span> <span style="color:#f92672">+</span> email <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, phone=&#34;</span> <span style="color:#f92672">+</span> phone <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;]&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>Create a new Java package named <strong>dev.simplesolution.repository</strong> and define CustomerRepository  interface.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.repository<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.data.repository.CrudRepository<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> dev.simplesolution.entity.Customer<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">CustomerRepository</span> <span style="color:#66d9ef">extends</span> CrudRepository<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">,</span> Long<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
+
+<span style="color:#f92672">}</span></code></pre></div>
+
+<h4 id="create-datatable-on-mysql-server">Create Datatable on MySQL Server</h4>
+
+<p>Execute the SQL script below to create a new table named <strong>customer</strong> in your MySQL database.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>customer<span style="color:#f92672">`</span> (
+  <span style="color:#f92672">`</span>id<span style="color:#f92672">`</span> INT <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+  <span style="color:#f92672">`</span>first_name<span style="color:#f92672">`</span> VARCHAR(<span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">NULL</span>,
+  <span style="color:#f92672">`</span>last_name<span style="color:#f92672">`</span> VARCHAR(<span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">NULL</span>,
+  <span style="color:#f92672">`</span>email<span style="color:#f92672">`</span> VARCHAR(<span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">NULL</span>,
+  <span style="color:#f92672">`</span>phone<span style="color:#f92672">`</span> VARCHAR(<span style="color:#ae81ff">20</span>) <span style="color:#66d9ef">NULL</span>,
+  <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (<span style="color:#f92672">`</span>id<span style="color:#f92672">`</span>));</code></pre></div>
+
+<p>Following screenshot is the result we get after creating the new table. For example, we have created it in the <strong>db_test</strong> database.</p>
+
+<p><img src="/images/spring-boot-access-mysql-database-spring-data-jpa-3.png" alt="MySQL data table" class="img-fluid"></p>
+
+<h4 id="configure-mysql-connection">Configure MySQL Connection</h4>
+
+<p>In order to connect to the database from the Spring Boot application we need to configure connection information.</p>
+
+<p>Add the following configs to properties file at <strong>\src\main\resources\application.properties</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">spring<span style="color:#f92672">.</span><span style="color:#a6e22e">datasource</span><span style="color:#f92672">.</span><span style="color:#a6e22e">url</span><span style="color:#f92672">=</span>jdbc:mysql:<span style="color:#75715e">//localhost:3306/db_test
+</span><span style="color:#75715e"></span>spring<span style="color:#f92672">.</span><span style="color:#a6e22e">datasource</span><span style="color:#f92672">.</span><span style="color:#a6e22e">username</span><span style="color:#f92672">=</span>root
+spring<span style="color:#f92672">.</span><span style="color:#a6e22e">datasource</span><span style="color:#f92672">.</span><span style="color:#a6e22e">password</span><span style="color:#f92672">=</span>123<span style="color:#a6e22e">@abc</span></code></pre></div>
+
+<ul>
+<li><strong>spring.datasource.url</strong> to configure the URL to your database. For example we have the database named db_test at localhost server which is running on default MySQL port 3306.</li>
+<li><strong>spring.datasource.username</strong>  to configure the user name to access the MySQL database.</li>
+<li><strong>spring.datasource.password</strong> to configure password of your MySQL user.</li>
+</ul>
+
+<h4 id="create-read-update-and-delete-data-from-mysql">Create Read Update and Delete data from MySQL</h4>
+
+<p>Next step, create a new TestMySQLData class as the following code that tries to write and read data from MySQL server.</p>
+
+<p>The new class implements CommandLineRunner interface to indicate that it will be executed when Spring Boot application is started.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.ArrayList<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.boot.CommandLineRunner<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Component<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.entity.Customer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> dev.simplesolution.repository.CustomerRepository<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Component</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestMySQLData</span> <span style="color:#66d9ef">implements</span> CommandLineRunner <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">private</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>TestMySQLData<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> CustomerRepository customerRepository<span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">run</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> Exception <span style="color:#f92672">{</span>
+		<span style="color:#75715e">// create new customer 
+</span><span style="color:#75715e"></span>		Customer newCustomer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Customer<span style="color:#f92672">();</span>
+		newCustomer<span style="color:#f92672">.</span><span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;John&#34;</span><span style="color:#f92672">);</span>
+		newCustomer<span style="color:#f92672">.</span><span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Doe&#34;</span><span style="color:#f92672">);</span>
+		newCustomer<span style="color:#f92672">.</span><span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;john@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+		newCustomer<span style="color:#f92672">.</span><span style="color:#a6e22e">setPhone</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123-456-789&#34;</span><span style="color:#f92672">);</span>
+		customerRepository<span style="color:#f92672">.</span><span style="color:#a6e22e">save</span><span style="color:#f92672">(</span>newCustomer<span style="color:#f92672">);</span>
+		
+		List<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;</span> customers <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span> 
+		customerRepository<span style="color:#f92672">.</span><span style="color:#a6e22e">findAll</span><span style="color:#f92672">().</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>customers:<span style="color:#f92672">:</span>add<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Customer customer: customers<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			logger<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Customer: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+		<span style="color:#f92672">}</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>You also can Update and Delete data by using <strong>customerRepository.save()</strong> and <strong>customerRepository.delete()</strong> method.</p>
+
+<h4 id="final-application">Final Application</h4>
+
+<p>The final Spring Boot application structure looks like the following screenshot.</p>
+
+<p><img src="/images/spring-boot-access-mysql-database-spring-data-jpa-4.png" alt="MySQL data table" class="img-fluid"></p>
+
+<p>Run the Spring Boot application and we can see the following logs in the console.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2020-10-20 00:54:09.166  INFO 20168 --- [           main] dev.simplesolution.TestMySQLData         : Customer: Customer [id=7, firstName=John, lastName=Doe, email=john@simplesolution.dev, phone=123-456-789]</code></pre></div>
+
+<p>Select data from MySQL database.</p>
+
+<p><img src="/images/spring-boot-access-mysql-database-spring-data-jpa-5.png" alt="MySQL data table" class="img-fluid"></p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this tutorial we have implemented the basic Spring Boot console application that uses the Spring Data JPA and MySQL Driver dependency to access MySQL database.</p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-mysql" target="_blank">github.com/simplesolutiondev/spring-boot-mysql</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-mysql.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-mysql/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/mysql">MySQL</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-data-jpa">Spring Data JPA</a>
+                                
+                                <a href="https://simplesolution.dev/tag/data">Data</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

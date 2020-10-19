@@ -149,7 +149,7 @@
     <item>
       <title>Data</title>
       <link>https://simplesolution.dev/tag/data/</link>
-      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
+      <pubDate>Tue, 20 Oct 2020 00:38:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/data/</guid>
       <description></description>
@@ -327,6 +327,15 @@
     </item>
     
     <item>
+      <title>Mysql</title>
+      <link>https://simplesolution.dev/tag/mysql/</link>
+      <pubDate>Tue, 20 Oct 2020 00:38:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Number</title>
       <link>https://simplesolution.dev/tag/number/</link>
       <pubDate>Sun, 04 Oct 2020 23:07:43 +0700</pubDate>
@@ -446,9 +455,18 @@
     <item>
       <title>Spring Boot</title>
       <link>https://simplesolution.dev/tag/spring-boot/</link>
-      <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
+      <pubDate>Tue, 20 Oct 2020 00:38:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring Data Jpa</title>
+      <link>https://simplesolution.dev/tag/spring-data-jpa/</link>
+      <pubDate>Tue, 20 Oct 2020 00:38:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/spring-data-jpa/</guid>
       <description></description>
     </item>
     
