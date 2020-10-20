@@ -6,10 +6,20 @@
     <description>Recent content in File on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 22:55:19 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2020 01:26:45 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/file/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get Absolute File Path of a File in Java</title>
+      <link>https://simplesolution.dev/java-get-absolute-file-path/</link>
+      <pubDate>Wed, 21 Oct 2020 01:26:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-absolute-file-path/</guid>
+      <description>Introduction In this post we will explore how to get an absolute path of a file in a Java application and return it as a String value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Java NIO Path.toAbsolutePath() method import java.nio.file.Path; import java.nio.file.Paths; public class PathToAbsolutePathExample { public static void main(String... args) { String fileName = &amp;#34;simple-solution-logo.png&amp;#34;; Path path = Paths.get(fileName); Path absolutePath = path.toAbsolutePath(); String absoluteFilePath = absolutePath.</description>
+    </item>
     
     <item>
       <title>Get File Size in Java</title>
