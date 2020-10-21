@@ -6,10 +6,20 @@
     <description>Recent content in Java Nio on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2020 01:26:45 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2020 22:59:16 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java-nio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Write Text to a File in Java</title>
+      <link>https://simplesolution.dev/java-write-text-file/</link>
+      <pubDate>Wed, 21 Oct 2020 22:59:16 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-write-text-file/</guid>
+      <description>Introduction In this tutorial we are going to learn how to write text to a text file in a Java application. By different Java example programs we will explore different approaches to write a String into a text file using Java core classes.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Java NIO Files.write() static method Following program to create a new file named test.txt and write text using Files.</description>
+    </item>
     
     <item>
       <title>Get Absolute File Path of a File in Java</title>
