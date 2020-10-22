@@ -6,10 +6,21 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2020 22:59:16 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 22:15:25 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Check Hidden Files in Java</title>
+      <link>https://simplesolution.dev/java-check-hidden-files/</link>
+      <pubDate>Thu, 22 Oct 2020 22:15:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-hidden-files/</guid>
+      <description>Introduction In this post we are going to explore how to use Java IO and Java NIO core classes to check if a file is hidden or not.
+For example we have a text file is a hidden file located at D:\Files\file.txt
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Java NIO Files.isHidden() static method import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class FilesIsHiddenExample { public static void main(String.</description>
+    </item>
     
     <item>
       <title>Write Text to a File in Java</title>
