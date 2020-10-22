@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2020 22:15:25 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 23:58:42 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create New Files in Java</title>
+      <link>https://simplesolution.dev/java-create-new-files/</link>
+      <pubDate>Thu, 22 Oct 2020 23:58:42 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-create-new-files/</guid>
+      <description>Introduction In this article we learn how to create a new file in a Java application by using core Java classes of IO and NIO packages.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Java NIO Files.createFile() static method import java.io.IOException; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; public class FilesCreateFileExample { public static void main(String... args) { try { String fileName = &amp;#34;D:\\Files\\test.txt&amp;#34;; Path filePath = Paths.get(fileName); Path createdFile = Files.</description>
+    </item>
     
     <item>
       <title>Check Hidden Files in Java</title>
