@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Download on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/download/</link>
+    <description>Recent content in Download on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Oct 2020 00:33:28 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot Web Application Export and Download Text File</title>
+      <link>https://simplesolution.dev/spring-boot-export-download-text-file/</link>
+      <pubDate>Sat, 24 Oct 2020 00:33:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-export-download-text-file/</guid>
+      <description>Introduction In this tutorial we learn how to create a new text file and provide the user the web interface to download the text file in a Spring Boot web application. We will learn how to download a text file in Spring Boot with 5 different approaches to implement the feature.
+Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+    </item>
+    
+  </channel>
+</rss>

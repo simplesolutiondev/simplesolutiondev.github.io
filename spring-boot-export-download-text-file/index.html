@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Web Application Export and Download Text File</title>
+    <meta name="title" content="Spring Boot Web Application Export and Download Text File">
+    <meta name="description" content="In this tutorial we learn how to create a new text file and provide the user the web interface to download the text file in a Spring Boot web application. We will learn how to download a text file in Spring Boot with 5 different approaches to implement the feature.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-export-download-text-file/">
+    <meta property="og:title" content="Spring Boot Web Application Export and Download Text File">
+    <meta property="og:description" content="In this tutorial we learn how to create a new text file and provide the user the web interface to download the text file in a Spring Boot web application. We will learn how to download a text file in Spring Boot with 5 different approaches to implement the feature.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-export-download-text-file.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/spring-boot-export-download-text-file/">
+    <meta name="twitter:title" content="Spring Boot Web Application Export and Download Text File">
+    <meta name="twitter:description" content="In this tutorial we learn how to create a new text file and provide the user the web interface to download the text file in a Spring Boot web application. We will learn how to download a text file in Spring Boot with 5 different approaches to implement the feature.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/spring-boot-export-download-text-file.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Web Application Export and Download Text File</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this tutorial we learn how to create a new text file and provide the user the web interface to download the text file in a Spring Boot web application. We will learn how to download a text file in Spring Boot with 5 different approaches to implement the feature.</p>
+
+<h4 id="create-new-spring-boot-web-project">Create New Spring Boot Web Project</h4>
+
+<p>From Spring Tool Suite IDE select menu File &gt; New &gt; Spring Starter Project.</p>
+
+<p>On the New Spring Starter Project popup input new project <strong>spring-boot-download-text-file</strong> information as following screenshot.</p>
+
+<p><img src="/images/spring-boot-export-download-text-file-1.png" alt="Spring Boot Web Application Export and Download Text File - Create New Project" class="img-fluid"></p>
+
+<p>On the New Spring Starter Project Dependencies popup choose dependencies:</p>
+
+<ul>
+<li>Template Engines: Thymeleaf</li>
+<li>Web: Spring Web</li>
+</ul>
+
+<p><img src="/images/spring-boot-export-download-text-file-2.png" alt="Spring Boot Web Application Export and Download Text File - Create New Project" class="img-fluid"></p>
+
+<p>You can also creating new Spring Boot project using Spring initializr online tool at <a href="https://start.spring.io/" target="_blank">start.spring.io</a></p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="implement-text-file-export-service">Implement Text File Export Service</h4>
+
+<p>Next, we implement the service class to export a String into a text file.</p>
+
+<p>Create a new Java package named <strong>dev.simplesolution.service</strong> and add FileExporter interface.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.nio.file.Path<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">FileExporter</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">public</span> Path <span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>String fileContent<span style="color:#f92672">,</span> String fileName<span style="color:#f92672">);</span>
+	
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Create a new Java package named <strong>dev.simplesolution.service.impl</strong> and implement TextFileExporter service class.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.service.impl<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.nio.file.Files<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.nio.file.Path<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.nio.file.Paths<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.nio.file.StandardOpenOption<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.service.FileExporter<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TextFileExporter</span> <span style="color:#66d9ef">implements</span> FileExporter <span style="color:#f92672">{</span>
+
+	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> String EXPORT_DIRECTORY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\\SimpleSolution&#34;</span><span style="color:#f92672">;</span>
+	
+	<span style="color:#66d9ef">private</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>TextFileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+	
+	<span style="color:#a6e22e">@Override</span>
+	<span style="color:#66d9ef">public</span> Path <span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>String fileContent<span style="color:#f92672">,</span> String fileName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+		Path filePath <span style="color:#f92672">=</span> Paths<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>EXPORT_DIRECTORY<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		<span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+			Path exportedFilePath <span style="color:#f92672">=</span> Files<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>filePath<span style="color:#f92672">,</span> fileContent<span style="color:#f92672">.</span><span style="color:#a6e22e">getBytes</span><span style="color:#f92672">(),</span> StandardOpenOption<span style="color:#f92672">.</span><span style="color:#a6e22e">CREATE</span><span style="color:#f92672">);</span>
+			<span style="color:#66d9ef">return</span> exportedFilePath<span style="color:#f92672">;</span>
+		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+			logger<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span>e<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">(),</span> e<span style="color:#f92672">);</span>
+		<span style="color:#f92672">}</span>	
+		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="implement-file-downloading-controller">Implement File Downloading Controller</h4>
+
+<p>Create a new Java package named <strong>dev.simplesolution.controller</strong> and create DownloadController class.</p>
+
+<p>Firstly, inject the FileExporter to the controller and implement a method in order to show the index page.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DownloadController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> FileExporter fileExporter<span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">index</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Solution 1 - Implement download file with InputStreamResource
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download1&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>InputStreamResource<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadTextFileExample1</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> FileNotFoundException <span style="color:#f92672">{</span>
+	String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example1.txt&#34;</span><span style="color:#f92672">;</span>
+	String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 1&#34;</span><span style="color:#f92672">;</span>
+	
+	<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>	Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+	<span style="color:#75715e">// Download file with InputStreamResource
+</span><span style="color:#75715e"></span>	File exportedFile <span style="color:#f92672">=</span> exportedPath<span style="color:#f92672">.</span><span style="color:#a6e22e">toFile</span><span style="color:#f92672">();</span>
+	FileInputStream fileInputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileInputStream<span style="color:#f92672">(</span>exportedFile<span style="color:#f92672">);</span>
+	InputStreamResource inputStreamResource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> InputStreamResource<span style="color:#f92672">(</span>fileInputStream<span style="color:#f92672">);</span>
+	
+	<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>exportedFile<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">())</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>inputStreamResource<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Solution 2 - Implement download file with ByteArrayResource
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download2&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>ByteArrayResource<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadTextFileExample2</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+	String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example2.txt&#34;</span><span style="color:#f92672">;</span>
+	String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 2&#34;</span><span style="color:#f92672">;</span>
+		
+	<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>	Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+	<span style="color:#75715e">// Download file with ByteArrayResource
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> exportedFileData <span style="color:#f92672">=</span> Files<span style="color:#f92672">.</span><span style="color:#a6e22e">readAllBytes</span><span style="color:#f92672">(</span>exportedPath<span style="color:#f92672">);</span>
+	ByteArrayResource byteArrayResource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ByteArrayResource<span style="color:#f92672">(</span>exportedFileData<span style="color:#f92672">);</span>
+		
+	<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>exportedFileData<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>byteArrayResource<span style="color:#f92672">);</span>	
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Solution 3 - Implement download file with Resource
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download3&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>Resource<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadTextFileExample3</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+	String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example3.txt&#34;</span><span style="color:#f92672">;</span>
+	String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 3&#34;</span><span style="color:#f92672">;</span>
+		
+	<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>	Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+	<span style="color:#75715e">// Download file with Resource
+</span><span style="color:#75715e"></span>	URI exportedFileUri <span style="color:#f92672">=</span> exportedPath<span style="color:#f92672">.</span><span style="color:#a6e22e">toUri</span><span style="color:#f92672">();</span>
+	Resource resource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> UrlResource<span style="color:#f92672">(</span>exportedFileUri<span style="color:#f92672">);</span>
+		
+	<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">())</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>resource<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Solution 4 - Implement download file with byte array
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download4&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">byte</span><span style="color:#f92672">[]&gt;</span> <span style="color:#a6e22e">downloadTextFileExample4</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+	String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example4.txt&#34;</span><span style="color:#f92672">;</span>
+	String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 4&#34;</span><span style="color:#f92672">;</span>
+		
+	<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>	Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+	<span style="color:#75715e">// Download file with byte[]
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> expotedFileData <span style="color:#f92672">=</span> Files<span style="color:#f92672">.</span><span style="color:#a6e22e">readAllBytes</span><span style="color:#f92672">(</span>exportedPath<span style="color:#f92672">);</span>
+		
+	<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>expotedFileData<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span>
+			<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>expotedFileData<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Solution 5 - Implement download file with HttpServletResponse
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download5&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">downloadTextFileExample5</span><span style="color:#f92672">(</span>HttpServletResponse response<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+	String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example5.txt&#34;</span><span style="color:#f92672">;</span>
+	String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 5&#34;</span><span style="color:#f92672">;</span>
+		
+	<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>	Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+	<span style="color:#75715e">// Download file with HttpServletResponse
+</span><span style="color:#75715e"></span>	response<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN_VALUE</span><span style="color:#f92672">);</span>
+	response<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeader</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">);</span>
+	response<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentLength</span><span style="color:#f92672">((</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span>exportedPath<span style="color:#f92672">.</span><span style="color:#a6e22e">toFile</span><span style="color:#f92672">().</span><span style="color:#a6e22e">length</span><span style="color:#f92672">());</span>
+		
+	<span style="color:#75715e">// Copy file content to response output stream
+</span><span style="color:#75715e"></span>	Files<span style="color:#f92672">.</span><span style="color:#a6e22e">copy</span><span style="color:#f92672">(</span>exportedPath<span style="color:#f92672">,</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">getOutputStream</span><span style="color:#f92672">());</span>		
+	response<span style="color:#f92672">.</span><span style="color:#a6e22e">getOutputStream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">flush</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>The final DownloadController class as follows.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.controller<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.FileInputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.FileNotFoundException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.net.URI<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.nio.file.Files<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.nio.file.Path<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.servlet.http.HttpServletResponse<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.core.io.ByteArrayResource<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.core.io.InputStreamResource<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.core.io.Resource<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.core.io.UrlResource<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.http.HttpHeaders<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.http.MediaType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.http.ResponseEntity<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestMapping<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.service.FileExporter<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DownloadController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@Autowired</span>
+	<span style="color:#66d9ef">private</span> FileExporter fileExporter<span style="color:#f92672">;</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">index</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download1&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>InputStreamResource<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadTextFileExample1</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> FileNotFoundException <span style="color:#f92672">{</span>
+		String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example1.txt&#34;</span><span style="color:#f92672">;</span>
+		String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 1&#34;</span><span style="color:#f92672">;</span>
+		
+		<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>		Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Download file with InputStreamResource
+</span><span style="color:#75715e"></span>		File exportedFile <span style="color:#f92672">=</span> exportedPath<span style="color:#f92672">.</span><span style="color:#a6e22e">toFile</span><span style="color:#f92672">();</span>
+		FileInputStream fileInputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileInputStream<span style="color:#f92672">(</span>exportedFile<span style="color:#f92672">);</span>
+		InputStreamResource inputStreamResource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> InputStreamResource<span style="color:#f92672">(</span>fileInputStream<span style="color:#f92672">);</span>
+		
+		<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>exportedFile<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">())</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>inputStreamResource<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download2&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>ByteArrayResource<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadTextFileExample2</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+		String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example2.txt&#34;</span><span style="color:#f92672">;</span>
+		String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 2&#34;</span><span style="color:#f92672">;</span>
+		
+		<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>		Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Download file with ByteArrayResource
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> exportedFileData <span style="color:#f92672">=</span> Files<span style="color:#f92672">.</span><span style="color:#a6e22e">readAllBytes</span><span style="color:#f92672">(</span>exportedPath<span style="color:#f92672">);</span>
+		ByteArrayResource byteArrayResource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ByteArrayResource<span style="color:#f92672">(</span>exportedFileData<span style="color:#f92672">);</span>
+		
+		<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>exportedFileData<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>byteArrayResource<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download3&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>Resource<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadTextFileExample3</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+		String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example3.txt&#34;</span><span style="color:#f92672">;</span>
+		String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 3&#34;</span><span style="color:#f92672">;</span>
+		
+		<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>		Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Download file with Resource
+</span><span style="color:#75715e"></span>		URI exportedFileUri <span style="color:#f92672">=</span> exportedPath<span style="color:#f92672">.</span><span style="color:#a6e22e">toUri</span><span style="color:#f92672">();</span>
+		Resource resource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> UrlResource<span style="color:#f92672">(</span>exportedFileUri<span style="color:#f92672">);</span>
+		
+		<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>resource<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">())</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>resource<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download4&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">byte</span><span style="color:#f92672">[]&gt;</span> <span style="color:#a6e22e">downloadTextFileExample4</span><span style="color:#f92672">()</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+		String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example4.txt&#34;</span><span style="color:#f92672">;</span>
+		String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 4&#34;</span><span style="color:#f92672">;</span>
+		
+		<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>		Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Download file with byte[]
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> expotedFileData <span style="color:#f92672">=</span> Files<span style="color:#f92672">.</span><span style="color:#a6e22e">readAllBytes</span><span style="color:#f92672">(</span>exportedPath<span style="color:#f92672">);</span>
+		
+		<span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">()</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN</span><span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">contentLength</span><span style="color:#f92672">(</span>expotedFileData<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">)</span>
+				<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>expotedFileData<span style="color:#f92672">);</span>
+	<span style="color:#f92672">}</span>
+	
+	<span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/download5&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">downloadTextFileExample5</span><span style="color:#f92672">(</span>HttpServletResponse response<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
+		String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;example5.txt&#34;</span><span style="color:#f92672">;</span>
+		String fileContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Simple Solution \nDownload Example 5&#34;</span><span style="color:#f92672">;</span>
+		
+		<span style="color:#75715e">// Create text file
+</span><span style="color:#75715e"></span>		Path exportedPath <span style="color:#f92672">=</span> fileExporter<span style="color:#f92672">.</span><span style="color:#a6e22e">export</span><span style="color:#f92672">(</span>fileContent<span style="color:#f92672">,</span> fileName<span style="color:#f92672">);</span>
+		
+		<span style="color:#75715e">// Download file with HttpServletResponse
+</span><span style="color:#75715e"></span>		response<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentType</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">TEXT_PLAIN_VALUE</span><span style="color:#f92672">);</span>
+		response<span style="color:#f92672">.</span><span style="color:#a6e22e">setHeader</span><span style="color:#f92672">(</span>HttpHeaders<span style="color:#f92672">.</span><span style="color:#a6e22e">CONTENT_DISPOSITION</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;attachment;filename=&#34;</span> <span style="color:#f92672">+</span> fileName<span style="color:#f92672">);</span>
+		response<span style="color:#f92672">.</span><span style="color:#a6e22e">setContentLength</span><span style="color:#f92672">((</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span>exportedPath<span style="color:#f92672">.</span><span style="color:#a6e22e">toFile</span><span style="color:#f92672">().</span><span style="color:#a6e22e">length</span><span style="color:#f92672">());</span>
+		
+		<span style="color:#75715e">// Copy file content to response output stream
+</span><span style="color:#75715e"></span>		Files<span style="color:#f92672">.</span><span style="color:#a6e22e">copy</span><span style="color:#f92672">(</span>exportedPath<span style="color:#f92672">,</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">getOutputStream</span><span style="color:#f92672">());</span>		
+		response<span style="color:#f92672">.</span><span style="color:#a6e22e">getOutputStream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">flush</span><span style="color:#f92672">();</span>
+	<span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="create-html-view-to-represent-the-link-for-downloading">Create HTML View to represent the link for Downloading</h4>
+
+<p>Create a new view file at <strong>\src\main\resources\templates\index.html</strong> and implement HTML code as below to allow the user click on the button to download the text file that is generated  at the server side. In this HTML we also use Bootstrap CSS library.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+	&lt;<span style="color:#f92672">head</span>&gt;
+		&lt;<span style="color:#f92672">title</span>&gt;Download Text Files&lt;/<span style="color:#f92672">title</span>&gt;
+		&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css&#34;</span>&gt;
+	&lt;/<span style="color:#f92672">head</span>&gt;
+	&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">h3</span>&gt;Click buttons below to download the files&lt;/<span style="color:#f92672">h3</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/download1&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;
+			Download Text File Example 1
+		&lt;/<span style="color:#f92672">a</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/download2&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-secondary&#34;</span>&gt;
+			Download Text File Example 2
+		&lt;/<span style="color:#f92672">a</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/download3&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-success&#34;</span>&gt;
+			Download Text File Example 3
+		&lt;/<span style="color:#f92672">a</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/download4&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-danger&#34;</span>&gt;
+			Download Text File Example 4
+		&lt;/<span style="color:#f92672">a</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">br</span>&gt;
+		&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/download5&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-info&#34;</span>&gt;
+			Download Text File Example 5
+		&lt;/<span style="color:#f92672">a</span>&gt;
+	&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+
+<h4 id="final-application">Final Application</h4>
+
+<p>The final Spring Boot web application structure looks like the following screenshot.</p>
+
+<p><img src="/images/spring-boot-export-download-text-file-3.png" alt="Spring Boot Web Application Export and Download Text File - Application structure" class="img-fluid"></p>
+
+<p>Run the Spring Boot web application and visit <a href="http://localhost:8080/">http://localhost:8080/</a> on your browser to open the web user interface as following screenshot.</p>
+
+<p><img src="/images/spring-boot-export-download-text-file-4.png" alt="Download Files user interface" class="img-fluid"></p>
+
+<p>Then we can click on the button to download the text file.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this tutorial we have learned different solutions to download a text file in a Spring Boot web application and how to export a text file in Java.</p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-download-text-file" target="_blank">github.com/simplesolutiondev/spring-boot-download-text-file</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-download-text-file.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-download-text-file/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/download">Download</a>
+                                
+                                <a href="https://simplesolution.dev/tag/file">File</a>
+                                
+                                <a href="https://simplesolution.dev/tag/java-io">Java IO</a>
+                                
+                                <a href="https://simplesolution.dev/tag/java-nio">Java NIO</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
