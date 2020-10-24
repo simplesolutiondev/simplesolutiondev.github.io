@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/spring-boot-export-download-json-file/</loc>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/spring-boot-export-download-text-file/</loc>
     <lastmod>2020-10-24T00:33:28+07:00</lastmod>
   </url>
@@ -802,7 +807,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/download/</loc>
-    <lastmod>2020-10-24T00:33:28+07:00</lastmod>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -845,6 +850,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/gradle/</loc>
     <lastmod>2019-05-01T01:00:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gson/</loc>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -898,7 +909,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-24T00:33:28+07:00</lastmod>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -928,7 +939,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2019-04-13T17:30:10+07:00</lastmod>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1024,7 +1035,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-24T00:33:28+07:00</lastmod>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1042,13 +1053,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2020-10-24T00:33:28+07:00</lastmod>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2020-10-24T00:33:28+07:00</lastmod>
+    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   

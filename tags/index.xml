@@ -167,7 +167,7 @@
     <item>
       <title>Download</title>
       <link>https://simplesolution.dev/tag/download/</link>
-      <pubDate>Sat, 24 Oct 2020 00:33:28 +0700</pubDate>
+      <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/download/</guid>
       <description></description>
@@ -233,6 +233,15 @@
       <pubDate>Wed, 01 May 2019 01:00:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gradle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gson</title>
+      <link>https://simplesolution.dev/tag/gson/</link>
+      <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gson/</guid>
       <description></description>
     </item>
     
@@ -311,7 +320,7 @@
     <item>
       <title>Json</title>
       <link>https://simplesolution.dev/tag/json/</link>
-      <pubDate>Sat, 13 Apr 2019 17:30:10 +0700</pubDate>
+      <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
       <description></description>
@@ -464,7 +473,7 @@
     <item>
       <title>Spring Boot</title>
       <link>https://simplesolution.dev/tag/spring-boot/</link>
-      <pubDate>Sat, 24 Oct 2020 00:33:28 +0700</pubDate>
+      <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-boot/</guid>
       <description></description>
