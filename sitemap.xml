@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-generate-qr-code-zxing/</loc>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/</loc>
     <lastmod>2020-10-25T16:05:47+07:00</lastmod>
   </url>
@@ -899,13 +904,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-25T16:05:47+07:00</lastmod>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-25T16:05:47+07:00</lastmod>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -935,7 +940,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-25T16:05:47+07:00</lastmod>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1030,6 +1035,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/qr-code/</loc>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/randomstringgenerator/</loc>
     <lastmod>2020-10-06T00:04:09+07:00</lastmod>
     <priority>0</priority>
@@ -1067,7 +1078,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-25T16:05:47+07:00</lastmod>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1170,6 +1181,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/wsdl/</loc>
     <lastmod>2019-04-03T14:00:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/zxing/</loc>
+    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
     <priority>0</priority>
   </url>
   

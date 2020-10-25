@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 16:05:47 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 00:29:28 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generate QR Code in Java using ZXing</title>
+      <link>https://simplesolution.dev/java-generate-qr-code-zxing/</link>
+      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-generate-qr-code-zxing/</guid>
+      <description>Introduction In this tutorial, we are going to learn how to generate QR code (abbreviated from Quick Response code) in a Java application. We will use ZXing (&amp;ldquo;zebra crossing&amp;rdquo;) library which is the most popular library to generate QR code in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add ZXing library to the project To use ZXing Java library in the Gradle build project, add the following dependencies into the build.</description>
+    </item>
     
     <item>
       <title>jsoup parse HTML Document from an URL in Java</title>

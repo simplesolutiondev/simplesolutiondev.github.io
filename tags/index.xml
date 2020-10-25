@@ -275,7 +275,7 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Sun, 25 Oct 2020 16:05:47 +0700</pubDate>
+      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
       <description></description>
@@ -413,6 +413,15 @@
       <pubDate>Thu, 02 Jan 2020 21:58:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qr Code</title>
+      <link>https://simplesolution.dev/tag/qr-code/</link>
+      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/qr-code/</guid>
       <description></description>
     </item>
     
@@ -602,6 +611,15 @@
       <pubDate>Wed, 03 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/wsdl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zxing</title>
+      <link>https://simplesolution.dev/tag/zxing/</link>
+      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/zxing/</guid>
       <description></description>
     </item>
     
