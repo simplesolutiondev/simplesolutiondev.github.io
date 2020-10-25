@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html Parser on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/html-parser/</link>
+    <description>Recent content in Html Parser on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2020 16:05:47 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/html-parser/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jsoup parse HTML Document from an URL in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/</link>
+      <pubDate>Sun, 25 Oct 2020 16:05:47 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/</guid>
+      <description>Introduction In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a given URL into a jsoup Document object.
+What is jsoup? jsoup is a Java library for working with real-world HTML. It provides a very convenient API for fetching URLs and extracting and manipulating data, using the best of HTML5 DOM methods and CSS selectors.
+For more information about the library you can visit jsoup homepage at jsoup.</description>
+    </item>
+    
+    <item>
+      <title>jsoup parse HTML Document from a File and InputStream in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-parse-html-document-from-file-inputstream/</link>
+      <pubDate>Sun, 25 Oct 2020 15:58:16 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-parse-html-document-from-file-inputstream/</guid>
+      <description>Introduction In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a local file or input stream into a jsoup Document object.
+What is jsoup? jsoup is a Java library for working with real-world HTML. It provides a very convenient API for fetching URLs and extracting and manipulating data, using the best of HTML5 DOM methods and CSS selectors.
+For more information about the library you can visit jsoup homepage at jsoup.</description>
+    </item>
+    
+    <item>
+      <title>jsoup parse HTML Document from a Java String</title>
+      <link>https://simplesolution.dev/java-jsoup-parse-html-document-from-string/</link>
+      <pubDate>Sun, 25 Oct 2020 15:25:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-parse-html-document-from-string/</guid>
+      <description>Introduction In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a Java String into jsoup Document object.
+What is jsoup? jsoup is a Java library for working with real-world HTML. It provides a very convenient API for fetching URLs and extracting and manipulating data, using the best of HTML5 DOM methods and CSS selectors.
+For more information about the library you can visit jsoup homepage at jsoup.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jsoup parse HTML Document from a Java String</title>
+    <meta name="title" content="jsoup parse HTML Document from a Java String">
+    <meta name="description" content="In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a Java String into jsoup Document object.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-parse-html-document-from-string/">
+    <meta property="og:title" content="jsoup parse HTML Document from a Java String">
+    <meta property="og:description" content="In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a Java String into jsoup Document object.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-parse-html-document-from-string.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-parse-html-document-from-string/">
+    <meta name="twitter:title" content="jsoup parse HTML Document from a Java String">
+    <meta name="twitter:description" content="In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a Java String into jsoup Document object.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-parse-html-document-from-string.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">jsoup parse HTML Document from a Java String</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this tutorial we will explore how to use the jsoup library in Java program to parse HTML from a Java String into jsoup Document object.</p>
+
+<h4 id="what-is-jsoup">What is jsoup?</h4>
+
+<p><strong>jsoup</strong> is a Java library for working with real-world HTML. It provides a very convenient API for fetching URLs and extracting and manipulating data, using the best of HTML5 DOM methods and CSS selectors.</p>
+
+<p>For more information about the library you can visit jsoup homepage at <a href="https://jsoup.org/" target="_blank">jsoup.org</a></p>
+
+<h4 id="add-jsoup-library-to-your-project">Add jsoup library to your project</h4>
+
+<p>To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile <span style="color:#e6db74">&#39;org.jsoup:jsoup:1.13.1&#39;</span></code></pre></div></p>
+
+<p>To use jsoup Java library in the Maven build project, add the following dependency into the pom.xml file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.jsoup<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jsoup<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.13.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>To download the jsoup-1.13.1.jar file you can visit jsoup download page at <a href="https://jsoup.org/download" target="_blank">jsoup.org/download</a></p>
+
+<h4 id="parse-html-document-from-a-java-string">Parse HTML Document from a Java String</h4>
+
+<p>jsoup provides <strong>Jsoup.parse()</strong> static method with String argument for parsing a String object into jsoup Document object.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JsoupParseStringExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String sampleHtml <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;html&gt;&lt;head&gt;&lt;title&gt;Simple Solution&lt;/title&gt;&lt;/head&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;body&gt;&lt;p id=&#39;content&#39;&gt;jsoup Tutorial&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#34;</span><span style="color:#f92672">;</span>
+
+        Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>sampleHtml<span style="color:#f92672">);</span>
+
+        Element contentElement <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementById</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;content&#34;</span><span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Document Title: &#34;</span> <span style="color:#f92672">+</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">title</span><span style="color:#f92672">());</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Content Text: &#34;</span> <span style="color:#f92672">+</span> contentElement<span style="color:#f92672">.</span><span style="color:#a6e22e">text</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Document Title: Simple Solution
+Content Text: jsoup Tutorial</code></pre></div></p>
+
+<h4 id="parse-a-fragment-of-html-from-a-java-string">Parse a Fragment of HTML from a Java String</h4>
+
+<p>In case we have only a fragment of HTML String, for example user input from a web form then to parse it we can use <strong>Jsoup.parseBodyFragment()</strong> static method.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JsoupParseBodyFragmentExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String sampleUserInput <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;div&gt;&lt;p&gt;sample user input text&lt;/p&gt;&lt;/div&gt;&#34;</span><span style="color:#f92672">;</span>
+
+        Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parseBodyFragment</span><span style="color:#f92672">(</span>sampleUserInput<span style="color:#f92672">);</span>
+
+        Elements textElements <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementsByTag</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;p&#34;</span><span style="color:#f92672">);</span>
+
+        String contentText <span style="color:#f92672">=</span> textElements<span style="color:#f92672">.</span><span style="color:#a6e22e">first</span><span style="color:#f92672">().</span><span style="color:#a6e22e">text</span><span style="color:#f92672">();</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>contentText<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">sample user input text</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-jsoup-parse-html-document-from-file-inputstream/">jsoup parse HTML Document from a File and InputStream in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/">jsoup parse HTML Document from an URL in Java</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jsoup">jsoup</a>
+                                
+                                <a href="https://simplesolution.dev/tag/html-parser">HTML Parser</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
