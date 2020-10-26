@@ -111,6 +111,15 @@
     </item>
     
     <item>
+      <title>Base64</title>
+      <link>https://simplesolution.dev/tag/base64/</link>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/base64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bigdecimal</title>
       <link>https://simplesolution.dev/tag/bigdecimal/</link>
       <pubDate>Sat, 13 Apr 2019 17:40:10 +0700</pubDate>
@@ -194,7 +203,7 @@
     <item>
       <title>File</title>
       <link>https://simplesolution.dev/tag/file/</link>
-      <pubDate>Sat, 24 Oct 2020 20:13:34 +0700</pubDate>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/file/</guid>
       <description></description>
@@ -275,7 +284,7 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/tag/java/</link>
-      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java/</guid>
       <description></description>
@@ -419,9 +428,18 @@
     <item>
       <title>Qr Code</title>
       <link>https://simplesolution.dev/tag/qr-code/</link>
-      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/qr-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qrcodereader</title>
+      <link>https://simplesolution.dev/tag/qrcodereader/</link>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/qrcodereader/</guid>
       <description></description>
     </item>
     
@@ -617,7 +635,7 @@
     <item>
       <title>Zxing</title>
       <link>https://simplesolution.dev/tag/zxing/</link>
-      <pubDate>Mon, 26 Oct 2020 00:29:28 +0700</pubDate>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/zxing/</guid>
       <description></description>

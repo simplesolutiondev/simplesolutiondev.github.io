@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Read QR Code from Image File or Base64 String in Java using ZXing</title>
+    <meta name="title" content="Read QR Code from Image File or Base64 String in Java using ZXing">
+    <meta name="description" content="In this tutorial, we are going to learn how to decode the QR code image to read the encoded text in a Java application. We will use ZXing open source library in order to decode the image. Via different Java code examples we show you how to extract text from an image file and from encoded base64 string image.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-read-qr-code-from-image-file-base64-zxing/">
+    <meta property="og:title" content="Read QR Code from Image File or Base64 String in Java using ZXing">
+    <meta property="og:description" content="In this tutorial, we are going to learn how to decode the QR code image to read the encoded text in a Java application. We will use ZXing open source library in order to decode the image. Via different Java code examples we show you how to extract text from an image file and from encoded base64 string image.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-read-qr-code-from-image-file-base64-zxing.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-read-qr-code-from-image-file-base64-zxing/">
+    <meta name="twitter:title" content="Read QR Code from Image File or Base64 String in Java using ZXing">
+    <meta name="twitter:description" content="In this tutorial, we are going to learn how to decode the QR code image to read the encoded text in a Java application. We will use ZXing open source library in order to decode the image. Via different Java code examples we show you how to extract text from an image file and from encoded base64 string image.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-read-qr-code-from-image-file-base64-zxing.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Read QR Code from Image File or Base64 String in Java using ZXing</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this tutorial, we are going to learn how to decode the QR code image to read the encoded text in a Java application. We will use ZXing open source library in order to decode the image. Via different Java code examples we show you how to extract text from an image file and from encoded base64 string image.</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-zxing-library-to-the-project">Add ZXing library to the project</h4>
+
+<p>To use ZXing Java library in the Gradle build project, add the following dependencies into the build.gradle file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.google.zxing&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;core&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;3.4.1&#39;</span>
+compile group: <span style="color:#e6db74">&#39;com.google.zxing&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;javase&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;3.4.1&#39;</span></code></pre></div></p>
+
+<p>To use ZXing Java library in the Maven build project, add the following dependencies into the pom.xml file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.google.zxing<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>core<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>3.4.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.google.zxing<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>javase<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>3.4.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>For more information about the ZXing library you can visit the library repository at <a href="https://github.com/zxing/zxing" target="_blank">github.com/zxing/zxing</a></p>
+
+<h4 id="implement-qr-code-reader-class">Implement QR Code Reader class</h4>
+
+<p>In this step we implement a QRCodeReader class that can be used to read QR code from a File object, a Base64 String or a BufferedImage object.</p>
+
+<p>Firstly, create a new class named QRCodeReader and implement <strong>readQRCode(BufferedImage bufferedImage)</strong> method which expects BufferedImage as argument and returns encoded text in QR Code.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>BufferedImage bufferedImage<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    String encodedContent <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+        BufferedImageLuminanceSource bufferedImageLuminanceSource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedImageLuminanceSource<span style="color:#f92672">(</span>bufferedImage<span style="color:#f92672">);</span>
+        HybridBinarizer hybridBinarizer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HybridBinarizer<span style="color:#f92672">(</span>bufferedImageLuminanceSource<span style="color:#f92672">);</span>
+        BinaryBitmap binaryBitmap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BinaryBitmap<span style="color:#f92672">(</span>hybridBinarizer<span style="color:#f92672">);</span>
+        MultiFormatReader multiFormatReader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MultiFormatReader<span style="color:#f92672">();</span>
+
+        Result result <span style="color:#f92672">=</span> multiFormatReader<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>binaryBitmap<span style="color:#f92672">);</span>
+        encodedContent <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">getText</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>NotFoundException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> encodedContent<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Next, implement the <strong>readQRCode(File qrCodeFile)</strong> method that reads QR Code from a File object.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>File qrCodeFile<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    String encodedContent <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+        BufferedImage bufferedImage <span style="color:#f92672">=</span> ImageIO<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>qrCodeFile<span style="color:#f92672">);</span>
+
+        encodedContent <span style="color:#f92672">=</span> readQRCode<span style="color:#f92672">(</span>bufferedImage<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> encodedContent<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Then, implement the <strong>readQRCode(String base64Image)</strong> method that reads QR Code image in base64 format.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>String base64Image<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    String encodedContent <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> imageBytes <span style="color:#f92672">=</span> Base64<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>base64Image<span style="color:#f92672">);</span>
+        ByteArrayInputStream byteArrayInputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ByteArrayInputStream<span style="color:#f92672">(</span>imageBytes<span style="color:#f92672">);</span>
+        BufferedImage bufferedImage <span style="color:#f92672">=</span> ImageIO<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>byteArrayInputStream<span style="color:#f92672">);</span>
+        encodedContent <span style="color:#f92672">=</span> readQRCode<span style="color:#f92672">(</span>bufferedImage<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> encodedContent<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Finally, we have the complete <strong>QRCodeReader</strong> class as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.zxing.BinaryBitmap<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.google.zxing.MultiFormatReader<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.google.zxing.NotFoundException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.google.zxing.Result<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.google.zxing.client.j2se.BufferedImageLuminanceSource<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.google.zxing.common.HybridBinarizer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.sun.org.apache.xerces.internal.impl.dv.util.Base64<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> javax.imageio.ImageIO<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.awt.image.BufferedImage<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.ByteArrayInputStream<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">QRCodeReader</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>String base64Image<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String encodedContent <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> imageBytes <span style="color:#f92672">=</span> Base64<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>base64Image<span style="color:#f92672">);</span>
+            ByteArrayInputStream byteArrayInputStream <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ByteArrayInputStream<span style="color:#f92672">(</span>imageBytes<span style="color:#f92672">);</span>
+            BufferedImage bufferedImage <span style="color:#f92672">=</span> ImageIO<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>byteArrayInputStream<span style="color:#f92672">);</span>
+            encodedContent <span style="color:#f92672">=</span> readQRCode<span style="color:#f92672">(</span>bufferedImage<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> encodedContent<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>File qrCodeFile<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String encodedContent <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            BufferedImage bufferedImage <span style="color:#f92672">=</span> ImageIO<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>qrCodeFile<span style="color:#f92672">);</span>
+
+            encodedContent <span style="color:#f92672">=</span> readQRCode<span style="color:#f92672">(</span>bufferedImage<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> encodedContent<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>BufferedImage bufferedImage<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String encodedContent <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            BufferedImageLuminanceSource bufferedImageLuminanceSource <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedImageLuminanceSource<span style="color:#f92672">(</span>bufferedImage<span style="color:#f92672">);</span>
+            HybridBinarizer hybridBinarizer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HybridBinarizer<span style="color:#f92672">(</span>bufferedImageLuminanceSource<span style="color:#f92672">);</span>
+            BinaryBitmap binaryBitmap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BinaryBitmap<span style="color:#f92672">(</span>hybridBinarizer<span style="color:#f92672">);</span>
+            MultiFormatReader multiFormatReader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> MultiFormatReader<span style="color:#f92672">();</span>
+
+            Result result <span style="color:#f92672">=</span> multiFormatReader<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>binaryBitmap<span style="color:#f92672">);</span>
+            encodedContent <span style="color:#f92672">=</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">getText</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>NotFoundException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> encodedContent<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<h4 id="how-to-read-qr-code-image-in-java-application">How to read QR Code Image in Java application</h4>
+
+<p>In this Java code example we use the <strong>QRCodeReader</strong> class above in a Java program to read QR code from a file.</p>
+
+<p>For example we have a <strong>qrcode.png</strong> file with content as below.</p>
+
+<p><img src="/images/qrcode.png" alt="QR Code" class="img-fluid"></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReadQRCodeFromFile</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String qrCodeFileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;qrcode.png&#34;</span><span style="color:#f92672">;</span>
+        File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>qrCodeFileName<span style="color:#f92672">);</span>
+
+        QRCodeReader qrCodeReader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> QRCodeReader<span style="color:#f92672">();</span>
+        String encodedContent <span style="color:#f92672">=</span> qrCodeReader<span style="color:#f92672">.</span><span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>file<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>encodedContent<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">https://simplesolution.dev</code></pre></div></p>
+
+<h4 id="how-to-read-qr-code-from-base64-encoded-image-in-java-application">How to read QR Code from Base64 Encoded Image in Java application</h4>
+
+<p>In this Java code example we use the <strong>QRCodeReader</strong> class above in a Java program to read QR code from base64 String.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReadQRCodeFromBase64</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String base64 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAQAAAABYmaj5AAAA7ElEQVR42tXUsZHEIAwFUHk2cHZuQDO0QeaWTAN4twK3REYbzNAAyhww1ombvd1NbBHeMQS8CPERAH+MAn9YBWCBzAEGTcR13W8cZaEpoLdpiuA6tIb86JWhHnH1tq7vyk4l53MR3fu0p2pZzbJ8JXiqYtHP6H53uBAH3mKadpg0HRZhRrCZNBHzxnWIadBUbILRbK/KzkXxRhEHNpumMuLXLPOZ4IVoz4flA5LTlTzkO+CkqeU/Sgy65G59q92QptbXLIEZVhXQsblDlxZIy8iPDsmrIn5mdiWui/QCoKr2pq35CUPRf/nBPvUNct67nP2Y9j8AAAAASUVORK5CYII=&#34;</span><span style="color:#f92672">;</span>
+
+        QRCodeReader qrCodeReader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> QRCodeReader<span style="color:#f92672">();</span>
+        String encodedContent <span style="color:#f92672">=</span> qrCodeReader<span style="color:#f92672">.</span><span style="color:#a6e22e">readQRCode</span><span style="color:#f92672">(</span>base64<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>encodedContent<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">https://simplesolution.dev</code></pre></div></p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this tutorial we have implemented a Java class QRCodeReader that can be used to read QR code images in file format or in base64 String format.</p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-generate-qr-code-zxing/">Generate QR Code in Java using ZXing</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/zxing">ZXing</a>
+                                
+                                <a href="https://simplesolution.dev/tag/qr-code">QR Code</a>
+                                
+                                <a href="https://simplesolution.dev/tag/qrcodereader">QRCodeReader</a>
+                                
+                                <a href="https://simplesolution.dev/tag/base64">Base64</a>
+                                
+                                <a href="https://simplesolution.dev/tag/file">File</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

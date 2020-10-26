@@ -6,10 +6,20 @@
     <description>Recent content in Qr Code on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2020 00:29:28 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 21:46:52 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/qr-code/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Read QR Code from Image File or Base64 String in Java using ZXing</title>
+      <link>https://simplesolution.dev/java-read-qr-code-from-image-file-base64-zxing/</link>
+      <pubDate>Mon, 26 Oct 2020 21:46:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-qr-code-from-image-file-base64-zxing/</guid>
+      <description>Introduction In this tutorial, we are going to learn how to decode the QR code image to read the encoded text in a Java application. We will use ZXing open source library in order to decode the image. Via different Java code examples we show you how to extract text from an image file and from encoded base64 string image.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add ZXing library to the project To use ZXing Java library in the Gradle build project, add the following dependencies into the build.</description>
+    </item>
     
     <item>
       <title>Generate QR Code in Java using ZXing</title>

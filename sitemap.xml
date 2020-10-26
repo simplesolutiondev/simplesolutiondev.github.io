@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-read-qr-code-from-image-file-base64-zxing/</loc>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-generate-qr-code-zxing/</loc>
     <lastmod>2020-10-26T00:29:28+07:00</lastmod>
   </url>
@@ -784,6 +789,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/base64/</loc>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/bigdecimal/</loc>
     <lastmod>2019-04-13T17:40:10+07:00</lastmod>
     <priority>0</priority>
@@ -850,7 +861,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/file/</loc>
-    <lastmod>2020-10-24T20:13:34+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -904,13 +915,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -940,7 +951,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1036,7 +1047,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/qr-code/</loc>
-    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/qrcodereader/</loc>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1078,7 +1095,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1186,7 +1203,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/zxing/</loc>
-    <lastmod>2020-10-26T00:29:28+07:00</lastmod>
+    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
