@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jsoup extract CSS class name of HTML element in Java</title>
+    <meta name="title" content="jsoup extract CSS class name of HTML element in Java">
+    <meta name="description" content="In this post, we are going to explore how to use jsoup library in a Java application to extract css class names of an element in the HTML document.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-extract-css-class-name-of-element/">
+    <meta property="og:title" content="jsoup extract CSS class name of HTML element in Java">
+    <meta property="og:description" content="In this post, we are going to explore how to use jsoup library in a Java application to extract css class names of an element in the HTML document.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-extract-css-class-name-of-element.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-extract-css-class-name-of-element/">
+    <meta name="twitter:title" content="jsoup extract CSS class name of HTML element in Java">
+    <meta name="twitter:description" content="In this post, we are going to explore how to use jsoup library in a Java application to extract css class names of an element in the HTML document.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-extract-css-class-name-of-element.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">jsoup extract CSS class name of HTML element in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this post, we are going to explore how to use jsoup library in a Java application to extract css class names of an element in the HTML document.</p>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="5079549365"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-jsoup-library-to-your-java-project">Add jsoup library to your Java project</h4>
+
+<p>To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile <span style="color:#e6db74">&#39;org.jsoup:jsoup:1.13.1&#39;</span></code></pre></div></p>
+
+<p>To use jsoup Java library in the Maven build project, add the following dependency into the pom.xml file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.jsoup<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jsoup<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.13.1<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>To download the jsoup-1.13.1.jar file you can visit jsoup download page at <a href="https://jsoup.org/download" target="_blank">jsoup.org/download</a></p>
+
+<h4 id="sample-html-file">Sample HTML File</h4>
+
+<p>For example, we have a <strong>sample.html</strong> file as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;class1 class2 class3&#34;</span>&gt;
+        &lt;<span style="color:#f92672">p</span>&gt;Simple Solution&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+
+<h4 id="extract-css-class-names-as-a-string">Extract CSS class names as a String</h4>
+
+<p>Following Java code example using <strong>Element.className()</strong> method to get CSS all class names from class attribute as a Java String.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExtractCssClassExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sample.html&#34;</span><span style="color:#f92672">;</span>
+            File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>fileName<span style="color:#f92672">);</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
+            Element element <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementById</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;container&#34;</span><span style="color:#f92672">);</span>
+
+            String cssClassName <span style="color:#f92672">=</span> element<span style="color:#f92672">.</span><span style="color:#a6e22e">className</span><span style="color:#f92672">();</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>cssClassName<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">class1 class2 class3</code></pre></div></p>
+
+<p>We also can use the <strong>Element.attr()</strong> method to get the class attribute which returns the same result as Element.className()  method.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExtractCssClassExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sample.html&#34;</span><span style="color:#f92672">;</span>
+            File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>fileName<span style="color:#f92672">);</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
+            Element element <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementById</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;container&#34;</span><span style="color:#f92672">);</span>
+
+            String cssClass <span style="color:#f92672">=</span> element<span style="color:#f92672">.</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;class&#34;</span><span style="color:#f92672">);</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>cssClass<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">class1 class2 class3</code></pre></div></p>
+
+<h4 id="extract-css-class-names-as-a-set-of-string">Extract CSS class names as a Set of String</h4>
+
+<p>The jsoup library also provides <strong>Element.classNames()</strong> method to return all of element’s class names as a Java Set of String.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.Set<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExtractCssClassExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sample.html&#34;</span><span style="color:#f92672">;</span>
+            File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>fileName<span style="color:#f92672">);</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
+            Element element <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementById</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;container&#34;</span><span style="color:#f92672">);</span>
+
+            Set<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> cssClassNames <span style="color:#f92672">=</span> element<span style="color:#f92672">.</span><span style="color:#a6e22e">classNames</span><span style="color:#f92672">();</span>
+
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>String name <span style="color:#f92672">:</span> cssClassNames<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>name<span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">class1
+class2
+class3</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-jsoup-extract-id-name-of-element/">jsoup extract ID and name of HTML element in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-extract-text-attributes-of-element/">jsoup extract text and attributes of HTML element in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/">jsoup extract JavaScript from HTML script element in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-parse-html-document-from-string/">jsoup parse HTML Document from a Java String</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/">jsoup parse HTML Document from an URL in Java</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java">Java</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jsoup">jsoup</a>
+                                
+                                <a href="https://simplesolution.dev/tag/html-parser">HTML Parser</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

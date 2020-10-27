@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/</loc>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-jsoup-extract-text-attributes-of-element/</loc>
+    <lastmod>2020-10-27T23:43:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-jsoup-extract-id-name-of-element/</loc>
+    <lastmod>2020-10-27T23:27:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-jsoup-extract-css-class-name-of-element/</loc>
+    <lastmod>2020-10-27T23:17:15+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-read-qr-code-from-image-file-base64-zxing/</loc>
     <lastmod>2020-10-26T21:46:52+07:00</lastmod>
   </url>
@@ -897,7 +917,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/html-parser/</loc>
-    <lastmod>2020-10-25T16:05:47+07:00</lastmod>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -915,13 +935,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -951,7 +971,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -987,7 +1007,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/jsoup/</loc>
-    <lastmod>2020-10-25T16:05:47+07:00</lastmod>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1095,7 +1115,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <lastmod>2020-10-27T23:53:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   

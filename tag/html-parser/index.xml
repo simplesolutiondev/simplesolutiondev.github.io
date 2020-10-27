@@ -6,10 +6,54 @@
     <description>Recent content in Html Parser on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 16:05:47 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2020 23:53:13 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/html-parser/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jsoup extract JavaScript from HTML script element in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/</link>
+      <pubDate>Tue, 27 Oct 2020 23:53:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/</guid>
+      <description>Introduction In this post, we are going to explore how to use the jsoup library in a Java application to extract JavaScript content of a script element in the HTML document.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>jsoup extract text and attributes of HTML element in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-text-attributes-of-element/</link>
+      <pubDate>Tue, 27 Oct 2020 23:43:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-text-attributes-of-element/</guid>
+      <description>Introduction In this post, we are going to learn how to use the jsoup library in a Java application to extract text and other attributes of an element in the HTML document.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>jsoup extract ID and name of HTML element in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-id-name-of-element/</link>
+      <pubDate>Tue, 27 Oct 2020 23:27:03 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-id-name-of-element/</guid>
+      <description>Introduction In this post, we are going to explore how to use jsoup library in a Java application to extract the ID or name attribute of an element in the HTML document.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>jsoup extract CSS class name of HTML element in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-css-class-name-of-element/</link>
+      <pubDate>Tue, 27 Oct 2020 23:17:15 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-css-class-name-of-element/</guid>
+      <description>Introduction In this post, we are going to explore how to use jsoup library in a Java application to extract css class names of an element in the HTML document.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>jsoup parse HTML Document from an URL in Java</title>
