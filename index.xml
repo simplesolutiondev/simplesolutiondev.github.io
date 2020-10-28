@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2020 21:21:20 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2020 23:30:05 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jsoup extract Website Title in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-website-title/</link>
+      <pubDate>Wed, 28 Oct 2020 23:30:05 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-website-title/</guid>
+      <description>In this post, we show you how to use the jsoup library in a Java application to extract the title of a website.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>jsoup extract custom data attributes of HTML5 Element in Java</title>
