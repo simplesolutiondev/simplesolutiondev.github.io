@@ -6,10 +6,32 @@
     <description>Recent content in Jsoup on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2020 23:53:13 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2020 21:21:20 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/jsoup/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jsoup extract custom data attributes of HTML5 Element in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-custom-data-attributes-html5-element/</link>
+      <pubDate>Wed, 28 Oct 2020 21:21:20 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-custom-data-attributes-html5-element/</guid>
+      <description>In this post, we learn how to use jsoup Java library to extract HTML5 custom data attributes.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>jsoup extract Inner and Outer HTML of HTML Element in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-extract-inner-outer-html/</link>
+      <pubDate>Wed, 28 Oct 2020 20:52:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-extract-inner-outer-html/</guid>
+      <description>In this post, we learn how to use jsoup Java library to extract inner or outer HTML of an element in a HTML document.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>jsoup extract JavaScript from HTML script element in Java</title>
