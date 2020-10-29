@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>jsoup extract Website Title in Java</title>
-    <meta name="title" content="jsoup extract Website Title in Java">
-    <meta name="description" content="In this post, we show you how to use the jsoup library in a Java application to extract the title of a website.">
+    <title>jsoup Get HTML elements by CSS class name in Java</title>
+    <meta name="title" content="jsoup Get HTML elements by CSS class name in Java">
+    <meta name="description" content="In this post, we are going to learn how to use jsoup Java library to get all HTML elements by CSS class name.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-extract-website-title/">
-    <meta property="og:title" content="jsoup extract Website Title in Java">
-    <meta property="og:description" content="In this post, we show you how to use the jsoup library in a Java application to extract the title of a website.">
+    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-get-html-elements-by-css-class-name/">
+    <meta property="og:title" content="jsoup Get HTML elements by CSS class name in Java">
+    <meta property="og:description" content="In this post, we are going to learn how to use jsoup Java library to get all HTML elements by CSS class name.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-extract-website-title.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-get-html-elements-by-css-class-name.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-extract-website-title/">
-    <meta name="twitter:title" content="jsoup extract Website Title in Java">
-    <meta name="twitter:description" content="In this post, we show you how to use the jsoup library in a Java application to extract the title of a website.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-get-html-elements-by-css-class-name/">
+    <meta name="twitter:title" content="jsoup Get HTML elements by CSS class name in Java">
+    <meta name="twitter:description" content="In this post, we are going to learn how to use jsoup Java library to get all HTML elements by CSS class name.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-extract-website-title.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-get-html-elements-by-css-class-name.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -47,11 +47,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">jsoup extract Website Title in Java</h1></div>
+                    <div class="post-header"><h1 class="post-title">jsoup Get HTML elements by CSS class name in Java</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>In this post, we show you how to use the jsoup library in a Java application to extract the title of a website.</p>
+<p>In this post, we are going to learn how to use jsoup Java library to get all HTML elements by CSS class name.</p>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -78,33 +78,81 @@
 
 <p>To download the jsoup-1.13.1.jar file you can visit jsoup download page at <a href="https://jsoup.org/download" target="_blank">jsoup.org/download</a></p>
 
-<h4 id="how-to-use-jsoup-to-extract-title-of-website">How to use jsoup to extract title of website</h4>
+<h4 id="sample-html-file">Sample HTML File</h4>
 
-<p>The jsoup library provides <strong>Document.title()</strong> method to get the title of a HTML document.
-The following Java code example to show you how to get and parse the website content into a Document object. And using the title() method to get the title of a website.</p>
+<p>For example, we have the <strong>sample.html</strong> file as below.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article&#34;</span>&gt;Java Tutorials&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article&#34;</span>&gt;Spring Boot Tutorials&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;article&#34;</span>&gt;jsoup Tutorials&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<h4 id="using-document-getelementsbyclass-method">Using Document.getElementsByClass() method</h4>
+
+<p>In the following Java code example we use jsoup’s Document.getElementsByClass() method to get all elements by given class name.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
 
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetWebsiteTitle</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetElementByCssClassExample1</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-            String websiteUrl <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span><span style="color:#f92672">;</span>
+            File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample.html&#34;</span><span style="color:#f92672">);</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
 
-            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">connect</span><span style="color:#f92672">(</span>websiteUrl<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
+            Elements elements <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementsByClass</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;article&#34;</span><span style="color:#f92672">);</span>
 
-            String title <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">title</span><span style="color:#f92672">();</span>
-
-            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>title<span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Element element <span style="color:#f92672">:</span> elements<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>element<span style="color:#f92672">.</span><span style="color:#a6e22e">text</span><span style="color:#f92672">());</span>
+            <span style="color:#f92672">}</span>
         <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
             e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
         <span style="color:#f92672">}</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 Output:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Simple Solution</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Java Tutorials
+Spring Boot Tutorials
+jsoup Tutorials</code></pre></div></p>
+
+<h4 id="using-document-select-method">Using Document.select() method</h4>
+
+<p>The jsoup library also provides methods to get elements using CSS selector.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetElementByCssClassExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sample.html&#34;</span><span style="color:#f92672">);</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
+
+            Elements elements <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">select</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.article&#34;</span><span style="color:#f92672">);</span>
+
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Element element <span style="color:#f92672">:</span> elements<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>element<span style="color:#f92672">.</span><span style="color:#a6e22e">text</span><span style="color:#f92672">());</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Java Tutorials
+Spring Boot Tutorials
+jsoup Tutorials</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
@@ -122,6 +170,8 @@ Output:
 
 <p><a href="https://simplesolution.dev/java-jsoup-extract-custom-data-attributes-html5-element/">jsoup extract custom data attributes of HTML5 Element in Java</a></p>
 
+<p><a href="https://simplesolution.dev/java-jsoup-extract-website-title/">jsoup extract Website Title in Java</a></p>
+
 <p><a href="https://simplesolution.dev/java-jsoup-parse-html-document-from-string/">jsoup parse HTML Document from a Java String</a></p>
 
 <p><a href="https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/">jsoup parse HTML Document from an URL in Java</a></p>
@@ -131,8 +181,6 @@ Output:
 <p><a href="https://simplesolution.dev/java-pretty-printing-html-string-jsoup/">Pretty Printing HTML String in Java using jsoup</a></p>
 
 <p><a href="https://simplesolution.dev/java-jsoup-extract-all-links-of-web-page/">Extract All Links of a web page in Java using jsoup</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-get-html-elements-by-css-class-name/">jsoup Get HTML elements by CSS class name in Java</a></p>
 
                         
                         <div class="mt-5">
