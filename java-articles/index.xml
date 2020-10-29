@@ -6,10 +6,21 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Oct 2020 23:30:05 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 21:44:36 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pretty Printing HTML String in Java using jsoup</title>
+      <link>https://simplesolution.dev/java-pretty-printing-html-string-jsoup/</link>
+      <pubDate>Thu, 29 Oct 2020 21:44:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-pretty-printing-html-string-jsoup/</guid>
+      <description>In this post, we are going to use jsoup Java library to pretty print a HTML string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>jsoup extract Website Title in Java</title>
