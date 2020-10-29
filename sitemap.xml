@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-jsoup-extract-all-links-of-web-page/</loc>
+    <lastmod>2020-10-29T23:06:07+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-pretty-printing-html-string-jsoup/</loc>
     <lastmod>2020-10-29T21:44:36+07:00</lastmod>
   </url>
@@ -937,7 +942,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/html-parser/</loc>
-    <lastmod>2020-10-29T21:44:36+07:00</lastmod>
+    <lastmod>2020-10-29T23:06:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -954,14 +959,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-29T21:44:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-10-28T21:21:20+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-28T21:21:20+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2020-10-29T23:06:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -991,7 +996,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-29T21:44:36+07:00</lastmod>
+    <lastmod>2020-10-29T23:06:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1027,7 +1032,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/jsoup/</loc>
-    <lastmod>2020-10-29T21:44:36+07:00</lastmod>
+    <lastmod>2020-10-29T23:06:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1135,7 +1140,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-29T21:44:36+07:00</lastmod>
+    <lastmod>2020-10-29T23:06:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1152,13 +1157,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>

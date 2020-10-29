@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>jsoup extract JavaScript from HTML script element in Java</title>
-    <meta name="title" content="jsoup extract JavaScript from HTML script element in Java">
-    <meta name="description" content="In this post, we are going to explore how to use the jsoup library in a Java application to extract JavaScript content of a script element in the HTML document.">
+    <title>Extract All Links of a web page in Java using jsoup</title>
+    <meta name="title" content="Extract All Links of a web page in Java using jsoup">
+    <meta name="description" content="In this post, we show you how to extract all links from a web page using jsoup Java library.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/">
-    <meta property="og:title" content="jsoup extract JavaScript from HTML script element in Java">
-    <meta property="og:description" content="In this post, we are going to explore how to use the jsoup library in a Java application to extract JavaScript content of a script element in the HTML document.">
+    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-extract-all-links-of-web-page/">
+    <meta property="og:title" content="Extract All Links of a web page in Java using jsoup">
+    <meta property="og:description" content="In this post, we show you how to extract all links from a web page using jsoup Java library.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-extract-javascript-from-script-element.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-extract-all-links-of-web-page.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/">
-    <meta name="twitter:title" content="jsoup extract JavaScript from HTML script element in Java">
-    <meta name="twitter:description" content="In this post, we are going to explore how to use the jsoup library in a Java application to extract JavaScript content of a script element in the HTML document.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-extract-all-links-of-web-page/">
+    <meta name="twitter:title" content="Extract All Links of a web page in Java using jsoup">
+    <meta name="twitter:description" content="In this post, we show you how to extract all links from a web page using jsoup Java library.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-extract-javascript-from-script-element.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-extract-all-links-of-web-page.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -47,13 +47,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">jsoup extract JavaScript from HTML script element in Java</h1></div>
+                    <div class="post-header"><h1 class="post-title">Extract All Links of a web page in Java using jsoup</h1></div>
                     <div class="blog-detail-description">
                         
 
-<h4 id="introduction">Introduction</h4>
-
-<p>In this post, we are going to explore how to use the jsoup library in a Java application to extract JavaScript content of a script element in the HTML document.</p>
+<p>In this post, we show you how to extract all links from a web page using jsoup Java library.</p>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -80,50 +78,82 @@
 
 <p>To download the jsoup-1.13.1.jar file you can visit jsoup download page at <a href="https://jsoup.org/download" target="_blank">jsoup.org/download</a></p>
 
-<h4 id="sample-html-file">Sample HTML File</h4>
+<h4 id="how-to-get-the-url-of-a-link-element-in-jsoup">How to get the URL of a link Element in jsoup</h4>
 
-<p>For example, we have a <strong>sample.html</strong> file as below.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-&lt;<span style="color:#f92672">h1</span>&gt;Simple Solution&lt;/<span style="color:#f92672">h1</span>&gt;
-&lt;<span style="color:#f92672">script</span>&gt;
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hello</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello&#39;</span>;
-&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+<p>In jsoup library to get href’s value of anchor tag we can use Element.attr() method.</p>
 
-<h4 id="extract-javascript-from-script-element">Extract JavaScript from script element</h4>
+<ul>
+<li>Element.attr(&ldquo;href&rdquo;) method to get relative URL</li>
+<li>Element.attr(&ldquo;abs:href&rdquo;) method to get absolute URL</li>
+</ul>
 
-<p>To get the script content of a script tag we can use <strong>Element.data()</strong> method as following Java example program.</p>
-
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<p>Example 1 using <strong>Document.getElementsByTag()</strong> method to get links Elements
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
 
-<span style="color:#f92672">import</span> java.io.File<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExtractJavaScriptExample</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetAllLinkExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
         <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-            String fileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sample.html&#34;</span><span style="color:#f92672">;</span>
-            File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>fileName<span style="color:#f92672">);</span>
-            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;UTF-8&#34;</span><span style="color:#f92672">);</span>
-            Elements elements <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementsByTag</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;script&#34;</span><span style="color:#f92672">);</span>
-            Element scriptElement <span style="color:#f92672">=</span> elements<span style="color:#f92672">.</span><span style="color:#a6e22e">first</span><span style="color:#f92672">();</span>
+            String url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span><span style="color:#f92672">;</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">connect</span><span style="color:#f92672">(</span>url<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
 
-            String script <span style="color:#f92672">=</span> scriptElement<span style="color:#f92672">.</span><span style="color:#a6e22e">data</span><span style="color:#f92672">();</span>
+            Elements allLinks <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getElementsByTag</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;a&#34;</span><span style="color:#f92672">);</span>
 
-            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>script<span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Element link: allLinks<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                String relativeUrl <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;href&#34;</span><span style="color:#f92672">);</span>
+                String absoluteUrl <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;abs:href&#34;</span><span style="color:#f92672">);</span>
+
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Relative URL: &#34;</span> <span style="color:#f92672">+</span> relativeUrl<span style="color:#f92672">);</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Absolute URL: &#34;</span> <span style="color:#f92672">+</span> absoluteUrl<span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
         <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
             e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
         <span style="color:#f92672">}</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 Output:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    let hello = &#39;hello&#39;;</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Relative URL: /page/2/
+Absolute URL: https://simplesolution.dev/page/2/
+Relative URL: /page/3/
+Absolute URL: https://simplesolution.dev/page/3/</code></pre></div></p>
+
+<p>Example 2 using <strong>Document.select()</strong> method to get links Elements
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetAllLinkExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            String url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span><span style="color:#f92672">;</span>
+            Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">connect</span><span style="color:#f92672">(</span>url<span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
+
+            Elements allLinks <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">select</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;a[href]&#34;</span><span style="color:#f92672">);</span>
+
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Element link: allLinks<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                String relativeUrl <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;href&#34;</span><span style="color:#f92672">);</span>
+                String absoluteUrl <span style="color:#f92672">=</span> link<span style="color:#f92672">.</span><span style="color:#a6e22e">attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;abs:href&#34;</span><span style="color:#f92672">);</span>
+
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Relative URL: &#34;</span> <span style="color:#f92672">+</span> relativeUrl<span style="color:#f92672">);</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Absolute URL: &#34;</span> <span style="color:#f92672">+</span> absoluteUrl<span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Output:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Relative URL: /page/2/
+Absolute URL: https://simplesolution.dev/page/2/
+Relative URL: /page/3/
+Absolute URL: https://simplesolution.dev/page/3/</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
@@ -137,6 +167,8 @@ Output:
 
 <p><a href="https://simplesolution.dev/java-jsoup-extract-inner-outer-html/">jsoup extract Inner and Outer HTML of HTML Element in Java</a></p>
 
+<p><a href="https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/">jsoup extract JavaScript from HTML script element in Java</a></p>
+
 <p><a href="https://simplesolution.dev/java-jsoup-extract-custom-data-attributes-html5-element/">jsoup extract custom data attributes of HTML5 Element in Java</a></p>
 
 <p><a href="https://simplesolution.dev/java-jsoup-extract-website-title/">jsoup extract Website Title in Java</a></p>
@@ -149,14 +181,10 @@ Output:
 
 <p><a href="https://simplesolution.dev/java-pretty-printing-html-string-jsoup/">Pretty Printing HTML String in Java using jsoup</a></p>
 
-<p><a href="https://simplesolution.dev/java-jsoup-extract-all-links-of-web-page/">Extract All Links of a web page in Java using jsoup</a></p>
-
                         
                         <div class="mt-5">
                             <h6>Tags:</h6>
                             <div class="tagcloud">
-                                <a href="https://simplesolution.dev/tag/java">Java</a>
-                                
                                 <a href="https://simplesolution.dev/tag/jsoup">jsoup</a>
                                 
                                 <a href="https://simplesolution.dev/tag/html-parser">HTML Parser</a>
