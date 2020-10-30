@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2020 23:51:06 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2020 21:45:50 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jsoup Get HTML Element by ID in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-get-html-element-by-id/</link>
+      <pubDate>Fri, 30 Oct 2020 21:45:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-get-html-element-by-id/</guid>
+      <description>In this post, we will learn how to find an element in an HTML document by its ID in a Java application using jsoup library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>jsoup Get HTML elements by CSS class name in Java</title>
