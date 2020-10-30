@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-jsoup-get-html-elements-by-attribute-name/</loc>
+    <lastmod>2020-10-31T00:16:23+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-jsoup-get-html-elements-by-tag-name/</loc>
     <lastmod>2020-10-30T22:54:50+07:00</lastmod>
   </url>
@@ -957,7 +962,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/html-parser/</loc>
-    <lastmod>2020-10-30T22:54:50+07:00</lastmod>
+    <lastmod>2020-10-31T00:16:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -981,7 +986,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-10-30T22:54:50+07:00</lastmod>
+    <lastmod>2020-10-31T00:16:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1011,7 +1016,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-10-30T22:54:50+07:00</lastmod>
+    <lastmod>2020-10-31T00:16:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1047,7 +1052,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/jsoup/</loc>
-    <lastmod>2020-10-30T22:54:50+07:00</lastmod>
+    <lastmod>2020-10-31T00:16:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1155,7 +1160,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-10-30T22:54:50+07:00</lastmod>
+    <lastmod>2020-10-31T00:16:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
