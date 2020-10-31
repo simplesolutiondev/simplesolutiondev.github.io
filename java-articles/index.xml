@@ -6,10 +6,21 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2020 00:16:23 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 10:22:31 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jsoup Get HTML Elements by Attribute Value in Java</title>
+      <link>https://simplesolution.dev/java-jsoup-get-html-elements-by-attribute-value/</link>
+      <pubDate>Sat, 31 Oct 2020 10:22:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-get-html-elements-by-attribute-value/</guid>
+      <description>In this post, we explore the different methods provided by jsoup Java library that allow finding HTML elements by attribute value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>jsoup Get HTML Elements by Attribute Name in Java</title>
