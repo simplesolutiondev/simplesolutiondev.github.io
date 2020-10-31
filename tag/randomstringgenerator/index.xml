@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/java-generate-random-string-with-random-string-generator/</guid>
       <description>Introduction In this article we show how to generate random String values in Java using the RandomStringGenerator class of Apache Commons Text library. We provide multiple Java code examples with different settings to generate different kinds of data that may be useful for your daily programming scenarios.
-Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.</description>
     </item>
     
   </channel>

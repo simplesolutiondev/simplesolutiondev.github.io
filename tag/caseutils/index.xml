@@ -18,8 +18,8 @@
       
       <guid>https://simplesolution.dev/java-convert-words-in-a-string-into-camel-case/</guid>
       <description>Introduction In this article we are going to explore Apache Commons Text library by using CaseUtils utility class to convert a String of separated words into a camelCase String.
-Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.
-compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-text&amp;#39;, version: &amp;#39;1.9&amp;#39; Or add the following dependency XML tag to pom.xml file if you are using Maven build.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.
+compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-text&amp;#39;, version: &amp;#39;1.9&amp;#39; Or add the following dependency XML tag to pom.</description>
     </item>
     
   </channel>

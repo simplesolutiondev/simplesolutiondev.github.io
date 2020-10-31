@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/spring-boot-export-download-json-file/</guid>
       <description>Introduction In this tutorial we are going to learn how to implement a Spring Boot web application to export JSON and allow users to download as a JSON file via web browser. Via step by step guide we show you how to implement an example web application to export a list of customers to a JSON file.
-Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
     </item>
     
     <item>
@@ -72,8 +72,8 @@ This method to deserializes the JSON string into a Java object.
       
       <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</guid>
       <description>Java Code Examples for com.google.gson.Gson.fromJson()
-This method to deserializes a JSON string into a Java object of the specified class.    (adsbygoogle = window.adsbygoogle || []).push({}); 
-package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Gson gson = new Gson();List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = gson.fromJson(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+This method to deserializes a JSON string into a Java object of the specified class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Gson gson = new Gson();List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = gson.fromJson(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
     </item>
     
     <item>

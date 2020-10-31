@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/spring-boot-export-download-json-file/</guid>
       <description>Introduction In this tutorial we are going to learn how to implement a Spring Boot web application to export JSON and allow users to download as a JSON file via web browser. Via step by step guide we show you how to implement an example web application to export a list of customers to a JSON file.
-Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@ Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &
       
       <guid>https://simplesolution.dev/spring-boot-export-download-text-file/</guid>
       <description>Introduction In this tutorial we learn how to create a new text file and provide the user the web interface to download the text file in a Spring Boot web application. We will learn how to download a text file in Spring Boot with 5 different approaches to implement the feature.
-Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@ Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &
       
       <guid>https://simplesolution.dev/spring-boot-access-mysql-database-spring-data-jpa/</guid>
       <description>Introduction In this tutorial we walk you through step by step to create a Spring Boot application to access MySQL database using Spring Data JPA and MySQL Driver. Via step by step example we will create a Spring Boot project to save Customer entity into customer data table in MySQL database.
-Create New Spring Boot Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
     </item>
     
     <item>
@@ -48,8 +48,7 @@ Create New Spring Boot Project From Spring Tool Suite IDE select menu File &amp;
       
       <guid>https://simplesolution.dev/spring-boot-starter-data-redis-jedis-client/</guid>
       <description>Introduction In this post, we are going to learn how to use Redis as data persistence for our Spring Boot Application by using Spring Boot Starter Data Redis and Jedis Client.
-What is Redis? Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information you can visit Redis home page at redis.io
-Install and Start Redis Server on Ubuntu Follow these commands to set up and start Redis database server on your Ubuntu box.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  What is Redis? Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information you can visit Redis home page at redis.</description>
     </item>
     
     <item>
@@ -59,7 +58,7 @@ Install and Start Redis Server on Ubuntu Follow these commands to set up and sta
       
       <guid>https://simplesolution.dev/spring-boot-implement-aop-with-spring-boot-starter-aop/</guid>
       <description>Introduction In this article, we learn how to implement AOP (Aspect-Oriented Programming) in a Spring Boot Web application. Via step by step to creating the sample Spring Boot web application, we are going to explore how to use Spring Boot Starter AOP library which is the combination of Spring AOP and AspectJ libraries to easily implement AOP in Spring Boot application.
-Create New Spring Boot Web project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
     </item>
     
     <item>
@@ -78,7 +77,7 @@ Create New Spring Boot Web project From Spring Tool Suite IDE select menu File &
       
       <guid>https://simplesolution.dev/spring-boot-sftp-file-transfer-using-jsch-java-library/</guid>
       <description>Overview In this post we will show you how to transfer files from a local host to a remote server and download files from a remote server to local host via SFTP in Spring Boot applications. In order to transfer files via SFTP in Java applications we also explore the JSch library.
-Creating Spring Boot Project with Spring Tool Suite on Eclipse From Spring Tool Suite IDE select menu File -&amp;gt; New -&amp;gt; Spring Starter Project.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Creating Spring Boot Project with Spring Tool Suite on Eclipse From Spring Tool Suite IDE select menu File -&amp;gt; New -&amp;gt; Spring Starter Project.</description>
     </item>
     
     <item>
@@ -88,9 +87,8 @@ Creating Spring Boot Project with Spring Tool Suite on Eclipse From Spring Tool 
       
       <guid>https://simplesolution.dev/spring-boot-web-application-upload-file/</guid>
       <description>In this tutorial we’re going to learn how to implement file uploading function in a Spring Boot web application.
-Creating Spring Boot Project with Spring Tool Suite on Eclipse Open Spring Tool Suite and go to menu File -&amp;gt; New -&amp;gt; Spring Starter Project.
-On the New Spring Starter Project window, input your project information as below screenshot and click Next button.
-On the New Spring Starter Project Dependencies, choose Thymeleaf and Spring Web then click Finish.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Creating Spring Boot Project with Spring Tool Suite on Eclipse Open Spring Tool Suite and go to menu File -&amp;gt; New -&amp;gt; Spring Starter Project.
+On the New Spring Starter Project window, input your project information as below screenshot and click Next button.</description>
     </item>
     
     <item>
@@ -100,7 +98,7 @@ On the New Spring Starter Project Dependencies, choose Thymeleaf and Spring Web 
       
       <guid>https://simplesolution.dev/using-dozer-spring-boot-starter/</guid>
       <description>In this Spring Boot tutorial we will go through step by step guide to creating a Spring Boot console application and configure Dozer Spring Boot Starter library to using Dozer mapping in Spring Boot application.
-Creating Spring Boot Console Application Project Open your Spring Tool Suite IDE and choose menu File -&amp;gt; New -&amp;gt; Spring Starter Project
+   (adsbygoogle = window.adsbygoogle || []).push({});  Creating Spring Boot Console Application Project Open your Spring Tool Suite IDE and choose menu File -&amp;gt; New -&amp;gt; Spring Starter Project
 In New Spring Starter Project window input below informations for your project and click Next.</description>
     </item>
     
@@ -111,15 +109,12 @@ In New Spring Starter Project window input below informations for your project a
       
       <guid>https://simplesolution.dev/video-spring-boot-web-application-download-excel-file/</guid>
       <description>Step by step video how to implement Spring Boot web application with download Excel file using Apache POI libary.
-  
-The source code in this article can be found at: github.com/simplesolutiondev/DownloadExcelFile
+   (adsbygoogle = window.adsbygoogle || []).push({});    
+   (adsbygoogle = window.adsbygoogle || []).push({});  Download Source Code The source code in this article can be found at: github.com/simplesolutiondev/DownloadExcelFile
 or download at:
  Download Source Code
 Happy Coding 😊
-Related Articles Spring Boot Web Application Download Excel File
-Spring Boot Web Application Download CSV File
-Writing Excel File Using Apache POI Library in Java
-Creating Spring Boot Application with Spring Tool Suite</description>
+Related Articles Spring Boot Web Application Download Excel File</description>
     </item>
     
     <item>
@@ -129,8 +124,7 @@ Creating Spring Boot Application with Spring Tool Suite</description>
       
       <guid>https://simplesolution.dev/spring-boot-web-application-download-excel-file/</guid>
       <description>In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.
-Creating Spring Boot web project using Spring Tool Suite Open Spring Tool Suite on your machine and click on &amp;ldquo;Create a project&amp;hellip;&amp;rdquo; or choose menu File -&amp;gt; New -&amp;gt; Project
-On New Project window select Spring Starter Project and click Next</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Creating Spring Boot web project using Spring Tool Suite Open Spring Tool Suite on your machine and click on &amp;ldquo;Create a project&amp;hellip;&amp;rdquo; or choose menu File -&amp;gt; New -&amp;gt; Project</description>
     </item>
     
     <item>

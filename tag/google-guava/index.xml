@@ -19,7 +19,7 @@
       <guid>https://simplesolution.dev/java-code-examples/guava-java-join-string-with-joiner/</guid>
       <description>Java Code Examples for using com.google.common.base.Joiner class
    (adsbygoogle = window.adsbygoogle || []).push({});  Example for using Joiner that skip joining null values package simplesolution.dev;import com.google.common.base.Joiner;public class GuavaJoinerExample1 {public static void main(String... args) {final Joiner joiner = Joiner.on(&amp;#34; and &amp;#34;).skipNulls();String result = joiner.join(&amp;#34;Java&amp;#34;, &amp;#34;Python&amp;#34;, null, &amp;#34;Go&amp;#34;);System.out.println(result);}} Output
-Java and Python and Go  Example for using Joiner to join objects package simplesolution.</description>
+Java and Python and Go     (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
   </channel>

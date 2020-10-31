@@ -52,7 +52,7 @@ Apache Commons IO to get User Directory</description>
       
       <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-construct-file-from-directory-name-elements/</guid>
       <description>Java Code Examples for using getFile() method of org.apache.commons.io.FileUtils class
-   (adsbygoogle = window.adsbygoogle || []).push({});  Example 1 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsGetFileExample1 {public static void main(String... args) {// construct File from name elements File file = FileUtils.getFile(&amp;#34;D:&amp;#34;, &amp;#34;Data&amp;#34;, &amp;#34;file1.txt&amp;#34;);System.out.println(&amp;#34;Absolute file path: &amp;#34; + file.getAbsolutePath());System.out.println(&amp;#34;File exist: &amp;#34; + file.exists());}} Example 2 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example 1 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsGetFileExample1 {public static void main(String... args) {// construct File from name elements File file = FileUtils.getFile(&amp;#34;D:&amp;#34;, &amp;#34;Data&amp;#34;, &amp;#34;file1.txt&amp;#34;);System.out.println(&amp;#34;Absolute file path: &amp;#34; + file.getAbsolutePath());System.out.println(&amp;#34;File exist: &amp;#34; + file.exists());}}    (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
     <item>

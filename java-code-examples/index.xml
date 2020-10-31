@@ -108,7 +108,7 @@ Define this dependencies in pom.xml if you are using Maven build. &amp;lt;depend
       <guid>https://simplesolution.dev/java-code-examples/guava-java-join-string-with-joiner/</guid>
       <description>Java Code Examples for using com.google.common.base.Joiner class
    (adsbygoogle = window.adsbygoogle || []).push({});  Example for using Joiner that skip joining null values package simplesolution.dev;import com.google.common.base.Joiner;public class GuavaJoinerExample1 {public static void main(String... args) {final Joiner joiner = Joiner.on(&amp;#34; and &amp;#34;).skipNulls();String result = joiner.join(&amp;#34;Java&amp;#34;, &amp;#34;Python&amp;#34;, null, &amp;#34;Go&amp;#34;);System.out.println(result);}} Output
-Java and Python and Go  Example for using Joiner to join objects package simplesolution.</description>
+Java and Python and Go     (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
     <item>
@@ -152,7 +152,7 @@ Apache Commons IO to get User Directory</description>
       
       <guid>https://simplesolution.dev/java-code-examples/apache-commons-io-construct-file-from-directory-name-elements/</guid>
       <description>Java Code Examples for using getFile() method of org.apache.commons.io.FileUtils class
-   (adsbygoogle = window.adsbygoogle || []).push({});  Example 1 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsGetFileExample1 {public static void main(String... args) {// construct File from name elements File file = FileUtils.getFile(&amp;#34;D:&amp;#34;, &amp;#34;Data&amp;#34;, &amp;#34;file1.txt&amp;#34;);System.out.println(&amp;#34;Absolute file path: &amp;#34; + file.getAbsolutePath());System.out.println(&amp;#34;File exist: &amp;#34; + file.exists());}} Example 2 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Example 1 package simplesolution.dev;import org.apache.commons.io.FileUtils;import java.io.File;public class FileUtilsGetFileExample1 {public static void main(String... args) {// construct File from name elements File file = FileUtils.getFile(&amp;#34;D:&amp;#34;, &amp;#34;Data&amp;#34;, &amp;#34;file1.txt&amp;#34;);System.out.println(&amp;#34;Absolute file path: &amp;#34; + file.getAbsolutePath());System.out.println(&amp;#34;File exist: &amp;#34; + file.exists());}}    (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
     <item>
@@ -579,8 +579,8 @@ This method to deserializes the JSON string into a Java object.
       
       <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</guid>
       <description>Java Code Examples for com.google.gson.Gson.fromJson()
-This method to deserializes a JSON string into a Java object of the specified class.    (adsbygoogle = window.adsbygoogle || []).push({}); 
-package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Gson gson = new Gson();List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = gson.fromJson(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+This method to deserializes a JSON string into a Java object of the specified class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Gson gson = new Gson();List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = gson.fromJson(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
     </item>
     
     <item>

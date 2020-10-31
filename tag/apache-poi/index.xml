@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/apache-poi-hide-and-unhide-excel-row-using-row.setzeroheight/</guid>
       <description>Introduction In Excel there is an option to hide / unhide a row by select the row then righ click on it and choose Hide / Unhide option. In this tutorial we will learn how to use Apache POI library in Java to create an Excel file and hide its row. Then we try to unhide it by another Java application example.
-Apache POI Overview Apache POI is a open source library to work with Microsoft Office documents in Java.</description>
+   (adsbygoogle = window.adsbygoogle || []).</description>
     </item>
     
     <item>
@@ -29,8 +29,7 @@ Apache POI Overview Apache POI is a open source library to work with Microsoft O
       <guid>https://simplesolution.dev/apache-poi-creating-multiple-fonts-excel-cell-using-richtextstring/</guid>
       <description>Introduction In this tutorial we will learn how to create an Excel cell with multiple font styles using Apache POI library.
 We will implement different examples to create .xls and xlsx Excel file format using HSSFRichTextString and XSSFRichTextString class in Apache POI.
-Apache POI Overview Apache POI is a open source library to work with Microsoft Office documents in Java.
-You can get more information about the project at poi.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Apache POI Overview Apache POI is a open source library to work with Microsoft Office documents in Java.</description>
     </item>
     
     <item>
@@ -40,15 +39,12 @@ You can get more information about the project at poi.</description>
       
       <guid>https://simplesolution.dev/video-spring-boot-web-application-download-excel-file/</guid>
       <description>Step by step video how to implement Spring Boot web application with download Excel file using Apache POI libary.
-  
-The source code in this article can be found at: github.com/simplesolutiondev/DownloadExcelFile
+   (adsbygoogle = window.adsbygoogle || []).push({});    
+   (adsbygoogle = window.adsbygoogle || []).push({});  Download Source Code The source code in this article can be found at: github.com/simplesolutiondev/DownloadExcelFile
 or download at:
  Download Source Code
 Happy Coding 😊
-Related Articles Spring Boot Web Application Download Excel File
-Spring Boot Web Application Download CSV File
-Writing Excel File Using Apache POI Library in Java
-Creating Spring Boot Application with Spring Tool Suite</description>
+Related Articles Spring Boot Web Application Download Excel File</description>
     </item>
     
     <item>
@@ -58,8 +54,7 @@ Creating Spring Boot Application with Spring Tool Suite</description>
       
       <guid>https://simplesolution.dev/spring-boot-web-application-download-excel-file/</guid>
       <description>In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.
-Creating Spring Boot web project using Spring Tool Suite Open Spring Tool Suite on your machine and click on &amp;ldquo;Create a project&amp;hellip;&amp;rdquo; or choose menu File -&amp;gt; New -&amp;gt; Project
-On New Project window select Spring Starter Project and click Next</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Creating Spring Boot web project using Spring Tool Suite Open Spring Tool Suite on your machine and click on &amp;ldquo;Create a project&amp;hellip;&amp;rdquo; or choose menu File -&amp;gt; New -&amp;gt; Project</description>
     </item>
     
     <item>
