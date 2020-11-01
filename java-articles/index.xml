@@ -6,10 +6,20 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 13:48:35 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2020 23:28:25 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pretty Print XML String and XML File in Java using jsoup</title>
+      <link>https://simplesolution.dev/java-jsoup-pretty-print-xml-string-and-file/</link>
+      <pubDate>Sun, 01 Nov 2020 23:28:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-pretty-print-xml-string-and-file/</guid>
+      <description>In this tutorial, we are going to show how to use the jsoup library in a Java program to pretty sprint a XML String or XML file content. We provide different working Java programs to show different use cases on how to parse XML String or XML File into jsoup Document object in order to format the XML content for pretty printing.
+   (adsbygoogle = window.adsbygoogle || []).</description>
+    </item>
     
     <item>
       <title>jsoup Get All HTML Elements in Java</title>
