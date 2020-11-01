@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pretty Printing HTML String in Java using jsoup</title>
-    <meta name="title" content="Pretty Printing HTML String in Java using jsoup">
-    <meta name="description" content="In this post, we are going to use jsoup Java library to pretty print a HTML string.">
+    <title>jsoup Get All HTML Elements in Java</title>
+    <meta name="title" content="jsoup Get All HTML Elements in Java">
+    <meta name="description" content="In this post, we are going to learn how to use jsoup Java library to find all HTML elements in a HTML document.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-pretty-printing-html-string-jsoup/">
-    <meta property="og:title" content="Pretty Printing HTML String in Java using jsoup">
-    <meta property="og:description" content="In this post, we are going to use jsoup Java library to pretty print a HTML string.">
+    <meta property="og:url" content="https://simplesolution.dev/java-jsoup-get-all-html-elements/">
+    <meta property="og:title" content="jsoup Get All HTML Elements in Java">
+    <meta property="og:description" content="In this post, we are going to learn how to use jsoup Java library to find all HTML elements in a HTML document.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-pretty-printing-html-string.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-jsoup-get-all-html-elements.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-pretty-printing-html-string-jsoup/">
-    <meta name="twitter:title" content="Pretty Printing HTML String in Java using jsoup">
-    <meta name="twitter:description" content="In this post, we are going to use jsoup Java library to pretty print a HTML string.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-jsoup-get-all-html-elements/">
+    <meta name="twitter:title" content="jsoup Get All HTML Elements in Java">
+    <meta name="twitter:description" content="In this post, we are going to learn how to use jsoup Java library to find all HTML elements in a HTML document.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-pretty-printing-html-string.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-jsoup-get-all-html-elements.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -47,11 +47,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Pretty Printing HTML String in Java using jsoup</h1></div>
+                    <div class="post-header"><h1 class="post-title">jsoup Get All HTML Elements in Java</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>In this post, we are going to use jsoup Java library to pretty print a HTML string.</p>
+<p>In this post, we are going to learn how to use jsoup Java library to find all HTML elements in a HTML document.</p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -78,37 +78,6 @@
 
 <p>To download the jsoup-1.13.1.jar file you can visit jsoup download page at <a href="https://jsoup.org/download" target="_blank">jsoup.org/download</a></p>
 
-<h4 id="pretty-printing-html-string-in-java">Pretty Printing HTML String in Java</h4>
-
-<p>In order to parse a HTML String firstly we need to parse the HTML String into jsoup Document object.</p>
-
-<p>Then we can use different methods to get a pretty printing of the HTML String.</p>
-
-<p>Example 1 using <strong>Document.html()</strong> method.
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PrettyHtmlExample1</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        String htmlContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;!doctype html&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;h1&gt;Simple Solution&lt;/h1&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&#34;</span><span style="color:#f92672">;</span>
-        Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>htmlContent<span style="color:#f92672">);</span>
-
-        String prettyHtml <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">html</span><span style="color:#f92672">();</span>
-
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>prettyHtml<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-Output:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;!doctype html&gt;
-&lt;html&gt;
- &lt;head&gt;&lt;/head&gt;
- &lt;body&gt;
-  &lt;div&gt;
-   &lt;h1&gt;Simple Solution&lt;/h1&gt;
-  &lt;/div&gt;
- &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></p>
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -120,89 +89,98 @@ Output:
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<p>Example 2 using <strong>Document.outerHtml()</strong> method.
+<h4 id="using-document-getallelements-method">Using Document.getAllElements() method</h4>
+
+<p>Following Java code example using <strong>getAllElements()</strong> method in jsoup library to find all Elements from a HTML document.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PrettyHtmlExample2</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetAllElementsExample1</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        String htmlContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;!doctype html&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;h1&gt;Simple Solution&lt;/h1&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&#34;</span><span style="color:#f92672">;</span>
+        String htmlContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;!DOCTYPE html&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;html&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;body&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;h1&gt;Simple Solution&lt;/h1&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;/body&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;/html&gt;&#34;</span><span style="color:#f92672">;</span>
 
         Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>htmlContent<span style="color:#f92672">);</span>
 
-        String prettyHtml <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">outerHtml</span><span style="color:#f92672">();</span>
+        Elements elements <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">getAllElements</span><span style="color:#f92672">();</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>prettyHtml<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Element element <span style="color:#f92672">:</span> elements<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>element<span style="color:#f92672">.</span><span style="color:#a6e22e">tagName</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 Output:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;!doctype html&gt;
-&lt;html&gt;
- &lt;head&gt;&lt;/head&gt;
- &lt;body&gt;
-  &lt;div&gt;
-   &lt;h1&gt;Simple Solution&lt;/h1&gt;
-  &lt;/div&gt;
- &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#root
+html
+head
+body
+h1</code></pre></div></p>
 
-<p>Example 3 using <strong>Document.toString()</strong> method.
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="using-document-select-method">Using Document.select() method</h4>
+
+<p>We also can use <strong>select()</strong> method with CSS query &ldquo;*&rdquo; to find all elements.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.jsoup.Jsoup<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.jsoup.nodes.Document<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.nodes.Element<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.jsoup.select.Elements<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PrettyHtmlExample3</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetAllElementsExample2</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        String htmlContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;!doctype html&gt;&lt;html&gt;&lt;body&gt;&lt;div&gt;&lt;h1&gt;Simple Solution&lt;/h1&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&#34;</span><span style="color:#f92672">;</span>
+        String htmlContent <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&lt;!DOCTYPE html&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;html&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;body&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;h1&gt;Simple Solution&lt;/h1&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;/body&gt;&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;&lt;/html&gt;&#34;</span><span style="color:#f92672">;</span>
 
         Document document <span style="color:#f92672">=</span> Jsoup<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>htmlContent<span style="color:#f92672">);</span>
 
-        String prettyHtml <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+        Elements elements <span style="color:#f92672">=</span> document<span style="color:#f92672">.</span><span style="color:#a6e22e">select</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;*&#34;</span><span style="color:#f92672">);</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>prettyHtml<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Element element <span style="color:#f92672">:</span> elements<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>element<span style="color:#f92672">.</span><span style="color:#a6e22e">tagName</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 Output:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;!doctype html&gt;
-&lt;html&gt;
- &lt;head&gt;&lt;/head&gt;
- &lt;body&gt;
-  &lt;div&gt;
-   &lt;h1&gt;Simple Solution&lt;/h1&gt;
-  &lt;/div&gt;
- &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#root
+html
+head
+body
+h1</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
 <h5 id="related-articles">Related Articles</h5>
 
-<p><a href="https://simplesolution.dev/java-jsoup-extract-css-class-name-of-element/">jsoup extract CSS class name of HTML element in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-id-name-of-element/">jsoup extract ID and name of HTML element in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-text-attributes-of-element/">jsoup extract text and attributes of HTML element in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-inner-outer-html/">jsoup extract Inner and Outer HTML of HTML Element in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-javascript-from-script-element/">jsoup extract JavaScript from HTML script element in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-custom-data-attributes-html5-element/">jsoup extract custom data attributes of HTML5 Element in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-website-title/">jsoup extract Website Title in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-parse-html-document-from-string/">jsoup parse HTML Document from a Java String</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-uparse-html-document-from-url/">jsoup parse HTML Document from an URL in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-parse-html-document-from-file-inputstream/">jsoup parse HTML Document from a File and InputStream in Java</a></p>
-
-<p><a href="https://simplesolution.dev/java-jsoup-extract-all-links-of-web-page/">Extract All Links of a web page in Java using jsoup</a></p>
-
 <p><a href="https://simplesolution.dev/java-jsoup-get-html-elements-by-css-class-name/">jsoup Get HTML elements by CSS class name in Java</a></p>
 
-<p><a href="https://simplesolution.dev/java-jsoup-clean-html-string-get-safe-html-from-untrusted-html/">Clean HTML String to get Safe HTML from Untrusted HTML in Java using jsoup</a></p>
+<p><a href="https://simplesolution.dev/java-jsoup-get-html-element-by-id/">jsoup Get HTML Element by ID in Java</a></p>
 
-<p><a href="https://simplesolution.dev/java-jsoup-get-all-html-elements/">jsoup Get All HTML Elements in Java</a></p>
+<p><a href="https://simplesolution.dev/java-jsoup-get-html-elements-by-tag-name/">jsoup Get HTML Elements by Tag Name in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-get-html-elements-by-attribute-name/">jsoup Get HTML Elements by Attribute Name in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-get-html-elements-by-attribute-value/">jsoup Get HTML Elements by Attribute Value in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-jsoup-clean-html-string-get-safe-html-from-untrusted-html/">Clean HTML String to get Safe HTML from Untrusted HTML in Java using jsoup</a></p>
 
                         
                         <div class="mt-5">
