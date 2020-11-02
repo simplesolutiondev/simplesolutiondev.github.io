@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 23:28:25 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2020 01:43:18 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get Operating System Information in Java using OSHI library</title>
+      <link>https://simplesolution.dev/java-get-operating-system-information-oshi-library/</link>
+      <pubDate>Tue, 03 Nov 2020 01:43:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-operating-system-information-oshi-library/</guid>
+      <description>Introduction In this tutorial, we show you how to use OSHI library in a Java program to get operating system information. By different example Java programs we learn how to get information of operating system name, version, manufacturer, etc.
+   (adsbygoogle = window.adsbygoogle || []).push({});  What is OSHI? OSHI is a free JNA-based (native) Operating System and Hardware Information library for Java. It does not require the installation of any additional native libraries and aims to provide a cross-platform implementation to retrieve system information, such as OS version, processes, memory and CPU usage, disks and partitions, devices, sensors, etc.</description>
+    </item>
     
     <item>
       <title>Pretty Print XML String and XML File in Java using jsoup</title>
