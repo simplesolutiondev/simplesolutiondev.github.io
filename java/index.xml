@@ -6,10 +6,20 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2020 01:43:18 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2020 22:44:31 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get CPU Information in Java using OSHI library</title>
+      <link>https://simplesolution.dev/java-get-cpu-information-oshi-library/</link>
+      <pubDate>Tue, 03 Nov 2020 22:44:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-cpu-information-oshi-library/</guid>
+      <description>Introduction In this tutorial, we explore how to use the OSHI library in Java program to get CPU details information. Via the OSHI APIs we show how to get all information of a Central Processing Unit (CPU) such as name, number of cores, vendor, model, family, etc.
+   (adsbygoogle = window.adsbygoogle || []).push({});  What is OSHI? OSHI is a free JNA-based (native) Operating System and Hardware Information library for Java.</description>
+    </item>
     
     <item>
       <title>Get Operating System Information in Java using OSHI library</title>
