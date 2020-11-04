@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-get-physical-memory-ram-information-oshi-library/</loc>
+    <lastmod>2020-11-04T22:31:48+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-get-cpu-information-oshi-library/</loc>
     <lastmod>2020-11-03T22:44:31+07:00</lastmod>
   </url>
@@ -1015,14 +1020,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-28T21:21:20+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2020-11-04T22:31:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-11-03T22:44:31+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-10-28T21:21:20+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1052,7 +1057,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-11-03T22:44:31+07:00</lastmod>
+    <lastmod>2020-11-04T22:31:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1136,7 +1141,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/oshi/</loc>
-    <lastmod>2020-11-03T22:44:31+07:00</lastmod>
+    <lastmod>2020-11-04T22:31:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1167,6 +1172,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/qrcodereader/</loc>
     <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/ram/</loc>
+    <lastmod>2020-11-04T22:31:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1208,7 +1219,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-11-03T22:44:31+07:00</lastmod>
+    <lastmod>2020-11-04T22:31:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1225,13 +1236,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
   </url>
