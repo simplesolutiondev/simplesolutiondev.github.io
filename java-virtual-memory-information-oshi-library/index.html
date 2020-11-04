@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Get Virtual Memory Information in Java using OSHI library</title>
+    <meta name="title" content="Get Virtual Memory Information in Java using OSHI library">
+    <meta name="description" content="In this tutorial, we show how to get virtual memory information of the computer in Java application with OSHI library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-virtual-memory-information-oshi-library/">
+    <meta property="og:title" content="Get Virtual Memory Information in Java using OSHI library">
+    <meta property="og:description" content="In this tutorial, we show how to get virtual memory information of the computer in Java application with OSHI library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-virtual-memory-information-oshi-library.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-virtual-memory-information-oshi-library/">
+    <meta name="twitter:title" content="Get Virtual Memory Information in Java using OSHI library">
+    <meta name="twitter:description" content="In this tutorial, we show how to get virtual memory information of the computer in Java application with OSHI library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-virtual-memory-information-oshi-library.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Get Virtual Memory Information in Java using OSHI library</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this tutorial, we show how to get virtual memory information of the computer in Java application with OSHI library.</p>
+
+<h4 id="add-oshi-library-to-the-java-project">Add OSHI library to the Java project</h4>
+
+<p>To use OSHI Java library in the Gradle build project, add the following dependency into the build.gradle file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;com.github.oshi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;oshi-core&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;5.3.4&#39;</span></code></pre></div></p>
+
+<p>To use OSHI Java library in the Maven build project, add the following dependency into the pom.xml file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.github.oshi<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>oshi-core<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>5.3.4<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div></p>
+
+<p>For more information about the OSHI library you can visit the library repository at <a href="https://github.com/oshi/oshi" target="_blank">github.com/oshi/oshi</a></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-get-virtual-memory-with-oshi-library">How to get Virtual Memory with OSHI library</h4>
+
+<p>To use the OSHI library we need to create an object of <strong>SystemInfo</strong> class as it provides different getters methods to access computer information.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">SystemInfo systemInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SystemInfo<span style="color:#f92672">();</span></code></pre></div></p>
+
+<p>Then we get the <strong>HardwareAbstractionLayer</strong> object via getHardware() method.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">HardwareAbstractionLayer hardware <span style="color:#f92672">=</span> systemInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getHardware</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<p>To access the physical or virtual memory we need to get a <strong>GlobalMemory</strong> object first.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">GlobalMemory globalMemory <span style="color:#f92672">=</span> hardware<span style="color:#f92672">.</span><span style="color:#a6e22e">getMemory</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<p>Then access <strong>VirtualMemory</strong> object via getVirtualMemory() method.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">VirtualMemory virtualMemory <span style="color:#f92672">=</span> globalMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getVirtualMemory</span><span style="color:#f92672">();</span></code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="example-1-get-summary-information-of-virtual-memory-swap-file">Example 1 get summary information of virtual memory (swap file)</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> oshi.SystemInfo<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.hardware.GlobalMemory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.hardware.HardwareAbstractionLayer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.hardware.VirtualMemory<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetVirtualMemory1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        SystemInfo systemInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SystemInfo<span style="color:#f92672">();</span>
+        HardwareAbstractionLayer hardware <span style="color:#f92672">=</span> systemInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getHardware</span><span style="color:#f92672">();</span>
+        GlobalMemory globalMemory <span style="color:#f92672">=</span> hardware<span style="color:#f92672">.</span><span style="color:#a6e22e">getMemory</span><span style="color:#f92672">();</span>
+        VirtualMemory virtualMemory <span style="color:#f92672">=</span> globalMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getVirtualMemory</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Swap Used/Avail: 272.5 MiB/11.3 GiB, Virtual Memory In Use/Max=14.8 GiB/27.1 GiB</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="example-2-get-detail-information-of-virtual-memory">Example 2 get detail information of virtual memory</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> oshi.SystemInfo<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.hardware.GlobalMemory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.hardware.HardwareAbstractionLayer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.hardware.VirtualMemory<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> oshi.util.FormatUtil<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetVirtualMemory2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        SystemInfo systemInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SystemInfo<span style="color:#f92672">();</span>
+        HardwareAbstractionLayer hardware <span style="color:#f92672">=</span> systemInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getHardware</span><span style="color:#f92672">();</span>
+        GlobalMemory globalMemory <span style="color:#f92672">=</span> hardware<span style="color:#f92672">.</span><span style="color:#a6e22e">getMemory</span><span style="color:#f92672">();</span>
+        VirtualMemory virtualMemory <span style="color:#f92672">=</span> globalMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getVirtualMemory</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Max virtual memory: &#34;</span> <span style="color:#f92672">+</span> FormatUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">formatBytes</span><span style="color:#f92672">(</span>virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getVirtualMax</span><span style="color:#f92672">()));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Virtual memory used: &#34;</span> <span style="color:#f92672">+</span> FormatUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">formatBytes</span><span style="color:#f92672">(</span>virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getVirtualInUse</span><span style="color:#f92672">()));</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Total swap: &#34;</span> <span style="color:#f92672">+</span> FormatUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">formatBytes</span><span style="color:#f92672">(</span>virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getSwapTotal</span><span style="color:#f92672">()));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Swap used: &#34;</span> <span style="color:#f92672">+</span>FormatUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">formatBytes</span><span style="color:#f92672">(</span>virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getSwapUsed</span><span style="color:#f92672">()));</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Pages swapped in: &#34;</span> <span style="color:#f92672">+</span> virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getSwapPagesIn</span><span style="color:#f92672">());</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Pages swapped out: &#34;</span> <span style="color:#f92672">+</span> virtualMemory<span style="color:#f92672">.</span><span style="color:#a6e22e">getSwapPagesOut</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Max virtual memory: 27.1 GiB
+Virtual memory used: 14.8 GiB
+Total swap: 11.3 GiB
+Swap used: 272.5 MiB
+Pages swapped in: 41686008
+Pages swapped out: 9398116</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-get-physical-memory-ram-information-oshi-library/">Get Physical Memory or RAM Information in Java using OSHI library</a></p>
+
+<p><a href="https://simplesolution.dev/java-get-operating-system-information-oshi-library/">Get Operating System Information in Java using OSHI library</a></p>
+
+<p><a href="https://simplesolution.dev/java-get-cpu-information-oshi-library/">Get CPU Information in Java using OSHI library</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/oshi">OSHI</a>
+                                
+                                <a href="https://simplesolution.dev/tag/memory">Memory</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
