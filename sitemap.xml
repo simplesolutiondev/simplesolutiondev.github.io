@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-get-file-system-information-oshi-library/</loc>
+    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-virtual-memory-information-oshi-library/</loc>
     <lastmod>2020-11-04T23:32:58+07:00</lastmod>
   </url>
@@ -977,6 +982,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/file-system/</loc>
+    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/file-transfer/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
@@ -1032,7 +1043,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-11-04T23:32:58+07:00</lastmod>
+    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1062,7 +1073,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-11-04T23:32:58+07:00</lastmod>
+    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1152,7 +1163,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/oshi/</loc>
-    <lastmod>2020-11-04T23:32:58+07:00</lastmod>
+    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1230,7 +1241,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-11-04T23:32:58+07:00</lastmod>
+    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   

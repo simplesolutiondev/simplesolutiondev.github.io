@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2020 23:32:58 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2020 21:43:31 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get File System Information in Java using OSHI library</title>
+      <link>https://simplesolution.dev/java-get-file-system-information-oshi-library/</link>
+      <pubDate>Thu, 05 Nov 2020 21:43:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-file-system-information-oshi-library/</guid>
+      <description>Introduction In this tutorial, we learn how to access file system information in Java applications with OSHI library. By different Java examples we show how to get information on file storage of a computer system.
+Add OSHI library to the Java project To use OSHI Java library in the Gradle build project, add the following dependency into the build.gradle file. compile group: &amp;#39;com.github.oshi&amp;#39;, name: &amp;#39;oshi-core&amp;#39;, version: &amp;#39;5.3.4&amp;#39;
+To use OSHI Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Get Virtual Memory Information in Java using OSHI library</title>
