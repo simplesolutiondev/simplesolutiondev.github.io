@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Convert on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/convert/</link>
+    <description>Recent content in Convert on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Nov 2020 21:58:08 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert HTML into Plain Text in Java using jsoup</title>
+      <link>https://simplesolution.dev/java-convert-html-into-plain-text-using-jsoup/</link>
+      <pubDate>Mon, 30 Nov 2020 21:58:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-html-into-plain-text-using-jsoup/</guid>
+      <description>Introduction In this tutorial, we are going to show how to use jsoup library to convert HTML content into plain text without HTML tag in a Java application.
+Add jsoup library to your Java project To use jsoup Java library in the Gradle build project, add the following dependency into the build.gradle file. compile &amp;#39;org.jsoup:jsoup:1.13.1&amp;#39;
+To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>
