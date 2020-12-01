@@ -6,10 +6,20 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 21:58:08 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 23:15:18 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert Array to List in Java</title>
+      <link>https://simplesolution.dev/java-convert-array-to-list/</link>
+      <pubDate>Tue, 01 Dec 2020 23:15:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-array-to-list/</guid>
+      <description>In this tutorial, we are going to show how to convert an array in Java into a List object. We show different example programs that use core Java APIs to convert arrays in different Java versions.
+Using Arrays.asList() method In this Java example program, we use the method Arrays.asList() to create an ArrayList object from an array. import java.util.Arrays; import java.util.List; public class ArrayToListExample1 { public static void main(String[] args) { String[] inputArray = {&amp;#34;Simple&amp;#34;, &amp;#34;Solution&amp;#34;, &amp;#34;Java&amp;#34;, &amp;#34;Array&amp;#34;}; List&amp;lt;String&amp;gt; list = Arrays.</description>
+    </item>
     
     <item>
       <title>Convert HTML into Plain Text in Java using jsoup</title>
