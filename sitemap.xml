@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-create-temporary-file/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-array-to-list/</loc>
     <lastmod>2020-12-01T23:15:18+07:00</lastmod>
   </url>
@@ -999,7 +1004,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/file/</loc>
-    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1059,13 +1064,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-10-28T21:21:20+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-12-01T23:15:18+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1077,13 +1082,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java-io/</loc>
-    <lastmod>2020-10-24T20:13:34+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/java-nio/</loc>
-    <lastmod>2020-10-24T20:13:34+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1095,7 +1100,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-12-01T23:15:18+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1263,7 +1268,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-12-01T23:15:18+07:00</lastmod>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   

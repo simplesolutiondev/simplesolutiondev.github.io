@@ -6,10 +6,20 @@
     <description>Recent content in Java Nio on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2020 20:13:34 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 02 Dec 2020 23:38:36 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java-nio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create Temporary File in Java</title>
+      <link>https://simplesolution.dev/java-create-temporary-file/</link>
+      <pubDate>Wed, 02 Dec 2020 23:38:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-create-temporary-file/</guid>
+      <description>In this tutorial, we are going to learn how to create a new temporary file in a Java program by using core Java API.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Java NIO Files.createTempFile() method to create temporary file The following Java example program to create a new temporary file in the default temporary directory in your machine. In order to create a new temp file you need to provide file name prefix and file extension (or file suffix), the method creates a new file with a unique name in your temporary directory.</description>
+    </item>
     
     <item>
       <title>Read Text Files in Java</title>
