@@ -55,7 +55,7 @@
                     <div class="blog-detail-description">
                         
 
-<p>In this article we will go through step by step to create Spring Boot web application and implement downloading Excel file feature. I use Spring Tool Suite 4 for creating the application and code editor for demo.</p>
+<p>In this article we will go through step by step guide to create Spring Boot web application and implement downloading Excel file feature. We will use Spring Tool Suite 4 for creating the application and code editor for demo application.</p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -94,6 +94,8 @@
 
 <p><img src="/images/spring-boot-web-application-download-excel-file-new-project-structure.png" alt="New Spring Starter Project Finish" class="img-fluid"></p>
 
+<p>You can also creating new Spring Boot project using Spring initializr online tool at <a href="https://start.spring.io/" target="_blank">start.spring.io</a></p>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -107,12 +109,12 @@
 
 <h4 id="set-up-dependencies-for-gradle-or-maven-project">Set up dependencies for gradle or maven project</h4>
 
-<p>Open build.gradle file on your project and add below dependencies
+<p>If you are using Gradle build, add the following dependencies into the build.gradle file.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span>
 compile group: <span style="color:#e6db74">&#39;org.apache.poi&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;poi-ooxml&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;4.0.1&#39;</span>
 compile group: <span style="color:#e6db74">&#39;commons-io&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;commons-io&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.6&#39;</span></code></pre></div></p>
 
-<p>If you are using maven then adding below xml
+<p>If you are using Maven build, add the following dependencies into the pom.xml file.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
     <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.poi<span style="color:#f92672">&lt;/groupId&gt;</span>
     <span style="color:#f92672">&lt;artifactId&gt;</span>poi<span style="color:#f92672">&lt;/artifactId&gt;</span>
@@ -131,8 +133,9 @@ compile group: <span style="color:#e6db74">&#39;commons-io&#39;</span><span styl
 
 <h4 id="creating-data-model-class">Creating data model class</h4>
 
-<p>In this example project we implement downloading function to download a list of customer.
-Firstly creating Customer class as below.
+<p>In this example project, we implement downloading function to download a list of customer.</p>
+
+<p>Firstly creating Customer class as below.
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> simplesolution.dev.model<span style="color:#f92672">;</span>
 
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Customer</span> <span style="color:#f92672">{</span>
@@ -347,8 +350,9 @@ Firstly creating Customer class as below.
 
 <p><img src="/images/spring-boot-web-application-download-excel-file-web-page.png" alt="Download Excel File web page" class="img-fluid"></p>
 
-<p>Click on Download button to download customers.xlsx
-Open file on Excel application you will get the result as screenshot below.</p>
+<p>Click on Download button to download customers.xlsx</p>
+
+<p>Open file on Excel application you will get the result as screenshot below.</p>
 
 <p><img src="/images/spring-boot-web-application-download-excel-file-excel-open.png" alt="Open by Excel application" class="img-fluid"></p>
 
@@ -367,6 +371,11 @@ Open file on Excel application you will get the result as screenshot below.</p>
 
 <p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/DownloadExcelFile" target="_blank">github.com/simplesolutiondev/DownloadExcelFile</a></p>
 
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/DownloadExcelFile.git
+</code></pre>
+
 <p>or download at:</p>
 
 <p><a href="https://github.com/simplesolutiondev/DownloadExcelFile/archive/0.0.1.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
@@ -375,9 +384,15 @@ Open file on Excel application you will get the result as screenshot below.</p>
 
 <h5 id="related-articles">Related Articles</h5>
 
+<p><a href="https://simplesolution.dev/spring-boot-download-excel-file-export-from-mysql/">Spring Boot Download Excel File Export from MySQL Database</a></p>
+
 <p><a href="https://simplesolution.dev/spring-boot-application-download-csv/">Spring Boot Web Application Download CSV File</a></p>
 
 <p><a href="https://simplesolution.dev/writing-excel-file-using-apache-poi-library-in-java/">Writing Excel File Using Apache POI Library in Java</a></p>
+
+<p><a href="https://simplesolution.dev/spring-boot-export-download-text-file/">Spring Boot Web Application Export and Download Text File</a></p>
+
+<p><a href="https://simplesolution.dev/spring-boot-export-download-json-file/">Spring Boot Web Application Export and Download JSON File</a></p>
 
 <p><a href="https://simplesolution.dev/spring-boot-application-spring-tool-suite/">Creating Spring Boot Application with Spring Tool Suite</a></p>
 
@@ -392,6 +407,8 @@ Open file on Excel application you will get the result as screenshot below.</p>
                                 <a href="https://simplesolution.dev/tag/apache-poi">Apache POI</a>
                                 
                                 <a href="https://simplesolution.dev/tag/excel">Excel</a>
+                                
+                                <a href="https://simplesolution.dev/tag/download">Download</a>
                                 
                             </div>
                         </div>
