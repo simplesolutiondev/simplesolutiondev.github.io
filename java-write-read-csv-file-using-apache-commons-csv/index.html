@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Write and Read CSV File in Java using Apache Commons CSV</title>
+    <meta name="title" content="Write and Read CSV File in Java using Apache Commons CSV">
+    <meta name="description" content="In this tutorial, we are going to learn how to write and read CSV files in Java applications using Apache Commons CSV library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-write-read-csv-file-using-apache-commons-csv/">
+    <meta property="og:title" content="Write and Read CSV File in Java using Apache Commons CSV">
+    <meta property="og:description" content="In this tutorial, we are going to learn how to write and read CSV files in Java applications using Apache Commons CSV library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-write-read-csv-file-using-apache-commons-csv.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-write-read-csv-file-using-apache-commons-csv/">
+    <meta name="twitter:title" content="Write and Read CSV File in Java using Apache Commons CSV">
+    <meta name="twitter:description" content="In this tutorial, we are going to learn how to write and read CSV files in Java applications using Apache Commons CSV library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-write-read-csv-file-using-apache-commons-csv.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Write and Read CSV File in Java using Apache Commons CSV</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this tutorial, we are going to learn how to write and read CSV files in Java applications using Apache Commons CSV library.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-apache-commons-csv-library-to-your-java-project">Add Apache Commons CSV library to your Java project</h4>
+
+<p>To use Apache Commons CSV Java library in the Gradle build project, add the following dependency into the build.gradle file.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;org.apache.commons&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;commons-csv&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;1.8&#39;</span></code></pre></div></p>
+
+<p>To use Apache Commons CSV Java library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.apache.commons<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>commons-csv<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.8<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="write-csv-file-using-csvprinter-class">Write CSV File using CSVPrinter class</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.apache.commons.csv.CSVFormat<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.commons.csv.CSVPrinter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileWriter<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WriteCsvFileExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String csvFileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\\SimpleSolution\\Customers.csv&#34;</span><span style="color:#f92672">;</span>
+        String<span style="color:#f92672">[]</span> headers <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span> <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;First Name&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Last Name&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Email&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Phone Number&#34;</span><span style="color:#f92672">};</span>
+
+        CSVFormat csvFormat <span style="color:#f92672">=</span> CSVFormat<span style="color:#f92672">.</span><span style="color:#a6e22e">DEFAULT</span><span style="color:#f92672">.</span><span style="color:#a6e22e">withHeader</span><span style="color:#f92672">(</span>headers<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>FileWriter fileWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileWriter<span style="color:#f92672">(</span>csvFileName<span style="color:#f92672">);</span>
+            CSVPrinter csvPrinter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CSVPrinter<span style="color:#f92672">(</span>fileWriter<span style="color:#f92672">,</span> csvFormat<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+            csvPrinter<span style="color:#f92672">.</span><span style="color:#a6e22e">printRecord</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;John&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Doe&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;john@simplesolution.dev&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;123-456-789&#34;</span><span style="color:#f92672">);</span>
+            csvPrinter<span style="color:#f92672">.</span><span style="color:#a6e22e">printRecord</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Emerson&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Wilks&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;emerson@simplesolution.dev&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;123-456-788&#34;</span><span style="color:#f92672">);</span>
+            csvPrinter<span style="color:#f92672">.</span><span style="color:#a6e22e">printRecord</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Wade&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Savage&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;wade@simplesolution.dev&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;123-456-787&#34;</span><span style="color:#f92672">);</span>
+            csvPrinter<span style="color:#f92672">.</span><span style="color:#a6e22e">printRecord</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Star&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Lott&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;star@simplesolution.dev&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;123-456-786&#34;</span><span style="color:#f92672">);</span>
+            csvPrinter<span style="color:#f92672">.</span><span style="color:#a6e22e">printRecord</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Claudia&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;James&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;claudia@simplesolution.dev&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;123-456-785&#34;</span><span style="color:#f92672">);</span>
+
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+Run the application above, you will receive a new CSV file located in D:\SimpleSolution\Customers.csv with data as below screenshot.</p>
+
+<p><img src="/images/java-write-read-csv-file-using-apache-commons-csv-01.png" alt="Write and Read CSV File in Java using Apache Commons CSV" class="img-fluid"></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="read-csv-file-using-csvparser-class">Read CSV File using CSVParser class</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.apache.commons.csv.CSVFormat<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.commons.csv.CSVParser<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.commons.csv.CSVRecord<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileReader<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ReadCsvFileExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String csvFileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\\SimpleSolution\\Customers.csv&#34;</span><span style="color:#f92672">;</span>
+
+        CSVFormat csvFormat <span style="color:#f92672">=</span> CSVFormat<span style="color:#f92672">.</span><span style="color:#a6e22e">DEFAULT</span><span style="color:#f92672">.</span><span style="color:#a6e22e">withFirstRecordAsHeader</span><span style="color:#f92672">().</span><span style="color:#a6e22e">withIgnoreHeaderCase</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>FileReader fileReader <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileReader<span style="color:#f92672">(</span>csvFileName<span style="color:#f92672">);</span>
+            CSVParser csvParser <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CSVParser<span style="color:#f92672">(</span>fileReader<span style="color:#f92672">,</span> csvFormat<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+
+            <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>CSVRecord csvRecord <span style="color:#f92672">:</span> csvParser<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                String firstName <span style="color:#f92672">=</span> csvRecord<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;First Name&#34;</span><span style="color:#f92672">);</span>
+                String lastName <span style="color:#f92672">=</span> csvRecord<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Last Name&#34;</span><span style="color:#f92672">);</span>
+                String email <span style="color:#f92672">=</span> csvRecord<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Email&#34;</span><span style="color:#f92672">);</span>
+                String phoneNumber <span style="color:#f92672">=</span> csvRecord<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Phone Number&#34;</span><span style="color:#f92672">);</span>
+
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>firstName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span> <span style="color:#f92672">+</span> lastName <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span> <span style="color:#f92672">+</span> email <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span> <span style="color:#f92672">+</span> phoneNumber<span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">John,Doe,john@simplesolution.dev,123-456-789
+Emerson,Wilks,emerson@simplesolution.dev,123-456-788
+Wade,Savage,wade@simplesolution.dev,123-456-787
+Star,Lott,star@simplesolution.dev,123-456-786
+Claudia,James,claudia@simplesolution.dev,123-456-785</code></pre></div></p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/top-3-libraries-for-writing-and-reading-csv-file-in-java/">Top 3 Libraries for Writing and Reading CSV File in Java</a></p>
+
+<p><a href="https://simplesolution.dev/spring-boot-application-download-csv/">Spring Boot Web Application Download CSV File</a></p>
+
+<p><a href="https://simplesolution.dev/java-escape-unescape-string-for-csv-column-data/">Escape or Unescape String for CSV column data in Java using Apache Commons Text</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/apache-commons">Apache Commons</a>
+                                
+                                <a href="https://simplesolution.dev/tag/apache-commons-csv">Apache Commons CSV</a>
+                                
+                                <a href="https://simplesolution.dev/tag/csvprinter">CSVPrinter</a>
+                                
+                                <a href="https://simplesolution.dev/tag/csvparser">CSVParser</a>
+                                
+                                <a href="https://simplesolution.dev/tag/csvformat">CSVFormat</a>
+                                
+                                <a href="https://simplesolution.dev/tag/csv">CSV</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
