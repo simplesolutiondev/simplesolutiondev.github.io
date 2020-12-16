@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-read-and-parse-csv-file-from-url-using-apache-commons-csv/</loc>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-read-and-parse-csv-string-using-apache-commons-csv/</loc>
     <lastmod>2020-12-16T21:01:18+07:00</lastmod>
   </url>
@@ -870,13 +875,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-csv/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -983,19 +988,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/csv/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/csvformat/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/csvparser/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1007,7 +1012,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/csvrecord/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1109,7 +1114,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1139,7 +1144,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1307,7 +1312,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1392,6 +1397,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/upload/</loc>
     <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/url/</loc>
+    <lastmod>2020-12-16T22:41:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
