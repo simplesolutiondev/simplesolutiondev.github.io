@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-read-and-parse-csv-string-using-apache-commons-csv/</loc>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-write-read-csv-file-using-apache-commons-csv/</loc>
     <lastmod>2020-12-16T00:06:40+07:00</lastmod>
   </url>
@@ -865,13 +870,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-csv/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -978,25 +983,31 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/csv/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/csvformat/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/csvparser/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/csvprinter/</loc>
     <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/csvrecord/</loc>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1091,14 +1102,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1128,7 +1139,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1296,7 +1307,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2020-12-16T00:06:40+07:00</lastmod>
+    <lastmod>2020-12-16T21:01:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1313,13 +1324,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2020-12-10T00:29:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2020-12-10T00:29:48+07:00</lastmod>
     <priority>0</priority>
   </url>
