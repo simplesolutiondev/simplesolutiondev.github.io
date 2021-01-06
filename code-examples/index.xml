@@ -6,10 +6,41 @@
     <description>Recent content in Code-examples on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 23:24:16 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jan 2021 00:29:15 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/code-examples/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>org.springframework.core.annotation.Order Java Code Examples</title>
+      <link>https://simplesolution.dev/org.springframework.core.annotation.order/</link>
+      <pubDate>Thu, 07 Jan 2021 00:29:15 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.springframework.core.annotation.order/</guid>
+      <description>How to use @Order annotation org.springframework.core.annotation.Order
+   (adsbygoogle = window.adsbygoogle || []).push({});  User @Order annotation to change the run order of beans that implement CommandLineRunner interface FirstRunner.java package dev.simplesolution.console; import org.slf4j.Logger; import org.slf4j.LoggerFactory; import org.springframework.boot.CommandLineRunner; import org.springframework.core.annotation.Order; import org.springframework.stereotype.Component; @Component @Order(2) public class FirstRunner implements CommandLineRunner { private Logger logger = LoggerFactory.getLogger(FirstRunner.class); @Override public void run(String... args) throws Exception { logger.info(&amp;#34;Message from First Runner.&amp;#34;); } }</description>
+    </item>
+    
+    <item>
+      <title>org.springframework.boot.CommandLineRunner Java Code Examples</title>
+      <link>https://simplesolution.dev/org.springframework.boot.commandlinerunner/</link>
+      <pubDate>Thu, 07 Jan 2021 00:17:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.springframework.boot.commandlinerunner/</guid>
+      <description>How to use org.springframework.boot.CommandLineRunner class in Spring Boot.
+   (adsbygoogle = window.adsbygoogle || []).push({});   org.springframework.boot.CommandLineRunner.run()  </description>
+    </item>
+    
+    <item>
+      <title>org.springframework.boot.CommandLineRunner.run() Java Code Examples</title>
+      <link>https://simplesolution.dev/org.springframework.boot.commandlinerunner.run/</link>
+      <pubDate>Thu, 07 Jan 2021 00:16:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/org.springframework.boot.commandlinerunner.run/</guid>
+      <description>How to use run() method in org.springframework.boot.CommandLineRunner interface.
+More Java code examples for org.springframework.boot.CommandLineRunner Spring Boot.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to use CommandLineRunner interface to run the bean in console application in Spring Boot FirstRunner.java package dev.simplesolution.console; import org.slf4j.Logger; import org.slf4j.LoggerFactory; import org.springframework.boot.CommandLineRunner; import org.springframework.stereotype.Component; @Component public class FirstRunner implements CommandLineRunner { private Logger logger = LoggerFactory.getLogger(FirstRunner.class); @Override public void run(String... args) throws Exception { logger.</description>
+    </item>
     
     <item>
       <title>java.io.File Java Code Examples</title>

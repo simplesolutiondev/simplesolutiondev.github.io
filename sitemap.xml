@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/org.springframework.core.annotation.order/</loc>
+    <lastmod>2021-01-07T00:29:15+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/org.springframework.boot.commandlinerunner/</loc>
+    <lastmod>2021-01-07T00:17:45+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/org.springframework.boot.commandlinerunner.run/</loc>
+    <lastmod>2021-01-07T00:16:45+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/spring-boot-console-application-commandlinerunner/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
   </url>
@@ -974,7 +989,7 @@
   
   <url>
     <loc>https://simplesolution.dev/code-examples/</loc>
-    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
+    <lastmod>2021-01-07T00:29:15+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1142,7 +1157,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-code-examples/</loc>
-    <lastmod>2020-10-18T23:24:16+07:00</lastmod>
+    <lastmod>2021-01-07T00:29:15+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1340,7 +1355,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-06T22:57:36+07:00</lastmod>
+    <lastmod>2021-01-07T00:29:15+07:00</lastmod>
     <priority>0</priority>
   </url>
   
