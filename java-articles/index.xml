@@ -6,10 +6,22 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Dec 2020 00:06:32 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jan 2021 22:57:36 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Console Application using CommandLineRunner</title>
+      <link>https://simplesolution.dev/spring-boot-console-application-commandlinerunner/</link>
+      <pubDate>Wed, 06 Jan 2021 22:57:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-console-application-commandlinerunner/</guid>
+      <description>In this Spring Boot tutorial, we are going to learn how to create a console application with Spring Boot using CommandLineRunner interface.
+Create New Spring Boot Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
+On the New Spring Starter Project popup input new project information as below and click Next.
+ Name: spring-boot-console-application Group: dev.simplesolution Artifact: spring-boot-console-application Version: 1.0.0 Description: Spring Boot Console Application Package: dev.</description>
+    </item>
     
     <item>
       <title>Read and Parse CSV File in Java using Apache Commons CSV</title>

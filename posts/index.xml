@@ -65,7 +65,8 @@ Maven Build Dependencies Define this dependencies in pom.xml if you are using ma
       
       <guid>https://simplesolution.dev/gradle-creating-executable-jar-file/</guid>
       <description>In this toturial we will show you how to configure Gradle build script to build the JAR file that can be executed by java command. In this article we just build the simple application without dependencies.
-   (adsbygoogle = window.adsbygoogle || []).push({});  For example you have created a standard Gradle project as below structure. With the main class GradleCreatingExecutableJarExample as below.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example you have created a standard Gradle project as below structure.
+With the main class GradleCreatingExecutableJarExample as below.
 package simplesolution.dev;public class GradleCreatingExecutableJarExample {public static void main(String.</description>
     </item>
     
