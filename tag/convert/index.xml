@@ -18,8 +18,8 @@
       
       <guid>https://simplesolution.dev/java-parse-string-into-integer/</guid>
       <description>In this Java core tutorial, we learn how to convert a String value into int value in Java application.
-Using Integer.parseInt() static method Following Java example using Integer.parseInt() static method to convert a String value into int value.
-ParseStringToIntExample1.java public class ParseStringToIntExample1 { public static void main(String[] args) { int result1 = Integer.parseInt(&amp;#34;1234&amp;#34;); int result2 = Integer.parseInt(&amp;#34;+5&amp;#34;); int result3 = Integer.parseInt(&amp;#34;-5&amp;#34;); System.out.println(result1); System.out.println(result2); System.out.println(result3); } } The output is: 1234 5 -5</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Integer.parseInt() static method Following Java example using Integer.parseInt() static method to convert a String value into int value.
+ParseStringToIntExample1.java public class ParseStringToIntExample1 { public static void main(String[] args) { int result1 = Integer.parseInt(&amp;#34;1234&amp;#34;); int result2 = Integer.parseInt(&amp;#34;+5&amp;#34;); int result3 = Integer.</description>
     </item>
     
     <item>
