@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-parse-string-into-integer/</loc>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/org.springframework.core.annotation.order/</loc>
     <lastmod>2021-01-07T00:29:15+07:00</lastmod>
   </url>
@@ -1007,7 +1012,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2020-12-01T23:15:18+07:00</lastmod>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1132,6 +1137,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/integer/</loc>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/ip/</loc>
     <lastmod>2020-10-14T23:08:54+07:00</lastmod>
     <priority>0</priority>
@@ -1151,7 +1162,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2020-12-17T00:06:32+07:00</lastmod>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1181,7 +1192,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-06T22:57:36+07:00</lastmod>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1282,6 +1293,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/parse/</loc>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/pattern/</loc>
     <lastmod>2020-10-04T15:57:35+07:00</lastmod>
     <priority>0</priority>
@@ -1355,7 +1372,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-07T00:29:15+07:00</lastmod>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1391,7 +1408,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2020-10-08T23:26:48+07:00</lastmod>
+    <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
   </url>
   
