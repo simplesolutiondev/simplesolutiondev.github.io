@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-validate-email-address/</loc>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-check-string-is-valid-integer/</loc>
     <lastmod>2021-01-07T23:23:10+07:00</lastmod>
   </url>
@@ -1172,7 +1177,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-07T23:23:10+07:00</lastmod>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1202,7 +1207,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-07T23:23:10+07:00</lastmod>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1251,6 +1256,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/log4j/</loc>
     <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/matcher/</loc>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1310,7 +1321,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/pattern/</loc>
-    <lastmod>2020-10-04T15:57:35+07:00</lastmod>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1382,7 +1393,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-07T23:23:10+07:00</lastmod>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1418,7 +1429,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2021-01-07T23:23:10+07:00</lastmod>
+    <lastmod>2021-01-09T11:14:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
