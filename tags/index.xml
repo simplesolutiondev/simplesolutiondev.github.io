@@ -104,7 +104,7 @@
     <item>
       <title>Arraylist</title>
       <link>https://simplesolution.dev/tag/arraylist/</link>
-      <pubDate>Tue, 01 Dec 2020 23:15:18 +0700</pubDate>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/arraylist/</guid>
       <description></description>
@@ -147,11 +147,29 @@
     </item>
     
     <item>
+      <title>Collections</title>
+      <link>https://simplesolution.dev/tag/collections/</link>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/collections/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Commandlinerunner</title>
       <link>https://simplesolution.dev/tag/commandlinerunner/</link>
       <pubDate>Wed, 06 Jan 2021 22:57:36 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commandlinerunner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparator</title>
+      <link>https://simplesolution.dev/tag/comparator/</link>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/comparator/</guid>
       <description></description>
     </item>
     
@@ -462,11 +480,38 @@
     </item>
     
     <item>
+      <title>Linkedhashmap</title>
+      <link>https://simplesolution.dev/tag/linkedhashmap/</link>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/linkedhashmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>https://simplesolution.dev/tag/list/</link>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Log4j</title>
       <link>https://simplesolution.dev/tag/log4j/</link>
       <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/log4j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Map</title>
+      <link>https://simplesolution.dev/tag/map/</link>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/map/</guid>
       <description></description>
     </item>
     

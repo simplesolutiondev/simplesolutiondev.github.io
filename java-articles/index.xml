@@ -6,10 +6,20 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Jan 2021 12:08:15 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 09 Jan 2021 16:55:21 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sort Map by Value in Java</title>
+      <link>https://simplesolution.dev/java-sort-map-by-value/</link>
+      <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-sort-map-by-value/</guid>
+      <description>In this Java core tutorial, we show you how to implement the Java method to sort elements of a Map object by its entry value in the Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Implement method to sort a map by value Firstly, create a new class named MapUtils and implement a method sortMapByValue() which expects a Map as argument and returns a sorted Map.</description>
+    </item>
     
     <item>
       <title>Validate String Minimum and Maximum Length in Java</title>
