@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archivestreamfactory on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/archivestreamfactory/</link>
+    <description>Recent content in Archivestreamfactory on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jan 2021 01:16:12 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/archivestreamfactory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extract .zip File in Java using Apache Commons Compress</title>
+      <link>https://simplesolution.dev/java-extract-zip-file-using-apache-commons-compress/</link>
+      <pubDate>Mon, 11 Jan 2021 01:16:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-extract-zip-file-using-apache-commons-compress/</guid>
+      <description>In this Java tutorial, we learn how to use the Apache Commons Compress library to extract a .zip file into a directory in the Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Apache Commons Compress library to your Java project To use Apache Commons Compress Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-compress&amp;#39;, version: &amp;#39;1.</description>
+    </item>
+    
+  </channel>
+</rss>

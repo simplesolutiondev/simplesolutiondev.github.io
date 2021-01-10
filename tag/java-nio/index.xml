@@ -6,10 +6,32 @@
     <description>Recent content in Java Nio on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Dec 2020 00:06:32 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jan 2021 01:16:12 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java-nio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extract .zip File in Java using Apache Commons Compress</title>
+      <link>https://simplesolution.dev/java-extract-zip-file-using-apache-commons-compress/</link>
+      <pubDate>Mon, 11 Jan 2021 01:16:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-extract-zip-file-using-apache-commons-compress/</guid>
+      <description>In this Java tutorial, we learn how to use the Apache Commons Compress library to extract a .zip file into a directory in the Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Apache Commons Compress library to your Java project To use Apache Commons Compress Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-compress&amp;#39;, version: &amp;#39;1.</description>
+    </item>
+    
+    <item>
+      <title>Create .zip File in Java using Apache Commons Compress</title>
+      <link>https://simplesolution.dev/java-create-zip-file-using-apache-commons-compress/</link>
+      <pubDate>Mon, 11 Jan 2021 01:15:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-create-zip-file-using-apache-commons-compress/</guid>
+      <description>In this Java tutorial, we learn how to use the Apache Commons Compress library to create a .zip file in the Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Apache Commons Compress library to your Java project To use Apache Commons Compress Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-compress&amp;#39;, version: &amp;#39;1.20&amp;#39; To use Apache Commons Compress Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Read and Parse CSV File in Java using Apache Commons CSV</title>
