@@ -6,10 +6,21 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 01:16:12 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jan 2021 01:14:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get Operating System Name in Java</title>
+      <link>https://simplesolution.dev/java-get-os-name/</link>
+      <pubDate>Tue, 12 Jan 2021 01:14:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-os-name/</guid>
+      <description>In this Java core tutorial, we learn how to get the operating system name in a Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to use System.getProperty() static method to get OS name public class Example { public static void main(String[] args) { String osName = System.getProperty(&amp;#34;os.name&amp;#34;); System.out.println(osName); } } The output is: Windows 10
+Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Extract .zip File in Java using Apache Commons Compress</title>

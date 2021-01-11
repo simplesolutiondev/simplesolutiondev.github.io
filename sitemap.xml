@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-get-os-name/</loc>
+    <lastmod>2021-01-12T01:14:00+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-extract-zip-file-using-apache-commons-compress/</loc>
     <lastmod>2021-01-11T01:16:12+07:00</lastmod>
   </url>
@@ -1237,14 +1242,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-11T01:16:12+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-01-12T01:14:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1274,7 +1279,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-11T01:16:12+07:00</lastmod>
+    <lastmod>2021-01-12T01:14:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1478,7 +1483,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-11T01:16:12+07:00</lastmod>
+    <lastmod>2021-01-12T01:14:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1495,13 +1500,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1539,6 +1544,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/super-csv/</loc>
     <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/system/</loc>
+    <lastmod>2021-01-12T01:14:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
