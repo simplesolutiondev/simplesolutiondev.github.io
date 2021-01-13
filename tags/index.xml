@@ -300,11 +300,38 @@
     </item>
     
     <item>
+      <title>Date</title>
+      <link>https://simplesolution.dev/tag/date/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/date/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Date and Time</title>
       <link>https://simplesolution.dev/tag/date-and-time/</link>
       <pubDate>Sat, 13 Apr 2019 17:48:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/date-and-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datetime</title>
+      <link>https://simplesolution.dev/tag/datetime/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/datetime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datetimefieldtype</title>
+      <link>https://simplesolution.dev/tag/datetimefieldtype/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/datetimefieldtype/</guid>
       <description></description>
     </item>
     
@@ -323,6 +350,15 @@
       <pubDate>Wed, 18 Dec 2019 00:20:41 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/dozer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Duration</title>
+      <link>https://simplesolution.dev/tag/duration/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/duration/</guid>
       <description></description>
     </item>
     
@@ -408,6 +444,15 @@
     </item>
     
     <item>
+      <title>Instant</title>
+      <link>https://simplesolution.dev/tag/instant/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/instant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Integer</title>
       <link>https://simplesolution.dev/tag/integer/</link>
       <pubDate>Thu, 07 Jan 2021 23:23:10 +0700</pubDate>
@@ -485,6 +530,15 @@
       <pubDate>Mon, 08 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/jetty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joda Time</title>
+      <link>https://simplesolution.dev/tag/joda-time/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/joda-time/</guid>
       <description></description>
     </item>
     
@@ -575,6 +629,15 @@
       <pubDate>Wed, 04 Nov 2020 23:32:58 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/memory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mutabledatetime</title>
+      <link>https://simplesolution.dev/tag/mutabledatetime/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/mutabledatetime/</guid>
       <description></description>
     </item>
     

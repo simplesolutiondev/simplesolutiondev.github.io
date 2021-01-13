@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instant on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/instant/</link>
+    <description>Recent content in Instant on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jan 2021 00:45:06 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/instant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Joda Time Instant by Examples in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-instant-by-examples/</link>
+      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-instant-by-examples/</guid>
+      <description>In this Java tutorial, we learn how to use the Instant class of Joda Time library by different example Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>
