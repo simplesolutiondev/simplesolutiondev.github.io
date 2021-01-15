@@ -174,11 +174,29 @@
     </item>
     
     <item>
+      <title>Calendar</title>
+      <link>https://simplesolution.dev/tag/calendar/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/calendar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Caseutils</title>
       <link>https://simplesolution.dev/tag/caseutils/</link>
       <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/caseutils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chronology</title>
+      <link>https://simplesolution.dev/tag/chronology/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/chronology/</guid>
       <description></description>
     </item>
     
@@ -302,7 +320,7 @@
     <item>
       <title>Date</title>
       <link>https://simplesolution.dev/tag/date/</link>
-      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/date/</guid>
       <description></description>
@@ -320,7 +338,7 @@
     <item>
       <title>Datetime</title>
       <link>https://simplesolution.dev/tag/datetime/</link>
-      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetime/</guid>
       <description></description>
@@ -329,9 +347,18 @@
     <item>
       <title>Datetimefieldtype</title>
       <link>https://simplesolution.dev/tag/datetimefieldtype/</link>
-      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetimefieldtype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datetimezone</title>
+      <link>https://simplesolution.dev/tag/datetimezone/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/datetimezone/</guid>
       <description></description>
     </item>
     
@@ -359,6 +386,15 @@
       <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/duration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Durationfieldtype</title>
+      <link>https://simplesolution.dev/tag/durationfieldtype/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/durationfieldtype/</guid>
       <description></description>
     </item>
     
@@ -426,6 +462,15 @@
     </item>
     
     <item>
+      <title>Gregorianchronology</title>
+      <link>https://simplesolution.dev/tag/gregorianchronology/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gregorianchronology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gson</title>
       <link>https://simplesolution.dev/tag/gson/</link>
       <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
@@ -446,7 +491,7 @@
     <item>
       <title>Instant</title>
       <link>https://simplesolution.dev/tag/instant/</link>
-      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/instant/</guid>
       <description></description>
@@ -458,6 +503,15 @@
       <pubDate>Thu, 07 Jan 2021 23:23:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/integer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interval</title>
+      <link>https://simplesolution.dev/tag/interval/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/interval/</guid>
       <description></description>
     </item>
     
@@ -536,7 +590,7 @@
     <item>
       <title>Joda Time</title>
       <link>https://simplesolution.dev/tag/joda-time/</link>
-      <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/joda-time/</guid>
       <description></description>
@@ -593,6 +647,33 @@
       <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localdate</title>
+      <link>https://simplesolution.dev/tag/localdate/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/localdate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localdatetime</title>
+      <link>https://simplesolution.dev/tag/localdatetime/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/localdatetime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localtime</title>
+      <link>https://simplesolution.dev/tag/localtime/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/localtime/</guid>
       <description></description>
     </item>
     
@@ -728,6 +809,15 @@
       <pubDate>Thu, 02 Jan 2020 21:58:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Period</title>
+      <link>https://simplesolution.dev/tag/period/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/period/</guid>
       <description></description>
     </item>
     

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-joda-time-localdate-by-examples/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-joda-time-instant-by-examples/</loc>
     <lastmod>2021-01-14T00:45:06+07:00</lastmod>
   </url>
@@ -1056,6 +1061,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/calendar/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/caseutils/</loc>
     <lastmod>2020-10-08T22:31:54+07:00</lastmod>
     <priority>0</priority>
@@ -1063,6 +1074,12 @@
   
   <url>
     <loc>https://simplesolution.dev/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/chronology/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1152,7 +1169,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/date/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1164,13 +1181,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/datetime/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/datetimefieldtype/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/datetimezone/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1189,6 +1212,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/duration/</loc>
     <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/durationfieldtype/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1235,6 +1264,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/gregorianchronology/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
     <lastmod>2020-10-24T12:50:59+07:00</lastmod>
     <priority>0</priority>
@@ -1248,13 +1283,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/instant/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/integer/</loc>
     <lastmod>2021-01-07T23:23:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/interval/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1284,7 +1325,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1314,7 +1355,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1338,7 +1379,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/joda-time/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1375,6 +1416,24 @@
   <url>
     <loc>https://simplesolution.dev/tag/list/</loc>
     <lastmod>2021-01-09T16:55:21+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/localdate/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/localdatetime/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/localtime/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1469,6 +1528,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/period/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/posts/</loc>
     <lastmod>2019-12-18T00:20:41+07:00</lastmod>
     <priority>0</priority>
@@ -1530,7 +1595,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   

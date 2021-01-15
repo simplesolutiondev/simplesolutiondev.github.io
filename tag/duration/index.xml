@@ -17,7 +17,7 @@
       <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java-joda-time-instant-by-examples/</guid>
-      <description>In this Java tutorial, we learn how to use the Instant class of Joda Time library by different example Java programs.
+      <description>In this Java tutorial, we learn how to use the org.joda.time.Instant class of Joda Time library by different example Java programs.
    (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
 compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
     </item>
