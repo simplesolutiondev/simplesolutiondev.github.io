@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joda Time LocalTime by Examples in Java</title>
+    <meta name="title" content="Joda Time LocalTime by Examples in Java">
+    <meta name="description" content="In this Java tutorial, we learn how to use the org.joda.time.LocalTime class of Joda Time library by different example Java programs.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-localtime-by-examples/">
+    <meta property="og:title" content="Joda Time LocalTime by Examples in Java">
+    <meta property="og:description" content="In this Java tutorial, we learn how to use the org.joda.time.LocalTime class of Joda Time library by different example Java programs.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-localtime-by-examples.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-localtime-by-examples/">
+    <meta name="twitter:title" content="Joda Time LocalTime by Examples in Java">
+    <meta name="twitter:description" content="In this Java tutorial, we learn how to use the org.joda.time.LocalTime class of Joda Time library by different example Java programs.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-localtime-by-examples.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Joda Time LocalTime by Examples in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java tutorial, we learn how to use the org.joda.time.LocalTime class of Joda Time library by different example Java programs.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-joda-time-library-to-your-java-project">Add Joda Time library to your Java project</h4>
+
+<p>To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.10.9&#39;</span></code></pre></div>
+
+<p>To use Joda Time Java library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>joda-time<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>joda-time<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.10.9<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>To download the Joda Time .jar file you can visit Joda Time releases page at <a href="https://github.com/JodaOrg/joda-time/releases" target="_blank">github.com/JodaOrg/joda-time</a></p>
+
+<h4 id="how-to-create-localtime-object-using-constructors">How to create LocalTime object using constructors</h4>
+
+<p>In the following Java program we use default constructor to create new LocalTime objects representing the current time of the system as well as create time by time zone and chronology.</p>
+
+<p>JodaTimeLocalTimeExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">11:56:52.192
+04:56:52.193
+11:56:52.193</code></pre></div></p>
+
+<p>In the following Java program, the LocalTime object is created from a given milliseconds value.</p>
+
+<p>JodaTimeLocalTimeExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> milliSeconds <span style="color:#f92672">=</span> 9000<span style="color:#f92672">;</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>milliSeconds<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>milliSeconds<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>milliSeconds<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">07:00:09.000
+01:00:09.000
+07:00:09.000</code></pre></div></p>
+
+<p>Or create LocalTime from a given Instant object.</p>
+
+<p>JodaTimeLocalTimeExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Instant<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        Instant instant <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Instant<span style="color:#f92672">();</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>instant<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>instant<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>instant<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">04:57:33.294
+04:57:33.294
+11:57:33.294</code></pre></div></p>
+
+<p>Or from a given hour and minute values.</p>
+
+<p>JodaTimeLocalTimeExample4.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample4</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Chronology chronology <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> 10<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> 20<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> 30<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> millisOfSecond <span style="color:#f92672">=</span> 400<span style="color:#f92672">;</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> millisOfSecond<span style="color:#f92672">);</span>
+        LocalTime localTime4 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> millisOfSecond<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime4<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">10:20:00.000
+10:20:30.000
+10:20:30.400
+10:20:30.400</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-localtime-now-static-method-to-instantiate-new-localtime-object">How to use LocalTime.now() static method to instantiate new LocalTime object</h4>
+
+<p>JodaTimeLocalTimeExample5.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.ISOChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample5</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> ISOChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">11:59:43.410
+04:59:43.410
+11:59:43.410</code></pre></div></p>
+
+<h4 id="parse-a-string-to-localtime-object-using-localtime-parse-static-method">Parse a String to LocalTime object using LocalTime.parse() static method</h4>
+
+<p>JodaTimeLocalTimeExample6.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample6</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime localTime <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;01:10:20.300&#34;</span><span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">01:10:20.300</code></pre></div></p>
+
+<h4 id="convert-milliseconds-to-localtime">Convert milliseconds to LocalTime</h4>
+
+<p>In the following Java program we use LocalTime.fromMillisOfDay() static method to create a LocalTime object from a milliseconds value.</p>
+
+<p>JodaTimeLocalTimeExample7.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.ISOChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample7</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Chronology chronology  <span style="color:#f92672">=</span> ISOChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> milliSeconds <span style="color:#f92672">=</span> 60000<span style="color:#f92672">;</span><span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>
+        LocalTime localTime1 <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">fromMillisOfDay</span><span style="color:#f92672">(</span>milliSeconds<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">fromMillisOfDay</span><span style="color:#f92672">(</span>milliSeconds<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">00:01:00.000
+00:01:00.000</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="convert-calendar-instance-to-localtime">Convert Calendar instance to LocalTime</h4>
+
+<p>In the following Java program, we use LocalTime.fromCalendarFields() static method to create LocalTime object from a given Calendar object.</p>
+
+<p>JodaTimeLocalTimeExample8.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Calendar<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample8</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Calendar calendar <span style="color:#f92672">=</span> Calendar<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        LocalTime localTime <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">fromCalendarFields</span><span style="color:#f92672">(</span>calendar<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:00:35.036</code></pre></div></p>
+
+<h4 id="convert-date-to-localtime">Convert Date to LocalTime</h4>
+
+<p>To convert Java core Date objects to Joda LocalTime objects we can use LocalTime.fromDateFields() static method as following Java program.</p>
+
+<p>JodaTimeLocalTimeExample9.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Date<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample9</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Date date <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date<span style="color:#f92672">();</span>
+
+        LocalTime localTime <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">fromDateFields</span><span style="color:#f92672">(</span>date<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:00:55.445</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="6759645625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-get-specific-fields-of-a-localtime-object">How to get specific fields of a LocalTime object</h4>
+
+<p>JodaTimeLocalTimeExample10.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTimeFieldType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample10</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hourOfDay</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minuteOfHour</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">secondOfMinute</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> millisOfSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millisOfSecond</span><span style="color:#f92672">());</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>minuteOfHour<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>secondOfMinute<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>millisOfSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12
+1
+10
+608</code></pre></div></p>
+
+<p>JodaTimeLocalTimeExample11.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample11</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> LocalTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getHourOfDay</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getMinuteOfHour</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getSecondOfMinute</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> millisOfSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getMillisOfSecond</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>minuteOfHour<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>secondOfMinute<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>millisOfSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12
+1
+21
+140</code></pre></div></p>
+
+<h4 id="how-to-compare-locatime-objects">How to compare LocaTime objects</h4>
+
+<p>Using compareTo() method.</p>
+
+<p>JodaTimeLocalTimeExample12.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample12</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime localTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 1<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> 2<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 1<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTime1 compare to localTime2:&#34;</span> <span style="color:#f92672">+</span> localTime1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTime1 compare to localTime3:&#34;</span> <span style="color:#f92672">+</span> localTime1<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTime2 compare to localTime1:&#34;</span> <span style="color:#f92672">+</span> localTime2<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTime3 compare to localTime1:&#34;</span> <span style="color:#f92672">+</span> localTime3<span style="color:#f92672">.</span><span style="color:#a6e22e">compareTo</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">localTime1 compare to localTime2:-1
+localTime1 compare to localTime3:0
+localTime2 compare to localTime1:1
+localTime3 compare to localTime1:0</code></pre></div></p>
+
+<p>Using equals() method.</p>
+
+<p>JodaTimeLocalTimeExample13.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample13</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime localTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 1<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> 2<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 1<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTime1 equals localTime2:&#34;</span> <span style="color:#f92672">+</span> localTime1<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTime1 equals localTime3:&#34;</span> <span style="color:#f92672">+</span> localTime1<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">localTime1 equals localTime2:false
+localTime1 equals localTime3:true</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1507318946"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-localtime-withfield-method">How to use LocalTime.withField() method</h4>
+
+<p>JodaTimeLocalTimeExample14.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTimeFieldType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample14</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime localTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hourOfDay</span><span style="color:#f92672">(),</span> 8<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minuteOfHour</span><span style="color:#f92672">(),</span> 10<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">secondOfMinute</span><span style="color:#f92672">(),</span> 20<span style="color:#f92672">);</span>
+        LocalTime localTime4 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millisOfSecond</span><span style="color:#f92672">(),</span> 300<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime4<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:07:52.065
+08:07:52.065
+12:10:52.065
+12:07:20.065
+12:07:52.300</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-withfieldadded-method">How to use LocalTime.withFieldAdded() method</h4>
+
+<p>JodaTimeLocalTimeExample15.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DurationFieldType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample15</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime localTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime localTime1 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(),</span> 1<span style="color:#f92672">);</span>
+        LocalTime localTime2 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(),</span> 10<span style="color:#f92672">);</span>
+        LocalTime localTime3 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">seconds</span><span style="color:#f92672">(),</span> 20<span style="color:#f92672">);</span>
+        LocalTime localTime4 <span style="color:#f92672">=</span> localTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(),</span> 300<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime3<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime4<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:08:08.910
+13:08:08.910
+12:18:08.910
+12:08:28.910
+12:08:09.210</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="4980154934"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-localtime-withperiodadded-method">How to use LocalTime.withPeriodAdded() method</h4>
+
+<p>JodaTimeLocalTimeExample16.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample16</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period oneMinutePeriod <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime nextOneMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withPeriodAdded</span><span style="color:#f92672">(</span>oneMinutePeriod<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+        LocalTime nextTwoMinutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withPeriodAdded</span><span style="color:#f92672">(</span>oneMinutePeriod<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextOneMinute<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextTwoMinutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:08:23.238
+12:09:23.238
+12:10:23.238</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-plus-method">How to use LocalTime.plus() method</h4>
+
+<p>JodaTimeLocalTimeExample17.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample17</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period oneMinutePeriod <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime nextOneMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plus</span><span style="color:#f92672">(</span>oneMinutePeriod<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextOneMinute<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:08:37.245
+12:09:37.245</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-plushours-method">How to use LocalTime.plusHours() method</h4>
+
+<p>JodaTimeLocalTimeExample18.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample18</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime nextHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusHours</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextHour<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:08:51.442
+13:08:51.442</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-plusminutes-method">How to use LocalTime.plusMinutes() method</h4>
+
+<p>JodaTimeLocalTimeExample19.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample19</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime nextTenMinutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMinutes</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextTenMinutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:09:05.623
+12:19:05.623</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-plusseconds-method">How to use LocalTime.plusSeconds() method</h4>
+
+<p>JodaTimeLocalTimeExample20.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample20</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime nextMinutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusSeconds</span><span style="color:#f92672">(</span>60<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextMinutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:09:19.012
+12:10:19.012</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-plusmillis-method">How to use LocalTime.plusMillis() method</h4>
+
+<p>JodaTimeLocalTimeExample21.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample21</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime nextSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMillis</span><span style="color:#f92672">(</span>1000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:09:36.650
+12:09:37.650</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-minus-method">How to use LocalTime.minus() method</h4>
+
+<p>JodaTimeLocalTimeExample22.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample22</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period oneMinutePeriod <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime lastMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minus</span><span style="color:#f92672">(</span>oneMinutePeriod<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>lastMinute<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:09:48.147
+12:08:48.147</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-minushours-method">How to use LocalTime.minusHours() method</h4>
+
+<p>JodaTimeLocalTimeExample23.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample23</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime lastHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusHours</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>lastHour<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:10:00.687
+11:10:00.687</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-minusminutes-method">How to use LocalTime.minusMinutes() method</h4>
+
+<p>JodaTimeLocalTimeExample24.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample24</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime lastTenMinutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMinutes</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>lastTenMinutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:10:13.012
+12:00:13.012</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-minusseconds-method">How to use LocalTime.minusSeconds() method</h4>
+
+<p>JodaTimeLocalTimeExample25.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample25</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime lastMinutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusSeconds</span><span style="color:#f92672">(</span>60<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>lastMinutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:10:25.797
+12:09:25.797</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-minusmillis-method">How to use LocalTime.minusMillis() method</h4>
+
+<p>JodaTimeLocalTimeExample26.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample26</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime lastSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMillis</span><span style="color:#f92672">(</span>1000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>lastSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:10:37.588
+12:10:36.588</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-withhourofday-method">How to use LocalTime.withHourOfDay() method</h4>
+
+<p>JodaTimeLocalTimeExample27.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample27</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime atEightToday <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withHourOfDay</span><span style="color:#f92672">(</span>8<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>atEightToday<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:10:49.186
+08:10:49.186</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-withminuteofhour-method">How to use LocalTime.withMinuteOfHour() method</h4>
+
+<p>JodaTimeLocalTimeExample28.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample28</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime localTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMinuteOfHour</span><span style="color:#f92672">(</span>30<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:10:59.863
+12:30:59.863</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-withsecondofminute-method">How to use LocalTime.withSecondOfMinute() method</h4>
+
+<p>JodaTimeLocalTimeExample29.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample29</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime localTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withSecondOfMinute</span><span style="color:#f92672">(</span>50<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:11:10.396
+12:11:50.396</code></pre></div></p>
+
+<h4 id="how-to-use-localtime-withmillisofsecond-method">How to use LocalTime.withMillisOfSecond() method</h4>
+
+<p>JodaTimeLocalTimeExample30.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample30</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        LocalTime localTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMillisOfSecond</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:11:22.284
+12:11:22.500</code></pre></div></p>
+
+<h4 id="convert-localtime-to-datetime">Convert LocalTime to DateTime</h4>
+
+<p>In the following Java program we use the toDateTimeToday() method to convert a LocalTIme object into DateTime object.</p>
+
+<p>JodaTimeLocalTimeExample31.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample31</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        DateTime today <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toDateTimeToday</span><span style="color:#f92672">();</span>
+        DateTime todayAtLondon <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toDateTimeToday</span><span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>today<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>todayAtLondon<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:11:40.308
+2021-01-16T12:11:40.308+07:00
+2021-01-16T12:11:40.308Z</code></pre></div></p>
+
+<h4 id="convert-localtime-to-string">Convert LocalTime to String</h4>
+
+<p>To convert a LocalTime object to a String value we can use the toString() method as following Java program.</p>
+
+<p>JodaTimeLocalTimeExample32.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Locale<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeLocalTimeExample32</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LocalTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">();</span>
+
+        String time1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+        String time2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HH:mm:ss&#34;</span><span style="color:#f92672">);</span>
+        String time3 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HH:mm:ss&#34;</span><span style="color:#f92672">,</span> Locale<span style="color:#f92672">.</span><span style="color:#a6e22e">JAPANESE</span><span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>time1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>time2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>time3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">12:11:59.167
+12:11:59.167
+12:11:59
+12:11:59</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-joda-time-instant-by-examples/">Joda Time Instant by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localdate-by-examples/">Joda Time LocalDate by Examples in Java</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/joda-time">Joda Time</a>
+                                
+                                <a href="https://simplesolution.dev/tag/localtime">LocalTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/datetime">DateTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/datetimezone">DateTimeZone</a>
+                                
+                                <a href="https://simplesolution.dev/tag/chronology">Chronology</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gregorianchronology">GregorianChronology</a>
+                                
+                                <a href="https://simplesolution.dev/tag/isochronology">ISOChronology</a>
+                                
+                                <a href="https://simplesolution.dev/tag/instant">Instant</a>
+                                
+                                <a href="https://simplesolution.dev/tag/datetimefieldtype">DateTimeFieldType</a>
+                                
+                                <a href="https://simplesolution.dev/tag/durationfieldtype">DurationFieldType</a>
+                                
+                                <a href="https://simplesolution.dev/tag/period">Period</a>
+                                
+                                <a href="https://simplesolution.dev/tag/locale">Locale</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

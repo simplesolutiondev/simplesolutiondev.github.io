@@ -194,7 +194,7 @@
     <item>
       <title>Chronology</title>
       <link>https://simplesolution.dev/tag/chronology/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/chronology/</guid>
       <description></description>
@@ -338,7 +338,7 @@
     <item>
       <title>Datetime</title>
       <link>https://simplesolution.dev/tag/datetime/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetime/</guid>
       <description></description>
@@ -347,7 +347,7 @@
     <item>
       <title>Datetimefieldtype</title>
       <link>https://simplesolution.dev/tag/datetimefieldtype/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetimefieldtype/</guid>
       <description></description>
@@ -356,7 +356,7 @@
     <item>
       <title>Datetimezone</title>
       <link>https://simplesolution.dev/tag/datetimezone/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetimezone/</guid>
       <description></description>
@@ -392,7 +392,7 @@
     <item>
       <title>Durationfieldtype</title>
       <link>https://simplesolution.dev/tag/durationfieldtype/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/durationfieldtype/</guid>
       <description></description>
@@ -464,7 +464,7 @@
     <item>
       <title>Gregorianchronology</title>
       <link>https://simplesolution.dev/tag/gregorianchronology/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gregorianchronology/</guid>
       <description></description>
@@ -491,7 +491,7 @@
     <item>
       <title>Instant</title>
       <link>https://simplesolution.dev/tag/instant/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/instant/</guid>
       <description></description>
@@ -530,6 +530,15 @@
       <pubDate>Wed, 14 Oct 2020 23:08:54 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/ip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isochronology</title>
+      <link>https://simplesolution.dev/tag/isochronology/</link>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/isochronology/</guid>
       <description></description>
     </item>
     
@@ -590,7 +599,7 @@
     <item>
       <title>Joda Time</title>
       <link>https://simplesolution.dev/tag/joda-time/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/joda-time/</guid>
       <description></description>
@@ -669,9 +678,18 @@
     </item>
     
     <item>
+      <title>Locale</title>
+      <link>https://simplesolution.dev/tag/locale/</link>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/locale/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Localtime</title>
       <link>https://simplesolution.dev/tag/localtime/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/localtime/</guid>
       <description></description>
@@ -815,7 +833,7 @@
     <item>
       <title>Period</title>
       <link>https://simplesolution.dev/tag/period/</link>
-      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/period/</guid>
       <description></description>
