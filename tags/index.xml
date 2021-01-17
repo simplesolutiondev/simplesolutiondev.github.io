@@ -338,7 +338,7 @@
     <item>
       <title>Datetime</title>
       <link>https://simplesolution.dev/tag/datetime/</link>
-      <pubDate>Sun, 17 Jan 2021 16:03:12 +0700</pubDate>
+      <pubDate>Sun, 17 Jan 2021 16:42:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetime/</guid>
       <description></description>
@@ -356,7 +356,7 @@
     <item>
       <title>Datetimezone</title>
       <link>https://simplesolution.dev/tag/datetimezone/</link>
-      <pubDate>Sun, 17 Jan 2021 13:15:15 +0700</pubDate>
+      <pubDate>Sun, 17 Jan 2021 16:42:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetimezone/</guid>
       <description></description>
@@ -608,7 +608,7 @@
     <item>
       <title>Joda Time</title>
       <link>https://simplesolution.dev/tag/joda-time/</link>
-      <pubDate>Sun, 17 Jan 2021 16:03:12 +0700</pubDate>
+      <pubDate>Sun, 17 Jan 2021 16:42:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/joda-time/</guid>
       <description></description>
@@ -1070,6 +1070,15 @@
       <pubDate>Wed, 16 Dec 2020 22:41:39 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/url/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Utc</title>
+      <link>https://simplesolution.dev/tag/utc/</link>
+      <pubDate>Sun, 17 Jan 2021 16:42:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/utc/</guid>
       <description></description>
     </item>
     
