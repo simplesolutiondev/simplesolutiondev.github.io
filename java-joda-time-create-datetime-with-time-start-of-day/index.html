@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Convert Joda Time DateTime into Date in Java</title>
-    <meta name="title" content="Convert Joda Time DateTime into Date in Java">
-    <meta name="description" content="In this Joda Time tutorial, we learn how to convert a Joda Time’s DateTime object into a java.util.Date object in Java.">
+    <title>Joda Time Create DateTime with Time Start Of the Day in Java</title>
+    <meta name="title" content="Joda Time Create DateTime with Time Start Of the Day in Java">
+    <meta name="description" content="In this Joda Time tutorial, we learn how to create a new DateTime object or convert an existing DateTime object to a new DateTime object with the time set to start of the day in Java.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-convert-joda-time-datetime-into-date/">
-    <meta property="og:title" content="Convert Joda-Time DateTime into Date in Java">
-    <meta property="og:description" content="In this Joda-Time tutorial, we learn how to convert a Joda-Time’s DateTime object into a java.util.Date object in Java.">
+    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-create-datetime-with-time-start-of-day/">
+    <meta property="og:title" content="Joda-Time Create DateTime with Time Start Of the Day in Java">
+    <meta property="og:description" content="In this Joda-Time tutorial, we learn how to create a new DateTime object or convert an existing DateTime object to a new DateTime object with the time set to start of the day in Java.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-convert-joda-time-datetime-into-date.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-create-datetime-with-time-start-of-day.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-convert-joda-time-datetime-into-date/">
-    <meta name="twitter:title" content="Convert Joda-Time DateTime into Date in Java">
-    <meta name="twitter:description" content="In this Joda-Time tutorial, we learn how to convert a Joda-Time’s DateTime object into a java.util.Date object in Java.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-create-datetime-with-time-start-of-day/">
+    <meta name="twitter:title" content="Joda-Time Create DateTime with Time Start Of the Day in Java">
+    <meta name="twitter:description" content="In this Joda-Time tutorial, we learn how to create a new DateTime object or convert an existing DateTime object to a new DateTime object with the time set to start of the day in Java.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-convert-joda-time-datetime-into-date.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-create-datetime-with-time-start-of-day.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -51,11 +51,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Convert Joda-Time DateTime into Date in Java</h1></div>
+                    <div class="post-header"><h1 class="post-title">Joda-Time Create DateTime with Time Start Of the Day in Java</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>In this Joda-Time tutorial, we learn how to convert a Joda-Time’s DateTime object into a java.util.Date object in Java.</p>
+<p>In this Joda-Time tutorial, we learn how to create a new DateTime object or convert an existing DateTime object to a new DateTime object with the time set to start of the day at 00:00:00.000 in Java.</p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -84,6 +84,27 @@
 
 <p>To download the Joda Time .jar file you can visit Joda Time releases page at <a href="https://github.com/JodaOrg/joda-time/releases" target="_blank">github.com/JodaOrg/joda-time</a></p>
 
+<h4 id="convert-to-new-datetime-with-time-set-to-start-of-the-day">Convert to new DateTime with time set to start of the day</h4>
+
+<p>Joda-Time provides DateTime.withTimeAtStartOfDay() method that allows returning a copy of a DateTime object with the time set to start of the day.</p>
+
+<p>TimeAtStartOfDayExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TimeAtStartOfDayExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">();</span>
+
+        DateTime withTimeAtStartOfDay <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">withTimeAtStartOfDay</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>withTimeAtStartOfDay<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T17:15:32.402+07:00
+2021-01-17T00:00:00.000+07:00</code></pre></div></p>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -95,56 +116,29 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="convert-joda-time-datetime-into-date-in-java">Convert Joda-Time DateTime into Date in Java</h4>
+<p>TimeAtStartOfDayExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
 
-<p>To convert a DateTime object to <strong>java.util.Date</strong> object, Joda-Time provides <strong>DateTime.toDate()</strong> method.</p>
-
-<p>ConvertJodaTimeDateTimeToDate.java</p>
-
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> java.util.Date<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertJodaTimeDateTimeToDate</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TimeAtStartOfDayExample2</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
 
-        Date date <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toDate</span><span style="color:#f92672">();</span>
+        DateTime dateTime <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">().</span><span style="color:#a6e22e">withTimeAtStartOfDay</span><span style="color:#f92672">();</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Joda-Time DateTime: &#34;</span> <span style="color:#f92672">+</span> now<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java Date: &#34;</span> <span style="color:#f92672">+</span> date<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Joda-Time DateTime: 2021-01-17T16:05:40.972+07:00
-Java Date: Sun Jan 17 16:05:40 ICT 2021</code></pre></div></p>
-
-<p>ConvertJodaTimeDateTimeToDate2.java</p>
-
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
-
-<span style="color:#f92672">import</span> java.util.Date<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertJodaTimeDateTimeToDate2</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        
-        Date date <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toDate</span><span style="color:#f92672">();</span>
-
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>date<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Sun Jan 17 17:01:07 ICT 2021</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T00:00:00.000+07:00</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
 <h5 id="related-articles">Related Articles</h5>
 
-<p><a href="https://simplesolution.dev/java-joda-time-datetime-by-examples/">Joda Time DateTime by Examples in Java</a></p>
+<p><a href="https://simplesolution.dev/java-convert-joda-time-datetime-into-date/">Convert Joda-Time DateTime into Date in Java</a></p>
 
 <p><a href="https://simplesolution.dev/java-joda-time-create-utc-datetime/">Joda-Time Create UTC DateTime in Java</a></p>
 
-<p><a href="https://simplesolution.dev/java-joda-time-create-datetime-with-time-start-of-day/">Joda-Time Create DateTime with Time Start Of the Day in Java</a></p>
+<p><a href="https://simplesolution.dev/java-joda-time-datetime-by-examples/">Joda Time DateTime by Examples in Java</a></p>
 
                         
                         <div class="mt-5">
@@ -153,10 +147,6 @@ The output is:
                                 <a href="https://simplesolution.dev/tag/joda-time">Joda Time</a>
                                 
                                 <a href="https://simplesolution.dev/tag/datetime">DateTime</a>
-                                
-                                <a href="https://simplesolution.dev/tag/date">Date</a>
-                                
-                                <a href="https://simplesolution.dev/tag/convert">Convert</a>
                                 
                             </div>
                         </div>
