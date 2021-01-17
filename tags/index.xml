@@ -239,7 +239,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Sun, 17 Jan 2021 16:03:12 +0700</pubDate>
+      <pubDate>Sun, 17 Jan 2021 18:21:04 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -338,7 +338,7 @@
     <item>
       <title>Datetime</title>
       <link>https://simplesolution.dev/tag/datetime/</link>
-      <pubDate>Sun, 17 Jan 2021 17:12:06 +0700</pubDate>
+      <pubDate>Sun, 17 Jan 2021 18:21:04 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/datetime/</guid>
       <description></description>
@@ -608,7 +608,7 @@
     <item>
       <title>Joda Time</title>
       <link>https://simplesolution.dev/tag/joda-time/</link>
-      <pubDate>Sun, 17 Jan 2021 17:12:06 +0700</pubDate>
+      <pubDate>Sun, 17 Jan 2021 18:21:04 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/joda-time/</guid>
       <description></description>
@@ -1043,6 +1043,15 @@
       <pubDate>Thu, 07 Jan 2021 22:13:31 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timestamp</title>
+      <link>https://simplesolution.dev/tag/timestamp/</link>
+      <pubDate>Sun, 17 Jan 2021 18:21:04 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/timestamp/</guid>
       <description></description>
     </item>
     

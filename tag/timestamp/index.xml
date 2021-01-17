@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timestamp on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/timestamp/</link>
+    <description>Recent content in Timestamp on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2021 18:21:04 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/timestamp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert SQL Timestamp  into Joda-Time DateTime and Vice Versa in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-convert-timestamp-into-datetime-and-vice-versa/</link>
+      <pubDate>Sun, 17 Jan 2021 18:21:04 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-convert-timestamp-into-datetime-and-vice-versa/</guid>
+      <description>In this Joda-Time tutorial, we learn how to convert an SQL Timestamp object into Joda-Time’ DateTime object and vice versace from Joda-Time’s DateTime into a Timestamp in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.</description>
+    </item>
+    
+  </channel>
+</rss>
