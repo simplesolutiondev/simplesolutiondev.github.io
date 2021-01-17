@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joda Time DateTime by Examples in Java</title>
+    <meta name="title" content="Joda Time DateTime by Examples in Java">
+    <meta name="description" content="In this Java tutorial, we learn how to use the org.joda.time.DateTime class of Joda Time library by different example Java programs.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-datetime-by-examples/">
+    <meta property="og:title" content="Joda Time DateTime by Examples in Java">
+    <meta property="og:description" content="In this Java tutorial, we learn how to use the org.joda.time.DateTime class of Joda Time library by different example Java programs.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-datetime-by-examples.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-datetime-by-examples/">
+    <meta name="twitter:title" content="Joda Time DateTime by Examples in Java">
+    <meta name="twitter:description" content="In this Java tutorial, we learn how to use the org.joda.time.DateTime class of Joda Time library by different example Java programs.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-datetime-by-examples.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Joda Time DateTime by Examples in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java tutorial, we learn how to use the org.joda.time.DateTime class of Joda Time library by different example Java programs.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-joda-time-library-to-your-java-project">Add Joda Time library to your Java project</h4>
+
+<p>To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.10.9&#39;</span></code></pre></div>
+
+<p>To use Joda Time Java library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>joda-time<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>joda-time<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.10.9<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>To download the Joda Time .jar file you can visit Joda Time releases page at <a href="https://github.com/JodaOrg/joda-time/releases" target="_blank">github.com/JodaOrg/joda-time</a></p>
+
+<h4 id="how-to-create-datetime-object-using-constructors">How to create DateTime object using constructors</h4>
+
+<p>JodaTimeDateTimeExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">();</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:21:25.746+07:00
+2021-01-17T06:21:25.747Z
+2021-01-17T13:21:25.747+07:00</code></pre></div></p>
+
+<p>JodaTimeDateTimeExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> milliseconds <span style="color:#f92672">=</span> 100000<span style="color:#f92672">;</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>milliseconds<span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>milliseconds<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>milliseconds<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1970-01-01T07:01:40.000+07:00
+1970-01-01T01:01:40.000+01:00
+1970-01-01T07:01:40.000+07:00</code></pre></div></p>
+
+<p>JodaTimeDateTimeExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Instant<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        Instant instant <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Instant<span style="color:#f92672">();</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>instant<span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>instant<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>instant<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T06:21:53.311Z
+2021-01-17T06:21:53.311Z
+2021-01-17T13:21:53.311+07:00</code></pre></div></p>
+
+<p>JodaTimeDateTimeExample4.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample4</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> 2021<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> monthOfYear <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> dayOfMonth <span style="color:#f92672">=</span> 10<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> 20<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> 30<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> 40<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> millisOfSecond <span style="color:#f92672">=</span> 500<span style="color:#f92672">;</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        DateTime dateTime4 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">);</span>
+        DateTime dateTime5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime6 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        DateTime dateTime7 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> millisOfSecond<span style="color:#f92672">);</span>
+        DateTime dateTime8 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> millisOfSecond<span style="color:#f92672">,</span> dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime9 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> millisOfSecond<span style="color:#f92672">,</span> chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime3<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime4<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime5<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime6<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime7<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime8<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime9<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-10T20:30:00.000+07:00
+2021-01-10T20:30:00.000Z
+2021-01-10T20:30:00.000+07:00
+2021-01-10T20:30:40.000+07:00
+2021-01-10T20:30:40.000Z
+2021-01-10T20:30:40.000+07:00
+2021-01-10T20:30:40.500+07:00
+2021-01-10T20:30:40.500Z
+2021-01-10T20:30:40.500+07:00</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-datetime-now">How to use DateTime.now()</h4>
+
+<p>JodaTimeDateTimeExample5.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample5</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime3 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:23:11.943+07:00
+2021-01-17T06:23:11.943Z
+2021-01-17T13:23:11.943+07:00</code></pre></div></p>
+
+<h4 id="parse-a-string-to-datetime-object">Parse a String to DateTime object</h4>
+
+<p>JodaTimeDateTimeExample6.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample6</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-17T10:44:35.205+07:00&#34;</span><span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T10:44:35.205+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-todatetimeiso-method">How to use toDateTimeISO() method</h4>
+
+<p>This method returns the DateTime object that uses ISOChronology in the default zone.</p>
+
+<p>JodaTimeDateTimeExample7.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.EthiopicChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample7</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Chronology chronology  <span style="color:#f92672">=</span> EthiopicChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        DateTime dateTimeIso <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">toDateTimeISO</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTimeIso<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2013-05-09T13:23:38.515+07:00
+2021-01-17T13:23:38.515+07:00</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-todatetime-method">How to use toDateTime() method</h4>
+
+<p>JodaTimeDateTimeExample8.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.GregorianChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample8</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        Chronology chronology  <span style="color:#f92672">=</span> GregorianChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toDateTime</span><span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toDateTime</span><span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:23:56.626+07:00
+2021-01-17T06:23:56.626Z
+2021-01-17T13:23:56.626+07:00</code></pre></div></p>
+
+<h4 id="convert-datetime-to-localdatetime">Convert DateTime to LocalDateTime</h4>
+
+<p>The method DateTime.toLocalDateTime() to convert a DateTime object to LocalDateTime object as following Java program.</p>
+
+<p>JodaTimeDateTimeExample9.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalDateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample9</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        LocalDateTime localDateTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toLocalDateTime</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localDateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:24:10.547+07:00
+2021-01-17T13:24:10.547</code></pre></div></p>
+
+<h4 id="convert-datetime-to-localdate">Convert DateTime to LocalDate</h4>
+
+<p>In the following Java program, we use DateTime.toLocalDate() method to convert a DateTime object to LocalDate object.</p>
+
+<p>JodaTimeDateTimeExample10.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalDate<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample10</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        LocalDate localDate <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toLocalDate</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localDate<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:24:22.684+07:00
+2021-01-17</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="6759645625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="convert-datetime-to-localtime">Convert DateTime to LocalTime</h4>
+
+<p>In the following Java program, we use DateTime.toLocalTime() method to convert a DateTime object to LocalTime object.</p>
+
+<p>JodaTimeDateTimeExample11.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample11</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        LocalTime localTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">toLocalTime</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:25:48.619+07:00
+13:25:48.619</code></pre></div></p>
+
+<h4 id="how-to-get-specific-field-of-a-datetime-object">How to get specific field of a DateTime object</h4>
+
+<p>JodaTimeDateTimeExample53.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeFieldType<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample53</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">year</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> monthOfYear <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">monthOfYear</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> dayOfMonth <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">dayOfMonth</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hourOfDay</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minuteOfHour</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">secondOfMinute</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> millisOfSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millisOfSecond</span><span style="color:#f92672">());</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>year<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>monthOfYear<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dayOfMonth<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>minuteOfHour<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>secondOfMinute<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>millisOfSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:26:05.555+07:00
+2021
+1
+17
+13
+26
+5
+555</code></pre></div></p>
+
+<p>JodaTimeDateTimeExample54.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample54</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getYear</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> monthOfYear <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getMonthOfYear</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> dayOfMonth <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getDayOfMonth</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getHourOfDay</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getMinuteOfHour</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getSecondOfMinute</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> millisOfSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">getMillisOfSecond</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>year<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>monthOfYear<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dayOfMonth<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>hourOfDay<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>minuteOfHour<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>secondOfMinute<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>millisOfSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:26:20.158+07:00
+2021
+1
+17
+13
+26
+20
+158</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withyear-method">How to use DateTime.withYear() method</h4>
+
+<p>JodaTimeDateTimeExample12.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample12</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withYear</span><span style="color:#f92672">(</span>1999<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:26:38.349+07:00
+1999-01-17T13:26:38.349+07:00</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1507318946"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-datetime-withweekyear-method">How to use DateTime.withWeekyear() method</h4>
+
+<p>JodaTimeDateTimeExample13.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample13</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withWeekyear</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:26:53.806+07:00
+0002-01-13T13:26:53.806+06:42:04</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withmonthofyear-method">How to use DateTime.withMonthOfYear() method</h4>
+
+<p>JodaTimeDateTimeExample14.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample14</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime julyMonth <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMonthOfYear</span><span style="color:#f92672">(</span>7<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>julyMonth<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:27:02.864+07:00
+2021-07-17T13:27:02.864+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withweekofweekyear-method">How to use DateTime.withWeekOfWeekyear() method</h4>
+
+<p>JodaTimeDateTimeExample15.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample15</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime thirdWeekOfYear <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDayOfWeek</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>thirdWeekOfYear<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:27:19.672+07:00
+2021-01-13T13:27:19.672+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withdayofyear-method">How to use DateTime.withDayOfYear() method</h4>
+
+<p>JodaTimeDateTimeExample16.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample16</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime day100OfTheYear <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDayOfYear</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>day100OfTheYear<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:27:34.683+07:00
+2021-04-10T13:27:34.683+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withdayofmonth-method">How to use DateTime.withDayOfMonth() method</h4>
+
+<p>JodaTimeDateTimeExample17.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample17</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime secondDayOfMonth <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDayOfMonth</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>secondDayOfMonth<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:27:47.046+07:00
+2021-01-02T13:27:47.046+07:00</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="4980154934"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-datetime-withdayofweek-method">How to use DateTime.withDayOfWeek() method</h4>
+
+<p>JodaTimeDateTimeExample18.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample18</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime mondayThisWeek <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDayOfWeek</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>mondayThisWeek<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:28:03.866+07:00
+2021-01-11T13:28:03.866+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withhourofday-method">How to use DateTime.withHourOfDay() method</h4>
+
+<p>JodaTimeDateTimeExample19.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample19</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime at7Today <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withHourOfDay</span><span style="color:#f92672">(</span>7<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>at7Today<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:28:18.800+07:00
+2021-01-17T07:28:18.800+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withminuteofhour-method">How to use DateTime.withMinuteOfHour() method</h4>
+
+<p>JodaTimeDateTimeExample20.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample20</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime at30Minutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMinuteOfHour</span><span style="color:#f92672">(</span>30<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>at30Minutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:28:33.148+07:00
+2021-01-17T13:30:33.148+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withsecondofminute-method">How to use DateTime.withSecondOfMinute() method</h4>
+
+<p>JodaTimeDateTimeExample21.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample21</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime at10Seconds <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withSecondOfMinute</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>at10Seconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:28:47.254+07:00
+2021-01-17T13:28:10.254+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withmillisofsecond-method">How to use DateTime.withMillisOfSecond() method</h4>
+
+<p>JodaTimeDateTimeExample22.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample22</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime at500Milliseconds <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMillisOfSecond</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>at500Milliseconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:45:12.245+07:00
+2021-01-17T13:45:12.500+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withmillisofday-method">How to use DateTime.withMillisOfDay() method</h4>
+
+<p>JodaTimeDateTimeExample23.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample23</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime firstMinuteOfToday <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMillisOfDay</span><span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>firstMinuteOfToday<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:45:28.371+07:00
+2021-01-17T00:01:00.000+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withmillis-method">How to use DateTime.withMillis() method</h4>
+
+<p>JodaTimeDateTimeExample24.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample24</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime firstMinuteFrom1970 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withMillis</span><span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>firstMinuteFrom1970<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:45:39.917+07:00
+1970-01-01T07:01:00.000+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withchronology-method">How to use DateTime.withChronology() method</h4>
+
+<p>JodaTimeDateTimeExample25.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Chronology<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.chrono.EthiopicChronology<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample25</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Chronology chronology  <span style="color:#f92672">=</span> EthiopicChronology<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withChronology</span><span style="color:#f92672">(</span>chronology<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:45:53.520+07:00
+2013-05-09T13:45:53.520+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withzone-method">How to use DateTime.withZone() method</h4>
+
+<p>JodaTimeDateTimeExample26.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample26</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withZone</span><span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:46:05.671+07:00
+2021-01-17T06:46:05.671Z</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withzoneretainfields-method">How to use DateTime.withZoneRetainFields() method</h4>
+
+<p>JodaTimeDateTimeExample27.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample27</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTimeZone dateTimeZone <span style="color:#f92672">=</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">forID</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/London&#34;</span><span style="color:#f92672">);</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withZoneRetainFields</span><span style="color:#f92672">(</span>dateTimeZone<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:46:17.817+07:00
+2021-01-17T13:46:17.817Z</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withdate-method">How to use DateTime.withDate() method</h4>
+
+<p>JodaTimeDateTimeExample28.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalDate<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample28</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        LocalDate localDate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalDate<span style="color:#f92672">(</span>2021<span style="color:#f92672">,</span> 1<span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDate</span><span style="color:#f92672">(</span>localDate<span style="color:#f92672">);</span>
+
+        DateTime dateTime2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDate</span><span style="color:#f92672">(</span>1999<span style="color:#f92672">,</span> 2<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:55:18.043+07:00
+2021-01-01T13:55:18.043+07:00
+1999-02-02T13:55:18.043+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withtime-method">How to use DateTime.withTime() method</h4>
+
+<p>JodaTimeDateTimeExample29.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.LocalTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample29</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        LocalTime localTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LocalTime<span style="color:#f92672">(</span>10<span style="color:#f92672">,</span> 20<span style="color:#f92672">,</span> 30<span style="color:#f92672">);</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withTime</span><span style="color:#f92672">(</span>localTime<span style="color:#f92672">);</span>
+
+        DateTime dateTime2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withTime</span><span style="color:#f92672">(</span>5<span style="color:#f92672">,</span> 10<span style="color:#f92672">,</span> 15<span style="color:#f92672">,</span> 20<span style="color:#f92672">);</span>
+        
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:55:38.561+07:00
+2021-01-17T10:20:30.000+07:00
+2021-01-17T05:10:15.020+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withtimeatstartofday-method">How to use DateTime.withTimeAtStartOfDay() method</h4>
+
+<p>JodaTimeDateTimeExample30.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample30</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime atStartOfDay <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withTimeAtStartOfDay</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>atStartOfDay<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:55:52.347+07:00
+2021-01-17T00:00:00.000+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withfield-method">How to use DateTime.withField() method</h4>
+
+<p>JodaTimeDateTimeExample31.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeFieldType<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample31</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime dateTime1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">year</span><span style="color:#f92672">(),</span> 1999<span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">monthOfYear</span><span style="color:#f92672">(),</span> 7<span style="color:#f92672">);</span>
+        DateTime dateTime3 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">dayOfMonth</span><span style="color:#f92672">(),</span> 10<span style="color:#f92672">);</span>
+        DateTime dateTime4 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hourOfDay</span><span style="color:#f92672">(),</span> 9<span style="color:#f92672">);</span>
+        DateTime dateTime5 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minuteOfHour</span><span style="color:#f92672">(),</span> 20<span style="color:#f92672">);</span>
+        DateTime dateTime6 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">secondOfMinute</span><span style="color:#f92672">(),</span> 30<span style="color:#f92672">);</span>
+        DateTime dateTime7 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millisOfSecond</span><span style="color:#f92672">(),</span> 999<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime3<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime4<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime5<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime6<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>dateTime7<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:56:11.087+07:00
+1999-01-17T13:56:11.087+07:00
+2021-07-17T13:56:11.087+07:00
+2021-01-10T13:56:11.087+07:00
+2021-01-17T09:56:11.087+07:00
+2021-01-17T13:20:11.087+07:00
+2021-01-17T13:56:30.087+07:00
+2021-01-17T13:56:11.999+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withfieldadded-method">How to use DateTime.withFieldAdded() method</h4>
+
+<p>JodaTimeDateTimeExample32.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DurationFieldType<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample32</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextYear <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">years</span><span style="color:#f92672">(),</span> 1<span style="color:#f92672">);</span>
+        DateTime nextMonth <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(),</span> 1<span style="color:#f92672">);</span>
+        DateTime next5Days <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(),</span> 5<span style="color:#f92672">);</span>
+        DateTime next1Hour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(),</span> 1<span style="color:#f92672">);</span>
+        DateTime next5Minutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(),</span> 5<span style="color:#f92672">);</span>
+        DateTime next30Seconds <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">seconds</span><span style="color:#f92672">(),</span> 30<span style="color:#f92672">);</span>
+        DateTime next500Milliseconds <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(),</span> 500<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextYear<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextMonth<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next5Days<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next1Hour<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next5Minutes<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next30Seconds<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next500Milliseconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:56:26.723+07:00
+2022-01-17T13:56:26.723+07:00
+2021-02-17T13:56:26.723+07:00
+2021-01-22T13:56:26.723+07:00
+2021-01-17T14:56:26.723+07:00
+2021-01-17T14:01:26.723+07:00
+2021-01-17T13:56:56.723+07:00
+2021-01-17T13:56:27.223+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withdurationadded-method">How to use DateTime.withDurationAdded() method</h4>
+
+<p>JodaTimeDateTimeExample33.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample33</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime next2Seconds <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withDurationAdded</span><span style="color:#f92672">(</span>1000<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next2Seconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:56:42.165+07:00
+2021-01-17T13:56:44.165+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-withperiodadded-method">How to use DateTime.withPeriodAdded() method</h4>
+
+<p>JodaTimeDateTimeExample34.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample34</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>
+        DateTime next2Minutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">withPeriodAdded</span><span style="color:#f92672">(</span>period<span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next2Minutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:56:55.258+07:00
+2021-01-17T13:58:55.258+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plus-method">How to use DateTime.plus() method</h4>
+
+<p>JodaTimeDateTimeExample35.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Duration<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample35</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>120000<span style="color:#f92672">);</span> <span style="color:#75715e">// 120000 milliseconds = 120 seconds = 2 minutes
+</span><span style="color:#75715e"></span>        Duration duration <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Duration<span style="color:#f92672">(</span>180000<span style="color:#f92672">);</span> <span style="color:#75715e">// 180000 milliseconds = 180 seconds = 3 minutes
+</span><span style="color:#75715e"></span>
+        DateTime next1Minute <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plus</span><span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>
+        DateTime next2Minutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plus</span><span style="color:#f92672">(</span>period<span style="color:#f92672">);</span>
+
+        DateTime next3Minutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plus</span><span style="color:#f92672">(</span>duration<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next1Minute<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next2Minutes<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next3Minutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:58:30.271+07:00
+2021-01-17T13:59:30.271+07:00
+2021-01-17T14:00:30.271+07:00
+2021-01-17T14:01:30.271+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusyears-method">How to use DateTime.plusYears() method</h4>
+
+<p>JodaTimeDateTimeExample36.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample36</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextFiveYear <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusYears</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextFiveYear<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:58:43.879+07:00
+2026-01-17T13:58:43.879+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusmonths-method">How to use DateTime.plusMonths() method</h4>
+
+<p>JodaTimeDateTimeExample37.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample37</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextTwoMonths <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMonths</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextTwoMonths<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:58:57.405+07:00
+2021-03-17T13:58:57.405+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusweeks-method">How to use DateTime.plusWeeks() method</h4>
+
+<p>JodaTimeDateTimeExample38.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample38</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextTwoWeeks <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusWeeks</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextTwoWeeks<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:59:10.732+07:00
+2021-01-31T13:59:10.732+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusdays-method">How to use DateTime.plusDays() method</h4>
+
+<p>JodaTimeDateTimeExample39.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample39</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextTenDays <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusDays</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextTenDays<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:59:22.809+07:00
+2021-01-27T13:59:22.809+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plushours-method">How to use DateTime.plusHours() method</h4>
+
+<p>JodaTimeDateTimeExample40.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample40</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextHour <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusHours</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextHour<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:59:36.164+07:00
+2021-01-17T14:59:36.164+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusminutes-method">How to use DateTime.plusMinutes() method</h4>
+
+<p>JodaTimeDateTimeExample41.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample41</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime next30Minutes <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMinutes</span><span style="color:#f92672">(</span>30<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next30Minutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T13:59:48.285+07:00
+2021-01-17T14:29:48.285+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusseconds-method">How to use DateTime.plusSeconds() method</h4>
+
+<p>JodaTimeDateTimeExample42.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample42</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime next30Seconds <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusSeconds</span><span style="color:#f92672">(</span>30<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>next30Seconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:00:00.108+07:00
+2021-01-17T14:00:30.108+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-plusmillis-method">How to use DateTime.plusMillis() method</h4>
+
+<p>JodaTimeDateTimeExample43.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample43</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime nextSecond <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMillis</span><span style="color:#f92672">(</span>1000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>nextSecond<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:00:13.587+07:00
+2021-01-17T14:00:14.587+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minus-method">How to use DateTime.minus() method</h4>
+
+<p>JodaTimeDateTimeExample44.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Duration<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample44</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        Period twoMinutesPeriod <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>120000<span style="color:#f92672">);</span> <span style="color:#75715e">// 120000 milliseconds = 120 seconds = 2 minutes
+</span><span style="color:#75715e"></span>        Duration threeMinutesDuration <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Duration<span style="color:#f92672">(</span>180000<span style="color:#f92672">);</span> <span style="color:#75715e">// 180000 milliseconds = 180 seconds = 3 minutes
+</span><span style="color:#75715e"></span>
+        DateTime oneMinuteAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minus</span><span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>        DateTime twoMinutesAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minus</span><span style="color:#f92672">(</span>twoMinutesPeriod<span style="color:#f92672">);</span>
+        DateTime threeMinutesAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minus</span><span style="color:#f92672">(</span>threeMinutesDuration<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>oneMinuteAgo<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>twoMinutesAgo<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>threeMinutesAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:00:26.736+07:00
+2021-01-17T13:59:26.736+07:00
+2021-01-17T13:58:26.736+07:00
+2021-01-17T13:57:26.736+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusyears-method">How to use DateTime.minusYears() method</h4>
+
+<p>JodaTimeDateTimeExample45.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample45</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime oneYearAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusYears</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>oneYearAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:00:41.406+07:00
+2020-01-17T14:00:41.406+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusmonths-method">How to use DateTime.minusMonths() method</h4>
+
+<p>JodaTimeDateTimeExample46.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample46</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime oneMonthAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMonths</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>oneMonthAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:00:53.093+07:00
+2020-12-17T14:00:53.093+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusweeks-method">How to use DateTime.minusWeeks() method</h4>
+
+<p>JodaTimeDateTimeExample47.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample47</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime twoWeeksAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusWeeks</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>twoWeeksAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:01:05.196+07:00
+2021-01-03T14:01:05.196+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusdays-method">How to use DateTime.minusDays() method</h4>
+
+<p>JodaTimeDateTimeExample48.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample48</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime oneDayAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusDays</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>oneDayAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:01:56.490+07:00
+2021-01-16T14:01:56.490+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minushours-method">How to use DateTime.minusHours() method</h4>
+
+<p>JodaTimeDateTimeExample49.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample49</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime threeHoursAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusHours</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>threeHoursAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:02:09.221+07:00
+2021-01-17T11:02:09.221+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusminutes-method">How to use DateTime.minusMinutes() method</h4>
+
+<p>JodaTimeDateTimeExample50.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample50</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime fiveMinutesAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMinutes</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>fiveMinutesAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:02:22.328+07:00
+2021-01-17T13:57:22.328+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusseconds-method">How to use DateTime.minusSeconds() method</h4>
+
+<p>JodaTimeDateTimeExample51.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample51</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime tenSecondsAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusSeconds</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>tenSecondsAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:02:34.040+07:00
+2021-01-17T14:02:24.040+07:00</code></pre></div></p>
+
+<h4 id="how-to-use-datetime-minusmillis-method">How to use DateTime.minusMillis() method</h4>
+
+<p>JodaTimeDateTimeExample52.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimeDateTimeExample52</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+
+        DateTime oneSecondAgo <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMillis</span><span style="color:#f92672">(</span>1000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>oneSecondAgo<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2021-01-17T14:02:47.469+07:00
+2021-01-17T14:02:46.469+07:00</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-joda-time-instant-by-examples/">Joda Time Instant by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localdate-by-examples/">Joda Time LocalDate by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localtime-by-examples/">Joda Time LocalTime by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localdatetime-by-examples/">Joda Time LocalDateTime by Examples in Java</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/joda-time">Joda Time</a>
+                                
+                                <a href="https://simplesolution.dev/tag/datetime">DateTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/datetimezone">DateTimeZone</a>
+                                
+                                <a href="https://simplesolution.dev/tag/instant">Instant</a>
+                                
+                                <a href="https://simplesolution.dev/tag/localdatetime">LocalDateTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/localdate">LocalDate</a>
+                                
+                                <a href="https://simplesolution.dev/tag/localtime">LocalTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/datetimefieldtype">DateTimeFieldType</a>
+                                
+                                <a href="https://simplesolution.dev/tag/durationfieldtype">DurationFieldType</a>
+                                
+                                <a href="https://simplesolution.dev/tag/period">Period</a>
+                                
+                                <a href="https://simplesolution.dev/tag/duration">Duration</a>
+                                
+                                <a href="https://simplesolution.dev/tag/chronology">Chronology</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gregorianchronology">GregorianChronology</a>
+                                
+                                <a href="https://simplesolution.dev/tag/ethiopicchronology">EthiopicChronology</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
