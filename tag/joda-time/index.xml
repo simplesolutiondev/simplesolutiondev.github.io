@@ -6,10 +6,20 @@
     <description>Recent content in Joda Time on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Jan 2021 22:45:17 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 00:56:38 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/joda-time/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Format Joda-Time DateTime String using ISODateTimeFormat in Java</title>
+      <link>https://simplesolution.dev/java-format-joda-time-datetime-string-using-isodatetimeformat/</link>
+      <pubDate>Tue, 19 Jan 2021 00:56:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-format-joda-time-datetime-string-using-isodatetimeformat/</guid>
+      <description>In this Joda-Time tutorial, we learn how to use the ISODateTimeFormat class of Joda-Time library to format the DateTime object into a String. With different built-in formatters of ISODateTimeFormat class we can format date time String in different format.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Convert Joda-Time DateTime into Calendar and Vice Versa in Java</title>
