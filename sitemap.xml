@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-joda-time-convert-datetime-into-string-and-vice-versa/</loc>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-joda-time-convert-timestamp-into-datetime-and-vice-versa/</loc>
     <lastmod>2021-01-17T18:21:04+07:00</lastmod>
   </url>
@@ -1150,7 +1155,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-01-17T18:21:04+07:00</lastmod>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1372,7 +1377,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-17T18:21:04+07:00</lastmod>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1402,7 +1407,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-17T18:21:04+07:00</lastmod>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1425,8 +1430,116 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/joda-chronology/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-datetime/</loc>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-datetimefieldtype/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-datetimeformat/</loc>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-datetimeformatter/</loc>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-datetimezone/</loc>
+    <lastmod>2021-01-17T16:42:17+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-duration/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-durationfieldtype/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-ethiopicchronology/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-gregorianchronology/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-instant/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-interval/</loc>
+    <lastmod>2021-01-15T21:54:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-isochronology/</loc>
+    <lastmod>2021-01-16T18:04:04+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-localdate/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-localdatetime/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-localtime/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-mutabledatetime/</loc>
+    <lastmod>2021-01-14T00:45:06+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-period/</loc>
+    <lastmod>2021-01-17T13:15:15+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/joda-time/</loc>
-    <lastmod>2021-01-17T18:21:04+07:00</lastmod>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1648,7 +1761,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-17T18:21:04+07:00</lastmod>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1684,7 +1797,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2021-01-09T12:08:15+07:00</lastmod>
+    <lastmod>2021-01-18T21:30:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   

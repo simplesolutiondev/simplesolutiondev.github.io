@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joda Chronology on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/joda-chronology/</link>
+    <description>Recent content in Joda Chronology on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2021 13:15:15 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/joda-chronology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Joda Time DateTime by Examples in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-datetime-by-examples/</link>
+      <pubDate>Sun, 17 Jan 2021 13:15:15 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-datetime-by-examples/</guid>
+      <description>In this Java tutorial, we learn how to use the org.joda.time.DateTime class of Joda Time library by different example Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Joda Time LocalDateTime by Examples in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-localdatetime-by-examples/</link>
+      <pubDate>Sat, 16 Jan 2021 18:04:04 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-localdatetime-by-examples/</guid>
+      <description>In this Java tutorial, we learn how to use the org.joda.time.LocalDateTime class of Joda Time library by different example Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Joda Time LocalTime by Examples in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-localtime-by-examples/</link>
+      <pubDate>Sat, 16 Jan 2021 11:51:22 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-localtime-by-examples/</guid>
+      <description>In this Java tutorial, we learn how to use the org.joda.time.LocalTime class of Joda Time library by different example Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Joda Time LocalDate by Examples in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-localdate-by-examples/</link>
+      <pubDate>Fri, 15 Jan 2021 21:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-localdate-by-examples/</guid>
+      <description>In this Java tutorial, we learn how to use the org.joda.time.LocalDate class of Joda Time library by different example Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>
