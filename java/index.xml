@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Jan 2021 21:30:50 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 18 Jan 2021 22:45:17 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert Joda-Time DateTime into Calendar and Vice Versa in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-convert-datetime-into-calendar-and-vice-versa/</link>
+      <pubDate>Mon, 18 Jan 2021 22:45:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-convert-datetime-into-calendar-and-vice-versa/</guid>
+      <description>In this Joda-Time tutorial, we learn how to convert Joda-Time’s DateTime object into java.util.Calendar object and vice versa from java.util.Calendar object into Joda-Time’s DateTime object in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.</description>
+    </item>
     
     <item>
       <title>Convert Joda-Time DateTime into String and Vice Versa in Java</title>
