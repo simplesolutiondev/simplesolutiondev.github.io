@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 22:17:07 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Jan 2021 00:17:40 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generate Random UUID in Java</title>
+      <link>https://simplesolution.dev/java-generate-random-uuid/</link>
+      <pubDate>Wed, 20 Jan 2021 00:17:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-generate-random-uuid/</guid>
+      <description>In this Java core tutorial, we learn how to use java.util.UUID class in Java to generate a random universally unique identifier (UUID).
+   (adsbygoogle = window.adsbygoogle || []).push({});  In the following Java program, we show how to use UUID.randomUUID() static method to generate a new random UUID value.
+GenerateRandomUUID.java import java.util.UUID; public class GenerateRandomUUID { public static void main(String[] args) { UUID uuid = UUID.randomUUID(); String uuidString = uuid.</description>
+    </item>
     
     <item>
       <title>Joda-Time Create DateTime with Time End of the Day in Java</title>
