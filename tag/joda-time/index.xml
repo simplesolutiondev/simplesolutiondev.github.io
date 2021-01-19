@@ -6,10 +6,20 @@
     <description>Recent content in Joda Time on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 21:10:25 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 22:17:07 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/joda-time/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Joda-Time Create DateTime with Time End of the Day in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-create-datetime-with-time-end-of-day/</link>
+      <pubDate>Tue, 19 Jan 2021 22:17:07 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-create-datetime-with-time-end-of-day/</guid>
+      <description>In this Joda-Time tutorial, we learn how to create a new DateTime object or convert an existing DateTime object to a new DateTime object with the time set to end of the day at 23:59:59.999 in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Compare Joda-Time DateTime using DateTimeComparator in Java</title>
