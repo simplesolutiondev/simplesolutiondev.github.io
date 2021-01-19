@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-joda-time-compare-datetime-using-datetimecomparator/</loc>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-format-joda-time-datetime-string-using-isodatetimeformat/</loc>
     <lastmod>2021-01-19T00:56:38+07:00</lastmod>
   </url>
@@ -1153,7 +1158,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/comparator/</loc>
-    <lastmod>2021-01-09T17:22:53+07:00</lastmod>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1380,14 +1385,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-19T00:56:38+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1417,7 +1422,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-19T00:56:38+07:00</lastmod>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1447,7 +1452,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/joda-datetime/</loc>
-    <lastmod>2021-01-19T00:56:38+07:00</lastmod>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/joda-datetimecomparator/</loc>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1555,7 +1566,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/joda-time/</loc>
-    <lastmod>2021-01-19T00:56:38+07:00</lastmod>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1777,7 +1788,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-19T00:56:38+07:00</lastmod>
+    <lastmod>2021-01-19T21:10:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1794,13 +1805,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
   </url>

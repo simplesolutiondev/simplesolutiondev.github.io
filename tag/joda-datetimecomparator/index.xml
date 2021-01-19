@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joda Datetimecomparator on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/joda-datetimecomparator/</link>
+    <description>Recent content in Joda Datetimecomparator on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2021 21:10:25 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/joda-datetimecomparator/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compare Joda-Time DateTime using DateTimeComparator in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-compare-datetime-using-datetimecomparator/</link>
+      <pubDate>Tue, 19 Jan 2021 21:10:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-compare-datetime-using-datetimecomparator/</guid>
+      <description>In this Joda-Time tutorial, we learn how to use Joda-Time’s DateTimeComparator class to compare DateTime objects. With different built-in comparators we will learn how to compare DateTime objects with different specified fields such as date, time or date and time.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+  </channel>
+</rss>

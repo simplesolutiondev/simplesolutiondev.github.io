@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compare Joda Time DateTime using DateTimeComparator in Java</title>
+    <meta name="title" content="Compare Joda Time DateTime using DateTimeComparator in Java">
+    <meta name="description" content="In this Joda Time tutorial, we learn how to use Joda Time’s DateTimeComparator class to compare DateTime objects. With different built in comparators we will learn how to compare DateTime objects with different specified fields such as  date, time or date and time.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-compare-datetime-using-datetimecomparator/">
+    <meta property="og:title" content="Compare Joda-Time DateTime using DateTimeComparator in Java">
+    <meta property="og:description" content="In this Joda-Time tutorial, we learn how to use Joda-Time’s DateTimeComparator class to compare DateTime objects. With different built-in comparators we will learn how to compare DateTime objects with different specified fields such as  date, time or date and time.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-compare-datetime-using-datetimecomparator.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-compare-datetime-using-datetimecomparator/">
+    <meta name="twitter:title" content="Compare Joda-Time DateTime using DateTimeComparator in Java">
+    <meta name="twitter:description" content="In this Joda-Time tutorial, we learn how to use Joda-Time’s DateTimeComparator class to compare DateTime objects. With different built-in comparators we will learn how to compare DateTime objects with different specified fields such as  date, time or date and time.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-compare-datetime-using-datetimecomparator.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Compare Joda-Time DateTime using DateTimeComparator in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Joda-Time tutorial, we learn how to use Joda-Time’s DateTimeComparator class to compare DateTime objects. With different built-in comparators we will learn how to compare DateTime objects with different specified fields such as  date, time or date and time.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-joda-time-library-to-your-java-project">Add Joda Time library to your Java project</h4>
+
+<p>To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.10.9&#39;</span></code></pre></div>
+
+<p>To use Joda Time Java library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>joda-time<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>joda-time<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.10.9<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>To download the Joda Time .jar file you can visit Joda Time releases page at <a href="https://github.com/JodaOrg/joda-time/releases" target="_blank">github.com/JodaOrg/joda-time</a></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="compare-date-and-time">Compare Date and Time</h4>
+
+<p>In the following example Java programs, we use DateTimeComparator.getInstance() static method to get the DateTimeComparator object that allows comparison of the entire date and time value.</p>
+
+<p>CompareDateTimeExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareDateTimeExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-19T08:30:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator dateTimeComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> dateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-19T08:30:00.000+07:00
+dateTime2: 2021-01-20T09:00:00.000+07:00
+Compare Result: -1</code></pre></div></p>
+
+<p>CompareDateTimeExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareDateTimeExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator dateTimeComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> dateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-20T09:00:00.000+07:00
+dateTime2: 2021-01-20T09:00:00.000+07:00
+Compare Result: 0</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p>CompareDateTimeExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareDateTimeExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-21T09:30:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator dateTimeComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> dateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-21T09:30:00.000+07:00
+dateTime2: 2021-01-20T09:00:00.000+07:00
+Compare Result: 1</code></pre></div></p>
+
+<h4 id="compare-date-only">Compare Date Only</h4>
+
+<p>In the following example Java programs, we use DateTimeComparator.getDateOnlyInstance() static method to get the DateTimeComparator object that allows comparison of the date value only.</p>
+
+<p>CompareDateExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareDateExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-19T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T08:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator dateOnlyComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getDateOnlyInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> dateOnlyComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-19T09:00:00.000+07:00
+dateTime2: 2021-01-20T08:00:00.000+07:00
+Compare Result: -1</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="6759645625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p>CompareDateExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareDateExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T08:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T09:30:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator dateOnlyComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getDateOnlyInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> dateOnlyComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-20T08:00:00.000+07:00
+dateTime2: 2021-01-20T09:30:00.000+07:00
+Compare Result: 0</code></pre></div></p>
+
+<p>CompareDateExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareDateExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-21T08:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator dateOnlyComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getDateOnlyInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> dateOnlyComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-21T08:00:00.000+07:00
+dateTime2: 2021-01-20T09:00:00.000+07:00
+Compare Result: 1</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1507318946"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="compare-time-only">Compare Time Only</h4>
+
+<p>In the following example Java programs, we use DateTimeComparator.getTimeOnlyInstance() static method to get the DateTimeComparator object that allows comparison of the time value only.</p>
+
+<p>CompareTimeExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareTimeExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-20T08:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-19T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator timeOnlyComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeOnlyInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> timeOnlyComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-20T08:00:00.000+07:00
+dateTime2: 2021-01-19T09:00:00.000+07:00
+Compare Result: -1</code></pre></div></p>
+
+<p>CompareTimeExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareTimeExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-18T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-19T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator timeOnlyComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeOnlyInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> timeOnlyComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-18T09:00:00.000+07:00
+dateTime2: 2021-01-19T09:00:00.000+07:00
+Compare Result: 0</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="4980154934"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p>CompareTimeExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeComparator<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CompareTimeExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime dateTime1 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-18T09:00:00.000&#34;</span><span style="color:#f92672">);</span>
+        DateTime dateTime2 <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;2021-01-19T08:00:00.000&#34;</span><span style="color:#f92672">);</span>
+
+        DateTimeComparator timeOnlyComparator <span style="color:#f92672">=</span> DateTimeComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">getTimeOnlyInstance</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> compareResult <span style="color:#f92672">=</span> timeOnlyComparator<span style="color:#f92672">.</span><span style="color:#a6e22e">compare</span><span style="color:#f92672">(</span>dateTime1<span style="color:#f92672">,</span> dateTime2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime1: &#34;</span> <span style="color:#f92672">+</span> dateTime1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;dateTime2: &#34;</span> <span style="color:#f92672">+</span> dateTime2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Compare Result: &#34;</span> <span style="color:#f92672">+</span> compareResult<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dateTime1: 2021-01-18T09:00:00.000+07:00
+dateTime2: 2021-01-19T08:00:00.000+07:00
+Compare Result: 1</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-convert-joda-time-datetime-into-date/">Convert Joda-Time DateTime into Date in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-create-utc-datetime/">Joda-Time Create UTC DateTime in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-datetime-by-examples/">Joda Time DateTime by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-create-datetime-with-time-start-of-day/">Joda-Time Create DateTime with Time Start Of the Day in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-convert-timestamp-into-datetime-and-vice-versa/">Convert SQL Timestamp  into Joda-Time DateTime and Vice Versa in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-convert-datetime-into-string-and-vice-versa/">Convert Joda-Time DateTime into String and Vice Versa in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-convert-datetime-into-calendar-and-vice-versa/">Convert Joda-Time DateTime into Calendar and Vice Versa in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-format-joda-time-datetime-string-using-isodatetimeformat/">Format Joda-Time DateTime String using ISODateTimeFormat in Java</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/joda-time">Joda Time</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-datetime">Joda DateTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-datetimecomparator">Joda DateTimeComparator</a>
+                                
+                                <a href="https://simplesolution.dev/tag/comparator">Comparator</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
