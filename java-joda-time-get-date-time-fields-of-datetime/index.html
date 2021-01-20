@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Joda Time Create UTC DateTime in Java</title>
-    <meta name="title" content="Joda Time Create UTC DateTime in Java">
-    <meta name="description" content="In this Joda Time tutorial, we learn how to create a DateTime object to represent date and time in Universal Coordinated Time (UTC) time zone in Java.">
+    <title>Get Date and Time fields value of Joda Time DateTime object in Java</title>
+    <meta name="title" content="Get Date and Time fields value of Joda Time DateTime object in Java">
+    <meta name="description" content="In this Joda Time tutorial, we learn how to get specified date and time fields of a DateTime object such as year, month day, hour, minute, second, millisecond in Java.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-create-utc-datetime/">
-    <meta property="og:title" content="Joda-Time Create UTC DateTime in Java">
-    <meta property="og:description" content="In this Joda-Time tutorial, we learn how to create a DateTime object to represent date and time in Universal Coordinated Time (UTC) time zone in Java.">
+    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-get-date-time-fields-of-datetime/">
+    <meta property="og:title" content="Get Date and Time fields value of Joda-Time DateTime object in Java">
+    <meta property="og:description" content="In this Joda-Time tutorial, we learn how to get specified date and time fields of a DateTime object such as year, month day, hour, minute, second, millisecond in Java.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-create-utc-datetime.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-get-date-time-fields-of-datetime.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-create-utc-datetime/">
-    <meta name="twitter:title" content="Joda-Time Create UTC DateTime in Java">
-    <meta name="twitter:description" content="In this Joda-Time tutorial, we learn how to create a DateTime object to represent date and time in Universal Coordinated Time (UTC) time zone in Java.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-get-date-time-fields-of-datetime/">
+    <meta name="twitter:title" content="Get Date and Time fields value of Joda-Time DateTime object in Java">
+    <meta name="twitter:description" content="In this Joda-Time tutorial, we learn how to get specified date and time fields of a DateTime object such as year, month day, hour, minute, second, millisecond in Java.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-create-utc-datetime.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-get-date-time-fields-of-datetime.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -51,11 +51,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Joda-Time Create UTC DateTime in Java</h1></div>
+                    <div class="post-header"><h1 class="post-title">Get Date and Time fields value of Joda-Time DateTime object in Java</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>In this Joda-Time tutorial, we learn how to create a DateTime object to represent date and time in Universal Coordinated Time (UTC) time zone in Java.</p>
+<p>In this Joda-Time tutorial, we learn how to get specified date and time fields of a DateTime object such as year, month day, hour, minute, second, millisecond in Java.</p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -95,21 +95,41 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="create-current-datetime-in-utc-using-datetime-now-static-method">Create Current DateTime in UTC using DateTime.now() static method</h4>
+<h4 id="using-getter-methods">Using getter methods</h4>
 
-<p>DateTimeNowUTC.java
+<p>GetDateTimeExample1.java
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DateTimeNowUTC</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetDateTimeExample1</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">UTC</span><span style="color:#f92672">);</span>
+        DateTime dateTime <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;UTC Now: &#34;</span> <span style="color:#f92672">+</span> now<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getYear</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> months <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getMonthOfYear</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> days <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getDayOfMonth</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">int</span> hours <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getHourOfDay</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> minutes <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getMinuteOfHour</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> seconds <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getSecondOfMinute</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> milliseconds <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">getMillisOfSecond</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Year: &#34;</span> <span style="color:#f92672">+</span> year<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Months: &#34;</span> <span style="color:#f92672">+</span> months<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Days: &#34;</span> <span style="color:#f92672">+</span> days<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hours: &#34;</span> <span style="color:#f92672">+</span> hours<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Minutes: &#34;</span> <span style="color:#f92672">+</span> minutes<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Seconds: &#34;</span> <span style="color:#f92672">+</span> seconds<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Milliseconds: &#34;</span> <span style="color:#f92672">+</span> milliseconds<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">UTC Now: 2021-01-17T09:46:58.189Z</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Year: 2021
+Months: 1
+Days: 21
+Hours: 1
+Minutes: 1
+Seconds: 13
+Milliseconds: 258</code></pre></div></p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -122,86 +142,42 @@ The output is:
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="create-current-datetime-in-utc-using-default-constructor">Create Current DateTime in UTC using default constructor</h4>
+<h4 id="using-get-method-with-datetimefieldtype">Using get method with DateTimeFieldType</h4>
 
-<p>DateTimeUTCFromConstructor.java
+<p>GetDateTimeExample2.java
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.DateTimeFieldType<span style="color:#f92672">;</span>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DateTimeUTCFromConstructor</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetDateTimeExample2</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        DateTime now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">UTC</span><span style="color:#f92672">);</span>
+        DateTime dateTime <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;UTC Now: &#34;</span> <span style="color:#f92672">+</span> now<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">year</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> months <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">monthOfYear</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> days <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">dayOfMonth</span><span style="color:#f92672">());</span>
+
+        <span style="color:#66d9ef">int</span> hours <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">hourOfDay</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> minutes <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minuteOfHour</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> seconds <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">secondOfMinute</span><span style="color:#f92672">());</span>
+        <span style="color:#66d9ef">int</span> milliseconds <span style="color:#f92672">=</span> dateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>DateTimeFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">millisOfSecond</span><span style="color:#f92672">());</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Year: &#34;</span> <span style="color:#f92672">+</span> year<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Months: &#34;</span> <span style="color:#f92672">+</span> months<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Days: &#34;</span> <span style="color:#f92672">+</span> days<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hours: &#34;</span> <span style="color:#f92672">+</span> hours<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Minutes: &#34;</span> <span style="color:#f92672">+</span> minutes<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Seconds: &#34;</span> <span style="color:#f92672">+</span> seconds<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Milliseconds: &#34;</span> <span style="color:#f92672">+</span> milliseconds<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">UTC Now: 2021-01-17T09:47:16.930Z</code></pre></div></p>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4970454579445266"
-     data-ad-slot="6759645625"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-<h4 id="create-datetime-in-utc-from-milliseconds">Create DateTime in UTC from milliseconds</h4>
-
-<p>DateTimeMillisecondsUTC.java
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DateTimeMillisecondsUTC</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">long</span> currentTimeInMilliseconds <span style="color:#f92672">=</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">currentTimeMillis</span><span style="color:#f92672">();</span>
-
-        DateTime dateTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>currentTimeInMilliseconds<span style="color:#f92672">,</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">UTC</span><span style="color:#f92672">);</span>
-
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Current time in milliseconds: &#34;</span> <span style="color:#f92672">+</span> currentTimeInMilliseconds<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;DateTime UTC: &#34;</span> <span style="color:#f92672">+</span> dateTime<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Current time in milliseconds: 1610876844911
-DateTime UTC: 2021-01-17T09:47:24.911Z</code></pre></div></p>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4970454579445266"
-     data-ad-slot="1507318946"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-<h4 id="create-datetime-in-utc-from-specified-date-and-time">Create DateTime in UTC from specified date and time</h4>
-
-<p>DateTimeUTC.java
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> org.joda.time.DateTimeZone<span style="color:#f92672">;</span>
-
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DateTimeUTC</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">int</span> year <span style="color:#f92672">=</span> 2022<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> monthOfYear <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> dayOfMonth <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> hourOfDay <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> minuteOfHour <span style="color:#f92672">=</span> 9<span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> secondOfMinute <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
-
-        DateTime dateTime <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DateTime<span style="color:#f92672">(</span>year<span style="color:#f92672">,</span> monthOfYear<span style="color:#f92672">,</span> dayOfMonth<span style="color:#f92672">,</span> hourOfDay<span style="color:#f92672">,</span> minuteOfHour<span style="color:#f92672">,</span> secondOfMinute<span style="color:#f92672">,</span> DateTimeZone<span style="color:#f92672">.</span><span style="color:#a6e22e">UTC</span><span style="color:#f92672">);</span>
-
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;DateTime UTC: &#34;</span> <span style="color:#f92672">+</span> dateTime<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span></code></pre></div>
-The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">DateTime UTC: 2022-01-01T01:09:00.000Z</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Year: 2021
+Months: 1
+Days: 21
+Hours: 1
+Minutes: 1
+Seconds: 26
+Milliseconds: 906</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
@@ -209,9 +185,11 @@ The output is:
 
 <p><a href="https://simplesolution.dev/java-convert-joda-time-datetime-into-date/">Convert Joda-Time DateTime into Date in Java</a></p>
 
-<p><a href="https://simplesolution.dev/java-joda-time-create-datetime-with-time-start-of-day/">Joda-Time Create DateTime with Time Start Of the Day in Java</a></p>
+<p><a href="https://simplesolution.dev/java-joda-time-create-utc-datetime/">Joda-Time Create UTC DateTime in Java</a></p>
 
 <p><a href="https://simplesolution.dev/java-joda-time-datetime-by-examples/">Joda Time DateTime by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-create-datetime-with-time-start-of-day/">Joda-Time Create DateTime with Time Start Of the Day in Java</a></p>
 
 <p><a href="https://simplesolution.dev/java-joda-time-convert-timestamp-into-datetime-and-vice-versa/">Convert SQL Timestamp  into Joda-Time DateTime and Vice Versa in Java</a></p>
 
@@ -225,23 +203,15 @@ The output is:
 
 <p><a href="https://simplesolution.dev/java-joda-time-create-datetime-with-time-end-of-day/">Joda-Time Create DateTime with Time End of the Day in Java</a></p>
 
-<p><a href="https://simplesolution.dev/java-joda-time-get-date-time-fields-of-datetime/">Get Date and Time fields value of Joda-Time DateTime object in Java</a></p>
-
                         
                         <div class="mt-5">
                             <h6>Tags:</h6>
                             <div class="tagcloud">
                                 <a href="https://simplesolution.dev/tag/joda-time">Joda Time</a>
                                 
-                                <a href="https://simplesolution.dev/tag/datetime">DateTime</a>
-                                
-                                <a href="https://simplesolution.dev/tag/datetimezone">DateTimeZone</a>
-                                
                                 <a href="https://simplesolution.dev/tag/joda-datetime">Joda DateTime</a>
                                 
-                                <a href="https://simplesolution.dev/tag/joda-datetimezone">Joda DateTimeZone</a>
-                                
-                                <a href="https://simplesolution.dev/tag/utc">UTC</a>
+                                <a href="https://simplesolution.dev/tag/joda-datetimefieldtype">Joda DateTimeFieldType</a>
                                 
                             </div>
                         </div>
