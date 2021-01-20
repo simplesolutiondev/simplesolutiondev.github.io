@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-joda-time-get-default-time-zone-names/</loc>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-joda-time-get-date-time-fields-of-datetime/</loc>
     <lastmod>2021-01-21T00:58:41+07:00</lastmod>
   </url>
@@ -1412,7 +1417,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-21T00:58:41+07:00</lastmod>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1442,7 +1447,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-21T00:58:41+07:00</lastmod>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1501,8 +1506,14 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/joda-datetimeutils/</loc>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/joda-datetimezone/</loc>
-    <lastmod>2021-01-17T16:42:17+07:00</lastmod>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1610,7 +1621,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/joda-time/</loc>
-    <lastmod>2021-01-21T00:58:41+07:00</lastmod>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1838,7 +1849,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-21T00:58:41+07:00</lastmod>
+    <lastmod>2021-01-21T01:24:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   

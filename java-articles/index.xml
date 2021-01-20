@@ -6,10 +6,21 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Jan 2021 00:58:41 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jan 2021 01:24:08 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Joda-Time Gets Default Time Zone Names in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-get-default-time-zone-names/</link>
+      <pubDate>Thu, 21 Jan 2021 01:24:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-get-default-time-zone-names/</guid>
+      <description>In this Joda-Time tutorial, we show you how to use Joda-Time’s DateTimeUtils class to get the list of default time zone names in a Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Get Date and Time fields value of Joda-Time DateTime object in Java</title>
