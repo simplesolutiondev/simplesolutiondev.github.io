@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joda Time Period by Examples in Java</title>
+    <meta name="title" content="Joda Time Period by Examples in Java">
+    <meta name="description" content="In this Java tutorial, we learn how to use the org.joda.time.Period class of Joda Time library by different example Java programs.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-joda-time-period-by-examples/">
+    <meta property="og:title" content="Joda Time Period by Examples in Java">
+    <meta property="og:description" content="In this Java tutorial, we learn how to use the org.joda.time.Period class of Joda-Time library by different example Java programs.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-joda-time-period-by-examples.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-joda-time-period-by-examples/">
+    <meta name="twitter:title" content="Joda Time Period by Examples in Java">
+    <meta name="twitter:description" content="In this Java tutorial, we learn how to use the org.joda.time.Period class of Joda-Time library by different example Java programs.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-joda-time-period-by-examples.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Joda Time Period by Examples in Java</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java tutorial, we learn how to use the org.joda.time.Period class of Joda-Time library by different example Java programs.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-joda-time-library-to-your-java-project">Add Joda Time library to your Java project</h4>
+
+<p>To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">compile group: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;joda-time&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.10.9&#39;</span></code></pre></div>
+
+<p>To use Joda Time Java library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>joda-time<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>joda-time<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.10.9<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>To download the Joda Time .jar file you can visit Joda Time releases page at <a href="https://github.com/JodaOrg/joda-time/releases" target="_blank">github.com/JodaOrg/joda-time</a></p>
+
+<h4 id="what-is-org-joda-time-period-class-use-for">What is org.joda.time.Period class use for?</h4>
+
+<p>The Period class is an immutable time period class that specifies a set of duration field values.</p>
+
+<h4 id="create-period-object-using-constructors">Create Period object using constructors</h4>
+
+<p>You can create a new empty Period using the default constructor as below Java program.</p>
+
+<p>JodaTimePeriodExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New empty Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New empty Period: PT0S</code></pre></div></p>
+
+<p>You can create a new Period object with given time information as the following Java program.</p>
+
+<p>JodaTimePeriodExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> hours <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> minutes <span style="color:#f92672">=</span> 20<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> seconds <span style="color:#f92672">=</span> 30<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> milliseconds <span style="color:#f92672">=</span> 400<span style="color:#f92672">;</span>
+
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>hours<span style="color:#f92672">,</span> minutes<span style="color:#f92672">,</span> seconds<span style="color:#f92672">,</span> milliseconds<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT1H20M30.400S</code></pre></div></p>
+
+<p>You can create a new Period object with a number of years, months, days and time as following Java program.</p>
+
+<p>JodaTimePeriodExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> years <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> months <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> weeks <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> days <span style="color:#f92672">=</span> 10<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> hours <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> minutes <span style="color:#f92672">=</span> 20<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> seconds <span style="color:#f92672">=</span> 30<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> milliseconds <span style="color:#f92672">=</span> 400<span style="color:#f92672">;</span>
+
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>years<span style="color:#f92672">,</span> months<span style="color:#f92672">,</span> weeks<span style="color:#f92672">,</span> days<span style="color:#f92672">,</span> hours<span style="color:#f92672">,</span> minutes<span style="color:#f92672">,</span> seconds<span style="color:#f92672">,</span> milliseconds<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: P1Y1M1W10DT1H20M30.400S</code></pre></div></p>
+
+<p>You can create a new Period object with a given number of milliseconds.
+JodaTimePeriodExample4
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample4</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>60000<span style="color:#f92672">);</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minutes
+</span><span style="color:#75715e"></span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT1M</code></pre></div></p>
+
+<p>You can create a new Period object with given start and end time in milliseconds.
+JodaTimePeriodExample5.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample5</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>1000<span style="color:#f92672">,</span> 9000<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT8S</code></pre></div></p>
+
+<p>You can create a new Period object with a given interval start end date time in DateTime type.
+JodaTimePeriodExample6.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DateTime<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample6</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DateTime now <span style="color:#f92672">=</span> DateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
+        DateTime tomorrow <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span><span style="color:#a6e22e">plusDays</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>now<span style="color:#f92672">,</span> tomorrow<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: P1D</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="parse-string-into-period">Parse String into Period</h4>
+
+<p>JodaTimePeriodExample7.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample7</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;P1Y1M1W10DT1H20M30.400S&#34;</span><span style="color:#f92672">);</span> <span style="color:#75715e">// 1 year, 1 month, 1 week, 10 days, 1 hour, 20 minutes, 30 seconds, 400 milliseconds
+</span><span style="color:#75715e"></span>        Period period2 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;P1DT10M30.000S&#34;</span><span style="color:#f92672">);</span><span style="color:#75715e">// 1 day, 10 minutes, 30 seconds
+</span><span style="color:#75715e"></span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period 1: P1Y1M1W10DT1H20M30.400S
+New Period 2: P1DT10M30S</code></pre></div></p>
+
+<h4 id="create-period-object-with-a-specified-number-of-years">Create Period object with a specified number of years</h4>
+
+<p>You can create a new Period object using Period.years() static method with a given number of years.</p>
+
+<p>JodaTimePeriodExample8.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample8</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">years</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: P5Y</code></pre></div></p>
+
+<h4 id="create-period-object-with-a-specified-number-of-months">Create Period object with a specified number of months</h4>
+
+<p>You can create a new Period object using Period.months() static method with a given number of months.</p>
+
+<p>JodaTimePeriodExample9.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample9</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(</span>12<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: P12M</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="create-period-object-with-a-specified-number-of-weeks">Create Period object with a specified number of weeks</h4>
+
+<p>You can create a new Period object using Period.weeks() static method with a given number of weeks.</p>
+
+<p>JodaTimePeriodExample10.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample10</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">weeks</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: P2W</code></pre></div></p>
+
+<h4 id="create-period-object-with-a-specified-number-of-days">Create Period object with a specified number of days</h4>
+
+<p>You can create a new Period object using Period.days() static method with a given number of days.</p>
+
+<p>JodaTimePeriodExample11.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample11</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: P5D</code></pre></div></p>
+
+<h4 id="create-period-object-with-a-specified-number-of-hours">Create Period object with a specified number of hours</h4>
+
+<p>You can create a new Period object using Period.hours() static method with a given number of hours.</p>
+
+<p>JodaTimePeriodExample12.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample12</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(</span>23<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT23H</code></pre></div></p>
+
+<h3 id="create-period-object-with-a-specified-number-of-minutes">Create Period object with a specified number of minutes</h3>
+
+<p>You can create a new Period object using Period.minutes() static method with a given number of minutes.</p>
+
+<p>JodaTimePeriodExample13.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample13</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>200<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT200M</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="6759645625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h3 id="create-period-object-with-a-specified-number-of-seconds">Create Period object with a specified number of seconds</h3>
+
+<p>You can create a new Period object using Period.seconds() static method with a given number of seconds.</p>
+
+<p>JodaTimePeriodExample14.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample14</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">seconds</span><span style="color:#f92672">(</span>90<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT90S</code></pre></div></p>
+
+<h3 id="create-period-object-with-a-specified-number-of-milliseconds">Create Period object with a specified number of milliseconds</h3>
+
+<p>You can create a new Period object using Period.millis() static method with a given number of milliseconds.</p>
+
+<p>JodaTimePeriodExample15.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample15</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(</span>999<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;New Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">New Period: PT0.999S</code></pre></div></p>
+
+<h4 id="get-specified-values-of-period-object">Get specified values of Period object</h4>
+
+<p>The Period class provides getter methods to get specified values as following Java program.</p>
+
+<p>JodaTimePeriodExample16.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample16</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Period<span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> 2<span style="color:#f92672">,</span> 3<span style="color:#f92672">,</span> 4<span style="color:#f92672">,</span> 5<span style="color:#f92672">,</span> 6<span style="color:#f92672">,</span> 7<span style="color:#f92672">,</span> 8<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">int</span> years <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getYears</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> months <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getMonths</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> weeks <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getWeeks</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> days <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getDays</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> hours <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getHours</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> minutes <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getMinutes</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> seconds <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getSeconds</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> milliseconds <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">getMillis</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Years: &#34;</span> <span style="color:#f92672">+</span> years<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Months: &#34;</span> <span style="color:#f92672">+</span> months<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Weeks: &#34;</span> <span style="color:#f92672">+</span> weeks<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Days: &#34;</span> <span style="color:#f92672">+</span> days<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hours: &#34;</span> <span style="color:#f92672">+</span> hours<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Minutes: &#34;</span> <span style="color:#f92672">+</span> minutes<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Seconds: &#34;</span> <span style="color:#f92672">+</span> seconds<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Milliseconds: &#34;</span> <span style="color:#f92672">+</span> milliseconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: P1Y2M3W4DT5H6M7.008S
+Years: 1
+Months: 2
+Weeks: 3
+Days: 4
+Hours: 5
+Minutes: 6
+Seconds: 7
+Milliseconds: 8</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1507318946"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="convert-period-to-joda-time-weeks">Convert Period to Joda-Time Weeks</h4>
+
+<p>JodaTimePeriodExample17.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Weeks<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample17</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">weeks</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+        Weeks weeks <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">toStandardWeeks</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Weeks: &#34;</span> <span style="color:#f92672">+</span> weeks<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: P4W
+Weeks: P4W</code></pre></div></p>
+
+<h4 id="convert-period-to-joda-time-days">Convert Period to Joda-Time Days</h4>
+
+<p>JodaTimePeriodExample18.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Days<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample18</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">weeks</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+        Days days <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">toStandardDays</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Days: &#34;</span> <span style="color:#f92672">+</span> days<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: P4W
+Days: P28D</code></pre></div></p>
+
+<h4 id="convert-period-to-joda-time-hours">Convert Period to Joda-Time Hours</h4>
+
+<p>JodaTimePeriodExample19.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Hours<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample19</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Hours hours <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">toStandardHours</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hours: &#34;</span> <span style="color:#f92672">+</span> hours<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: P1D
+Hours: PT24H</code></pre></div></p>
+
+<h4 id="convert-period-to-joda-time-minutes">Convert Period to Joda-Time Minutes</h4>
+
+<p>JodaTimePeriodExample20.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Minutes<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample20</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Minutes minutes <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">toStandardMinutes</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Minutes: &#34;</span> <span style="color:#f92672">+</span> minutes<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: PT1H
+Minutes: PT60M</code></pre></div></p>
+
+<h4 id="convert-period-to-joda-time-seconds">Convert Period to Joda-Time Seconds</h4>
+
+<p>JodaTimePeriodExample21.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Seconds<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample21</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Seconds seconds <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">toStandardSeconds</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Seconds: &#34;</span> <span style="color:#f92672">+</span> seconds<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: PT1M
+Seconds: PT60S</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="4980154934"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="convert-period-to-joda-time-duration">Convert Period to Joda-Time Duration</h4>
+
+<p>JodaTimePeriodExample22.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Duration<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample22</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Duration duration <span style="color:#f92672">=</span> period<span style="color:#f92672">.</span><span style="color:#a6e22e">toStandardDuration</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period: &#34;</span> <span style="color:#f92672">+</span> period<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Duration: &#34;</span> <span style="color:#f92672">+</span> duration<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period: PT1M
+Duration: PT60S</code></pre></div></p>
+
+<h4 id="how-to-use-period-withfield-method">How to use Period.withField() method</h4>
+
+<p>JodaTimePeriodExample23.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DurationFieldType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample23</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(),</span> 10<span style="color:#f92672">);</span>
+        Period period3 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withField</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(),</span> 2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 3: &#34;</span> <span style="color:#f92672">+</span> period3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT1M
+Period 2: P10DT1M
+Period 3: PT2M</code></pre></div></p>
+
+<h4 id="how-to-use-period-withfieldadded-method">How to use Period.withFieldAdded() method</h4>
+
+<p>JodaTimePeriodExample24.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.DurationFieldType<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample24</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withFieldAdded</span><span style="color:#f92672">(</span>DurationFieldType<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(),</span> 10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT1M
+Period 2: PT11M</code></pre></div></p>
+
+<h4 id="how-to-use-period-withyears-method">How to use Period.withYears() method</h4>
+
+<p>JodaTimePeriodExample25.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample25</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withYears</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT1M
+Period 2: P10YT1M</code></pre></div></p>
+
+<h4 id="how-to-use-period-withmonths-method">How to use Period.withMonths() method</h4>
+
+<p>JodaTimePeriodExample26.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample26</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withMonths</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P1M
+Period 2: P5M</code></pre></div></p>
+
+<h4 id="how-to-use-period-withweeks-method">How to use Period.withWeeks() method</h4>
+
+<p>JodaTimePeriodExample27.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample27</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">weeks</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withWeeks</span><span style="color:#f92672">(</span>8<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P4W
+Period 2: P8W</code></pre></div></p>
+
+<h4 id="how-to-use-period-withdays-method">How to use Period.withDays() method</h4>
+
+<p>JodaTimePeriodExample28.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample28</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withDays</span><span style="color:#f92672">(</span>20<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P10D
+Period 2: P20D</code></pre></div></p>
+
+<h4 id="how-to-use-period-withhours-method">How to use Period.withHours() method</h4>
+
+<p>JodaTimePeriodExample29.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample29</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withHours</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT5H
+Period 2: PT10H</code></pre></div></p>
+
+<h4 id="how-to-use-period-withminutes-method">How to use Period.withMinutes() method</h4>
+
+<p>JodaTimePeriodExample30.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample30</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>90<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withMinutes</span><span style="color:#f92672">(</span>100<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT90M
+Period 2: PT100M</code></pre></div></p>
+
+<h4 id="how-to-use-period-withseconds-method">How to use Period.withSeconds() method</h4>
+
+<p>JodaTimePeriodExample31.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample31</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">seconds</span><span style="color:#f92672">(</span>20<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withSeconds</span><span style="color:#f92672">(</span>50<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT20S
+Period 2: PT50S</code></pre></div></p>
+
+<h4 id="how-to-use-period-withmillis-method">How to use Period.withMillis() method</h4>
+
+<p>JodaTimePeriodExample32.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample32</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">withMillis</span><span style="color:#f92672">(</span>999<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT0.500S
+Period 2: PT0.999S</code></pre></div></p>
+
+<h4 id="how-to-use-period-plus-method">How to use Period.plus() method</h4>
+
+<p>JodaTimePeriodExample33.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample33</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+        Period period2 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+
+        Period period3 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plus</span><span style="color:#f92672">(</span>period2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 3: &#34;</span> <span style="color:#f92672">+</span> period3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT0.500S
+Period 2: PT0.500S
+Period 3: PT1S</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusyears-method">How to use Period.plusYears() method</h4>
+
+<p>JodaTimePeriodExample34.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample34</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusYears</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P2M
+Period 2: P1Y2M</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusmonths-method">How to use Period.plusMonths() method</h4>
+
+<p>JodaTimePeriodExample35.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample35</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMonths</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P2M
+Period 2: P3M</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusweeks-method">How to use Period.plusWeeks() method</h4>
+
+<p>JodaTimePeriodExample36.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample36</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusWeeks</span><span style="color:#f92672">(</span>1<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P2M
+Period 2: P2M1W</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusdays-method">How to use Period.plusDays() method</h4>
+
+<p>JodaTimePeriodExample37.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample37</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusDays</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P10D
+Period 2: P15D</code></pre></div></p>
+
+<h4 id="how-to-use-period-plushours-method">How to use Period.plusHours() method</h4>
+
+<p>JodaTimePeriodExample38.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample38</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(</span>40<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusHours</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT40H
+Period 2: PT45H</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusminutes-method">How to use Period.plusMinutes() method</h4>
+
+<p>JodaTimePeriodExample39.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample39</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>30<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMinutes</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT30M
+Period 2: PT40M</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusseconds-method">How to use Period.plusSeconds() method</h4>
+
+<p>JodaTimePeriodExample40.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample40</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">seconds</span><span style="color:#f92672">(</span>30<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusSeconds</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT30S
+Period 2: PT40S</code></pre></div></p>
+
+<h4 id="how-to-use-period-plusmillis-method">How to use Period.plusMillis() method</h4>
+
+<p>JodaTimePeriodExample41.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample41</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">plusMillis</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT500M
+Period 2: PT500M0.010S</code></pre></div></p>
+
+<h4 id="how-to-use-period-minus-method">How to use Period.minus() method</h4>
+
+<p>JodaTimePeriodExample42.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample42</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>500<span style="color:#f92672">);</span>
+        Period period2 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>300<span style="color:#f92672">);</span>
+
+        Period period3 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minus</span><span style="color:#f92672">(</span>period2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 3: &#34;</span> <span style="color:#f92672">+</span> period3<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT500M
+Period 2: PT300M
+Period 3: PT200M</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusyears-method">How to use Period.minusYears() method</h4>
+
+<p>JodaTimePeriodExample43.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample43</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">years</span><span style="color:#f92672">(</span>5<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusYears</span><span style="color:#f92672">(</span>3<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P5Y
+Period 2: P2Y</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusmonths-method">How to use Period.minusMonths() method</h4>
+
+<p>JodaTimePeriodExample44.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample44</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">months</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMonths</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P10M
+Period 2: P6M</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusweeks-method">How to use Period.minusWeeks() method</h4>
+
+<p>JodaTimePeriodExample45.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample45</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">weeks</span><span style="color:#f92672">(</span>7<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusWeeks</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P7W
+Period 2: P3W</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusdays-method">How to use Period.minusDays() method</h4>
+
+<p>JodaTimePeriodExample46.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample46</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">days</span><span style="color:#f92672">(</span>7<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusDays</span><span style="color:#f92672">(</span>4<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: P7D
+Period 2: P3D</code></pre></div></p>
+
+<h4 id="how-to-use-period-minushours-method">How to use Period.minusHours() method</h4>
+
+<p>JodaTimePeriodExample47.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample47</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">hours</span><span style="color:#f92672">(</span>24<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusHours</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT24H
+Period 2: PT14H</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusminutes-method">How to use Period.minusMinutes() method</h4>
+
+<p>JodaTimePeriodExample48.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample48</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>24<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMinutes</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT24M
+Period 2: PT14M</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusseconds-method">How to use Period.minusSeconds() method</h4>
+
+<p>JodaTimePeriodExample49.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample49</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">seconds</span><span style="color:#f92672">(</span>90<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusSeconds</span><span style="color:#f92672">(</span>10<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT90S
+Period 2: PT80S</code></pre></div></p>
+
+<h4 id="how-to-use-period-minusmillis-method">How to use Period.minusMillis() method</h4>
+
+<p>JodaTimePeriodExample50.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample50</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">millis</span><span style="color:#f92672">(</span>900<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">minusMillis</span><span style="color:#f92672">(</span>200<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT0.900S
+Period 2: PT0.700S</code></pre></div></p>
+
+<h4 id="how-to-use-period-multipliedby-method">How to use Period.multipliedBy() method</h4>
+
+<p>JodaTimePeriodExample51.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample51</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>7<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">multipliedBy</span><span style="color:#f92672">(</span>2<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT7M
+Period 2: PT14M</code></pre></div></p>
+
+<h4 id="how-to-use-period-negated-method">How to use Period.negated() method</h4>
+
+<p>JodaTimePeriodExample52.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.joda.time.Period<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JodaTimePeriodExample52</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Period period1 <span style="color:#f92672">=</span> Period<span style="color:#f92672">.</span><span style="color:#a6e22e">minutes</span><span style="color:#f92672">(</span>7<span style="color:#f92672">);</span>
+
+        Period period2 <span style="color:#f92672">=</span> period1<span style="color:#f92672">.</span><span style="color:#a6e22e">negated</span><span style="color:#f92672">();</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 1: &#34;</span> <span style="color:#f92672">+</span> period1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Period 2: &#34;</span> <span style="color:#f92672">+</span> period2<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Period 1: PT7M
+Period 2: PT-7M</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://simplesolution.dev/java-joda-time-instant-by-examples/">Joda Time Instant by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localdate-by-examples/">Joda Time LocalDate by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localtime-by-examples/">Joda Time LocalTime by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-localdatetime-by-examples/">Joda Time LocalDateTime by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-datetime-by-examples/">Joda Time DateTime by Examples in Java</a></p>
+
+<p><a href="https://simplesolution.dev/java-joda-time-duration-by-examples/">Joda Time Duration by Examples in Java</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/joda-time">Joda Time</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-period">Joda Period</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-datetime">Joda DateTime</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-weeks">Joda Weeks</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-days">Joda Days</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-hours">Joda Hours</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-minutes">Joda Minutes</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-seconds">Joda Seconds</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-duration">Joda Duration</a>
+                                
+                                <a href="https://simplesolution.dev/tag/joda-durationfieldtype">Joda DurationFieldType</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block; text-align:center;"
+                            data-ad-layout="in-article"
+                            data-ad-format="fluid"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="2043549846"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

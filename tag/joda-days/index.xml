@@ -6,10 +6,21 @@
     <description>Recent content in Joda Days on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Jan 2021 00:02:17 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 21 Jan 2021 21:35:28 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/joda-days/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Joda Time Period by Examples in Java</title>
+      <link>https://simplesolution.dev/java-joda-time-period-by-examples/</link>
+      <pubDate>Thu, 21 Jan 2021 21:35:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-period-by-examples/</guid>
+      <description>In this Java tutorial, we learn how to use the org.joda.time.Period class of Joda-Time library by different example Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Add Joda Time library to your Java project To use Joda Time Java library in the Gradle build project, add the following dependency into the build.gradle file.
+compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, version: &amp;#39;2.10.9&amp;#39; To use Joda Time Java library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Joda Time Duration by Examples in Java</title>
