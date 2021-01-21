@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Get Operating System Name in Java</title>
-    <meta name="title" content="Get Operating System Name in Java">
-    <meta name="description" content="In this Java core tutorial, we learn how to get the operating system name in a Java program.">
+    <title>Get Java Version</title>
+    <meta name="title" content="Get Java Version">
+    <meta name="description" content="In this Java core tutorial, we learn how to get the Java version in a Java program.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-get-os-name/">
-    <meta property="og:title" content="Get Operating System Name in Java">
-    <meta property="og:description" content="In this Java core tutorial, we learn how to get the operating system name in a Java program.">
+    <meta property="og:url" content="https://simplesolution.dev/java-get-version/">
+    <meta property="og:title" content="Get Java Version">
+    <meta property="og:description" content="In this Java core tutorial, we learn how to get the Java version in a Java program.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-get-os-name.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-get-version.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-get-os-name/">
-    <meta name="twitter:title" content="Get Operating System Name in Java">
-    <meta name="twitter:description" content="In this Java core tutorial, we learn how to get the operating system name in a Java program.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-get-version/">
+    <meta name="twitter:title" content="Get Java Version">
+    <meta name="twitter:description" content="In this Java core tutorial, we learn how to get the Java version in a Java program.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-get-os-name.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-get-version.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -51,11 +51,11 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Get Operating System Name in Java</h1></div>
+                    <div class="post-header"><h1 class="post-title">Get Java Version</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>In this Java core tutorial, we learn how to get the operating system name in a Java program.</p>
+<p>In this Java core tutorial, we learn how to get the Java version in a Java program.</p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
@@ -68,23 +68,24 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="how-to-use-system-getproperty-static-method-to-get-os-name">How to use System.getProperty() static method to get OS name</h4>
+<h4 id="how-to-use-system-getproperty-static-method-to-get-java-version">How to use System.getProperty() static method to get Java version</h4>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Example</span> <span style="color:#f92672">{</span>
+<p>GetJavaVersion.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GetJavaVersion</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        String osName <span style="color:#f92672">=</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">getProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;os.name&#34;</span><span style="color:#f92672">);</span>
+        String jdkVersion <span style="color:#f92672">=</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">getProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;java.version&#34;</span><span style="color:#f92672">);</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>osName<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java version: &#34;</span> <span style="color:#f92672">+</span> jdkVersion<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Windows 10</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Java version: 14.0.1</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
 <h5 id="related-articles">Related Articles</h5>
 
-<p><a href="https://simplesolution.dev/java-get-version/">Get Java Version</a></p>
+<p><a href="https://simplesolution.dev/java-get-os-name/">Get Operating System Name in Java</a></p>
 
                         
                         <div class="mt-5">
