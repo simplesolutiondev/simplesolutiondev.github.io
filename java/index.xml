@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jan 2021 00:42:51 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jan 2021 01:01:39 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get User Home Directory in Java</title>
+      <link>https://simplesolution.dev/java-get-user-home-directory/</link>
+      <pubDate>Fri, 22 Jan 2021 01:01:39 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-user-home-directory/</guid>
+      <description>In this Java core tutorial, we learn how to get the user home directory in the Java program.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to use System.getProperty() static method to get user home directory GetUserHome.java public class GetUserHome { public static void main(String[] args) { String userHomeDirectory = System.getProperty(&amp;#34;user.home&amp;#34;); System.out.println(&amp;#34;User Home Directory: &amp;#34; + userHomeDirectory); } } The output is: User Home Directory: C:\Users\SimpleS
+Related Articles Get Operating System Name in Java</description>
+    </item>
     
     <item>
       <title>Get Java Version</title>
@@ -237,7 +248,8 @@ compile group: &amp;#39;joda-time&amp;#39;, name: &amp;#39;joda-time&amp;#39;, v
       <description>In this Java core tutorial, we learn how to get the operating system name in a Java program.
    (adsbygoogle = window.adsbygoogle || []).push({});  How to use System.getProperty() static method to get OS name public class Example { public static void main(String[] args) { String osName = System.getProperty(&amp;#34;os.name&amp;#34;); System.out.println(osName); } } The output is: Windows 10
 Happy Coding 😊
-Related Articles Get Java Version</description>
+Related Articles Get Java Version
+Get User Home Directory in Java</description>
     </item>
     
     <item>
