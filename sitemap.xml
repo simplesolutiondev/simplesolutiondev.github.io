@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-enum-with-values-getter-methods-and-constructor/</loc>
+    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-mongodb-driver-sync-connect-to-mongodb-database/</loc>
     <lastmod>2021-01-25T00:20:10+07:00</lastmod>
   </url>
@@ -1327,6 +1332,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/enum/</loc>
+    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/ethiopicchronology/</loc>
     <lastmod>2021-01-17T13:15:15+07:00</lastmod>
     <priority>0</priority>
@@ -1442,7 +1453,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1472,7 +1483,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1928,7 +1939,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
