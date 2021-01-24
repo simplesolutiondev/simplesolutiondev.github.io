@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-mongodb-driver-sync-connect-to-mongodb-database/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-joda-time-interval-by-examples/</loc>
     <lastmod>2021-01-22T20:44:28+07:00</lastmod>
   </url>
@@ -1437,7 +1442,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-22T20:44:28+07:00</lastmod>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1467,7 +1472,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-22T20:44:28+07:00</lastmod>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1736,6 +1741,54 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/mongo-connectionstring/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongo-document/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongoclient/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongoclients/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongoclientsettings/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongocollection/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongodatabase/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/mongodb/</loc>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/mutabledatetime/</loc>
     <lastmod>2021-01-14T00:45:06+07:00</lastmod>
     <priority>0</priority>
@@ -1875,7 +1928,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-22T20:44:28+07:00</lastmod>
+    <lastmod>2021-01-25T00:20:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
