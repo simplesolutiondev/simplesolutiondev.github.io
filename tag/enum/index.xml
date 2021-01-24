@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/java-enum-with-values-getter-methods-and-constructor/</guid>
       <description>In this Java core tutorial, we learn how to define a new enum in Java with constructor and getter methods.
-   (adsbygoogle = window.adsbygoogle || []).push({});  Define new enum with constructor and getter methods. ResultCode.java public enum ResultCode { SUCCESS(200, &amp;#34;Success&amp;#34;), FAILED(500, &amp;#34;Server Error&amp;#34;), VALIDATE_FAILED(404,&amp;#34;Validated Failed&amp;#34;), UNAUTHORIZED(11,&amp;#34;Un Authorized&amp;#34;), FORBIDDEN(11,&amp;#34;Forbidden&amp;#34;); private int code; private String message; private ResultCode(int code, String message) { this.code = code; this.message = message; } public int getCode() { return code; } public String getMessage() { return message; } }</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Define new enum with constructor and getter methods. ResultCode.java public enum ResultCode { SUCCESS(200, &amp;#34;Success&amp;#34;), FAILED(500, &amp;#34;Server Error&amp;#34;), VALIDATE_FAILED(404,&amp;#34;Validated Failed&amp;#34;), UNAUTHORIZED(401,&amp;#34;Un Authorized&amp;#34;), FORBIDDEN(403,&amp;#34;Forbidden&amp;#34;); private int code; private String message; private ResultCode(int code, String message) { this.code = code; this.message = message; } public int getCode() { return code; } public String getMessage() { return message; } }</description>
     </item>
     
   </channel>
