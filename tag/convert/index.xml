@@ -87,5 +87,82 @@ Add jsoup library to your Java project To use jsoup Java library in the Gradle b
 To use jsoup Java library in the Maven build project, add the following dependency into the pom.</description>
     </item>
     
+    <item>
+      <title>Convert words in a String into camelCase in Java using Apache Commons Text</title>
+      <link>https://simplesolution.dev/java-convert-words-in-a-string-into-camel-case/</link>
+      <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-words-in-a-string-into-camel-case/</guid>
+      <description>Introduction In this article we are going to explore Apache Commons Text library by using CaseUtils utility class to convert a String of separated words into a camelCase String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Setup Apache Commons Text in Java project If you are using Gradle build then add the following dependency configuration into build.gradle file.
+compile group: &amp;#39;org.apache.commons&amp;#39;, name: &amp;#39;commons-text&amp;#39;, version: &amp;#39;1.9&amp;#39; Or add the following dependency XML tag to pom.</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value to byte value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.bytevalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:40:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.bytevalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.byteValue()
+This method to convert a BigDecimal value to byte value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalByteValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;9.01&amp;#34;);byte byteValue = bigDecimal.byteValue();System.out.println(bigDecimal);System.out.println(byteValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into short value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.shortvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:39:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.shortvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.shortValue()
+This method to convert a BigDecimal value to short value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalShortValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;9.01&amp;#34;);short shortValue = bigDecimal.shortValue();System.out.println(bigDecimal);System.out.println(shortValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into long value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.longvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:38:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.longvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.longValue()
+This method to convert a BigDecimal value to long value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalLongValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;999999999.01&amp;#34;);long longValue = bigDecimal.longValue();System.out.println(bigDecimal);System.out.println(longValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into int value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.intvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:37:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.intvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.intValue()
+This method to convert a BigDecimal value to int value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalIntValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);int intValue = bigDecimal.intValue();System.out.println(bigDecimal);System.out.println(intValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into float value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.floatvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:36:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.floatvalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.floatValue()
+This method to convert a BigDecimal value to float value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalFloatValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);float floatValue = bigDecimal.floatValue();System.out.println(bigDecimal);System.out.println(floatValue);}} Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Convert BigDecimal value into double value</title>
+      <link>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.doublevalue/</link>
+      <pubDate>Sat, 13 Apr 2019 17:35:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/java.math.bigdecimal.doublevalue/</guid>
+      <description>Java Code Examples for java.math.BigDecimal.doubleValue()
+This method to convert a BigDecimal value to double value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import java.math.BigDecimal;public class BigDecimalDoubleValueExamples {public static void main(String... args) {BigDecimal bigDecimal = new BigDecimal(&amp;#34;10.01&amp;#34;);double doubleValue = bigDecimal.doubleValue();System.out.println(bigDecimal);System.out.println(doubleValue);}} Happy Coding 😊</description>
+    </item>
+    
   </channel>
 </rss>
