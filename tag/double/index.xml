@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Double on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/double/</link>
+    <description>Recent content in Double on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jan 2021 00:49:45 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/double/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert double to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-int/</link>
+      <pubDate>Fri, 29 Jan 2021 00:49:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into int value in Java by different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast double to int value ConvertDoubleToIntExample1.java public class ConvertDoubleToIntExample1 { public static void main(String[] args) { double value1 = 10.05; int value2 = (int)value1; System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: double value: 10.</description>
+    </item>
+    
+  </channel>
+</rss>

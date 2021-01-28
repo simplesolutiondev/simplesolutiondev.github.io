@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-double-to-int/</loc>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-enum-with-values-getter-methods-and-constructor/</loc>
     <lastmod>2021-01-25T01:18:48+07:00</lastmod>
   </url>
@@ -1225,7 +1230,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-01-18T22:45:17+07:00</lastmod>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1304,6 +1309,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/datetimezone/</loc>
     <lastmod>2021-01-17T16:42:17+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/double/</loc>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1410,6 +1421,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/int/</loc>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/integer/</loc>
     <lastmod>2021-01-07T23:23:10+07:00</lastmod>
     <priority>0</priority>
@@ -1453,7 +1470,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1483,7 +1500,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1939,7 +1956,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-25T01:18:48+07:00</lastmod>
+    <lastmod>2021-01-29T00:49:45+07:00</lastmod>
     <priority>0</priority>
   </url>
   
