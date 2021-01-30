@@ -174,6 +174,15 @@
     </item>
     
     <item>
+      <title>Byte</title>
+      <link>https://simplesolution.dev/tag/byte/</link>
+      <pubDate>Sat, 30 Jan 2021 18:02:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/byte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Calendar</title>
       <link>https://simplesolution.dev/tag/calendar/</link>
       <pubDate>Mon, 18 Jan 2021 22:45:17 +0700</pubDate>
@@ -239,7 +248,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Sat, 30 Jan 2021 13:17:43 +0700</pubDate>
+      <pubDate>Sat, 30 Jan 2021 18:02:56 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -365,7 +374,7 @@
     <item>
       <title>Double</title>
       <link>https://simplesolution.dev/tag/double/</link>
-      <pubDate>Sat, 30 Jan 2021 13:17:43 +0700</pubDate>
+      <pubDate>Sat, 30 Jan 2021 17:24:13 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/double/</guid>
       <description></description>
@@ -462,6 +471,15 @@
     </item>
     
     <item>
+      <title>Float</title>
+      <link>https://simplesolution.dev/tag/float/</link>
+      <pubDate>Sat, 30 Jan 2021 17:24:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/float/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ftp</title>
       <link>https://simplesolution.dev/tag/ftp/</link>
       <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
@@ -527,7 +545,7 @@
     <item>
       <title>Int</title>
       <link>https://simplesolution.dev/tag/int/</link>
-      <pubDate>Sat, 30 Jan 2021 13:17:43 +0700</pubDate>
+      <pubDate>Sat, 30 Jan 2021 18:02:56 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/int/</guid>
       <description></description>
@@ -536,7 +554,7 @@
     <item>
       <title>Integer</title>
       <link>https://simplesolution.dev/tag/integer/</link>
-      <pubDate>Sat, 30 Jan 2021 13:17:43 +0700</pubDate>
+      <pubDate>Sat, 30 Jan 2021 18:02:56 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/integer/</guid>
       <description></description>
@@ -975,6 +993,15 @@
     </item>
     
     <item>
+      <title>Long</title>
+      <link>https://simplesolution.dev/tag/long/</link>
+      <pubDate>Sat, 30 Jan 2021 16:55:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/long/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Map</title>
       <link>https://simplesolution.dev/tag/map/</link>
       <pubDate>Sat, 09 Jan 2021 17:22:53 +0700</pubDate>
@@ -1268,6 +1295,15 @@
       <pubDate>Wed, 10 Apr 2019 14:00:00 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/sha-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Short</title>
+      <link>https://simplesolution.dev/tag/short/</link>
+      <pubDate>Sat, 30 Jan 2021 15:33:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/short/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,110 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 13:17:43 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jan 2021 18:02:56 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert byte to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-int/</link>
+      <pubDate>Sat, 30 Jan 2021 18:02:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign byte variable to int variable ConvertByteToIntExample1.java public class ConvertByteToIntExample1 { public static void main(String[] args) { byte value1 = 98; int value2 = value1; System.out.println(&amp;#34;byte value &amp;#34; + value1); System.out.println(&amp;#34;int value &amp;#34; + value2); } } The output is: byte value 98 int value 98</description>
+    </item>
+    
+    <item>
+      <title>Convert int to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-byte/</link>
+      <pubDate>Sat, 30 Jan 2021 17:42:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast int value to byte value ConvertIntToByteExample1.java public class ConvertIntToByteExample1 { public static void main(String[] args) { int value1 = 98; byte value2 = (byte)value1; System.out.println(&amp;#34;int value &amp;#34; + value1); System.out.println(&amp;#34;byte value &amp;#34; + value2); } } The output is: int value 98 byte value 98</description>
+    </item>
+    
+    <item>
+      <title>Convert float to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-double/</link>
+      <pubDate>Sat, 30 Jan 2021 17:24:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign float variable to double variable ConvertFloatToDoubleExample1.java public class ConvertFloatToDoubleExample1 { public static void main(String[] args) { float value1 = 9.8F; double value2 = value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: float value: 9.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-float/</link>
+      <pubDate>Sat, 30 Jan 2021 17:10:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast double to float value ConvertDoubleToFloatExample1.java public class ConvertDoubleToFloatExample1 { public static void main(String[] args) { double value1 = 123.45; float value2 = (float)value1; System.out.println(&amp;#34;double value:&amp;#34; + value1); System.out.println(&amp;#34;float value:&amp;#34; + value2); } } The output is: double value:123.</description>
+    </item>
+    
+    <item>
+      <title>Convert long to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-double/</link>
+      <pubDate>Sat, 30 Jan 2021 16:55:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign long variable to double variable ConvertLongToDoubleExample1.java public class ConvertLongToDoubleExample1 { public static void main(String[] args) { long value1 = 123456; double value2 = value1; System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: long value: 123456 double value: 123456.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-long/</link>
+      <pubDate>Sat, 30 Jan 2021 16:43:09 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast a double to long value ConvertDoubleToLongExample1.java public class ConvertDoubleToLongExample1 { public static void main(String[] args) { double value1 = 12.34; long value2 = (long)value1; System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: double value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert short to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-short-to-double/</link>
+      <pubDate>Sat, 30 Jan 2021 15:33:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-short-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert short value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign short variable to double variable ConvertShortToDoubleExample1.java public class ConvertShortToDoubleExample1 { public static void main(String[] args) { short value1 = 100; double value2 = value1; System.out.println(&amp;#34;short value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: short value: 100 double value: 100.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to short in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-short/</link>
+      <pubDate>Sat, 30 Jan 2021 15:25:15 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-short/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into short value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast double to int value ConvertDoubleToShortExample1.java public class ConvertDoubleToShortExample1 { public static void main(String[] args) { double value1 = 98.76; short value2 = (short)value1; System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;short value: &amp;#34; + value2); } } The output is: double value: 98.</description>
+    </item>
+    
+    <item>
+      <title>Convert byte to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-double/</link>
+      <pubDate>Sat, 30 Jan 2021 15:14:07 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign the byte variable to double variable ConvertByteToDoubleExample1.java public class ConvertByteToDoubleExample1 { public static void main(String[] args) { byte value1 = 20; double value2 = value1; System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: byte value: 20 double value: 20.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-byte/</link>
+      <pubDate>Sat, 30 Jan 2021 14:54:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast double to byte value ConvertDoubleToByteExample1.java public class ConvertDoubleToByteExample1 { public static void main(String[] args) { double value1 = 10.20; byte value2 = (byte)value1; System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;byte value: &amp;#34; + value2); } } The output is: double value: 10.</description>
+    </item>
     
     <item>
       <title>Convert int to double in Java</title>

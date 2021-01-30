@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Long on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/long/</link>
+    <description>Recent content in Long on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Jan 2021 16:55:11 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/long/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert long to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-double/</link>
+      <pubDate>Sat, 30 Jan 2021 16:55:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign long variable to double variable ConvertLongToDoubleExample1.java public class ConvertLongToDoubleExample1 { public static void main(String[] args) { long value1 = 123456; double value2 = value1; System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: long value: 123456 double value: 123456.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-long/</link>
+      <pubDate>Sat, 30 Jan 2021 16:43:09 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast a double to long value ConvertDoubleToLongExample1.java public class ConvertDoubleToLongExample1 { public static void main(String[] args) { double value1 = 12.34; long value2 = (long)value1; System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: double value: 12.</description>
+    </item>
+    
+  </channel>
+</rss>

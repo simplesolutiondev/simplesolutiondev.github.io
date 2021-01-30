@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-byte-to-int/</loc>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-int-to-byte/</loc>
+    <lastmod>2021-01-30T17:42:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-float-to-double/</loc>
+    <lastmod>2021-01-30T17:24:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-double-to-float/</loc>
+    <lastmod>2021-01-30T17:10:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-long-to-double/</loc>
+    <lastmod>2021-01-30T16:55:11+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-double-to-long/</loc>
+    <lastmod>2021-01-30T16:43:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-short-to-double/</loc>
+    <lastmod>2021-01-30T15:33:38+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-double-to-short/</loc>
+    <lastmod>2021-01-30T15:25:15+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-byte-to-double/</loc>
+    <lastmod>2021-01-30T15:14:07+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-double-to-byte/</loc>
+    <lastmod>2021-01-30T14:54:25+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-int-to-double/</loc>
     <lastmod>2021-01-30T13:17:43+07:00</lastmod>
   </url>
@@ -1181,6 +1231,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/byte/</loc>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/calendar/</loc>
     <lastmod>2021-01-18T22:45:17+07:00</lastmod>
     <priority>0</priority>
@@ -1235,7 +1291,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1319,7 +1375,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/double/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T17:24:13+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1384,6 +1440,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/float/</loc>
+    <lastmod>2021-01-30T17:24:13+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/ftp/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
@@ -1427,13 +1489,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/int/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/integer/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1469,7 +1531,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1505,7 +1567,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1756,6 +1818,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/long/</loc>
+    <lastmod>2021-01-30T16:55:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/map/</loc>
     <lastmod>2021-01-09T17:22:53+07:00</lastmod>
     <priority>0</priority>
@@ -1960,8 +2028,14 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/short/</loc>
+    <lastmod>2021-01-30T15:33:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-30T13:17:43+07:00</lastmod>
+    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   

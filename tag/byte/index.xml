@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byte on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/byte/</link>
+    <description>Recent content in Byte on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Jan 2021 18:02:56 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/byte/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert byte to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-int/</link>
+      <pubDate>Sat, 30 Jan 2021 18:02:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign byte variable to int variable ConvertByteToIntExample1.java public class ConvertByteToIntExample1 { public static void main(String[] args) { byte value1 = 98; int value2 = value1; System.out.println(&amp;#34;byte value &amp;#34; + value1); System.out.println(&amp;#34;int value &amp;#34; + value2); } } The output is: byte value 98 int value 98</description>
+    </item>
+    
+    <item>
+      <title>Convert int to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-byte/</link>
+      <pubDate>Sat, 30 Jan 2021 17:42:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast int value to byte value ConvertIntToByteExample1.java public class ConvertIntToByteExample1 { public static void main(String[] args) { int value1 = 98; byte value2 = (byte)value1; System.out.println(&amp;#34;int value &amp;#34; + value1); System.out.println(&amp;#34;byte value &amp;#34; + value2); } } The output is: int value 98 byte value 98</description>
+    </item>
+    
+    <item>
+      <title>Convert byte to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-double/</link>
+      <pubDate>Sat, 30 Jan 2021 15:14:07 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign the byte variable to double variable ConvertByteToDoubleExample1.java public class ConvertByteToDoubleExample1 { public static void main(String[] args) { byte value1 = 20; double value2 = value1; System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: byte value: 20 double value: 20.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-byte/</link>
+      <pubDate>Sat, 30 Jan 2021 14:54:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast double to byte value ConvertDoubleToByteExample1.java public class ConvertDoubleToByteExample1 { public static void main(String[] args) { double value1 = 10.20; byte value2 = (byte)value1; System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;byte value: &amp;#34; + value2); } } The output is: double value: 10.</description>
+    </item>
+    
+  </channel>
+</rss>
