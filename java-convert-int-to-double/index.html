@@ -4,24 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Convert double to int in Java</title>
-    <meta name="title" content="Convert double to int in Java">
-    <meta name="description" content="In this Java core tutorial, we learn how to convert double value into int value in Java by different solutions.">
+    <title>Convert int to double in Java</title>
+    <meta name="title" content="Convert int to double in Java">
+    <meta name="description" content="In this Java core tutorial, we learn how to convert int to double value in Java via different solutions.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://simplesolution.dev/java-convert-double-to-int/">
-    <meta property="og:title" content="Convert double to int in Java">
-    <meta property="og:description" content="In this Java core tutorial, we learn how to convert double value into int value in Java by different solutions.">
+    <meta property="og:url" content="https://simplesolution.dev/java-convert-int-to-double/">
+    <meta property="og:title" content="Convert int to double in Java">
+    <meta property="og:description" content="In this Java core tutorial, we learn how to convert int to double value in Java via different solutions.">
     
-    <meta property="og:image" content="https://simplesolution.dev/images/java-convert-double-to-int.png">
+    <meta property="og:image" content="https://simplesolution.dev/images/java-convert-int-to-double.png">
     
     <meta property="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@simple_s_dev">
     <meta name="twitter:creator" content="@simple_s_dev">
-    <meta name="twitter:url" content="https://simplesolution.dev/java-convert-double-to-int/">
-    <meta name="twitter:title" content="Convert double to int in Java">
-    <meta name="twitter:description" content="In this Java core tutorial, we learn how to convert double value into int value in Java by different solutions.">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-convert-int-to-double/">
+    <meta name="twitter:title" content="Convert int to double in Java">
+    <meta name="twitter:description" content="In this Java core tutorial, we learn how to convert int to double value in Java via different solutions.">
     
-    <meta name="twitter:image" content="https://simplesolution.dev/images/java-convert-double-to-int.png">
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-convert-int-to-double.png">
     
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
@@ -51,99 +51,99 @@
         <div class="row">
             <div class="col-lg-8">
                 <article class="post">
-                    <div class="post-header"><h1 class="post-title">Convert double to int in Java</h1></div>
+                    <div class="post-header"><h1 class="post-title">Convert int to double in Java</h1></div>
                     <div class="blog-detail-description">
                         
 
-<p>In this Java core tutorial, we learn how to convert double value into int value in Java by different solutions.</p>
+<p>In this Java core tutorial, we learn how to convert int to double value in Java via different solutions.</p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4970454579445266"
-     data-ad-slot="5706253137"
+     data-ad-slot="1890462327"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="how-to-cast-double-to-int-value">How to cast double to int value</h4>
+<h4 id="assign-int-variable-to-a-double-variable">Assign int variable to a double variable</h4>
 
-<p>ConvertDoubleToIntExample1.java
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertDoubleToIntExample1</span> <span style="color:#f92672">{</span>
+<p>ConvertIntToDoubleExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertIntToDoubleExample1</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">double</span> value1 <span style="color:#f92672">=</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">05</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> value2 <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span>value1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> value1 <span style="color:#f92672">=</span> 2021<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">double</span> value2 <span style="color:#f92672">=</span> value1<span style="color:#f92672">;</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;double value: &#34;</span> <span style="color:#f92672">+</span> value1<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int value: &#34;</span> <span style="color:#f92672">+</span> value2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int value: &#34;</span> <span style="color:#f92672">+</span> value1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;double value: &#34;</span> <span style="color:#f92672">+</span> value2<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">double value: 10.05
-int value: 10</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">int value: 2021
+double value: 2021.0</code></pre></div></p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4970454579445266"
-     data-ad-slot="5027913517"
+     data-ad-slot="1232481614"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="how-to-use-math-round-method-to-convert-double-value-to-int">How to use Math.round() method to convert double value to int</h4>
+<h4 id="how-to-use-double-valueof-method-to-instantiate-new-double-object">How to use Double.valueOf() method to instantiate new Double object</h4>
 
-<p>ConvertDoubleToIntExample2.java
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertDoubleToIntExample2</span> <span style="color:#f92672">{</span>
+<p>ConvertIntToDoubleExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertIntToDoubleExample2</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">double</span> value1 <span style="color:#f92672">=</span> 123<span style="color:#f92672">.</span><span style="color:#a6e22e">45</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">int</span> value2 <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span>Math<span style="color:#f92672">.</span><span style="color:#a6e22e">round</span><span style="color:#f92672">(</span>value1<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">int</span> value1 <span style="color:#f92672">=</span> 1999<span style="color:#f92672">;</span>
+        Double value2 <span style="color:#f92672">=</span> Double<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>value1<span style="color:#f92672">);</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;double value: &#34;</span> <span style="color:#f92672">+</span> value1<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int value: &#34;</span> <span style="color:#f92672">+</span> value2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int value: &#34;</span> <span style="color:#f92672">+</span> value1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;double value: &#34;</span> <span style="color:#f92672">+</span> value2<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">double value: 123.45
-int value: 123</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">int value: 1999
+double value: 1999.0</code></pre></div></p>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-4970454579445266"
-     data-ad-slot="6457189450"
+     data-ad-slot="1698890630"
      data-ad-format="auto"
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<h4 id="how-to-use-double-intvalue-method-to-return-int-value-from-double">How to use Double.intValue() method to return int value from Double</h4>
+<h4 id="how-to-use-integer-doublevalue-method-to-get-double-value-of-an-integer">How to use Integer.doubleValue() method to get double value of an Integer</h4>
 
-<p>ConvertDoubleToIntExample3.java
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertDoubleToIntExample3</span> <span style="color:#f92672">{</span>
+<p>ConvertIntToDoubleExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConvertIntToDoubleExample3</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">double</span> value1 <span style="color:#f92672">=</span> 789<span style="color:#f92672">.</span><span style="color:#a6e22e">24</span><span style="color:#f92672">;</span>
-        Double doubleValue <span style="color:#f92672">=</span> Double<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>value1<span style="color:#f92672">);</span>
-        <span style="color:#66d9ef">int</span> value2 <span style="color:#f92672">=</span> doubleValue<span style="color:#f92672">.</span><span style="color:#a6e22e">intValue</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">int</span> value1 <span style="color:#f92672">=</span> 12<span style="color:#f92672">;</span>
+        Integer integerValue <span style="color:#f92672">=</span> value1<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">double</span> value2 <span style="color:#f92672">=</span> integerValue<span style="color:#f92672">.</span><span style="color:#a6e22e">doubleValue</span><span style="color:#f92672">();</span>
 
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;double value: &#34;</span> <span style="color:#f92672">+</span> value1<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int value: &#34;</span> <span style="color:#f92672">+</span> value2<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;int value: &#34;</span> <span style="color:#f92672">+</span> value1<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;double value: &#34;</span> <span style="color:#f92672">+</span> value2<span style="color:#f92672">);</span>
     <span style="color:#f92672">}</span>
 <span style="color:#f92672">}</span></code></pre></div>
 The output is:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">double value: 789.24
-int value: 789</code></pre></div></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">int value: 12
+double value: 12.0</code></pre></div></p>
 
 <p>Happy Coding 😊</p>
 
 <h5 id="related-articles">Related Articles</h5>
 
-<p><a href="https://simplesolution.dev/java-convert-int-to-double/">Convert int to double in Java</a></p>
+<p><a href="https://simplesolution.dev/java-convert-double-to-int/">Convert double to int in Java</a></p>
 
                         
                         <div class="mt-5">
@@ -152,6 +152,8 @@ int value: 789</code></pre></div></p>
                                 <a href="https://simplesolution.dev/tag/double">double</a>
                                 
                                 <a href="https://simplesolution.dev/tag/int">int</a>
+                                
+                                <a href="https://simplesolution.dev/tag/integer">Integer</a>
                                 
                                 <a href="https://simplesolution.dev/tag/convert">Convert</a>
                                 
