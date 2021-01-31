@@ -6,10 +6,50 @@
     <description>Recent content in Long on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 14:09:18 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 23:14:36 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/long/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert long to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 23:14:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to return a String from long value ConvertLongToStringExample1.java public class ConvertLongToStringExample1 { public static void main(String[] args) { long value1 = 123456789; String value2 = String.valueOf(value1); System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: long value: 123456789 String value: 123456789</description>
+    </item>
+    
+    <item>
+      <title>Convert String to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-long/</link>
+      <pubDate>Sun, 31 Jan 2021 23:08:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse a String into long using Long.parseLong() static method ConvertStringToLongExample1.java public class ConvertStringToLongExample1 { public static void main(String[] args) { String value1 = &amp;#34;123456789&amp;#34;; long value2 = Long.parseLong(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: String value: 123456789 long value: 123456789</description>
+    </item>
+    
+    <item>
+      <title>Convert long to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-float/</link>
+      <pubDate>Sun, 31 Jan 2021 19:35:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign long variable to float variable in Java ConvertLongToFloatExample1.java public class ConvertLongToFloatExample1 { public static void main(String[] args) { long value1 = 100; float value2 = value1; System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: long value: 100 float value: 100.</description>
+    </item>
+    
+    <item>
+      <title>Convert float to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-long/</link>
+      <pubDate>Sun, 31 Jan 2021 19:26:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast float to long value in Java ConvertFloatToLongExample1.java public class ConvertFloatToLongExample1 { public static void main(String[] args) { float value1 = 56.78F; long value2 = (long) value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: float value: 56.</description>
+    </item>
     
     <item>
       <title>Convert long to int in Java</title>

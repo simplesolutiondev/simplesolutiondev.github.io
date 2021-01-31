@@ -6,10 +6,30 @@
     <description>Recent content in Double on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 17:24:13 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 23:53:41 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/double/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert String to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-double/</link>
+      <pubDate>Sun, 31 Jan 2021 23:53:41 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse String to double using Double.parseDouble() method ConvertStringToDoubleExample1.java public class ConvertStringToDoubleExample1 { public static void main(String[] args) { String value1 = &amp;#34;12.343536&amp;#34;; double value2 = Double.parseDouble(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: String value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 23:45:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to convert a double value to String ConvertDoubleToStringExample1.java public class ConvertDoubleToStringExample1 { public static void main(String[] args) { double value1 = 12.0099; String value2 = String.valueOf(value1); System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: double value: 12.</description>
+    </item>
     
     <item>
       <title>Convert float to double in Java</title>

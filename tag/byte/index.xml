@@ -6,10 +6,30 @@
     <description>Recent content in Byte on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 14:50:29 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 21:26:40 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/byte/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert byte to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 21:26:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to instantiate String from a byte value ConvertByteToStringExample1.java public class ConvertByteToStringExample1 { public static void main(String[] args) { byte value1 = 12; String value2 = String.valueOf(value1); System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: byte value: 12 String value: 12</description>
+    </item>
+    
+    <item>
+      <title>Convert String to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-byte/</link>
+      <pubDate>Sun, 31 Jan 2021 21:15:42 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Byte.parseByte() static method to parse String into byte value in Java ConvertStringToByteExample1.java public class ConvertStringToByteExample1 { public static void main(String[] args) { String value1 = &amp;#34;22&amp;#34;; int value2 = Byte.parseByte(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;byte value: &amp;#34; + value2); } } The output is: String value: 22 byte value: 22</description>
+    </item>
     
     <item>
       <title>Convert byte to float in Java</title>

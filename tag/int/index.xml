@@ -6,10 +6,30 @@
     <description>Recent content in Int on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 14:20:14 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 21:08:17 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/int/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert String to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-int/</link>
+      <pubDate>Sun, 31 Jan 2021 21:08:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse a String to int value using Integer.parseInt() static method in Java ConvertStringToIntExample1.java public class ConvertStringToIntExample1 { public static void main(String[] args) { String value1 = &amp;#34;123&amp;#34;; int value2 = Integer.parseInt(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: String value: 123 int value: 123</description>
+    </item>
+    
+    <item>
+      <title>Convert int to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 20:05:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to instantiate String from a int value ConvertIntToStringExample1.java public class ConvertIntToStringExample1 { public static void main(String[] args) { int value1 = 987; String value2 = String.valueOf(value1); System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: int value: 987 String value: 987</description>
+    </item>
     
     <item>
       <title>Convert float to int in Java</title>

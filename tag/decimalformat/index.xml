@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decimalformat on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/decimalformat/</link>
+    <description>Recent content in Decimalformat on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 00:08:17 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/decimalformat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Convert float to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-string/</link>
+      <pubDate>Mon, 01 Feb 2021 00:08:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to convert float value to String ConvertFloatToStringExample1.java public class ConvertFloatToStringExample1 { public static void main(String[] args) { float value1 = 12.0203F; String value2 = String.valueOf(value1); System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: float value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 23:45:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to convert a double value to String ConvertDoubleToStringExample1.java public class ConvertDoubleToStringExample1 { public static void main(String[] args) { double value1 = 12.0099; String value2 = String.valueOf(value1); System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: double value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert long to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 23:14:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to return a String from long value ConvertLongToStringExample1.java public class ConvertLongToStringExample1 { public static void main(String[] args) { long value1 = 123456789; String value2 = String.valueOf(value1); System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: long value: 123456789 String value: 123456789</description>
+    </item>
+    
+    <item>
+      <title>Convert short to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-short-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 22:53:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-short-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert short value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to create String from a short value ConvertShortToStringExample1.java public class ConvertShortToStringExample1 { public static void main(String[] args) { short value1 = 123; String value2 = String.valueOf(value1); System.out.println(&amp;#34;short value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: short value: 123 String value: 123</description>
+    </item>
+    
+    <item>
+      <title>Convert byte to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 21:26:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to instantiate String from a byte value ConvertByteToStringExample1.java public class ConvertByteToStringExample1 { public static void main(String[] args) { byte value1 = 12; String value2 = String.valueOf(value1); System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: byte value: 12 String value: 12</description>
+    </item>
+    
+    <item>
+      <title>Convert int to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 20:05:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to instantiate String from a int value ConvertIntToStringExample1.java public class ConvertIntToStringExample1 { public static void main(String[] args) { int value1 = 987; String value2 = String.valueOf(value1); System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: int value: 987 String value: 987</description>
+    </item>
+    
+  </channel>
+</rss>

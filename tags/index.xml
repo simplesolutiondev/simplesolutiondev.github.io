@@ -176,7 +176,7 @@
     <item>
       <title>Byte</title>
       <link>https://simplesolution.dev/tag/byte/</link>
-      <pubDate>Sun, 31 Jan 2021 14:50:29 +0700</pubDate>
+      <pubDate>Sun, 31 Jan 2021 21:26:40 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/byte/</guid>
       <description></description>
@@ -248,7 +248,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Sun, 31 Jan 2021 15:18:17 +0700</pubDate>
+      <pubDate>Mon, 01 Feb 2021 00:08:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -372,9 +372,18 @@
     </item>
     
     <item>
+      <title>Decimalformat</title>
+      <link>https://simplesolution.dev/tag/decimalformat/</link>
+      <pubDate>Mon, 01 Feb 2021 00:08:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/decimalformat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Double</title>
       <link>https://simplesolution.dev/tag/double/</link>
-      <pubDate>Sat, 30 Jan 2021 17:24:13 +0700</pubDate>
+      <pubDate>Sun, 31 Jan 2021 23:53:41 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/double/</guid>
       <description></description>
@@ -473,7 +482,7 @@
     <item>
       <title>Float</title>
       <link>https://simplesolution.dev/tag/float/</link>
-      <pubDate>Sun, 31 Jan 2021 15:18:17 +0700</pubDate>
+      <pubDate>Mon, 01 Feb 2021 00:08:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/float/</guid>
       <description></description>
@@ -545,7 +554,7 @@
     <item>
       <title>Int</title>
       <link>https://simplesolution.dev/tag/int/</link>
-      <pubDate>Sun, 31 Jan 2021 14:20:14 +0700</pubDate>
+      <pubDate>Sun, 31 Jan 2021 21:08:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/int/</guid>
       <description></description>
@@ -554,7 +563,7 @@
     <item>
       <title>Integer</title>
       <link>https://simplesolution.dev/tag/integer/</link>
-      <pubDate>Sun, 31 Jan 2021 14:20:14 +0700</pubDate>
+      <pubDate>Sun, 31 Jan 2021 21:08:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/integer/</guid>
       <description></description>
@@ -995,7 +1004,7 @@
     <item>
       <title>Long</title>
       <link>https://simplesolution.dev/tag/long/</link>
-      <pubDate>Sun, 31 Jan 2021 14:09:18 +0700</pubDate>
+      <pubDate>Sun, 31 Jan 2021 23:14:36 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/long/</guid>
       <description></description>
@@ -1301,7 +1310,7 @@
     <item>
       <title>Short</title>
       <link>https://simplesolution.dev/tag/short/</link>
-      <pubDate>Sun, 31 Jan 2021 15:18:17 +0700</pubDate>
+      <pubDate>Sun, 31 Jan 2021 22:53:36 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/short/</guid>
       <description></description>
@@ -1346,7 +1355,7 @@
     <item>
       <title>String</title>
       <link>https://simplesolution.dev/tag/string/</link>
-      <pubDate>Tue, 19 Jan 2021 00:56:38 +0700</pubDate>
+      <pubDate>Mon, 01 Feb 2021 00:08:17 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/string/</guid>
       <description></description>

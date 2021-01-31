@@ -6,10 +6,150 @@
     <description>Recent content in Convert on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Jan 2021 15:18:17 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 01 Feb 2021 00:08:17 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert float to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-string/</link>
+      <pubDate>Mon, 01 Feb 2021 00:08:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to convert float value to String ConvertFloatToStringExample1.java public class ConvertFloatToStringExample1 { public static void main(String[] args) { float value1 = 12.0203F; String value2 = String.valueOf(value1); System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: float value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert String to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-float/</link>
+      <pubDate>Mon, 01 Feb 2021 00:01:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse a String to float using Float.parseFloat() method ConvertStringToFloatExample1.java public class ConvertStringToFloatExample1 { public static void main(String[] args) { String value1 = &amp;#34;12.090807&amp;#34;; float value2 = Float.parseFloat(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: String value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert String to double in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-double/</link>
+      <pubDate>Sun, 31 Jan 2021 23:53:41 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-double/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into double value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse String to double using Double.parseDouble() method ConvertStringToDoubleExample1.java public class ConvertStringToDoubleExample1 { public static void main(String[] args) { String value1 = &amp;#34;12.343536&amp;#34;; double value2 = Double.parseDouble(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;double value: &amp;#34; + value2); } } The output is: String value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert double to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-double-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 23:45:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-double-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert double value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to convert a double value to String ConvertDoubleToStringExample1.java public class ConvertDoubleToStringExample1 { public static void main(String[] args) { double value1 = 12.0099; String value2 = String.valueOf(value1); System.out.println(&amp;#34;double value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: double value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert long to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 23:14:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to return a String from long value ConvertLongToStringExample1.java public class ConvertLongToStringExample1 { public static void main(String[] args) { long value1 = 123456789; String value2 = String.valueOf(value1); System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: long value: 123456789 String value: 123456789</description>
+    </item>
+    
+    <item>
+      <title>Convert String to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-long/</link>
+      <pubDate>Sun, 31 Jan 2021 23:08:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse a String into long using Long.parseLong() static method ConvertStringToLongExample1.java public class ConvertStringToLongExample1 { public static void main(String[] args) { String value1 = &amp;#34;123456789&amp;#34;; long value2 = Long.parseLong(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: String value: 123456789 long value: 123456789</description>
+    </item>
+    
+    <item>
+      <title>Convert short to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-short-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 22:53:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-short-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert short value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to create String from a short value ConvertShortToStringExample1.java public class ConvertShortToStringExample1 { public static void main(String[] args) { short value1 = 123; String value2 = String.valueOf(value1); System.out.println(&amp;#34;short value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: short value: 123 String value: 123</description>
+    </item>
+    
+    <item>
+      <title>Convert String to short in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-short/</link>
+      <pubDate>Sun, 31 Jan 2021 22:19:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-short/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into short value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse String to short value using Short.parseShort() method ConvertStringToShortExample1.java public class ConvertStringToShortExample1 { public static void main(String[] args) { String value1 = &amp;#34;1234&amp;#34;; short value2 = Short.parseShort(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;short value: &amp;#34; + value2); } } The output is: String value: 1234 short value: 1234</description>
+    </item>
+    
+    <item>
+      <title>Convert byte to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 21:26:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to instantiate String from a byte value ConvertByteToStringExample1.java public class ConvertByteToStringExample1 { public static void main(String[] args) { byte value1 = 12; String value2 = String.valueOf(value1); System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: byte value: 12 String value: 12</description>
+    </item>
+    
+    <item>
+      <title>Convert String to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-byte/</link>
+      <pubDate>Sun, 31 Jan 2021 21:15:42 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using Byte.parseByte() static method to parse String into byte value in Java ConvertStringToByteExample1.java public class ConvertStringToByteExample1 { public static void main(String[] args) { String value1 = &amp;#34;22&amp;#34;; int value2 = Byte.parseByte(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;byte value: &amp;#34; + value2); } } The output is: String value: 22 byte value: 22</description>
+    </item>
+    
+    <item>
+      <title>Convert String to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-string-to-int/</link>
+      <pubDate>Sun, 31 Jan 2021 21:08:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert String value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Parse a String to int value using Integer.parseInt() static method in Java ConvertStringToIntExample1.java public class ConvertStringToIntExample1 { public static void main(String[] args) { String value1 = &amp;#34;123&amp;#34;; int value2 = Integer.parseInt(value1); System.out.println(&amp;#34;String value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: String value: 123 int value: 123</description>
+    </item>
+    
+    <item>
+      <title>Convert int to String in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-string/</link>
+      <pubDate>Sun, 31 Jan 2021 20:05:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-string/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into String value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Using String.valueOf() method to instantiate String from a int value ConvertIntToStringExample1.java public class ConvertIntToStringExample1 { public static void main(String[] args) { int value1 = 987; String value2 = String.valueOf(value1); System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;String value: &amp;#34; + value2); } } The output is: int value: 987 String value: 987</description>
+    </item>
+    
+    <item>
+      <title>Convert long to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-float/</link>
+      <pubDate>Sun, 31 Jan 2021 19:35:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign long variable to float variable in Java ConvertLongToFloatExample1.java public class ConvertLongToFloatExample1 { public static void main(String[] args) { long value1 = 100; float value2 = value1; System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: long value: 100 float value: 100.</description>
+    </item>
+    
+    <item>
+      <title>Convert float to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-long/</link>
+      <pubDate>Sun, 31 Jan 2021 19:26:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast float to long value in Java ConvertFloatToLongExample1.java public class ConvertFloatToLongExample1 { public static void main(String[] args) { float value1 = 56.78F; long value2 = (long) value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: float value: 56.</description>
+    </item>
     
     <item>
       <title>Convert short to float in Java</title>
