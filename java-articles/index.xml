@@ -6,10 +6,110 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 18:02:56 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 15:18:17 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert short to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-short-to-float/</link>
+      <pubDate>Sun, 31 Jan 2021 15:18:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-short-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert short value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign short variable to float variable in Java ConvertShortToFloatExample1.java public class ConvertShortToFloatExample1 { public static void main(String[] args) { short value1 = 10; float value2 = value1; System.out.println(&amp;#34;short value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: short value: 10 float value: 10.</description>
+    </item>
+    
+    <item>
+      <title>Convert float to short in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-short/</link>
+      <pubDate>Sun, 31 Jan 2021 15:09:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-short/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into short value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast float to short value in Java ConvertFloatToShortExample1.java public class ConvertFloatToShortExample1 { public static void main(String[] args) { float value1 = 12.34F; short value2 = (short)value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;short value: &amp;#34; + value2); } } The output is: float value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert byte to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-float/</link>
+      <pubDate>Sun, 31 Jan 2021 14:50:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign byte variable to float variable ConvertByteToFloatExample1.java public class ConvertByteToFloatExample1 { public static void main(String[] args) { byte value1 = 10; float value2 = value1; System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: byte value: 10 float value: 10.</description>
+    </item>
+    
+    <item>
+      <title>Convert float to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-byte/</link>
+      <pubDate>Sun, 31 Jan 2021 14:34:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast float to byte value in Java ConvertFloatToByteExample1.java public class ConvertFloatToByteExample1 { public static void main(String[] args) { float value1 = 56.78F; byte value2 = (byte) value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;byte value: &amp;#34; + value2); } } The output is: float value: 56.</description>
+    </item>
+    
+    <item>
+      <title>Convert float to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-int/</link>
+      <pubDate>Sun, 31 Jan 2021 14:20:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast float value to int value in Java ConvertFloatToIntExample1.java public class ConvertFloatToIntExample1 { public static void main(String[] args) { float value1 = 12.34F; int value2 = (int) value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: float value: 12.</description>
+    </item>
+    
+    <item>
+      <title>Convert int to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-float/</link>
+      <pubDate>Sun, 31 Jan 2021 14:15:03 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign int variable to float variable ConvertIntToFloatExample1.java public class ConvertIntToFloatExample1 { public static void main(String[] args) { int value1 = 87654; float value2 = value1; System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: int value: 87654 float value: 87654.</description>
+    </item>
+    
+    <item>
+      <title>Convert long to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-int/</link>
+      <pubDate>Sun, 31 Jan 2021 14:09:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast long value to int value in Java ConvertLongToIntExample1.java public class ConvertLongToIntExample1 { public static void main(String[] args) { long value1 = 123456; int value2 = (int) value1; System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: long value: 123456 int value: 123456</description>
+    </item>
+    
+    <item>
+      <title>Convert int to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-long/</link>
+      <pubDate>Sun, 31 Jan 2021 14:00:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign int variable to long variable ConvertIntToLongExample1.java public class ConvertIntToLongExample1 { public static void main(String[] args) { int value1 = 98765; long value2 = value1; System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: int value: 98765 long value: 98765</description>
+    </item>
+    
+    <item>
+      <title>Convert short to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-short-to-int/</link>
+      <pubDate>Sun, 31 Jan 2021 13:53:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-short-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert short value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign short variable to int variable ConvertShortToIntExample1.java public class ConvertShortToIntExample1 { public static void main(String[] args) { short value1 = 87; int value2 = value1; System.out.println(&amp;#34;short value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: short value: 87 int value: 87</description>
+    </item>
+    
+    <item>
+      <title>Convert int to short in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-short/</link>
+      <pubDate>Sun, 31 Jan 2021 13:46:59 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-short/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into short value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast int to short value in Java ConvertIntToShortExample1.java public class ConvertIntToShortExample1 { public static void main(String[] args) { int value1 = 99; short value2 = (short)value1; System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;short value: &amp;#34; + value2); } } The output is: int value: 99 short value: 99</description>
+    </item>
     
     <item>
       <title>Convert byte to int in Java</title>

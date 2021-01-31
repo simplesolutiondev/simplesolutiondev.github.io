@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-short-to-float/</loc>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-float-to-short/</loc>
+    <lastmod>2021-01-31T15:09:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-byte-to-float/</loc>
+    <lastmod>2021-01-31T14:50:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-float-to-byte/</loc>
+    <lastmod>2021-01-31T14:34:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-float-to-int/</loc>
+    <lastmod>2021-01-31T14:20:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-int-to-float/</loc>
+    <lastmod>2021-01-31T14:15:03+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-long-to-int/</loc>
+    <lastmod>2021-01-31T14:09:18+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-int-to-long/</loc>
+    <lastmod>2021-01-31T14:00:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-short-to-int/</loc>
+    <lastmod>2021-01-31T13:53:36+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-int-to-short/</loc>
+    <lastmod>2021-01-31T13:46:59+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-byte-to-int/</loc>
     <lastmod>2021-01-30T18:02:56+07:00</lastmod>
   </url>
@@ -1232,7 +1282,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/byte/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <lastmod>2021-01-31T14:50:29+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1291,7 +1341,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1441,7 +1491,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/float/</loc>
-    <lastmod>2021-01-30T17:24:13+07:00</lastmod>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1489,13 +1539,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/int/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <lastmod>2021-01-31T14:20:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/integer/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <lastmod>2021-01-31T14:20:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1530,14 +1580,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1567,7 +1617,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1819,7 +1869,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/long/</loc>
-    <lastmod>2021-01-30T16:55:11+07:00</lastmod>
+    <lastmod>2021-01-31T14:09:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2029,13 +2079,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/short/</loc>
-    <lastmod>2021-01-30T15:33:38+07:00</lastmod>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-01-30T18:02:56+07:00</lastmod>
+    <lastmod>2021-01-31T15:18:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2052,13 +2102,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
   </url>

@@ -6,10 +6,30 @@
     <description>Recent content in Long on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 16:55:11 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 14:09:18 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/long/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert long to int in Java</title>
+      <link>https://simplesolution.dev/java-convert-long-to-int/</link>
+      <pubDate>Sun, 31 Jan 2021 14:09:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-int/</guid>
+      <description>In this Java core tutorial, we learn how to convert long value into int value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast long value to int value in Java ConvertLongToIntExample1.java public class ConvertLongToIntExample1 { public static void main(String[] args) { long value1 = 123456; int value2 = (int) value1; System.out.println(&amp;#34;long value: &amp;#34; + value1); System.out.println(&amp;#34;int value: &amp;#34; + value2); } } The output is: long value: 123456 int value: 123456</description>
+    </item>
+    
+    <item>
+      <title>Convert int to long in Java</title>
+      <link>https://simplesolution.dev/java-convert-int-to-long/</link>
+      <pubDate>Sun, 31 Jan 2021 14:00:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-long/</guid>
+      <description>In this Java core tutorial, we learn how to convert int value into long value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign int variable to long variable ConvertIntToLongExample1.java public class ConvertIntToLongExample1 { public static void main(String[] args) { int value1 = 98765; long value2 = value1; System.out.println(&amp;#34;int value: &amp;#34; + value1); System.out.println(&amp;#34;long value: &amp;#34; + value2); } } The output is: int value: 98765 long value: 98765</description>
+    </item>
     
     <item>
       <title>Convert long to double in Java</title>

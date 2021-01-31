@@ -6,10 +6,30 @@
     <description>Recent content in Byte on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 18:02:56 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 14:50:29 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/byte/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert byte to float in Java</title>
+      <link>https://simplesolution.dev/java-convert-byte-to-float/</link>
+      <pubDate>Sun, 31 Jan 2021 14:50:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-byte-to-float/</guid>
+      <description>In this Java core tutorial, we learn how to convert byte value into float value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Assign byte variable to float variable ConvertByteToFloatExample1.java public class ConvertByteToFloatExample1 { public static void main(String[] args) { byte value1 = 10; float value2 = value1; System.out.println(&amp;#34;byte value: &amp;#34; + value1); System.out.println(&amp;#34;float value: &amp;#34; + value2); } } The output is: byte value: 10 float value: 10.</description>
+    </item>
+    
+    <item>
+      <title>Convert float to byte in Java</title>
+      <link>https://simplesolution.dev/java-convert-float-to-byte/</link>
+      <pubDate>Sun, 31 Jan 2021 14:34:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-float-to-byte/</guid>
+      <description>In this Java core tutorial, we learn how to convert float value into byte value in Java via different solutions.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to cast float to byte value in Java ConvertFloatToByteExample1.java public class ConvertFloatToByteExample1 { public static void main(String[] args) { float value1 = 56.78F; byte value2 = (byte) value1; System.out.println(&amp;#34;float value: &amp;#34; + value1); System.out.println(&amp;#34;byte value: &amp;#34; + value2); } } The output is: float value: 56.</description>
+    </item>
     
     <item>
       <title>Convert byte to int in Java</title>
