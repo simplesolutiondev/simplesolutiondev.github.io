@@ -1146,6 +1146,15 @@
     </item>
     
     <item>
+      <title>Openapi 3</title>
+      <link>https://simplesolution.dev/tag/openapi-3/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/openapi-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Opencsv</title>
       <link>https://simplesolution.dev/tag/opencsv/</link>
       <pubDate>Wed, 26 Feb 2020 01:15:38 +0700</pubDate>
@@ -1290,6 +1299,24 @@
     </item>
     
     <item>
+      <title>Restcontroller</title>
+      <link>https://simplesolution.dev/tag/restcontroller/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/restcontroller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Restful Api</title>
+      <link>https://simplesolution.dev/tag/restful-api/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/restful-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sftp</title>
       <link>https://simplesolution.dev/tag/sftp/</link>
       <pubDate>Mon, 28 Sep 2020 22:37:34 +0700</pubDate>
@@ -1337,7 +1364,7 @@
     <item>
       <title>Spring Boot</title>
       <link>https://simplesolution.dev/tag/spring-boot/</link>
-      <pubDate>Wed, 06 Jan 2021 22:57:36 +0700</pubDate>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-boot/</guid>
       <description></description>
@@ -1349,6 +1376,24 @@
       <pubDate>Tue, 20 Oct 2020 00:38:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-data-jpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Springbootapplication</title>
+      <link>https://simplesolution.dev/tag/springbootapplication/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/springbootapplication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Springdoc Openapi</title>
+      <link>https://simplesolution.dev/tag/springdoc-openapi/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/springdoc-openapi/</guid>
       <description></description>
     </item>
     
@@ -1394,6 +1439,15 @@
       <pubDate>Wed, 26 Feb 2020 01:15:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/super-csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swagger Ui</title>
+      <link>https://simplesolution.dev/tag/swagger-ui/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/swagger-ui/</guid>
       <description></description>
     </item>
     

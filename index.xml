@@ -6,10 +6,20 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 00:08:17 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Feb 2021 00:12:12 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot RESTful API Documentation with OpenAPI 3.0 and Swagger-UI using springdoc-openapi</title>
+      <link>https://simplesolution.dev/spring-boot-rest-api-openapi-swagger-ui-springdoc-openapi/</link>
+      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-rest-api-openapi-swagger-ui-springdoc-openapi/</guid>
+      <description>Introduction In this Spring Boot RESTful API tutorial, we learn how to use the springdoc-openapi Java library in the Spring Boot project to generate the documentation for the Restful API. Step by step we learn how to generate the document in OpenAPI 3.0 standard and then showing the document in Swagger-UI.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot RESTful API Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+    </item>
     
     <item>
       <title>Convert float to String in Java</title>
