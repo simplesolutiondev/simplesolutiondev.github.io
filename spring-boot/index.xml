@@ -18,9 +18,9 @@
       
       <guid>https://simplesolution.dev/spring-boot-web-undertow-embedded-servlet-container/</guid>
       <description>Introduction In this Spring Boot tutorial, we learn how to use Undertow as an embedded servlet container in Spring Boot Web application.
-Create New Spring Boot Web Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
 On the New Spring Starter Project popup input new project information as below and click Next.
- Name: spring-boot-undertow Group: dev.simplesolution Artifact: spring-boot-api-doc Version: 1.0.0 Description: Spring Boot using Undertow Package: dev.</description>
+ Name: spring-boot-undertow Group: dev.</description>
     </item>
     
     <item>
