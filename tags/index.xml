@@ -426,6 +426,15 @@
     </item>
     
     <item>
+      <title>Embedded Servlet Container</title>
+      <link>https://simplesolution.dev/tag/embedded-servlet-container/</link>
+      <pubDate>Mon, 01 Mar 2021 23:59:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/embedded-servlet-container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Enum</title>
       <link>https://simplesolution.dev/tag/enum/</link>
       <pubDate>Mon, 25 Jan 2021 01:18:48 +0700</pubDate>
@@ -1364,9 +1373,18 @@
     <item>
       <title>Spring Boot</title>
       <link>https://simplesolution.dev/tag/spring-boot/</link>
-      <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
+      <pubDate>Mon, 01 Mar 2021 23:59:56 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-boot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring Boot Starter Undertow</title>
+      <link>https://simplesolution.dev/tag/spring-boot-starter-undertow/</link>
+      <pubDate>Mon, 01 Mar 2021 23:59:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/spring-boot-starter-undertow/</guid>
       <description></description>
     </item>
     
@@ -1502,6 +1520,15 @@
       <pubDate>Sat, 09 Jan 2021 17:22:53 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/treemap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Undertow</title>
+      <link>https://simplesolution.dev/tag/undertow/</link>
+      <pubDate>Mon, 01 Mar 2021 23:59:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/undertow/</guid>
       <description></description>
     </item>
     

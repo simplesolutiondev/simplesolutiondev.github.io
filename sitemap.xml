@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/spring-boot-web-undertow-embedded-servlet-container/</loc>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/spring-boot-rest-api-openapi-swagger-ui-springdoc-openapi/</loc>
     <lastmod>2021-02-04T00:12:12+07:00</lastmod>
   </url>
@@ -1535,6 +1540,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/embedded-servlet-container/</loc>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/enum/</loc>
     <lastmod>2021-01-25T01:18:48+07:00</lastmod>
     <priority>0</priority>
@@ -1698,7 +1709,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-02-04T00:12:12+07:00</lastmod>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2184,7 +2195,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-02-04T00:12:12+07:00</lastmod>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2202,13 +2213,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2021-02-04T00:12:12+07:00</lastmod>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2021-02-04T00:12:12+07:00</lastmod>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/spring-boot-starter-undertow/</loc>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2305,6 +2322,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/treemap/</loc>
     <lastmod>2021-01-09T17:22:53+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/undertow/</loc>
+    <lastmod>2021-03-01T23:59:56+07:00</lastmod>
     <priority>0</priority>
   </url>
   

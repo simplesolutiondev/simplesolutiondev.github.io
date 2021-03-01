@@ -6,10 +6,22 @@
     <description>Recent content in Spring Boot on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 00:12:12 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 01 Mar 2021 23:59:56 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/spring-boot/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Web using Undertow Embedded Servlet Container</title>
+      <link>https://simplesolution.dev/spring-boot-web-undertow-embedded-servlet-container/</link>
+      <pubDate>Mon, 01 Mar 2021 23:59:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-web-undertow-embedded-servlet-container/</guid>
+      <description>Introduction In this Spring Boot tutorial, we learn how to use Undertow as an embedded servlet container in Spring Boot Web application.
+Create New Spring Boot Web Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
+On the New Spring Starter Project popup input new project information as below and click Next.
+ Name: spring-boot-undertow Group: dev.simplesolution Artifact: spring-boot-api-doc Version: 1.0.0 Description: Spring Boot using Undertow Package: dev.</description>
+    </item>
     
     <item>
       <title>Spring Boot RESTful API Documentation with OpenAPI 3.0 and Swagger-UI using springdoc-openapi</title>

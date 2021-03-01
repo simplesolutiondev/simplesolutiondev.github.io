@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Web using Undertow Embedded Servlet Container</title>
+    <meta name="title" content="Spring Boot Web using Undertow Embedded Servlet Container">
+    <meta name="description" content="In this Spring Boot tutorial, we learn how to use Undertow as an embedded servlet container in Spring Boot Web application.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/spring-boot-web-undertow-embedded-servlet-container/">
+    <meta property="og:title" content="Spring Boot Web using Undertow Embedded Servlet Container">
+    <meta property="og:description" content="In this Spring Boot tutorial, we learn how to use Undertow as an embedded servlet container in Spring Boot Web application.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/spring-boot-web-undertow-embedded-servlet-container.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/spring-boot-web-undertow-embedded-servlet-container/">
+    <meta name="twitter:title" content="Spring Boot Web using Undertow Embedded Servlet Container">
+    <meta name="twitter:description" content="In this Spring Boot tutorial, we learn how to use Undertow as an embedded servlet container in Spring Boot Web application.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/spring-boot-web-undertow-embedded-servlet-container.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Web using Undertow Embedded Servlet Container</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this Spring Boot tutorial, we learn how to use Undertow as an embedded servlet container in Spring Boot Web application.</p>
+
+<h4 id="create-new-spring-boot-web-project">Create New Spring Boot Web Project</h4>
+
+<p>Open Spring Tool Suite IDE, select menu <strong>File &gt; New &gt; Spring Starter Project</strong>.</p>
+
+<p>On the <strong>New Spring Starter Project</strong> popup input new project information as below and click <strong>Next</strong>.</p>
+
+<ul>
+<li>Name: spring-boot-undertow</li>
+<li>Group: dev.simplesolution</li>
+<li>Artifact: spring-boot-api-doc</li>
+<li>Version: 1.0.0</li>
+<li>Description: Spring Boot using Undertow</li>
+<li>Package: dev.simplesolution.undertow</li>
+</ul>
+
+<p><img src="/images/spring-boot-web-undertow-embedded-servlet-container-1.png" alt="Spring Boot Web using Undertow Embedded Servlet Container" class="img-fluid"></p>
+
+<p>On the <strong>New Spring Starter Project Dependencies</strong> popup choose dependencies as below and click <strong>Next</strong>.</p>
+
+<ul>
+<li>Thymeleaf</li>
+<li>Spring Web</li>
+</ul>
+
+<p><img src="/images/spring-boot-web-undertow-embedded-servlet-container-2.png" alt="Spring Boot Web using Undertow Embedded Servlet Container" class="img-fluid"></p>
+
+<p>Keep the information on the next popup as default and click <strong>Finish</strong>.</p>
+
+<p><img src="/images/spring-boot-web-undertow-embedded-servlet-container-3.png" alt="Spring Boot Web using Undertow Embedded Servlet Container" class="img-fluid"></p>
+
+<h4 id="what-is-undertow">What is Undertow?</h4>
+
+<p>Undertow is a flexible performant web server written in java, providing both blocking and non-blocking API’s based on NIO.</p>
+
+<p>To have more information about the Undertow servlet container library you can visit the Undertow homepage at <a href="https://undertow.io" target="_blank">undertow.io</a></p>
+
+<h4 id="add-spring-boot-starter-undertow-to-your-spring-boot-project">Add Spring Boot Starter Undertow to your Spring Boot project</h4>
+
+<p>Spring Boot provides a starter for using Undertow as the embedded servlet container named <strong>Spring Boot Starter Undertow</strong>. We can use Spring Boot Starter Undertow as an alternative to Spring Boot’s default Tomcat servlet container.</p>
+
+<p>To use the Spring Boot Starter Undertow Java library in the Gradle build project, add the following dependency into the <strong>build.gradle</strong> file. And exclude spring-boot-starter-tomcat module from spring-boot-starter-web.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">implementation <span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter-undertow:2.4.3&#39;</span>
+implementation <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter-web&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	exclude module: <span style="color:#e6db74">&#39;spring-boot-starter-tomcat&#39;</span>
+<span style="color:#f92672">}</span></code></pre></div>
+
+<p>To use the Spring Boot Starter Undertow Java library in the Maven build project, add the following dependency into the <strong>pom.xml</strong> file. And exclude spring-boot-starter-tomcat module from spring-boot-starter-web.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+  <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+  <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-undertow<span style="color:#f92672">&lt;/artifactId&gt;</span>
+  <span style="color:#f92672">&lt;version&gt;</span>2.4.3<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-web<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;exclusions&gt;</span>
+        <span style="color:#f92672">&lt;exclusion&gt;</span>
+            <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+            <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-tomcat<span style="color:#f92672">&lt;/artifactId&gt;</span>
+        <span style="color:#f92672">&lt;/exclusion&gt;</span>
+    <span style="color:#f92672">&lt;/exclusions&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<h4 id="implement-sample-controller-and-view">Implement Sample Controller and View</h4>
+
+<p>In the package <strong>dev.simplesolution.undertow</strong>, create a new class named <strong>IndexController</strong>.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.undertow<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.GetMapping<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IndexController</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+	<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">index</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+		<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">;</span>
+	<span style="color:#f92672">}</span>
+
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Create new HTML view file at \src\main\resources\templates\index.html</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+	&lt;<span style="color:#f92672">body</span>&gt;
+		&lt;<span style="color:#f92672">h1</span>&gt;Web App using Undertow Servlet Container&lt;/<span style="color:#f92672">h1</span>&gt;
+	&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+
+<p>Run the application, we can see the log messages showing the application use Undertow server.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  .   ____          _            __ _ _
+ /\\ / ___&#39;_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | &#39;_ | &#39;_| | &#39;_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  &#39;  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.3)
+
+2021-03-02 00:17:38.744  INFO 19148 --- [           main] d.s.u.SpringBootUndertowApplication      : Starting SpringBootUndertowApplication using Java 1.8.0_231 on ss with PID 19148 (D:\SimpleSolution\spring-boot-undertow\bin\main started by SS in D:\SimpleSolution\spring-boot-undertow)
+2021-03-02 00:17:38.746  INFO 19148 --- [           main] d.s.u.SpringBootUndertowApplication      : No active profile set, falling back to default profiles: default
+2021-03-02 00:17:39.204  WARN 19148 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-03-02 00:17:39.216  INFO 19148 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-03-02 00:17:39.217  INFO 19148 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 436 ms
+2021-03-02 00:17:39.327  INFO 19148 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService &#39;applicationTaskExecutor&#39;
+2021-03-02 00:17:39.366  INFO 19148 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-03-02 00:17:39.434  INFO 19148 --- [           main] io.undertow                              : starting server: Undertow - 2.2.4.Final
+2021-03-02 00:17:39.438  INFO 19148 --- [           main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-03-02 00:17:39.442  INFO 19148 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-03-02 00:17:39.462  INFO 19148 --- [           main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-03-02 00:17:39.498  INFO 19148 --- [           main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2021-03-02 00:17:39.504  INFO 19148 --- [           main] d.s.u.SpringBootUndertowApplication      : Started SpringBootUndertowApplication in 0.973 seconds (JVM running for 1.865)</code></pre></div></p>
+
+<p>Open the link <a href="http://localhost:8080/">http://localhost:8080/</a> on your browser to see the web page as below.</p>
+
+<p><img src="/images/spring-boot-web-undertow-embedded-servlet-container-4.png" alt="Spring Boot Web using Undertow Embedded Servlet Container" class="img-fluid"></p>
+
+<h4 id="final-application-source-code">Final Application Source Code</h4>
+
+<p>At this step we have the complete Spring Boot web project with code structure as below.</p>
+
+<p><img src="/images/spring-boot-web-undertow-embedded-servlet-container-5.png" alt="Spring Boot Web using Undertow Embedded Servlet Container" class="img-fluid"></p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-undertow" target="_blank">github.com/simplesolutiondev/spring-boot-undertow</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-undertow.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-undertow/archive/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/spring-boot">Spring Boot</a>
+                                
+                                <a href="https://simplesolution.dev/tag/undertow">Undertow</a>
+                                
+                                <a href="https://simplesolution.dev/tag/embedded-servlet-container">Embedded Servlet Container</a>
+                                
+                                <a href="https://simplesolution.dev/tag/spring-boot-starter-undertow">Spring Boot Starter Undertow</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
