@@ -6,10 +6,21 @@
     <description>Recent content in Spring Boot on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Mar 2021 00:14:16 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 03 Mar 2021 01:04:23 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/spring-boot/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Read File from resources using ResourceLoader</title>
+      <link>https://simplesolution.dev/java-spring-boot-resourceloader/</link>
+      <pubDate>Wed, 03 Mar 2021 01:04:23 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-spring-boot-resourceloader/</guid>
+      <description>Introduction In this Spring Boot tutorial, we learn how to read resource files located in the resources folder in a Spring Boot application using ResourceLoader class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
+On the New Spring Starter Project popup input new project information as below and click Next.</description>
+    </item>
     
     <item>
       <title>Spring Boot Read File from resources using ClassPathResource</title>
