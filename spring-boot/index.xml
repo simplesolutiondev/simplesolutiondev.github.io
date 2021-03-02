@@ -18,9 +18,8 @@
       
       <guid>https://simplesolution.dev/java-spring-boot-classpathresource/</guid>
       <description>Introduction In this Spring Boot tutorial, we learn how to read files located in the resources folder in a Spring Boot application using ClassPathResource class.
-Create New Spring Boot Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
-On the New Spring Starter Project popup input new project information as below and click Next.
- Name: spring-boot-classpathresource Group: dev.simplesolution Artifact: spring-boot-classpathresource Version: 1.0.0 Description: Spring Boot Read File from resources Package: dev.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.
+On the New Spring Starter Project popup input new project information as below and click Next.</description>
     </item>
     
     <item>
