@@ -6,10 +6,21 @@
     <description>Recent content in Resourceutils on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Mar 2021 21:11:07 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 03 Mar 2021 23:06:17 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/resourceutils/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Read Properties File using ResourceUtils</title>
+      <link>https://simplesolution.dev/java-spring-read-properties-file-using-resourceutils/</link>
+      <pubDate>Wed, 03 Mar 2021 23:06:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-spring-read-properties-file-using-resourceutils/</guid>
+      <description>In this Java Spring Framework tutorial, we learn how to use the ResourceUtils class of Spring Core module to read a properties file and convert it to Properties object in Spring application.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example, we have the properties file located in \src\main\resources\application.properties
+In the following PropertiesService class, we implement a method to read properties from classpath and convert it to Properties object.</description>
+    </item>
     
     <item>
       <title>Spring Boot Read File from resources using ResourceUtils</title>

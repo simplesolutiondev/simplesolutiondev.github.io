@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-spring-read-properties-file-using-resourceutils/</loc>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-spring-boot-resourceutils/</loc>
     <lastmod>2021-03-03T21:11:07+07:00</lastmod>
   </url>
@@ -1729,6 +1734,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/java-spring-framework/</loc>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-videos/</loc>
     <lastmod>2019-12-17T23:22:50+07:00</lastmod>
     <priority>0</priority>
@@ -1736,7 +1747,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-03-03T21:11:07+07:00</lastmod>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2143,6 +2154,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/properties/</loc>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/qr-code/</loc>
     <lastmod>2020-10-26T21:46:52+07:00</lastmod>
     <priority>0</priority>
@@ -2204,7 +2221,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/resourceutils/</loc>
-    <lastmod>2021-03-03T21:11:07+07:00</lastmod>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2240,7 +2257,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-03-03T21:11:07+07:00</lastmod>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2277,6 +2294,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/spring-data-jpa/</loc>
     <lastmod>2020-10-20T00:38:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/spring-framework/</loc>
+    <lastmod>2021-03-03T23:06:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
