@@ -78,9 +78,13 @@
 <span style="color:#f92672">import</span> java.io.InputStream<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> java.util.Properties<span style="color:#f92672">;</span>
 
+<span style="color:#f92672">import</span> org.slf4j.Logger<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.slf4j.LoggerFactory<span style="color:#f92672">;</span>
 <span style="color:#f92672">import</span> org.springframework.util.ResourceUtils<span style="color:#f92672">;</span>
 
 <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PropertiesService</span> <span style="color:#f92672">{</span>
+	
+	<span style="color:#66d9ef">private</span> Logger logger <span style="color:#f92672">=</span> LoggerFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">getLogger</span><span style="color:#f92672">(</span>PropertiesService<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
 	
 	<span style="color:#66d9ef">public</span> Properties <span style="color:#a6e22e">readApplicationProperties</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 		Properties properties <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Properties<span style="color:#f92672">();</span>
@@ -91,7 +95,7 @@
 			
 			properties<span style="color:#f92672">.</span><span style="color:#a6e22e">load</span><span style="color:#f92672">(</span>inputStream<span style="color:#f92672">);</span>
 		<span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-			e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+			logger<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span>e<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">(),</span> e<span style="color:#f92672">);</span>
 		<span style="color:#f92672">}</span>
 		<span style="color:#66d9ef">return</span> properties<span style="color:#f92672">;</span>
 	<span style="color:#f92672">}</span>
