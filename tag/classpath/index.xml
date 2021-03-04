@@ -6,10 +6,21 @@
     <description>Recent content in Classpath on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 22:15:52 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 04 Mar 2021 22:54:39 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/classpath/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Read Classpath Resource using ClassPathResource</title>
+      <link>https://simplesolution.dev/java-spring-read-classpath-resource-using-classpathresource/</link>
+      <pubDate>Thu, 04 Mar 2021 22:54:39 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-spring-read-classpath-resource-using-classpathresource/</guid>
+      <description>In this Java Spring Framework tutorial, we learn how to use the ClassPathResource class of Spring Core module to read files located in the resources directory of the Spring application project.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example, we have a text file located at /src/main/resources/data.json in the Spring application project.
+Next step, we implement a new class named ResourceService and implement two methods to read the data.</description>
+    </item>
     
     <item>
       <title>Spring Read Classpath Resource using ResourceLoader</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-spring-read-classpath-resource-using-classpathresource/</loc>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-spring-read-classpath-resource-using-resourceloader/</loc>
     <lastmod>2021-03-04T22:15:52+07:00</lastmod>
   </url>
@@ -1416,13 +1421,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/classpath/</loc>
-    <lastmod>2021-03-04T22:15:52+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/classpathresource/</loc>
-    <lastmod>2021-03-03T00:14:16+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1715,14 +1720,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-02-01T00:08:17+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-02-01T00:08:17+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1746,7 +1751,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-spring-framework/</loc>
-    <lastmod>2021-03-04T22:15:52+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1758,7 +1763,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-03-04T22:15:52+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2220,7 +2225,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/resource/</loc>
-    <lastmod>2021-03-04T22:15:52+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2268,7 +2273,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-03-04T22:15:52+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2285,13 +2290,13 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
     <lastmod>2021-03-03T21:11:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
     <lastmod>2021-03-03T21:11:07+07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -2310,7 +2315,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/spring-framework/</loc>
-    <lastmod>2021-03-04T22:15:52+07:00</lastmod>
+    <lastmod>2021-03-04T22:54:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
