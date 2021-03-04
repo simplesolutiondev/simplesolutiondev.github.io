@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-spring-read-classpath-resource-using-applicationcontext/</loc>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-spring-read-classpath-resource-using-value-annotation/</loc>
     <lastmod>2021-03-04T23:15:35+07:00</lastmod>
   </url>
@@ -1342,6 +1347,18 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/applicationcontext/</loc>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/applicationcontextaware/</loc>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/archiveexception/</loc>
     <lastmod>2021-01-11T01:16:12+07:00</lastmod>
     <priority>0</priority>
@@ -1426,7 +1443,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/classpath/</loc>
-    <lastmod>2021-03-04T23:15:35+07:00</lastmod>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1756,7 +1773,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-spring-framework/</loc>
-    <lastmod>2021-03-04T23:15:35+07:00</lastmod>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1768,7 +1785,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-03-04T23:15:35+07:00</lastmod>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2230,7 +2247,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/resource/</loc>
-    <lastmod>2021-03-04T23:15:35+07:00</lastmod>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2278,7 +2295,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-03-04T23:15:35+07:00</lastmod>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2320,7 +2337,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/spring-framework/</loc>
-    <lastmod>2021-03-04T23:15:35+07:00</lastmod>
+    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
