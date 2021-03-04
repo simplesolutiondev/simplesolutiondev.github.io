@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Value Annotation on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/value-annotation/</link>
+    <description>Recent content in Value Annotation on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Mar 2021 23:15:35 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/value-annotation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Read Classpath Resource using @Value</title>
+      <link>https://simplesolution.dev/java-spring-read-classpath-resource-using-value-annotation/</link>
+      <pubDate>Thu, 04 Mar 2021 23:15:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-spring-read-classpath-resource-using-value-annotation/</guid>
+      <description>In this Java Spring Framework tutorial, we learn how to use @Value annotation to read classpath resource files located in the resources folder in your Spring application project.
+   (adsbygoogle = window.adsbygoogle || []).push({});  For example, we have a text file located at /src/main/resources/data.json in the Spring application project.
+Next step, we implement a new class named ResourceService and implement a method to read the data.json file and return it as a String object.</description>
+    </item>
+    
+  </channel>
+</rss>

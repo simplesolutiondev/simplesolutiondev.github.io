@@ -212,7 +212,7 @@
     <item>
       <title>Classpath</title>
       <link>https://simplesolution.dev/tag/classpath/</link>
-      <pubDate>Thu, 04 Mar 2021 22:54:39 +0700</pubDate>
+      <pubDate>Thu, 04 Mar 2021 23:15:35 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/classpath/</guid>
       <description></description>
@@ -1346,7 +1346,7 @@
     <item>
       <title>Resource</title>
       <link>https://simplesolution.dev/tag/resource/</link>
-      <pubDate>Thu, 04 Mar 2021 22:54:39 +0700</pubDate>
+      <pubDate>Thu, 04 Mar 2021 23:15:35 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/resource/</guid>
       <description></description>
@@ -1463,7 +1463,7 @@
     <item>
       <title>Spring Framework</title>
       <link>https://simplesolution.dev/tag/spring-framework/</link>
-      <pubDate>Thu, 04 Mar 2021 22:54:39 +0700</pubDate>
+      <pubDate>Thu, 04 Mar 2021 23:15:35 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/spring-framework/</guid>
       <description></description>
@@ -1637,6 +1637,15 @@
       <pubDate>Wed, 20 Jan 2021 00:17:40 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/uuid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Value Annotation</title>
+      <link>https://simplesolution.dev/tag/value-annotation/</link>
+      <pubDate>Thu, 04 Mar 2021 23:15:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/value-annotation/</guid>
       <description></description>
     </item>
     
