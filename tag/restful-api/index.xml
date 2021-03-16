@@ -6,10 +6,20 @@
     <description>Recent content in Restful Api on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 00:12:12 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 16 Mar 2021 21:05:04 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/restful-api/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Restful API and Vue.js Frontend</title>
+      <link>https://simplesolution.dev/spring-boot-restful-api-vuejs-frontend/</link>
+      <pubDate>Tue, 16 Mar 2021 21:05:04 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/spring-boot-restful-api-vuejs-frontend/</guid>
+      <description>Introduction In this full stack Spring Boot tutorial, we learn how to implement a web application using Spring Boot as back end restful API and Vue.js at the front end side. Via step by step guide we show you how to implement the sample project named Customer Manager to manage customer information.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Restful API Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+    </item>
     
     <item>
       <title>Spring Boot RESTful API Documentation with OpenAPI 3.0 and Swagger-UI using springdoc-openapi</title>
