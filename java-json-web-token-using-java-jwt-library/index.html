@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JSON Web Token in Java using Auth0 Java JWT Library</title>
+    <meta name="title" content="JSON Web Token in Java using Auth0 Java JWT Library">
+    <meta name="description" content="In this Java tutorial, we learn how to work with JSON Web Token (JWT) in Java application using the Auth0’s Java JWT library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-json-web-token-using-java-jwt-library/">
+    <meta property="og:title" content="JSON Web Token in Java using Auth0 Java JWT Library">
+    <meta property="og:description" content="In this Java tutorial, we learn how to work with JSON Web Token (JWT) in Java application using the Auth0’s Java JWT library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-json-web-token-using-java-jwt-library.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-json-web-token-using-java-jwt-library/">
+    <meta name="twitter:title" content="JSON Web Token in Java using Auth0 Java JWT Library">
+    <meta name="twitter:description" content="In this Java tutorial, we learn how to work with JSON Web Token (JWT) in Java application using the Auth0’s Java JWT library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-json-web-token-using-java-jwt-library.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-spring-framework">Spring</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/code-examples">Java Code Examples</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">JSON Web Token in Java using Auth0 Java JWT Library</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this Java tutorial, we learn how to work with JSON Web Token (JWT) in Java application using the Auth0’s Java JWT library.</p>
+
+<h4 id="how-to-add-java-jwt-library-to-your-java-project">How to add Java JWT Library to your Java project</h4>
+
+<p>To use the Java JWT library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">implementation <span style="color:#e6db74">&#39;com.auth0:java-jwt:3.14.0&#39;</span></code></pre></div>
+
+<p>To use the Java JWT library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+  <span style="color:#f92672">&lt;groupId&gt;</span>com.auth0<span style="color:#f92672">&lt;/groupId&gt;</span>
+  <span style="color:#f92672">&lt;artifactId&gt;</span>java-jwt<span style="color:#f92672">&lt;/artifactId&gt;</span>
+  <span style="color:#f92672">&lt;version&gt;</span>3.14.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>To have more information about the Java JWT library you can visit the library home page at <a href="https://github.com/auth0/java-jwt" target="_blank">github.com/auth0/java-jwt</a></p>
+
+<h4 id="how-to-generate-a-new-json-web-token">How to generate a new JSON web token</h4>
+
+<p>In the following example, we generate a new JSON web token with 2 claim values username and role.</p>
+
+<p>GenerateJWTExample.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.auth0.jwt.JWT<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.algorithms.Algorithm<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GenerateJWTExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String secret <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123@abc&#34;</span><span style="color:#f92672">;</span>
+        Algorithm algorithm <span style="color:#f92672">=</span> Algorithm<span style="color:#f92672">.</span><span style="color:#a6e22e">HMAC512</span><span style="color:#f92672">(</span>secret<span style="color:#f92672">);</span>
+
+        String generatedToken <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">()</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withIssuer</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withClaim</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;username&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TestUser&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withClaim</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">sign</span><span style="color:#f92672">(</span>algorithm<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>generatedToken<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVXNlciIsImlzcyI6IlNpbXBsZSBTb2x1dGlvbiIsInVzZXJuYW1lIjoiVGVzdFVzZXIifQ.jQUKIOxN0KGbIGJx8SU3WfSVPNASOnRtt3DcoMVBeThcWGzEBAnwlHHYRvbzuas-sOeWSvOwrnsvpQ5tywAfWA</code></pre></div></p>
+
+<p>In the following Java program, we learn to generate a JWT token that will expire in 1 minute.</p>
+
+<p>GenerateJWTWithExpireExample.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.auth0.jwt.JWT<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.algorithms.Algorithm<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Date<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GenerateJWTWithExpireExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String secret <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123@abc&#34;</span><span style="color:#f92672">;</span>
+        Algorithm algorithm <span style="color:#f92672">=</span> Algorithm<span style="color:#f92672">.</span><span style="color:#a6e22e">HMAC512</span><span style="color:#f92672">(</span>secret<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">long</span> expireTime <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Date<span style="color:#f92672">().</span><span style="color:#a6e22e">getTime</span><span style="color:#f92672">())</span> <span style="color:#f92672">+</span> 60000<span style="color:#f92672">;</span> <span style="color:#75715e">// 60000 milliseconds = 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>        Date expireDate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date<span style="color:#f92672">(</span>expireTime<span style="color:#f92672">);</span>
+
+        String generatedToken <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">()</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withIssuer</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withClaim</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;username&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TestUser&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withClaim</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withExpiresAt</span><span style="color:#f92672">(</span>expireDate<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">sign</span><span style="color:#f92672">(</span>algorithm<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>generatedToken<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVXNlciIsImlzcyI6IlNpbXBsZSBTb2x1dGlvbiIsImV4cCI6MTYxNjA4MDAzOCwidXNlcm5hbWUiOiJUZXN0VXNlciJ9.S96EHjYKfWfB4TEXqUBfIJVOEBkOWD9wd37OhIJ4TcxTND9Igni0pHiMB-i3efxSaiiQEGvi-pMrwGKISue1MA</code></pre></div></p>
+
+<h4 id="how-to-verify-the-a-json-web-token">How to verify the a JSON web token</h4>
+
+<p>Verify the token without expiration date time.</p>
+
+<p>VerifyJWTExample.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.auth0.jwt.JWT<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.JWTVerifier<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.algorithms.Algorithm<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.exceptions.JWTVerificationException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.interfaces.DecodedJWT<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">VerifyJWTExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVXNlciIsImlzcyI6IlNpbXBsZSBTb2x1dGlvbiIsInVzZXJuYW1lIjoiVGVzdFVzZXIifQ.jQUKIOxN0KGbIGJx8SU3WfSVPNASOnRtt3DcoMVBeThcWGzEBAnwlHHYRvbzuas-sOeWSvOwrnsvpQ5tywAfWA&#34;</span><span style="color:#f92672">;</span>
+        String secret <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123@abc&#34;</span><span style="color:#f92672">;</span>
+        Algorithm algorithm <span style="color:#f92672">=</span> Algorithm<span style="color:#f92672">.</span><span style="color:#a6e22e">HMAC512</span><span style="color:#f92672">(</span>secret<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            JWTVerifier verifier <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">require</span><span style="color:#f92672">(</span>algorithm<span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">withIssuer</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+
+            DecodedJWT decodedJWT <span style="color:#f92672">=</span> verifier<span style="color:#f92672">.</span><span style="color:#a6e22e">verify</span><span style="color:#f92672">(</span>token<span style="color:#f92672">);</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Verify JWT token success.&#34;</span><span style="color:#f92672">);</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Claims: &#34;</span> <span style="color:#f92672">+</span> decodedJWT<span style="color:#f92672">.</span><span style="color:#a6e22e">getClaims</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>JWTVerificationException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Verify JWT token fail: &#34;</span> <span style="color:#f92672">+</span> ex<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Verify JWT token success.
+Claims: {iss=&#34;Simple Solution&#34;, role=&#34;User&#34;, username=&#34;TestUser&#34;}</code></pre></div></p>
+
+<p>Verify the token with expiration date time.</p>
+
+<p>VerifyJWTWithExpireExample.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.auth0.jwt.JWT<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.JWTVerifier<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.algorithms.Algorithm<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.exceptions.JWTVerificationException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.interfaces.DecodedJWT<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">VerifyJWTWithExpireExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVXNlciIsImlzcyI6IlNpbXBsZSBTb2x1dGlvbiIsImV4cCI6MTYxNjA4MDEyMCwidXNlcm5hbWUiOiJUZXN0VXNlciJ9.bw87xWcl23Nefzeilnww84kUxvz3Yal90Va6DQogsRhVWvZe_TvmzFkib4ecIKbScMCQnR4a-w3JfaKBw7btNw&#34;</span><span style="color:#f92672">;</span>
+        String secret <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123@abc&#34;</span><span style="color:#f92672">;</span>
+        Algorithm algorithm <span style="color:#f92672">=</span> Algorithm<span style="color:#f92672">.</span><span style="color:#a6e22e">HMAC512</span><span style="color:#f92672">(</span>secret<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            JWTVerifier verifier <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">require</span><span style="color:#f92672">(</span>algorithm<span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">withIssuer</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">acceptExpiresAt</span><span style="color:#f92672">(</span>60<span style="color:#f92672">)</span> <span style="color:#75715e">// 60 seconds = 1 minute
+</span><span style="color:#75715e"></span>                    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+
+            DecodedJWT decodedJWT <span style="color:#f92672">=</span> verifier<span style="color:#f92672">.</span><span style="color:#a6e22e">verify</span><span style="color:#f92672">(</span>token<span style="color:#f92672">);</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Verify JWT token success.&#34;</span><span style="color:#f92672">);</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>decodedJWT<span style="color:#f92672">.</span><span style="color:#a6e22e">getClaims</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>JWTVerificationException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Verify JWT token fail: &#34;</span> <span style="color:#f92672">+</span> ex<span style="color:#f92672">.</span><span style="color:#a6e22e">getMessage</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Verify JWT token success.
+{iss=&#34;Simple Solution&#34;, role=&#34;User&#34;, exp=1616080120, username=&#34;TestUser&#34;}</code></pre></div></p>
+
+<h4 id="how-to-decode-a-given-json-web-token">How to decode a given JSON web token</h4>
+
+<p>In the following Java program, we learn how to decode a given JSON web token and show its issuer and claims data.</p>
+
+<p>DecodeJWTExample.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.auth0.jwt.JWT<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.interfaces.DecodedJWT<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DecodeJWTExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVXNlciIsImlzcyI6IlNpbXBsZSBTb2x1dGlvbiIsInVzZXJuYW1lIjoiVGVzdFVzZXIifQ.jQUKIOxN0KGbIGJx8SU3WfSVPNASOnRtt3DcoMVBeThcWGzEBAnwlHHYRvbzuas-sOeWSvOwrnsvpQ5tywAfWA&#34;</span><span style="color:#f92672">;</span>
+
+        DecodedJWT decodedJWT <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>token<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Issuer: &#34;</span> <span style="color:#f92672">+</span> decodedJWT<span style="color:#f92672">.</span><span style="color:#a6e22e">getIssuer</span><span style="color:#f92672">());</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Claims: &#34;</span> <span style="color:#f92672">+</span> decodedJWT<span style="color:#f92672">.</span><span style="color:#a6e22e">getClaims</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Issuer: Simple Solution
+Claims: {iss=&#34;Simple Solution&#34;, role=&#34;User&#34;, username=&#34;TestUser&#34;}</code></pre></div></p>
+
+<h4 id="implement-a-reusable-jwtservice-class">Implement a reusable JWTService class</h4>
+
+<p>At this step, we learn how to implement a reusable class to generate, verify and decode JSON web tokens that can reuse for your Java project.</p>
+
+<p>JWTService.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.auth0.jwt.JWT<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.JWTVerifier<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.algorithms.Algorithm<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.exceptions.JWTVerificationException<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.auth0.jwt.interfaces.DecodedJWT<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Date<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JWTService</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">long</span> DEFAULT_EXPIRE_IN_SECONDS <span style="color:#f92672">=</span> 60<span style="color:#f92672">;</span>
+    
+    <span style="color:#66d9ef">private</span> String secret <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123@abc&#34;</span><span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">private</span> Algorithm algorithm <span style="color:#f92672">=</span> Algorithm<span style="color:#f92672">.</span><span style="color:#a6e22e">HMAC256</span><span style="color:#f92672">(</span>secret<span style="color:#f92672">);</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">generateJWTToken</span><span style="color:#f92672">(</span>String username<span style="color:#f92672">,</span> String role<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">long</span> now <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date<span style="color:#f92672">().</span><span style="color:#a6e22e">getTime</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">long</span> expireTime <span style="color:#f92672">=</span> now <span style="color:#f92672">+</span> <span style="color:#f92672">(</span>DEFAULT_EXPIRE_IN_SECONDS <span style="color:#f92672">*</span> 1000<span style="color:#f92672">);</span>
+        Date expireDate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date<span style="color:#f92672">(</span>expireTime<span style="color:#f92672">);</span>
+
+        String jwtToken <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">()</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withIssuer</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withClaim</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;username&#34;</span><span style="color:#f92672">,</span> username<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withClaim</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">,</span> role<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">withExpiresAt</span><span style="color:#f92672">(</span>expireDate<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">sign</span><span style="color:#f92672">(</span>algorithm<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">return</span> jwtToken<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">verifyJWTToken</span><span style="color:#f92672">(</span>String token<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            JWTVerifier verifier <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">require</span><span style="color:#f92672">(</span>algorithm<span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">withIssuer</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple Solution&#34;</span><span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">acceptExpiresAt</span><span style="color:#f92672">(</span>DEFAULT_EXPIRE_IN_SECONDS<span style="color:#f92672">)</span>
+                    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+
+            verifier<span style="color:#f92672">.</span><span style="color:#a6e22e">verify</span><span style="color:#f92672">(</span>token<span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>JWTVerificationException ex<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getClaimFromToken</span><span style="color:#f92672">(</span>String token<span style="color:#f92672">,</span> String claimKey<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        DecodedJWT decodedJWT <span style="color:#f92672">=</span> JWT<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>token<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">return</span> decodedJWT<span style="color:#f92672">.</span><span style="color:#a6e22e">getClaims</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>claimKey<span style="color:#f92672">).</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Example program how to use JWTService class.</p>
+
+<p>JWTExamples.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JWTExamples</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        JWTService jwtService <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JWTService<span style="color:#f92672">();</span>
+        String token <span style="color:#f92672">=</span> jwtService<span style="color:#f92672">.</span><span style="color:#a6e22e">generateJWTToken</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;TestUser&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">boolean</span> result <span style="color:#f92672">=</span> jwtService<span style="color:#f92672">.</span><span style="color:#a6e22e">verifyJWTToken</span><span style="color:#f92672">(</span>token<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Generated Token: &#34;</span> <span style="color:#f92672">+</span> token<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Verify Result: &#34;</span> <span style="color:#f92672">+</span> result<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Token Claim, username: &#34;</span> <span style="color:#f92672">+</span> jwtService<span style="color:#f92672">.</span><span style="color:#a6e22e">getClaimFromToken</span><span style="color:#f92672">(</span>token<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;username&#34;</span><span style="color:#f92672">));</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Token Claim, role: &#34;</span> <span style="color:#f92672">+</span> jwtService<span style="color:#f92672">.</span><span style="color:#a6e22e">getClaimFromToken</span><span style="color:#f92672">(</span>token<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;role&#34;</span><span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Generated Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVXNlciIsImlzcyI6IlNpbXBsZSBTb2x1dGlvbiIsImV4cCI6MTYxNjA4MDM0MywidXNlcm5hbWUiOiJUZXN0VXNlciJ9.4NLv-75XG-uyz-3YjnuRau7aKOOUagJ9szdWDR-OR7k
+Verify Result: true
+Token Claim, username: &#34;TestUser&#34;
+Token Claim, role: &#34;User&#34;</code></pre></div></p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>In this Java JSON web token tutorial, we have learned how to use  the Java JWT library to generate a new token, verify and decode a given token. We also implement a reusable Java class to reuse for different Java projects.</p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/java-jwt">Java JWT</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jwt">JWT</a>
+                                
+                                <a href="https://simplesolution.dev/tag/json-web-token">JSON Web Token</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
