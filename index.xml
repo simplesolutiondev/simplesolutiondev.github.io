@@ -18,7 +18,7 @@
       
       <guid>https://simplesolution.dev/java-json-web-token-using-java-jwt-library/</guid>
       <description>Introduction In this Java tutorial, we learn how to work with JSON Web Token (JWT) in Java application using the Auth0’s Java JWT library.
-How to add Java JWT Library to your Java project To use the Java JWT library in the Gradle build project, add the following dependency into the build.gradle file.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Java JWT Library to your Java project To use the Java JWT library in the Gradle build project, add the following dependency into the build.gradle file.
 implementation &amp;#39;com.auth0:java-jwt:3.14.0&amp;#39; To use the Java JWT library in the Maven build project, add the following dependency into the pom.</description>
     </item>
     
