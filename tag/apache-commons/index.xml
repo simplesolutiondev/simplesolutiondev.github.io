@@ -6,10 +6,20 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Mar 2021 22:47:06 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 24 Mar 2021 23:47:03 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Encode and Decode String to Binary Format in Java using Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-encode-decode-binary-string-using-apache-commons-codec/</link>
+      <pubDate>Wed, 24 Mar 2021 23:47:03 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-encode-decode-binary-string-using-apache-commons-codec/</guid>
+      <description>In this Java tutorial, we learn how to use the BinaryCodec class of Apache Commons Codec library to convert a String into a String of ‘0’ and ‘1’ and decode it in Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Codec library to your Java project To use the Apache Commons Codec library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Base32 Encoding and Decoding in Java using Apache Commons Codec</title>

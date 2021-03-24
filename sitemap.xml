@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-encode-decode-binary-string-using-apache-commons-codec/</loc>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-base32-encoding-decoding-using-apache-commons-codec/</loc>
     <lastmod>2021-03-24T22:47:06+07:00</lastmod>
   </url>
@@ -1315,13 +1320,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-codec/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1440,6 +1445,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/binarycodec/</loc>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/byte/</loc>
     <lastmod>2021-01-31T21:26:40+07:00</lastmod>
     <priority>0</priority>
@@ -1500,7 +1511,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/commons-codec/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1782,7 +1793,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1824,7 +1835,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2346,7 +2357,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2406,7 +2417,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2021-03-24T22:47:06+07:00</lastmod>
+    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
   </url>
   
