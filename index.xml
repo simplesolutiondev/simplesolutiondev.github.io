@@ -6,10 +6,21 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Mar 2021 21:56:13 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 24 Mar 2021 22:47:06 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Base32 Encoding and Decoding in Java using Apache Commons Codec</title>
+      <link>https://simplesolution.dev/java-base32-encoding-decoding-using-apache-commons-codec/</link>
+      <pubDate>Wed, 24 Mar 2021 22:47:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-base32-encoding-decoding-using-apache-commons-codec/</guid>
+      <description>In this Java tutorial, We learn how to use the Base32 class of Apache Commons Codec library to do Base32 encoding and decoding in Java programs.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Codec library to your Java project To use the Apache Commons Codec library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-codec:commons-codec:1.15&amp;#39; To use the Apache Commons Codec library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>JSON Web Token in Java using Auth0 Java JWT Library</title>
