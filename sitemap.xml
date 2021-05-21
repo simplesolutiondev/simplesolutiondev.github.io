@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-writer-into-bufferedwriter-using-apache-commons-io/</loc>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-reader-into-bufferedreader-using-apache-commons-io/</loc>
+    <lastmod>2021-05-21T21:48:23+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-outputstream-into-bufferedoutputstream-using-apache-commons-io/</loc>
+    <lastmod>2021-05-21T21:47:23+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-inputstream-into-bufferedinputstream-using-apache-commons-io/</loc>
+    <lastmod>2021-05-21T21:46:23+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-encode-decode-binary-string-using-apache-commons-codec/</loc>
     <lastmod>2021-03-24T23:47:03+07:00</lastmod>
   </url>
@@ -1320,7 +1340,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1344,7 +1364,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-io/</loc>
-    <lastmod>2019-04-26T01:03:10+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1451,6 +1471,30 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/bufferedinputstream/</loc>
+    <lastmod>2021-05-21T21:46:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/bufferedoutputstream/</loc>
+    <lastmod>2021-05-21T21:47:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/bufferedreader/</loc>
+    <lastmod>2021-05-21T21:48:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/bufferedwriter/</loc>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/byte/</loc>
     <lastmod>2021-01-31T21:26:40+07:00</lastmod>
     <priority>0</priority>
@@ -1529,7 +1573,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-02-01T00:08:17+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1696,6 +1740,30 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/fileinputstream/</loc>
+    <lastmod>2021-05-21T21:46:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/fileoutputstream/</loc>
+    <lastmod>2021-05-21T21:47:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/filereader/</loc>
+    <lastmod>2021-05-21T21:48:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/filewriter/</loc>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/float/</loc>
     <lastmod>2021-02-01T00:08:17+07:00</lastmod>
     <priority>0</priority>
@@ -1738,6 +1806,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/inputstream/</loc>
+    <lastmod>2021-05-21T21:46:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/instant/</loc>
     <lastmod>2021-01-17T13:15:15+07:00</lastmod>
     <priority>0</priority>
@@ -1763,7 +1837,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/ioutils/</loc>
-    <lastmod>2021-01-11T01:16:12+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1793,7 +1867,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1835,7 +1909,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2224,6 +2298,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/outputstream/</loc>
+    <lastmod>2021-05-21T21:47:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/parse/</loc>
     <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
@@ -2296,6 +2376,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/reader/</loc>
+    <lastmod>2021-05-21T21:48:23+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/redis/</loc>
     <lastmod>2020-10-18T14:35:26+07:00</lastmod>
     <priority>0</priority>
@@ -2357,7 +2443,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2544,6 +2630,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/write-csv/</loc>
     <lastmod>2020-02-26T01:15:38+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/writer/</loc>
+    <lastmod>2021-05-21T21:49:23+07:00</lastmod>
     <priority>0</priority>
   </url>
   

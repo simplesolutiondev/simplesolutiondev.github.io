@@ -6,10 +6,54 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Mar 2021 23:47:03 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 21 May 2021 21:49:23 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert Writer into BufferedWriter in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-writer-into-bufferedwriter-using-apache-commons-io/</link>
+      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-writer-into-bufferedwriter-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the IOUtils utility class in Apache Commons IO to convert an Writer object into a BufferedWriter object in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
+    
+    <item>
+      <title>Convert Reader into BufferedReader in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-reader-into-bufferedreader-using-apache-commons-io/</link>
+      <pubDate>Fri, 21 May 2021 21:48:23 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-reader-into-bufferedreader-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the IOUtils utility class in Apache Commons IO to convert a Reader object into a BufferedReader object in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
+    
+    <item>
+      <title>Convert OutputStream into BufferedOutputStream in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-outputstream-into-bufferedoutputstream-using-apache-commons-io/</link>
+      <pubDate>Fri, 21 May 2021 21:47:23 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-outputstream-into-bufferedoutputstream-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the IOUtils utility class in Apache Commons IO to convert an OutputStream object into a BufferedOutputStream object in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
+    
+    <item>
+      <title>Convert InputStream into BufferedInputStream in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-inputstream-into-bufferedinputstream-using-apache-commons-io/</link>
+      <pubDate>Fri, 21 May 2021 21:46:23 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-inputstream-into-bufferedinputstream-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the IOUtils utility class in Apache Commons IO to convert an InputStream object into a BufferedInputStream object in Java.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
     
     <item>
       <title>Encode and Decode String to Binary Format in Java using Apache Commons Codec</title>
