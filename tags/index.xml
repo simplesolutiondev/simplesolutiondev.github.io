@@ -23,7 +23,7 @@
     <item>
       <title>Apache Commons</title>
       <link>https://simplesolution.dev/tag/apache-commons/</link>
-      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Apache Commons Io</title>
       <link>https://simplesolution.dev/tag/apache-commons-io/</link>
-      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons-io/</guid>
       <description></description>
@@ -345,6 +345,15 @@
     </item>
     
     <item>
+      <title>Compare</title>
+      <link>https://simplesolution.dev/tag/compare/</link>
+      <pubDate>Sat, 22 May 2021 15:03:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/compare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Console</title>
       <link>https://simplesolution.dev/tag/console/</link>
       <pubDate>Wed, 06 Jan 2021 22:57:36 +0700</pubDate>
@@ -359,6 +368,15 @@
       <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copy</title>
+      <link>https://simplesolution.dev/tag/copy/</link>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/copy/</guid>
       <description></description>
     </item>
     
@@ -608,7 +626,7 @@
     <item>
       <title>Fileinputstream</title>
       <link>https://simplesolution.dev/tag/fileinputstream/</link>
-      <pubDate>Fri, 21 May 2021 21:46:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/fileinputstream/</guid>
       <description></description>
@@ -617,7 +635,7 @@
     <item>
       <title>Fileoutputstream</title>
       <link>https://simplesolution.dev/tag/fileoutputstream/</link>
-      <pubDate>Fri, 21 May 2021 21:47:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/fileoutputstream/</guid>
       <description></description>
@@ -626,7 +644,7 @@
     <item>
       <title>Filereader</title>
       <link>https://simplesolution.dev/tag/filereader/</link>
-      <pubDate>Fri, 21 May 2021 21:48:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:15:40 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/filereader/</guid>
       <description></description>
@@ -635,7 +653,7 @@
     <item>
       <title>Filewriter</title>
       <link>https://simplesolution.dev/tag/filewriter/</link>
-      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:15:40 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/filewriter/</guid>
       <description></description>
@@ -707,7 +725,7 @@
     <item>
       <title>Inputstream</title>
       <link>https://simplesolution.dev/tag/inputstream/</link>
-      <pubDate>Fri, 21 May 2021 21:46:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/inputstream/</guid>
       <description></description>
@@ -752,7 +770,7 @@
     <item>
       <title>Ioutils</title>
       <link>https://simplesolution.dev/tag/ioutils/</link>
-      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/ioutils/</guid>
       <description></description>
@@ -1391,7 +1409,7 @@
     <item>
       <title>Outputstream</title>
       <link>https://simplesolution.dev/tag/outputstream/</link>
-      <pubDate>Fri, 21 May 2021 21:47:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/outputstream/</guid>
       <description></description>
@@ -1499,7 +1517,7 @@
     <item>
       <title>Reader</title>
       <link>https://simplesolution.dev/tag/reader/</link>
-      <pubDate>Fri, 21 May 2021 21:48:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:15:40 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/reader/</guid>
       <description></description>
@@ -1859,7 +1877,7 @@
     <item>
       <title>Writer</title>
       <link>https://simplesolution.dev/tag/writer/</link>
-      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      <pubDate>Sat, 22 May 2021 15:15:40 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/writer/</guid>
       <description></description>
