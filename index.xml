@@ -6,10 +6,87 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 May 2021 15:19:30 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 23 May 2021 22:57:34 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Get the URL of Classpath Resource using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-get-the-url-of-classpath-resource-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:57:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-the-url-of-classpath-resource-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to get the URL of a classpath resource using the IOUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read Classpath Resource as String using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-classpath-resource-as-string-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:54:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-classpath-resource-as-string-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read a classpath resource into a String using the IOUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read Classpath Resource as Byte Array using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-classpath-resource-as-byte-array-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:50:19 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-classpath-resource-as-byte-array-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read a classpath resource into a byte array using the IOUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read List of Strings of Reader using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-list-of-strings-reader-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:44:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-list-of-strings-reader-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read a list of Strings of a Reader object by using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read List of Strings of InputStream using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-list-of-strings-inputstream-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:41:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-list-of-strings-inputstream-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read a list of Strings of an InputStream object by using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read Reader Line by Line with LineIterator using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-reader-with-lineiterator-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:38:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-reader-with-lineiterator-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the IOUtils class in Apache Commons IO library to read an Reader object line by line via LineIterator class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
+    
+    <item>
+      <title>Java Read InputStream Line by Line with LineIterator using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-inputstream-with-lineiterator-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:33:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-inputstream-with-lineiterator-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the IOUtils class in Apache Commons IO library to read an InputStream object line by line via LineIterator class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
     
     <item>
       <title>Copy Large File Contents in Java using Apache Commons IO</title>

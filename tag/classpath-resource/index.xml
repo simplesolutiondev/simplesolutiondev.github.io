@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classpath Resource on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/classpath-resource/</link>
+    <description>Recent content in Classpath Resource on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 May 2021 22:57:34 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/classpath-resource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Get the URL of Classpath Resource using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-get-the-url-of-classpath-resource-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:57:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-the-url-of-classpath-resource-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to get the URL of a classpath resource using the IOUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read Classpath Resource as String using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-classpath-resource-as-string-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:54:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-classpath-resource-as-string-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read a classpath resource into a String using the IOUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Read Classpath Resource as Byte Array using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-classpath-resource-as-byte-array-using-apache-commons-io/</link>
+      <pubDate>Sun, 23 May 2021 22:50:19 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-classpath-resource-as-byte-array-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read a classpath resource into a byte array using the IOUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>
