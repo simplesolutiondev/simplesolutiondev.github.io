@@ -6,10 +6,43 @@
     <description>Recent content in Filereader on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 May 2021 22:44:44 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 22:49:28 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/filereader/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert Reader to Char Array in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-reader-to-char-array-using-apache-commons-io/</link>
+      <pubDate>Mon, 24 May 2021 22:49:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-reader-to-char-array-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read the Reader object as a char array using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Convert Reader to Byte Array in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-reader-to-byte-array-using-apache-commons-io/</link>
+      <pubDate>Mon, 24 May 2021 22:45:04 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-reader-to-byte-array-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read the Reader object as a byte array using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Convert Reader to String in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-convert-reader-to-string-using-apache-commons-io/</link>
+      <pubDate>Mon, 24 May 2021 22:41:43 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-reader-to-string-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to read the Reader object as a String using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Java Read List of Strings of Reader using Apache Commons IO</title>

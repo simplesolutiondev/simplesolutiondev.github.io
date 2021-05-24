@@ -6,10 +6,32 @@
     <description>Recent content in Url on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 May 2021 22:57:34 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 24 May 2021 23:05:44 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/url/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Read Content from URL into String in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-content-from-url-into-string-using-apache-commons-io/</link>
+      <pubDate>Mon, 24 May 2021 23:05:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-content-from-url-into-string-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to get the content of an URL into a String object using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Read Content from URL into Byte Array in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-read-content-from-url-into-byte-array-using-apache-commons-io/</link>
+      <pubDate>Mon, 24 May 2021 22:59:02 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-read-content-from-url-into-byte-array-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to get the content of an URL into a byte array using IOUtils utility class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Java Get the URL of Classpath Resource using Apache Commons IO</title>

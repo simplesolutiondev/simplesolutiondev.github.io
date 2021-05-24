@@ -23,7 +23,7 @@
     <item>
       <title>Apache Commons</title>
       <link>https://simplesolution.dev/tag/apache-commons/</link>
-      <pubDate>Sun, 23 May 2021 22:57:34 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Apache Commons Io</title>
       <link>https://simplesolution.dev/tag/apache-commons-io/</link>
-      <pubDate>Sun, 23 May 2021 22:57:34 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons-io/</guid>
       <description></description>
@@ -264,6 +264,15 @@
     </item>
     
     <item>
+      <title>Byte Array</title>
+      <link>https://simplesolution.dev/tag/byte-array/</link>
+      <pubDate>Mon, 24 May 2021 22:59:02 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/byte-array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Calendar</title>
       <link>https://simplesolution.dev/tag/calendar/</link>
       <pubDate>Mon, 18 Jan 2021 22:45:17 +0700</pubDate>
@@ -278,6 +287,24 @@
       <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/caseutils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Char Array</title>
+      <link>https://simplesolution.dev/tag/char-array/</link>
+      <pubDate>Mon, 24 May 2021 22:49:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/char-array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Charsequence</title>
+      <link>https://simplesolution.dev/tag/charsequence/</link>
+      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/charsequence/</guid>
       <description></description>
     </item>
     
@@ -374,7 +401,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Fri, 21 May 2021 21:49:23 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 22:52:07 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -635,7 +662,7 @@
     <item>
       <title>Fileinputstream</title>
       <link>https://simplesolution.dev/tag/fileinputstream/</link>
-      <pubDate>Sun, 23 May 2021 22:41:36 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 22:38:27 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/fileinputstream/</guid>
       <description></description>
@@ -653,7 +680,7 @@
     <item>
       <title>Filereader</title>
       <link>https://simplesolution.dev/tag/filereader/</link>
-      <pubDate>Sun, 23 May 2021 22:44:44 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 22:49:28 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/filereader/</guid>
       <description></description>
@@ -734,7 +761,7 @@
     <item>
       <title>Inputstream</title>
       <link>https://simplesolution.dev/tag/inputstream/</link>
-      <pubDate>Sun, 23 May 2021 22:41:36 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/inputstream/</guid>
       <description></description>
@@ -779,7 +806,7 @@
     <item>
       <title>Ioutils</title>
       <link>https://simplesolution.dev/tag/ioutils/</link>
-      <pubDate>Sun, 23 May 2021 22:57:34 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/ioutils/</guid>
       <description></description>
@@ -1535,7 +1562,7 @@
     <item>
       <title>Reader</title>
       <link>https://simplesolution.dev/tag/reader/</link>
-      <pubDate>Sun, 23 May 2021 22:44:44 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 22:49:28 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/reader/</guid>
       <description></description>
@@ -1706,7 +1733,7 @@
     <item>
       <title>String</title>
       <link>https://simplesolution.dev/tag/string/</link>
-      <pubDate>Sun, 23 May 2021 22:54:13 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 23:05:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/string/</guid>
       <description></description>
@@ -1830,9 +1857,18 @@
     </item>
     
     <item>
+      <title>Uri</title>
+      <link>https://simplesolution.dev/tag/uri/</link>
+      <pubDate>Mon, 24 May 2021 23:02:45 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/uri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Url</title>
       <link>https://simplesolution.dev/tag/url/</link>
-      <pubDate>Sun, 23 May 2021 22:57:34 +0700</pubDate>
+      <pubDate>Mon, 24 May 2021 23:05:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/url/</guid>
       <description></description>
