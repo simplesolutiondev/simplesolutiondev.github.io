@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2020 20:10:24 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 25 May 2021 23:27:08 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adler32</title>
+      <link>https://simplesolution.dev/tag/adler32/</link>
+      <pubDate>Tue, 25 May 2021 23:27:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/adler32/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aop</title>
@@ -23,7 +32,7 @@
     <item>
       <title>Apache Commons</title>
       <link>https://simplesolution.dev/tag/apache-commons/</link>
-      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:56:41 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons/</guid>
       <description></description>
@@ -59,7 +68,7 @@
     <item>
       <title>Apache Commons Io</title>
       <link>https://simplesolution.dev/tag/apache-commons-io/</link>
-      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:56:41 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/apache-commons-io/</guid>
       <description></description>
@@ -309,6 +318,15 @@
     </item>
     
     <item>
+      <title>Checksum</title>
+      <link>https://simplesolution.dev/tag/checksum/</link>
+      <pubDate>Tue, 25 May 2021 23:27:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/checksum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Chronology</title>
       <link>https://simplesolution.dev/tag/chronology/</link>
       <pubDate>Sun, 17 Jan 2021 13:15:15 +0700</pubDate>
@@ -383,7 +401,7 @@
     <item>
       <title>Compare</title>
       <link>https://simplesolution.dev/tag/compare/</link>
-      <pubDate>Sat, 22 May 2021 15:03:29 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:36:29 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/compare/</guid>
       <description></description>
@@ -410,7 +428,7 @@
     <item>
       <title>Copy</title>
       <link>https://simplesolution.dev/tag/copy/</link>
-      <pubDate>Sat, 22 May 2021 15:19:30 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/copy/</guid>
       <description></description>
@@ -422,6 +440,15 @@
       <pubDate>Tue, 03 Nov 2020 22:44:31 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/cpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crc32</title>
+      <link>https://simplesolution.dev/tag/crc32/</link>
+      <pubDate>Tue, 25 May 2021 23:27:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/crc32/</guid>
       <description></description>
     </item>
     
@@ -543,6 +570,15 @@
     </item>
     
     <item>
+      <title>Directory</title>
+      <link>https://simplesolution.dev/tag/directory/</link>
+      <pubDate>Tue, 25 May 2021 23:51:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Double</title>
       <link>https://simplesolution.dev/tag/double/</link>
       <pubDate>Sun, 31 Jan 2021 23:53:41 +0700</pubDate>
@@ -626,7 +662,7 @@
     <item>
       <title>File</title>
       <link>https://simplesolution.dev/tag/file/</link>
-      <pubDate>Mon, 11 Jan 2021 01:16:12 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/file/</guid>
       <description></description>
@@ -662,7 +698,7 @@
     <item>
       <title>Fileinputstream</title>
       <link>https://simplesolution.dev/tag/fileinputstream/</link>
-      <pubDate>Mon, 24 May 2021 22:38:27 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:48:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/fileinputstream/</guid>
       <description></description>
@@ -683,6 +719,15 @@
       <pubDate>Mon, 24 May 2021 22:49:28 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/filereader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fileutils</title>
+      <link>https://simplesolution.dev/tag/fileutils/</link>
+      <pubDate>Tue, 25 May 2021 23:56:41 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/fileutils/</guid>
       <description></description>
     </item>
     
@@ -761,7 +806,7 @@
     <item>
       <title>Inputstream</title>
       <link>https://simplesolution.dev/tag/inputstream/</link>
-      <pubDate>Mon, 24 May 2021 23:08:21 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:48:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/inputstream/</guid>
       <description></description>
@@ -1868,7 +1913,7 @@
     <item>
       <title>Url</title>
       <link>https://simplesolution.dev/tag/url/</link>
-      <pubDate>Mon, 24 May 2021 23:05:44 +0700</pubDate>
+      <pubDate>Tue, 25 May 2021 23:54:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/url/</guid>
       <description></description>

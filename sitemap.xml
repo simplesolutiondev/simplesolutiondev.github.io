@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-get-readable-file-size-from-number-of-bytes-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-copy-content-from-url-to-file-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:54:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-copy-list-of-files-to-directory-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:51:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-copy-inputstream-to-file-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:48:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-copy-file-to-directory-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:45:13+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-copy-a-file-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:42:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-copy-directory-to-directory-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:39:24+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-compare-contents-of-files-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:36:29+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-delete-files-and-directories-inside-directory-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:33:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-compute-checksum-of-file-using-apache-commons-io/</loc>
+    <lastmod>2021-05-25T23:27:08+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-charsequence-to-inputstream-using-apache-commons-io/</loc>
     <lastmod>2021-05-24T23:08:21+07:00</lastmod>
   </url>
@@ -1458,6 +1508,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/adler32/</loc>
+    <lastmod>2021-05-25T23:27:08+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/aop/</loc>
     <lastmod>2020-10-17T20:10:24+07:00</lastmod>
     <priority>0</priority>
@@ -1465,7 +1521,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1489,7 +1545,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-io/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1661,6 +1717,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/checksum/</loc>
+    <lastmod>2021-05-25T23:27:08+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/chronology/</loc>
     <lastmod>2021-01-17T13:15:15+07:00</lastmod>
     <priority>0</priority>
@@ -1716,7 +1778,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/compare/</loc>
-    <lastmod>2021-05-22T15:03:29+07:00</lastmod>
+    <lastmod>2021-05-25T23:36:29+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1734,13 +1796,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/copy/</loc>
-    <lastmod>2021-05-22T15:19:30+07:00</lastmod>
+    <lastmod>2021-05-25T23:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/cpu/</loc>
     <lastmod>2020-11-03T22:44:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/crc32/</loc>
+    <lastmod>2021-05-25T23:27:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1823,6 +1891,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/directory/</loc>
+    <lastmod>2021-05-25T23:51:48+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/double/</loc>
     <lastmod>2021-01-31T23:53:41+07:00</lastmod>
     <priority>0</priority>
@@ -1878,7 +1952,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/file/</loc>
-    <lastmod>2021-01-11T01:16:12+07:00</lastmod>
+    <lastmod>2021-05-25T23:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1902,7 +1976,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/fileinputstream/</loc>
-    <lastmod>2021-05-24T22:38:27+07:00</lastmod>
+    <lastmod>2021-05-25T23:48:30+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1915,6 +1989,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/filereader/</loc>
     <lastmod>2021-05-24T22:49:28+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/fileutils/</loc>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1968,7 +2048,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/inputstream/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-05-25T23:48:30+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2028,7 +2108,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2070,7 +2150,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2610,7 +2690,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-05-25T23:56:41+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2712,7 +2792,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tags/</loc>
-    <lastmod>2020-10-17T20:10:24+07:00</lastmod>
+    <lastmod>2021-05-25T23:27:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2766,7 +2846,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/url/</loc>
-    <lastmod>2021-05-24T23:05:44+07:00</lastmod>
+    <lastmod>2021-05-25T23:54:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   

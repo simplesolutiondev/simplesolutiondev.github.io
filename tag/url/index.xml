@@ -6,10 +6,20 @@
     <description>Recent content in Url on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 May 2021 23:05:44 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 25 May 2021 23:54:01 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/url/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Copy Content from URL to File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-content-from-url-to-file-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-content-from-url-to-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we show you how to download and copy contents from a given URL into a File using the FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
     
     <item>
       <title>Read Content from URL into String in Java using Apache Commons IO</title>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Checksum on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/checksum/</link>
+    <description>Recent content in Checksum on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 May 2021 23:27:08 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/checksum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compute Checksum of File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-compute-checksum-of-file-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:27:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-compute-checksum-of-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to compute the Adler-32 or CRC-32 checksum value of a file using FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,117 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 May 2021 23:08:21 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 25 May 2021 23:56:41 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Get Readable File Size from Number of Bytes in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-get-readable-file-size-from-number-of-bytes-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:56:41 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-readable-file-size-from-number-of-bytes-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils class of Apache Commons IO library to get the human readable file size of a given file size in number of bytes value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Copy Content from URL to File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-content-from-url-to-file-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:54:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-content-from-url-to-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we show you how to download and copy contents from a given URL into a File using the FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+    <item>
+      <title>Copy List of Files to Directory in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-list-of-files-to-directory-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:51:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-list-of-files-to-directory-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils class of Apache Commons IO library to copy multiple files to a given directory.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Copy InputStream to File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-inputstream-to-file-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:48:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-inputstream-to-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils utility class of Apache Commons IO library to copy bytes of an InputStream into a destination File.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
+    
+    <item>
+      <title>Copy a File to Directory in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-file-to-directory-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:45:13 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-file-to-directory-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to copy a file to a specified directory using the FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Copy a File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-a-file-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:42:09 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-a-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to copy a file to a new location using FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Copy Directory to Directory in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-copy-directory-to-directory-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:39:24 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-copy-directory-to-directory-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to copy a whole directory to another directory using the FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Compare Contents of Files in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-compare-contents-of-files-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:36:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-compare-contents-of-files-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils class of Apache Commons IO library to compare the contents of two files to determine if they are equal or not equal.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Delete All Files and Directories Inside a Directory using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-delete-files-and-directories-inside-directory-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:33:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-delete-files-and-directories-inside-directory-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we show you how to use the FileUtils class of Apache Commons IO library to delete all files and directories in a given directory.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.</description>
+    </item>
+    
+    <item>
+      <title>Compute Checksum of File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-compute-checksum-of-file-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:27:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-compute-checksum-of-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial, we learn how to compute the Adler-32 or CRC-32 checksum value of a file using FileUtils class of Apache Commons IO library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Convert CharSequence to InputStream in Java using Apache Commons IO</title>

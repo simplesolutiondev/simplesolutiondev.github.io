@@ -6,10 +6,20 @@
     <description>Recent content in Compare on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 May 2021 15:03:29 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 25 May 2021 23:36:29 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/compare/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compare Contents of Files in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-compare-contents-of-files-using-apache-commons-io/</link>
+      <pubDate>Tue, 25 May 2021 23:36:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-compare-contents-of-files-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils class of Apache Commons IO library to compare the contents of two files to determine if they are equal or not equal.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Compare Contents of two Reader in Java using Apache Commons IO</title>
