@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Delete on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/delete/</link>
+    <description>Recent content in Delete on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 May 2021 00:44:59 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/delete/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Delete File in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-delete-file-using-apache-commons-io/</link>
+      <pubDate>Thu, 27 May 2021 00:44:59 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-delete-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils utility class of Apache Commons IO library to delete a file.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Delete Directory in Java using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-delete-directory-using-apache-commons-io/</link>
+      <pubDate>Thu, 27 May 2021 00:39:41 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-delete-directory-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the FileUtils class of Apache Commons IO library to delete a directory.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;commons-io:commons-io:2.8.0&amp;#39; To use the Apache Commons IO library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>
