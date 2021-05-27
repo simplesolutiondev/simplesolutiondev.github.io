@@ -6,10 +6,30 @@
     <description>Recent content in Convert on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 May 2021 22:52:07 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 28 May 2021 01:33:28 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Convert Class Names to Class Objects using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-class-names-to-class-objects-using-apache-commons-lang/</link>
+      <pubDate>Fri, 28 May 2021 01:33:28 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-class-names-to-class-objects-using-apache-commons-lang/</guid>
+      <description>This Java tutorial shows you how to use the ClassUtils utility class of Apache Commons Lang library to convert a list of class names into a list of Class objects.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Class Objects to Class Names using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-class-objects-to-class-names-using-apache-commons-lang/</link>
+      <pubDate>Fri, 28 May 2021 01:30:54 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-class-objects-to-class-names-using-apache-commons-lang/</guid>
+      <description>This Java tutorial shows you how to use the ClassUtils utility class of Apache Commons Lang library to convert a list of Class objects into a list of class names.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Convert String to InputStream in Java using Apache Commons IO</title>
