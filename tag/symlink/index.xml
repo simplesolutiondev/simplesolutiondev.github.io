@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Symlink on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/symlink/</link>
+    <description>Recent content in Symlink on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 May 2021 21:35:07 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/symlink/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Check a File is Symlink or Actual File using Apache Commons IO</title>
+      <link>https://simplesolution.dev/java-check-a-file-is-symlink-or-actual-file-using-apache-commons-io/</link>
+      <pubDate>Thu, 27 May 2021 21:35:07 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-a-file-is-symlink-or-actual-file-using-apache-commons-io/</guid>
+      <description>In this Java tutorial we learn how to use the method FileUtils.isSymlink() of Apache Commons IO to check whether a given File is a symlink rather than an actual file.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons IO library to your Java project To use the Apache Commons IO library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+  </channel>
+</rss>
