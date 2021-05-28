@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-get-languages-by-country-code-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-string-to-locale-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-29T00:45:42+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-check-locale-is-available-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-29T00:43:10+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-countries-by-language-code-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-29T00:40:52+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-all-locales-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-29T00:35:40+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-get-all-superclasses-of-class-using-apache-commons-lang/</loc>
     <lastmod>2021-05-28T01:38:01+07:00</lastmod>
   </url>
@@ -1632,7 +1657,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-05-28T01:38:01+07:00</lastmod>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1662,7 +1687,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-lang/</loc>
-    <lastmod>2021-05-28T01:38:01+07:00</lastmod>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1913,7 +1938,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-05-28T01:33:28+07:00</lastmod>
+    <lastmod>2021-05-29T00:45:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2255,7 +2280,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-05-28T01:38:01+07:00</lastmod>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2297,7 +2322,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-05-28T01:38:01+07:00</lastmod>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2549,7 +2574,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/locale/</loc>
-    <lastmod>2021-01-18T22:45:17+07:00</lastmod>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/localeutils/</loc>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2843,7 +2874,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-05-28T01:38:01+07:00</lastmod>
+    <lastmod>2021-05-29T00:48:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2903,7 +2934,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2021-05-24T23:05:44+07:00</lastmod>
+    <lastmod>2021-05-29T00:45:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
