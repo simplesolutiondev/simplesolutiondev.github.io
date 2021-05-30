@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-squeeze-repetition-characters-in-string-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-keep-only-characters-present-in-string-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-31T01:14:51+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-delete-characters-in-string-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-31T01:13:01+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-count-characters-present-in-string-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-31T01:10:35+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-check-string-contains-any-characters-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-31T01:08:09+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-fully-qualified-name-or-path-of-classpath-resource-using-apache-commons-lang/</loc>
+    <lastmod>2021-05-31T01:04:35+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-insert-element-into-an-array-at-index-using-apache-commons-lang/</loc>
     <lastmod>2021-05-30T17:38:50+07:00</lastmod>
   </url>
@@ -1707,7 +1737,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-05-30T17:38:50+07:00</lastmod>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1737,7 +1767,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-lang/</loc>
-    <lastmod>2021-05-30T17:38:50+07:00</lastmod>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1909,6 +1939,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/charsetutils/</loc>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/checksum/</loc>
     <lastmod>2021-05-25T23:27:08+07:00</lastmod>
     <priority>0</priority>
@@ -1928,7 +1964,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/classpath/</loc>
-    <lastmod>2021-03-04T23:40:51+07:00</lastmod>
+    <lastmod>2021-05-31T01:04:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1941,6 +1977,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/classpathresource/</loc>
     <lastmod>2021-03-04T22:54:39+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/classpathutils/</loc>
+    <lastmod>2021-05-31T01:04:35+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2336,7 +2378,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-05-30T17:38:50+07:00</lastmod>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2378,7 +2420,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-05-30T17:38:50+07:00</lastmod>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2930,7 +2972,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-05-30T17:38:50+07:00</lastmod>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2990,7 +3032,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2021-05-29T23:07:33+07:00</lastmod>
+    <lastmod>2021-05-31T01:17:00+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,72 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 May 2021 17:38:50 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 May 2021 01:17:00 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Squeeze Repetition Characters in a String using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-squeeze-repetition-characters-in-string-using-apache-commons-lang/</link>
+      <pubDate>Mon, 31 May 2021 01:17:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-squeeze-repetition-characters-in-string-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to squeeze any repetition characters in a given String using the CharSetUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Keep Only Characters Present in a String using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-keep-only-characters-present-in-string-using-apache-commons-lang/</link>
+      <pubDate>Mon, 31 May 2021 01:14:51 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-keep-only-characters-present-in-string-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to populate a String which keeps only given characters present in the String using the CharSetUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Delete Characters in a String using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-delete-characters-in-string-using-apache-commons-lang/</link>
+      <pubDate>Mon, 31 May 2021 01:13:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-delete-characters-in-string-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to delete any of the characters present in a given String using CharSetUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.</description>
+    </item>
+    
+    <item>
+      <title>Java Count Characters present in a String using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-count-characters-present-in-string-using-apache-commons-lang/</link>
+      <pubDate>Mon, 31 May 2021 01:10:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-count-characters-present-in-string-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to count the number of characters present in a given String using the CharSetUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+    <item>
+      <title>Java Check a String Contains Any Characters using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-check-string-contains-any-characters-using-apache-commons-lang/</link>
+      <pubDate>Mon, 31 May 2021 01:08:09 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-string-contains-any-characters-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to check a String to identify whether it contains any of given characters using CharSetUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+    <item>
+      <title>Java Get Fully Qualified Name or Path of Classpath Resource using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-get-fully-qualified-name-or-path-of-classpath-resource-using-apache-commons-lang/</link>
+      <pubDate>Mon, 31 May 2021 01:04:35 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-fully-qualified-name-or-path-of-classpath-resource-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to populate the fully qualified name or path of classpath resources using the ClassPathUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
     
     <item>
       <title>Java Insert Element into an Array at Index using Apache Commons Lang</title>
