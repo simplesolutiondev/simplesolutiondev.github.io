@@ -6,10 +6,62 @@
     <description>Recent content in Arrayutils on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 May 2021 23:07:33 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 30 May 2021 17:38:50 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/arrayutils/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Insert Element into an Array at Index using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-insert-element-into-an-array-at-index-using-apache-commons-lang/</link>
+      <pubDate>Sun, 30 May 2021 17:38:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-insert-element-into-an-array-at-index-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to insert an element into an array at a given index using ArrayUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Wrapper Class Array to Primitive Array using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-wrapper-class-array-to-primitive-array-using-apache-commons-lang/</link>
+      <pubDate>Sun, 30 May 2021 17:30:46 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-wrapper-class-array-to-primitive-array-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to convert an array of wrapper type objects into an array of primitive values using the ArrayUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Primitive Array to Wrapper Class Array using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-primitive-array-to-wrapper-class-array-using-apache-commons-lang/</link>
+      <pubDate>Sun, 30 May 2021 17:25:59 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-primitive-array-to-wrapper-class-array-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to convert an array of primitive values into an array of wrapper objects using the ArrayUtils of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Array to Map using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-array-to-map-using-apache-commons-lang/</link>
+      <pubDate>Sun, 30 May 2021 17:23:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-array-to-map-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to convert a given array into a Map object using ArrayUtils of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Check an Array Index is valid using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-check-array-index-is-valid-using-apache-commons-lang/</link>
+      <pubDate>Sun, 30 May 2021 17:21:36 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-array-index-is-valid-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to check if a given index value is valid or not to access a given array using ArrayUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Java Convert Array of Objects to Array of Strings using Apache Commons Lang</title>
