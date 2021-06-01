@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Character on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/character/</link>
+    <description>Recent content in Character on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jun 2021 21:43:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/character/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Convert String to Character using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-string-to-character-using-apache-commons-lang/</link>
+      <pubDate>Tue, 01 Jun 2021 21:43:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-string-to-character-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to convert a String object to a Character object using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Character to String using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-character-to-string-using-apache-commons-lang/</link>
+      <pubDate>Tue, 01 Jun 2021 21:34:05 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-character-to-string-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to Convert a Character object to a String object using the CharUtils of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Character to int value using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-character-to-int-value-using-apache-commons-lang/</link>
+      <pubDate>Tue, 01 Jun 2021 21:31:56 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-character-to-int-value-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to convert a Character object to an int value it represents using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+    <item>
+      <title>Java Convert Character to char using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-convert-character-to-char-using-apache-commons-lang/</link>
+      <pubDate>Tue, 01 Jun 2021 21:27:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-character-to-char-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to convert a Character object into a char value using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+  </channel>
+</rss>
