@@ -6,10 +6,63 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 21:43:10 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 01:02:17 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Check Character is ASCII using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-check-character-is-ascii-using-apache-commons-lang/</link>
+      <pubDate>Wed, 02 Jun 2021 01:02:17 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-character-is-ascii-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to check if a character is an ASCII character using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Check Character is ASCII Alphabetic Upper Case using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-check-character-is-ascii-alphabetic-upper-case-using-apache-commons-lang/</link>
+      <pubDate>Wed, 02 Jun 2021 00:59:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-character-is-ascii-alphabetic-upper-case-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to check whether a character is an ASCII alphabetic upper case character using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+    <item>
+      <title>Java Check Character is ASCII Alphanumeric using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-check-character-is-ascii-alphanumeric-using-apache-commons-lang/</link>
+      <pubDate>Wed, 02 Jun 2021 00:57:51 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-character-is-ascii-alphanumeric-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to check whether a character is an ASCII alphanumeric using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.apache.commons:commons-lang3:3.12.0&amp;#39; To use the Apache Commons Lang 3 library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Check Character is ASCII Alphabetic Lower Case using Apache Commons Lang</title>
+      <link>https://simplesolution.dev/java-check-character-is-ascii-alphabetic-lower-case-using-apache-commons-lang/</link>
+      <pubDate>Wed, 02 Jun 2021 00:55:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-character-is-ascii-alphabetic-lower-case-using-apache-commons-lang/</guid>
+      <description>In this Java tutorial we learn how to check whether a character is an ASCII alphabet lower case or not using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Check Character is ASCII Alphabetic using Apache Common Lang</title>
+      <link>https://simplesolution.dev/java-check-character-is-ascii-alphabetic-using-apache-common-lang/</link>
+      <pubDate>Wed, 02 Jun 2021 00:52:59 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-check-character-is-ascii-alphabetic-using-apache-common-lang/</guid>
+      <description>In this Java tutorial we learn how to check whether a character is an ASCII alphabetic character using the CharUtils class of Apache Commons Lang library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Apache Commons Lang 3 library to your Java project To use the Apache Commons Lang 3 library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.</description>
+    </item>
     
     <item>
       <title>Java Convert String to Character using Apache Commons Lang</title>
