@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-spring-boot-upload-and-resize-images-with-imgscalr/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-check-character-is-ascii-printable-using-apache-commons-lang/</loc>
     <lastmod>2021-06-04T00:05:07+07:00</lastmod>
   </url>
@@ -1960,6 +1965,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/bufferedimage/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/bufferedinputstream/</loc>
     <lastmod>2021-05-21T21:46:23+07:00</lastmod>
     <priority>0</priority>
@@ -2355,6 +2366,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/filenameutils/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/fileoutputstream/</loc>
     <lastmod>2021-05-27T00:36:34+07:00</lastmod>
     <priority>0</priority>
@@ -2417,6 +2434,18 @@
   <url>
     <loc>https://simplesolution.dev/tag/html-parser/</loc>
     <lastmod>2020-11-30T21:58:08+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/imageio/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/imgscalr/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2536,7 +2565,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-04T00:05:07+07:00</lastmod>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2883,6 +2912,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/multipartfile/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/mutabledatetime/</loc>
     <lastmod>2021-01-14T00:45:06+07:00</lastmod>
     <priority>0</priority>
@@ -3027,6 +3062,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/redirectattributes/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/redis/</loc>
     <lastmod>2020-10-18T14:35:26+07:00</lastmod>
     <priority>0</priority>
@@ -3035,6 +3076,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/regex/</loc>
     <lastmod>2020-10-04T15:57:35+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/resize-image/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3069,6 +3116,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/scalr/</loc>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/sftp/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
@@ -3088,7 +3141,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-04T00:05:07+07:00</lastmod>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3112,7 +3165,7 @@
   
   <url>
     <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3250,7 +3303,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/upload/</loc>
-    <lastmod>2020-02-28T00:37:35+07:00</lastmod>
+    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   

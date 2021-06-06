@@ -255,6 +255,15 @@
     </item>
     
     <item>
+      <title>Bufferedimage</title>
+      <link>https://simplesolution.dev/tag/bufferedimage/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/bufferedimage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bufferedinputstream</title>
       <link>https://simplesolution.dev/tag/bufferedinputstream/</link>
       <pubDate>Fri, 21 May 2021 21:46:23 +0700</pubDate>
@@ -831,6 +840,15 @@
     </item>
     
     <item>
+      <title>Filenameutils</title>
+      <link>https://simplesolution.dev/tag/filenameutils/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/filenameutils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fileoutputstream</title>
       <link>https://simplesolution.dev/tag/fileoutputstream/</link>
       <pubDate>Thu, 27 May 2021 00:36:34 +0700</pubDate>
@@ -926,6 +944,24 @@
       <pubDate>Mon, 30 Nov 2020 21:58:08 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/html-parser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imageio</title>
+      <link>https://simplesolution.dev/tag/imageio/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/imageio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imgscalr</title>
+      <link>https://simplesolution.dev/tag/imgscalr/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/imgscalr/</guid>
       <description></description>
     </item>
     
@@ -1569,6 +1605,15 @@
     </item>
     
     <item>
+      <title>Multipartfile</title>
+      <link>https://simplesolution.dev/tag/multipartfile/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/multipartfile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mutabledatetime</title>
       <link>https://simplesolution.dev/tag/mutabledatetime/</link>
       <pubDate>Thu, 14 Jan 2021 00:45:06 +0700</pubDate>
@@ -1776,6 +1821,15 @@
     </item>
     
     <item>
+      <title>Redirectattributes</title>
+      <link>https://simplesolution.dev/tag/redirectattributes/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/redirectattributes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Redis</title>
       <link>https://simplesolution.dev/tag/redis/</link>
       <pubDate>Sun, 18 Oct 2020 14:35:26 +0700</pubDate>
@@ -1790,6 +1844,15 @@
       <pubDate>Sun, 04 Oct 2020 15:57:35 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/regex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resize Image</title>
+      <link>https://simplesolution.dev/tag/resize-image/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/resize-image/</guid>
       <description></description>
     </item>
     
@@ -1835,6 +1898,15 @@
       <pubDate>Tue, 16 Mar 2021 21:05:04 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/restful-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalr</title>
+      <link>https://simplesolution.dev/tag/scalr/</link>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/scalr/</guid>
       <description></description>
     </item>
     
@@ -2084,7 +2156,7 @@
     <item>
       <title>Upload</title>
       <link>https://simplesolution.dev/tag/upload/</link>
-      <pubDate>Fri, 28 Feb 2020 00:37:35 +0700</pubDate>
+      <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/upload/</guid>
       <description></description>
