@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spring Boot Convert Markdown to HTML using CommonMark</title>
+    <meta name="title" content="Spring Boot Convert Markdown to HTML using CommonMark">
+    <meta name="description" content="In this Spring Boot tutorial we learn step by step how to implement a Spring Boot web application to receive input markdown value from the user and convert it to HTML by using Spring Boot Web, Thymeleaf and commonmark java library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-spring-boot-convert-markdown-to-html-using-commonmark/">
+    <meta property="og:title" content="Spring Boot Convert Markdown to HTML using CommonMark">
+    <meta property="og:description" content="In this Spring Boot tutorial we learn step by step how to implement a Spring Boot web application to receive input markdown value from the user and convert it to HTML by using Spring Boot Web, Thymeleaf and commonmark-java library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-spring-boot-convert-markdown-to-html-using-commonmark.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-spring-boot-convert-markdown-to-html-using-commonmark/">
+    <meta name="twitter:title" content="Spring Boot Convert Markdown to HTML using CommonMark">
+    <meta name="twitter:description" content="In this Spring Boot tutorial we learn step by step how to implement a Spring Boot web application to receive input markdown value from the user and convert it to HTML by using Spring Boot Web, Thymeleaf and commonmark-java library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-spring-boot-convert-markdown-to-html-using-commonmark.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=9" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-spring-framework">Spring</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Spring Boot Convert Markdown to HTML using CommonMark</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<h4 id="introduction">Introduction</h4>
+
+<p>In this Spring Boot tutorial we learn step by step how to implement a Spring Boot web application to receive input markdown value from the user and convert it to HTML by using Spring Boot Web, Thymeleaf and commonmark-java library.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="create-new-spring-boot-web-project">Create New Spring Boot Web Project</h4>
+
+<p>Open Spring Tool Suite IDE, select menu <strong>File &gt; New &gt; Spring Starter Project</strong>.</p>
+
+<p>On the <strong>New Spring Starter Project</strong> popup input new project information as below and click <strong>Next</strong>.</p>
+
+<ul>
+<li>Name: spring-boot-markdown-html</li>
+<li>Group: dev.simplesolution</li>
+<li>Artifact: spring-boot-markdown-html</li>
+<li>Version: 1.0.0</li>
+<li>Description: Spring Boot Convert Markdown to HTML</li>
+<li>Package: dev.simplesolution.markdownhtml</li>
+</ul>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-1.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<p>On the <strong>New Spring Starter Project Dependencies</strong> popup choose dependencies as below and click <strong>Next</strong>.</p>
+
+<ul>
+<li>Thymeleaf</li>
+<li>Spring Web</li>
+</ul>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-2.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<p>Keep the information on the next popup as default and click <strong>Finish</strong>.</p>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-3.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<p>You can also creating new Spring Boot project using Spring initializr online tool at <a href="https://start.spring.io/" target="_blank">start.spring.io</a></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="add-commonmark-library-to-the-project">Add CommonMark library to the project</h4>
+
+<p>In this step we set up the CommonMark library for the Spring Boot web project.</p>
+
+<p>To use the CommonMark library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">implementation <span style="color:#e6db74">&#39;org.commonmark:commonmark:0.17.2&#39;</span></code></pre></div>
+
+<p>The final build.gradle file is below.</p>
+
+<p>build.gradle
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">plugins <span style="color:#f92672">{</span>
+	id <span style="color:#e6db74">&#39;org.springframework.boot&#39;</span> version <span style="color:#e6db74">&#39;2.5.0&#39;</span>
+	id <span style="color:#e6db74">&#39;io.spring.dependency-management&#39;</span> version <span style="color:#e6db74">&#39;1.0.11.RELEASE&#39;</span>
+	id <span style="color:#e6db74">&#39;java&#39;</span>
+<span style="color:#f92672">}</span>
+
+group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;dev.simplesolution&#39;</span>
+version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1.0.0&#39;</span>
+sourceCompatibility <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1.8&#39;</span>
+
+repositories <span style="color:#f92672">{</span>
+	mavenCentral<span style="color:#f92672">()</span>
+<span style="color:#f92672">}</span>
+
+dependencies <span style="color:#f92672">{</span>
+	implementation <span style="color:#e6db74">&#39;org.commonmark:commonmark:0.17.2&#39;</span>
+	
+	implementation <span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter-thymeleaf&#39;</span>
+	implementation <span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter-web&#39;</span>
+	testImplementation <span style="color:#e6db74">&#39;org.springframework.boot:spring-boot-starter-test&#39;</span>
+<span style="color:#f92672">}</span>
+
+test <span style="color:#f92672">{</span>
+	useJUnitPlatform<span style="color:#f92672">()</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>To use the CommonMark library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.commonmark<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>commonmark<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>0.17.2<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>The final pom.xml file is below.</p>
+
+<p>pom.xml
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;project</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://maven.apache.org/POM/4.0.0&#34;</span> <span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+         <span style="color:#a6e22e">xsi:schemaLocation=</span><span style="color:#e6db74">&#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;modelVersion&gt;</span>4.0.0<span style="color:#f92672">&lt;/modelVersion&gt;</span>
+    <span style="color:#f92672">&lt;parent&gt;</span>
+        <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+        <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-parent<span style="color:#f92672">&lt;/artifactId&gt;</span>
+        <span style="color:#f92672">&lt;version&gt;</span>2.5.0<span style="color:#f92672">&lt;/version&gt;</span>
+        <span style="color:#f92672">&lt;relativePath/&gt;</span> <span style="color:#75715e">&lt;!-- lookup parent from repository --&gt;</span>
+    <span style="color:#f92672">&lt;/parent&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>dev.simplesolution<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-markdown-html<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>1.0.0<span style="color:#f92672">&lt;/version&gt;</span>
+    <span style="color:#f92672">&lt;name&gt;</span>spring-boot-markdown-html<span style="color:#f92672">&lt;/name&gt;</span>
+    <span style="color:#f92672">&lt;description&gt;</span>Spring Boot Web Convert Markdown to HTML<span style="color:#f92672">&lt;/description&gt;</span>
+    <span style="color:#f92672">&lt;properties&gt;</span>
+        <span style="color:#f92672">&lt;java.version&gt;</span>1.8<span style="color:#f92672">&lt;/java.version&gt;</span>
+    <span style="color:#f92672">&lt;/properties&gt;</span>
+    <span style="color:#f92672">&lt;dependencies&gt;</span>
+        <span style="color:#f92672">&lt;dependency&gt;</span>
+            <span style="color:#f92672">&lt;groupId&gt;</span>org.commonmark<span style="color:#f92672">&lt;/groupId&gt;</span>
+            <span style="color:#f92672">&lt;artifactId&gt;</span>commonmark<span style="color:#f92672">&lt;/artifactId&gt;</span>
+            <span style="color:#f92672">&lt;version&gt;</span>0.17.2<span style="color:#f92672">&lt;/version&gt;</span>
+        <span style="color:#f92672">&lt;/dependency&gt;</span>
+        <span style="color:#f92672">&lt;dependency&gt;</span>
+            <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+            <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-thymeleaf<span style="color:#f92672">&lt;/artifactId&gt;</span>
+        <span style="color:#f92672">&lt;/dependency&gt;</span>
+        <span style="color:#f92672">&lt;dependency&gt;</span>
+            <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+            <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-web<span style="color:#f92672">&lt;/artifactId&gt;</span>
+        <span style="color:#f92672">&lt;/dependency&gt;</span>
+
+        <span style="color:#f92672">&lt;dependency&gt;</span>
+            <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+            <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-test<span style="color:#f92672">&lt;/artifactId&gt;</span>
+            <span style="color:#f92672">&lt;scope&gt;</span>test<span style="color:#f92672">&lt;/scope&gt;</span>
+        <span style="color:#f92672">&lt;/dependency&gt;</span>
+    <span style="color:#f92672">&lt;/dependencies&gt;</span>
+
+    <span style="color:#f92672">&lt;build&gt;</span>
+        <span style="color:#f92672">&lt;plugins&gt;</span>
+            <span style="color:#f92672">&lt;plugin&gt;</span>
+                <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+                <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-maven-plugin<span style="color:#f92672">&lt;/artifactId&gt;</span>
+            <span style="color:#f92672">&lt;/plugin&gt;</span>
+        <span style="color:#f92672">&lt;/plugins&gt;</span>
+    <span style="color:#f92672">&lt;/build&gt;</span>
+
+<span style="color:#f92672">&lt;/project&gt;</span></code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="implement-html-service-to-convert-markdown-string-to-html">Implement HTML Service to convert Markdown String to HTML</h4>
+
+<p>Add a new Java package named <strong>dev.simplesolution.markdownhtml.service</strong>, in the created package creates a new Java interface named <strong>HtmlService</strong> as below.</p>
+
+<p>HtmlService.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.markdownhtml.service<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">HtmlService</span> <span style="color:#f92672">{</span>
+    String <span style="color:#a6e22e">markdownToHtml</span><span style="color:#f92672">(</span>String html<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Add a new Java packaged named <strong>dev.simplesolution.markdownhtml.service.impl</strong>, in the created package implement a new Java class named <strong>HtmlServiceImpl</strong>, in this class we implement a method to get a given markdown string and convert it to HTML string using the CommonMark library</p>
+
+<p>HtmlServiceImpl.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.markdownhtml.service.impl<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.commonmark.node.Node<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.commonmark.parser.Parser<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.commonmark.renderer.html.HtmlRenderer<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.markdownhtml.service.HtmlService<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Service</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HtmlServiceImpl</span> <span style="color:#66d9ef">implements</span> HtmlService <span style="color:#f92672">{</span>
+
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">markdownToHtml</span><span style="color:#f92672">(</span>String markdown<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        Parser parser <span style="color:#f92672">=</span> Parser<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+        Node document <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>markdown<span style="color:#f92672">);</span>
+        HtmlRenderer renderer <span style="color:#f92672">=</span> HtmlRenderer<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">return</span> renderer<span style="color:#f92672">.</span><span style="color:#a6e22e">render</span><span style="color:#f92672">(</span>document<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="6759645625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="implement-controller">Implement Controller</h4>
+
+<p>Add a new Java package named <strong>dev.simplesolution.markdownhtml.controller</strong> and implement a new Java class named <strong>MarkdownController</strong>. In this controller we use the HTML service to parse Markdown input from the user and convert it to HTML String.</p>
+
+<p>MarkdownController.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> dev.simplesolution.markdownhtml.controller<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> org.springframework.beans.factory.annotation.Autowired<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.stereotype.Controller<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.GetMapping<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.PostMapping<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RequestParam<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.springframework.web.servlet.ModelAndView<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> dev.simplesolution.markdownhtml.service.HtmlService<span style="color:#f92672">;</span>
+
+<span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MarkdownController</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#a6e22e">@Autowired</span>
+    <span style="color:#66d9ef">private</span> HtmlService htmlService<span style="color:#f92672">;</span>
+
+    <span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">index</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;edit&#34;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/view&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> ModelAndView <span style="color:#a6e22e">view</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestParam</span> String markdown<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        ModelAndView modelAndView <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ModelAndView<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;view&#34;</span><span style="color:#f92672">);</span>
+        String htmlContent <span style="color:#f92672">=</span> htmlService<span style="color:#f92672">.</span><span style="color:#a6e22e">markdownToHtml</span><span style="color:#f92672">(</span>markdown<span style="color:#f92672">);</span>
+        modelAndView<span style="color:#f92672">.</span><span style="color:#a6e22e">addObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;markdown&#34;</span><span style="color:#f92672">,</span> markdown<span style="color:#f92672">);</span>
+        modelAndView<span style="color:#f92672">.</span><span style="color:#a6e22e">addObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;htmlContent&#34;</span><span style="color:#f92672">,</span> htmlContent<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">return</span> modelAndView<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1507318946"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="create-html-views">Create HTML Views</h4>
+
+<p>Create edit HTML view at <strong>/src/main/resources/templates/edit.html</strong> to show the form which user input markdown string. In this HTML view we also use the Bootstrap CSS library.</p>
+
+<p>edit.html
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Spring Boot Convert Markdown to HTML&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+    &lt;<span style="color:#f92672">h1</span>&gt;Convert Markdown to HTML&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;<span style="color:#f92672">form</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span> <span style="color:#a6e22e">action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/view&#34;</span> <span style="color:#a6e22e">method</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post&#34;</span>&gt;
+        &lt;<span style="color:#f92672">fieldset</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mb-3&#34;</span>&gt;
+                &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;markdown&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-label&#34;</span>&gt;Input Markdown&lt;/<span style="color:#f92672">label</span>&gt;
+                &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;markdown&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;markdown&#34;</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;
+            &lt;/<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;submit&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary&#34;</span>&gt;Submit&lt;/<span style="color:#f92672">button</span>&gt;
+        &lt;/<span style="color:#f92672">fieldset</span>&gt;
+    &lt;/<span style="color:#f92672">form</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+
+<p>Create result HTML view at <strong>/src/main/resources/templates/view.html</strong> to view the result of markdown parsing.</p>
+
+<p>view.html
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!doctype html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1&#34;</span>&gt;
+    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css&#34;</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Spring Boot Convert Markdown to HTML&lt;/<span style="color:#f92672">title</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span>&gt;Back to Edit Page&lt;/<span style="color:#f92672">a</span>&gt;
+    &lt;<span style="color:#f92672">fieldset</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mb-3&#34;</span>&gt;
+            &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;markdown&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-label&#34;</span>&gt;Markdown&lt;/<span style="color:#f92672">label</span>&gt;
+            &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">disabled</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;markdown&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;markdown&#34;</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${markdown}&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mb-3&#34;</span>&gt;
+            &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">for</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;htmlContent&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-label&#34;</span>&gt;HTML&lt;/<span style="color:#f92672">label</span>&gt;
+            &lt;<span style="color:#f92672">textarea</span> <span style="color:#a6e22e">disabled</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-control&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;htmlContent&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;htmlContent&#34;</span> <span style="color:#a6e22e">rows</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5&#34;</span> <span style="color:#a6e22e">th:text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${htmlContent}&#34;</span>&gt;&lt;/<span style="color:#f92672">textarea</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mb-3&#34;</span>&gt;
+            &lt;<span style="color:#f92672">label</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;form-label&#34;</span>&gt;Output HTML&lt;/<span style="color:#f92672">label</span>&gt;
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">th:utext</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;${htmlContent}&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">fieldset</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="4980154934"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="final-application">Final Application</h4>
+
+<p>At this step, we have finished implementing the Spring Boot web project to parse markdown String to HTML String with the source code structure as below screenshot.</p>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-4.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<p>Run the application and access <a href="http://localhost:8080/">http://localhost:8080/</a> you can see the application via browser as below.</p>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-5.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<p>Input a sample markdown String.</p>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-6.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<p>Click submit to see the parsing result as below screenshot.</p>
+
+<p><img src="/images/java-spring-boot-convert-markdown-to-html-using-commonmark-7.png" alt="Spring Boot Convert Markdown to HTML using CommonMark" class="img-fluid"></p>
+
+<h4 id="download-source-code">Download Source Code</h4>
+
+<p>The source code in this article can be found at: <a href="https://github.com/simplesolutiondev/spring-boot-markdown-html" target="_blank">github.com/simplesolutiondev/spring-boot-markdown-html</a></p>
+
+<p>or clone at:</p>
+
+<pre><code>git clone https://github.com/simplesolutiondev/spring-boot-markdown-html.git
+</code></pre>
+
+<p>or download at:</p>
+
+<p><a href="https://github.com/simplesolutiondev/spring-boot-markdown-html/archive/refs/tags/1.0.0.zip" class="btn btn-primary"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/commonmark">CommonMark</a>
+                                
+                                <a href="https://simplesolution.dev/tag/markdown">Markdown</a>
+                                
+                                <a href="https://simplesolution.dev/tag/html">HTML</a>
+                                
+                                <a href="https://simplesolution.dev/tag/convert">Convert</a>
+                                
+                                <a href="https://simplesolution.dev/tag/parser">Parser</a>
+                                
+                                <a href="https://simplesolution.dev/tag/htmlrenderer">HtmlRenderer</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

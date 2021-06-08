@@ -6,10 +6,20 @@
     <description>Recent content in Convert on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jun 2021 21:43:10 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jun 2021 00:52:11 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot Convert Markdown to HTML using CommonMark</title>
+      <link>https://simplesolution.dev/java-spring-boot-convert-markdown-to-html-using-commonmark/</link>
+      <pubDate>Wed, 09 Jun 2021 00:52:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-spring-boot-convert-markdown-to-html-using-commonmark/</guid>
+      <description>Introduction In this Spring Boot tutorial we learn step by step how to implement a Spring Boot web application to receive input markdown value from the user and convert it to HTML by using Spring Boot Web, Thymeleaf and commonmark-java library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web Project Open Spring Tool Suite IDE, select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
+    </item>
     
     <item>
       <title>Java Convert String to Character using Apache Commons Lang</title>
