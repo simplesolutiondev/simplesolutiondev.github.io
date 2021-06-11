@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-create-thumbnail-image-using-imgscalr/</loc>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-rotate-image-file-using-imgscalr/</loc>
+    <lastmod>2021-06-11T21:49:57+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-resize-image-file-using-imgscalr/</loc>
+    <lastmod>2021-06-11T21:42:33+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-padding-image-file-using-imgscalr/</loc>
+    <lastmod>2021-06-11T21:30:40+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-crop-image-file-using-imgscalr/</loc>
+    <lastmod>2021-06-11T21:10:20+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-spring-boot-convert-markdown-to-html-using-commonmark/</loc>
     <lastmod>2021-06-09T00:52:11+07:00</lastmod>
   </url>
@@ -1971,7 +1996,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/bufferedimage/</loc>
-    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2137,6 +2162,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/color/</loc>
+    <lastmod>2021-06-11T21:30:40+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/commandlinerunner/</loc>
     <lastmod>2021-01-06T22:57:36+07:00</lastmod>
     <priority>0</priority>
@@ -2199,6 +2230,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/create/</loc>
     <lastmod>2021-05-27T00:48:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/crop-image/</loc>
+    <lastmod>2021-06-11T21:10:20+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2348,7 +2385,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/file/</loc>
-    <lastmod>2021-05-27T21:38:41+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2462,13 +2499,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/imageio/</loc>
-    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/imgscalr/</loc>
-    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2546,7 +2583,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-04T00:05:07+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2588,7 +2625,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3013,6 +3050,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/pad-image/</loc>
+    <lastmod>2021-06-11T21:30:40+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/parse/</loc>
     <lastmod>2021-01-07T21:38:31+07:00</lastmod>
     <priority>0</priority>
@@ -3116,7 +3159,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/resize-image/</loc>
-    <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3151,6 +3194,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/rotate-image/</loc>
+    <lastmod>2021-06-11T21:49:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/scalr/</loc>
     <lastmod>2021-06-06T23:03:25+07:00</lastmod>
     <priority>0</priority>
@@ -3176,7 +3225,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3302,7 +3351,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/thumbnail/</loc>
-    <lastmod>2020-02-27T00:52:08+07:00</lastmod>
+    <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   

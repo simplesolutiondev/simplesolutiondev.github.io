@@ -6,10 +6,69 @@
     <description>Recent content in Bufferedimage on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jun 2021 23:03:25 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jun 2021 22:04:40 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/bufferedimage/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Create Thumbnail Image using Imgscalr</title>
+      <link>https://simplesolution.dev/java-create-thumbnail-image-using-imgscalr/</link>
+      <pubDate>Fri, 11 Jun 2021 22:04:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-create-thumbnail-image-using-imgscalr/</guid>
+      <description>In this Java tutorial we learn how to create thumbnail images by using the Scalr class of Imgscalr library.
+How to add Imgscalr library to the Java project To use the Imgscalr library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the Imgscalr library in the Maven build project, add the following dependency into the pom.xml file.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.imgscalr&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;imgscalr-lib&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.</description>
+    </item>
+    
+    <item>
+      <title>Java Rotate Image File using Imgscalr</title>
+      <link>https://simplesolution.dev/java-rotate-image-file-using-imgscalr/</link>
+      <pubDate>Fri, 11 Jun 2021 21:49:57 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-rotate-image-file-using-imgscalr/</guid>
+      <description>In this Java tutorial we learn how to rotate an image file using the Scalr class of Imgscalr library.
+How to add Imgscalr library to the Java project To use the Imgscalr library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the Imgscalr library in the Maven build project, add the following dependency into the pom.xml file.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.imgscalr&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;imgscalr-lib&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.</description>
+    </item>
+    
+    <item>
+      <title>Java Resize Image File using Imgscalr</title>
+      <link>https://simplesolution.dev/java-resize-image-file-using-imgscalr/</link>
+      <pubDate>Fri, 11 Jun 2021 21:42:33 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-resize-image-file-using-imgscalr/</guid>
+      <description>In this Java tutorial we learn how to resize an image file using the Scalr class of Imgscalr library.
+How to add Imgscalr library to the Java project To use the Imgscalr library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the Imgscalr library in the Maven build project, add the following dependency into the pom.xml file.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.imgscalr&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;imgscalr-lib&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.</description>
+    </item>
+    
+    <item>
+      <title>Java Padding Image File using Imgscalr</title>
+      <link>https://simplesolution.dev/java-padding-image-file-using-imgscalr/</link>
+      <pubDate>Fri, 11 Jun 2021 21:30:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-padding-image-file-using-imgscalr/</guid>
+      <description>In this Java tutorial we learn how to add a border around an image file using the Scalr class of Imgscalr library.
+How to add Imgscalr library to the Java project To use the Imgscalr library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the Imgscalr library in the Maven build project, add the following dependency into the pom.xml file.</description>
+    </item>
+    
+    <item>
+      <title>Java Crop Image File using Imgscalr</title>
+      <link>https://simplesolution.dev/java-crop-image-file-using-imgscalr/</link>
+      <pubDate>Fri, 11 Jun 2021 21:10:20 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-crop-image-file-using-imgscalr/</guid>
+      <description>In this Java tutorial we learn how to crop an image file using the Scalr class of Imgscalr library.
+How to add Imgscalr library to the Java project To use the Imgscalr library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the Imgscalr library in the Maven build project, add the following dependency into the pom.xml file.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.imgscalr&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;imgscalr-lib&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.</description>
+    </item>
     
     <item>
       <title>Spring Boot Upload and Resize Images with Imgscalr</title>
