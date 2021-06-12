@@ -6,10 +6,22 @@
     <description>Recent content in Crop Image on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Jun 2021 21:10:20 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jun 2021 14:33:14 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/crop-image/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Crop Image to Square using Imgscalr</title>
+      <link>https://simplesolution.dev/java-crop-image-to-square-using-imgscalr/</link>
+      <pubDate>Sat, 12 Jun 2021 14:33:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-crop-image-to-square-using-imgscalr/</guid>
+      <description>In this tutorial we learn how to crop an image file to square using the Scalr class of Imgscalr library.
+How to add Imgscalr library to the Java project To use the Imgscalr library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the Imgscalr library in the Maven build project, add the following dependency into the pom.xml file.
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.imgscalr&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;imgscalr-lib&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;4.</description>
+    </item>
     
     <item>
       <title>Java Crop Image File using Imgscalr</title>
