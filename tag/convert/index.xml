@@ -6,10 +6,21 @@
     <description>Recent content in Convert on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jun 2021 00:52:11 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jun 2021 15:26:06 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Parse Markdown to HTML using CommonMark</title>
+      <link>https://simplesolution.dev/java-parse-markdown-to-html-using-commonmark/</link>
+      <pubDate>Sun, 13 Jun 2021 15:26:06 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-parse-markdown-to-html-using-commonmark/</guid>
+      <description>In this Java tutorial we learn how to convert a markdown string into HTML string using the CommonMark Java library.
+How to add CommonMark library to the Java project To use the CommonMark Java library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation &amp;#39;org.imgscalr:imgscalr-lib:4.2&amp;#39; To use the CommonMark Java library in the Maven build project, add the following dependency into the pom.xml file.</description>
+    </item>
     
     <item>
       <title>Spring Boot Convert Markdown to HTML using CommonMark</title>
