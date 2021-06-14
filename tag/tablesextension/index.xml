@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tablesextension on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/tablesextension/</link>
+    <description>Recent content in Tablesextension on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jun 2021 22:45:30 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/tablesextension/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Parse Markdown Tables to HTML in Java with CommonMark GFM Tables Extension</title>
+      <link>https://simplesolution.dev/java-parse-markdown-tables-to-html-in-java-with-commonmark-gfm-tables-extension/</link>
+      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-parse-markdown-tables-to-html-in-java-with-commonmark-gfm-tables-extension/</guid>
+      <description>In this Java tutorial we learn how to parse markdown string with GFM tables using &amp;ldquo;|&amp;rdquo; pipes (GitHub Flavored Markdown) to HTML string using the CommonMark and CommonMark GFM Tables Extension libraries.
+How to add CommonMark and CommonMark GFM Tables Extension libraries to the Java project To use the Java CommonMark and CommonMark GFM Tables Extension libraries in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
+    
+  </channel>
+</rss>
