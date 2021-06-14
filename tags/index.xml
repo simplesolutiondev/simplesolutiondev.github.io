@@ -219,6 +219,15 @@
     </item>
     
     <item>
+      <title>Autolinkextension</title>
+      <link>https://simplesolution.dev/tag/autolinkextension/</link>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/autolinkextension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Base32</title>
       <link>https://simplesolution.dev/tag/base32/</link>
       <pubDate>Wed, 24 Mar 2021 22:47:06 +0700</pubDate>
@@ -509,9 +518,27 @@
     <item>
       <title>Commonmark</title>
       <link>https://simplesolution.dev/tag/commonmark/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Commonmark Autolink</title>
+      <link>https://simplesolution.dev/tag/commonmark-autolink/</link>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/commonmark-autolink/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Commonmark Ext Autolink</title>
+      <link>https://simplesolution.dev/tag/commonmark-ext-autolink/</link>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/commonmark-ext-autolink/</guid>
       <description></description>
     </item>
     
@@ -527,7 +554,7 @@
     <item>
       <title>Commonmark Extension</title>
       <link>https://simplesolution.dev/tag/commonmark-extension/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark-extension/</guid>
       <description></description>
@@ -581,7 +608,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -1022,7 +1049,7 @@
     <item>
       <title>Html</title>
       <link>https://simplesolution.dev/tag/html/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/html/</guid>
       <description></description>
@@ -1040,7 +1067,7 @@
     <item>
       <title>Htmlrenderer</title>
       <link>https://simplesolution.dev/tag/htmlrenderer/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/htmlrenderer/</guid>
       <description></description>
@@ -1184,7 +1211,7 @@
     <item>
       <title>Java Commonmark</title>
       <link>https://simplesolution.dev/tag/java-commonmark/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java-commonmark/</guid>
       <description></description>
@@ -1634,9 +1661,27 @@
     <item>
       <title>Markdown</title>
       <link>https://simplesolution.dev/tag/markdown/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown Email</title>
+      <link>https://simplesolution.dev/tag/markdown-email/</link>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/markdown-email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown Url</title>
+      <link>https://simplesolution.dev/tag/markdown-url/</link>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/markdown-url/</guid>
       <description></description>
     </item>
     
@@ -1850,7 +1895,7 @@
     <item>
       <title>Parse</title>
       <link>https://simplesolution.dev/tag/parse/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/parse/</guid>
       <description></description>
@@ -1859,7 +1904,7 @@
     <item>
       <title>Parser</title>
       <link>https://simplesolution.dev/tag/parser/</link>
-      <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
+      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/parser/</guid>
       <description></description>
