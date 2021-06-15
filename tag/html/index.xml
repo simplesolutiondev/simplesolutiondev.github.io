@@ -6,10 +6,20 @@
     <description>Recent content in Html on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jun 2021 19:42:37 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jun 2021 20:01:53 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/html/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parse Markdown to HTML with Underlining text in Java using CommonMark Ins Extension</title>
+      <link>https://simplesolution.dev/java-parse-markdown-to-html-with-underlining-text-using-commonmark-ins-extension/</link>
+      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-parse-markdown-to-html-with-underlining-text-using-commonmark-ins-extension/</guid>
+      <description>In this Java tutorial we learn how to convert markdown string into HTML string which enables underlining of text by enclosing it in ++ syntax using the CommonMark library and the CommonMark Ins Extension library.
+How to add CommonMark and CommonMark Ins Extension libraries to the Java project To use the Java CommonMark and CommonMark Ins Extension libraries in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Parse Markdown to HTML with Auto Generate IDs for Headings in Java with CommonMark Heading Anchor Extension</title>
