@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-parse-markdown-strikethrough-to-html-with-commonmark-strikethrough-extension/</loc>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-parse-markdown-urls-and-email-addresses-to-html-links-with-commonmark-autolink-extension/</loc>
     <lastmod>2021-06-14T23:29:50+07:00</lastmod>
   </url>
@@ -2221,7 +2226,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/commonmark/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2238,6 +2243,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/commonmark-ext-gfm-strikethrough/</loc>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/commonmark-ext-gfm-tables/</loc>
     <lastmod>2021-06-14T22:45:30+07:00</lastmod>
     <priority>0</priority>
@@ -2245,13 +2256,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/commonmark-extension/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/commonmark-gfm-tables/</loc>
     <lastmod>2021-06-14T22:45:30+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/commonmark-strikethrough/</loc>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2281,7 +2298,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2575,7 +2592,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/html/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2587,7 +2604,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/htmlrenderer/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2676,14 +2693,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2695,7 +2712,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/java-commonmark/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2731,7 +2748,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3019,13 +3036,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/markdown/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/markdown-email/</loc>
     <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/markdown-strikethrough/</loc>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3175,13 +3198,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/parse/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/parser/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3349,7 +3372,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-14T23:29:50+07:00</lastmod>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3366,14 +3389,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3404,6 +3427,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/springdoc-openapi/</loc>
     <lastmod>2021-02-04T00:12:12+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/strikethroughextension/</loc>
+    <lastmod>2021-06-15T08:18:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   

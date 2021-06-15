@@ -518,7 +518,7 @@
     <item>
       <title>Commonmark</title>
       <link>https://simplesolution.dev/tag/commonmark/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark/</guid>
       <description></description>
@@ -543,6 +543,15 @@
     </item>
     
     <item>
+      <title>Commonmark Ext Gfm Strikethrough</title>
+      <link>https://simplesolution.dev/tag/commonmark-ext-gfm-strikethrough/</link>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/commonmark-ext-gfm-strikethrough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Commonmark Ext Gfm Tables</title>
       <link>https://simplesolution.dev/tag/commonmark-ext-gfm-tables/</link>
       <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
@@ -554,7 +563,7 @@
     <item>
       <title>Commonmark Extension</title>
       <link>https://simplesolution.dev/tag/commonmark-extension/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark-extension/</guid>
       <description></description>
@@ -566,6 +575,15 @@
       <pubDate>Mon, 14 Jun 2021 22:45:30 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark-gfm-tables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Commonmark Strikethrough</title>
+      <link>https://simplesolution.dev/tag/commonmark-strikethrough/</link>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/commonmark-strikethrough/</guid>
       <description></description>
     </item>
     
@@ -608,7 +626,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -1049,7 +1067,7 @@
     <item>
       <title>Html</title>
       <link>https://simplesolution.dev/tag/html/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/html/</guid>
       <description></description>
@@ -1067,7 +1085,7 @@
     <item>
       <title>Htmlrenderer</title>
       <link>https://simplesolution.dev/tag/htmlrenderer/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/htmlrenderer/</guid>
       <description></description>
@@ -1211,7 +1229,7 @@
     <item>
       <title>Java Commonmark</title>
       <link>https://simplesolution.dev/tag/java-commonmark/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java-commonmark/</guid>
       <description></description>
@@ -1661,7 +1679,7 @@
     <item>
       <title>Markdown</title>
       <link>https://simplesolution.dev/tag/markdown/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/markdown/</guid>
       <description></description>
@@ -1673,6 +1691,15 @@
       <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/markdown-email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown Strikethrough</title>
+      <link>https://simplesolution.dev/tag/markdown-strikethrough/</link>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/markdown-strikethrough/</guid>
       <description></description>
     </item>
     
@@ -1895,7 +1922,7 @@
     <item>
       <title>Parse</title>
       <link>https://simplesolution.dev/tag/parse/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/parse/</guid>
       <description></description>
@@ -1904,7 +1931,7 @@
     <item>
       <title>Parser</title>
       <link>https://simplesolution.dev/tag/parser/</link>
-      <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/parser/</guid>
       <description></description>
@@ -2213,6 +2240,15 @@
       <pubDate>Thu, 04 Feb 2021 00:12:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/springdoc-openapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Strikethroughextension</title>
+      <link>https://simplesolution.dev/tag/strikethroughextension/</link>
+      <pubDate>Tue, 15 Jun 2021 08:18:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/strikethroughextension/</guid>
       <description></description>
     </item>
     
