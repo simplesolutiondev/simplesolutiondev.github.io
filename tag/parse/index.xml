@@ -6,10 +6,20 @@
     <description>Recent content in Parse on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jun 2021 08:18:44 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jun 2021 19:42:37 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/parse/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parse Markdown to HTML with Auto Generate IDs for Headings in Java with CommonMark Heading Anchor Extension</title>
+      <link>https://simplesolution.dev/java-parse-markdown-to-html-with-auto-generate-ids-for-headings-with-commonmark-heading-anchor-extension/</link>
+      <pubDate>Tue, 15 Jun 2021 19:42:37 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-parse-markdown-to-html-with-auto-generate-ids-for-headings-with-commonmark-heading-anchor-extension/</guid>
+      <description>In this Java tutorial we learn how to convert Markdown string into HTML string with ability to auto generate the ID for headings HTML tabs by using the CommonMark Java library and the CommonMark Heading Anchor Extension library.
+How to add CommonMark and Heading Anchor Extension libraries to the Java project To use the Java CommonMark and CommonMark Heading Anchor Extension libraries in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Parse Markdown Strikethrough to HTML in Java with CommonMark Strikethrough Extension</title>
