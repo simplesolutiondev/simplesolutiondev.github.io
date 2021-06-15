@@ -518,7 +518,7 @@
     <item>
       <title>Commonmark</title>
       <link>https://simplesolution.dev/tag/commonmark/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark/</guid>
       <description></description>
@@ -579,9 +579,18 @@
     </item>
     
     <item>
+      <title>Commonmark Ext Yaml Front Matter</title>
+      <link>https://simplesolution.dev/tag/commonmark-ext-yaml-front-matter/</link>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/commonmark-ext-yaml-front-matter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Commonmark Extension</title>
       <link>https://simplesolution.dev/tag/commonmark-extension/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/commonmark-extension/</guid>
       <description></description>
@@ -624,6 +633,15 @@
     </item>
     
     <item>
+      <title>Commonmark Yaml Front Matter</title>
+      <link>https://simplesolution.dev/tag/commonmark-yaml-front-matter/</link>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/commonmark-yaml-front-matter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Commons Codec</title>
       <link>https://simplesolution.dev/tag/commons-codec/</link>
       <pubDate>Wed, 24 Mar 2021 23:47:03 +0700</pubDate>
@@ -662,7 +680,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -1112,7 +1130,7 @@
     <item>
       <title>Html</title>
       <link>https://simplesolution.dev/tag/html/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/html/</guid>
       <description></description>
@@ -1130,7 +1148,7 @@
     <item>
       <title>Htmlrenderer</title>
       <link>https://simplesolution.dev/tag/htmlrenderer/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/htmlrenderer/</guid>
       <description></description>
@@ -1283,7 +1301,7 @@
     <item>
       <title>Java Commonmark</title>
       <link>https://simplesolution.dev/tag/java-commonmark/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/java-commonmark/</guid>
       <description></description>
@@ -1733,7 +1751,7 @@
     <item>
       <title>Markdown</title>
       <link>https://simplesolution.dev/tag/markdown/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/markdown/</guid>
       <description></description>
@@ -1781,6 +1799,15 @@
       <pubDate>Mon, 14 Jun 2021 23:29:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/markdown-url/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown Yaml</title>
+      <link>https://simplesolution.dev/tag/markdown-yaml/</link>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/markdown-yaml/</guid>
       <description></description>
     </item>
     
@@ -1994,7 +2021,7 @@
     <item>
       <title>Parse</title>
       <link>https://simplesolution.dev/tag/parse/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/parse/</guid>
       <description></description>
@@ -2003,7 +2030,7 @@
     <item>
       <title>Parser</title>
       <link>https://simplesolution.dev/tag/parser/</link>
-      <pubDate>Tue, 15 Jun 2021 20:01:53 +0700</pubDate>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/parser/</guid>
       <description></description>
@@ -2591,6 +2618,15 @@
       <pubDate>Sun, 01 Nov 2020 23:28:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/xml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yamlfrontmatterextension</title>
+      <link>https://simplesolution.dev/tag/yamlfrontmatterextension/</link>
+      <pubDate>Tue, 15 Jun 2021 22:03:38 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/yamlfrontmatterextension/</guid>
       <description></description>
     </item>
     
