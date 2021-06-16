@@ -18,7 +18,12 @@
       
       <guid>https://simplesolution.dev/java-commonmark-tutorial/</guid>
       <description>In this Java CommonMark Tutorial we learn how to use the commonmark-java library and extensions.
-How to use the commonmark-java library  How to parse Markdown to HTML How to parse Markdown to HTML with Spring Boot  CommonMark Java Extensions How to use CommonMark GFM Tables Extension How to use CommonMark Autolink Extension How to use CommonMark Strikethrough Extension How to use CommonMark Heading Anchor Extension How to use CommonMark Ins Extension How to use CommonMark YAML Front Matter Extension How to use CommonMark Image Attributes Extension How to use CommonMark Task List Items Extension  Happy Coding 😊</description>
+How to use the commonmark-java library  How to parse Markdown to HTML
+ How to parse Markdown to HTML with Spring Boot
+  CommonMark Java Extensions How to use CommonMark GFM Tables Extension
+ How to use CommonMark Autolink Extension
+ How to use CommonMark Strikethrough Extension
+ How to use CommonMark Heading Anchor Extension</description>
     </item>
     
     <item>
