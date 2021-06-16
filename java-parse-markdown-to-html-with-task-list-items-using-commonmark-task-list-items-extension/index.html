@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension</title>
+    <meta name="title" content="Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension">
+    <meta name="description" content="Learn how to convert a markdown string with task list items into HTML string using the CommonMark library and the CommonMark Task List Items Extension library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-parse-markdown-to-html-with-task-list-items-using-commonmark-task-list-items-extension/">
+    <meta property="og:title" content="Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension">
+    <meta property="og:description" content="Learn how to convert a markdown string with task list items into HTML string using the CommonMark library and the CommonMark Task List Items Extension library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-parse-markdown-to-html-with-task-list-items-using-commonmark-task-list-items-extension.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-parse-markdown-to-html-with-task-list-items-using-commonmark-task-list-items-extension/">
+    <meta name="twitter:title" content="Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension">
+    <meta name="twitter:description" content="Learn how to convert a markdown string with task list items into HTML string using the CommonMark library and the CommonMark Task List Items Extension library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-parse-markdown-to-html-with-task-list-items-using-commonmark-task-list-items-extension.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=9" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-spring-framework">Spring</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java tutorial we learn how to convert a markdown string with task list items into HTML string using the CommonMark library and the CommonMark Task List Items Extension library.</p>
+
+<h4 id="how-to-add-commonmark-and-commonmark-task-list-items-libraries-to-the-java-project">How to add CommonMark and CommonMark Task List Items libraries to the Java project</h4>
+
+<p>To use the Java CommonMark and CommonMark Task List Items Extension libraries in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">implementation <span style="color:#e6db74">&#39;org.commonmark:commonmark:0.17.2&#39;</span>
+implementation <span style="color:#e6db74">&#39;org.commonmark:commonmark-ext-task-list-items:0.17.2&#39;</span></code></pre></div>
+
+<p>To use the Java CommonMark and CommonMark Task List Items Extension libraries in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.commonmark<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>commonmark<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>0.17.2<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+<span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.commonmark<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>commonmark-ext-task-list-items<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>0.17.2<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>To have more information about the CommonMark Java library you can visit the project repository at <a href="https://github.com/commonmark/commonmark-java" target="_blank">github.com/commonmark/commonmark-java</a></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-convert-markdown-to-html-with-task-list-items-in-java">How to convert markdown to HTML with task list items in Java</h4>
+
+<p>In the following Java example code we show you how to use the Parser, HtmlRenderer classes of the CommonMark library and TaskListItemsExtension class of the CommonMark Task List Items Extension library to convert a given String in markdown syntax including task list item into a String in HTML format.</p>
+
+<p>ParseMarkdownTaskListItemToHTML.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> org.commonmark.Extension<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.commonmark.ext.task.list.items.TaskListItemsExtension<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.commonmark.node.Node<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.commonmark.parser.Parser<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.commonmark.renderer.html.HtmlRenderer<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.util.Arrays<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParseMarkdownTaskListItemToHTML</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String markdownValue <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;- [ ] task #1\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;- [x] task #2\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;- [ ] task #3\n&#34;</span><span style="color:#f92672">;</span>
+
+        String htmlValue <span style="color:#f92672">=</span> convertMarkdownToHTML<span style="color:#f92672">(</span>markdownValue<span style="color:#f92672">);</span>
+
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Markdown String:&#34;</span><span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>markdownValue<span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">();</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HTML String:&#34;</span><span style="color:#f92672">);</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>htmlValue<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">convertMarkdownToHTML</span><span style="color:#f92672">(</span>String markdown<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        List<span style="color:#f92672">&lt;</span>Extension<span style="color:#f92672">&gt;</span> extensions <span style="color:#f92672">=</span> Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span>TaskListItemsExtension<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">());</span>
+        Parser parser <span style="color:#f92672">=</span> Parser<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">extensions</span><span style="color:#f92672">(</span>extensions<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+        Node document <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>markdown<span style="color:#f92672">);</span>
+        HtmlRenderer htmlRenderer <span style="color:#f92672">=</span> HtmlRenderer<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">().</span><span style="color:#a6e22e">extensions</span><span style="color:#f92672">(</span>extensions<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">return</span> htmlRenderer<span style="color:#f92672">.</span><span style="color:#a6e22e">render</span><span style="color:#f92672">(</span>document<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Markdown String:
+- [ ] task #1
+- [x] task #2
+- [ ] task #3
+
+
+HTML String:
+&lt;ul&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34;&gt; task #1&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34; checked=&#34;&#34;&gt; task #2&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34;&gt; task #3&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/commonmark">CommonMark</a>
+                                
+                                <a href="https://simplesolution.dev/tag/java-commonmark">Java CommonMark</a>
+                                
+                                <a href="https://simplesolution.dev/tag/commonmark-task-list-items">CommonMark Task List Items</a>
+                                
+                                <a href="https://simplesolution.dev/tag/commonmark-extension">CommonMark Extension</a>
+                                
+                                <a href="https://simplesolution.dev/tag/commonmark-ext-task-list-items">commonmark-ext-task-list-items</a>
+                                
+                                <a href="https://simplesolution.dev/tag/markdown">Markdown</a>
+                                
+                                <a href="https://simplesolution.dev/tag/markdown-task-list-items">Markdown Task List Items</a>
+                                
+                                <a href="https://simplesolution.dev/tag/html">HTML</a>
+                                
+                                <a href="https://simplesolution.dev/tag/convert">Convert</a>
+                                
+                                <a href="https://simplesolution.dev/tag/parser">Parser</a>
+                                
+                                <a href="https://simplesolution.dev/tag/parse">Parse</a>
+                                
+                                <a href="https://simplesolution.dev/tag/htmlrenderer">HtmlRenderer</a>
+                                
+                                <a href="https://simplesolution.dev/tag/tasklistitemsextension">TaskListItemsExtension</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

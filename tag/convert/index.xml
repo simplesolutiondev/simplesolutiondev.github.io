@@ -6,10 +6,20 @@
     <description>Recent content in Convert on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jun 2021 22:23:22 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jun 2021 19:39:07 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension</title>
+      <link>https://simplesolution.dev/java-parse-markdown-to-html-with-task-list-items-using-commonmark-task-list-items-extension/</link>
+      <pubDate>Wed, 16 Jun 2021 19:39:07 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-parse-markdown-to-html-with-task-list-items-using-commonmark-task-list-items-extension/</guid>
+      <description>In this Java tutorial we learn how to convert a markdown string with task list items into HTML string using the CommonMark library and the CommonMark Task List Items Extension library.
+How to add CommonMark and CommonMark Task List Items libraries to the Java project To use the Java CommonMark and CommonMark Task List Items Extension libraries in the Gradle build project, add the following dependency into the build.gradle file.</description>
+    </item>
     
     <item>
       <title>Parse Markdown to HTML with Image Attributes in Java using CommonMark Image Attributes Extension</title>
