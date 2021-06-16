@@ -6,10 +6,20 @@
     <description>Recent content in Java Commonmark on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jun 2021 19:39:07 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jun 2021 19:53:29 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/java-commonmark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java CommonMark Tutorial</title>
+      <link>https://simplesolution.dev/java-commonmark-tutorial/</link>
+      <pubDate>Wed, 16 Jun 2021 19:53:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-commonmark-tutorial/</guid>
+      <description>In this Java CommonMark Tutorial we learn how to use the commonmark-java library and extensions.
+How to use the commonmark-java library  How to parse Markdown to HTML How to parse Markdown to HTML with Spring Boot  CommonMark Java Extensions How to use CommonMark GFM Tables Extension How to use CommonMark Autolink Extension How to use CommonMark Strikethrough Extension How to use CommonMark Heading Anchor Extension How to use CommonMark Ins Extension How to use CommonMark YAML Front Matter Extension How to use CommonMark Image Attributes Extension How to use CommonMark Task List Items Extension  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Parse Markdown to HTML with Task List Items in Java using CommonMark Task List Items Extension</title>

@@ -13,7 +13,7 @@
     <item>
       <title>Java</title>
       <link>https://simplesolution.dev/java/</link>
-      <pubDate>Wed, 16 Jun 2021 19:39:07 +0700</pubDate>
+      <pubDate>Wed, 16 Jun 2021 19:53:29 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java/</guid>
       <description></description>
@@ -34,6 +34,15 @@
       <pubDate>Thu, 04 Mar 2021 23:40:51 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java-spring-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java Tutorials</title>
+      <link>https://simplesolution.dev/java-tutorials/</link>
+      <pubDate>Wed, 16 Jun 2021 19:53:29 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-tutorials/</guid>
       <description></description>
     </item>
     
