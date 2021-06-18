@@ -6,10 +6,20 @@
     <description>Recent content in Apache Commons Codec on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Mar 2021 23:47:03 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jun 2021 00:32:53 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-codec/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache Commons Codec Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-codec-tutorial/</link>
+      <pubDate>Sat, 19 Jun 2021 00:32:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-codec-tutorial/</guid>
+      <description>In this Java Apache Commons Codec Tutorial we learn how to use the Java Apache Commons Codec library.
+org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Encode and Decode String to Binary Format in Java using Apache Commons Codec</title>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-apache-commons-codec-tutorial/</loc>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-commons-io-tutorial/</loc>
+    <lastmod>2021-06-19T00:02:15+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-commons-lang-tutorial/</loc>
+    <lastmod>2021-06-18T23:28:53+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-escape-url-using-google-guava/</loc>
     <lastmod>2021-06-18T22:56:50+07:00</lastmod>
   </url>
@@ -1937,13 +1952,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-06-04T00:05:07+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-codec/</loc>
-    <lastmod>2021-03-24T23:47:03+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1961,13 +1976,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-io/</loc>
-    <lastmod>2021-05-27T21:38:41+07:00</lastmod>
+    <lastmod>2021-06-19T00:02:15+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-lang/</loc>
-    <lastmod>2021-06-04T00:05:07+07:00</lastmod>
+    <lastmod>2021-06-18T23:28:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2836,7 +2851,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2878,7 +2893,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-tutorials/</loc>
-    <lastmod>2021-06-16T19:53:29+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2890,7 +2905,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3544,7 +3559,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3718,7 +3733,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/tutorial/</loc>
-    <lastmod>2021-06-16T19:53:29+07:00</lastmod>
+    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
     <priority>0</priority>
   </url>
   

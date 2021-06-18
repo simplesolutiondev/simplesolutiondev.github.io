@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Java Apache Commons IO Tutorial</title>
+    <meta name="title" content="Java Apache Commons IO Tutorial">
+    <meta name="description" content="In this Java Apache Commons IO Tutorial we learn how to use the Java Apache Commons IO library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-apache-commons-io-tutorial/">
+    <meta property="og:title" content="Java Apache Commons IO Tutorial">
+    <meta property="og:description" content="In this Java Apache Commons IO Tutorial we learn how to use the Java Apache Commons IO library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-apache-commons-io-tutorial.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-apache-commons-io-tutorial/">
+    <meta name="twitter:title" content="Java Apache Commons IO Tutorial">
+    <meta name="twitter:description" content="In this Java Apache Commons IO Tutorial we learn how to use the Java Apache Commons IO library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-apache-commons-io-tutorial.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=9" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-spring-framework">Spring</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-tutorials">Tutorials</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Java Apache Commons IO Tutorial</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java Apache Commons IO Tutorial we learn how to use the Java Apache Commons IO library.</p>
+
+<h4 id="org-apache-commons-io-fileutils-class">org.apache.commons.io.FileUtils class</h4>
+
+<ul>
+<li><p><a href="https://simplesolution.dev/java-iterate-files-based-on-cutoff-time-using-apache-commons-io/" target="_blank">How to get Files in Directory based on Cutoff Time</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-check-a-file-is-symlink-or-actual-file-using-apache-commons-io/" target="_blank">How to check a File is Symlink or Actual File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-get-user-home-directory-using-apache-commons-io/" target="_blank">How to get User Home Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-get-system-temporary-directory-using-apache-commons-io/" target="_blank">How to get System Temporary Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-create-new-directory-using-apache-commons-io/" target="_blank">How to create New Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-delete-file-using-apache-commons-io/" target="_blank">How to delete File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-delete-directory-using-apache-commons-io/" target="_blank">How to delete Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-file-to-outputstream-using-apache-commons-io/" target="_blank">How to copy File to OutputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-create-file-from-directory-and-name-elements-using-apache-commons-io/" target="_blank">How to create File from Directory and Name Elements</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-check-file-newer-than-specified-date-or-file-using-apache-commons-io/" target="_blank">How to check File Newer than a specified Date or File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-check-file-older-than-specified-date-or-file-using-apache-commons-io/" target="_blank">How to check File Older than a specified Date or File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-check-directory-contains-file-or-directory-using-apache-commons-io/" target="_blank">How to check Directory Contains a File or Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-get-readable-file-size-from-number-of-bytes-using-apache-commons-io/" target="_blank">How to get Readable File Size from Number of Bytes</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-content-from-url-to-file-using-apache-commons-io/" target="_blank">How to copy Content from URL to File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-list-of-files-to-directory-using-apache-commons-io/" target="_blank">How to copy List of Files to Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-inputstream-to-file-using-apache-commons-io/" target="_blank">How to copy InputStream to File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-file-to-directory-using-apache-commons-io/" target="_blank">How to copy a File to Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-a-file-using-apache-commons-io/" target="_blank">How to copy a File</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-directory-to-directory-using-apache-commons-io/" target="_blank">How to copy Directory to Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-compare-contents-of-files-using-apache-commons-io/" target="_blank">How to compare Contents of Files</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-delete-files-and-directories-inside-directory-using-apache-commons-io/" target="_blank">How to Delete All Files and Directories Inside a Directory</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-compute-checksum-of-file-using-apache-commons-io/" target="_blank">How to compute Checksum of File</a></p></li>
+</ul>
+
+<h4 id="org-apache-commons-io-ioutils-class">org.apache.commons.io.IOUtils class</h4>
+
+<ul>
+<li><p><a href="https://simplesolution.dev/java-convert-charsequence-to-inputstream-using-apache-commons-io/" target="_blank">How to convert CharSequence to InputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-content-from-url-into-string-using-apache-commons-io/" target="_blank">How to read Content from URL into String</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-content-from-uri-into-string-using-apache-commons-io/" target="_blank">How to read Content from URI into String</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-content-from-url-into-byte-array-using-apache-commons-io/" target="_blank">How to read Content from URL into Byte Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-content-from-uri-into-byte-array-using-apache-commons-io/" target="_blank">How to read Content from URI into Byte Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-string-to-inputstream-using-apache-commons-io/" target="_blank">How to convert String to InputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-reader-to-char-array-using-apache-commons-io/" target="_blank">How to convert Reader to Char Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-reader-to-byte-array-using-apache-commons-io/" target="_blank">How to convert Reader to Byte Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-reader-to-string-using-apache-commons-io/" target="_blank">How to convert Reader to String</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-inputstream-to-char-array-using-apache-commons-io/" target="_blank">How to convert InputStream to Char Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-inputstream-to-string-using-apache-commons-io/" target="_blank">How to convert InputStream to String</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-inputstream-to-byte-array-using-apache-commons-io/" target="_blank">How to convert InputStream to Byte Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-get-the-url-of-classpath-resource-using-apache-commons-io/" target="_blank">How to get the URL of Classpath Resource</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-classpath-resource-as-string-using-apache-commons-io/" target="_blank">How to read Classpath Resource as String</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-classpath-resource-as-byte-array-using-apache-commons-io/" target="_blank">How to read Classpath Resource as Byte Array</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-list-of-strings-reader-using-apache-commons-io/" target="_blank">How to read List of Strings of Reader</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-list-of-strings-inputstream-using-apache-commons-io/" target="_blank">How to read List of Strings of InputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-reader-with-lineiterator-using-apache-commons-io/" target="_blank">How to read Reader Line by Line with LineIterator</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-read-inputstream-with-lineiterator-using-apache-commons-io/" target="_blank">How to read InputStream Line by Line with LineIterator</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-large-file-contents-using-apache-commons-io/" target="_blank">How to copy Large File Contents</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-reader-to-writer-using-apache-commons-io/" target="_blank">How to copy Reader to Writer</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-reader-to-outputstream-using-apache-commons-io/" target="_blank">How to copy Reader to OutputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-copy-inputstream-to-writer-using-apache-commons-io/" target="_blank">How to copy InputStream to Writer</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-compare-reader-using-apache-commons-io/" target="_blank">How to compare Contents of two Reader</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-compare-inputstream-using-apache-commons-io/" target="_blank">How to compare Contents of two InputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-writer-into-bufferedwriter-using-apache-commons-io/" target="_blank">How to convert Writer into BufferedWriter</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-reader-into-bufferedreader-using-apache-commons-io/" target="_blank">How to convert Reader into BufferedReader</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-outputstream-into-bufferedoutputstream-using-apache-commons-io/" target="_blank">How to convert OutputStream into BufferedOutputStream</a></p></li>
+
+<li><p><a href="https://simplesolution.dev/java-convert-inputstream-into-bufferedinputstream-using-apache-commons-io/" target="_blank">How to convert InputStream into BufferedInputStream</a></p></li>
+</ul>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/apache-commons">Apache Commons</a>
+                                
+                                <a href="https://simplesolution.dev/tag/apache-commons-io">Apache Commons IO</a>
+                                
+                                <a href="https://simplesolution.dev/tag/tutorial">Tutorial</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>

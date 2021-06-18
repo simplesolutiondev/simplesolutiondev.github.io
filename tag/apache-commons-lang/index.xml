@@ -6,10 +6,25 @@
     <description>Recent content in Apache Commons Lang on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Jun 2021 00:05:07 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jun 2021 23:28:53 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-lang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache Commons Lang Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-lang-tutorial/</link>
+      <pubDate>Fri, 18 Jun 2021 23:28:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-lang-tutorial/</guid>
+      <description>In this Java Apache Commons Lang Tutorial we learn how to use the Apache Commons Lang 3 library.
+org.apache.commons.lang3.CharUtils class  How to check Character is ASCII Printable
+ How to check Character is ASCII Numeric
+ How to check Character is ASCII Control Character
+ How to check Character is ASCII
+ How to check Character is ASCII Alphabetic Upper Case
+ How to check Character is ASCII Alphanumeric</description>
+    </item>
     
     <item>
       <title>Java Check Character is ASCII Printable using Apache Commons Lang</title>

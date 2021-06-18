@@ -6,10 +6,51 @@
     <description>Recent content in Tutorial on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jun 2021 19:53:29 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jun 2021 00:32:53 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache Commons Codec Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-codec-tutorial/</link>
+      <pubDate>Sat, 19 Jun 2021 00:32:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-codec-tutorial/</guid>
+      <description>In this Java Apache Commons Codec Tutorial we learn how to use the Java Apache Commons Codec library.
+org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons IO Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-io-tutorial/</link>
+      <pubDate>Sat, 19 Jun 2021 00:02:15 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-io-tutorial/</guid>
+      <description>In this Java Apache Commons IO Tutorial we learn how to use the Java Apache Commons IO library.
+org.apache.commons.io.FileUtils class  How to get Files in Directory based on Cutoff Time
+ How to check a File is Symlink or Actual File
+ How to get User Home Directory
+ How to get System Temporary Directory
+ How to create New Directory
+ How to delete File
+ How to delete Directory</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons Lang Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-lang-tutorial/</link>
+      <pubDate>Fri, 18 Jun 2021 23:28:53 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-lang-tutorial/</guid>
+      <description>In this Java Apache Commons Lang Tutorial we learn how to use the Apache Commons Lang 3 library.
+org.apache.commons.lang3.CharUtils class  How to check Character is ASCII Printable
+ How to check Character is ASCII Numeric
+ How to check Character is ASCII Control Character
+ How to check Character is ASCII
+ How to check Character is ASCII Alphabetic Upper Case
+ How to check Character is ASCII Alphanumeric</description>
+    </item>
     
     <item>
       <title>Java CommonMark Tutorial</title>
