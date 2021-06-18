@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-escape-xml-content-and-attribute-using-google-guava/</loc>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-commonmark-tutorial/</loc>
     <lastmod>2021-06-16T19:53:29+07:00</lastmod>
   </url>
@@ -2555,6 +2560,18 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/escape-xml/</loc>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/escaper/</loc>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/ethiopicchronology/</loc>
     <lastmod>2021-01-17T13:15:15+07:00</lastmod>
     <priority>0</priority>
@@ -2658,7 +2675,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/google-guava/</loc>
-    <lastmod>2019-05-03T01:00:10+07:00</lastmod>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2808,7 +2825,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-16T19:53:29+07:00</lastmod>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2862,7 +2879,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-16T19:53:29+07:00</lastmod>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3516,7 +3533,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-16T19:53:29+07:00</lastmod>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3774,7 +3791,25 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/xml/</loc>
-    <lastmod>2020-11-01T23:28:25+07:00</lastmod>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/xmlattributeescaper/</loc>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/xmlcontentescaper/</loc>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/xmlescapers/</loc>
+    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
     <priority>0</priority>
   </url>
   

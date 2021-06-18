@@ -6,10 +6,21 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jun 2021 19:53:29 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jun 2021 20:26:44 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Escape XML Content and Attribute in Java using Google Guava</title>
+      <link>https://simplesolution.dev/java-escape-xml-content-and-attribute-using-google-guava/</link>
+      <pubDate>Fri, 18 Jun 2021 20:26:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-escape-xml-content-and-attribute-using-google-guava/</guid>
+      <description>In this Java tutorial we learn how to escape a XML content string or XML attribute value using the XmlEscapers class of Google Guava library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Google Guava library to the Java project To use the Google Guava library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation group: &amp;#39;com.google.guava&amp;#39;, name: &amp;#39;guava&amp;#39;, version: &amp;#39;30.</description>
+    </item>
     
     <item>
       <title>Java CommonMark Tutorial</title>
