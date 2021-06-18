@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-escape-url-using-google-guava/</loc>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-escape-xml-content-and-attribute-using-google-guava/</loc>
     <lastmod>2021-06-18T20:26:44+07:00</lastmod>
   </url>
@@ -2560,6 +2565,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/escape-url/</loc>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/escape-xml/</loc>
     <lastmod>2021-06-18T20:26:44+07:00</lastmod>
     <priority>0</priority>
@@ -2567,7 +2578,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/escaper/</loc>
-    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2675,7 +2686,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/google-guava/</loc>
-    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2825,7 +2836,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2879,7 +2890,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3533,7 +3544,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-18T20:26:44+07:00</lastmod>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3731,13 +3742,37 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/url/</loc>
-    <lastmod>2021-06-01T21:22:25+07:00</lastmod>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/urlclassloader/</loc>
     <lastmod>2021-06-01T21:22:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/urlescapers/</loc>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/urlformparameterescaper/</loc>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/urlfragmentescaper/</loc>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/urlpathsegmentescaper/</loc>
+    <lastmod>2021-06-18T22:56:50+07:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -966,6 +966,15 @@
     </item>
     
     <item>
+      <title>Escape Url</title>
+      <link>https://simplesolution.dev/tag/escape-url/</link>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/escape-url/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Escape Xml</title>
       <link>https://simplesolution.dev/tag/escape-xml/</link>
       <pubDate>Fri, 18 Jun 2021 20:26:44 +0700</pubDate>
@@ -977,7 +986,7 @@
     <item>
       <title>Escaper</title>
       <link>https://simplesolution.dev/tag/escaper/</link>
-      <pubDate>Fri, 18 Jun 2021 20:26:44 +0700</pubDate>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/escaper/</guid>
       <description></description>
@@ -1139,7 +1148,7 @@
     <item>
       <title>Google Guava</title>
       <link>https://simplesolution.dev/tag/google-guava/</link>
-      <pubDate>Fri, 18 Jun 2021 20:26:44 +0700</pubDate>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/google-guava/</guid>
       <description></description>
@@ -2624,7 +2633,7 @@
     <item>
       <title>Url</title>
       <link>https://simplesolution.dev/tag/url/</link>
-      <pubDate>Tue, 01 Jun 2021 21:22:25 +0700</pubDate>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/url/</guid>
       <description></description>
@@ -2636,6 +2645,42 @@
       <pubDate>Tue, 01 Jun 2021 21:22:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/urlclassloader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urlescapers</title>
+      <link>https://simplesolution.dev/tag/urlescapers/</link>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/urlescapers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urlformparameterescaper</title>
+      <link>https://simplesolution.dev/tag/urlformparameterescaper/</link>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/urlformparameterescaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urlfragmentescaper</title>
+      <link>https://simplesolution.dev/tag/urlfragmentescaper/</link>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/urlfragmentescaper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Urlpathsegmentescaper</title>
+      <link>https://simplesolution.dev/tag/urlpathsegmentescaper/</link>
+      <pubDate>Fri, 18 Jun 2021 22:56:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/urlpathsegmentescaper/</guid>
       <description></description>
     </item>
     
