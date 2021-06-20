@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-log4j-tutorial/</loc>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-pdfbox-tutorial/</loc>
+    <lastmod>2021-06-20T23:11:46+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-poi-tutorial/</loc>
+    <lastmod>2021-06-20T23:07:40+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-commons-text-tutorial/</loc>
+    <lastmod>2021-06-20T22:52:47+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-zxing-tutorial/</loc>
+    <lastmod>2021-06-20T22:47:14+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-oshi-tutorial/</loc>
+    <lastmod>2021-06-20T22:28:40+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-jsoup-tutorial/</loc>
+    <lastmod>2021-06-20T22:25:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-commons-csv-tutorial/</loc>
+    <lastmod>2021-06-20T22:19:08+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-apache-commons-compress-tutorial/</loc>
+    <lastmod>2021-06-20T22:14:42+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-joda-time-tutorial/</loc>
+    <lastmod>2021-06-20T21:51:24+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-between-case-format-of-string-using-google-guava/</loc>
     <lastmod>2021-06-20T16:23:01+07:00</lastmod>
   </url>
@@ -1987,7 +2037,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons/</loc>
-    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
+    <lastmod>2021-06-20T22:52:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1999,13 +2049,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-compress/</loc>
-    <lastmod>2021-01-11T01:16:12+07:00</lastmod>
+    <lastmod>2021-06-20T22:14:42+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-csv/</loc>
-    <lastmod>2020-12-17T00:06:32+07:00</lastmod>
+    <lastmod>2021-06-20T22:19:08+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2023,19 +2073,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-commons-text/</loc>
-    <lastmod>2020-10-08T23:26:48+07:00</lastmod>
+    <lastmod>2021-06-20T22:52:47+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-pdfbox/</loc>
-    <lastmod>2020-01-02T21:58:44+07:00</lastmod>
+    <lastmod>2021-06-20T23:11:46+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/apache-poi/</loc>
-    <lastmod>2020-12-10T00:29:48+07:00</lastmod>
+    <lastmod>2021-06-20T23:07:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2885,14 +2935,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2934,7 +2984,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-tutorials/</loc>
-    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2946,7 +2996,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3120,7 +3170,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/joda-time/</loc>
-    <lastmod>2021-01-22T20:44:28+07:00</lastmod>
+    <lastmod>2021-06-20T21:51:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3150,7 +3200,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/jsoup/</loc>
-    <lastmod>2020-11-30T21:58:08+07:00</lastmod>
+    <lastmod>2021-06-20T22:25:30+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3216,7 +3266,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/log4j/</loc>
-    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3420,7 +3470,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/oshi/</loc>
-    <lastmod>2020-11-05T21:43:31+07:00</lastmod>
+    <lastmod>2021-06-20T22:28:40+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3618,7 +3668,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3635,14 +3685,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3798,7 +3848,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/tutorial/</loc>
-    <lastmod>2021-06-19T00:32:53+07:00</lastmod>
+    <lastmod>2021-06-20T23:20:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3960,7 +4010,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/zxing/</loc>
-    <lastmod>2020-10-26T21:46:52+07:00</lastmod>
+    <lastmod>2021-06-20T22:47:14+07:00</lastmod>
     <priority>0</priority>
   </url>
   

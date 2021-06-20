@@ -6,10 +6,27 @@
     <description>Recent content in Apache Poi on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Dec 2020 00:29:48 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 23:07:40 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-poi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache POI Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-poi-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 23:07:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-poi-tutorial/</guid>
+      <description>In this Java Apache POI tutorial we learn how to use the Apache POI library.
+ How to hide and unhide Excel row
+ How to create multiple fonts Excel cell using RichTextString
+ Spring Boot Web Application Download Excel File
+ How to update Excel file content
+ How to use Excel cell fonts
+ How to merge Excel cells
+ Excel Cell Background Foreground and Font Color
+ Excel Cell Border and Border Color</description>
+    </item>
     
     <item>
       <title>Spring Boot Download Excel File Export from MySQL Database</title>

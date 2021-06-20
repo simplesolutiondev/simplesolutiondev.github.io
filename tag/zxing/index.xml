@@ -6,10 +6,22 @@
     <description>Recent content in Zxing on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2020 21:46:52 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 22:47:14 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/zxing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java ZXing Tutorial</title>
+      <link>https://simplesolution.dev/java-zxing-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:47:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-zxing-tutorial/</guid>
+      <description>In this Java ZXing tutorial we learn how to use the ZXing library.
+ How to read QR code from image file or Base64 String
+ How to generate QR code
+  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Read QR Code from Image File or Base64 String in Java using ZXing</title>

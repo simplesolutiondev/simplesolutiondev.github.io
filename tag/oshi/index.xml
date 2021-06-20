@@ -6,10 +6,25 @@
     <description>Recent content in Oshi on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Nov 2020 21:43:31 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 22:28:40 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/oshi/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java OSHI Tutorial</title>
+      <link>https://simplesolution.dev/java-oshi-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:28:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-oshi-tutorial/</guid>
+      <description>In this Java OSHI tutorial, we learn how to use the OSHI library.
+ How to get file system information
+ How to get virtual memory information
+ How to get physical memory or RAM information
+ How to get CPU information
+ How to get operating system information
+  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Get File System Information in Java using OSHI library</title>

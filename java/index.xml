@@ -6,10 +6,152 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jun 2021 16:23:01 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 23:20:52 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Log4j Tutorial</title>
+      <link>https://simplesolution.dev/java-log4j-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 23:20:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-log4j-tutorial/</guid>
+      <description>In this Java Log4j tutorial we learn how to use the Log4j library.
+ Log4j 2 Properties Configuration with Console Appender
+ Log4j 2 YAML Configuration with Console Appender
+ Log4j 2 XML Configuration with Console Appender
+ Log4j 2 JSON Configuration with Console Appender
+  Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java Apache PDFBox Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-pdfbox-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 23:11:46 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-pdfbox-tutorial/</guid>
+      <description>In this Java Apache PDFBox tutorial we learn how to use the Apache PDFBox library.
+ How to create PDF document page labels
+ How to create Bookmarks for PDF document
+ How to add Metadata to PDF document
+ How to insert image to PDF document
+ How to create PDF document file
+  Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java Apache POI Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-poi-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 23:07:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-poi-tutorial/</guid>
+      <description>In this Java Apache POI tutorial we learn how to use the Apache POI library.
+ How to hide and unhide Excel row
+ How to create multiple fonts Excel cell using RichTextString
+ Spring Boot Web Application Download Excel File
+ How to update Excel file content
+ How to use Excel cell fonts
+ How to merge Excel cells
+ Excel Cell Background Foreground and Font Color
+ Excel Cell Border and Border Color</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons Text Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-text-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:52:47 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-text-tutorial/</guid>
+      <description>In this Java Apache Commons Text tutorial we learn how to use the Apache Commons Text library.
+ How to escape or unescape String for CSV column data
+ How to convert words in a String into camelCase
+ How to substitute a String by replace variables map to Template String
+ How to uncapitalize first character of all words in a String
+ How to swap Lowercase and Uppercase of a String</description>
+    </item>
+    
+    <item>
+      <title>Java ZXing Tutorial</title>
+      <link>https://simplesolution.dev/java-zxing-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:47:14 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-zxing-tutorial/</guid>
+      <description>In this Java ZXing tutorial we learn how to use the ZXing library.
+ How to read QR code from image file or Base64 String
+ How to generate QR code
+  Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java OSHI Tutorial</title>
+      <link>https://simplesolution.dev/java-oshi-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:28:40 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-oshi-tutorial/</guid>
+      <description>In this Java OSHI tutorial, we learn how to use the OSHI library.
+ How to get file system information
+ How to get virtual memory information
+ How to get physical memory or RAM information
+ How to get CPU information
+ How to get operating system information
+  Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java jsoup tutorial</title>
+      <link>https://simplesolution.dev/java-jsoup-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:25:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-tutorial/</guid>
+      <description>In this Java jsoup tutorial, we learn how to use the jsoup library.
+ How to convert HTML into Plain Text
+ How to pretty print XML String and XML file
+ How to get all HTML elements
+ How to clean HTML String to get safe HTML from untrusted HTML String
+ How to get HTML elements by attribute value
+ How to get HTML elements by attribute name</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons CSV Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-csv-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:19:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-csv-tutorial/</guid>
+      <description>In this Java Apache Commons CSV tutorial we learn how to use the Apache Commons CSV library.
+Write CSV File  How to write and read CSV file  Read and Parse CSV Content  How to read and parse CSV file
+ How to read and parse CSV content from an URL
+ How to read and parse CSV content from a String
+ Top 3 Libraries for Writing and Reading CSV File</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons Compress Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-compress-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:14:42 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-compress-tutorial/</guid>
+      <description>In this Java Apache Commons Compress Tutorial we learn how to use the Apache Commons Compress library.
+How to use Apache Commons Compress with .zip files  Extract .zip File
+ Create .zip File
+  Happy Coding 😊</description>
+    </item>
+    
+    <item>
+      <title>Java Joda Time Tutorial</title>
+      <link>https://simplesolution.dev/java-joda-time-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 21:51:24 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-tutorial/</guid>
+      <description>In this Java Joda Time tutorial, we learn how to use different classes of the Joda Time library.
+org.joda.time.DateTime class  How to use DateTime by Examples
+ How to get Date and Time fields value of DateTime object
+ How to create DateTime with Time End of the Day
+ How to compare Joda-Time DateTime using DateTimeComparator
+ How to format DateTime String using ISODateTimeFormat
+ Ho to convert DateTime into Calendar and Vice Versa</description>
+    </item>
     
     <item>
       <title>Java Convert between Case Format of String using Google Guava</title>
@@ -95,7 +237,10 @@ implementation group: &amp;#39;com.google.guava&amp;#39;, name: &amp;#39;guava&a
       
       <guid>https://simplesolution.dev/java-apache-commons-codec-tutorial/</guid>
       <description>In this Java Apache Commons Codec Tutorial we learn how to use the Java Apache Commons Codec library.
-org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  Happy Coding 😊</description>
+org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  org.apache.commons.codec.binary.Base64 class  How to encode a String into Base64
+ How to encode byte array into Base64 format
+ How to encode a String into Base64 format
+ How to encode byte array into Base64 format</description>
     </item>
     
     <item>

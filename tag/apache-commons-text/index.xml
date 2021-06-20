@@ -6,10 +6,24 @@
     <description>Recent content in Apache Commons Text on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2020 23:26:48 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 22:52:47 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons-text/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache Commons Text Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-text-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:52:47 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-text-tutorial/</guid>
+      <description>In this Java Apache Commons Text tutorial we learn how to use the Apache Commons Text library.
+ How to escape or unescape String for CSV column data
+ How to convert words in a String into camelCase
+ How to substitute a String by replace variables map to Template String
+ How to uncapitalize first character of all words in a String
+ How to swap Lowercase and Uppercase of a String</description>
+    </item>
     
     <item>
       <title>Escape or Unescape String for CSV column data in Java using Apache Commons Text</title>

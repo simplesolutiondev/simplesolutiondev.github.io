@@ -6,10 +6,25 @@
     <description>Recent content in Apache Pdfbox on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 21:58:44 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 23:11:46 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-pdfbox/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache PDFBox Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-pdfbox-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 23:11:46 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-pdfbox-tutorial/</guid>
+      <description>In this Java Apache PDFBox tutorial we learn how to use the Apache PDFBox library.
+ How to create PDF document page labels
+ How to create Bookmarks for PDF document
+ How to add Metadata to PDF document
+ How to insert image to PDF document
+ How to create PDF document file
+  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Creating PDF Document Page Labels in Java with Apache PDFBox</title>

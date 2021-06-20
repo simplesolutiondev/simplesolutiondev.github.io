@@ -6,10 +6,24 @@
     <description>Recent content in Log4j on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 May 2019 01:02:10 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 23:20:52 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/log4j/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Log4j Tutorial</title>
+      <link>https://simplesolution.dev/java-log4j-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 23:20:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-log4j-tutorial/</guid>
+      <description>In this Java Log4j tutorial we learn how to use the Log4j library.
+ Log4j 2 Properties Configuration with Console Appender
+ Log4j 2 YAML Configuration with Console Appender
+ Log4j 2 XML Configuration with Console Appender
+ Log4j 2 JSON Configuration with Console Appender
+  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Log4j 2 Properties Configuration with Console Appender</title>

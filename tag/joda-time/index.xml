@@ -6,10 +6,25 @@
     <description>Recent content in Joda Time on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jan 2021 20:44:28 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 21:51:24 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/joda-time/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Joda Time Tutorial</title>
+      <link>https://simplesolution.dev/java-joda-time-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 21:51:24 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-joda-time-tutorial/</guid>
+      <description>In this Java Joda Time tutorial, we learn how to use different classes of the Joda Time library.
+org.joda.time.DateTime class  How to use DateTime by Examples
+ How to get Date and Time fields value of DateTime object
+ How to create DateTime with Time End of the Day
+ How to compare Joda-Time DateTime using DateTimeComparator
+ How to format DateTime String using ISODateTimeFormat
+ Ho to convert DateTime into Calendar and Vice Versa</description>
+    </item>
     
     <item>
       <title>Joda Time Interval by Examples in Java</title>

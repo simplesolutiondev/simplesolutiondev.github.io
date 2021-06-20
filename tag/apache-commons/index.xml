@@ -6,10 +6,49 @@
     <description>Recent content in Apache Commons on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jun 2021 00:32:53 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 22:52:47 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/apache-commons/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Apache Commons Text Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-text-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:52:47 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-text-tutorial/</guid>
+      <description>In this Java Apache Commons Text tutorial we learn how to use the Apache Commons Text library.
+ How to escape or unescape String for CSV column data
+ How to convert words in a String into camelCase
+ How to substitute a String by replace variables map to Template String
+ How to uncapitalize first character of all words in a String
+ How to swap Lowercase and Uppercase of a String</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons CSV Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-csv-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:19:08 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-csv-tutorial/</guid>
+      <description>In this Java Apache Commons CSV tutorial we learn how to use the Apache Commons CSV library.
+Write CSV File  How to write and read CSV file  Read and Parse CSV Content  How to read and parse CSV file
+ How to read and parse CSV content from an URL
+ How to read and parse CSV content from a String
+ Top 3 Libraries for Writing and Reading CSV File</description>
+    </item>
+    
+    <item>
+      <title>Java Apache Commons Compress Tutorial</title>
+      <link>https://simplesolution.dev/java-apache-commons-compress-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:14:42 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-apache-commons-compress-tutorial/</guid>
+      <description>In this Java Apache Commons Compress Tutorial we learn how to use the Apache Commons Compress library.
+How to use Apache Commons Compress with .zip files  Extract .zip File
+ Create .zip File
+  Happy Coding 😊</description>
+    </item>
     
     <item>
       <title>Java Apache Commons Codec Tutorial</title>
@@ -18,7 +57,10 @@
       
       <guid>https://simplesolution.dev/java-apache-commons-codec-tutorial/</guid>
       <description>In this Java Apache Commons Codec Tutorial we learn how to use the Java Apache Commons Codec library.
-org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  Happy Coding 😊</description>
+org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  org.apache.commons.codec.binary.Base64 class  How to encode a String into Base64
+ How to encode byte array into Base64 format
+ How to encode a String into Base64 format
+ How to encode byte array into Base64 format</description>
     </item>
     
     <item>

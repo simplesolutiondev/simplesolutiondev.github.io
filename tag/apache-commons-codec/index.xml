@@ -18,7 +18,10 @@
       
       <guid>https://simplesolution.dev/java-apache-commons-codec-tutorial/</guid>
       <description>In this Java Apache Commons Codec Tutorial we learn how to use the Java Apache Commons Codec library.
-org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  Happy Coding 😊</description>
+org.apache.commons.codec.binary.BinaryCodec class  Encode and Decode String to Binary Format  org.apache.commons.codec.binary.Base32 class  Base32 Encoding and Decoding  org.apache.commons.codec.binary.Base64 class  How to encode a String into Base64
+ How to encode byte array into Base64 format
+ How to encode a String into Base64 format
+ How to encode byte array into Base64 format</description>
     </item>
     
     <item>

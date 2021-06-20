@@ -6,10 +6,25 @@
     <description>Recent content in Jsoup on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 21:58:08 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jun 2021 22:25:30 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/jsoup/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java jsoup tutorial</title>
+      <link>https://simplesolution.dev/java-jsoup-tutorial/</link>
+      <pubDate>Sun, 20 Jun 2021 22:25:30 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-jsoup-tutorial/</guid>
+      <description>In this Java jsoup tutorial, we learn how to use the jsoup library.
+ How to convert HTML into Plain Text
+ How to pretty print XML String and XML file
+ How to get all HTML elements
+ How to clean HTML String to get safe HTML from untrusted HTML String
+ How to get HTML elements by attribute value
+ How to get HTML elements by attribute name</description>
+    </item>
     
     <item>
       <title>Convert HTML into Plain Text in Java using jsoup</title>
