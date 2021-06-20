@@ -336,6 +336,15 @@
     </item>
     
     <item>
+      <title>Caseformat</title>
+      <link>https://simplesolution.dev/tag/caseformat/</link>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/caseformat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Caseutils</title>
       <link>https://simplesolution.dev/tag/caseutils/</link>
       <pubDate>Thu, 08 Oct 2020 22:31:54 +0700</pubDate>
@@ -1148,7 +1157,7 @@
     <item>
       <title>Google Guava</title>
       <link>https://simplesolution.dev/tag/google-guava/</link>
-      <pubDate>Sat, 19 Jun 2021 16:46:01 +0700</pubDate>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/google-guava/</guid>
       <description></description>
@@ -1812,6 +1821,33 @@
     </item>
     
     <item>
+      <title>Lower_camel</title>
+      <link>https://simplesolution.dev/tag/lower_camel/</link>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/lower_camel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lower_hyphen</title>
+      <link>https://simplesolution.dev/tag/lower_hyphen/</link>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/lower_hyphen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lower_underscore</title>
+      <link>https://simplesolution.dev/tag/lower_underscore/</link>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/lower_underscore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Map</title>
       <link>https://simplesolution.dev/tag/map/</link>
       <pubDate>Sun, 30 May 2021 17:23:53 +0700</pubDate>
@@ -2444,7 +2480,7 @@
     <item>
       <title>String</title>
       <link>https://simplesolution.dev/tag/string/</link>
-      <pubDate>Sat, 19 Jun 2021 16:46:01 +0700</pubDate>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/string/</guid>
       <description></description>
@@ -2627,6 +2663,24 @@
       <pubDate>Sun, 06 Jun 2021 23:03:25 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/upload/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upper_camel</title>
+      <link>https://simplesolution.dev/tag/upper_camel/</link>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/upper_camel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upper_underscore</title>
+      <link>https://simplesolution.dev/tag/upper_underscore/</link>
+      <pubDate>Sun, 20 Jun 2021 16:23:01 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/upper_underscore/</guid>
       <description></description>
     </item>
     

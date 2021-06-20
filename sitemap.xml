@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-between-case-format-of-string-using-google-guava/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-truncate-ascii-string-using-google-guava/</loc>
     <lastmod>2021-06-19T16:46:01+07:00</lastmod>
   </url>
@@ -2179,6 +2184,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/caseformat/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/caseutils/</loc>
     <lastmod>2020-10-08T22:31:54+07:00</lastmod>
     <priority>0</priority>
@@ -2731,7 +2742,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/google-guava/</loc>
-    <lastmod>2021-06-19T16:46:01+07:00</lastmod>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2881,7 +2892,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-19T16:46:01+07:00</lastmod>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2935,7 +2946,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-19T16:46:01+07:00</lastmod>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3212,6 +3223,24 @@
   <url>
     <loc>https://simplesolution.dev/tag/long/</loc>
     <lastmod>2021-01-31T23:14:36+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/lower_camel/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/lower_hyphen/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/lower_underscore/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3589,7 +3618,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-19T16:46:01+07:00</lastmod>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3655,7 +3684,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/string/</loc>
-    <lastmod>2021-06-19T16:46:01+07:00</lastmod>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3782,6 +3811,18 @@
   <url>
     <loc>https://simplesolution.dev/tag/upload/</loc>
     <lastmod>2021-06-06T23:03:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/upper_camel/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/upper_underscore/</loc>
+    <lastmod>2021-06-20T16:23:01+07:00</lastmod>
     <priority>0</priority>
   </url>
   
