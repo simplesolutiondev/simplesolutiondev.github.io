@@ -21,5 +21,42 @@
    (adsbygoogle = window.adsbygoogle || []).push({});  Create New Spring Boot Web Project From Spring Tool Suite IDE select menu File &amp;gt; New &amp;gt; Spring Starter Project.</description>
     </item>
     
+    <item>
+      <title>Deserializes JSON string into Java object using Gson.fromJson() with Gson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</guid>
+      <description>Java Code Examples for com.google.gson.Gson.fromJson()
+This method to deserializes a JSON string into a Java object of the specified class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.google.code.gson&amp;#39;, name: &amp;#39;gson&amp;#39;, version: &amp;#39;2.8.5&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.google.code.gson&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;gson&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.8.5&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.google.gson.Gson.fromJson() package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON string using Gson.toJson() with Gson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.google.gson.gson.tojson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.tojson/</guid>
+      <description>Java Code Examples for com.google.gson.Gson.toJson()
+This method to serializes the Java object into JSON string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.google.code.gson&amp;#39;, name: &amp;#39;gson&amp;#39;, version: &amp;#39;2.8.5&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.google.code.gson&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;gson&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.8.5&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.google.gson.Gson.toJson() package simplesolution.dev;import com.google.gson.Gson;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class GsonToJsonExamples {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Top 5 Libraries for Serialization and Deserialization JSON in Java</title>
+      <link>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</link>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</guid>
+      <description>In this blog post we will go through 5 useful open source libraries to serialization and deserialize JSON data in Java application. For each library we will write a simple code sample to show you how to use the library to convert Java object to a JSON string and vice-versa.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Gson Github repository: github.com/google/gson
+Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.</description>
+    </item>
+    
   </channel>
 </rss>

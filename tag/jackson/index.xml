@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jackson on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/jackson/</link>
+    <description>Recent content in Jackson on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Apr 2019 16:30:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/jackson/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deserialize JSON string into Java object using ObjectMapper.readValue() with Jackson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.readvalue/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.readvalue/</guid>
+      <description>Java Code Examples for com.fasterxml.jackson.databind.ObjectMapper.readValue()
+This method to deserialize JSON string into a Java object.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Jackson dependency into your project Using Gradle compile group: &amp;#39;com.fasterxml.jackson.core&amp;#39;, name: &amp;#39;jackson-databind&amp;#39;, version: &amp;#39;2.9.8&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.fasterxml.jackson.core&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jackson-databind&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.9.8&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.fasterxml.jackson.databind.ObjectMapper.readValue() package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.List;import java.util.Map;public class ObjectMapperReadValueExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON string using ObjectMapper.writeValueAsString() with Jackson</title>
+      <link>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.writevalueasstring/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.writevalueasstring/</guid>
+      <description>Java Code Examples for com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString()
+This method can be used to serialize any Java object into a JSON String.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Jackson dependency into your project Using Gradle compile group: &amp;#39;com.fasterxml.jackson.core&amp;#39;, name: &amp;#39;jackson-databind&amp;#39;, version: &amp;#39;2.9.8&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.fasterxml.jackson.core&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jackson-databind&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.9.8&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString() package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class ObjectMapperWriteValueAsStringExamples {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Top 5 Libraries for Serialization and Deserialization JSON in Java</title>
+      <link>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</link>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</guid>
+      <description>In this blog post we will go through 5 useful open source libraries to serialization and deserialize JSON data in Java application. For each library we will write a simple code sample to show you how to use the library to convert Java object to a JSON string and vice-versa.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Gson Github repository: github.com/google/gson
+Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.</description>
+    </item>
+    
+  </channel>
+</rss>

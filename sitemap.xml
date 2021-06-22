@@ -2706,6 +2706,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/fastjson/</loc>
+    <lastmod>2019-04-13T16:30:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/file/</loc>
     <lastmod>2021-06-11T22:04:40+07:00</lastmod>
     <priority>0</priority>
@@ -2934,20 +2940,32 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/jackson/</loc>
+    <lastmod>2019-04-13T16:30:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jackson-databind/</loc>
+    <lastmod>2019-04-13T16:30:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/jar/</loc>
     <lastmod>2019-05-01T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-21T00:08:24+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-06-21T00:08:24+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3204,6 +3222,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/jsoniter/</loc>
+    <lastmod>2019-04-13T17:30:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/jsoup/</loc>
     <lastmod>2021-06-20T22:25:30+07:00</lastmod>
     <priority>0</priority>
@@ -3416,6 +3440,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/mongodb/</loc>
     <lastmod>2021-01-25T00:20:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/moshi/</loc>
+    <lastmod>2019-04-13T16:30:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3690,14 +3720,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   

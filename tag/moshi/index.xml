@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moshi on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/moshi/</link>
+    <description>Recent content in Moshi on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Apr 2019 16:30:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/moshi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deserializes JSON string into Java object using JsonAdapter.fromJson() with Moshi</title>
+      <link>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.fromjson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.fromjson/</guid>
+      <description>Java Code Examples for com.squareup.moshi.JsonAdapter.fromJson()
+This method to deserializes a JSON string into a Java object of the specified class.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Moshi dependency into your project Using Gradle compile group: &amp;#39;com.squareup.moshi&amp;#39;, name: &amp;#39;moshi&amp;#39;, version: &amp;#39;1.8.0&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.squareup.moshi&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;moshi&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.squareup.moshi.JsonAdapter.fromJson() package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.io.IOException;import java.util.List;public class JsonAdapterFromJsonExamples {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Serializes Java object into JSON String using JsonAdapter.toJson() with Moshi</title>
+      <link>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.tojson/</link>
+      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.tojson/</guid>
+      <description>Java Code Examples for com.squareup.moshi.JsonAdapter.toJson()
+This method to serializes the Java object into JSON string.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Moshi dependency into your project Using Gradle compile group: &amp;#39;com.squareup.moshi&amp;#39;, name: &amp;#39;moshi&amp;#39;, version: &amp;#39;1.8.0&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.squareup.moshi&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;moshi&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.squareup.moshi.JsonAdapter.toJson() package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonAdapterToJsonExamples {public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Top 5 Libraries for Serialization and Deserialization JSON in Java</title>
+      <link>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</link>
+      <pubDate>Sat, 30 Mar 2019 14:00:00 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/top-5-libraries-for-serialization-and-deserialization-json-in-java/</guid>
+      <description>In this blog post we will go through 5 useful open source libraries to serialization and deserialize JSON data in Java application. For each library we will write a simple code sample to show you how to use the library to convert Java object to a JSON string and vice-versa.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Gson Github repository: github.com/google/gson
+Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.</description>
+    </item>
+    
+  </channel>
+</rss>

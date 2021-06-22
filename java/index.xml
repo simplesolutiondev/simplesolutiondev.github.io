@@ -3626,7 +3626,9 @@ This method to add two BigDecimal values.
       <guid>https://simplesolution.dev/java-code-examples/com.jsoniter.jsoniterator.deserialize/</guid>
       <description>Java Code Examples for com.jsoniter.JsonIterator.deserialize()
 This method to deserializes a JSON string into a Java object of the specified class.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.jsoniter.JsonIterator;import java.util.List;import java.util.Map;public class JsonIteratorDeserializeExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = JsonIterator.deserialize(data, List.class);System.out.println(&amp;#34;[Jsoniter] Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Jsoniter dependency into your project Using Gradle compile group: &amp;#39;com.jsoniter&amp;#39;, name: &amp;#39;jsoniter&amp;#39;, version: &amp;#39;0.9.23&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.jsoniter&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jsoniter&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;0.9.23&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.jsoniter.JsonIterator.deserialize() package simplesolution.dev;import com.jsoniter.JsonIterator;import java.util.List;import java.util.Map;public class JsonIteratorDeserializeExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3637,7 +3639,9 @@ This method to deserializes a JSON string into a Java object of the specified cl
       <guid>https://simplesolution.dev/java-code-examples/com.jsoniter.output.jsonstream.serialize/</guid>
       <description>Java Code Examples for com.jsoniter.output.JsonStream.serialize()
 This method to serializes the Java object into JSON string.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.jsoniter.output.JsonStream;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonStreamSerializeExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Jsoniter dependency into your project Using Gradle compile group: &amp;#39;com.jsoniter&amp;#39;, name: &amp;#39;jsoniter&amp;#39;, version: &amp;#39;0.9.23&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.jsoniter&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jsoniter&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;0.9.23&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.jsoniter.output.JsonStream.serialize() package simplesolution.dev;import com.jsoniter.output.JsonStream;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonStreamSerializeExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3659,7 +3663,9 @@ This method to serializes the Java object into JSON string.
       <guid>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.readvalue/</guid>
       <description>Java Code Examples for com.fasterxml.jackson.databind.ObjectMapper.readValue()
 This method to deserialize JSON string into a Java object.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.List;import java.util.Map;public class ObjectMapperReadValueExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;ObjectMapper objectMapper = new ObjectMapper();try {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = objectMapper.readValue(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);} catch (IOException ex) {ex.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Jackson dependency into your project Using Gradle compile group: &amp;#39;com.fasterxml.jackson.core&amp;#39;, name: &amp;#39;jackson-databind&amp;#39;, version: &amp;#39;2.9.8&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.fasterxml.jackson.core&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jackson-databind&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.9.8&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.fasterxml.jackson.databind.ObjectMapper.readValue() package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.List;import java.util.Map;public class ObjectMapperReadValueExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.</description>
     </item>
     
     <item>
@@ -3670,7 +3676,9 @@ This method to deserialize JSON string into a Java object.
       <guid>https://simplesolution.dev/java-code-examples/com.alibaba.fastjson.json.parseobject/</guid>
       <description>Java Code Examples for com.alibaba.fastjson.JSON.parseObject()
 This method to deserializes the JSON string into a Java object.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.alibaba.fastjson.JSON;import java.util.List;import java.util.Map;public class JSONParseObjectExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = JSON.parseObject(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Fastjson dependency into your project Using Gradle compile group: &amp;#39;com.alibaba&amp;#39;, name: &amp;#39;fastjson&amp;#39;, version: &amp;#39;1.2.56&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.alibaba&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;fastjson&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.2.56&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.alibaba.fastjson.JSON.parseObject() package simplesolution.dev;import com.alibaba.fastjson.JSON;import java.util.List;import java.util.Map;public class JSONParseObjectExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.</description>
     </item>
     
     <item>
@@ -3681,7 +3689,9 @@ This method to deserializes the JSON string into a Java object.
       <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.fromjson/</guid>
       <description>Java Code Examples for com.google.gson.Gson.fromJson()
 This method to deserializes a JSON string into a Java object of the specified class.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String... args) {String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Gson gson = new Gson();List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; objectFromJsonString = gson.fromJson(data, List.class);System.out.println(&amp;#34;Object from String: &amp;#34; + objectFromJsonString);}} Happy Coding 😊</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.google.code.gson&amp;#39;, name: &amp;#39;gson&amp;#39;, version: &amp;#39;2.8.5&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.google.code.gson&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;gson&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.8.5&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.google.gson.Gson.fromJson() package simplesolution.dev;import com.google.gson.Gson;import java.util.List;import java.util.Map;public class GsonFromJsonExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3692,7 +3702,9 @@ This method to deserializes a JSON string into a Java object of the specified cl
       <guid>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.fromjson/</guid>
       <description>Java Code Examples for com.squareup.moshi.JsonAdapter.fromJson()
 This method to deserializes a JSON string into a Java object of the specified class.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.io.IOException;import java.util.List;public class JsonAdapterFromJsonExamples {public static void main(String... args){String data = &amp;#34;[{\&amp;#34;name\&amp;#34;:\&amp;#34;Sample JSON Serialization\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev\&amp;#34;},{\&amp;#34;name\&amp;#34;:\&amp;#34;Java Tutorials\&amp;#34;,\&amp;#34;url\&amp;#34;:\&amp;#34;https://simplesolution.dev/java\&amp;#34;}]&amp;#34;;Moshi moshi = new Moshi.Builder().build();JsonAdapter&amp;lt;List&amp;gt; jsonAdapter = moshi.adapter(List.class);try {List&amp;lt;Employee&amp;gt; objectFromJsonString = jsonAdapter.fromJson(data);System.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Moshi dependency into your project Using Gradle compile group: &amp;#39;com.squareup.moshi&amp;#39;, name: &amp;#39;moshi&amp;#39;, version: &amp;#39;1.8.0&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.squareup.moshi&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;moshi&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.squareup.moshi.JsonAdapter.fromJson() package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.io.IOException;import java.util.List;public class JsonAdapterFromJsonExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3703,7 +3715,9 @@ This method to deserializes a JSON string into a Java object of the specified cl
       <guid>https://simplesolution.dev/java-code-examples/com.squareup.moshi.jsonadapter.tojson/</guid>
       <description>Java Code Examples for com.squareup.moshi.JsonAdapter.toJson()
 This method to serializes the Java object into JSON string.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonAdapterToJsonExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Moshi dependency into your project Using Gradle compile group: &amp;#39;com.squareup.moshi&amp;#39;, name: &amp;#39;moshi&amp;#39;, version: &amp;#39;1.8.0&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.squareup.moshi&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;moshi&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.8.0&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.squareup.moshi.JsonAdapter.toJson() package simplesolution.dev;import com.squareup.moshi.JsonAdapter;import com.squareup.moshi.Moshi;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JsonAdapterToJsonExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3714,7 +3728,9 @@ This method to serializes the Java object into JSON string.
       <guid>https://simplesolution.dev/java-code-examples/com.google.gson.gson.tojson/</guid>
       <description>Java Code Examples for com.google.gson.Gson.toJson()
 This method to serializes the Java object into JSON string.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.google.gson.Gson;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class GsonToJsonExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Gson dependency into your project Using Gradle compile group: &amp;#39;com.google.code.gson&amp;#39;, name: &amp;#39;gson&amp;#39;, version: &amp;#39;2.8.5&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.google.code.gson&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;gson&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.8.5&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.google.gson.Gson.toJson() package simplesolution.dev;import com.google.gson.Gson;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class GsonToJsonExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3725,7 +3741,9 @@ This method to serializes the Java object into JSON string.
       <guid>https://simplesolution.dev/java-code-examples/com.alibaba.fastjson.json.tojsonstring/</guid>
       <description>Java Code Examples for com.alibaba.fastjson.JSON.toJSONString()
 This method to serializes the specified Java object into JSON string.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.alibaba.fastjson.JSON;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JSONToJSONStringExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.add(item1);Map&amp;lt;String, String&amp;gt; item2 = new HashMap&amp;lt;&amp;gt;();item2.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Fastjson dependency into your project Using Gradle compile group: &amp;#39;com.alibaba&amp;#39;, name: &amp;#39;fastjson&amp;#39;, version: &amp;#39;1.2.56&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.alibaba&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;fastjson&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.2.56&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.alibaba.fastjson.JSON.toJSONString() package simplesolution.dev;import com.alibaba.fastjson.JSON;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class JSONToJSONStringExamples {public static void main(String.</description>
     </item>
     
     <item>
@@ -3736,7 +3754,9 @@ This method to serializes the specified Java object into JSON string.
       <guid>https://simplesolution.dev/java-code-examples/com.fasterxml.jackson.databind.objectmapper.writevalueasstring/</guid>
       <description>Java Code Examples for com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString()
 This method can be used to serialize any Java object into a JSON String.
-   (adsbygoogle = window.adsbygoogle || []).push({});  package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class ObjectMapperWriteValueAsStringExamples {public static void main(String... args) {List&amp;lt;Map&amp;lt;String, String&amp;gt;&amp;gt; data = new ArrayList&amp;lt;&amp;gt;();Map&amp;lt;String, String&amp;gt; item1 = new HashMap&amp;lt;&amp;gt;();item1.put(&amp;#34;name&amp;#34;, &amp;#34;Sample JSON Serialization&amp;#34;);item1.put(&amp;#34;url&amp;#34;, &amp;#34;https://simplesolution.dev&amp;#34;);data.</description>
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Jackson dependency into your project Using Gradle compile group: &amp;#39;com.fasterxml.jackson.core&amp;#39;, name: &amp;#39;jackson-databind&amp;#39;, version: &amp;#39;2.9.8&amp;#39;
+Using Maven &amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;com.fasterxml.jackson.core&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jackson-databind&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.9.8&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;
+How to use com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString() package simplesolution.dev;import com.fasterxml.jackson.databind.ObjectMapper;import java.io.IOException;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;public class ObjectMapperWriteValueAsStringExamples {public static void main(String.</description>
     </item>
     
     <item>
