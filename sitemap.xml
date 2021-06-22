@@ -2083,6 +2083,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/apache-log4j-2/</loc>
+    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/apache-pdfbox/</loc>
     <lastmod>2021-06-20T23:11:46+07:00</lastmod>
     <priority>0</priority>
@@ -2941,13 +2947,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/jackson/</loc>
-    <lastmod>2019-04-13T16:30:10+07:00</lastmod>
+    <lastmod>2019-05-06T01:00:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/jackson-databind/</loc>
     <lastmod>2019-04-13T16:30:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jackson-dataformat-yaml/</loc>
+    <lastmod>2019-05-07T01:01:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3296,6 +3308,54 @@
   <url>
     <loc>https://simplesolution.dev/tag/log4j/</loc>
     <lastmod>2021-06-20T23:20:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-api/</loc>
+    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-core/</loc>
+    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-json/</loc>
+    <lastmod>2019-05-06T01:00:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-logger/</loc>
+    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-logmanager/</loc>
+    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-properties/</loc>
+    <lastmod>2019-05-07T01:02:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-xml/</loc>
+    <lastmod>2019-05-07T01:00:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/log4j-yaml/</loc>
+    <lastmod>2019-05-07T01:01:10+07:00</lastmod>
     <priority>0</priority>
   </url>
   

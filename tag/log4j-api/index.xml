@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log4j Api on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/log4j-api/</link>
+    <description>Recent content in Log4j Api on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 May 2019 01:02:10 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/log4j-api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Log4j 2 Properties Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-properties-configuration-console-appender/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-properties-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with Properties configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project Add dependencies below to your build.gradle if you are using Gradle build. dependencies {compile group: &amp;#39;org.apache.logging.log4j&amp;#39;, name: &amp;#39;log4j-api&amp;#39;, version: &amp;#39;2.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 YAML Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-yaml-configuration-console-appender/</link>
+      <pubDate>Tue, 07 May 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-yaml-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with YAML configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project In order to read YAML configuration file Log4j 2 using Jackson and jackson-dataformat-yaml libraries so that you need to add these dependencies to your project.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 XML Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-xml-configuration-console-appender/</link>
+      <pubDate>Tue, 07 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-xml-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with XML configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project Add dependencies below to your build.gradle if you are using Gradle build. dependencies {compile group: &amp;#39;org.apache.logging.log4j&amp;#39;, name: &amp;#39;log4j-api&amp;#39;, version: &amp;#39;2.</description>
+    </item>
+    
+    <item>
+      <title>Log4j 2 JSON Configuration with Console Appender</title>
+      <link>https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/</link>
+      <pubDate>Mon, 06 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-code-examples/log4j2-json-configuration-console-appender/</guid>
+      <description>Java Code Examples for using
+ org.apache.logging.log4j.LogManager org.apache.logging.log4j.Logger  The Java code example below to show you how to configure Log4j 2 with JSON configuration file to log messages to sytem console using Console appender.
+   (adsbygoogle = window.adsbygoogle || []).push({});  Adding Log2j 2 Dependencies to your project In order to read JSON configuration file Log4j 2 using Jackson library so that you need to add Jackson dependencies to your project.</description>
+    </item>
+    
+  </channel>
+</rss>

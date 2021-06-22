@@ -102,6 +102,15 @@
     </item>
     
     <item>
+      <title>Apache Log4j 2</title>
+      <link>https://simplesolution.dev/tag/apache-log4j-2/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/apache-log4j-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Apache Pdfbox</title>
       <link>https://simplesolution.dev/tag/apache-pdfbox/</link>
       <pubDate>Sun, 20 Jun 2021 23:11:46 +0700</pubDate>
@@ -1373,7 +1382,7 @@
     <item>
       <title>Jackson</title>
       <link>https://simplesolution.dev/tag/jackson/</link>
-      <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
+      <pubDate>Mon, 06 May 2019 01:00:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/jackson/</guid>
       <description></description>
@@ -1385,6 +1394,15 @@
       <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/jackson-databind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jackson Dataformat Yaml</title>
+      <link>https://simplesolution.dev/tag/jackson-dataformat-yaml/</link>
+      <pubDate>Tue, 07 May 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/jackson-dataformat-yaml/</guid>
       <description></description>
     </item>
     
@@ -1844,6 +1862,78 @@
       <pubDate>Sun, 20 Jun 2021 23:20:52 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/log4j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Api</title>
+      <link>https://simplesolution.dev/tag/log4j-api/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Core</title>
+      <link>https://simplesolution.dev/tag/log4j-core/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Json</title>
+      <link>https://simplesolution.dev/tag/log4j-json/</link>
+      <pubDate>Mon, 06 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Logger</title>
+      <link>https://simplesolution.dev/tag/log4j-logger/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-logger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Logmanager</title>
+      <link>https://simplesolution.dev/tag/log4j-logmanager/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-logmanager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Properties</title>
+      <link>https://simplesolution.dev/tag/log4j-properties/</link>
+      <pubDate>Tue, 07 May 2019 01:02:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-properties/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Xml</title>
+      <link>https://simplesolution.dev/tag/log4j-xml/</link>
+      <pubDate>Tue, 07 May 2019 01:00:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-xml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log4j Yaml</title>
+      <link>https://simplesolution.dev/tag/log4j-yaml/</link>
+      <pubDate>Tue, 07 May 2019 01:01:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/log4j-yaml/</guid>
       <description></description>
     </item>
     
