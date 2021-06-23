@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-json-string-to-java-object-using-gson/</loc>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-google-guava-tutorial/</loc>
     <lastmod>2021-06-21T00:08:24+07:00</lastmod>
   </url>
@@ -2515,7 +2520,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/convert/</loc>
-    <lastmod>2021-06-19T14:36:33+07:00</lastmod>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2827,7 +2832,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gson-fromjson/</loc>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gson-typetoken/</loc>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2977,7 +2994,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-21T00:08:24+07:00</lastmod>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3031,7 +3048,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-21T00:08:24+07:00</lastmod>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3223,7 +3240,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2020-10-24T12:50:59+07:00</lastmod>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3763,7 +3780,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-21T00:08:24+07:00</lastmod>
+    <lastmod>2021-06-23T22:52:39+07:00</lastmod>
     <priority>0</priority>
   </url>
   

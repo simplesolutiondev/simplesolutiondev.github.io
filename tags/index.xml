@@ -734,7 +734,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Sat, 19 Jun 2021 14:36:33 +0700</pubDate>
+      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -1202,9 +1202,27 @@
     <item>
       <title>Gson</title>
       <link>https://simplesolution.dev/tag/gson/</link>
-      <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
+      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gson Fromjson</title>
+      <link>https://simplesolution.dev/tag/gson-fromjson/</link>
+      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gson-fromjson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gson Typetoken</title>
+      <link>https://simplesolution.dev/tag/gson-typetoken/</link>
+      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gson-typetoken/</guid>
       <description></description>
     </item>
     
@@ -1733,7 +1751,7 @@
     <item>
       <title>Json</title>
       <link>https://simplesolution.dev/tag/json/</link>
-      <pubDate>Sat, 24 Oct 2020 12:50:59 +0700</pubDate>
+      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
       <description></description>

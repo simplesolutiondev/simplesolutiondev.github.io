@@ -6,10 +6,20 @@
     <description>Recent content in Convert on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jun 2021 14:36:33 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jun 2021 22:52:39 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/convert/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert JSON String to Java Object in Java using Gson</title>
+      <link>https://simplesolution.dev/java-convert-json-string-to-java-object-using-gson/</link>
+      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-json-string-to-java-object-using-gson/</guid>
+      <description>In this Java Gson tutorial we learn how to use the Gson library to convert a JSON String into a Java object by using Gson class. Via different Java code examples we show you how to convert a JSON String into Java HashMap, an object of a custom defined class or a List of objects.
+How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Java Convert ASCII String to UPPERCASE using Google Guava</title>
