@@ -734,7 +734,7 @@
     <item>
       <title>Convert</title>
       <link>https://simplesolution.dev/tag/convert/</link>
-      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/convert/</guid>
       <description></description>
@@ -1202,7 +1202,7 @@
     <item>
       <title>Gson</title>
       <link>https://simplesolution.dev/tag/gson/</link>
-      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson/</guid>
       <description></description>
@@ -1218,11 +1218,29 @@
     </item>
     
     <item>
+      <title>Gson Tojson</title>
+      <link>https://simplesolution.dev/tag/gson-tojson/</link>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gson-tojson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gson Typetoken</title>
       <link>https://simplesolution.dev/tag/gson-typetoken/</link>
       <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson-typetoken/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hashmap to Json</title>
+      <link>https://simplesolution.dev/tag/hashmap-to-json/</link>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/hashmap-to-json/</guid>
       <description></description>
     </item>
     
@@ -1751,7 +1769,7 @@
     <item>
       <title>Json</title>
       <link>https://simplesolution.dev/tag/json/</link>
-      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
       <description></description>
@@ -1826,6 +1844,15 @@
       <pubDate>Sat, 09 Jan 2021 16:55:21 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>List to Json</title>
+      <link>https://simplesolution.dev/tag/list-to-json/</link>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/list-to-json/</guid>
       <description></description>
     </item>
     
@@ -2222,6 +2249,15 @@
       <pubDate>Sun, 04 Oct 2020 23:07:43 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/numberutils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object to Json</title>
+      <link>https://simplesolution.dev/tag/object-to-json/</link>
+      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/object-to-json/</guid>
       <description></description>
     </item>
     
