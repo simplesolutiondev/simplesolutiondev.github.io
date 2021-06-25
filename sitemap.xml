@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-generate-pretty-print-json-string-using-gson/</loc>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-java-object-to-json-string-using-gson/</loc>
     <lastmod>2021-06-24T21:14:58+07:00</lastmod>
   </url>
@@ -2837,7 +2842,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2849,7 +2854,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-tojson/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2860,8 +2865,14 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/gsonbuilder/</loc>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/hashmap-to-json/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3011,7 +3022,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3065,7 +3076,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3257,7 +3268,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3670,6 +3681,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/pretty-print-json/</loc>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/properties/</loc>
     <lastmod>2021-03-03T23:06:17+07:00</lastmod>
     <priority>0</priority>
@@ -3809,7 +3826,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
     <priority>0</priority>
   </url>
   

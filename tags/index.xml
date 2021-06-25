@@ -1202,7 +1202,7 @@
     <item>
       <title>Gson</title>
       <link>https://simplesolution.dev/tag/gson/</link>
-      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson/</guid>
       <description></description>
@@ -1220,7 +1220,7 @@
     <item>
       <title>Gson Tojson</title>
       <link>https://simplesolution.dev/tag/gson-tojson/</link>
-      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson-tojson/</guid>
       <description></description>
@@ -1236,9 +1236,18 @@
     </item>
     
     <item>
+      <title>Gsonbuilder</title>
+      <link>https://simplesolution.dev/tag/gsonbuilder/</link>
+      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gsonbuilder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hashmap to Json</title>
       <link>https://simplesolution.dev/tag/hashmap-to-json/</link>
-      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/hashmap-to-json/</guid>
       <description></description>
@@ -1769,7 +1778,7 @@
     <item>
       <title>Json</title>
       <link>https://simplesolution.dev/tag/json/</link>
-      <pubDate>Thu, 24 Jun 2021 21:14:58 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
       <description></description>
@@ -2375,6 +2384,15 @@
       <pubDate>Sun, 17 Jan 2021 13:15:15 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/period/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pretty Print Json</title>
+      <link>https://simplesolution.dev/tag/pretty-print-json/</link>
+      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/pretty-print-json/</guid>
       <description></description>
     </item>
     
