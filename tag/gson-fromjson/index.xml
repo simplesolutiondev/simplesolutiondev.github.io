@@ -6,10 +6,20 @@
     <description>Recent content in Gson Fromjson on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jun 2021 22:52:39 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jun 2021 22:22:12 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/gson-fromjson/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert JSON File to Java Object in Java using Gson</title>
+      <link>https://simplesolution.dev/java-convert-json-file-to-java-object-using-gson/</link>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-json-file-to-java-object-using-gson/</guid>
+      <description>In this Java Gson tutorial we learn how to convert a JSON file into a Java object using the Gson class of the Gson library. By different Java example programs we show you how to convert a JSON file into a HashMap object, a list of Map, an object of custom defined classes or a List of objects.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Convert JSON String to Java Object in Java using Gson</title>

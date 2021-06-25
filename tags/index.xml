@@ -1112,7 +1112,7 @@
     <item>
       <title>Filereader</title>
       <link>https://simplesolution.dev/tag/filereader/</link>
-      <pubDate>Mon, 24 May 2021 22:49:28 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/filereader/</guid>
       <description></description>
@@ -1202,7 +1202,7 @@
     <item>
       <title>Gson</title>
       <link>https://simplesolution.dev/tag/gson/</link>
-      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson/</guid>
       <description></description>
@@ -1211,7 +1211,7 @@
     <item>
       <title>Gson Fromjson</title>
       <link>https://simplesolution.dev/tag/gson-fromjson/</link>
-      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson-fromjson/</guid>
       <description></description>
@@ -1229,7 +1229,7 @@
     <item>
       <title>Gson Typetoken</title>
       <link>https://simplesolution.dev/tag/gson-typetoken/</link>
-      <pubDate>Wed, 23 Jun 2021 22:52:39 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson-typetoken/</guid>
       <description></description>
@@ -1778,9 +1778,36 @@
     <item>
       <title>Json</title>
       <link>https://simplesolution.dev/tag/json/</link>
-      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json File to Hashmap</title>
+      <link>https://simplesolution.dev/tag/json-file-to-hashmap/</link>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/json-file-to-hashmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json File to List</title>
+      <link>https://simplesolution.dev/tag/json-file-to-list/</link>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/json-file-to-list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json File to Object</title>
+      <link>https://simplesolution.dev/tag/json-file-to-object/</link>
+      <pubDate>Fri, 25 Jun 2021 22:22:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/json-file-to-object/</guid>
       <description></description>
     </item>
     
