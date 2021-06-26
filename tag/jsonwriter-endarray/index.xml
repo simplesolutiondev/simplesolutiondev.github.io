@@ -17,7 +17,7 @@
       <pubDate>Sat, 26 Jun 2021 20:56:43 +0700</pubDate>
       
       <guid>https://simplesolution.dev/java-gson-write-json-file-using-jsonwriter/</guid>
-      <description>In this Java Gson tutorial we learn how to use the JsonWriter class in the Gson library to write JSON content to file. Via different Java example programs we show you how to write a simple JSON object to file, a multi level JSON content or an array of objects to JSON file.
+      <description>In this Java Gson tutorial we learn how to use the com.google.gson.stream.JsonWriter class in the Gson library to write JSON content to file. Via different Java example programs we show you how to write a simple JSON object to file, a multi level JSON content or an array of objects to JSON file.
    (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
     </item>
     

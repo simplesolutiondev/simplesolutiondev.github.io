@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-gson-read-json-file-using-jsonreader/</loc>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-gson-write-json-file-using-jsonwriter/</loc>
     <lastmod>2021-06-26T20:56:43+07:00</lastmod>
   </url>
@@ -2837,7 +2842,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/filereader/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2897,13 +2902,19 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2021-06-26T20:56:43+07:00</lastmod>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-fromjson/</loc>
     <lastmod>2021-06-26T15:50:20+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gson-jsonreader/</loc>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3089,7 +3100,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-26T20:56:43+07:00</lastmod>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3143,7 +3154,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-26T20:56:43+07:00</lastmod>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3335,7 +3346,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2021-06-26T20:56:43+07:00</lastmod>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3378,6 +3389,30 @@
   <url>
     <loc>https://simplesolution.dev/tag/jsoniter/</loc>
     <lastmod>2019-04-13T17:30:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jsonreader-beginobject/</loc>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jsonreader-endobject/</loc>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jsonreader-nextname/</loc>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/jsonreader-nextstring/</loc>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3959,7 +3994,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-26T20:56:43+07:00</lastmod>
+    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
     <priority>0</priority>
   </url>
   
