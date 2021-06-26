@@ -6,10 +6,20 @@
     <description>Recent content in Gson Fromjson on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jun 2021 22:22:12 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jun 2021 10:25:52 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/tag/gson-fromjson/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Convert classpath resource JSON File to Java Object using Gson</title>
+      <link>https://simplesolution.dev/java-convert-classpath-resource-json-file-to-java-object-using-gson/</link>
+      <pubDate>Sat, 26 Jun 2021 10:25:52 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-classpath-resource-json-file-to-java-object-using-gson/</guid>
+      <description>In this Java Gson tutorial, we show you how to read a JSON file from classpath resources and convert the JSON content to Java object using the Gson library and Apache Commons IO library. By different Java example programs we learn how to convert JSON content to a HashMap, a List of Map, an object of a custom defined class or a List of objects.
+   (adsbygoogle = window.</description>
+    </item>
     
     <item>
       <title>Convert JSON File to Java Object in Java using Gson</title>

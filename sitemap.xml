@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-classpath-resource-json-file-to-java-object-using-gson/</loc>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-json-file-to-java-object-using-gson/</loc>
     <lastmod>2021-06-25T22:22:12+07:00</lastmod>
   </url>
@@ -2337,7 +2342,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/classloader/</loc>
-    <lastmod>2021-06-01T21:22:25+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/classloader-getresourceasstream/</loc>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2354,8 +2365,26 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/classpath-json-file-to-hashmap/</loc>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/classpath-json-file-to-list/</loc>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/classpath-json-file-to-object/</loc>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/classpath-resource/</loc>
-    <lastmod>2021-05-23T22:57:34+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2847,13 +2876,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-fromjson/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2865,7 +2894,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-typetoken/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2931,7 +2960,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/inputstream/</loc>
-    <lastmod>2021-05-25T23:48:30+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2973,7 +3002,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/ioutils/</loc>
-    <lastmod>2021-05-24T23:08:21+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3020,14 +3049,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/java/</loc>
+    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/java/</loc>
-    <lastmod>2020-12-02T23:38:36+07:00</lastmod>
+    <loc>https://simplesolution.dev/java/</loc>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3081,7 +3110,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3273,7 +3302,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3849,7 +3878,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-25T22:22:12+07:00</lastmod>
+    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3866,14 +3895,14 @@
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/spring-boot/</loc>
-    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
+    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
+    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://simplesolution.dev/tag/spring-boot/</loc>
-    <lastmod>2021-03-16T21:05:04+07:00</lastmod>
+    <loc>https://simplesolution.dev/spring-boot/</loc>
+    <lastmod>2021-06-09T00:52:11+07:00</lastmod>
     <priority>0</priority>
   </url>
   
