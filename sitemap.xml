@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-convert-java-object-to-json-file-using-gson/</loc>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-convert-classpath-resource-json-file-to-java-object-using-gson/</loc>
     <lastmod>2021-06-26T10:25:52+07:00</lastmod>
   </url>
@@ -2174,6 +2179,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/arraylist-to-json-file/</loc>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/arrayutils/</loc>
     <lastmod>2021-05-30T17:38:50+07:00</lastmod>
     <priority>0</priority>
@@ -2828,7 +2839,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/filewriter/</loc>
-    <lastmod>2021-05-22T15:15:40+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2876,7 +2887,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2888,7 +2899,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-tojson/</loc>
-    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2907,6 +2918,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/hashmap-to-json/</loc>
     <lastmod>2021-06-25T21:11:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/hashmap-to-json-file/</loc>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3056,7 +3073,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3110,7 +3127,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3302,7 +3319,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3375,6 +3392,12 @@
   <url>
     <loc>https://simplesolution.dev/tag/list-to-json/</loc>
     <lastmod>2021-06-24T21:14:58+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/list-to-json-file/</loc>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3649,6 +3672,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/object-to-json-file/</loc>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/openapi-3/</loc>
     <lastmod>2021-02-04T00:12:12+07:00</lastmod>
     <priority>0</priority>
@@ -3878,7 +3907,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
