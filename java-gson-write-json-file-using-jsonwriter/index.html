@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Java Gson Write JSON File using JsonWriter</title>
+    <meta name="title" content="Java Gson Write JSON File using JsonWriter">
+    <meta name="description" content="In this Java Gson tutorial we learn how to use the JsonWriter class in the Gson library to write JSON content to file. Via different Java example programs we show you how to write a simple JSON object to file, a multi level JSON content or an array of objects to JSON file.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-gson-write-json-file-using-jsonwriter/">
+    <meta property="og:title" content="Java Gson Write JSON File using JsonWriter">
+    <meta property="og:description" content="In this Java Gson tutorial we learn how to use the JsonWriter class in the Gson library to write JSON content to file. Via different Java example programs we show you how to write a simple JSON object to file, a multi level JSON content or an array of objects to JSON file.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-gson-write-json-file-using-jsonwriter.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-gson-write-json-file-using-jsonwriter/">
+    <meta name="twitter:title" content="Java Gson Write JSON File using JsonWriter">
+    <meta name="twitter:description" content="In this Java Gson tutorial we learn how to use the JsonWriter class in the Gson library to write JSON content to file. Via different Java example programs we show you how to write a simple JSON object to file, a multi level JSON content or an array of objects to JSON file.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-gson-write-json-file-using-jsonwriter.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=9" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-spring-framework">Spring</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-tutorials">Tutorials</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Java Gson Write JSON File using JsonWriter</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java Gson tutorial we learn how to use the JsonWriter class in the Gson library to write JSON content to file. Via different Java example programs we show you how to write a simple JSON object to file, a multi level JSON content or an array of objects to JSON file.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-add-gson-to-the-java-project">How to add Gson to the Java project</h4>
+
+<p>To use the Gson library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">implementation group: <span style="color:#e6db74">&#39;com.google.code.gson&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;gson&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.8.7&#39;</span></code></pre></div>
+
+<p>To use the Gson library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.google.code.gson<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>gson<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.8.7<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>Or you can download the Gson jar file from Maven Central at <a href="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar" target="_blank">gson-2.8.7.jar</a></p>
+
+<p>To have more information about the Gson library you can visit the project repository at <a href="https://github.com/google/gson" target="_blank">github.com/google/gson</a></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-write-a-json-object-to-file-using-jsonwriter">How to write a JSON object to file using JsonWriter</h4>
+
+<p>JsonWriterExample1.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.gson.stream.JsonWriter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileWriter<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JsonWriterExample1</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>FileWriter fileWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileWriter<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\Data\\test1.json&#34;</span><span style="color:#f92672">);</span>
+            JsonWriter jsonWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JsonWriter<span style="color:#f92672">(</span>fileWriter<span style="color:#f92672">)</span>
+        <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;firstName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;lastName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;contact@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;website&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;phone&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">nullValue</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Write JSON file successfully at D:\\Data\\test1.json&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Write JSON file successfully at D:\Data\test1.json</code></pre></div></p>
+
+<p>The output file content, D:\Data\test1.json
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;Simple&#34;</span>,<span style="color:#f92672">&#34;lastName&#34;</span>:<span style="color:#e6db74">&#34;Solution&#34;</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;contact@simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;website&#34;</span>:<span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;phone&#34;</span>:<span style="color:#66d9ef">null</span>}</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1698890630"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-write-a-multi-level-json-object-to-file-using-jsonwriter">How to write a multi level JSON object to file using JsonWriter</h4>
+
+<p>JsonWriterExample2.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.gson.stream.JsonWriter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileWriter<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JsonWriterExample2</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>FileWriter fileWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileWriter<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\Data\\test2.json&#34;</span><span style="color:#f92672">);</span>
+            JsonWriter jsonWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JsonWriter<span style="color:#f92672">(</span>fileWriter<span style="color:#f92672">)</span>
+        <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;firstName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;lastName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;contact@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;website&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;address&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;street&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Test Street&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;city&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Sample City&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Write JSON file successfully at D:\\Data\\test2.json&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Write JSON file successfully at D:\Data\test2.json</code></pre></div></p>
+
+<p>The output file content, D:\Data\test2.json
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;Simple&#34;</span>,<span style="color:#f92672">&#34;lastName&#34;</span>:<span style="color:#e6db74">&#34;Solution&#34;</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;contact@simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;website&#34;</span>:<span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;address&#34;</span>:{<span style="color:#f92672">&#34;street&#34;</span>:<span style="color:#e6db74">&#34;Test Street&#34;</span>,<span style="color:#f92672">&#34;city&#34;</span>:<span style="color:#e6db74">&#34;Sample City&#34;</span>}}</code></pre></div></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="6759645625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-write-a-json-array-to-file-using-jsonwriter">How to write a JSON array to file using JsonWriter</h4>
+
+<p>JsonWriterExample3.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.gson.stream.JsonWriter<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.io.FileWriter<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.io.IOException<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JsonWriterExample3</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">try</span><span style="color:#f92672">(</span>FileWriter fileWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileWriter<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;D:\\Data\\test3.json&#34;</span><span style="color:#f92672">);</span>
+            JsonWriter jsonWriter <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JsonWriter<span style="color:#f92672">(</span>fileWriter<span style="color:#f92672">)</span>
+        <span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginArray</span><span style="color:#f92672">();</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;firstName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Simple&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;lastName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Solution&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;contact@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;website&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;address&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;street&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Test Street&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;city&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Sample City&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;firstName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Java&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;lastName&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Tutorial&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;java@simplesolution.dev&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;website&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://simplesolution.dev/java&#34;</span><span style="color:#f92672">);</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;address&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">beginObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;street&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;123 Street&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;city&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Sample City&#34;</span><span style="color:#f92672">);</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endObject</span><span style="color:#f92672">();</span>
+
+            jsonWriter<span style="color:#f92672">.</span><span style="color:#a6e22e">endArray</span><span style="color:#f92672">();</span>
+
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Write JSON file successfully at D:\\Data\\test3.json&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Write JSON file successfully at D:\Data\test3.json</code></pre></div></p>
+
+<p>The output file content, D:\Data\test3.json
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">[{<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;Simple&#34;</span>,<span style="color:#f92672">&#34;lastName&#34;</span>:<span style="color:#e6db74">&#34;Solution&#34;</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;contact@simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;website&#34;</span>:<span style="color:#e6db74">&#34;https://simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;address&#34;</span>:{<span style="color:#f92672">&#34;street&#34;</span>:<span style="color:#e6db74">&#34;Test Street&#34;</span>,<span style="color:#f92672">&#34;city&#34;</span>:<span style="color:#e6db74">&#34;Sample City&#34;</span>}},{<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;Java&#34;</span>,<span style="color:#f92672">&#34;lastName&#34;</span>:<span style="color:#e6db74">&#34;Tutorial&#34;</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;java@simplesolution.dev&#34;</span>,<span style="color:#f92672">&#34;website&#34;</span>:<span style="color:#e6db74">&#34;https://simplesolution.dev/java&#34;</span>,<span style="color:#f92672">&#34;address&#34;</span>:{<span style="color:#f92672">&#34;street&#34;</span>:<span style="color:#e6db74">&#34;123 Street&#34;</span>,<span style="color:#f92672">&#34;city&#34;</span>:<span style="color:#e6db74">&#34;Sample City&#34;</span>}}]</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/json">JSON</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gson">gson</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gson-jsonwriter">Gson JsonWriter</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jsonwriter-beginobject">JsonWriter beginObject</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jsonwriter-endobject">JsonWriter endObject</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jsonwriter-beginarray">JsonWriter beginArray</a>
+                                
+                                <a href="https://simplesolution.dev/tag/jsonwriter-endarray">JsonWriter endArray</a>
+                                
+                                <a href="https://simplesolution.dev/tag/filewriter">FileWriter</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
