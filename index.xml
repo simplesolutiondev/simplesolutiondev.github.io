@@ -6,10 +6,25 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jun 2021 22:48:48 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 23:18:09 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Gson Tutorial</title>
+      <link>https://simplesolution.dev/java-gson-tutorial/</link>
+      <pubDate>Sun, 27 Jun 2021 23:18:09 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-tutorial/</guid>
+      <description>In this Java Gson tutorial we learn how to use the Gson library.
+Serializes Java Object to JSON String  How to convert Java object to JSON String
+ How to generate Pretty Print JSON String
+ Gson.toJson() code examples
+  Deserializes JSON String to Java Object  How to convert JSON String to Java object
+ How to convert JSON String to JsonElement object
+ How to use TypeToken class</description>
+    </item>
     
     <item>
       <title>Java Gson How to use TypeToken class to define data type at runtime</title>
