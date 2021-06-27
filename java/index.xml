@@ -6,10 +6,30 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jun 2021 15:37:51 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 16:38:32 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Gson custom field name using @SerializedName annotation</title>
+      <link>https://simplesolution.dev/java-gson-custom-field-name-using-serializedname-annotation/</link>
+      <pubDate>Sun, 27 Jun 2021 16:38:32 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-custom-field-name-using-serializedname-annotation/</guid>
+      <description>In this Java Gson tutorial we learn how to configure Gson to customize the field name during serialization JSON. Via step by step tutorial we will show you how to use the @SerializedName annotation to override field names.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Gson enable Serialize null fields</title>
+      <link>https://simplesolution.dev/java-gson-enable-serialize-null-fields/</link>
+      <pubDate>Sun, 27 Jun 2021 16:07:10 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-enable-serialize-null-fields/</guid>
+      <description>In this Java Gson tutorial we learn how to configure Gson to enable serializing null fields during serialization JSON. Via step by step tutorial we will show you how to use the GsonBuilder.serializeNulls() method to configure Gson to serialize null fields.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Java Gson exclude fields using ExclusionStrategy interface</title>
