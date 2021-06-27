@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excludefieldswithmodifiers on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/excludefieldswithmodifiers/</link>
+    <description>Recent content in Excludefieldswithmodifiers on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Jun 2021 14:14:18 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/excludefieldswithmodifiers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Gson exclude fields with modifiers</title>
+      <link>https://simplesolution.dev/java-gson-exclude-fields-with-modifiers/</link>
+      <pubDate>Sun, 27 Jun 2021 14:14:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-exclude-fields-with-modifiers/</guid>
+      <description>In this tutorial we learn how to configure Gson to exclude fields during serialization or deserialize JSON to exclude fields with specific access modifiers. Via step by step example we will show you how to use the GsonBuilder.excludeFieldsWithModifiers() method to override Gson configuration to exclude fields by given modifiers.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,40 @@
     <description>Recent content in Java-articles on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Jun 2021 21:36:25 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 15:37:51 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java-articles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Gson exclude fields using ExclusionStrategy interface</title>
+      <link>https://simplesolution.dev/java-gson-exclude-fields-using-exclusionstrategy-interface/</link>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-exclude-fields-using-exclusionstrategy-interface/</guid>
+      <description>In this Java Gson tutorial we learn how to exclude fields during serialization or deserialize JSON by using the ExclusionStrategy interface. Via step by step tutorial we will show you how to use the GsonBuilder.setExclusionStrategies() method and com.google.gson.ExclusionStrategy interface to configure Gson to exclude fields based on custom implementation.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Gson exclude fields using @Expose annotation</title>
+      <link>https://simplesolution.dev/java-gson-exclude-fields-using-expose-annotation/</link>
+      <pubDate>Sun, 27 Jun 2021 15:19:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-exclude-fields-using-expose-annotation/</guid>
+      <description>In this Java Gson tutorial we learn how to exclude fields during serialization or deserialize JSON to exclude fields based on @Expose annotation. Via step by step tutorial we will show you how to use the GsonBuilder.excludeFieldsWithoutExposeAnnotation() method to configure Gson to exclude fields without @Expose annotation.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
+    
+    <item>
+      <title>Java Gson exclude fields with modifiers</title>
+      <link>https://simplesolution.dev/java-gson-exclude-fields-with-modifiers/</link>
+      <pubDate>Sun, 27 Jun 2021 14:14:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-exclude-fields-with-modifiers/</guid>
+      <description>In this tutorial we learn how to configure Gson to exclude fields during serialization or deserialize JSON to exclude fields with specific access modifiers. Via step by step example we will show you how to use the GsonBuilder.excludeFieldsWithModifiers() method to override Gson configuration to exclude fields by given modifiers.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.</description>
+    </item>
     
     <item>
       <title>Java Gson Read JSON File using JsonReader</title>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-gson-exclude-fields-using-exclusionstrategy-interface/</loc>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-gson-exclude-fields-using-expose-annotation/</loc>
+    <lastmod>2021-06-27T15:19:50+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-gson-exclude-fields-with-modifiers/</loc>
+    <lastmod>2021-06-27T14:14:18+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-gson-read-json-file-using-jsonreader/</loc>
     <lastmod>2021-06-26T21:36:25+07:00</lastmod>
   </url>
@@ -2787,6 +2802,24 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/excludefieldswithmodifiers/</loc>
+    <lastmod>2021-06-27T14:14:18+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/excludefieldswithoutexposeannotation/</loc>
+    <lastmod>2021-06-27T15:19:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/exclusionstrategy/</loc>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/fastjson/</loc>
     <lastmod>2019-04-13T16:30:10+07:00</lastmod>
     <priority>0</priority>
@@ -2902,7 +2935,13 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gson-exclude-fields/</loc>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2926,7 +2965,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-tojson/</loc>
-    <lastmod>2021-06-26T15:22:07+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2938,7 +2977,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gsonbuilder/</loc>
-    <lastmod>2021-06-25T21:11:18+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3100,7 +3139,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3154,7 +3193,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3346,7 +3385,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3975,6 +4014,12 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/setexclusionstrategies/</loc>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/sftp/</loc>
     <lastmod>2020-09-28T22:37:34+07:00</lastmod>
     <priority>0</priority>
@@ -3994,7 +4039,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-26T21:36:25+07:00</lastmod>
+    <lastmod>2021-06-27T15:37:51+07:00</lastmod>
     <priority>0</priority>
   </url>
   

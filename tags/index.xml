@@ -1074,6 +1074,33 @@
     </item>
     
     <item>
+      <title>Excludefieldswithmodifiers</title>
+      <link>https://simplesolution.dev/tag/excludefieldswithmodifiers/</link>
+      <pubDate>Sun, 27 Jun 2021 14:14:18 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/excludefieldswithmodifiers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Excludefieldswithoutexposeannotation</title>
+      <link>https://simplesolution.dev/tag/excludefieldswithoutexposeannotation/</link>
+      <pubDate>Sun, 27 Jun 2021 15:19:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/excludefieldswithoutexposeannotation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exclusionstrategy</title>
+      <link>https://simplesolution.dev/tag/exclusionstrategy/</link>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/exclusionstrategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fastjson</title>
       <link>https://simplesolution.dev/tag/fastjson/</link>
       <pubDate>Sat, 13 Apr 2019 16:30:10 +0700</pubDate>
@@ -1247,9 +1274,18 @@
     <item>
       <title>Gson</title>
       <link>https://simplesolution.dev/tag/gson/</link>
-      <pubDate>Sat, 26 Jun 2021 21:36:25 +0700</pubDate>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gson Exclude Fields</title>
+      <link>https://simplesolution.dev/tag/gson-exclude-fields/</link>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/gson-exclude-fields/</guid>
       <description></description>
     </item>
     
@@ -1283,7 +1319,7 @@
     <item>
       <title>Gson Tojson</title>
       <link>https://simplesolution.dev/tag/gson-tojson/</link>
-      <pubDate>Sat, 26 Jun 2021 15:22:07 +0700</pubDate>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gson-tojson/</guid>
       <description></description>
@@ -1301,7 +1337,7 @@
     <item>
       <title>Gsonbuilder</title>
       <link>https://simplesolution.dev/tag/gsonbuilder/</link>
-      <pubDate>Fri, 25 Jun 2021 21:11:18 +0700</pubDate>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/gsonbuilder/</guid>
       <description></description>
@@ -1850,7 +1886,7 @@
     <item>
       <title>Json</title>
       <link>https://simplesolution.dev/tag/json/</link>
-      <pubDate>Sat, 26 Jun 2021 21:36:25 +0700</pubDate>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/json/</guid>
       <description></description>
@@ -2780,6 +2816,15 @@
       <pubDate>Sat, 12 Jun 2021 21:59:53 +0700</pubDate>
       
       <guid>https://simplesolution.dev/tag/scalr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setexclusionstrategies</title>
+      <link>https://simplesolution.dev/tag/setexclusionstrategies/</link>
+      <pubDate>Sun, 27 Jun 2021 15:37:51 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/tag/setexclusionstrategies/</guid>
       <description></description>
     </item>
     
