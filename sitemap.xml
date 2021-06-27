@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime/</loc>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-gson-versioning-support-using-since-annotation/</loc>
+    <lastmod>2021-06-27T22:32:33+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-gson-custom-field-name-using-serializedname-annotation/</loc>
     <lastmod>2021-06-27T16:38:32+07:00</lastmod>
   </url>
@@ -2945,7 +2955,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson/</loc>
-    <lastmod>2021-06-27T16:38:32+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2957,7 +2967,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-fromjson/</loc>
-    <lastmod>2021-06-26T15:50:20+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2974,20 +2984,38 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/gson-since/</loc>
+    <lastmod>2021-06-27T22:32:33+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/gson-tojson/</loc>
-    <lastmod>2021-06-27T16:38:32+07:00</lastmod>
+    <lastmod>2021-06-27T22:32:33+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/gson-typetoken/</loc>
-    <lastmod>2021-06-26T10:25:52+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gson-versioning/</loc>
+    <lastmod>2021-06-27T22:32:33+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://simplesolution.dev/tag/gsonbuilder/</loc>
     <lastmod>2021-06-27T16:07:10+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/gsonbuilder-setversion/</loc>
+    <lastmod>2021-06-27T22:32:33+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3149,7 +3177,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-27T16:38:32+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3203,7 +3231,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-27T16:38:32+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3395,7 +3423,7 @@
   
   <url>
     <loc>https://simplesolution.dev/tag/json/</loc>
-    <lastmod>2021-06-27T16:38:32+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4061,7 +4089,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-27T16:38:32+07:00</lastmod>
+    <lastmod>2021-06-27T22:48:48+07:00</lastmod>
     <priority>0</priority>
   </url>
   

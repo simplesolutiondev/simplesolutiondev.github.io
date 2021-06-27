@@ -6,10 +6,32 @@
     <description>Recent content on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jun 2021 16:38:32 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 22:48:48 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java Gson How to use TypeToken class to define data type at runtime</title>
+      <link>https://simplesolution.dev/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime/</link>
+      <pubDate>Sun, 27 Jun 2021 22:48:48 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime/</guid>
+      <description>In this Java Gson tutorial we learn how to use the com.google.gson.reflect.TypeToken during deserializing JSON String with Gson library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation group: &amp;#39;com.google.code.gson&amp;#39;, name: &amp;#39;gson&amp;#39;, version: &amp;#39;2.8.7&amp;#39; To use the Gson library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
+    
+    <item>
+      <title>Java Gson versioning support using @Since annotation</title>
+      <link>https://simplesolution.dev/java-gson-versioning-support-using-since-annotation/</link>
+      <pubDate>Sun, 27 Jun 2021 22:32:33 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-gson-versioning-support-using-since-annotation/</guid>
+      <description>In this Java Gson tutorial we learn how to @Since annotation to support versioning during serialization or deserialize JSON with Gson library.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add Gson to the Java project To use the Gson library in the Gradle build project, add the following dependency into the build.gradle file.
+implementation group: &amp;#39;com.google.code.gson&amp;#39;, name: &amp;#39;gson&amp;#39;, version: &amp;#39;2.8.7&amp;#39; To use the Gson library in the Maven build project, add the following dependency into the pom.</description>
+    </item>
     
     <item>
       <title>Java Gson custom field name using @SerializedName annotation</title>

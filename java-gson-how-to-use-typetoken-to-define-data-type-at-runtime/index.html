@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Java Gson How to use TypeToken class to define data type at runtime</title>
+    <meta name="title" content="Java Gson How to use TypeToken class to define data type at runtime">
+    <meta name="description" content="In this Java Gson tutorial we learn how to use the com.google.gson.reflect.TypeToken during deserializing JSON String with Gson library.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://simplesolution.dev/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime/">
+    <meta property="og:title" content="Java Gson How to use TypeToken class to define data type at runtime">
+    <meta property="og:description" content="In this Java Gson tutorial we learn how to use the com.google.gson.reflect.TypeToken during deserializing JSON String with Gson library.">
+    
+    <meta property="og:image" content="https://simplesolution.dev/images/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://simplesolution.dev/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime/">
+    <meta name="twitter:title" content="Java Gson How to use TypeToken class to define data type at runtime">
+    <meta name="twitter:description" content="In this Java Gson tutorial we learn how to use the com.google.gson.reflect.TypeToken during deserializing JSON String with Gson library.">
+    
+    <meta name="twitter:image" content="https://simplesolution.dev/images/java-gson-how-to-use-typetoken-to-define-data-type-at-runtime.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://simplesolution.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://simplesolution.dev/css/style.min.css?version=9" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://simplesolution.dev/">
+      <img src="https://simplesolution.dev/images/Logo_S_v1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Simple Solution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java">Java</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-spring-framework">Spring</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/spring-boot">Spring Boot</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://simplesolution.dev/java-tutorials">Tutorials</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="https://simplesolution.dev/search/" method="GET">
+          <input class="form-control mr-sm-4" type="search" placeholder="Search Simple Solution" aria-label="Search Simple Solution" name="q" id="q">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
+        </form>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Java Gson How to use TypeToken class to define data type at runtime</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Java Gson tutorial we learn how to use the com.google.gson.reflect.TypeToken during deserializing JSON String with Gson library.</p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1890462327"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-add-gson-to-the-java-project">How to add Gson to the Java project</h4>
+
+<p>To use the Gson library in the Gradle build project, add the following dependency into the build.gradle file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">implementation group: <span style="color:#e6db74">&#39;com.google.code.gson&#39;</span><span style="color:#f92672">,</span> name: <span style="color:#e6db74">&#39;gson&#39;</span><span style="color:#f92672">,</span> version: <span style="color:#e6db74">&#39;2.8.7&#39;</span></code></pre></div>
+
+<p>To use the Gson library in the Maven build project, add the following dependency into the pom.xml file.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>com.google.code.gson<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>gson<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>2.8.7<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span></code></pre></div>
+
+<p>Or you can download the Gson jar file from Maven Central at <a href="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.7/gson-2.8.7.jar" target="_blank">gson-2.8.7.jar</a></p>
+
+<p>To have more information about the Gson library you can visit the project repository at <a href="https://github.com/google/gson" target="_blank">github.com/google/gson</a></p>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4970454579445266"
+     data-ad-slot="1232481614"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h4 id="how-to-use-typetoken-class">How to use TypeToken class</h4>
+
+<p>For example we have Customer and Address classes as below.</p>
+
+<p>Address.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Address</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> String street<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String city<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String country<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getStreet</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> street<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setStreet</span><span style="color:#f92672">(</span>String street<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">street</span> <span style="color:#f92672">=</span> street<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getCity</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> city<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setCity</span><span style="color:#f92672">(</span>String city<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">city</span> <span style="color:#f92672">=</span> city<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getCountry</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> country<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setCountry</span><span style="color:#f92672">(</span>String country<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">country</span> <span style="color:#f92672">=</span> country<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>Customer.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Customer</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> String firstName<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String lastName<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String email<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> String website<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> Address address<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> firstName<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setFirstName</span><span style="color:#f92672">(</span>String firstName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">firstName</span> <span style="color:#f92672">=</span> firstName<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getLastName</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> lastName<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setLastName</span><span style="color:#f92672">(</span>String lastName<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">lastName</span> <span style="color:#f92672">=</span> lastName<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getEmail</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> email<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setEmail</span><span style="color:#f92672">(</span>String email<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> email<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">getWebsite</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> website<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setWebsite</span><span style="color:#f92672">(</span>String website<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">website</span> <span style="color:#f92672">=</span> website<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> Address <span style="color:#a6e22e">getAddress</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> address<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setAddress</span><span style="color:#f92672">(</span>Address address<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">address</span> <span style="color:#f92672">=</span> address<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div></p>
+
+<p>In the following Java program we learn how to use TypeToken to provide type information during converting a JSON string into a List of Customer objects.</p>
+
+<p>TypeTokenExample.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> com.google.gson.Gson<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> com.google.gson.reflect.TypeToken<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> java.lang.reflect.Type<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TypeTokenExample</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">...</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String jsonString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;  {\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;firstName\&#34;: \&#34;Simple\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;lastName\&#34;: \&#34;Solution\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;email\&#34;: \&#34;contact@simplesolution.dev\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;website\&#34;: \&#34;https://simplesolution.dev\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;address\&#34;: {\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;street\&#34;: \&#34;Simple Street\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;city\&#34;: \&#34;City Name\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;country\&#34;: \&#34;Country Name\&#34;\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    }\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;  },\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;  {\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;firstName\&#34;: \&#34;Java\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;lastName\&#34;: \&#34;Tutorial\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;email\&#34;: \&#34;java@simplesolution.dev\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;website\&#34;: \&#34;https://simplesolution.dev\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;address\&#34;: {\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;street\&#34;: \&#34;Test Street\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;city\&#34;: \&#34;City Name\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;country\&#34;: \&#34;Country Name\&#34;\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    }\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;  },\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;  {\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;firstName\&#34;: \&#34;Gson\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;lastName\&#34;: \&#34;Learn\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;email\&#34;: \&#34;gson@simplesolution.dev\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;website\&#34;: \&#34;https://simplesolution.dev/tag/gson\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    \&#34;address\&#34;: {\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;street\&#34;: \&#34;Gson Street\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;city\&#34;: \&#34;City Name\&#34;,\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;      \&#34;country\&#34;: \&#34;Country Name\&#34;\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;    }\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;  }\n&#34;</span> <span style="color:#f92672">+</span>
+                <span style="color:#e6db74">&#34;]&#34;</span><span style="color:#f92672">;</span>
+
+        Gson gson <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Gson<span style="color:#f92672">();</span>
+        Type type <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TypeToken<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;&gt;(){}.</span><span style="color:#a6e22e">getType</span><span style="color:#f92672">();</span>
+        List<span style="color:#f92672">&lt;</span>Customer<span style="color:#f92672">&gt;</span> customers <span style="color:#f92672">=</span> gson<span style="color:#f92672">.</span><span style="color:#a6e22e">fromJson</span><span style="color:#f92672">(</span>jsonString<span style="color:#f92672">,</span> type<span style="color:#f92672">);</span>
+
+        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span>Customer customer <span style="color:#f92672">:</span> customers<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;First Name: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getFirstName</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Last Name: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getLastName</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Email: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getEmail</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Website: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getWebsite</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Street: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getAddress</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getStreet</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;City: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getAddress</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getCity</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Country: &#34;</span> <span style="color:#f92672">+</span> customer<span style="color:#f92672">.</span><span style="color:#a6e22e">getAddress</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getCountry</span><span style="color:#f92672">());</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span></code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">First Name: Simple
+Last Name: Solution
+Email: contact@simplesolution.dev
+Website: https://simplesolution.dev
+Street: Simple Street
+City: City Name
+Country: Country Name
+
+First Name: Java
+Last Name: Tutorial
+Email: java@simplesolution.dev
+Website: https://simplesolution.dev
+Street: Test Street
+City: City Name
+Country: Country Name
+
+First Name: Gson
+Last Name: Learn
+Email: gson@simplesolution.dev
+Website: https://simplesolution.dev/tag/gson
+Street: Gson Street
+City: City Name
+Country: Country Name</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+                        
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-format="autorelaxed"
+                            data-ad-client="ca-pub-4970454579445266"
+                            data-ad-slot="7874741509"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://simplesolution.dev/tag/json">JSON</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gson">gson</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gson-fromjson">Gson fromJson</a>
+                                
+                                <a href="https://simplesolution.dev/tag/gson-typetoken">Gson TypeToken</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="3250096365"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="8403184847"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:300px;height:250px"
+                         data-ad-client="ca-pub-4970454579445266"
+                         data-ad-slot="4371606344"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+    
+
+        <div class="copy-wrapper">
+
+           
+            <div class="container-fluid">
+                <ul class="socials">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/simplesolution.dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/simple_s_dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.reddit.com/user/simplesolution-dev">
+                            <span class="fa-stack fa-2x"><i class="fas fa-circle fa-stack-2x"></i><i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+              </ul>
+                <p class="copyright">Copyright &#xA9; 2019 SimpleSolution.dev. All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://simplesolution.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://simplesolution.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136677769-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-136677769-1');
+</script></body>
+</html>
