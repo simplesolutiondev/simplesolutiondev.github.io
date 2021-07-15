@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biginteger Divide on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/biginteger-divide/</link>
+    <description>Recent content in Biginteger Divide on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jul 2021 22:32:31 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/biginteger-divide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java divide BigInteger</title>
+      <link>https://simplesolution.dev/java-divide-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:32:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-divide-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.divide() method to divide BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to divide BigInteger value To divide BigInteger values we can use the method java.math.BigInteger.divide() which returns the division result of two BigInteger values.
+DivideBigIntegerExample.java import java.math.BigInteger; public class DivideBigIntegerExample { public static void main(String... args) { BigInteger value1 = new BigInteger(&amp;#34;9999999999&amp;#34;); BigInteger value2 = new BigInteger(&amp;#34;99&amp;#34;); BigInteger result = value1.</description>
+    </item>
+    
+  </channel>
+</rss>

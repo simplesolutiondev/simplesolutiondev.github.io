@@ -6,10 +6,237 @@
     <description>Recent content in Java on Simple Solution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Jun 2021 23:18:09 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jul 2021 22:39:16 +0700</lastBuildDate>
     
 	<atom:link href="https://simplesolution.dev/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java subtract BigInteger</title>
+      <link>https://simplesolution.dev/java-subtract-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:39:16 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-subtract-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.subtract() method to subtract two BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to subtract two BigInteger values To subtract BigInteger value we can use the java.math.BigInteger.subtract() method which returns the subtraction result of a BigInteger object and given argument BigInteger object.
+SubtractBigIntegerExample.java import java.math.BigInteger; public class SubtractBigIntegerExample { public static void main(String... args) { BigInteger value1 = new BigInteger(&amp;#34;987654321&amp;#34;); BigInteger value2 = new BigInteger(&amp;#34;123456789&amp;#34;); BigInteger result = value1.</description>
+    </item>
+    
+    <item>
+      <title>Java calculate the value of a BigInteger to the power of a number</title>
+      <link>https://simplesolution.dev/java-calculate-pow-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:38:54 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-calculate-pow-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.pow() method to calculate the value of a given BigInteger value to the power of an integer number.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to calculate pow of BigInteger value In the Java program below we show you how to use the java.math.BigInteger.pow() method.
+PowBigIntegerExample.java import java.math.BigInteger; public class PowBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java get negative value of BigInteger</title>
+      <link>https://simplesolution.dev/java-get-negative-value-of-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:38:32 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-negative-value-of-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.negate() method to get the negative value of a given BigInteger value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to get negative value of a BigInteger object In the Java program below, we show you how to use the java.math.BigInteger.negate() method to return the negative value of a given BigInteger value.
+NegativeBigIntegerExample.java import java.math.BigInteger; public class NegativeBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java multiply BigInteger</title>
+      <link>https://simplesolution.dev/java-multiply-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:38:11 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-multiply-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.multiply() method to get the multiplication result of two BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to multiply BigInteger values In the Java program below we show you how to use the java.math.BigInteger.multiply() method to multiply two BigInteger objects.
+MultiplyBigIntegerExample.java import java.math.BigInteger; public class MultiplyBigIntegerExample { public static void main(String... args) { BigInteger value1 = new BigInteger(&amp;#34;123456789&amp;#34;); BigInteger value2 = new BigInteger(&amp;#34;987654321&amp;#34;); BigInteger result = value1.</description>
+    </item>
+    
+    <item>
+      <title>Java initialize BigInteger value</title>
+      <link>https://simplesolution.dev/java-initialize-biginteger-value/</link>
+      <pubDate>Thu, 15 Jul 2021 22:37:50 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-initialize-biginteger-value/</guid>
+      <description>In this Java core tutorial we learn how to initialize a BigInteger object from a String or a long value using BigInteger constructor or java.math.BigInteger.valueOf() method.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to initialize BigInteger value In the following Java program, we show you how to use the java.math.BigInteger.valueOf() method to instantiate a BigInteger object from a given long value.
+InitializeBigIntegerExample1.java import java.math.BigInteger; public class InitializeBigIntegerExample1 { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java get minimum value of two BigInteger values</title>
+      <link>https://simplesolution.dev/java-get-minimum-value-of-two-biginteger-values/</link>
+      <pubDate>Thu, 15 Jul 2021 22:37:26 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-minimum-value-of-two-biginteger-values/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.min() method to get the minimum value of two given BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to get min BigInteger value In the following Java program, we show you how to use the java.math.BigInteger.min() method to get the minimum value from two BigInteger values.
+GetMinBigIntegerExample.java import java.math.BigInteger; public class GetMinBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java get maximum value of two BigInteger values</title>
+      <link>https://simplesolution.dev/java-get-maximum-value-of-two-biginteger-values/</link>
+      <pubDate>Thu, 15 Jul 2021 22:33:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-maximum-value-of-two-biginteger-values/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.max() method to get the maximum value of two given BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to get max BigInteger value In the following Java program, we show you how to use the java.math.BigInteger.max() method to get the maximum value from two BigInteger values.
+GetMaxBigIntegerExample.java import java.math.BigInteger; public class GetMaxBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java Compare BigInteger values for equality</title>
+      <link>https://simplesolution.dev/java-compare-biginteger-values-for-equality/</link>
+      <pubDate>Thu, 15 Jul 2021 22:32:49 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-compare-biginteger-values-for-equality/</guid>
+      <description>In this Java core tutorial we learn how to compare BigInteger values for equality using the java.math.BigInteger.equals() method.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to compare BigInteger values for equality To compare two BigInteger values for equality we can use the java.math.BigInteger.equals() method as the following Java example program.
+EqualBigIntegerExample.java import java.math.BigInteger; public class EqualBigIntegerExample { public static void main(String... args) { BigInteger value1 = new BigInteger(&amp;#34;1234567890987654321&amp;#34;); BigInteger value2 = new BigInteger(&amp;#34;1234567890987654322&amp;#34;); BigInteger value3 = new BigInteger(&amp;#34;1234567890987654322&amp;#34;); boolean result1 = value1.</description>
+    </item>
+    
+    <item>
+      <title>Java divide BigInteger</title>
+      <link>https://simplesolution.dev/java-divide-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:32:31 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-divide-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.divide() method to divide BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to divide BigInteger value To divide BigInteger values we can use the method java.math.BigInteger.divide() which returns the division result of two BigInteger values.
+DivideBigIntegerExample.java import java.math.BigInteger; public class DivideBigIntegerExample { public static void main(String... args) { BigInteger value1 = new BigInteger(&amp;#34;9999999999&amp;#34;); BigInteger value2 = new BigInteger(&amp;#34;99&amp;#34;); BigInteger result = value1.</description>
+    </item>
+    
+    <item>
+      <title>Java convert long to BigInteger</title>
+      <link>https://simplesolution.dev/java-convert-long-to-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:32:02 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-long-to-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to convert a long value to a BigInteger value using the java.math.BigInteger.valueOf() method.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert long to BigInteger To convert a given long value to BigInteger we can use the method java.math.BigInteger.valueOf() which instantiates a BigInteger from a given long value.
+ConvertLongToBigIntegerExample.java import java.math.BigInteger; public class ConvertLongToBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java convert int to BigInteger</title>
+      <link>https://simplesolution.dev/java-convert-int-to-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:31:42 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-int-to-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to convert an integer value to a BigInteger value using the java.math.BigInteger.valueOf() method.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert integer to BigInteger To convert a given int value to BigInteger we can use the method java.math.BigInteger.valueOf() which instantiates a BigInteger from a given integer value.
+ConvertIntegerToBigIntegerExample.java import java.math.BigInteger; public class ConvertIntegerToBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to String</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-string/</link>
+      <pubDate>Thu, 15 Jul 2021 22:31:16 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-string/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.toString() method to convert a BigInteger value to a String value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger to String To convert a BigInteger object to a String we can use the method java.math.BigInteger.toString() which returns the decimal String representation of a BigInteger value.
+ConvertBigIntegerToStringExample.java import java.math.BigInteger; public class ConvertBigIntegerToStringExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to short</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-short/</link>
+      <pubDate>Thu, 15 Jul 2021 22:30:44 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-short/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.shortValueExact() and java.math.BigInteger.shortValue() method to convert a BigInteger object into a short value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger object to short value To convert a BigInteger value into a short value we can use the method java.math.BigInteger.shortValueExact(). This method also checks the value of BigInteger if it is out of range of short then an ArithmeticException is thrown.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to long</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-long/</link>
+      <pubDate>Thu, 15 Jul 2021 22:30:19 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-long/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.longValueExact() and java.math.BigInteger.longValue() method to convert a BigInteger object into a long value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger object to long value To convert a BigInteger value into a long value we can use the method java.math.BigInteger.longValueExact(). This method also checks the value of BigInteger if it is out of range of long then an ArithmeticException is thrown.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to int</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-int/</link>
+      <pubDate>Thu, 15 Jul 2021 22:29:54 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-int/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.intValueExact() and java.math.BigInteger.intValue() method to convert a BigInteger object into an integer value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger object to int value To convert a BigInteger value into int value we can use the method java.math.BigInteger.intValueExact(). This method also checks the value of BigInteger if it is out of range of integer then an ArithmeticException is thrown.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to float</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-float/</link>
+      <pubDate>Thu, 15 Jul 2021 22:29:25 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-float/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.floatValue() method to convert a BigInteger value to a float value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger value to float value To convert a BigInteger object to a float value we can use the java.math.BigInteger.floatValue() method as the following Java example program.
+ConvertBigIntegerToFloatExample.java import java.math.BigInteger; public class ConvertBigIntegerToFloatExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to double</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-double/</link>
+      <pubDate>Thu, 15 Jul 2021 22:28:57 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-double/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.doubleValue() method to convert a BigInteger value to a double value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger value to double value To convert a BigInteger object to a double value we can use the java.math.BigInteger.doubleValue() method as the following Java example program.
+ConvertBigIntegerToDoubleExample.java import java.math.BigInteger; public class ConvertBigIntegerToDoubleExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java convert BigInteger to byte</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-byte/</link>
+      <pubDate>Thu, 15 Jul 2021 22:28:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-byte/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.byteValueExact() and java.math.BigInteger.byteValue() method to convert a BigInteger object into a byte value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger object to byte value To convert a BigInteger value into byte value we can use the method java.math.BigInteger.byteValueExact(). This method also checks the value of BigInteger if it is out of range of byte then an ArithmeticException is thrown.</description>
+    </item>
+    
+    <item>
+      <title>Java compare BigInteger values</title>
+      <link>https://simplesolution.dev/java-compare-biginteger-values/</link>
+      <pubDate>Thu, 15 Jul 2021 22:28:12 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-compare-biginteger-values/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.compareTo() method to compare two BigInteger objects.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to compare BigInteger values To compare two BigInteger values we can use the java.math.BigInteger.compareTo() method which returns -1, 0 or 1 as the result of comparison less than, equal to or greater than.
+CompareBigIntegerExample.java import java.math.BigInteger; public class CompareBigIntegerExample { public static void main(String.</description>
+    </item>
+    
+    <item>
+      <title>Java add BigInteger</title>
+      <link>https://simplesolution.dev/java-add-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:27:46 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-add-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the method java.math.BigInteger.add() to add two BigInteger values.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to add two BigInteger values To add BigInteger value we can use the java.math.BigInteger.add() method which returns the adding result of a BigInteger object and given argument BigInteger object.
+AddBigIntegerExample.java import java.math.BigInteger; public class AddBigIntegerExample { public static void main(String... args) { BigInteger value1 = new BigInteger(&amp;#34;123456789&amp;#34;); BigInteger value2 = new BigInteger(&amp;#34;987654321&amp;#34;); BigInteger result = value1.</description>
+    </item>
+    
+    <item>
+      <title>Java Get Absolute of BigInteger</title>
+      <link>https://simplesolution.dev/java-get-absolute-of-biginteger/</link>
+      <pubDate>Thu, 15 Jul 2021 22:27:16 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-get-absolute-of-biginteger/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.abs() method to get the absolute value of a BigInteger value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to get absolute value of a BigInteger object To get the absolute value we can use the method java.math.BigInteger.abs() which returns a BigInteger whose value is the absolute value of a BigInteger object.
+AbsoluteBigIntegerExample.java import java.math.BigInteger; public class AbsoluteBigIntegerExample { public static void main(String.</description>
+    </item>
     
     <item>
       <title>Java Gson Tutorial</title>

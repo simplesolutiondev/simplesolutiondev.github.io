@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biginteger Bytevalueexact on Simple Solution</title>
+    <link>https://simplesolution.dev/tag/biginteger-bytevalueexact/</link>
+    <description>Recent content in Biginteger Bytevalueexact on Simple Solution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Jul 2021 22:28:34 +0700</lastBuildDate>
+    
+	<atom:link href="https://simplesolution.dev/tag/biginteger-bytevalueexact/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java convert BigInteger to byte</title>
+      <link>https://simplesolution.dev/java-convert-biginteger-to-byte/</link>
+      <pubDate>Thu, 15 Jul 2021 22:28:34 +0700</pubDate>
+      
+      <guid>https://simplesolution.dev/java-convert-biginteger-to-byte/</guid>
+      <description>In this Java core tutorial we learn how to use the java.math.BigInteger.byteValueExact() and java.math.BigInteger.byteValue() method to convert a BigInteger object into a byte value.
+   (adsbygoogle = window.adsbygoogle || []).push({});  How to convert BigInteger object to byte value To convert a BigInteger value into byte value we can use the method java.math.BigInteger.byteValueExact(). This method also checks the value of BigInteger if it is out of range of byte then an ArithmeticException is thrown.</description>
+    </item>
+    
+  </channel>
+</rss>

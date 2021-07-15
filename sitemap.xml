@@ -3,6 +3,111 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://simplesolution.dev/java-subtract-biginteger/</loc>
+    <lastmod>2021-07-15T22:39:16+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-calculate-pow-biginteger/</loc>
+    <lastmod>2021-07-15T22:38:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-negative-value-of-biginteger/</loc>
+    <lastmod>2021-07-15T22:38:32+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-multiply-biginteger/</loc>
+    <lastmod>2021-07-15T22:38:11+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-initialize-biginteger-value/</loc>
+    <lastmod>2021-07-15T22:37:50+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-minimum-value-of-two-biginteger-values/</loc>
+    <lastmod>2021-07-15T22:37:26+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-maximum-value-of-two-biginteger-values/</loc>
+    <lastmod>2021-07-15T22:33:12+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-compare-biginteger-values-for-equality/</loc>
+    <lastmod>2021-07-15T22:32:49+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-divide-biginteger/</loc>
+    <lastmod>2021-07-15T22:32:31+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-long-to-biginteger/</loc>
+    <lastmod>2021-07-15T22:32:02+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-int-to-biginteger/</loc>
+    <lastmod>2021-07-15T22:31:42+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-string/</loc>
+    <lastmod>2021-07-15T22:31:16+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-short/</loc>
+    <lastmod>2021-07-15T22:30:44+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-long/</loc>
+    <lastmod>2021-07-15T22:30:19+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-int/</loc>
+    <lastmod>2021-07-15T22:29:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-float/</loc>
+    <lastmod>2021-07-15T22:29:25+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-double/</loc>
+    <lastmod>2021-07-15T22:28:57+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-convert-biginteger-to-byte/</loc>
+    <lastmod>2021-07-15T22:28:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-compare-biginteger-values/</loc>
+    <lastmod>2021-07-15T22:28:12+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-add-biginteger/</loc>
+    <lastmod>2021-07-15T22:27:46+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/java-get-absolute-of-biginteger/</loc>
+    <lastmod>2021-07-15T22:27:16+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/java-gson-tutorial/</loc>
     <lastmod>2021-06-27T23:18:09+07:00</lastmod>
   </url>
@@ -2282,6 +2387,156 @@
   </url>
   
   <url>
+    <loc>https://simplesolution.dev/tag/biginteger/</loc>
+    <lastmod>2021-07-15T22:39:16+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-abs/</loc>
+    <lastmod>2021-07-15T22:27:16+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-add/</loc>
+    <lastmod>2021-07-15T22:27:46+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-bytevalue/</loc>
+    <lastmod>2021-07-15T22:28:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-bytevalueexact/</loc>
+    <lastmod>2021-07-15T22:28:34+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-compareto/</loc>
+    <lastmod>2021-07-15T22:28:12+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-constructor/</loc>
+    <lastmod>2021-07-15T22:37:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-divide/</loc>
+    <lastmod>2021-07-15T22:32:31+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-doublevalue/</loc>
+    <lastmod>2021-07-15T22:28:57+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-equals/</loc>
+    <lastmod>2021-07-15T22:32:49+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-floatvalue/</loc>
+    <lastmod>2021-07-15T22:29:25+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-intvalue/</loc>
+    <lastmod>2021-07-15T22:29:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-intvalueexact/</loc>
+    <lastmod>2021-07-15T22:29:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-longvalue/</loc>
+    <lastmod>2021-07-15T22:30:19+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-longvalueexact/</loc>
+    <lastmod>2021-07-15T22:30:19+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-max/</loc>
+    <lastmod>2021-07-15T22:33:12+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-min/</loc>
+    <lastmod>2021-07-15T22:37:26+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-multiply/</loc>
+    <lastmod>2021-07-15T22:38:11+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-negate/</loc>
+    <lastmod>2021-07-15T22:38:32+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-pow/</loc>
+    <lastmod>2021-07-15T22:38:54+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-shortvalue/</loc>
+    <lastmod>2021-07-15T22:30:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-shortvalueexact/</loc>
+    <lastmod>2021-07-15T22:30:44+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-subtract/</loc>
+    <lastmod>2021-07-15T22:39:16+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-tostring/</loc>
+    <lastmod>2021-07-15T22:31:16+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://simplesolution.dev/tag/biginteger-valueof/</loc>
+    <lastmod>2021-07-15T22:37:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://simplesolution.dev/tag/binarycodec/</loc>
     <lastmod>2021-03-24T23:47:03+07:00</lastmod>
     <priority>0</priority>
@@ -3182,7 +3437,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java/</loc>
-    <lastmod>2021-06-27T23:18:09+07:00</lastmod>
+    <lastmod>2021-07-15T22:39:16+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -3236,7 +3491,7 @@
   
   <url>
     <loc>https://simplesolution.dev/java-articles/</loc>
-    <lastmod>2021-06-27T23:18:09+07:00</lastmod>
+    <lastmod>2021-07-15T22:39:16+07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -4094,7 +4349,7 @@
   
   <url>
     <loc>https://simplesolution.dev/</loc>
-    <lastmod>2021-06-27T23:18:09+07:00</lastmod>
+    <lastmod>2021-07-15T22:39:16+07:00</lastmod>
     <priority>0</priority>
   </url>
   
